@@ -1,0 +1,369 @@
+{
+  "war_id": "first_congo_war",
+  "name": "First Congo War",
+  "start_year": 1996,
+  "end_year": 1997,
+  "ongoing": false,
+  "regions": [
+    "Democratic Republic of the Congo",
+    "Zaire",
+    "Great Lakes region",
+    "Central Africa"
+  ],
+  "summary": "The First Congo War was the 1996-1997 conflict that overthrew Mobutu Sese Seko's Zaire and brought Laurent-Desire Kabila's AFDL to power. Its largest mortality component was not conventional battle deaths but the pursuit, massacre, forced displacement, and deprivation of Rwandan, Burundian, and Congolese Hutu refugees and civilians by AFDL/APR and allied forces. Overall death estimates range from a conservative UCDP-derived 46,290 fatalities to literature estimates of up to about 300,000 Hutu refugees killed, with a widely cited scholarly calculation around 232,000-233,000.",
+  "sides": [
+    {
+      "name": "AFDL / Rwandan-led anti-Mobutu coalition",
+      "members": [
+        "AFDL",
+        "Rwandan Patriotic Army / APR / RPA",
+        "Ugandan People's Defence Force",
+        "Burundian army elements",
+        "Angolan government forces",
+        "Katangese ex-Tigers",
+        "kadogo child soldiers"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No credible side-specific military killed total found. Aggregate UCDP-derived fatality coding for 1996-1997 is 46,290 killed in armed struggle, non-state conflict and one-sided violence, but it is not decomposed by side or combatant status.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Zaire_DRC__AFDL__1996-1997.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 60000,
+        "high": 233000,
+        "point": 232000,
+        "breakdown": [
+          {
+            "cause": "massacre and pursuit",
+            "victims_group": "Rwandan, Burundian and Congolese Hutu refugees and civilians",
+            "low": 60000,
+            "high": 233000,
+            "notes": "PRIF summarizes literature estimates of 60,000-300,000 Hutu refugees killed; Emizet Kisangani's detailed calculation concludes about 232,000 refugees killed, summarized elsewhere as 233,000 massacred. The high here uses the 233,000 massacre calculation to avoid blending direct and indirect deaths; a broader high of 300,000 is used in totals.",
+            "sources": [
+              "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Zaire_DRC__AFDL__1996-1997.pdf",
+              "https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/massacre-of-refugees-in-congo-a-case-of-un-peacekeeping-failure-and-international-law/619DB8205322F9998D3659A7F0B4CF6F"
+            ]
+          },
+          {
+            "cause": "camp massacre",
+            "victims_group": "Rwandese refugees and displaced Zairians at Chimanga",
+            "low": 500,
+            "high": 500,
+            "notes": "Amnesty reported about 500 killed at Chimanga in mid-November 1996.",
+            "sources": [
+              "https://www.amnesty.org/ar/wp-content/uploads/2021/06/afr010051997en.pdf"
+            ]
+          },
+          {
+            "cause": "camp massacre",
+            "victims_group": "Hutu refugees near Wanie Rukula",
+            "low": 470,
+            "high": 470,
+            "notes": "UN Mapping Report documents at least 470 refugees killed on 14 March 1997.",
+            "sources": [
+              "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-orientale-province/"
+            ]
+          },
+          {
+            "cause": "camp massacres and executions",
+            "victims_group": "Hutu refugees along the Ubundu-Kisangani railway, Kasese and Biaro",
+            "low": 470,
+            "high": null,
+            "notes": "Documented minimum combines at least 80 at Obilo, at least 200 at Kasese I/II, close to 100 at Biaro, and over 90 deaths in a forced train transfer; many other victims are listed as unknown. Reyntjens argues Kasese victims probably exceeded 10,000, but the UN Mapping Report gives lower incident minimums.",
+            "sources": [
+              "https://www.mapping-report.org/en/attacks-against-hutu-refugees-along-the-ubundu-to-kisangani-railway-line/",
+              "https://www.rahs-open-lid.com/wp-content/uploads/2024/02/The-Great-African-War.-Congo-and-Regional-Geopolitics-1996%E2%80%932006-PDFDrive-.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Hutu refugees at Wendji and Mbandaka",
+            "low": 361,
+            "high": null,
+            "notes": "Documented minimum combines at least 140 at Wendji, 18 at Bolenge, 3 at Iyonda, and at least 200 at ONATRA port; unknown numbers were also killed in Mbandaka town and other locations.",
+            "sources": [
+              "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-equateur/"
+            ]
+          }
+        ],
+        "notes": "Direct-killing estimates are dominated by the contested Hutu refugee massacres. The 233,000 high is a scholarly massacre calculation; the broader total high of 300,000 includes estimates that may mix direct and indirect deaths.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Zaire_DRC__AFDL__1996-1997.pdf",
+          "https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/massacre-of-refugees-in-congo-a-case-of-un-peacekeeping-failure-and-international-law/619DB8205322F9998D3659A7F0B4CF6F",
+          "https://www.mapping-report.org/en/acts-of-violence-crime-of-genocide-against-hutu/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Hutu refugees in Tingi-Tingi and along the Ubundu-Kisangani railway",
+          "low": 3284,
+          "high": null,
+          "point": null,
+          "notes": "Documented monitored deaths: 1,703 at Tingi-Tingi from 18 December 1996 to 26 February 1997, plus 1,581 officially registered railway-camp deaths by mid-April 1997. These deaths were associated with flight, inadequate food, disease and blocked/limited humanitarian access and likely overlap with broader Hutu refugee death estimates.",
+          "sources": [
+            "https://www.nationalacademies.org/read/10086/chapter/4"
+          ]
+        },
+        {
+          "type": "blockade",
+          "victims_group": "Hutu refugees denied humanitarian assistance",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Mapping Report and the Secretary-General's Investigative Team described deliberate blocking of humanitarian aid as systematic and potentially a crime against humanity, but no separate total mortality estimate was found.",
+          "sources": [
+            "https://www.mapping-report.org/en/acts-of-violence-crime-of-genocide-against-hutu/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mobutu government / ex-FAR-Interahamwe and allied anti-AFDL forces",
+      "members": [
+        "Zairian Armed Forces (FAZ)",
+        "Special Presidential Division (DSP)",
+        "Zairian security services",
+        "ex-FAR",
+        "Interahamwe",
+        "Bembe and other local militias",
+        "Burundian FDD elements",
+        "UNITA-linked forces",
+        "Serbian mercenaries"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No credible side-specific combatant killed total found for FAZ/DSP, ex-FAR/Interahamwe, UNITA, militia or mercenary forces.",
+        "sources": [
+          "https://www.state.gov/reports/1997-country-reports-on-human-rights-practices/democratic-republic-of-the-congo/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 849,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre and execution",
+            "victims_group": "Banyamulenge/Tutsi civilians in South Kivu",
+            "low": 849,
+            "high": null,
+            "notes": "Conservative floor from quantified UN Mapping incidents: 2 at Kamanyola, 15 at Kamanyola, 2 at Nyamugali, nearly 300 at Baraka, 152 at Lueba, nearly 100 at Mboko, 15 at Sange, several hundred in Bukavu counted as 200 minimum, 1 near Uvira, 12-20 at Kamituga counted as 12, and around 50 by the Zalya River. Excludes multiple unknown-number incidents.",
+            "sources": [
+              "https://www.mapping-report.org/en/1st-congo-war-attacks-against-tutsi-and-banyamulenge-civilians/"
+            ]
+          },
+          {
+            "cause": "execution, detention deaths and ethnic persecution",
+            "victims_group": "Rwandans and people of Rwandan origin, especially Tutsis, in Kinshasa and Kisangani",
+            "low": null,
+            "high": null,
+            "notes": "UN Mapping records large numbers of deaths from detention conditions and unknown numbers executed in Kinshasa, plus several dozen arrests and unknown killings around Kisangani.",
+            "sources": [
+              "https://www.mapping-report.org/en/1st-congo-war-attacks-against-tutsi-and-banyamulenge-civilians/"
+            ]
+          },
+          {
+            "cause": "looting, rape, random execution and retreat violence",
+            "victims_group": "Congolese/Zairian civilians in towns and villages during FAZ retreat",
+            "low": null,
+            "high": null,
+            "notes": "U.S. State Department reported killings, rape, theft and destruction by retreating FAZ, killings and theft by ex-FAR/Interahamwe, and random executions by Serbian mercenaries near Kisangani; no total was given.",
+            "sources": [
+              "https://www.refworld.org/reference/annualreport/usdos/1998/en/25334"
+            ]
+          }
+        ],
+        "notes": "The 849 figure is a strict floor from quantified or minimally quantifiable incidents and is not a total. Many incidents are described only as unknown numbers, several dozen, several hundred, or large numbers.",
+        "sources": [
+          "https://www.mapping-report.org/en/1st-congo-war-attacks-against-tutsi-and-banyamulenge-civilians/",
+          "https://www.refworld.org/reference/annualreport/usdos/1998/en/25334"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Hutu refugees and local Congolese civilians affected by militarized camps, human shields, looting and forced flight",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "UN Mapping and the U.S. State Department report that ex-FAR/Interahamwe used refugees as human shields and that armed Hutu elements extracted aid and committed violence/looting, contributing to displacement and deprivation. No quantified indirect-death estimate was found.",
+          "sources": [
+            "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees/",
+            "https://www.refworld.org/reference/annualreport/usdos/1998/en/25334"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 60849,
+    "civilian_high": 300000,
+    "grand_low": 46290,
+    "grand_high": 300000,
+    "notes": "Grand low uses the UCDP-derived PRIF fatality total of 46,290 for armed struggle, non-state conflict and one-sided violence in 1996-1997. Civilian_low adds the conservative 60,000 Hutu-refugee lower estimate to the 849 quantified anti-Banyamulenge/Tutsi floor, but this is not directly comparable to UCDP coding. Grand high uses the upper literature estimate of 300,000 Hutu refugees killed; additional quantified non-Hutu deaths are too small relative to the uncertainty and may or may not be included in aggregate estimates. Military totals cannot be separated from civilian totals with available sources.",
+    "sources": []
+  },
+  "key_atrocities": [
+    {
+      "name": "Systematic pursuit and massacre of Hutu refugees",
+      "year": 1996,
+      "perpetrator": "AFDL / RPA-APR and allied forces",
+      "victims_group": "Rwandan, Burundian and Congolese Hutu refugees and civilians",
+      "low": 60000,
+      "high": 300000,
+      "notes": "PRIF summarizes specialist estimates of 60,000-300,000 Hutu refugees killed; Emizet Kisangani gives about 232,000.",
+      "sources": [
+        "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Zaire_DRC__AFDL__1996-1997.pdf",
+        "https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/massacre-of-refugees-in-congo-a-case-of-un-peacekeeping-failure-and-international-law/619DB8205322F9998D3659A7F0B4CF6F"
+      ]
+    },
+    {
+      "name": "Chimanga refugee camp massacre",
+      "year": 1996,
+      "perpetrator": "AFDL",
+      "victims_group": "Rwandese refugees and displaced Zairians",
+      "low": 500,
+      "high": 500,
+      "notes": "Amnesty reported about 500 killed in mid-November 1996.",
+      "sources": [
+        "https://www.amnesty.org/ar/wp-content/uploads/2021/06/afr010051997en.pdf"
+      ]
+    },
+    {
+      "name": "Wanie Rukula camp killings",
+      "year": 1997,
+      "perpetrator": "AFDL / APR",
+      "victims_group": "Hutu refugees",
+      "low": 470,
+      "high": 470,
+      "notes": "UN Mapping Report documents at least 470 killed on 14 March 1997.",
+      "sources": [
+        "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-orientale-province/"
+      ]
+    },
+    {
+      "name": "Kasese and Biaro massacres",
+      "year": 1997,
+      "perpetrator": "AFDL / APR and local auxiliaries",
+      "victims_group": "Hutu refugees",
+      "low": 300,
+      "high": null,
+      "notes": "UN Mapping incident minimum is at least 200 at Kasese and close to 100 at Biaro; Reyntjens argues Kasese victims probably exceeded 10,000.",
+      "sources": [
+        "https://www.mapping-report.org/en/attacks-against-hutu-refugees-along-the-ubundu-to-kisangani-railway-line/",
+        "https://www.rahs-open-lid.com/wp-content/uploads/2024/02/The-Great-African-War.-Congo-and-Regional-Geopolitics-1996%E2%80%932006-PDFDrive-.pdf"
+      ]
+    },
+    {
+      "name": "Wendji and Mbandaka massacres",
+      "year": 1997,
+      "perpetrator": "AFDL / APR",
+      "victims_group": "Hutu refugees",
+      "low": 361,
+      "high": null,
+      "notes": "Minimum combines at least 140 at Wendji, 18 at Bolenge, 3 at Iyonda, and at least 200 at ONATRA port; unknown numbers were also killed elsewhere in Mbandaka.",
+      "sources": [
+        "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-equateur/"
+      ]
+    },
+    {
+      "name": "Baraka, Lueba, Mboko and Bukavu anti-Banyamulenge/Tutsi massacres",
+      "year": 1996,
+      "perpetrator": "FAZ and allied Bembe/local militias",
+      "victims_group": "Banyamulenge/Tutsi civilians",
+      "low": 752,
+      "high": null,
+      "notes": "Minimum from nearly 300 at Baraka, 152 at Lueba, nearly 100 at Mboko, and several hundred in Bukavu counted as 200 minimum.",
+      "sources": [
+        "https://www.mapping-report.org/en/1st-congo-war-attacks-against-tutsi-and-banyamulenge-civilians/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is whether to use narrow event-coded fatality datasets, which produce much lower totals, or specialist historical/human-rights reconstructions of Hutu refugee massacres, which produce far higher totals. Combatant deaths cannot be separated by side from the sources found. Many refugee deaths occurred through overlapping mechanisms: shelling, shootings, edged-weapon massacres, forced marches, blocked humanitarian access, starvation, exhaustion and disease. UN Mapping incident figures are often minimums or unknown-number descriptions, not a full demographic death census.",
+  "sources": [
+    {
+      "url": "https://www.mapping-report.org/en/introduction/",
+      "title": "DRC Mapping Report - Introduction",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees/",
+      "title": "First Congo War - Attacks against Hutu refugees",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/attacks-against-hutu-refugees-along-the-ubundu-to-kisangani-railway-line/",
+      "title": "Attacks against Hutu refugees along the Ubundu to Kisangani railway line",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-equateur/",
+      "title": "First Congo War - Attacks against Hutu refugees: Equateur",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/first-congo-war-attacks-against-hutu-refugees-orientale-province/",
+      "title": "First Congo War - Attacks against Hutu refugees: Orientale Province",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/1st-congo-war-attacks-against-tutsi-and-banyamulenge-civilians/",
+      "title": "First Congo War - Attacks against Tutsi and Banyamulenge civilians",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.mapping-report.org/en/acts-of-violence-crime-of-genocide-against-hutu/",
+      "title": "Acts of Violence - Crime of genocide against Hutu",
+      "publisher": "United Nations / OHCHR Mapping Report web edition"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Zaire_DRC__AFDL__1996-1997.pdf",
+      "title": "WARID: Zaire/DR Congo (AFDL) 1996-1997",
+      "publisher": "Peace Research Institute Frankfurt (PRIF)"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/massacre-of-refugees-in-congo-a-case-of-un-peacekeeping-failure-and-international-law/619DB8205322F9998D3659A7F0B4CF6F",
+      "title": "The massacre of refugees in Congo: a case of UN peacekeeping failure and international law",
+      "publisher": "Cambridge University Press / Journal of Modern African Studies"
+    },
+    {
+      "url": "https://www.rahs-open-lid.com/wp-content/uploads/2024/02/The-Great-African-War.-Congo-and-Regional-Geopolitics-1996%E2%80%932006-PDFDrive-.pdf",
+      "title": "The Great African War: Congo and Regional Geopolitics, 1996-2006",
+      "publisher": "Filip Reyntjens / Cambridge University Press"
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/10086/chapter/4",
+      "title": "Forced Migration and Mortality - The Evolution of Mortality Among Rwandan Refugees in Zaire Between 1994 and 1997",
+      "publisher": "National Academies Press"
+    },
+    {
+      "url": "https://www.unhcr.org/us/sites/en-us/files/legacy-pdf/3ebf9bb60.pdf",
+      "title": "The State of the World's Refugees 2000 - Chapter 10",
+      "publisher": "UNHCR"
+    },
+    {
+      "url": "https://www.hrw.org/report/1997/10/01/what-kabila-hiding/civilian-killings-and-impunity-congo",
+      "title": "What Kabila Is Hiding: Civilian Killings and Impunity in Congo",
+      "publisher": "Human Rights Watch / FIDH"
+    },
+    {
+      "url": "https://www.amnesty.org/ar/wp-content/uploads/2021/06/afr010051997en.pdf",
+      "title": "Great Lakes Region / Deadly Alliances report",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/usdos/1998/en/25334",
+      "title": "1997 Country Report on Human Rights Practices: Democratic Republic of the Congo",
+      "publisher": "U.S. Department of State via Refworld"
+    }
+  ]
+}

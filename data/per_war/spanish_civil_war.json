@@ -1,0 +1,363 @@
+{
+  "war_id": "spanish_civil_war",
+  "name": "Spanish Civil War",
+  "start_year": 1936,
+  "end_year": 1939,
+  "ongoing": false,
+  "regions": [
+    "Spain",
+    "Spanish Morocco",
+    "Western Mediterranean"
+  ],
+  "summary": "The Spanish Civil War was fought from the military uprising of July 1936 to Franco's victory in April 1939 between the Republican government and the Nationalist rebels. It became an internationalized civil war, with Nazi Germany and Fascist Italy backing Franco and the Soviet Union and International Brigades supporting the Republic. Total deaths are usually placed around 300,000-500,000 depending on whether only violent deaths or broader excess mortality are counted.",
+  "sides": [
+    {
+      "name": "Republicans / Spanish Republic",
+      "members": [
+        "Second Spanish Republic",
+        "Popular Front parties",
+        "Republican Army",
+        "socialist militias",
+        "communist militias",
+        "anarchist militias",
+        "Basque and Catalan Republican forces",
+        "International Brigades",
+        "Soviet advisers and technicians"
+      ],
+      "military_killed": {
+        "low": 80000,
+        "high": 110000,
+        "point": 110000,
+        "notes": "Common tabulations give about 110,000 Republican combatants killed, while Cambridge's lower combined military total implies a lower floor if totals are scaled down. Includes foreign volunteers serving with Republican forces; International Brigade deaths alone are commonly estimated around 3,600-6,500.",
+        "sources": [
+          "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+          "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+          "https://en.wikipedia.org/wiki/International_Brigades"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 38000,
+        "high": 74000,
+        "point": 54000,
+        "breakdown": [
+          {
+            "cause": "executions, prison massacres, anticlerical killings, rearguard terror",
+            "victims_group": "Nationalist sympathizers, rightists, clergy, landowners, prisoners, suspected counter-revolutionaries in Republican-held territory",
+            "low": 38000,
+            "high": 70000,
+            "notes": "Most modern estimates cluster around 50,000-56,000; Cambridge gives about 56,000 Republican executions, while Preston-related summaries give about 50,000. The 6,832 clergy/religious killed are treated as a subset.",
+            "sources": [
+              "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+              "https://english.elpais.com/elpais/2011/04/04/inenglish/1301894444_850210.html",
+              "https://en.wikipedia.org/wiki/Historiography_on_Spanish_Civil_War_repressions_(numbers)",
+              "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war"
+            ]
+          },
+          {
+            "cause": "bombing",
+            "victims_group": "civilians in Nationalist-held towns",
+            "low": 109,
+            "high": 4000,
+            "notes": "Republican air attacks were much less lethal than Nationalist bombing. Cabra alone killed 109 civilians; Michael Seidman's comparative estimate is about 4,000 civilians killed by the Republican air force.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Bombing_of_Cabra",
+              "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+            ]
+          }
+        ],
+        "notes": "Republican direct civilian killings were concentrated in the first months of the war amid state collapse and revolutionary violence; they declined as Republican authorities restored control.",
+        "sources": [
+          "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+          "https://english.elpais.com/elpais/2011/04/04/inenglish/1301894444_850210.html",
+          "https://en.wikipedia.org/wiki/Historiography_on_Spanish_Civil_War_repressions_(numbers)",
+          "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Nationalists / Francoist rebels",
+      "members": [
+        "Nationalist Army",
+        "Army of Africa",
+        "Spanish Foreign Legion",
+        "Moroccan Regulares",
+        "Falange",
+        "Carlists",
+        "monarchists",
+        "rebel Civil Guard and security forces",
+        "Corpo Truppe Volontarie",
+        "Aviazione Legionaria",
+        "Condor Legion",
+        "Portuguese volunteers"
+      ],
+      "military_killed": {
+        "low": 70000,
+        "high": 90000,
+        "point": 90000,
+        "notes": "Common tabulations give about 90,000 Nationalist combatants killed. Foreign losses included roughly 3,300 Italian CTV deaths and about 298 Condor Legion deaths in specialist tabulations.",
+        "sources": [
+          "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+          "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+          "https://academia-lab.com/encyclopedia/corpo-truppe-volontarie/",
+          "https://electronicsandbooks.com/edt/manual/Publischer/G/German%20Miltary%20WW2/Condor%20Legion-The%20Wehrmachts%20Training%20Ground%20c20090218%20%5B40%5D.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 85000,
+        "high": 165000,
+        "point": 112000,
+        "breakdown": [
+          {
+            "cause": "executions, massacres, reprisals, rearguard terror",
+            "victims_group": "Republicans, leftists, trade unionists, teachers, officials, suspected sympathizers, prisoners in Nationalist-held or newly conquered territory",
+            "low": 75000,
+            "high": 150000,
+            "notes": "USHMM gives 100,000 Nationalist executions during the war plus 50,000 after spring 1939. Preston-related summaries give about three times the Republican-zone killings, around 150,000, while some older estimates are lower.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war",
+              "https://english.elpais.com/elpais/2011/04/04/inenglish/1301894444_850210.html",
+              "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+              "https://en.wikipedia.org/wiki/Historiography_on_Spanish_Civil_War_repressions_(numbers)"
+            ]
+          },
+          {
+            "cause": "bombing, shelling, naval attack, attacks on refugee columns",
+            "victims_group": "civilians in Republican-held cities and refugees fleeing Nationalist advances",
+            "low": 10000,
+            "high": 15000,
+            "notes": "Most civilian deaths from military action occurred in Republican territory. Seidman estimates about 11,000 civilians killed by the Nationalist air force; broader summaries give 10,000-15,000 civilian deaths from military action overall.",
+            "sources": [
+              "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+              "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+            ]
+          },
+          {
+            "cause": "massacre and bombardment of fleeing civilians",
+            "victims_group": "M\u00e1laga-Almer\u00eda refugees during La Desband\u00e1",
+            "low": 3000,
+            "high": 5000,
+            "notes": "Often cited as 3,000-5,000 dead, but recent scholarship warns the exact death toll is uncertain. Treated as overlapping with the bombing/shelling/refugee-attack category, not additive to the total.",
+            "sources": [
+              "https://ladesbanda.es/la-desbanda-no-se-olvida-malaga-y-almeria/",
+              "https://en.wikipedia.org/wiki/M%C3%A1laga%E2%80%93Almer%C3%ADa_road_massacre",
+              "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2025/070225-la-desbanda-lugar-de-memoria.aspx"
+            ]
+          }
+        ],
+        "notes": "The point estimate uses about 100,000 wartime executions plus about 11,000-12,000 bombing/shelling deaths. The high end risks including some immediate postwar Francoist repression, which many sources mix with wartime counts.",
+        "sources": [
+          "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war",
+          "https://english.elpais.com/elpais/2011/04/04/inenglish/1301894444_850210.html",
+          "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+          "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege_blockade_disease_displacement_malnutrition",
+          "victims_group": "civilians in Republican-held areas, refugees, displaced persons",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Cambridge notes thousands of deaths beyond the normal rate from stress, disease, and malnutrition, and broader summaries discuss wide excess-mortality ranges. Attribution to Nationalist siege, blockade, bombing, displacement, general war collapse, or Republican administration cannot be cleanly separated.",
+          "sources": [
+            "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+            "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+          ]
+        },
+        {
+          "type": "camp_forced_labor_prison",
+          "victims_group": "Republican prisoners and suspected opponents in Francoist camps and prisons, mostly postwar",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Not rolled into the 1936-1939 total. USHMM says that by 1940 more than 500,000 individuals were rounded up and sent to about 60 concentration camps, with many used for forced labor or tried by military courts, but it does not provide a single death count for this category.",
+          "sources": [
+            "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 150000,
+    "military_high": 200000,
+    "civilian_low": 153000,
+    "civilian_high": 300000,
+    "grand_low": 303000,
+    "grand_high": 500000,
+    "notes": "Grand total range combines 150,000-200,000 military deaths, about 123,000-239,000 direct civilian deaths by both sides, and tens of thousands of excess civilian deaths from disease, malnutrition, displacement, siege, and wartime collapse. Cambridge's broad synthesis gives about 344,000 attributable deaths; USHMM gives about 500,000 total deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Badajoz massacre",
+      "year": 1936,
+      "perpetrator": "Nationalists / Francoist rebels",
+      "victims_group": "Republican defenders, civilians, suspected Republican sympathizers",
+      "low": 1341,
+      "high": 4000,
+      "notes": "Francisco Espinosa documented a partial list of 1,341 named victims; older and journalistic estimates reached about 4,000.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Badajoz_massacre",
+        "https://en-academic.com/dic.nsf/enwiki/11708352"
+      ]
+    },
+    {
+      "name": "Paracuellos massacres",
+      "year": 1936,
+      "perpetrator": "Republicans / Spanish Republic",
+      "victims_group": "Prisoners, civilians, soldiers, clergy, suspected Nationalist sympathizers",
+      "low": 2000,
+      "high": 3000,
+      "notes": "Most scholarly estimates cluster around 2,000-3,000 killed; Julius Ruiz's research is often summarized around 2,400 prisoners.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paracuellos_massacres",
+        "https://results2021.ref.ac.uk/impact/86b7b807-ae62-4f1b-bd3e-c9722573fa3f/pdf"
+      ]
+    },
+    {
+      "name": "Bombing of Guernica",
+      "year": 1937,
+      "perpetrator": "Nationalists / Condor Legion / Aviazione Legionaria",
+      "victims_group": "Basque civilians",
+      "low": 200,
+      "high": 300,
+      "notes": "Modern commonly accepted estimates are around 200-300 killed, far below wartime claims.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war",
+        "https://en.wikipedia.org/wiki/Bombing_of_Guernica"
+      ]
+    },
+    {
+      "name": "Bombing of Durango",
+      "year": 1937,
+      "perpetrator": "Nationalists / Aviazione Legionaria / Condor Legion",
+      "victims_group": "Durango civilians",
+      "low": 248,
+      "high": 300,
+      "notes": "Common estimates run from about 248-250 to more than 300 deaths depending on enumeration.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bombing_of_Durango",
+        "https://www.rtve.es/noticias/20170721/juez-investigara-a-aviadores-italianos-bombardearon-durango-1937-por-crimenes-guerra/1584840.shtml"
+      ]
+    },
+    {
+      "name": "Barcelona bombings",
+      "year": 1938,
+      "perpetrator": "Nationalists / Italian Aviazione Legionaria",
+      "victims_group": "Barcelona civilians",
+      "low": 880,
+      "high": 1300,
+      "notes": "March 1938 bombings killed about 880-1,300 civilians and wounded about 1,500-2,000.",
+      "sources": [
+        "https://es.wikipedia.org/wiki/Bombardeos_a%C3%A9reos_de_Barcelona_en_marzo_de_1938",
+        "https://en.wikipedia.org/wiki/Bombing_of_Barcelona"
+      ]
+    },
+    {
+      "name": "La Desband\u00e1 / M\u00e1laga-Almer\u00eda road massacre",
+      "year": 1937,
+      "perpetrator": "Nationalists / Francoist, Italian, and German forces",
+      "victims_group": "Civilians and refugees fleeing M\u00e1laga toward Almer\u00eda",
+      "low": 3000,
+      "high": 5000,
+      "notes": "Often cited as 3,000-5,000 dead; recent scholarship cautions that the precise toll is uncertain. The Spanish government declaration records 200,000-300,000 people fleeing under systematic attack.",
+      "sources": [
+        "https://ladesbanda.es/la-desbanda-no-se-olvida-malaga-y-almeria/",
+        "https://en.wikipedia.org/wiki/M%C3%A1laga%E2%80%93Almer%C3%ADa_road_massacre",
+        "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2025/070225-la-desbanda-lugar-de-memoria.aspx"
+      ]
+    },
+    {
+      "name": "Bombing of Cabra",
+      "year": 1938,
+      "perpetrator": "Republicans / Spanish Republican Air Force",
+      "victims_group": "Cabra civilians",
+      "low": 109,
+      "high": 109,
+      "notes": "Republican air raid killed 109 civilians and wounded more than 200.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bombing_of_Cabra"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty concerns the boundary between wartime deaths and postwar Francoist repression, and the attribution of excess deaths from disease, malnutrition, displacement, and siege. Nationalist repression is often given as about 100,000 wartime executions plus 40,000-50,000 postwar executions, while Republican repression is more often centered around 50,000. Military deaths by side are less secure than combined military deaths, and indirect deaths cannot be cleanly allocated to belligerents.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/spanish-civil-war",
+      "title": "Spanish Civil War",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/spanish-civil-war/costs-and-consequences/43819F04C9FE5A65AFDEF69E1EC97496",
+      "title": "The Spanish Civil War: Costs and Consequences",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://english.elpais.com/elpais/2011/04/04/inenglish/1301894444_850210.html",
+      "title": "Paul Preston publishes The Spanish Holocaust",
+      "publisher": "El Pa\u00eds English"
+    },
+    {
+      "url": "https://mptmd.gob.es/portal/memoria-democratica/mapa-de-fosas",
+      "title": "Mapa de fosas",
+      "publisher": "Ministerio de Pol\u00edtica Territorial y Memoria Democr\u00e1tica, Spain"
+    },
+    {
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/politica-territorial-memoria-democratica/paginas/2025/070225-la-desbanda-lugar-de-memoria.aspx",
+      "title": "Declarada Lugar de Memoria 'La Desband\u00e1'",
+      "publisher": "La Moncloa / Government of Spain"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Historiography_on_Spanish_Civil_War_repressions_(numbers)",
+      "title": "Historiography on Spanish Civil War repressions (numbers)",
+      "publisher": "Wikipedia, summarizing cited historians including Ruiz, Ledesma, Espinosa, Casanova, Payne, and Preston"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+      "title": "Spanish Civil War",
+      "publisher": "Wikipedia, with cited references to Beevor, Seidman, Payne, Ruiz, and others"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/International_Brigades",
+      "title": "International Brigades",
+      "publisher": "Wikipedia, with cited archival and secondary estimates"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Cabra",
+      "title": "Bombing of Cabra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Guernica",
+      "title": "Bombing of Guernica",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Durango",
+      "title": "Bombing of Durango",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Bombardeos_a%C3%A9reos_de_Barcelona_en_marzo_de_1938",
+      "title": "Bombardeos a\u00e9reos de Barcelona en marzo de 1938",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Paracuellos_massacres",
+      "title": "Paracuellos massacres",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Badajoz_massacre",
+      "title": "Badajoz massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://ladesbanda.es/la-desbanda-no-se-olvida-malaga-y-almeria/",
+      "title": "La Desband\u00e1 no se olvida",
+      "publisher": "Asociaci\u00f3n Socio Cultural y Club Senderista La Desband\u00e1"
+    }
+  ]
+}

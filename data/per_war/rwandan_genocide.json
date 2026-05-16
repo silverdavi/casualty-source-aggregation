@@ -1,0 +1,317 @@
+{
+  "war_id": "rwandan_genocide",
+  "name": "Rwandan Genocide and Rwandan Civil War",
+  "start_year": 1990,
+  "end_year": 1994,
+  "ongoing": false,
+  "regions": [
+    "Rwanda",
+    "Great Lakes region"
+  ],
+  "summary": "The Rwandan Civil War began in October 1990 when the Rwandan Patriotic Front invaded from Uganda and resumed after the April 1994 assassination of President Juv\u00e9nal Habyarimana. From April to July 1994, Hutu Power extremists in the state, army, militias and local administration organized the genocide against Tutsi and killed moderate Hutu opponents. The RPF defeated the interim government and ended the genocide, but RPF/RPA forces also committed large-scale civilian killings during and immediately after their advance.",
+  "sides": [
+    {
+      "name": "Hutu Power / Rwandan government and interim-government forces",
+      "members": [
+        "Rwandan interim government",
+        "Forces Arm\u00e9es Rwandaises (FAR)",
+        "Presidential Guard",
+        "Gendarmerie",
+        "Interahamwe",
+        "Impuzamugambi",
+        "MRND extremist networks",
+        "CDR extremist networks",
+        "local administrative authorities",
+        "RTLM and extremist media networks"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable FAR/militia-only military death total was found. A commonly cited all-side civil-war figure is 7,500 combatants killed, but it is not split by side. HRW reported 4,500 deaths in the 1990-1993 war, but that number explicitly includes both combatants and noncombatants.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rwandan_Civil_War",
+          "https://www.refworld.org/reference/countryrep/hrw/1994/en/21896"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 500000,
+        "high": 1074017,
+        "point": 800000,
+        "breakdown": [
+          {
+            "cause": "genocide, massacre, execution, roadblocks, house-to-house killings, militia and state-organized attacks",
+            "victims_group": "Tutsi civilians and moderate Hutu opponents",
+            "low": 500000,
+            "high": 1074017,
+            "notes": "Low reflects HRW/FIDH's 'more than half a million' genocide victims. Point reflects the conventional UN/international estimate of about 800,000. High reflects Rwandan official/survivor-fund figure of 1,074,017; a separate Rwandan Ministry census announced 937,000 Tutsi and politically moderate Hutu victims.",
+            "sources": [
+              "https://www.hrw.org/report/1999/03/01/leave-none-tell-story/genocide-rwanda",
+              "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+              "https://www.thenewhumanitarian.org/report/49384/rwanda-census-finds-937000-died-genocide",
+              "https://survivors-fund.org.uk/learn/statistics/"
+            ]
+          }
+        ],
+        "notes": "This category is the dominant civilian-death category. It combines genocide victims killed directly by state forces, militias, local officials and mobilized civilians acting under Hutu Power direction or incitement.",
+        "sources": [
+          "https://www.hrw.org/report/1999/03/01/leave-none-tell-story/genocide-rwanda",
+          "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+          "https://www.thenewhumanitarian.org/report/49384/rwanda-census-finds-937000-died-genocide",
+          "https://survivors-fund.org.uk/learn/statistics/",
+          "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf",
+          "https://francegenocidetutsi.org/fgtshowdoc.php?num=25769"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Hutu refugees and other civilians who fled with or under pressure from defeated former government forces and militias",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN says former government officials, soldiers and militia fled to Zaire with 1.4 million civilians and that thousands died from water-borne disease in the camps. These deaths are not assigned numerically here because attribution is mixed among defeated genocidaire leadership, fear of RPF reprisals, humanitarian collapse, disease and international relief failure.",
+          "sources": [
+            "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+            "https://shs.cairn.info/article/E_POPU_504_0401?lang=en"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rwandan Patriotic Front / Rwandan Patriotic Army (RPF/RPA)",
+      "members": [
+        "Rwandan Patriotic Front",
+        "Rwandan Patriotic Army"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable RPF/RPA-only killed-in-action total was found. The often-cited 7,500 combatant death figure is for all sides combined and is not split between RPF/RPA and FAR/militia forces.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rwandan_Civil_War",
+          "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 25000,
+        "high": 45000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "summary execution, reprisal killing, massacre, combat-zone civilian killing, killings of suspected government supporters",
+            "victims_group": "mostly Hutu civilians and suspected government supporters; some victims of unknown affiliation",
+            "low": 25000,
+            "high": 45000,
+            "notes": "Gersony's UNHCR-commissioned estimate for April-August 1994 was 25,000-45,000. HRW/Des Forges' partial and tentative minimum was 25,000-30,000. The high end extends slightly beyond the July 1994 end of the civil war.",
+            "sources": [
+              "https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm",
+              "https://www.hrw.org/reports/1999/rwanda/Geno15-8-03.htm",
+              "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf"
+            ]
+          }
+        ],
+        "notes": "RPF/RPA killings were much smaller than the genocide but still large-scale. HRW states that revenge killings and combat deaths alone could not account for the thousands killed by the RPF/RPA between April and late July 1994.",
+        "sources": [
+          "https://www.hrw.org/reports/1999/rwanda/Geno15-8-03.htm",
+          "https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm",
+          "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "civilians moved, screened or displaced during RPF/RPA consolidation of control",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW describes RPF/RPA movement of civilians into camps and clearing operations, but no separable indirect-death estimate for these actions inside Rwanda in 1990-1994 was found. Later violence against Hutu refugees in DRC/Zaire falls outside this narrow temporal and geographic scope.",
+          "sources": [
+            "https://www.hrw.org/reports/1999/rwanda/Geno15-8-03.htm",
+            "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "International forces (UNAMIR and France-led Operation Turquoise)",
+      "members": [
+        "United Nations Assistance Mission for Rwanda (UNAMIR)",
+        "France-led Operation Turquoise"
+      ],
+      "military_killed": {
+        "low": 15,
+        "high": 15,
+        "point": 15,
+        "notes": "UNAMIR was not a belligerent in the main civil war, but 15 UN soldiers were killed in Rwanda between April and July 1994, including 10 Belgians, 3 Ghanaians, 1 Uruguayan and Senegalese peacekeeper Mbaye Diagne.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rwandan_Civil_War",
+          "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "No credible numeric estimate of civilians directly killed by UNAMIR or French Operation Turquoise forces in Rwanda in 1994 was found in the sources reviewed. Operation Turquoise remains controversial for alleged facilitation of escape by genocidaires, but that is not a direct-killing toll.",
+        "sources": [
+          "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 7515,
+    "military_high": 7515,
+    "civilian_low": 525000,
+    "civilian_high": 1119017,
+    "grand_low": 532515,
+    "grand_high": 1126532,
+    "notes": "Military total is 7,500 all-side combatants plus 15 UN peacekeepers. Civilian low adds 500,000 Hutu Power direct genocide victims and 25,000 RPF/RPA direct civilian victims. Civilian high adds 1,074,017 Hutu Power/direct genocide victims and 45,000 RPF/RPA direct civilian victims. Indirect refugee-camp and disease deaths are not added because they are not cleanly attributable and often fall outside the narrow Rwanda 1990-1994 frame."
+  },
+  "key_atrocities": [
+    {
+      "name": "Nationwide genocide against Tutsi and moderate Hutu",
+      "year": 1994,
+      "perpetrator": "Hutu Power / Rwandan government and interim-government forces",
+      "victims_group": "Tutsi civilians and moderate Hutu opponents",
+      "low": 500000,
+      "high": 1074017,
+      "notes": "HRW/FIDH says more than half a million were slaughtered in about 100 days; the conventional UN/international estimate is about 800,000; Rwandan official/survivor estimates exceed one million.",
+      "sources": [
+        "https://www.hrw.org/report/1999/03/01/leave-none-tell-story/genocide-rwanda",
+        "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+        "https://www.thenewhumanitarian.org/report/49384/rwanda-census-finds-937000-died-genocide",
+        "https://survivors-fund.org.uk/learn/statistics/"
+      ]
+    },
+    {
+      "name": "Murambi Technical School massacre",
+      "year": 1994,
+      "perpetrator": "Hutu Power / local authorities, militia and government forces",
+      "victims_group": "Tutsi civilians",
+      "low": 5000,
+      "high": 70000,
+      "notes": "HRW reports a 1995 Rwandan government commission figure of about 20,000, later claims up to 70,000, and approximately 5,000 bodies exhumed for the 1996 commemoration. The broad range reflects site-specific counting uncertainty.",
+      "sources": [
+        "https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm",
+        "https://www.memorialdelashoah.org/upload/minisites/rwanda/fiches/lieux-du-quotidien-fiche113.html"
+      ]
+    },
+    {
+      "name": "Nyarubuye massacre",
+      "year": 1994,
+      "perpetrator": "Hutu Power / local authorities, militia and government forces",
+      "victims_group": "Tutsi civilians",
+      "low": 10000,
+      "high": 20000,
+      "notes": "Common estimates cite about 20,000 killed at Nyarubuye; HRW's archive records contemporaneous reporting of 10,000 killed at the parish.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nyarubuye_massacre",
+        "https://www.hrw.org/news/2024/04/02/human-rights-watch-rwanda-archives"
+      ]
+    },
+    {
+      "name": "Assassination of Prime Minister Agathe Uwilingiyimana and Belgian peacekeepers",
+      "year": 1994,
+      "perpetrator": "Rwandan government soldiers / Presidential Guard elements",
+      "victims_group": "moderate Hutu political leadership and UN peacekeepers",
+      "low": 11,
+      "high": 11,
+      "notes": "The UN records the killing of Prime Minister Agathe Uwilingiyimana and 10 Belgian peacekeepers on 7 April 1994; other moderate Hutu leaders were also assassinated.",
+      "sources": [
+        "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml"
+      ]
+    },
+    {
+      "name": "RPF/RPA civilian killings during advance and consolidation",
+      "year": 1994,
+      "perpetrator": "Rwandan Patriotic Front / Rwandan Patriotic Army",
+      "victims_group": "mostly Hutu civilians and suspected government supporters",
+      "low": 25000,
+      "high": 45000,
+      "notes": "Gersony's estimate for April-August 1994 was 25,000-45,000; HRW/Des Forges' partial minimum was 25,000-30,000.",
+      "sources": [
+        "https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm",
+        "https://www.hrw.org/reports/1999/rwanda/Geno15-8-03.htm",
+        "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainties are the pre-genocide Tutsi population, number of survivors, whether official victim counts include only April-July 1994 or the broader October 1990-December 1994 period, how many moderate Hutu were killed by Hutu extremists, and how many Hutu civilians were killed by the RPF/RPA. Combatant deaths are not reliably split by side. Indirect deaths from displacement, disease and refugee camps are excluded from the main roll-up because they are not cleanly attributable and often occurred outside Rwanda after July 1994.",
+  "sources": [
+    {
+      "url": "https://www.hrw.org/report/1999/03/01/leave-none-tell-story/genocide-rwanda",
+      "title": "Leave None to Tell the Story: Genocide in Rwanda",
+      "publisher": "Human Rights Watch / FIDH"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1999/rwanda/Geno15-8-03.htm",
+      "title": "The Rwandan Patriotic Front",
+      "publisher": "Human Rights Watch / FIDH"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm",
+      "title": "Numbers",
+      "publisher": "Human Rights Watch / FIDH"
+    },
+    {
+      "url": "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+      "title": "Outreach Programme on the 1994 Genocide against the Tutsi in Rwanda and the United Nations: Historical Background",
+      "publisher": "United Nations"
+    },
+    {
+      "url": "https://shs.cairn.info/article/E_POPU_504_0401?lang=en",
+      "title": "The Death Toll of the Rwandan Genocide: A Detailed Analysis for Gikongoro Province",
+      "publisher": "Population / Cairn.info"
+    },
+    {
+      "url": "https://francegenocidetutsi.org/fgtshowdoc.php?num=25769",
+      "title": "How Many Died in Rwanda?",
+      "publisher": "Journal of Genocide Research / hosted by France G\u00e9nocide Tutsi"
+    },
+    {
+      "url": "https://eprints.lse.ac.uk/103205/1/McDoom_Contested_Counting_accepted_version.pdf",
+      "title": "Contested Counting: Toward a Rigorous Estimate of the Death Toll in the Rwandan Genocide",
+      "publisher": "Journal of Genocide Research / LSE ePrints"
+    },
+    {
+      "url": "https://www.thenewhumanitarian.org/report/49384/rwanda-census-finds-937000-died-genocide",
+      "title": "Rwanda: Census finds 937,000 died in genocide",
+      "publisher": "The New Humanitarian / IRIN"
+    },
+    {
+      "url": "https://www.refworld.org/reference/countryrep/hrw/1994/en/21896",
+      "title": "Arming Rwanda: The Arms Trade and Human Rights Abuses in the Rwandan War",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://survivors-fund.org.uk/learn/statistics/",
+      "title": "Statistics",
+      "publisher": "Survivors Fund"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/04/02/human-rights-watch-rwanda-archives",
+      "title": "Human Rights Watch Rwanda Archives",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rwandan_Civil_War",
+      "title": "Rwandan Civil War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nyarubuye_massacre",
+      "title": "Nyarubuye massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.memorialdelashoah.org/upload/minisites/rwanda/fiches/lieux-du-quotidien-fiche113.html",
+      "title": "Rwanda: Les lieux de massacre",
+      "publisher": "M\u00e9morial de la Shoah"
+    }
+  ]
+}

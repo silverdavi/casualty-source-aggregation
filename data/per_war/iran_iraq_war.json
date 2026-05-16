@@ -1,0 +1,308 @@
+{
+  "war_id": "iran_iraq_war",
+  "name": "Iran-Iraq War",
+  "start_year": 1980,
+  "end_year": 1988,
+  "ongoing": false,
+  "regions": [
+    "Iran",
+    "Iraq",
+    "Persian Gulf",
+    "Iran-Iraq border",
+    "Iraqi Kurdistan"
+  ],
+  "summary": "The Iran-Iraq War was an eight-year interstate war begun by Iraq's invasion of Iran in September 1980 and ended by a UN-brokered ceasefire in August 1988. It combined trench warfare, human-wave assaults, missile and air attacks on cities, tanker warfare in the Persian Gulf, and extensive Iraqi chemical-weapons use. The most notorious atrocities were Iraq's chemical attacks on Iranian forces and civilians and the Anfal/Halabja campaign against Iraqi Kurds.",
+  "sides": [
+    {
+      "name": "Iran / Islamic Republic of Iran",
+      "members": [
+        "Islamic Republic of Iran",
+        "Iranian regular armed forces",
+        "Islamic Revolutionary Guard Corps",
+        "Basij",
+        "Iranian police and associated wartime formations"
+      ],
+      "military_killed": {
+        "low": 188015,
+        "high": 217489,
+        "point": 190000,
+        "notes": "Low and point are based on Iranian official/Martyrs Foundation-type tabulations reported by Iran Times: 188,015 combat dead in the 2000 figure and about 190,000 combat personnel in a later tabulation. The high uses a systematic-review summary range of 188,015 to 217,489 Iranians killed; that upper bound is not perfectly limited to combatants and should be treated as a soft high.",
+        "sources": [
+          "https://iran-times.com/new-statistics-on-dead-in-iran-iraq-war/",
+          "https://www.researchgate.net/publication/256188005_Mortality_and_Injuries_among_Iranians_in_Iraq-Iran_War_A_Systematic_Review"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 31,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "missile attack",
+            "victims_group": "Iraqi civilians in Baghdad",
+            "low": 10,
+            "high": null,
+            "notes": "Documented minimum from reporting that at least 10 people were killed in an Iranian missile attack on a Baghdad commercial district; not a war-wide total.",
+            "sources": [
+              "https://www.latimes.com/archives/la-xpm-1988-02-29-mn-285-story.html"
+            ]
+          },
+          {
+            "cause": "artillery shelling",
+            "victims_group": "Iraqi civilians in border towns",
+            "low": 21,
+            "high": null,
+            "notes": "Documented minimum from reporting that Iranian artillery attacks killed 21 people in Iraqi border towns; not a war-wide total.",
+            "sources": [
+              "https://www.latimes.com/archives/la-xpm-1988-03-14-mn-734-story.html"
+            ]
+          }
+        ],
+        "notes": "Iranian missile and artillery attacks killed Iraqi civilians during the War of the Cities, but I found no reliable war-wide Iraqi civilian total attributable specifically to Iranian fire. Later Iraqi mortality work usually cannot assign responsible party.",
+        "sources": [
+          "https://www.latimes.com/archives/la-xpm-1988-02-29-mn-285-story.html",
+          "https://www.latimes.com/archives/la-xpm-1988-03-14-mn-734-story.html",
+          "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164709"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Iraq / Ba'athist Iraq",
+      "members": [
+        "Republic of Iraq",
+        "Iraqi Army",
+        "Iraqi Air Force",
+        "Republican Guard",
+        "Iraqi security and intelligence services",
+        "Ba'ath Party Northern Bureau"
+      ],
+      "military_killed": {
+        "low": 105000,
+        "high": 200000,
+        "point": 150000,
+        "notes": "The Iraqi military/civilian split is uncertain. PLOS cites 105,000 Iraqi deaths as a conservative estimate and Rob Johnson's 200,000 Iraqi deaths; a common military-history midpoint is about 150,000 Iraqi dead. PLOS's own estimate of 174,289 adult Iraqi direct war-injury deaths includes adult civilians and therefore is not used directly as military killed.",
+        "sources": [
+          "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164709",
+          "https://www.historyofwar.org/articles/wars_iraniraq.html",
+          "https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 16780,
+        "high": 22000,
+        "point": 20000,
+        "breakdown": [
+          {
+            "cause": "bombing, shelling, and missile attacks",
+            "victims_group": "Iranian civilians",
+            "low": 11000,
+            "high": 16780,
+            "notes": "Iranian official civilian-dead figures rose from about 11,000 in 1988 to 16,780/17,000 in the 2000 tabulation; includes border combat zones and urban air/missile attacks.",
+            "sources": [
+              "https://iran-times.com/new-statistics-on-dead-in-iran-iraq-war/"
+            ]
+          },
+          {
+            "cause": "ballistic missile attacks",
+            "victims_group": "Iranian urban civilians",
+            "low": 2312,
+            "high": 2312,
+            "notes": "A study abstract reports 533 Iraqi ballistic missiles fired at Iranian territory, causing 2,312 civilian deaths and 11,625 injuries. This is a subset of the broader Iranian civilian-dead figure, not additive to it.",
+            "sources": [
+              "https://www.sciencedirect.com/science/article/pii/S100812751060017X"
+            ]
+          },
+          {
+            "cause": "chemical attack",
+            "victims_group": "Kurdish civilians in Halabja and surrounding areas",
+            "low": 3200,
+            "high": 5000,
+            "notes": "Halabja is often counted within broader Kurdish/Anfal-era casualty discussions; this direct-death entry should not be added again if the Anfal total is used inclusively.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Halabja_massacre",
+              "https://www.lemonde.fr/en/international/article/2026/03/17/in-iraqi-kurdistan-the-trauma-of-the-halabja-chemical-massacre-resurfaces-as-war-returns-to-iran_6751509_4.html"
+            ]
+          },
+          {
+            "cause": "chemical attack",
+            "victims_group": "Iranian Kurdish civilians in Sardasht",
+            "low": 110,
+            "high": 130,
+            "notes": "Mustard-gas bombing of Sardasht killed roughly 110 to 130 people and exposed or injured thousands; included in broader Iranian civilian/chemical casualty accounting where possible.",
+            "sources": [
+              "https://www.tehranpeacemuseum.org/index.php?Itemid=489&catid=144&id=1837%3Asardasht-news-2018-en&lang=en&option=com_content&view=article",
+              "https://kgna.krd/15916/"
+            ]
+          }
+        ],
+        "notes": "The low/high here are conservative for direct non-Anfal civilian deaths. The high adds the Iranian official civilian total to the high Halabja direct-death estimate, while recognizing that Halabja and other Kurdish killings overlap conceptually with the Anfal/genocide bucket below.",
+        "sources": [
+          "https://iran-times.com/new-statistics-on-dead-in-iran-iraq-war/",
+          "https://www.sciencedirect.com/science/article/pii/S100812751060017X",
+          "https://en.wikipedia.org/wiki/Halabja_massacre",
+          "https://www.lemonde.fr/en/international/article/2026/03/17/in-iraqi-kurdistan-the-trauma-of-the-halabja-chemical-massacre-resurfaces-as-war-returns-to-iran_6751509_4.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing_genocide",
+          "victims_group": "Iraqi Kurds during the Anfal campaign",
+          "low": 50000,
+          "high": 100000,
+          "point": null,
+          "notes": "Human Rights Watch estimates at least 50,000 and possibly 100,000 Kurds deliberately murdered in Anfal. Iraqi tribunal/prosecutorial usage often cited about 180,000-182,000, but HRW's lower range is used for the main rollup.",
+          "sources": [
+            "https://www.hrw.org/news/2007/06/22/q-anfal-trial",
+            "https://www.hrw.org/report/2006/08/14/genocide-iraq-anfal-campaign-against-kurds/report-summary",
+            "https://www.ictj.org/sites/default/files/ICTJ-Iraq-Tribunal-Anfal-2009-English.pdf"
+          ]
+        },
+        {
+          "type": "chemical_weapons",
+          "victims_group": "Iranian military personnel and civilians exposed to Iraqi chemical weapons",
+          "low": 20000,
+          "high": 20000,
+          "point": 20000,
+          "notes": "OPCW material estimates more than 100,000 Iranian chemical-weapons casualties, about 20,000 of whom died immediately or in following days/months. These deaths overlap heavily with Iranian military and civilian death totals and are not added separately to the grand total.",
+          "sources": [
+            "https://www.opcw.org/media-centre/news/2008/11/ninth-international-course-medical-defence-against-chemical-weapons"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 293015,
+    "military_high": 417489,
+    "civilian_low": 66811,
+    "civilian_high": 117000,
+    "grand_low": 367000,
+    "grand_high": 680000,
+    "notes": "Military range adds Iranian 188,015-217,489 and Iraqi 105,000-200,000. Civilian/policy-driven range adds Iranian civilians killed by Iraq, Anfal/Kurdish deaths, and a documented minimum of Iraqi civilians killed by Iranian fire, while avoiding double-counting Halabja and chemical deaths where they overlap. The grand range uses a conservative published lower estimate of about 367,000 deaths and a modern Razoux-style upper estimate of about 680,000 dead and missing; the component buckets do not capture every unattributed civilian, missing, delayed, or indirect death."
+  },
+  "key_atrocities": [
+    {
+      "name": "Anfal campaign",
+      "year": 1988,
+      "perpetrator": "Iraq / Ba'athist Iraq",
+      "victims_group": "Iraqi Kurds",
+      "low": 50000,
+      "high": 100000,
+      "notes": "HRW's main estimate; Iraqi tribunal/prosecutorial figures often used about 180,000-182,000.",
+      "sources": [
+        "https://www.hrw.org/news/2007/06/22/q-anfal-trial",
+        "https://www.hrw.org/report/2006/08/14/genocide-iraq-anfal-campaign-against-kurds/report-summary",
+        "https://www.ictj.org/sites/default/files/ICTJ-Iraq-Tribunal-Anfal-2009-English.pdf"
+      ]
+    },
+    {
+      "name": "Halabja chemical attack",
+      "year": 1988,
+      "perpetrator": "Iraq / Ba'athist Iraq",
+      "victims_group": "Kurdish civilians",
+      "low": 3200,
+      "high": 5000,
+      "notes": "Large-scale chemical attack using mustard gas and nerve agents; injured roughly 7,000-10,000 more.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Halabja_massacre",
+        "https://www.lemonde.fr/en/international/article/2026/03/17/in-iraqi-kurdistan-the-trauma-of-the-halabja-chemical-massacre-resurfaces-as-war-returns-to-iran_6751509_4.html"
+      ]
+    },
+    {
+      "name": "Sardasht chemical attack",
+      "year": 1987,
+      "perpetrator": "Iraq / Ba'athist Iraq",
+      "victims_group": "Iranian Kurdish civilians",
+      "low": 110,
+      "high": 130,
+      "notes": "Mustard-gas bombing of an Iranian civilian town; thousands exposed or injured.",
+      "sources": [
+        "https://www.tehranpeacemuseum.org/index.php?Itemid=489&catid=144&id=1837%3Asardasht-news-2018-en&lang=en&option=com_content&view=article",
+        "https://kgna.krd/15916/"
+      ]
+    },
+    {
+      "name": "War of the Cities",
+      "year": 1988,
+      "perpetrator": "Iran and Iraq",
+      "victims_group": "Iranian and Iraqi urban civilians",
+      "low": 2312,
+      "high": null,
+      "notes": "At least 2,312 Iranian civilians were killed by Iraqi ballistic missiles alone; thousands of civilians on both sides died in the wider air, missile, and artillery attacks, but no reliable combined war-wide figure by perpetrator was found.",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S100812751060017X",
+        "https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War",
+        "https://en.wikipedia.org/wiki/War_of_the_cities"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The greatest uncertainties are the Iraqi military/civilian split, the number of Iraqi civilians killed by Iranian attacks, overlap between chemical-weapons deaths and combat deaths, and whether to use HRW's 50,000-100,000 Anfal range or the Iraqi tribunal/political figure of about 180,000-182,000 Kurdish victims. The grand total therefore relies on a broad published range rather than a simple sum of all subcategories.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Iran-Iraq-War",
+      "title": "Iran-Iraq War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://iran-times.com/new-statistics-on-dead-in-iran-iraq-war/",
+      "title": "New statistics on dead in Iran-Iraq war",
+      "publisher": "Iran Times"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164709",
+      "title": "A Novel Method for Verifying War Mortality while Estimating Iraqi Deaths for the Iran-Iraq War through Operation Desert Storm",
+      "publisher": "PLOS One"
+    },
+    {
+      "url": "https://www.hrw.org/news/2007/06/22/q-anfal-trial",
+      "title": "Q & A: The Anfal Trial",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/report/2006/08/14/genocide-iraq-anfal-campaign-against-kurds/report-summary",
+      "title": "Genocide in Iraq - The Anfal Campaign Against the Kurds: Report Summary",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.ictj.org/sites/default/files/ICTJ-Iraq-Tribunal-Anfal-2009-English.pdf",
+      "title": "The Anfal Trial and the Iraqi High Tribunal",
+      "publisher": "International Center for Transitional Justice"
+    },
+    {
+      "url": "https://www.opcw.org/media-centre/news/2008/11/ninth-international-course-medical-defence-against-chemical-weapons",
+      "title": "Ninth International Course on Medical Defence against Chemical Weapons",
+      "publisher": "Organisation for the Prohibition of Chemical Weapons"
+    },
+    {
+      "url": "https://unscr.com/en/resolutions/612/",
+      "title": "UN Security Council Resolution 612 (1988)",
+      "publisher": "United Nations Security Council / UNSCR"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S100812751060017X",
+      "title": "Civilian casualties of Iranian cities by ballistic missile attacks during the Iraq-Iran war (1980-1988)",
+      "publisher": "ScienceDirect"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/international/article/2026/03/17/in-iraqi-kurdistan-the-trauma-of-the-halabja-chemical-massacre-resurfaces-as-war-returns-to-iran_6751509_4.html",
+      "title": "In Iraqi Kurdistan, the trauma of the Halabja chemical massacre resurfaces as war returns to Iran",
+      "publisher": "Le Monde"
+    },
+    {
+      "url": "https://www.tehranpeacemuseum.org/index.php?Itemid=489&catid=144&id=1837%3Asardasht-news-2018-en&lang=en&option=com_content&view=article",
+      "title": "31st Anniversary of Chemical Attack on Sardasht",
+      "publisher": "Tehran Peace Museum"
+    },
+    {
+      "url": "https://kgna.krd/15916/",
+      "title": "Chemical Attack on Sardasht 1987",
+      "publisher": "Kurdistan Genocide News Agency"
+    },
+    {
+      "url": "https://www.historyofwar.org/articles/wars_iraniraq.html",
+      "title": "Iran-Iraq War 1980-1988",
+      "publisher": "HistoryOfWar.org"
+    }
+  ]
+}

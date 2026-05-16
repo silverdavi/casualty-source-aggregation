@@ -1,0 +1,355 @@
+{
+  "war_id": "kosovo_war",
+  "name": "Kosovo War",
+  "start_year": 1998,
+  "end_year": 1999,
+  "ongoing": false,
+  "regions": [
+    "Kosovo",
+    "Serbia",
+    "Montenegro",
+    "Albania border region",
+    "North Macedonia border region"
+  ],
+  "summary": "The Kosovo War was fought mainly from early 1998 to June 1999 between Yugoslav/Serbian state forces and the Kosovo Liberation Army, with NATO entering as an air-war belligerent from March to June 1999. The best name-by-name casualty source is the Humanitarian Law Center / HLC Kosovo Kosovo Memory Book. For the strict 1998-to-mid-June-1999 war window, HLC data imply about 12,278 killed or missing, while the broader 1998-2000 conflict-and-aftermath boundary is about 13,535 to 13,625 killed or missing.",
+  "sides": [
+    {
+      "name": "Federal Republic of Yugoslavia / Serbia",
+      "members": [
+        "Yugoslav Army (VJ)",
+        "Serbian Ministry of Interior Police (MUP)",
+        "Serbian police units",
+        "Serbian paramilitary formations"
+      ],
+      "military_killed": {
+        "low": 1040,
+        "high": 1084,
+        "point": 1040,
+        "notes": "HLC records 175 VJ/MUP victims in 1998 and 865 in 1 Jan-14 Jun 1999, for 1,040 during the strict war window; the full 1998-2000 KMB armed-group total for VJ/MUP is 1,084.",
+        "sources": [
+          "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 6901,
+        "high": 8226,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution, massacre, shelling, forced-expulsion killings",
+            "victims_group": "Kosovo Albanian civilians",
+            "low": 6901,
+            "high": 8226,
+            "notes": "Low is HLC/HLC Kosovo's direct-perpetrator figure for Albanian civilians not participating in hostilities killed by Serbian forces from 20 Mar-14 Jun 1999. High is an upper-bound accounting estimate: HLC's 8,446 Albanian civilian victims for 1998-14 Jun 1999 minus 220 Albanian civilians killed by NATO bombing; it is not a clean perpetrator-coded figure.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/",
+              "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+            ]
+          }
+        ],
+        "notes": "The higher figure is a maximum possible attribution among non-NATO Albanian civilian war-period victims, not a confirmed point estimate. Many missing-person and early-1998 cases lack public perpetrator coding in the summary tables.",
+        "sources": [
+          "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/",
+          "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf",
+          "https://www.hrw.org/legacy/reports/2001/kosovo/undword-03.htm"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Kosovo Albanian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Serbian/Yugoslav forces expelled more than 850,000 ethnic Albanians and displaced several hundred thousand more, but reliable sources do not provide a separable indirect-death count distinct from direct killings and disappearances.",
+          "sources": [
+            "https://www.hrw.org/legacy/reports/2001/kosovo/undword-03.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kosovo Liberation Army / KLA / U\u00c7K",
+      "members": [
+        "Kosovo Liberation Army (KLA/U\u00c7K)",
+        "Armed Forces of the Republic of Kosova (FARK, where counted with KLA/FARK by HLC)"
+      ],
+      "military_killed": {
+        "low": 2057,
+        "high": 2131,
+        "point": 2057,
+        "notes": "HLC records 703 KLA victims in 1998 and 1,354 in 1 Jan-14 Jun 1999, for 2,057 during the strict war window; the full 1998-2000 HLC/KMB total for KLA/FARK members is 2,131.",
+        "sources": [
+          "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 464,
+        "high": 642,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "abduction, detention killing, execution, intimidation killings",
+            "victims_group": "Serbian civilians",
+            "low": 328,
+            "high": null,
+            "notes": "HLC/HLC Kosovo attributes 328 Serbian civilian killings to the KLA for 20 Mar-14 Jun 1999. A full-war total is not cleanly available in public summary tables.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/"
+            ]
+          },
+          {
+            "cause": "abduction, detention killing, execution, intimidation killings",
+            "victims_group": "Roma and other non-Albanian civilians",
+            "low": 136,
+            "high": null,
+            "notes": "HLC/HLC Kosovo attributes 136 Roma/other non-Albanian civilian killings to the KLA for 20 Mar-14 Jun 1999.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/"
+            ]
+          },
+          {
+            "cause": "abduction and killing",
+            "victims_group": "Serbian civilians in the Orahovac/Rahovec area",
+            "low": 47,
+            "high": 47,
+            "notes": "Reported commemoration and documentation of 47 Serbian civilians from the Orahovac area killed by the KLA in July 1998; this overlaps with broader 1998 non-Albanian victim counts and is included as an event, not simply added to all totals.",
+            "sources": [
+              "https://balkaninsight.com/2012/07/19/belgrade-remembers-victims-from-orahovac/"
+            ]
+          }
+        ],
+        "notes": "Low is the firm HLC-attributed figure for 20 Mar-14 Jun 1999. High adds all HLC-recorded 1998 non-Albanian civilian victims (132 Serbs and 46 Roma/others) as a cautious upper bound, but not every 1998 case is publicly perpetrator-coded.",
+        "sources": [
+          "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/",
+          "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf",
+          "https://www.hrw.org/reports/1999/kosov2/",
+          "https://www.hrw.org/report/2001/10/26/under-orders/war-crimes-kosovo"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Serbs, Roma, and Albanians accused of collaboration or political opposition",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "KLA-linked abductions, detention, intimidation and post-withdrawal violence contributed to deaths and disappearances, but available sources do not provide a clean indirect-deaths total separate from direct killings and missing-person counts.",
+          "sources": [
+            "https://www.hrw.org/reports/1999/kosov2/",
+            "https://www.amnesty.org/en/latest/press-release/2009/06/serbiakosovo-no-end-impunity-10-years-after-end-war-20090608/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NATO",
+      "members": [
+        "North Atlantic Treaty Organization member states participating in Operation Allied Force",
+        "Kosovo Force (KFOR) entry phase"
+      ],
+      "military_killed": {
+        "low": 2,
+        "high": 2,
+        "point": 2,
+        "notes": "Two U.S. Apache helicopter crewmen were killed in a training crash in Albania during the NATO air campaign; these were service deaths, not combat deaths from Yugoslav fire.",
+        "sources": [
+          "https://www.latimes.com/archives/la-xpm-1999-may-05-mn-34157-story.html",
+          "https://www.deseret.com/1999/5/5/19443671/apache-crash-in-albania-kills-2-americans-br-casualties-are-first-for-nato-convoy-bombed/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 450,
+        "high": 527,
+        "point": 500,
+        "breakdown": [
+          {
+            "cause": "bombing",
+            "victims_group": "Albanian civilians",
+            "low": 217,
+            "high": 220,
+            "notes": "HLC's updated public release lists 217 Albanian civilian victims of NATO bombing; its 2015 methodology gives 220 Albanian civilians.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/humanitarian-law-center-remembers-755-victims-of-the-nato-bombing/",
+              "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+            ]
+          },
+          {
+            "cause": "bombing",
+            "victims_group": "Serbian and Montenegrin civilians",
+            "low": 205,
+            "high": 205,
+            "notes": "HLC lists 205 Serbian/Montenegrin or Serbian civilian victims of NATO bombing.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/humanitarian-law-center-remembers-755-victims-of-the-nato-bombing/",
+              "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+            ]
+          },
+          {
+            "cause": "bombing",
+            "victims_group": "Roma and other civilians",
+            "low": 28,
+            "high": 28,
+            "notes": "HLC's 2015 methodology gives 28 Roma/other civilian victims; later public release separates 14 Roma and 14 other nationalities.",
+            "sources": [
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/humanitarian-law-center-remembers-755-victims-of-the-nato-bombing/",
+              "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf"
+            ]
+          }
+        ],
+        "notes": "HLC/HLC Kosovo's name-by-name count is 450-453 civilians; HRW verified 488-527 civilian deaths in 90 NATO bombing incidents and summarized the toll as around 500.",
+        "sources": [
+          "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/humanitarian-law-center-remembers-755-victims-of-the-nato-bombing/",
+          "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf",
+          "https://www.hrw.org/legacy/reports/2000/nato/Natbm200.htm",
+          "https://www.hrw.org/legacy/reports/2000/nato/Natbm200-01.htm"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 3099,
+    "military_high": 3217,
+    "civilian_low": 9181,
+    "civilian_high": 10317,
+    "grand_low": 12280,
+    "grand_high": 13625,
+    "notes": "Strict war-period HLC roll-up for 1 Jan 1998-14 Jun 1999 is 12,278 killed/missing, composed of 9,181 civilians and 3,097 armed-group/military victims; adding two NATO service deaths in Albania gives about 12,280. The broader HLC 1998-2000 conflict-and-aftermath boundary is 13,535 in the 2015 methodology, while HLC's current landing page reports 13,625 individuals. Military_high here uses full 1998-2000 HLC armed-group totals plus the two NATO air-campaign training deaths; civilian_high uses HLC's full 1998-2000 civilian total."
+  },
+  "key_atrocities": [
+    {
+      "name": "Operation Reka / Meja-Korenica killings",
+      "year": 1999,
+      "perpetrator": "Federal Republic of Yugoslavia / Serbia",
+      "victims_group": "Kosovo Albanian civilians",
+      "low": 350,
+      "high": null,
+      "notes": "HLC says Serbian forces killed at least 350 ethnic Albanian civilians during Operation Reka on 27-28 April 1999 and expelled thousands more; ICTY/Sense describes about 350 male civilians killed in Meja, Korenica and nearby villages.",
+      "sources": [
+        "https://www.hlc-rdc.org/en/publications/operation-reka-dossier/",
+        "https://kosovo.sensecentar.org/"
+      ]
+    },
+    {
+      "name": "Ra\u010dak/Re\u00e7ak massacre",
+      "year": 1999,
+      "perpetrator": "Federal Republic of Yugoslavia / Serbia",
+      "victims_group": "Kosovo Albanian civilians",
+      "low": 45,
+      "high": 45,
+      "notes": "Mass killing of 45 Kosovo Albanians on 15 January 1999.",
+      "sources": [
+        "https://apnews.com/article/342a0b7bf31573ccc853705f1911c52f",
+        "https://www.osce.org/sites/default/files/f/documents/c/8/13494.pdf"
+      ]
+    },
+    {
+      "name": "Dubrava Prison massacre",
+      "year": 1999,
+      "perpetrator": "Federal Republic of Yugoslavia / Serbia; NATO bombing also killed some prisoners",
+      "victims_group": "Kosovo Albanian prisoners",
+      "low": 95,
+      "high": 130,
+      "notes": "HRW found about 19 prisoners killed by NATO bombing and at least 76 summarily executed by prison guards/security forces afterward. Later prosecutions and reporting cite 90-130 or 109 prisoners killed in the massacre.",
+      "sources": [
+        "https://www.hrw.org/legacy/reports/2000/nato/Natbm200.htm",
+        "https://balkaninsight.com/2023/11/29/kosovo-indicts-serb-for-1999-dubrava-prison-massacre/"
+      ]
+    },
+    {
+      "name": "Kori\u0161a bombing",
+      "year": 1999,
+      "perpetrator": "NATO",
+      "victims_group": "Kosovo Albanian civilians",
+      "low": 77,
+      "high": 87,
+      "notes": "HLC lists 77 Albanian civilians killed at Kori\u0161a; HRW counted 87 deaths in this incident within its NATO civilian-deaths total.",
+      "sources": [
+        "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/",
+        "https://www.hrw.org/legacy/reports/2001/kosovo/undword2b.html"
+      ]
+    },
+    {
+      "name": "Orahovac/Rahovec-area KLA abductions and killings",
+      "year": 1998,
+      "perpetrator": "Kosovo Liberation Army / KLA",
+      "victims_group": "Serbian civilians",
+      "low": 47,
+      "high": 47,
+      "notes": "Reported commemoration of 47 Serbian civilians from the Orahovac area killed by the KLA in July 1998; broader events involved deaths, displacement and detention with many unanswered questions.",
+      "sources": [
+        "https://balkaninsight.com/2012/07/19/belgrade-remembers-victims-from-orahovac/",
+        "https://www.amnesty.org/en/documents/eur70/058/1998/en/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is attribution, not the overall scale. HLC/Kosovo Memory Book is near-comprehensive for names and status but public summary tables do not assign every civilian victim to a perpetrator. The total also changes depending on whether the boundary is the strict war period ending in June 1999 or the broader 1998-2000 conflict-and-immediate-aftermath period. NATO civilian deaths are also reported differently by HLC/HLC Kosovo (450-453 civilians) and HRW (488-527 civilians). Indirect deaths from displacement, detention, or infrastructure damage are not cleanly quantified separately from direct killings and disappearances.",
+  "sources": [
+    {
+      "url": "https://www.recom.link/wp-content/uploads/2015/04/History-and-Methodology.pdf",
+      "title": "The Kosovo Memory Book Database: History and Methodology",
+      "publisher": "Humanitarian Law Center / HLC Kosovo / RECOM"
+    },
+    {
+      "url": "https://www.hlc-rdc.org/en/loss-database/kosovo-memory-book/",
+      "title": "Kosovo Memory Book",
+      "publisher": "Humanitarian Law Center"
+    },
+    {
+      "url": "https://www.hrw.org/legacy/reports/2001/kosovo/undword-03.htm",
+      "title": "Under Orders: War Crimes in Kosovo - March-June 1999: An Overview",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/2001/kosovo/undword2a.html",
+      "title": "Under Orders: War Crimes in Kosovo - Statistical Analysis of Violations",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/legacy/reports/2000/nato/Natbm200.htm",
+      "title": "Civilian Deaths in the NATO Air Campaign",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/humanitarian-law-center-remembers-755-victims-of-the-nato-bombing/",
+      "title": "Humanitarian Law Center remembers 755 victims of the NATO bombing",
+      "publisher": "Humanitarian Law Center"
+    },
+    {
+      "url": "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/754-victims-of-nato-bombing/",
+      "title": "754 Victims of NATO Bombing",
+      "publisher": "Humanitarian Law Center"
+    },
+    {
+      "url": "https://kosovo.sensecentar.org/",
+      "title": "ICTY: The Kosovo Case, 1998-1999",
+      "publisher": "Sense Transitional Justice Center"
+    },
+    {
+      "url": "https://www.icty.org/en/content/prosecution-case-kosovo",
+      "title": "Prosecution Case - Kosovo",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.hlc-rdc.org/en/publications/operation-reka-dossier/",
+      "title": "Operation Reka Dossier",
+      "publisher": "Humanitarian Law Center"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1999/kosov2/",
+      "title": "Abuses Against Serbs and Roma in the New Kosovo",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/press-release/2009/06/serbiakosovo-no-end-impunity-10-years-after-end-war-20090608/",
+      "title": "Serbia/Kosovo: No end to impunity 10 years after the end of war in Kosovo",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/eur70/058/1998/en/",
+      "title": "Tragic events continue: Orahovac, July-August 1998",
+      "publisher": "Amnesty International"
+    }
+  ]
+}

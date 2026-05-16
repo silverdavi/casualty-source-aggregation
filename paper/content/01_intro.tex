@@ -1,0 +1,51 @@
+\section{Introduction}
+
+\subsection{The aggregation problem}
+
+Casualty figures in armed conflict are reported by sources with opposing incentives. Belligerents inflate enemy combatants killed and deflate civilians; advocacy organisations, opposing belligerents, and intergovernmental bodies have symmetric incentives in the other direction. Naive aggregation is therefore biased in a direction that depends on which side the analyst trusts more. The tempting conclusion is that civilian-to-combatant ratios are too politicised to analyse statistically.
+
+We argue for a narrower position. Conflicting source aggregates fail in well-understood ways, but the parameters they purport to measure are jointly constrained by a small number of relations that are difficult to manipulate. An analyst who treats every belligerent source as adversarial can still recover an informative bound by exploiting these constraints; what cannot be recovered without further assumptions is the position of the truth \emph{within} the bound. This separation---bounds from data, position from politics---is the organising principle of the paper.
+
+The closest precedents are \citet{spagat2009} on the contestation of war-death estimates, \citet{lumpricebanks2013} on multiple systems estimation under reporting failure, \citet{radford2023} on Bayesian inference of conflict losses with reporting biases, \citet{vesco2026} on probabilistic UCDP underreporting, and \citet{gomez2025} on uncertainty quantification for Gaza mortality. Methodologically we draw on partial identification \citep{manski2003,manski2007,molinari2020,klinetamer2023} and robust Bayesian analysis \citep{huber1964,huber1981,berger1986}.
+
+\subsection{Two deliverables}
+
+\paragraph{Bounds.} Where can the civilian-to-combatant ratio possibly lie, given a set of independently measured demographic and manpower facts? The answer is a sharp identified set in the sense of Manski's partial-identification programme \citep{manski2003,tamer2010,romanoshaikh2010}. If the identified set is narrow, no source-aggregation rule can pull the truth outside it. The width is determined by the data, not by the analyst's politics.
+
+\paragraph{Confidence coefficients.} How much can the analyst's political-bias prior on each source widen this set? Each source is Huber $\varepsilon$-contaminated \citep{huber1981,berger1986}: it is true with probability $1-\varepsilon$ and adversarial with probability $\varepsilon$. A bias-robust credible interval inflates by $\sum_i\varepsilon_i R_i$, where $R_i$ is the diameter of the identified set when source $i$ is removed. Setting $\varepsilon_i\approx 1$ for belligerent claims and $\varepsilon_i\approx 0.05$ for census-grade sources gives an interval honest about which inputs are doing the work.
+
+The two objects are complementary: the first is information that survives any reasonable politics; the second is the rate at which uncertainty grows as the analyst dials in distrust of specific sources.
+
+\subsection{The under-fudgible mechanism}
+
+The bounds are not vacuous because of demographic arithmetic. If a source claims many combatants were killed, then either (i) the identified dead contain fewer women and children, (ii) the population contains fewer women and children, (iii) the armed group had a larger pre-war stock, or (iv) civilian adult men were killed at a much higher per-capita rate than civilian women and children. These quantities are measured by \emph{different} institutions: a national or UN census produces (ii); the Office of the High Commissioner for Human Rights (OHCHR), the International Committee of the Red Cross (ICRC), or a local health ministry produces (i); independent intelligence services produce (iii); (iv) is bounded by exposure-time studies. They are not equally manipulable.
+
+\begin{definition}[Under-fudgible relation]\label{def:underfudgible}
+A relation $R(x_1,\dots,x_K)=0$ between conflict statistics is \emph{under-fudgible} if each $x_k$ is reported by several non-aligned institutions or has uncontroversial physical or demographic bounds, and violating $R$ in any single coordinate forces a deviation of several measured standard errors in at least one of the others.
+\end{definition}
+
+The simplest such relation is the manpower bound $D_M\le M$. The more informative one is demographic: if $w$ is the women-and-children share of the population and $\omega$ their share among the dead, then high combatant-share claims force $\omega$ down. When $\omega$ is observed to be high, a high-$D_M$ claim must be paid for either by a very large adult-male exposure multiplier or by contradicting the population baseline. We measure this trade-off as a \emph{contradiction radius} $\rho$: the smallest standardised perturbation of any independent input that brings a disputed claim back into the feasible region.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_gaza_diagnostic}
+\caption{\textbf{The diagnostic for Gaza (2023--2026).}
+\textbf{(A)} Identified $q$ on the $(\omega,w)$ plane at $\bar\mu=2.5$. Iso-$q$ contours are black; the OHCHR, blended, and Gaza Ministry of Health (MoH) anchors all sit in the low-$q$ (blue) region; the IDF claim requires $\omega$ in the red band on the far left, far from any observed anchor.
+\textbf{(B)} Histogram of the spatial posterior on $q$ (median, 95\% credible interval as solid$+$dashed lines) vs.\ the IDF claim band converted to $q$.
+\textbf{(C)} Implied combatants killed (log axis) vs.\ the IDF claim of $17$--$25$k.
+\textbf{(D)} Posterior decomposition of the $\sim$70k reported dead: $\sim$1k combatants, $\sim$25k civilian adult men, $\sim$50k women and children.
+\textbf{(E)} Civilian-to-combatant ratio: posterior median $43{:}1$ vs.\ the IDF-implied $\sim 2{:}1$.}
+\label{fig:gaza-diagnostic}
+\end{figure}
+
+\subsection{Contributions and roadmap}
+
+\begin{enumerate}[leftmargin=*,label=(\roman*)]
+\item A sharp identified set for $q=D_M/D$ under bounded differential exposure of civilian adult men (Theorem~\ref{thm:bounds}), intersected with the manpower bound (Corollary~\ref{cor:popbudget}).
+\item A precision-weighted aggregation rule for multiple demographic sources, with delta-method standard error and contamination-aware bias bound (Proposition~\ref{prop:agg}).
+\item A feasibility test for any aggregated claim, stated as a distance-to-feasibility optimisation: the contradiction radius $\rho$ (Definition~\ref{def:radius}, Theorem~\ref{thm:contradiction}).
+\item A bias-robust credible interval under Huber $\varepsilon$-contamination, with a sharper quantile-displacement bound (Proposition~\ref{prop:robust}).
+\item A worked Gaza 2023--2026 application aggregating six independent source channels, plus a supplement applying coarser diagnostics to 81 conflicts from 1900--2026.
+\end{enumerate}
+
+Sections~\ref{sec:setup}--\ref{sec:contradiction} develop the bounds; Section~\ref{sec:bias} adds the confidence-coefficient layer; Section~\ref{sec:gaza} runs both on Gaza; Section~\ref{sec:empirical} surveys 81 conflicts. The method does not assign moral responsibility, estimate indirect deaths, or replace forensic work.

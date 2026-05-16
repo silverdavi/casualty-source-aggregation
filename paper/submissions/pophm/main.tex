@@ -1,0 +1,107 @@
+%! TEX program = pdflatex
+% =====================================================================
+% Population Health Metrics (BMC, open access) submission, Research
+% Article. Built on the shared master content in ../../content/.
+%
+% To swap in the BMC class file:
+%
+%   1. Download bmcart.cls + biomed_central_bib.bst from
+%      https://www.biomedcentral.com/getpublished/writing-resources/instructions-for-authors-bmc-journals
+%   2. Replace the preamble below with \documentclass{bmcart} and
+%      follow the BMC skeleton; the \input{...} bodies and
+%      \bibliography{...} below remain unchanged.
+%
+% Until then this draft uses an article-class single-column layout with
+% a structured abstract matching BMC submission style, and Vancouver-
+% style numerical citations.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,multirow,array,tabularx}
+\usepackage{graphicx}
+\usepackage[hidelinks,colorlinks=false]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,decorations.pathreplacing,positioning,fit,backgrounds}
+\usepackage[numbers,sort&compress,square]{natbib}
+\bibliographystyle{unsrtnat}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\graphicspath{{../../figures/}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\Ind}{\mathbf{1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\title{\textbf{Bounds and Estimators for the Civilian-to-Combatant Death Ratio\\ from Aggregation of Conflicting Sources}}
+\author{David H.\ Silver\thanks{Corresponding author. Independent researcher, Poughkeepsie, NY 12603, USA. Email: \href{mailto:silverdavi@gmail.com}{\texttt{silverdavi@gmail.com}}. ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}.}\\
+  \small Independent researcher, Poughkeepsie, NY 12603, USA\\[2pt]
+  \small\emph{Submitted to Population Health Metrics, Research Article}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% --- Structured abstract (BMC style) -------------------------------
+\noindent\textbf{Background.}\;
+Casualty figures in armed conflict are reported by belligerents, advocacy organisations, and intergovernmental bodies with strong, opposing political incentives. Aggregated estimates of civilian-to-combatant death ratios therefore inherit these biases, and the literature has often concluded that the ratios are too politicised to analyse statistically.
+
+\medskip\noindent\textbf{Methods.}\;
+We treat the civilian-to-combatant death ratio as a partially identified parameter. Under a one-parameter exposure model in which civilian adult men face up to $\bar\mu$ times the death rate of women and children, we derive a sharp identified set for the combatant share $q=D_M/D$ as a function of population structure (women-and-children share $w$), the demographic composition of the dead ($\omega$), pre-war combatant stock ($M$), and total deaths ($D$). We define a \emph{contradiction radius} $\rho$ that scores any disputed claim by the standardised perturbation of independent inputs needed to make it consistent. We provide a closed-form bias-robust credible interval under Huber $\varepsilon$-contamination of each source.
+
+\medskip\noindent\textbf{Results.}\;
+We instantiate the framework on the Gaza war 2023--2026, aggregating Palestinian Central Bureau of Statistics demographics, OHCHR identifications, Gaza Ministry of Health records, OCHA totals, IISS/RUSI manpower estimates, and Lancet field-survey information. The naive ``uniform random violence'' null is rejected at $p\approx 1.7\times 10^{-16}$. The public Israel Defense Forces claim of $17$--$25$k combatants killed has $\rho\gtrsim 20$ standard errors. A spatial Bayesian posterior on the same independently-measured inputs gives $q=2.5\%$ with 95\% credible interval $[1.6\%,3.8\%]$ and an implied civilian-to-combatant ratio of $43{:}1$ \mbox{$[30,64]$} on direct deaths. The point estimates align with the demographic Bayesian estimate of G\'{o}mez-Ugarte et al.\ (2025) once their reporting prior is set to ignore underreporting, and with the field-survey violent-death estimates of Spagat et al.\ (2026).
+
+\medskip\noindent\textbf{Conclusions.}\;
+The combatant share among the Gaza dead is bounded sharply by demographic and manpower facts measured by independent institutions, even when every belligerent claim is treated as adversarial. The framework transfers to any conflict with (i) a population demographic decomposition, (ii) an independent demographic survey of the dead, (iii) an independent manpower estimate at $t_0$, and (iv) a reported aggregate death total, and is therefore broadly applicable to public-health-relevant conflict mortality estimation.
+
+\medskip\noindent\textbf{Keywords.}\; civilian-to-combatant ratio; partial identification; Bayesian inference; Huber contamination; conflict mortality; Gaza war; demographic methodology.
+
+\input{../../content/01_intro.tex}
+\input{../../content/02_setup.tex}
+\input{../../content/03_bounds.tex}
+\input{../../content/04_contradiction.tex}
+\input{../../content/05_bias.tex}
+\input{../../content/06_gaza.tex}
+\input{../../content/07_overview.tex}
+\input{../../content/08_discussion.tex}
+
+\paragraph{Declarations.}
+\begin{description}[leftmargin=*,labelsep=0.5em]
+\item[\rmfamily\small\textbf{Ethics approval and consent to participate.}] Not applicable; no human subjects.
+\item[\rmfamily\small\textbf{Consent for publication.}] Not applicable.
+\item[\rmfamily\small\textbf{Availability of data and materials.}] All inputs to the Gaza application are public; code and the spatial Bayesian simulator will be deposited in a public repository (URL upon acceptance).
+\item[\rmfamily\small\textbf{Competing interests.}] The author declares no competing interests.
+\item[\rmfamily\small\textbf{Funding.}] The author received no specific funding for this work.
+\item[\rmfamily\small\textbf{Author contributions.}] DHS conceived the study, derived the theoretical results, implemented the spatial Bayesian simulator, performed all analyses, and wrote the manuscript.
+\item[\rmfamily\small\textbf{Acknowledgements.}] The author thanks the editors and anonymous referees for their attention.
+\end{description}
+
+\bibliography{../../content/refs}
+
+\end{document}

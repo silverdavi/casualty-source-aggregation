@@ -1,0 +1,99 @@
+%! TEX program = pdflatex
+% =====================================================================
+% Annals of Applied Statistics (IMS) submission.
+% This file is a journal-ready draft built on the shared master content
+% in ../../content/. To swap in the IMS class file:
+%
+%   1. Download the imsart bundle from
+%      https://www.imstat.org/imsart/imsart.zip
+%      (provides imsart.cls, imsart-nameyear.bst, imsart-number.bst).
+%   2. Replace the preamble below with \documentclass[aoas]{imsart}
+%      and follow the imsart user guide; the \input{...} bodies and
+%      \bibliography{...} below remain unchanged.
+%
+% This draft uses an article-class double-spaced layout matching IMS
+% submission requirements (one-column, name-year citations).
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,multirow,array,tabularx}
+\usepackage{graphicx}
+\usepackage[hidelinks,colorlinks=false]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,decorations.pathreplacing,positioning,fit,backgrounds}
+\usepackage[round,authoryear,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\graphicspath{{../../figures/}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\Ind}{\mathbf{1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\title{\textbf{Bounds and Estimators for the Civilian-to-Combatant Death Ratio\\ from Aggregation of Conflicting Sources}}
+\author{David H.\ Silver\thanks{Independent researcher, Poughkeepsie, NY 12603, USA. Email: \href{mailto:silverdavi@gmail.com}{\texttt{silverdavi@gmail.com}}. ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}.}\\
+  \small Independent researcher, Poughkeepsie, NY, USA\\[2pt]
+  \small\emph{Submitted to Annals of Applied Statistics}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{../../content/abstract.tex}
+
+\bigskip
+\noindent\textbf{MSC2020 subject classifications:} primary 62F15, 62P25; secondary 62G35, 62F35.
+
+\noindent\textbf{Keywords and phrases:} partial identification, robust Bayesian inference, $\varepsilon$-contamination, source aggregation, casualty estimation, Gaza war, contradiction radius.
+\end{abstract}
+
+\input{../../content/01_intro.tex}
+\input{../../content/02_setup.tex}
+\input{../../content/03_bounds.tex}
+\input{../../content/04_contradiction.tex}
+\input{../../content/05_bias.tex}
+\input{../../content/06_gaza.tex}
+\input{../../content/07_overview.tex}
+\input{../../content/08_discussion.tex}
+
+\paragraph{Acknowledgements.} The author thanks the editors and referees for their attention.
+
+\paragraph{Funding.} The author received no specific funding for this work.
+
+\paragraph{Author affiliation.}
+\noindent David H.\ Silver, Independent researcher, Poughkeepsie, NY 12603, USA.\\
+\href{mailto:silverdavi@gmail.com}{\texttt{silverdavi@gmail.com}}, ORCID \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}.
+
+\paragraph{Supplementary Material.} A separate document, ``Bounds and Estimators for the Civilian-to-Combatant Death Ratio: Supplementary Material,'' contains the per-conflict tables for the 81-conflict empirical overview, full proofs of Theorem~\ref{thm:bounds} and Proposition~\ref{prop:robust} including measure-theoretic regularity conditions, sensitivity analyses for $\bar\mu$ and $\varepsilon_i$ on the Gaza application, and the reproducibility scripts (\texttt{R}/\texttt{Python} code for the spatial Bayesian sampler).
+
+\bibliography{../../content/refs}
+
+\end{document}

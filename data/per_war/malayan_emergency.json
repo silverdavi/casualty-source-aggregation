@@ -1,0 +1,296 @@
+{
+  "war_id": "malayan_emergency",
+  "name": "Malayan Emergency",
+  "start_year": 1948,
+  "end_year": 1960,
+  "ongoing": false,
+  "regions": [
+    "Malaya",
+    "Malay Peninsula",
+    "Federation of Malaya"
+  ],
+  "summary": "The Malayan Emergency was a counterinsurgency war from mid-June 1948 to 31 July 1960 between the Malayan Communist Party/Malayan National Liberation Army and the Federation of Malaya backed by British and Commonwealth security forces. Government statistics compiled by Karl Hack give 6,711 insurgents killed, 1,865 security forces killed, 2,473 civilians killed, and 810 civilians missing. If the missing civilians are treated as dead, the commonly cited precise total is 11,859 deaths.",
+  "sides": [
+    {
+      "name": "Federation of Malaya / British Empire and Commonwealth security forces",
+      "members": [
+        "Federation of Malaya government",
+        "Malayan Police",
+        "Malayan Home Guard",
+        "British Army",
+        "Gurkha units",
+        "Australian forces",
+        "New Zealand forces",
+        "other Commonwealth forces"
+      ],
+      "military_killed": {
+        "low": 1856,
+        "high": 1868,
+        "point": 1865,
+        "notes": "Includes security forces killed during the Emergency. Hack's government-statistics table gives 1,865, broken down as 1,346 police and 519 army/Commonwealth deaths; other sources give 1,856 or rounded figures around 1,800.",
+        "sources": [
+          "https://assets.cambridge.org/97811070/80102/frontmatter/9781107080102_frontmatter.pdf",
+          "https://calhoun.nps.edu/bitstreams/96f6a9c4-d973-4313-bf33-0206c86da59b/download",
+          "https://anzacportal.dva.gov.au/wars-and-missions/malayan-emergency-1948-1960",
+          "https://www.perlego.com/book/3495121/counterinsurgency-intelligence-and-the-emergency-in-malaya-pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 38,
+        "high": 94,
+        "point": 38,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "unarmed civilians at Batang Kali / Sungai Rimoh",
+            "low": 24,
+            "high": 24,
+            "notes": "A Scots Guards patrol shot and killed 24 civilians in December 1948; later UK litigation centered on the refusal to hold a public inquiry.",
+            "sources": [
+              "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-others-v-ssfca-and-another.pdf",
+              "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-sec-state-foreign-commonwealth-affairs-judgment-04092012.pdf",
+              "https://ukscblog.com/new-judgment-keyu-ors-v-secretary-of-state-for-foreign-and-commonwealth-affairs-anor-2015-uksc-69/"
+            ]
+          },
+          {
+            "cause": "shooting",
+            "victims_group": "civilians killed by British military/security forces outside Batang Kali",
+            "low": 14,
+            "high": 70,
+            "notes": "AOAV identifies 38 confirmed civilian killings by British military forces in total, including Batang Kali; it also flags 56 additional fatal shootings as suspicious. Subtracting Batang Kali leaves 14 confirmed non-Batang Kali deaths and up to 70 if suspicious cases are included.",
+            "sources": [
+              "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-malayan-emergency/",
+              "https://www.ehm.my/publications/articles/the-emergency-1948%E2%80%931960-malayan-communist-party-strategies"
+            ]
+          }
+        ],
+        "notes": "Low/point are confirmed British military civilian killings as compiled by AOAV; high adds AOAV's 56 suspicious fatal shootings. This is not a complete perpetrator-coded total for every government-side action, especially police actions.",
+        "sources": [
+          "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-malayan-emergency/",
+          "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-others-v-ssfca-and-another.pdf",
+          "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-sec-state-foreign-commonwealth-affairs-judgment-04092012.pdf",
+          "https://www.ehm.my/publications/articles/the-emergency-1948%E2%80%931960-malayan-communist-party-strategies"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "rural Chinese squatters, New Village residents, labor-line populations, and Orang Asli communities",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Forced resettlement moved roughly 500,000 to over 560,000 people into New Villages, and over 1 million if defensible labor lines are included. Qualitative accounts describe coercion, deprivation, disease, and death, especially among Orang Asli, but no reliable consolidated mortality estimate was found; therefore these deaths are not added numerically to the grand total.",
+          "sources": [
+            "https://www.iwm.org.uk/history/cold-war/malayan-emergency",
+            "https://www.ehm.my/publications/articles/the-emergency-1948%E2%80%931960-malayan-communist-party-strategies",
+            "https://books.google.com/books/about/Violence_and_the_Dream_People.html?id=n41uAAAAMAAJ",
+            "https://iwgia.org/en/documents-and-publications/documents/publications-pdfs/english-publications/119-indigenous-peoples-and-local-government/file.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malayan Communist Party / Malayan National Liberation Army",
+      "members": [
+        "Malayan Communist Party",
+        "Malayan National Liberation Army",
+        "Malayan Races Liberation Army",
+        "Min Yuen support network"
+      ],
+      "military_killed": {
+        "low": 6697,
+        "high": 6711,
+        "point": 6711,
+        "notes": "Hack's government-statistics table gives 6,711 insurgents killed. Cross-checks give 6,697, 6,698, or rounded figures around 6,700.",
+        "sources": [
+          "https://assets.cambridge.org/97811070/80102/frontmatter/9781107080102_frontmatter.pdf",
+          "https://calhoun.nps.edu/bitstreams/96f6a9c4-d973-4313-bf33-0206c86da59b/download",
+          "https://anzacportal.dva.gov.au/wars-and-missions/malayan-emergency-1948-1960",
+          "https://www.perlego.com/book/3495121/counterinsurgency-intelligence-and-the-emergency-in-malaya-pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2379,
+        "high": 3245,
+        "point": 2435,
+        "breakdown": [
+          {
+            "cause": "assassination/intimidation/attack",
+            "victims_group": "civilian population of Malaya, including estate managers, suspected informers, workers, and villagers",
+            "low": 2379,
+            "high": 3245,
+            "notes": "Residual attribution: official figures list 2,473 civilians killed and 810 missing; sources say civilian casualties were mostly inflicted by insurgents, but the official table is not a complete perpetrator-coded dataset. Low subtracts confirmed+suspicious British/security-force civilian killings; high treats missing civilians as dead and subtracts only confirmed British killings.",
+            "sources": [
+              "https://assets.cambridge.org/97811070/80102/frontmatter/9781107080102_frontmatter.pdf",
+              "https://dokumen.pub/malayas-secret-police-1945-60-the-role-of-the-special-branch-in-the-malayan-emergency-9781876924522-1876924527-9789812308153-9812308156-9789812308290-9812308296.html",
+              "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-malayan-emergency/"
+            ]
+          },
+          {
+            "cause": "assassination",
+            "victims_group": "European estate managers at Sungai Siput",
+            "low": 3,
+            "high": 3,
+            "notes": "Three European estate managers were killed in Perak on 16 June 1948, the immediate trigger for the emergency declaration.",
+            "sources": [
+              "https://www.awm.gov.au/collection/CN18",
+              "https://anzacportal.dva.gov.au/wars-and-missions/malayan-emergency-1948-1960"
+            ]
+          },
+          {
+            "cause": "attack",
+            "victims_group": "police, auxiliary police, family members, and civilians at Bukit Kepong",
+            "low": 25,
+            "high": 25,
+            "notes": "Royal Malaysian Police commemorative accounts give 25 total dead in the 23 February 1950 Bukit Kepong attack, including police, auxiliary police, six family members, and two civilians; classification between combatant and civilian varies for auxiliary police and family members.",
+            "sources": [
+              "https://www.rmp.gov.my/news-detail/2020/02/23/infoperistiwa-genap-70-tahun-peristiwa-serangan-pkm-ke-atas-balai-polis-bukit-kepong",
+              "https://www.rmp.gov.my/news-detail/2025/02/23/al-fatihah-genap-75-tahun-peristiwa-bukit-kepong-kekal-dalam-ingatan"
+            ]
+          }
+        ],
+        "notes": "The point estimate of 2,435 is a residual calculation: 2,473 official civilian killed minus 38 confirmed British military killings. It should not be read as an official perpetrator-coded MCP/MNLA figure.",
+        "sources": [
+          "https://assets.cambridge.org/97811070/80102/frontmatter/9781107080102_frontmatter.pdf",
+          "https://dokumen.pub/malayas-secret-police-1945-60-the-role-of-the-special-branch-in-the-malayan-emergency-9781876924522-1876924527-9789812308153-9812308156-9789812308290-9812308296.html",
+          "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-malayan-emergency/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 8553,
+    "military_high": 8579,
+    "civilian_low": 2473,
+    "civilian_high": 3283,
+    "grand_low": 11026,
+    "grand_high": 11862,
+    "notes": "Military total sums security-force and insurgent deaths from the low/high source range. Civilian low is the official 2,473 killed; civilian high adds 810 missing civilians as presumed dead. Hack's precise government-statistics roll-up is 11,859 total deaths when the missing civilians are counted as dead."
+  },
+  "key_atrocities": [
+    {
+      "name": "Batang Kali / Sungai Rimoh massacre",
+      "year": 1948,
+      "perpetrator": "Federation of Malaya / British Empire and Commonwealth security forces",
+      "victims_group": "unarmed civilian villagers / rubber tappers",
+      "low": 24,
+      "high": 24,
+      "notes": "Scots Guards patrol shot and killed 24 civilians in December 1948; UK courts later addressed whether the government had to hold a public inquiry.",
+      "sources": [
+        "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-others-v-ssfca-and-another.pdf",
+        "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-sec-state-foreign-commonwealth-affairs-judgment-04092012.pdf",
+        "https://ukscblog.com/new-judgment-keyu-ors-v-secretary-of-state-for-foreign-and-commonwealth-affairs-anor-2015-uksc-69/"
+      ]
+    },
+    {
+      "name": "Sungai Siput killings",
+      "year": 1948,
+      "perpetrator": "Malayan Communist Party / Malayan National Liberation Army",
+      "victims_group": "European estate managers",
+      "low": 3,
+      "high": 3,
+      "notes": "Three European estate managers were killed in Perak on 16 June 1948, precipitating the Emergency declaration.",
+      "sources": [
+        "https://www.awm.gov.au/collection/CN18",
+        "https://anzacportal.dva.gov.au/wars-and-missions/malayan-emergency-1948-1960"
+      ]
+    },
+    {
+      "name": "Bukit Kepong attack",
+      "year": 1950,
+      "perpetrator": "Malayan Communist Party / Malayan National Liberation Army",
+      "victims_group": "police, auxiliary police, family members, and civilians",
+      "low": 25,
+      "high": 25,
+      "notes": "Royal Malaysian Police commemorations give 25 total dead, including police, auxiliary police, six family members, and two civilians.",
+      "sources": [
+        "https://www.rmp.gov.my/news-detail/2020/02/23/infoperistiwa-genap-70-tahun-peristiwa-serangan-pkm-ke-atas-balai-polis-bukit-kepong",
+        "https://www.rmp.gov.my/news-detail/2025/02/23/al-fatihah-genap-75-tahun-peristiwa-bukit-kepong-kekal-dalam-ingatan"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The official casualty tables are strong for aggregate killed/missing figures but weak for perpetrator-coded civilian deaths. The MCP/MNLA civilian-death range is therefore residual, derived from total civilian deaths minus confirmed or confirmed+suspicious British/security-force civilian killings. Indirect deaths from government resettlement, detention, deportation, food control, and Orang Asli relocation are qualitatively documented but not responsibly quantifiable from the sources found, so they are not added to the grand total.",
+  "sources": [
+    {
+      "url": "https://assets.cambridge.org/97811070/80102/frontmatter/9781107080102_frontmatter.pdf",
+      "title": "The Malayan Emergency: Revolution and Counterinsurgency at the End of Empire \u2014 Frontmatter and casualty appendix preview",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/malayan-emergency/emergency-statistics-1948-to-1960/FDD004AD9BBBAC897B99CBF663779246",
+      "title": "Emergency Statistics, 1948 to 1960",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://dokumen.pub/malayas-secret-police-1945-60-the-role-of-the-special-branch-in-the-malayan-emergency-9781876924522-1876924527-9789812308153-9812308156-9789812308290-9812308296.html",
+      "title": "Malaya's Secret Police 1945\u201360: The Role of the Special Branch in the Malayan Emergency",
+      "publisher": "ISEAS / reproduced text"
+    },
+    {
+      "url": "https://calhoun.nps.edu/bitstreams/96f6a9c4-d973-4313-bf33-0206c86da59b/download",
+      "title": "Human Rights and Internal Security in Malaysia: Rhetoric and Reality",
+      "publisher": "Naval Postgraduate School"
+    },
+    {
+      "url": "https://anzacportal.dva.gov.au/wars-and-missions/malayan-emergency-1948-1960",
+      "title": "The Malayan Emergency 1948 to 1960",
+      "publisher": "Australian Department of Veterans' Affairs / Anzac Portal"
+    },
+    {
+      "url": "https://www.awm.gov.au/collection/CN18",
+      "title": "Malayan Emergency, 1948\u20131960",
+      "publisher": "Australian War Memorial"
+    },
+    {
+      "url": "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-malayan-emergency/",
+      "title": "Civilian Casualties from British Military: The Malayan Emergency",
+      "publisher": "Action on Armed Violence"
+    },
+    {
+      "url": "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-others-v-ssfca-and-another.pdf",
+      "title": "Keyu & Others v Secretary of State for Foreign and Commonwealth Affairs and Another, Court of Appeal judgment",
+      "publisher": "Judiciary of England and Wales"
+    },
+    {
+      "url": "https://www.judiciary.uk/wp-content/uploads/JCO/Documents/Judgments/keyu-sec-state-foreign-commonwealth-affairs-judgment-04092012.pdf",
+      "title": "Keyu v Secretary of State for Foreign and Commonwealth Affairs, High Court judgment",
+      "publisher": "Judiciary of England and Wales"
+    },
+    {
+      "url": "https://ukscblog.com/new-judgment-keyu-ors-v-secretary-of-state-for-foreign-and-commonwealth-affairs-anor-2015-uksc-69/",
+      "title": "New Judgment: Keyu & Ors v Secretary of State for Foreign and Commonwealth Affairs & Anor [2015] UKSC 69",
+      "publisher": "UKSCBlog"
+    },
+    {
+      "url": "https://www.iwm.org.uk/history/cold-war/malayan-emergency",
+      "title": "A Short Guide to the Malayan Emergency",
+      "publisher": "Imperial War Museums"
+    },
+    {
+      "url": "https://www.ehm.my/publications/articles/the-emergency-1948%E2%80%931960-malayan-communist-party-strategies",
+      "title": "The Emergency 1948\u20131960: Malayan Communist Party Strategies",
+      "publisher": "Economic History Malaysia"
+    },
+    {
+      "url": "https://books.google.com/books/about/Violence_and_the_Dream_People.html?id=n41uAAAAMAAJ",
+      "title": "Violence and the Dream People: The Orang Asli in the Malayan Emergency, 1948\u20131960",
+      "publisher": "Ohio University Center for International Studies"
+    },
+    {
+      "url": "https://iwgia.org/en/documents-and-publications/documents/publications-pdfs/english-publications/119-indigenous-peoples-and-local-government/file.html",
+      "title": "Indigenous Peoples and Local Government",
+      "publisher": "International Work Group for Indigenous Affairs"
+    },
+    {
+      "url": "https://www.rmp.gov.my/news-detail/2020/02/23/infoperistiwa-genap-70-tahun-peristiwa-serangan-pkm-ke-atas-balai-polis-bukit-kepong",
+      "title": "Genap 70 Tahun Peristiwa Serangan PKM ke atas Balai Polis Bukit Kepong",
+      "publisher": "Royal Malaysia Police"
+    },
+    {
+      "url": "https://www.rmp.gov.my/news-detail/2025/02/23/al-fatihah-genap-75-tahun-peristiwa-bukit-kepong-kekal-dalam-ingatan",
+      "title": "Genap 75 Tahun Peristiwa Bukit Kepong Kekal Dalam Ingatan",
+      "publisher": "Royal Malaysia Police"
+    }
+  ]
+}

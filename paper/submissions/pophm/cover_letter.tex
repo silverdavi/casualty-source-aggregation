@@ -1,0 +1,39 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\address{David H.\ Silver\\
+Independent researcher\\
+Poughkeepsie, NY 12603, USA\\
+\href{mailto:silverdavi@gmail.com}{silverdavi@gmail.com}\\
+ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}}
+\signature{David H.\ Silver}
+\begin{document}
+\begin{letter}{Editor-in-Chief\\ \emph{Population Health Metrics}\\ BioMed Central}
+
+\opening{Dear Editor,}
+
+I am submitting the enclosed manuscript, \emph{``Bounds and Estimators for the Civilian-to-Combatant Death Ratio from Aggregation of Conflicting Sources,''} for consideration as a Research Article in \emph{Population Health Metrics}, contributing to the journal's open collection on \emph{The health impacts of war and armed conflict}.
+
+The manuscript develops a partial-identification and robust-Bayesian framework for estimating the civilian-to-combatant share among the dead when sources have known, opposing political incentives. The framework is then applied to the Gaza war 2023--2026, aggregating Palestinian Central Bureau of Statistics demographics, OHCHR identifications, Gaza Ministry of Health records, OCHA totals, IISS/RUSI manpower estimates, and the published Lancet field-survey series. The work is methodologically complementary to the recent Gaza-specific Bayesian study by G\'{o}mez-Ugarte et al.\ (2025) in your journal, which estimated $\sim$78,000 conflict deaths and a 34--36 year life-expectancy loss. Where their analysis focuses on \emph{total mortality} given uncertainty in reporting and age-sex distribution, mine focuses on the \emph{decomposition} of those deaths into combatants versus civilians, with explicit handling of belligerent contamination. The two are designed to be cited side by side.
+
+The paper's four contributions are (i) a sharp identified set for the combatant share $q=D_M/D$ under bounded differential exposure of civilian adult men; (ii) a precision-weighted aggregation rule for multiple demographic sources with delta-method standard errors; (iii) a \emph{contradiction radius} $\rho$ that scores any disputed claim by the standardised perturbation of independent inputs needed to make it consistent; and (iv) a closed-form bias-robust credible interval under Huber $\varepsilon$-contamination. The framework is symmetric: it rejects the polar narratives ``too many combatants'' and ``zero combatants'' against the same feasible set.
+
+The Gaza application finds that the public Israel Defense Forces claim of $17$--$25$k combatants killed has $\rho\gtrsim 20$ standard errors away from the demographic feasibility region. A spatial Bayesian model on the same independently-measured inputs gives $q=2.5\%$ with 95\% credible interval $[1.6\%,3.8\%]$ and an implied civilian-to-combatant ratio of $43{:}1$ on direct deaths. The naive ``uniform random violence'' null is rejected at $p\approx 1.7\times 10^{-16}$, but rejecting it is necessary, not sufficient, to rationalise any specific combatant share. The point estimates align with the demographic Bayesian estimate of G\'{o}mez-Ugarte et al.\ (2025) once their reporting prior is set to ignore underreporting, and with the field-survey violent-death estimates of Spagat et al.\ (2026) in \emph{Lancet Global Health}. They are roughly an order of magnitude below the IDF figure---consistent with the recent capture--recapture work by Khatib et al.\ (2025) in \emph{The Lancet}, the methodological critique of Spiegel and Garry (2024) and Wyner (2025), and the long literature on civilian-targeting and one-sided violence (Eck and Hultman, 2007; Kalyvas, 2006).
+
+The manuscript follows BMC structured-abstract style and includes a complete declarations section. All data inputs are from public sources; code and the spatial Bayesian simulator will be deposited in an open repository on acceptance. This work has not been considered or submitted elsewhere, and I declare no competing interests.
+
+\textbf{About the author.} I am an independent researcher with peer-reviewed publications in \emph{Nature}, \emph{PNAS}, \emph{IEEE Trans.\ Pattern Analysis and Machine Intelligence}, \emph{Human Reproduction}, and \emph{PLOS ONE}, a Microsoft Research PhD Fellowship in Biomathematics, Bioinformatics, and Computational Biology jointly between the Technion and Microsoft Research Cambridge (UK), and authorship of the peer-reviewed monograph \emph{Beyond Popular Science} (Open Book Publishers, Cambridge, 2026; DOI 10.11647/OBP.0526). The present manuscript is conducted independently and is unaffiliated with any of my industry roles.
+
+Possible reviewers with the right combination of conflict-mortality, demographic, and Bayesian-statistics expertise include Diego Alburez-Gutierrez (MPIDR), Ana C.~G\'{o}mez-Ugarte (CED), Enrique Acosta (MPIDR/CED), Michael Spagat (Royal Holloway), Patrick Ball (HRDAG), Megan Price (HRDAG), and Francesco Checchi (LSHTM).
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

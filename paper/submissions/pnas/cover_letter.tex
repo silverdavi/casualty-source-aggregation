@@ -1,0 +1,41 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\address{David H.\ Silver\\
+Independent researcher\\
+Poughkeepsie, NY 12603, USA\\
+\href{mailto:silverdavi@gmail.com}{silverdavi@gmail.com}\\
+ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}}
+\signature{David H.\ Silver}
+\begin{document}
+\begin{letter}{The Editorial Board\\ Proceedings of the National Academy of Sciences\\ 2101 Constitution Avenue NW\\ Washington, DC 20418, USA}
+
+\opening{Dear Editors,}
+
+I am submitting the enclosed manuscript, \emph{``Bounds and Estimators for the Civilian-to-Combatant Death Ratio from Aggregation of Conflicting Sources,''} for consideration as a Direct Submission to PNAS in the Social Sciences section.
+
+Casualty figures in armed conflict are reported by belligerent and intergovernmental sources with strong, opposing political incentives. Naive aggregation is therefore biased in a direction that depends on which side the analyst trusts more, and the literature has often concluded that such ratios are too politicised to analyse statistically. The paper shows that this conclusion is too pessimistic: the civilian-to-combatant ratio is jointly constrained by a small set of \emph{under-fudgible} relations between demographic and manpower facts measured by independent institutions, so that its truth is narrowly bounded even when every belligerent source is treated as adversarial.
+
+The manuscript makes four contributions: (i) a sharp identified set for the combatant share $q=D_M/D$ under a one-parameter exposure model; (ii) a precision-weighted aggregation rule for multiple demographic sources; (iii) a \emph{contradiction radius} $\rho$ that measures, in standard-error units, how far a disputed claim sits from the consensus-feasible region; and (iv) a bias-robust credible interval under Huber $\varepsilon$-contamination of sources. The framework is applied to Gaza 2023--2026, where the public Israel Defense Forces (IDF) claim of $17$--$25$k combatants killed has $\rho\gtrsim 20$, while a spatial Bayesian posterior on the same inputs gives $q=2.5\%$ with 95\% credible interval $[1.6\%,3.8\%]$, an implied civilian-to-combatant ratio of roughly $43{:}1$.
+
+The work follows naturally from the recent PNAS contribution of \emph{Radford, Dai, Stoehr, Schein, Fern\'{a}ndez and Padilla} (2023, ``Estimating conflict losses and reporting biases''): both papers attack the source-aggregation problem with formal Bayesian tools, but the framework here is structural rather than reduced-form---it identifies the polytope of feasible parameter values, characterises the cost in standard errors of leaving it, and only then builds a posterior. The result is a method that any analyst, regardless of political prior, can apply to test whether a casualty claim is consistent with independently-measured population and demographic facts. The Gaza application is contemporaneous with \emph{Alburez-Gutierrez et al.} (Sci.~Adv.~2024), \emph{G\'{o}mez-Ugarte et al.} (Population Health Metrics 2025), and the field-survey work of \emph{Spagat et al.} (Lancet Global Health 2026); the results here agree with theirs on order of magnitude and complement them by quantifying the political-bias inflation factor explicitly.
+
+The manuscript runs approximately $4{,}500$ words including main-text equations, theorems, and one master figure (Figure~1, the Gaza diagnostic, designed to be self-contained at journal scale). A 120-word Significance Statement is included on page~1. A supplementary information document applies coarser diagnostics to 81 conflicts from 1900--2026 and contains all derivations not stated as theorems in the main text. Code, simulator, and Gaza inputs will be deposited in a public repository on acceptance.
+
+\textbf{About the author.} I am an independent researcher with peer-reviewed publications in \emph{Nature}, \emph{PNAS}, \emph{IEEE Trans.\ Pattern Analysis and Machine Intelligence}, \emph{Human Reproduction}, and \emph{PLOS ONE}, a Microsoft Research PhD Fellowship in Biomathematics and Computational Biology, and authorship of the peer-reviewed monograph \emph{Beyond Popular Science} (Open Book Publishers, Cambridge, 2026; DOI 10.11647/OBP.0526). The present manuscript is conducted independently and is not affiliated with any of my industry roles.
+
+This work has not been considered or submitted elsewhere, and I declare no conflicts of interest. I suggest the following editors as suitable handlers given the topic: Charles Manski (Northwestern; partial identification), Gary King (Harvard; political-science methodology), James Berger (Duke; robust Bayesian analysis), and H{\aa}vard Hegre (Uppsala; conflict data and prediction). Reviewers I believe appropriate, with whom I have no conflicts, include Michael Spagat (Royal Holloway), Patrick Ball (HRDAG), Megan Price (HRDAG), and Diego Alburez-Gutierrez (MPIDR).
+
+Thank you for considering the submission.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

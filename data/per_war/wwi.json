@@ -1,0 +1,487 @@
+{
+  "war_id": "wwi",
+  "name": "World War I",
+  "start_year": 1914,
+  "end_year": 1918,
+  "ongoing": false,
+  "regions": [
+    "Europe",
+    "Middle East",
+    "Africa",
+    "Atlantic Ocean",
+    "Asia-Pacific",
+    "Global"
+  ],
+  "summary": "World War I was a global industrial war fought from July 1914 to November 1918 between the Allied and Associated Powers and the Central Powers. Military deaths are comparatively well documented at roughly 9.0-10.1 million, while civilian deaths are far less certain because famine, blockade, deportation, occupation, disease, and influenza are inconsistently counted. Total deaths are commonly estimated at about 15-22 million.",
+  "sides": [
+    {
+      "name": "Allied and Associated Powers",
+      "members": [
+        "France and French Empire",
+        "British Empire",
+        "Russian Empire",
+        "Italy",
+        "Serbia",
+        "Romania",
+        "Belgium",
+        "Japan",
+        "United States",
+        "Greece",
+        "Portugal",
+        "Montenegro",
+        "Other associated powers"
+      ],
+      "military_killed": {
+        "low": 5135000,
+        "high": 5647600,
+        "point": 5647600,
+        "notes": "Range from Prost's table in 1914-1918 Online: Urlanis low and Prost evaluation high. Britannica/U.S. War Department cross-check gives 5,142,631 Allied killed and died. Definitions vary on disease, POWs, missing, and colonial laborers.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses-2014-10-08.pdf",
+          "https://www.britannica.com/event/World-War-I/Killed-wounded-and-missing"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 720,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "air raids",
+            "victims_group": "German civilians",
+            "low": 720,
+            "high": 720,
+            "notes": "Official German/UK War Office figure for German civilians killed by Allied air raids; this is a partial category, not a full Allied direct-killing total.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/World_War_I_casualties"
+            ]
+          },
+          {
+            "cause": "massacre/flight/direct violence",
+            "victims_group": "Ottoman Muslim civilians in Eastern Anatolia",
+            "low": null,
+            "high": null,
+            "notes": "Ottoman/Middle East war-loss literature describes refugees fleeing the Russian army and Armenian bands, with deaths from hunger, disease, or massacre, but does not provide a clean aggregate for direct Allied killings.",
+            "sources": [
+              "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+            ]
+          }
+        ],
+        "notes": "No reliable all-theater total for civilians directly killed by Allied forces was found. The numeric low is only a documented partial figure for Allied air raids on Germany.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/World_War_I_casualties",
+          "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "German civilians",
+          "low": 424000,
+          "high": 763000,
+          "point": null,
+          "notes": "Civilian excess deaths associated with food and fuel shortages under the Allied blockade of Germany. Attribution is contested because German administration, black markets, influenza, and post-armistice blockade continuation also mattered.",
+          "sources": [
+            "https://research.ceu.edu/en/publications/the-blockade-in-the-first-world-war",
+            "https://encyclopedia.1914-1918-online.net/article/war-losses/",
+            "https://encyclopedia.1914-1918-online.net/article/war-losses-germany/"
+          ]
+        },
+        {
+          "type": "blockade/famine",
+          "victims_group": "Civilians in Ottoman Syria and Mount Lebanon",
+          "low": 200000,
+          "high": 500000,
+          "point": null,
+          "notes": "Co-caused by Allied naval blockade, Ottoman requisitioning and administrative failure, transport disruption, and natural disasters. Not additive with the same event listed under Central Powers responsibility.",
+          "sources": [
+            "https://www.environmentandsociety.org/arcadia/was-capitalism-crisis-mount-lebanons-world-war-i-famine",
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+          ]
+        },
+        {
+          "type": "displacement/disease/famine/massacre",
+          "victims_group": "Ottoman Muslim civilians in Eastern Anatolia",
+          "low": 701166,
+          "high": 1500000,
+          "point": null,
+          "notes": "Ottoman records cited by 1914-1918 Online list 701,166 Muslim refugees dying on the road; total Muslim deaths in Eastern Anatolia are estimated around 1.5 million. Deaths mix Russian invasion, Armenian bands, starvation, disease, massacre, and displacement; attribution is not clean.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+          ]
+        },
+        {
+          "type": "forced_labor/porterage",
+          "victims_group": "African colonial laborers and carriers serving Allied colonial forces",
+          "low": 150700,
+          "high": null,
+          "point": null,
+          "notes": "Minimum from British, Belgian, and Portuguese colonial laborer deaths in 1914-1918 Online; French laborer deaths are listed as unknown, so this is an undercount. Some laborers were military auxiliaries rather than civilians.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf"
+          ]
+        },
+        {
+          "type": "famine/disease/requisition/displacement",
+          "victims_group": "African civilians in war zones",
+          "low": 742500,
+          "high": 742500,
+          "point": 742500,
+          "notes": "Approximate African civilian losses from war zones, rebellions, famine, malnutrition, and disease. Allied colonial powers caused much of the mobilization and requisitioning, but German and other forces also contributed; not additive with Central Powers African responsibility.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf",
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-extra-european_theatres_of_war-2014-10-08.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Central Powers",
+      "members": [
+        "German Empire",
+        "Austria-Hungary",
+        "Ottoman Empire",
+        "Bulgaria",
+        "German colonial forces"
+      ],
+      "military_killed": {
+        "low": 3910000,
+        "high": 4410000,
+        "point": 4410000,
+        "notes": "Range from Prost's table in 1914-1918 Online: Overmans low and Prost evaluation high. Britannica/U.S. War Department cross-check gives a lower 3,386,200 killed and died, less inclusive for some categories.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses-2014-10-08.pdf",
+          "https://www.britannica.com/event/World-War-I/Killed-wounded-and-missing"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 6500,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/execution",
+            "victims_group": "Belgian and French civilians",
+            "low": 6500,
+            "high": 6500,
+            "notes": "Horne and Kramer estimate about 6,500 Belgian and French civilians killed in German atrocities in 1914.",
+            "sources": [
+              "https://books.google.com/books/about/German_Atrocities_1914.html?id=Navs5TkI9oAC"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Civilians of Dinant, Belgium",
+            "low": 674,
+            "high": 674,
+            "notes": "German massacre at Dinant on 23 August 1914; included within the broader 1914 atrocity total.",
+            "sources": [
+              "https://www.history.com/this-day-in-history/august-25/germans-burn-belgian-town-of-louvain"
+            ]
+          },
+          {
+            "cause": "massacre/arson",
+            "victims_group": "Civilians of Louvain/Leuven, Belgium",
+            "low": 248,
+            "high": 248,
+            "notes": "Killed during the German sack of Louvain; included within the broader 1914 atrocity total.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Sack_of_Louvain"
+            ]
+          },
+          {
+            "cause": "submarine attack",
+            "victims_group": "Passengers and crew of RMS Lusitania",
+            "low": 1198,
+            "high": 1198,
+            "notes": "German U-boat sinking of Lusitania; not all victims were civilians, but it was a major direct attack on a passenger liner.",
+            "sources": [
+              "https://www.britannica.com/event/World-War-I/The-war-at-sea-1914-15"
+            ]
+          },
+          {
+            "cause": "air and naval raids",
+            "victims_group": "British civilians",
+            "low": 1500,
+            "high": 2000,
+            "notes": "Approximate deaths from German air raids and naval shelling on Britain; not a complete global bombing/shelling total.",
+            "sources": [
+              "https://www.reddit.com/r/AskHistorians/comments/1pflo50/what_were_really_british_civilian_casualties_in/",
+              "https://www.gwpda.org/IWMTimeline/Toplevel_timeline_1914.pdf"
+            ]
+          }
+        ],
+        "notes": "Direct civilian-killing totals are incomplete. Genocidal deportations and famine policies are recorded under deaths_from_actions to avoid double counting direct massacre and indirect death-march/starvation deaths.",
+        "sources": [
+          "https://books.google.com/books/about/German_Atrocities_1914.html?id=Navs5TkI9oAC",
+          "https://encyclopedia.1914-1918-online.net/article/war-losses-belgium/",
+          "https://www.britannica.com/event/World-War-I/The-war-at-sea-1914-15"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "genocide/deportation/death_march/forced_labor",
+          "victims_group": "Ottoman Armenians",
+          "low": 664000,
+          "high": 1500000,
+          "point": null,
+          "notes": "Range combines USHMM low estimate and broader 1914-1918 Online summary. Deaths resulted from Ottoman deportation, massacre, starvation, disease, death marches, and forced labor.",
+          "sources": [
+            "https://www.ushmm.org/id/genocide-prevention/countries/armenia",
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+          ]
+        },
+        {
+          "type": "genocide/massacre/deportation",
+          "victims_group": "Assyrians",
+          "low": 250000,
+          "high": null,
+          "point": 250000,
+          "notes": "Britannica states estimates vary but upwards of 250,000 Assyrians were killed during World War I.",
+          "sources": [
+            "https://www.britannica.com/event/Assyrian-Genocide"
+          ]
+        },
+        {
+          "type": "genocide/deportation/ethnic_cleansing",
+          "victims_group": "Ottoman Greeks",
+          "low": 289000,
+          "high": 750000,
+          "point": null,
+          "notes": "Academic estimates for the broader 1914-1922/23 period. The WWI-only portion cannot be cleanly separated from post-armistice violence.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Greek_genocide"
+          ]
+        },
+        {
+          "type": "famine/blockade/requisition/disease",
+          "victims_group": "Civilians in Ottoman Syria and Mount Lebanon",
+          "low": 200000,
+          "high": 500000,
+          "point": null,
+          "notes": "Co-caused by Ottoman requisitioning and administration, Allied naval blockade, transport breakdown, and natural disasters. Not additive with the same event listed under Allied responsibility.",
+          "sources": [
+            "https://www.environmentandsociety.org/arcadia/was-capitalism-crisis-mount-lebanons-world-war-i-famine",
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+          ]
+        },
+        {
+          "type": "occupation/famine/disease/displacement",
+          "victims_group": "Serbian civilians",
+          "low": 300000,
+          "high": 650000,
+          "point": null,
+          "notes": "Civilian losses from Serbian war-loss estimates, mostly typhus, famine, disease, occupation, and clashes. Caused by Central Powers invasion/occupation conditions but not all deaths were deliberate killings.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses-2014-10-08.pdf",
+            "https://en.wikipedia.org/wiki/Serbian_campaign"
+          ]
+        },
+        {
+          "type": "occupation/famine/disease/displacement",
+          "victims_group": "Romanian civilians",
+          "low": 275000,
+          "high": 430000,
+          "point": null,
+          "notes": "Civilian losses in Romania from 1914-1918 Online estimates; causes include disease, hunger, displacement, and occupation conditions.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses-2014-10-08.pdf"
+          ]
+        },
+        {
+          "type": "deportation/imprisonment/forced_labor",
+          "victims_group": "Belgian civilians",
+          "low": 17700,
+          "high": 17700,
+          "point": 17700,
+          "notes": "Belgian civilians who died during expulsion, deportation, imprisonment, or death sentences under German occupation; separate from the approximately 6,000-6,500 murdered in 1914.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Rape_of_Belgium",
+            "https://encyclopedia.1914-1918-online.net/article/war-losses-belgium/"
+          ]
+        },
+        {
+          "type": "forced_labor/porterage",
+          "victims_group": "African soldiers and laborers in German colonial service",
+          "low": 20400,
+          "high": 20400,
+          "point": 20400,
+          "notes": "1914-1918 Online table assigns about 14,000 African soldier deaths and 6,400 African laborer deaths to German colonies.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf"
+          ]
+        },
+        {
+          "type": "famine/disease/requisition/displacement",
+          "victims_group": "East African civilians",
+          "low": 365500,
+          "high": 365500,
+          "point": 365500,
+          "notes": "East African civilian losses from war zone, rebellion, and famine. German operations and requisitioning contributed, but Allied requisitioning and campaigning also contributed; not solely attributable to Germany and not additive with Allied African responsibility.",
+          "sources": [
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf",
+            "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-extra-european_theatres_of_war-2014-10-08.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 9045000,
+    "military_high": 10057600,
+    "civilian_low": 6000000,
+    "civilian_high": 13000000,
+    "grand_low": 15000000,
+    "grand_high": 22000000,
+    "notes": "Military low/high sums Prost's Allied and Central Powers ranges. Civilian low/high uses the common global range of about 6-13 million because per-side civilian attribution is not clean and many events are co-caused. Grand total reflects the commonly cited 15-22 million WWI deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Armenian genocide",
+      "year": 1915,
+      "perpetrator": "Central Powers - Ottoman Empire",
+      "victims_group": "Ottoman Armenians",
+      "low": 664000,
+      "high": 1500000,
+      "notes": "Ottoman deportation, death marches, massacre, starvation, disease, and forced labor. High end from broader scholarly range; USHMM gives 664,000-1.2 million.",
+      "sources": [
+        "https://www.ushmm.org/id/genocide-prevention/countries/armenia",
+        "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+      ]
+    },
+    {
+      "name": "Eastern Anatolia Muslim refugee catastrophe",
+      "year": 1915,
+      "perpetrator": "Mixed / partly Allied Russian forces and Armenian armed groups; partly war conditions",
+      "victims_group": "Ottoman Muslim civilians",
+      "low": 701166,
+      "high": 1500000,
+      "notes": "Deaths from hunger, disease, massacre, and displacement while fleeing Russian invasion and Armenian bands; total attribution is contested and mixed.",
+      "sources": [
+        "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+      ]
+    },
+    {
+      "name": "Great Famine of Mount Lebanon / Ottoman Syria",
+      "year": 1915,
+      "perpetrator": "Mixed / Ottoman authorities and Allied blockade",
+      "victims_group": "Civilians in Mount Lebanon and Syria",
+      "low": 200000,
+      "high": 500000,
+      "notes": "About 200,000 in Beirut/Mount Lebanon; about 500,000 in wider Syria. Co-caused by Allied blockade, Ottoman policy, transport disruption, and natural disasters.",
+      "sources": [
+        "https://www.environmentandsociety.org/arcadia/was-capitalism-crisis-mount-lebanons-world-war-i-famine",
+        "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf"
+      ]
+    },
+    {
+      "name": "German atrocities in Belgium and northern France",
+      "year": 1914,
+      "perpetrator": "Central Powers - German Empire",
+      "victims_group": "Belgian and French civilians",
+      "low": 6500,
+      "high": 6500,
+      "notes": "Scholarly estimate by Horne and Kramer; includes multiple massacres during the 1914 invasion.",
+      "sources": [
+        "https://books.google.com/books/about/German_Atrocities_1914.html?id=Navs5TkI9oAC",
+        "https://encyclopedia.1914-1918-online.net/article/war-losses-belgium/"
+      ]
+    },
+    {
+      "name": "Sack of Dinant",
+      "year": 1914,
+      "perpetrator": "Central Powers - German Empire",
+      "victims_group": "Belgian civilians",
+      "low": 674,
+      "high": 674,
+      "notes": "Massacre at Dinant on 23 August 1914; included within broader German atrocities total.",
+      "sources": [
+        "https://www.history.com/this-day-in-history/august-25/germans-burn-belgian-town-of-louvain"
+      ]
+    },
+    {
+      "name": "Allied blockade of Germany",
+      "year": 1914,
+      "perpetrator": "Allied and Associated Powers",
+      "victims_group": "German civilians",
+      "low": 424000,
+      "high": 763000,
+      "notes": "Excess civilian deaths associated with malnutrition and disease under blockade; exact causal attribution remains disputed.",
+      "sources": [
+        "https://research.ceu.edu/en/publications/the-blockade-in-the-first-world-war",
+        "https://encyclopedia.1914-1918-online.net/article/war-losses-germany/"
+      ]
+    },
+    {
+      "name": "African campaigns and porterage deaths",
+      "year": 1914,
+      "perpetrator": "Mixed / Allied and Central colonial forces",
+      "victims_group": "African soldiers, laborers, carriers, and civilians",
+      "low": 997500,
+      "high": 997500,
+      "notes": "Approximately 255,000 African soldiers/laborers and 742,500 African civilians died; caused by colonial mobilization, porterage, requisition, famine, disease, and war-zone devastation by multiple European powers.",
+      "sources": [
+        "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf",
+        "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-extra-european_theatres_of_war-2014-10-08.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Military losses are comparatively well documented but vary depending on treatment of POWs, disease, missing, post-discharge deaths, colonial troops, and laborers. Civilian losses are much less certain: no belligerent kept a complete civilian war-death registry, many estimates include or exclude the 1918-1919 influenza pandemic differently, and major mortality events such as the Allied blockade, Syrian famine, East African requisition/famine, and Eastern Anatolia refugee catastrophe had multiple interacting causes. Per-side deaths_from_actions entries should not be mechanically summed because several events are deliberately listed under more than one side as shared or non-partitionable responsibility.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses-2014-10-08.pdf",
+      "title": "War Losses",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://www.britannica.com/event/World-War-I/Killed-wounded-and-missing",
+      "title": "World War I - Killed, wounded, and missing",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_africa-2015-06-22.pdf",
+      "title": "War Losses (Africa)",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-extra-european_theatres_of_war-2014-10-08.pdf",
+      "title": "Extra-European Theatres of War",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/pdf/1914-1918-Online-war_losses_ottoman_empiremiddle_east-2017-11-20.pdf",
+      "title": "War Losses (Ottoman Empire/Middle East)",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://www.ushmm.org/id/genocide-prevention/countries/armenia",
+      "title": "Armenia",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://www.britannica.com/event/Assyrian-Genocide",
+      "title": "Assyrian Genocide",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://books.google.com/books/about/German_Atrocities_1914.html?id=Navs5TkI9oAC",
+      "title": "German Atrocities, 1914: A History of Denial",
+      "publisher": "Yale University Press"
+    },
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/article/war-losses-belgium/",
+      "title": "War Losses (Belgium)",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://research.ceu.edu/en/publications/the-blockade-in-the-first-world-war",
+      "title": "The blockade in the First World War",
+      "publisher": "Central European University Research Portal"
+    },
+    {
+      "url": "https://www.environmentandsociety.org/arcadia/was-capitalism-crisis-mount-lebanons-world-war-i-famine",
+      "title": "Was Capitalism the Crisis? Mount Lebanon\u2019s World War I Famine",
+      "publisher": "Environment & Society Portal"
+    }
+  ]
+}

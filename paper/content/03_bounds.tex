@@ -1,0 +1,55 @@
+\section{Bounds: partial identification of \texorpdfstring{$q$}{q}}\label{sec:bounds}
+
+This section delivers a sharp identified set for $q$ that any source-aggregation rule must respect. We begin with a benchmark assumption, then weaken it.
+
+\begin{assumption}[Exchangeable collateral]\label{ass:ec}
+Civilians of all demographic classes face equal per-capita death hazard.
+\end{assumption}
+
+\begin{theorem}[Demographic identification]\label{thm:identification}
+Under Assumption~\ref{ass:ec},
+\begin{equation}\label{eq:ident}
+q = 1 - \frac{\omega(1 - f)}{w}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Civilian deaths split between $W=\{k\ne\mathrm{AM}\}$ and $\mathrm{AM}$ in proportion to their civilian-population shares, $w/(1-f)$ and $(a-f)/(1-f)$. Combatant deaths fall entirely in $\mathrm{AM}$. Hence $\omega=(1-q)w/(1-f)$, which inverts to \eqref{eq:ident}.
+\end{proof}
+
+\begin{remark}\label{rem:female-combatants}
+A small slack $\bar\eta\le 0.03$ for combatants outside $\mathrm{AM}$ shifts \eqref{eq:ident} by $-\bar\eta$ and propagates mechanically through what follows; we suppress it.
+\end{remark}
+
+Assumption~\ref{ass:ec} is strong: civilian adult men typically face higher per-capita exposure than women and children due to outside work, food queues, rescue activity, and circumstantial proximity to combat. We weaken it to a one-parameter family.
+
+\begin{assumption}[$\mu$-bounded differential exposure]\label{ass:mu}
+There exists $\mu\in[1,\bar\mu]$ such that, conditional on being civilian, class $\mathrm{AM}$ has per-capita death rate $\mu$ times that of class $W$.
+\end{assumption}
+
+\begin{theorem}[Sharp identified set]\label{thm:bounds}
+Suppose $f\le a$ and Assumption~\ref{ass:mu} holds. Given $(\omega,w,a,f,\bar\mu)$, the identified set for $q$ is the image of the monotone-decreasing curve
+\begin{equation}\label{eq:qmu}
+q(\mu) = 1 - \omega\,\frac{w+\mu(a-f)}{w}, \qquad \mu\in[1,\bar\mu],
+\end{equation}
+giving the sharp interval $[q(\bar\mu),\,q(1)]\cap[0,1]$.
+\end{theorem}
+\begin{proof}
+Let $\lambda$ be the civilian per-capita death hazard in $W$. Expected civilian deaths are proportional to $\lambda w N + \lambda\mu(a-f)N$, so the civilian share landing in $W$ is $w/(w+\mu(a-f))$. Since only the civilian fraction $1-q$ of deaths reaches $W$, $\omega=(1-q)w/(w+\mu(a-f))$. Solving gives \eqref{eq:qmu}; $\partial_\mu q=-\omega(a-f)/w\le 0$. Sharpness: every $\mu\in[1,\bar\mu]$ corresponds to a feasible hazard pair $(\lambda,\mu\lambda)$ that attains $q(\mu)$.
+\end{proof}
+
+\begin{corollary}[Manpower bound]\label{cor:popbudget}
+$q\le M/D$, so the joint feasible interval is
+\[
+q \in \bigl[\max\{0,\,q(\bar\mu)\},\; \min\{1,\,q(1),\,M/D\}\bigr].
+\]
+\end{corollary}
+
+\paragraph{Plug-in estimator and standard error.} The sample analogue of the upper endpoint is $\hat q=1-\hat\omega(1-\hat f)/\hat w$, with delta-method variance
+\[
+\widehat{\mathrm{Var}}(\hat q) \approx
+\frac{\hat\omega^2}{\hat w^2}\widehat{\mathrm{Var}}(\hat f)
++\frac{(1-\hat f)^2}{\hat w^2}\widehat{\mathrm{Var}}(\hat\omega)
++\frac{\hat\omega^2(1-\hat f)^2}{\hat w^4}\widehat{\mathrm{Var}}(\hat w).
+\]
+
+\paragraph{Gaza-implied range.} With $w=0.733$, $\hat\omega=0.620$ (geometric mean of OHCHR $0.693$ and MoH-record $0.560$), $a=0.255$, $\hat f=0.020$, $\hat M=45{,}000$, $\hat D=70{,}000$, and $\bar\mu=2.5$, Corollary~\ref{cor:popbudget} gives $q\in[0\%,\,17\%]$; the manpower bound is non-binding. The spatial Bayesian model of Section~\ref{sec:gaza} concentrates inside this interval at $q\approx 2.5\%$.

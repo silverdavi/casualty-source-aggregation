@@ -1,0 +1,390 @@
+{
+  "war_id": "mau_mau_uprising",
+  "name": "Mau Mau Uprising",
+  "start_year": 1952,
+  "end_year": 1960,
+  "ongoing": false,
+  "regions": [
+    "Kenya",
+    "Central Province",
+    "Rift Valley Province",
+    "Nairobi",
+    "Aberdare Range",
+    "Mount Kenya"
+  ],
+  "summary": "The Mau Mau Uprising, also called the Kenya Emergency, was a colonial counterinsurgency and civil war in Kenya from 1952 to 1960. The Kenya Land and Freedom Army/Mau Mau fought British colonial authorities and African loyalist forces, with most deaths occurring among Africans. The best responsible overall death-toll range is about 25,000 to 50,000, with major uncertainty over indirect deaths from detention, forced villagization, starvation, malnutrition, and disease.",
+  "sides": [
+    {
+      "name": "British colonial government and loyalist/security forces",
+      "members": [
+        "British colonial administration in Kenya",
+        "British Army",
+        "King's African Rifles",
+        "Royal Air Force",
+        "Kenya Police",
+        "Kenya Regiment",
+        "Kikuyu Home Guard",
+        "African loyalist auxiliaries"
+      ],
+      "military_killed": {
+        "low": 167,
+        "high": 3000,
+        "point": null,
+        "notes": "The low is the official Corfield/colonial figure for security forces killed up to the end of 1956. The high is a broader Anderson-style figure of over 3,000 African police and soldiers killed; it likely uses a wider definition including African police/soldiers and possibly loyalist auxiliaries.",
+        "sources": [
+          "https://www.marxists.org/archive/lawrence/1960/mau_mau.htm",
+          "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf",
+          "https://books.google.com/books/about/Histories_of_the_Hanged.html?id=JRQ6AgAAQBAJ"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 144,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shootings and other direct military killings",
+            "victims_group": "Kenyan civilians",
+            "low": 144,
+            "high": 144,
+            "notes": "AOAV's confirmed British-military-only count; excludes Kenya Regiment and Home Guard killings.",
+            "sources": [
+              "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-mau-mau-insurgency/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Unarmed civilians at Chuka",
+            "low": 20,
+            "high": 20,
+            "notes": "Killed by B Company, 5th Battalion, King's African Rifles, June 1953.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Chuka_massacre",
+              "https://www.cambridge.org/core/books/fighting-the-mau-mau/Ea0guu42mQEC"
+            ]
+          },
+          {
+            "cause": "detention-camp beating",
+            "victims_group": "Detainees at Hola camp",
+            "low": 11,
+            "high": 11,
+            "notes": "Detainees beaten to death at Hola camp on 3 March 1959.",
+            "sources": [
+              "https://api.parliament.uk/historic-hansard/commons/1959/jul/27/hola-camp-kenya-report",
+              "https://en.wikipedia.org/wiki/Hola_massacre"
+            ]
+          },
+          {
+            "cause": "reprisal killings",
+            "victims_group": "Civilians after the Lari massacre",
+            "low": 150,
+            "high": 150,
+            "notes": "Official estimate for retaliatory killings after the first Lari massacre; true number may be higher or include disappeared persons.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
+              "https://www.iwm.org.uk/history/what-was-the-mau-mau-uprising"
+            ]
+          },
+          {
+            "cause": "reprisal massacre",
+            "victims_group": "Civilians at Mununga Ridge",
+            "low": 400,
+            "high": 400,
+            "notes": "AOAV notes approximately 400 civilians killed by Home Guard forces; not included in AOAV's British-military-only count.",
+            "sources": [
+              "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-mau-mau-insurgency/"
+            ]
+          }
+        ],
+        "notes": "At least 144 confirmed civilian killings by British military forces alone. The true high is unknown because Home Guard, Kenya Regiment, police, detention, screening, and reprisal deaths were not comprehensively counted in a single reliable source.",
+        "sources": [
+          "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-mau-mau-insurgency/",
+          "https://api.parliament.uk/historic-hansard/commons/1959/jul/27/hola-camp-kenya-report",
+          "https://www.iwm.org.uk/history/what-was-the-mau-mau-uprising"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "Kikuyu, Embu, Meru and other suspected Mau Mau supporters",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Anderson estimates about 150,000 detainees; Elkins estimates 160,000 to 320,000 passed through detention camps. Deaths within this system are real but not cleanly quantified separately from overall excess mortality.",
+          "sources": [
+            "https://www.tandfonline.com/doi/abs/10.1080/17531055.2011.611677",
+            "https://www.wcfia.harvard.edu/publications/imperial-reckoning-untold-story-britains-gulag-kenya"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Kikuyu, Embu and Meru civilians in forced villages",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "More than 1 million people were held in forced villages; this is an exposure figure, not a death count.",
+          "sources": [
+            "https://www.tandfonline.com/doi/full/10.1080/17531055.2026.2613196",
+            "https://brill.com/view/journals/ajls/14/1/article-p3_2.xml?language=en"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Mostly Kikuyu, Embu and Meru civilians, including children",
+          "low": 25000,
+          "high": 50000,
+          "point": 50000,
+          "notes": "Blacker estimates perhaps 50,000 excess deaths, more than half children under 10, mostly from malnutrition, starvation and disease from wartime conditions. The low is a conservative allocation within Anderson's roughly 25,000 total-death estimate; attribution to British actions is substantial but not perfectly separable from general war conditions.",
+          "sources": [
+            "https://academic.oup.com/afraf/article-pdf/106/423/205/108196/adm014.pdf",
+            "https://www.theguardian.com/world/2009/may/18/kenya-mau-mau-kikuyu-john-blacker"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Detainees and forced-village populations",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Disease deaths are included in Blacker's excess-mortality estimate and in qualitative accounts of detention and villagization, but no accepted separate number exists.",
+          "sources": [
+            "https://academic.oup.com/afraf/article-pdf/106/423/205/108196/adm014.pdf",
+            "https://www.theguardian.com/politics/2006/oct/13/kenya.foreignpolicy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mau Mau / Kenya Land and Freedom Army",
+      "members": [
+        "Kenya Land and Freedom Army",
+        "Mau Mau forest fighters",
+        "Mau Mau passive wing",
+        "Local oath networks"
+      ],
+      "military_killed": {
+        "low": 11503,
+        "high": 30000,
+        "point": null,
+        "notes": "The low is the official Corfield figure for 'terrorists' killed up to the end of 1956. Modern estimates revise Mau Mau fatalities upward to at least 20,000, and some unofficial estimates give 20,000 to 30,000 rebel casualties. The 1,090 judicial hangings are noted separately because they may overlap imperfectly with combatant status.",
+        "sources": [
+          "https://www.marxists.org/archive/lawrence/1960/mau_mau.htm",
+          "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf",
+          "https://www.cambridge.org/core/journals/law-and-history-review/article/prosecution-of-rape-in-wartime-evidence-from-the-mau-mau-rebellion-kenya-195260/76D09C3563C93BA25C0292945314E4F0",
+          "https://www.theguardian.com/world/2009/may/18/kenya-mau-mau-kikuyu-john-blacker"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1877,
+        "high": 5058,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre, execution, assassination and loyalist-targeting",
+            "victims_group": "African loyalist civilians, informers, chiefs, headmen, Home Guard families and other African civilians",
+            "low": 1819,
+            "high": 5000,
+            "notes": "Official figure is 1,819 African civilians; Anderson regards this as an undercount and is often cited at about 5,000 civilians killed by Mau Mau.",
+            "sources": [
+              "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf",
+              "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
+              "https://www.theguardian.com/commentisfree/2008/dec/07/obama-imperialism-britain-violence-comment"
+            ]
+          },
+          {
+            "cause": "settler and non-African civilian killings",
+            "victims_group": "European and Asian civilians",
+            "low": 58,
+            "high": 58,
+            "notes": "Official breakdowns cite 32 European civilians and 26 Asian civilians killed by Mau Mau.",
+            "sources": [
+              "https://www.cambridge.org/core/journals/british-journal-of-political-science/article/bureaucracy-and-incumbent-violence-colonial-administration-and-origins-of-the-mau-mau-emergency-in-kenya/71BFD4B561ED9840461578F6E59B3BA9",
+              "https://en.wikipedia.org/wiki/Mau_Mau_rebellion"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Lari loyalist civilians and families",
+            "low": 74,
+            "high": 100,
+            "notes": "Initial Lari massacre estimates vary from about 74 official deaths to around 100 or more in other summaries.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
+              "https://www.worldhistory.org/Mau_Mau_Rebellion/",
+              "https://www.newworldencyclopedia.org/entry/Mau_Mau_Uprising"
+            ]
+          },
+          {
+            "cause": "execution of suspected informers",
+            "victims_group": "Suspected government informers",
+            "low": 640,
+            "high": 640,
+            "notes": "A recent Journal of African History article reports that approximately 640 Mau Mau civilian victims were killed on suspicion of being government informers.",
+            "sources": [
+              "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf"
+            ]
+          }
+        ],
+        "notes": "The official floor is 1,877 loyal civilians killed, including 32 Europeans; a more detailed official breakdown gives 1,819 African, 32 European and 26 Asian civilians. Anderson's higher estimate for African civilians killed by Mau Mau is about 5,000.",
+        "sources": [
+          "https://www.marxists.org/archive/lawrence/1960/mau_mau.htm",
+          "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf",
+          "https://en.wikipedia.org/wiki/Mau_Mau_rebellion"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 11670,
+    "military_high": 33000,
+    "civilian_low": 13330,
+    "civilian_high": 38330,
+    "grand_low": 25000,
+    "grand_high": 50000,
+    "notes": "Grand total uses the main responsible scholarly range: about 25,000 total deaths associated with Anderson and about 50,000 excess deaths estimated by Blacker. Military low adds 11,503 Mau Mau killed and 167 security forces killed; military high adds 30,000 Mau Mau/rebel casualties and roughly 3,000 African police/soldier/security casualties. Civilian figures are residual estimates against the 25,000-50,000 grand range and should not be treated as a precise census; the best-documented direct civilian floor is much lower, but indirect mortality from detention, villagization, disease, malnutrition and starvation makes civilian deaths substantially higher."
+  },
+  "key_atrocities": [
+    {
+      "name": "Lari massacre",
+      "year": 1953,
+      "perpetrator": "Mau Mau / Kenya Land and Freedom Army",
+      "victims_group": "Loyalist Kikuyu civilians and families",
+      "low": 74,
+      "high": 100,
+      "notes": "Mau Mau attackers killed loyalist civilians and family members at Lari in March 1953; estimates vary from the official 74 to about 100 or more.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
+        "https://www.worldhistory.org/Mau_Mau_Rebellion/",
+        "https://www.newworldencyclopedia.org/entry/Mau_Mau_Uprising"
+      ]
+    },
+    {
+      "name": "Lari reprisals",
+      "year": 1953,
+      "perpetrator": "British colonial government and loyalist/security forces",
+      "victims_group": "Kikuyu civilians suspected of Mau Mau ties",
+      "low": 150,
+      "high": 150,
+      "notes": "Official estimate of retaliatory killings after the first Lari massacre; some accounts suggest the toll may be higher or incomplete.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mau_Mau_rebellion",
+        "https://www.iwm.org.uk/history/what-was-the-mau-mau-uprising"
+      ]
+    },
+    {
+      "name": "Mununga Ridge massacre",
+      "year": 1953,
+      "perpetrator": "Kikuyu Home Guard / loyalist forces",
+      "victims_group": "Civilians",
+      "low": 400,
+      "high": 400,
+      "notes": "AOAV reports approximately 400 civilians killed by Home Guard forces in retaliation for the assassination of a tribal leader's son.",
+      "sources": [
+        "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-mau-mau-insurgency/"
+      ]
+    },
+    {
+      "name": "Chuka massacre",
+      "year": 1953,
+      "perpetrator": "British colonial security forces / King's African Rifles",
+      "victims_group": "Unarmed civilians",
+      "low": 20,
+      "high": 20,
+      "notes": "B Company, 5th Battalion, King's African Rifles killed about 20 unarmed people in June 1953.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chuka_massacre",
+        "https://www.cambridge.org/core/books/fighting-the-mau-mau/Ea0guu42mQEC"
+      ]
+    },
+    {
+      "name": "Hola camp massacre",
+      "year": 1959,
+      "perpetrator": "British colonial detention authorities and guards",
+      "victims_group": "Detainees",
+      "low": 11,
+      "high": 11,
+      "notes": "Eleven detainees were beaten to death at Hola detention camp on 3 March 1959.",
+      "sources": [
+        "https://api.parliament.uk/historic-hansard/commons/1959/jul/27/hola-camp-kenya-report",
+        "https://en.wikipedia.org/wiki/Hola_massacre"
+      ]
+    },
+    {
+      "name": "Judicial hangings of Mau Mau suspects",
+      "year": null,
+      "perpetrator": "British colonial government",
+      "victims_group": "Mau Mau suspects and convicted insurgents",
+      "low": 1090,
+      "high": 1090,
+      "notes": "British colonial courts hanged 1,090 Mau Mau suspects by the end of the Emergency; military status of all executed persons is not always clear.",
+      "sources": [
+        "https://www.theguardian.com/world/2009/may/18/kenya-mau-mau-kikuyu-john-blacker",
+        "https://en.wikipedia.org/wiki/Mau_Mau_rebellion"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is not whether mass violence occurred, but how to classify and count it. Colonial records used categories such as 'terrorist', 'suspect', 'loyal civilian' and 'security force' that do not map cleanly onto modern civilian/combatant categories. Blacker's 50,000 excess-death estimate includes indirect child mortality from malnutrition, starvation and disease and cannot be cleanly assigned event by event. Elkins's much higher mortality claims remain important but are treated here as contested outliers because Blacker's demographic critique is widely cited.",
+  "sources": [
+    {
+      "url": "https://www.marxists.org/archive/lawrence/1960/mau_mau.htm",
+      "title": "Report on Mau Mau",
+      "publisher": "Socialist Standard / Marxists Internet Archive"
+    },
+    {
+      "url": "https://ir.nilds.gov.ng/bitstream/handle/123456789/1276/563.pdf?isAllowed=y&sequence=1",
+      "title": "Historical Survey of the Origins and Growth of Mau Mau",
+      "publisher": "Great Britain Colonial Office / HMSO"
+    },
+    {
+      "url": "https://academic.oup.com/afraf/article-pdf/106/423/205/108196/adm014.pdf",
+      "title": "The demography of Mau Mau: fertility and mortality in Kenya in the 1950s: a demographer's viewpoint",
+      "publisher": "African Affairs / Oxford Academic"
+    },
+    {
+      "url": "https://books.google.com/books/about/Histories_of_the_Hanged.html?id=JRQ6AgAAQBAJ",
+      "title": "Histories of the Hanged: Britain's Dirty War in Kenya and the End of Empire",
+      "publisher": "Orion / Google Books"
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2F0F9B4AE40B77115365760EE1F526A6/S002185372400046Xa.pdf/who_deserves_to_die_the_moral_logic_of_mau_mau_killings_in_colonial_kenya_195256.pdf",
+      "title": "Who Deserves to Die? The Moral Logic of Mau Mau Killings in Colonial Kenya, 1952\u201356",
+      "publisher": "The Journal of African History / Cambridge University Press"
+    },
+    {
+      "url": "https://aoav.org.uk/2022/civilian-casualties-from-british-military-the-mau-mau-insurgency/",
+      "title": "Civilian Casualties from British Military: The Mau Mau Insurgency",
+      "publisher": "Action on Armed Violence"
+    },
+    {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1959/jul/27/hola-camp-kenya-report",
+      "title": "Hola Camp, Kenya (Report)",
+      "publisher": "UK Parliament / Hansard"
+    },
+    {
+      "url": "https://hansard.parliament.uk/Commons/2013-06-06/debates/13060646000005/MauMauClaims%28Settlement%29",
+      "title": "Mau Mau Claims (Settlement)",
+      "publisher": "UK Parliament / Hansard"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/17531055.2011.611677",
+      "title": "Myths of Mau Mau expanded: rehabilitation in Kenya's detention camps, 1954\u201360",
+      "publisher": "Journal of Eastern African Studies / Taylor & Francis"
+    },
+    {
+      "url": "https://www.iwm.org.uk/history/what-was-the-mau-mau-uprising",
+      "title": "What Was The Kenya Emergency?",
+      "publisher": "Imperial War Museums"
+    },
+    {
+      "url": "https://www.nam.ac.uk/explore/Kenya-Emergency",
+      "title": "Kenya Emergency",
+      "publisher": "National Army Museum"
+    },
+    {
+      "url": "https://www.britannica.com/event/Mau-Mau-Rebellion",
+      "title": "Mau Mau Rebellion",
+      "publisher": "Encyclopaedia Britannica"
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "war_id": "libyan_civil_wars",
+  "name": "Libyan Civil Wars (2011 and 2014-2020)",
+  "start_year": 2011,
+  "end_year": 2020,
+  "ongoing": false,
+  "regions": [
+    "Libya",
+    "North Africa"
+  ],
+  "summary": "The Libyan Civil Wars include the 2011 uprising and civil war that overthrew Muammar Gaddafi, followed by renewed civil war from 2014 to 2020 among rival governments, militias, foreign-backed coalitions, and jihadist groups. Casualty accounting is fragmented: official Libyan reassessments, ACLED/UCDP event data, UN/UNSMIL reports, HRW/Amnesty investigations, and Airwars/New America strike databases use different definitions and verification thresholds. A defensible combined range is roughly 25,000 to 37,500 deaths, with major uncertainty around missing persons, mass graves, and indirect mortality.",
+  "sides": [
+    {
+      "name": "Gaddafi government and loyalist forces",
+      "members": [
+        "Libyan Arab Jamahiriya armed forces",
+        "Revolutionary Committees",
+        "Khamis Brigade",
+        "Internal Security Agency",
+        "loyalist militias",
+        "foreign fighters aligned with the regime"
+      ],
+      "military_killed": {
+        "low": 4700,
+        "high": 4700,
+        "point": 4700,
+        "notes": "Approximate 2013 Libyan government reassessment: loyalist combatant deaths were said to be similar to the 4,700 rebel-side dead. The figure is incomplete and does not fully resolve missing persons or executions after capture.",
+        "sources": [
+          "https://www.theguardian.com/world/2013/jan/08/libyan-revolution-casualties-lower-expected-government",
+          "https://www.globalsecurity.org/military/world/war/libya-civil-war.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 152,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shelling/rockets/cluster_munitions",
+            "victims_group": "civilians in Misrata and other rebel-held towns",
+            "low": 16,
+            "high": null,
+            "notes": "HRW documented at least 16 civilians killed in indiscriminate attacks around Misrata over 14-17 April 2011; the UN Commission found sustained shelling and use of unguided munitions in residential areas.",
+            "sources": [
+              "https://www.hrw.org/news/2011/04/17/libya-indiscriminate-attacks-kill-civilians",
+              "https://www.hrw.org/en/news/2011/04/15/libya-cluster-munitions-strike-misrata",
+              "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+            ]
+          },
+          {
+            "cause": "deliberate_killings",
+            "victims_group": "civilians and protesters perceived as opposition supporters",
+            "low": 152,
+            "high": 168,
+            "notes": "Public summaries of 2011 casualty data report 152-168 civilians deliberately killed by pro-Gaddafi forces. This should be treated as a documented component, not a complete total.",
+            "sources": [
+              "https://alamoana.net/info/en/?search=Casualties_of_the_Libyan_civil_war_%282011%29"
+            ]
+          },
+          {
+            "cause": "detention_execution_torture",
+            "victims_group": "captured fighters and civilians detained by government forces",
+            "low": null,
+            "high": null,
+            "notes": "Amnesty found strong evidence of deliberate killings of captured fighters, enforced disappearances and torture, but no complete numeric national total.",
+            "sources": [
+              "https://www.amnesty.org.uk/knowledge-hub/all-resources/libya-killing-captives-points-war-crimes-libyan-government-forces/",
+              "https://www.amnesty.org/en/documents/mde19/025/2011/en/"
+            ]
+          }
+        ],
+        "notes": "The total number of civilians directly killed by Gaddafi forces is unknown. Documented components include shelling, cluster munitions, protest killings, detention deaths and executions.",
+        "sources": [
+          "https://www.hrw.org/news/2011/04/17/libya-indiscriminate-attacks-kill-civilians",
+          "https://www.hrw.org/en/news/2011/04/15/libya-cluster-munitions-strike-misrata",
+          "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "landmines_cluster_munitions_explosive_remnants",
+          "victims_group": "civilians in areas mined or contaminated by Qadhafi forces",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Commission found Qadhafi forces used cluster munitions and anti-personnel/anti-vehicle mines, including in civilian areas, and did not properly record minefields. No reliable death total was found.",
+          "sources": [
+            "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anti-Gaddafi / NTC / thuwar forces",
+      "members": [
+        "National Transitional Council",
+        "anti-Gaddafi rebels",
+        "Misrata militias",
+        "Zintan militias",
+        "local revolutionary brigades"
+      ],
+      "military_killed": {
+        "low": 4700,
+        "high": 4700,
+        "point": 4700,
+        "notes": "2013 Libyan government reassessment reported 4,700 rebel fighters/supporters killed and 2,100 missing across both camps. The label 'supporters' may include non-combatant activists.",
+        "sources": [
+          "https://www.theguardian.com/world/2013/jan/08/libyan-revolution-casualties-lower-expected-government",
+          "https://www.globalsecurity.org/military/world/war/libya-civil-war.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 60,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "captured Gaddafi loyalists and detainees around Sirte",
+            "low": 60,
+            "high": null,
+            "notes": "HRW documented apparent executions by Misrata-based militias after Gaddafi's capture; secondary summaries describe over 60 loyalists executed. Exact civilian/combatant status varies because many victims were captured fighters hors de combat.",
+            "sources": [
+              "https://www.hrw.org/report/2012/10/16/death-dictator/bloody-vengeance-sirte",
+              "https://www.rt.com/news/libya-gaddafi-execution-hrw-608/"
+            ]
+          },
+          {
+            "cause": "unlawful_killings",
+            "victims_group": "Tawerghans and perceived loyalist communities",
+            "low": null,
+            "high": null,
+            "notes": "The UN Commission found Tawerghans unlawfully killed by thuwar, predominantly from Misrata, but did not provide a complete count in the cited findings.",
+            "sources": [
+              "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+            ]
+          },
+          {
+            "cause": "indiscriminate_shelling",
+            "victims_group": "civilians in Sirte",
+            "low": null,
+            "high": null,
+            "notes": "The UN Commission concluded that the thuwar attack on Sirte was indiscriminate because of the scale of destruction and weapons used.",
+            "sources": [
+              "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+            ]
+          }
+        ],
+        "notes": "No complete civilian death total attributable to anti-Gaddafi forces was found. The numeric low reflects a documented execution component and should not be read as a full total.",
+        "sources": [
+          "https://www.hrw.org/report/2012/10/16/death-dictator/bloody-vengeance-sirte",
+          "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "NATO-led coalition",
+      "members": [
+        "NATO",
+        "United States",
+        "United Kingdom",
+        "France",
+        "Italy",
+        "Canada",
+        "Belgium",
+        "Denmark",
+        "Norway",
+        "other participating states"
+      ],
+      "military_killed": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "notes": "No NATO military personnel were killed in combat during the 2011 Libya operation.",
+        "sources": [
+          "https://cpsa-acsp.ca/documents/conference/2017/Soderlund-Najem-Roberts.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 60,
+        "high": 403,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrike",
+            "victims_group": "Libyan civilians",
+            "low": 60,
+            "high": 60,
+            "notes": "UN Commission documented five NATO airstrikes in which 60 civilians were killed and 55 injured.",
+            "sources": [
+              "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "Libyan civilians",
+            "low": 72,
+            "high": 72,
+            "notes": "HRW documented 72 civilian deaths in eight NATO airstrike incidents.",
+            "sources": [
+              "https://www.hrw.org/report/2012/05/13/unacknowledged-deaths/civilian-casualties-natos-air-campaign-libya"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "Libyan civilians",
+            "low": 223,
+            "high": 403,
+            "notes": "Airwars later estimated 223-403 likely civilian deaths from NATO strikes, using a broader open-source methodology than UN/HRW verified-site counts.",
+            "sources": [
+              "https://factcheck.afp.com/doc.afp.com.32L88GY",
+              "https://en.wikipedia.org/wiki/2011_military_intervention_in_Libya"
+            ]
+          }
+        ],
+        "notes": "The low reflects the UN Commission verified count; the high reflects Airwars' broader likely range. HRW's 72 documented deaths sits between these.",
+        "sources": [
+          "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf",
+          "https://www.hrw.org/report/2012/05/13/unacknowledged-deaths/civilian-casualties-natos-air-campaign-libya",
+          "https://factcheck.afp.com/doc.afp.com.32L88GY"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "House of Representatives / Libyan National Army-LAAF camp",
+      "members": [
+        "House of Representatives",
+        "Libyan National Army / Libyan Arab Armed Forces",
+        "Khalifa Haftar-aligned forces",
+        "UAE support",
+        "Egypt support",
+        "Russian-linked Wagner personnel",
+        "al-Kaniyat militia"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable comprehensive side-specific count of LNA/LAAF combatant deaths for 2014-2020 was found. Aggregate ACLED totals for Libya in 2014-2020 are about 16,012 deaths across all sides and civilians.",
+        "sources": [
+          "https://www.sipri.org/sites/default/files/SIPRIYB20c06sIV.pdf",
+          "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2020"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 349,
+        "high": 541,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "air_drone_artillery_strikes",
+            "victims_group": "Libyan civilians",
+            "low": 214,
+            "high": 356,
+            "notes": "New America/Airwars attributed 2,348 strikes to the LNA since 2014, causing 214-356 civilian deaths.",
+            "sources": [
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/",
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/"
+            ]
+          },
+          {
+            "cause": "air_drone_strikes",
+            "victims_group": "Libyan civilians",
+            "low": 135,
+            "high": 185,
+            "notes": "New America/Airwars attributed at least 131 UAE strikes in Libya to 135-185 civilian deaths; UAE strikes were generally in support of the LNA camp. These may overlap conceptually with LNA-aligned operations.",
+            "sources": [
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "migrants and refugees at Tajoura detention centre",
+            "low": 53,
+            "high": 53,
+            "notes": "3 July 2019 Tajoura detention centre strike; New America attributes the bombing to the UAE in support of the LNA and reports at least 53 civilians killed.",
+            "sources": [
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "civilians in Murzuq",
+            "low": 42,
+            "high": 43,
+            "notes": "4 August 2019 Murzuq strike; reported civilian deaths were about 42-43, with local/GNA sources blaming the LNA, while the LNA denied targeting civilians.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/2019_Murzuq_airstrike",
+              "https://en.wikipedia.org/wiki/Battle_of_Sabha_(2019)"
+            ]
+          },
+          {
+            "cause": "execution_disappearance_mass_graves",
+            "victims_group": "Tarhuna civilians and perceived opponents of al-Kaniyat",
+            "low": 115,
+            "high": null,
+            "notes": "GNA authorities reported at least 115 unidentified bodies in 26 mass grave sites in Tarhuna by mid-November 2020. These deaths are not added to the LNA strike subtotal because some may overlap with missing-person counts and the full time period extends before 2019.",
+            "sources": [
+              "https://www.hrw.org/world-report/2021/country-chapters/libya",
+              "https://www.hrw.org/news/2021/01/07/libya-militia-terrorized-town-leaving-mass-graves"
+            ]
+          }
+        ],
+        "notes": "The 349-541 range is the sum of LNA-attributed and UAE-attributed airstrike civilian-death ranges from New America/Airwars. This is not a complete civilian-death total for the LNA camp and may include coordination/attribution overlap.",
+        "sources": [
+          "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/",
+          "https://www.hrw.org/world-report/2021/country-chapters/libya"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "mines_ieds_booby_traps_erw",
+          "victims_group": "returning civilians and clearance personnel in southern Tripoli and surrounding areas",
+          "low": 73,
+          "high": 73,
+          "point": 73,
+          "notes": "OCHA/Libya Herald reporting said explosive contamination after the 2020 withdrawal caused 206 casualties since May 2020, including 73 killed and 133 injured.",
+          "sources": [
+            "https://libyaherald.com/2021/01/insecurity-displacement-and-protection-risks-continued-in-libya-during-2020-ocha/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tripoli / GNA / Libya Dawn-aligned camp",
+      "members": [
+        "Government of National Accord",
+        "Libya Dawn-aligned forces",
+        "Misrata forces",
+        "Tripoli militias",
+        "Turkey-backed forces",
+        "US counter-ISIS forces operating with GNA consent"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable comprehensive side-specific count of GNA/Libya Dawn combatant deaths for 2014-2020 was found.",
+        "sources": [
+          "https://www.sipri.org/sites/default/files/SIPRIYB20c06sIV.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 64,
+        "high": 93,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "air_drone_artillery_strikes",
+            "victims_group": "Libyan civilians",
+            "low": 53,
+            "high": 72,
+            "notes": "New America/Airwars attributed 453 GNA strikes to 53-72 civilian deaths.",
+            "sources": [
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/",
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/"
+            ]
+          },
+          {
+            "cause": "counter_isis_airstrikes",
+            "victims_group": "Libyan civilians near ISIS targets, mainly Sirte",
+            "low": 11,
+            "high": 21,
+            "notes": "US strikes on ISIS targets in Libya, conducted with GNA consent, reportedly caused 11-21 civilian deaths according to New America/Airwars.",
+            "sources": [
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/",
+              "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/"
+            ]
+          },
+          {
+            "cause": "airstrikes_ground_fighting",
+            "victims_group": "Libyan civilians during Q2 2020 fighting",
+            "low": 25,
+            "high": 25,
+            "notes": "UNSMIL attributed 21 civilian deaths in airstrikes and 4 in ground fighting to GNA-affiliated forces in April-June 2020. This may overlap temporally with broader strike datasets only after February 2020.",
+            "sources": [
+              "https://unsmil.unmissions.org/en/node/55694"
+            ]
+          },
+          {
+            "cause": "artillery_shelling",
+            "victims_group": "civilians in Qasr bin Ghashir",
+            "low": 5,
+            "high": 5,
+            "notes": "Amnesty reported at least 5 civilians killed by a GNA artillery attack on 14 May 2019.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/press-release/2019/10/libya-civilians-caught-in-the-crossfire-as-militias-battle-for-tripoli/"
+            ]
+          }
+        ],
+        "notes": "The 64-93 range adds New America/Airwars GNA strike deaths and US counter-ISIS deaths; it does not include every GNA-aligned militia abuse and may overlap with UNSMIL period reports.",
+        "sources": [
+          "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/",
+          "https://unsmil.unmissions.org/en/node/55694",
+          "https://www.amnesty.org/en/latest/press-release/2019/10/libya-civilians-caught-in-the-crossfire-as-militias-battle-for-tripoli/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Islamic State and other jihadist armed groups",
+      "members": [
+        "Islamic State in Libya",
+        "Ansar al-Sharia",
+        "Derna and Sirte jihadist factions"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "ISIS and other jihadist combatants were killed by GNA/Misrata forces, LNA forces, and US strikes, especially in Sirte, but no reliable full combatant-death total was found.",
+        "sources": [
+          "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "ISIS and jihadist groups committed executions, bombings and assassinations, but I did not find a complete civilian-fatality total separated by actor for 2014-2020.",
+        "sources": [
+          "https://www.hrw.org/world-report/2020/country-chapters/libya",
+          "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 9400,
+    "military_high": null,
+    "civilian_low": 1166,
+    "civilian_high": null,
+    "grand_low": 25412,
+    "grand_high": 37502,
+    "notes": "Military_low sums the two 2011 side-specific combatant estimates only: 4,700 anti-Gaddafi plus about 4,700 loyalist dead. Civilian_low uses Airwars' 2011 all-belligerents civilian-harm minimum as a documented floor, not a full civilian total. Grand_low combines the 2013 Libyan reassessment for 2011, about 9,400 dead, with about 16,012 ACLED-reported fatalities for 2014-2020. Grand_high combines the 21,490 public-health estimate for February 2011-February 2012 with the same 16,012 ACLED 2014-2020 total. Per-side civilian numbers should not be summed because incident datasets overlap and use different definitions."
+  },
+  "key_atrocities": [
+    {
+      "name": "Misrata siege and indiscriminate shelling",
+      "year": 2011,
+      "perpetrator": "Gaddafi government and loyalist forces",
+      "victims_group": "civilians in Misrata",
+      "low": 16,
+      "high": null,
+      "notes": "HRW documented at least 16 civilians killed in specific indiscriminate attacks in April 2011; the full siege toll was higher but not cleanly quantified in the cited sources.",
+      "sources": [
+        "https://www.hrw.org/news/2011/04/17/libya-indiscriminate-attacks-kill-civilians",
+        "https://www.hrw.org/en/news/2011/04/15/libya-cluster-munitions-strike-misrata"
+      ]
+    },
+    {
+      "name": "Majer NATO airstrike",
+      "year": 2011,
+      "perpetrator": "NATO-led coalition",
+      "victims_group": "Libyan civilians and rescuers",
+      "low": 34,
+      "high": 34,
+      "notes": "UN Commission documented 34 civilians killed and 38 wounded on 8 August 2011.",
+      "sources": [
+        "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf",
+        "https://www.hrw.org/report/2012/05/13/unacknowledged-deaths/civilian-casualties-natos-air-campaign-libya"
+      ]
+    },
+    {
+      "name": "Sirte detainee executions after Gaddafi capture",
+      "year": 2011,
+      "perpetrator": "Anti-Gaddafi / NTC / Misrata-based militias",
+      "victims_group": "captured Gaddafi loyalists and detainees",
+      "low": 60,
+      "high": null,
+      "notes": "HRW found evidence of apparent execution of dozens of detainees; secondary summaries describe over 60 victims.",
+      "sources": [
+        "https://www.hrw.org/report/2012/10/16/death-dictator/bloody-vengeance-sirte",
+        "https://www.rt.com/news/libya-gaddafi-execution-hrw-608/"
+      ]
+    },
+    {
+      "name": "Tajoura migrant detention centre airstrike",
+      "year": 2019,
+      "perpetrator": "UAE / LNA-aligned camp",
+      "victims_group": "migrants and refugees",
+      "low": 53,
+      "high": 53,
+      "notes": "New America reports at least 53 civilians killed in the 3 July 2019 strike.",
+      "sources": [
+        "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/"
+      ]
+    },
+    {
+      "name": "Murzuq airstrike",
+      "year": 2019,
+      "perpetrator": "LNA/LAAF, alleged",
+      "victims_group": "civilians in Murzuq",
+      "low": 42,
+      "high": 43,
+      "notes": "Reported death toll was about 42-43; the LNA confirmed an airstrike but denied targeting civilians.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2019_Murzuq_airstrike",
+        "https://en.wikipedia.org/wiki/Battle_of_Sabha_(2019)"
+      ]
+    },
+    {
+      "name": "Tarhuna mass graves and al-Kaniyat disappearances",
+      "year": 2020,
+      "perpetrator": "al-Kaniyat militia / LNA-aligned camp",
+      "victims_group": "Tarhuna civilians and perceived opponents",
+      "low": 115,
+      "high": null,
+      "notes": "GNA authorities reported at least 115 unidentified bodies in 26 mass grave sites by mid-November 2020; many more people were reported missing or abducted.",
+      "sources": [
+        "https://www.hrw.org/world-report/2021/country-chapters/libya",
+        "https://www.hrw.org/news/2021/01/07/libya-militia-terrorized-town-leaving-mass-graves"
+      ]
+    },
+    {
+      "name": "Post-withdrawal mines, IEDs and booby traps in Tripoli area",
+      "year": 2020,
+      "perpetrator": "LNA/LAAF-aligned forces, alleged",
+      "victims_group": "returning civilians and clearance personnel",
+      "low": 73,
+      "high": 73,
+      "notes": "OCHA/Libya Herald reported 206 casualties from explosive contamination since May 2020, including 73 killed.",
+      "sources": [
+        "https://libyaherald.com/2021/01/insecurity-displacement-and-protection-risks-continued-in-libya-during-2020-ocha/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The most important uncertainty is that no single actor has produced a complete casualty registry for Libya from 2011 through 2020. Reported violent-death datasets, official Libyan reassessments, UN/HRW/Amnesty investigations, and Airwars/New America strike databases overlap but do not use the same definitions. Many 2014-2020 combatant deaths cannot be assigned by side from public sources, and mass graves, missing persons, detention deaths, and explosive-remnant deaths mean that the true death toll may exceed event-dataset counts.",
+  "sources": [
+    {
+      "url": "https://www.theguardian.com/world/2013/jan/08/libyan-revolution-casualties-lower-expected-government",
+      "title": "Libyan revolution casualties lower than expected, says new government",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.globalsecurity.org/military/world/war/libya-civil-war.htm",
+      "title": "Libya Civil War - 2011",
+      "publisher": "GlobalSecurity.org"
+    },
+    {
+      "url": "https://www.sipri.org/sites/default/files/SIPRIYB20c06sIV.pdf",
+      "title": "Armed conflict and conflict management, 2019: North Africa",
+      "publisher": "SIPRI"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/VC.BTL.DETH?locations=LY",
+      "title": "Battle-related deaths (number of people) - Libya",
+      "publisher": "World Bank / UCDP"
+    },
+    {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Dataset Download Center",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://www.siracusainstitute.org/wp-content/uploads/2023/06/Final-report-of-the-Commission-of-Inquiry-for-Libya-2011-12.pdf",
+      "title": "Final report of the Commission of Inquiry for Libya",
+      "publisher": "UN Human Rights Council / International Commission of Inquiry"
+    },
+    {
+      "url": "https://www.hrw.org/report/2012/05/13/unacknowledged-deaths/civilian-casualties-natos-air-campaign-libya",
+      "title": "Unacknowledged Deaths: Civilian Casualties in NATO\u2019s Air Campaign in Libya",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://airwars.org/conflict/all-belligerents-in-libya-2011/",
+      "title": "All Belligerents in Libya, 2011",
+      "publisher": "Airwars"
+    },
+    {
+      "url": "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/",
+      "title": "Airstrikes, Proxy Warfare, and Civilian Casualties in Libya",
+      "publisher": "New America / Airwars"
+    },
+    {
+      "url": "https://www.newamerica.org/insights/airstrikes-proxy-warfare-and-civilian-casualties-libya/the-conflicts-in-libya-from-2011-2020/",
+      "title": "The Conflicts in Libya from 2011-2020",
+      "publisher": "New America"
+    },
+    {
+      "url": "https://unsmil.unmissions.org/en/node/55694",
+      "title": "Civilian Casualties Report - 1 April-30 June 2020",
+      "publisher": "UNSMIL"
+    },
+    {
+      "url": "https://unsmil.unmissions.org/en/escalation-ground-fighting-drives-up-civilian-casualties-first-quarter-2020",
+      "title": "Escalation in ground fighting drives up civilian casualties in first quarter of 2020",
+      "publisher": "UNSMIL"
+    },
+    {
+      "url": "https://www.hrw.org/news/2011/04/17/libya-indiscriminate-attacks-kill-civilians",
+      "title": "Libya: Indiscriminate Attacks Kill Civilians",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/en/news/2011/04/15/libya-cluster-munitions-strike-misrata",
+      "title": "Libya: Cluster Munitions Strike Misrata",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/mde19/025/2011/en/",
+      "title": "Libya: The battle for Libya: Killings, disappearances and torture",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/MDE19/027/2011/en/",
+      "title": "Libya: No place of safety: Civilians in Libya under attack",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.hrw.org/report/2012/10/16/death-dictator/bloody-vengeance-sirte",
+      "title": "Death of a Dictator: Bloody Vengeance in Sirte",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/press-release/2019/10/libya-civilians-caught-in-the-crossfire-as-militias-battle-for-tripoli/",
+      "title": "Libya: Civilians caught in the crossfire as militias battle for Tripoli",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/01/07/libya-militia-terrorized-town-leaving-mass-graves",
+      "title": "Libya: Militia Terrorized Town, Leaving Mass Graves",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2021/country-chapters/libya",
+      "title": "World Report 2021: Libya",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://libyaherald.com/2021/01/insecurity-displacement-and-protection-risks-continued-in-libya-during-2020-ocha/",
+      "title": "Insecurity, displacement and protection risks continued in Libya during 2020: OCHA",
+      "publisher": "Libya Herald"
+    },
+    {
+      "url": "https://factcheck.afp.com/doc.afp.com.32L88GY",
+      "title": "NATO air strikes in Libya did not cause 'half a million civilian casualties' in 2011",
+      "publisher": "AFP Fact Check"
+    }
+  ]
+}

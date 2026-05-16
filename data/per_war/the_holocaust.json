@@ -1,0 +1,404 @@
+{
+  "war_id": "the_holocaust",
+  "name": "The Holocaust (Shoah) and Nazi genocides",
+  "start_year": 1933,
+  "end_year": 1945,
+  "ongoing": false,
+  "regions": [
+    "Nazi Germany",
+    "German-occupied Europe",
+    "Axis-aligned and collaborationist territories in Europe",
+    "Occupied Poland",
+    "Occupied Soviet territories",
+    "The Balkans"
+  ],
+  "summary": "The Holocaust narrowly refers to the Nazi-led genocide of Europe\u2019s Jews, in which about six million Jews were murdered. In this broader requested scope, it also includes Nazi and collaborator mass murder of Roma and Sinti, disabled people, non-Jewish Poles, Soviet POWs and civilians, Serb civilians under the Usta\u0161a, gay men, Jehovah\u2019s Witnesses, political opponents, and other targeted groups. Depending on definition, the total death toll ranges from about 11.2 million itemized victims to as high as about 17 million under broad Nazi racial-policy and occupation-policy definitions.",
+  "sides": [
+    {
+      "name": "Nazi Germany, Axis allies, SS/police, Wehrmacht, and collaborationist regimes",
+      "members": [
+        "Nazi Germany",
+        "SS",
+        "German police",
+        "Wehrmacht units involved in occupation, POW, reprisal, and anti-partisan policies",
+        "Einsatzgruppen",
+        "Independent State of Croatia / Usta\u0161a",
+        "Axis allies and local auxiliaries/collaborators"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Perpetrator military deaths cannot be cleanly separated for the Holocaust/Nazi genocides as distinct from wider World War II losses.",
+        "sources": [
+          "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7500000,
+        "high": 8100000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "poison_gas_and_killing_centers",
+            "victims_group": "Jewish civilians",
+            "low": 2700000,
+            "high": 2700000,
+            "notes": "USHMM estimates approximately 2.7 million Jews murdered at killing centers.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+            ]
+          },
+          {
+            "cause": "mass_shootings_and_massacres",
+            "victims_group": "Jewish civilians",
+            "low": 2000000,
+            "high": 2000000,
+            "notes": "USHMM estimates about 2 million Jews murdered in mass shooting operations and related massacres.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+            ]
+          },
+          {
+            "cause": "other_direct_violence_outside_camps_and_ghettos",
+            "victims_group": "Jewish civilians",
+            "low": 250000,
+            "high": null,
+            "notes": "USHMM states at least 250,000 Jews were murdered in other acts of violence outside camps and ghettos; this category includes some deprivation and transport/forced-march deaths.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+            ]
+          },
+          {
+            "cause": "executions_massacres_camps_forced_labor_deportation",
+            "victims_group": "Non-Jewish Polish civilians",
+            "low": 1800000,
+            "high": 1900000,
+            "notes": "USHMM estimates Germans killed 1.8\u20131.9 million non-Jewish Polish civilians; direct and indirect components are not cleanly separated.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/polish-victims"
+            ]
+          },
+          {
+            "cause": "genocide_massacres_camps",
+            "victims_group": "Roma and Sinti",
+            "low": 250000,
+            "high": 500000,
+            "notes": "USHMM gives at least 250,000 and possibly 500,000 Roma/Sinti and others labeled 'Gypsies' murdered.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+              "https://perspectives.ushmm.org/collection/roma-and-sinti-in-nazi-germany"
+            ]
+          },
+          {
+            "cause": "medical_murder_euthanasia",
+            "victims_group": "Disabled people in institutions and care facilities",
+            "low": 250000,
+            "high": 300000,
+            "notes": "USHMM estimates 250,000\u2013300,000 disabled people murdered, including at least 10,000 children.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+              "https://encyclopedia.ushmm.org/content/en/article/euthanasia-program"
+            ]
+          },
+          {
+            "cause": "massacres_camps_and_collaborationist_genocide",
+            "victims_group": "Serb civilians murdered by Usta\u0161a authorities",
+            "low": 310000,
+            "high": null,
+            "notes": "USHMM lists more than 310,000 Serb civilians murdered by Usta\u0161a authorities of the Independent State of Croatia.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+            ]
+          },
+          {
+            "cause": "camp_deaths_and_executions",
+            "victims_group": "Jehovah's Witnesses",
+            "low": 1700,
+            "high": 1700,
+            "notes": "USHMM lists about 1,700 Jehovah\u2019s Witnesses killed in concentration camps or executed for refusing military service.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+              "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-jehovahs-witnesses"
+            ]
+          },
+          {
+            "cause": "camp_deaths_and_abuse",
+            "victims_group": "Gay men, bisexual men, and men accused of homosexuality",
+            "low": null,
+            "high": null,
+            "notes": "USHMM gives deaths as hundreds, possibly thousands, and states that 5,000\u201315,000 men were imprisoned in concentration camps as 'homosexual' offenders; the number who died is unknown.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+              "https://encyclopedia.ushmm.org/content/en/article/gay-men-under-the-nazi-regime"
+            ]
+          }
+        ],
+        "notes": "The low/high subtotal is an approximate accounting of major directly killed or mixed direct-killing civilian categories. It should not be treated as a precise direct-killing total because several source categories combine shootings, camps, deprivation, deportation, disease, and forced labor.",
+        "sources": [
+          "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+          "https://encyclopedia.ushmm.org/content/en/article/polish-victims",
+          "https://encyclopedia.ushmm.org/content/en/article/euthanasia-program",
+          "https://encyclopedia.ushmm.org/content/en/article/gay-men-under-the-nazi-regime"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ghetto_concentration_camp_labor_camp_starvation_disease_brutality",
+          "victims_group": "Jewish civilians",
+          "low": 800000,
+          "high": 1000000,
+          "point": null,
+          "notes": "USHMM estimates 800,000\u20131,000,000 Jews murdered in ghettos, concentration camps, and labor camps through deliberate privation, disease, brutal treatment, and arbitrary acts of violence.",
+          "sources": [
+            "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+          ]
+        },
+        {
+          "type": "captivity_starvation_disease_exposure_shootings_forced_labor",
+          "victims_group": "Soviet prisoners of war",
+          "low": 3300000,
+          "high": 3300000,
+          "point": 3300000,
+          "notes": "USHMM estimates 3.3 million Soviet POWs died in German custody out of 5.7 million captured; methods included starvation, exposure, disease, shootings, and forced labor.",
+          "sources": [
+            "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-soviet-prisoners-of-war",
+            "https://encyclopedia.ushmm.org/content/en/article/the-treatment-of-soviet-pows-starvation-disease-and-shootings-june-1941january-1942"
+          ]
+        },
+        {
+          "type": "hunger_policy_siege_occupation_starvation",
+          "victims_group": "Soviet civilians",
+          "low": 2000000,
+          "high": 4200000,
+          "point": null,
+          "notes": "Alex J. Kay\u2019s framework includes at least 2 million Soviet urban residents targeted by hunger policy; broader Snyder/Bloodlands-style summaries cite 4.2 million Soviet citizens starved by German occupiers. These figures risk overlap with POW and Jewish ghetto starvation categories if mechanically added.",
+          "sources": [
+            "https://academic.oup.com/hgs/article-abstract/38/1/140/7486603",
+            "https://en.wikipedia.org/wiki/Hunger_Plan"
+          ]
+        },
+        {
+          "type": "siege_starvation_disease_bombardment",
+          "victims_group": "Leningrad civilians",
+          "low": 750000,
+          "high": 1000000,
+          "point": null,
+          "notes": "Scholarly estimates vary; one source gives at least three-quarters of a million civilian deaths in Leningrad, while other summaries cite over one million deaths resulting from the siege.",
+          "sources": [
+            "https://link.springer.com/chapter/10.1057/9781403938824_1",
+            "https://www.auswaertiges-amt.de/en/aussenpolitik/laenderinformationen/russischefoederation-node/siege-of-leningrad-2181978"
+          ]
+        },
+        {
+          "type": "forced_labor_deportation",
+          "victims_group": "Polish civilians and other forced laborers",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "At least 1.5 million Polish citizens were deported to German territory for forced labor, but deaths are not cleanly separated from the overall 1.8\u20131.9 million non-Jewish Polish civilian death estimate.",
+          "sources": [
+            "https://encyclopedia.ushmm.org/content/en/article/polish-victims"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Targeted peoples, prisoners, and resistance movements",
+      "members": [
+        "European Jews",
+        "Roma and Sinti",
+        "Disabled people",
+        "Non-Jewish Poles",
+        "Soviet POWs",
+        "Soviet civilians",
+        "Serb civilians under Usta\u0161a rule",
+        "Jehovah's Witnesses",
+        "Gay men, bisexual men, and men accused of homosexuality",
+        "Political opponents and resistance movements"
+      ],
+      "military_killed": {
+        "low": 3300000,
+        "high": 3300000,
+        "point": 3300000,
+        "notes": "This category counts Soviet POWs as captive combatants killed by Nazi policy, not as deaths caused by the targeted side. Resistance fighter deaths cannot be cleanly totaled separately from POW, civilian, and general World War II military losses.",
+        "sources": [
+          "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-soviet-prisoners-of-war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "Within Holocaust/Nazi-genocide accounting, the targeted groups were overwhelmingly victims, not perpetrators of systematic civilian mass killing.",
+        "sources": []
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 3300000,
+    "military_high": 3300000,
+    "civilian_low": 7900000,
+    "civilian_high": 13700000,
+    "grand_low": 11200000,
+    "grand_high": 17000000,
+    "notes": "Grand low is a conservative itemized roll-up of major USHMM/Yad Vashem-style categories; grand high reflects broad definitions including Soviet civilian starvation and occupation-policy deaths. Civilian high is grand high minus the 3.3 million Soviet POWs. Totals are not obtained by mechanically adding every subcomponent because Soviet starvation, camp, ghetto, and POW categories can overlap depending on definition."
+  },
+  "key_atrocities": [
+    {
+      "name": "Auschwitz-Birkenau",
+      "year": 1940,
+      "perpetrator": "Nazi Germany / SS",
+      "victims_group": "Jews, Poles, Roma and Sinti, Soviet POWs, and others",
+      "low": 1100000,
+      "high": 1100000,
+      "notes": "Auschwitz-Birkenau State Museum estimates around 1.1 million deaths: about 1 million Jews, 70,000 Poles, 21,000 Roma and Sinti, 15,000 Soviet POWs, and 12,000 others.",
+      "sources": [
+        "https://www.auschwitz.org/en/history/auschwitz-and-shoah/the-number-of-victims"
+      ]
+    },
+    {
+      "name": "Operation Reinhard killing centers",
+      "year": 1942,
+      "perpetrator": "Nazi Germany / SS",
+      "victims_group": "Jewish civilians",
+      "low": 1679000,
+      "high": 1679000,
+      "notes": "USHMM's listed Jewish killing-center figures include Che\u0142mno at least 152,000, Be\u0142\u017cec about 435,000, Sobib\u00f3r at least 167,000, and Treblinka II about 925,000. Auschwitz is separately listed in this JSON.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+      ]
+    },
+    {
+      "name": "Babyn Yar / Babi Yar massacre",
+      "year": 1941,
+      "perpetrator": "SS, German police, and auxiliaries",
+      "victims_group": "Jewish civilians of Kyiv and vicinity",
+      "low": 33771,
+      "high": 33771,
+      "notes": "The first and best-documented massacre at Babyn Yar on September 29\u201330, 1941 killed 33,771 Jews.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/tags/en/tag/babi-yar",
+        "https://en.wikipedia.org/wiki/Babi_Yar"
+      ]
+    },
+    {
+      "name": "Warsaw Uprising suppression and Wola massacres",
+      "year": 1944,
+      "perpetrator": "German forces, SS, police, and auxiliaries",
+      "victims_group": "Polish civilians and resistance fighters",
+      "low": 180000,
+      "high": null,
+      "notes": "USHMM states the number of victims in the Warsaw Uprising exceeded 180,000; approximately 40,000 civilians were murdered in the Wola massacres between August 5 and 7, 1944.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/the-warsaw-polish-uprising"
+      ]
+    },
+    {
+      "name": "Nazi persecution and killing of Soviet POWs",
+      "year": 1941,
+      "perpetrator": "Nazi Germany / Wehrmacht / SS",
+      "victims_group": "Soviet prisoners of war",
+      "low": 3300000,
+      "high": 3300000,
+      "notes": "USHMM estimates 3.3 million Soviet POWs died in German custody out of 5.7 million captured.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-soviet-prisoners-of-war",
+        "https://encyclopedia.ushmm.org/content/en/article/the-treatment-of-soviet-pows-starvation-disease-and-shootings-june-1941january-1942"
+      ]
+    },
+    {
+      "name": "Nazi euthanasia program / Aktion T4 and related killings",
+      "year": 1939,
+      "perpetrator": "Nazi Germany",
+      "victims_group": "Disabled people in institutions and care facilities",
+      "low": 250000,
+      "high": 300000,
+      "notes": "USHMM estimates 250,000\u2013300,000 disabled people murdered, including at least 10,000 children.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+        "https://encyclopedia.ushmm.org/content/en/article/euthanasia-program"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is definitional: the narrow Shoah total is about six million Jews, while broader Nazi-genocide totals include Roma and Sinti, disabled people, Soviet POWs, Poles, Soviet civilians, Serbs, political and religious dissenters, gay men, and others. Direct versus indirect killing cannot be cleanly separated for many groups because camps, ghettos, forced labor, deportations, siege warfare, anti-partisan operations, starvation, disease, exposure, and executions were intertwined. Soviet civilian starvation figures can overlap with POW, Jewish ghetto, or siege categories if added mechanically.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+      "title": "How Many People did the Nazis Murder?",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-soviet-prisoners-of-war",
+      "title": "Nazi Persecution of Soviet Prisoners of War",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/the-treatment-of-soviet-pows-starvation-disease-and-shootings-june-1941january-1942",
+      "title": "The Treatment of Soviet POWs: Starvation, Disease, and Shootings, June 1941\u2013January 1942",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/polish-victims",
+      "title": "Polish Victims",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/euthanasia-program",
+      "title": "Euthanasia Program and Aktion T4",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/gay-men-under-the-nazi-regime",
+      "title": "Gay Men under the Nazi Regime",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/nazi-persecution-of-jehovahs-witnesses",
+      "title": "Nazi Persecution of Jehovah's Witnesses",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://perspectives.ushmm.org/collection/roma-and-sinti-in-nazi-germany",
+      "title": "Roma and Sinti in Nazi Germany",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://www.auschwitz.org/en/history/auschwitz-and-shoah/the-number-of-victims",
+      "title": "The number of victims",
+      "publisher": "Auschwitz-Birkenau State Museum"
+    },
+    {
+      "url": "https://academic.oup.com/hgs/article-abstract/38/1/140/7486603",
+      "title": "Book Review: Empire of Destruction: A History of Nazi Mass Killing by Alex J. Kay",
+      "publisher": "Holocaust and Genocide Studies / Oxford Academic"
+    },
+    {
+      "url": "https://scielo.org.za/scielo.php?pid=S2224-00202022000100012&script=sci_arttext",
+      "title": "Empire of destruction: A history of Nazi mass killing",
+      "publisher": "SciELO South Africa"
+    },
+    {
+      "url": "https://cup.columbia.edu/book/the-columbia-guide-to-the-holocaust/9780231112017/",
+      "title": "The Columbia Guide to the Holocaust",
+      "publisher": "Columbia University Press"
+    },
+    {
+      "url": "https://www.yadvashem.org/es/remembrance/names-database/faq.html",
+      "title": "Preguntas m\u00e1s frecuentes / Shoah Victims' Names Database FAQ",
+      "publisher": "Yad Vashem"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/the-warsaw-polish-uprising",
+      "title": "Warsaw Uprising",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/tags/en/tag/babi-yar",
+      "title": "Babyn Yar",
+      "publisher": "United States Holocaust Memorial Museum"
+    }
+  ]
+}

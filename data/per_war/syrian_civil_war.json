@@ -1,0 +1,616 @@
+{
+  "war_id": "syrian_civil_war",
+  "name": "Syrian Civil War",
+  "start_year": 2011,
+  "end_year": 2024,
+  "ongoing": false,
+  "regions": [
+    "Syria"
+  ],
+  "summary": "The Syrian Civil War began in March 2011 as an uprising against Bashar al-Assad and became a multi-sided war involving the Assad government and allies, opposition factions, jihadist groups, ISIS, the SDF, Turkey, and the U.S.-led coalition. Assad's government fell on December 8, 2024, but post-Assad violence continued, so 2025 figures are treated only as upper-bound checks. Civilian and combatant casualty estimates vary widely because monitors use different definitions, access, and verification rules.",
+  "sides": [
+    {
+      "name": "Syrian government / Assad regime and allies",
+      "members": [
+        "Syrian Arab Army",
+        "Syrian security services",
+        "pro-government militias",
+        "Russia",
+        "Iran/IRGC-linked forces",
+        "Hezbollah",
+        "foreign pro-regime militias"
+      ],
+      "military_killed": {
+        "low": 170000,
+        "high": 173348,
+        "point": 173086,
+        "notes": "Approximate aggregation of SOHR March 2025 non-civilian categories: regime forces 93,612; Russia/Iran/regime-backed militiamen 68,385; Hezbollah 1,830; non-Syrian Iran/Russia-backed militiamen 8,986; Russian-backed non-Syrian mercenaries 273; plus small former-regime loyalist categories. Includes post-December 2024 violence, so this is an upper-bound check for a 2011-2024 endpoint.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://www.syriahr.com/en/328044/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 193155,
+        "high": 279000,
+        "point": 193155,
+        "breakdown": [
+          {
+            "cause": "shelling, gunfire, airstrikes, bombardment, chemical attacks, barrel bombs, cluster munitions",
+            "victims_group": "Syrian civilians in opposition-held and contested areas",
+            "low": 193155,
+            "high": 279000,
+            "notes": "Low/point uses SNHR documented regime civilian deaths 201,260 plus Russian deaths 6,969, minus 15,074 regime torture deaths to avoid double-counting detention in bucket C. High is an inference from OHCHR's modeled 306,887 direct civilian deaths to March 2021 multiplied by SNHR's 91% regime-and-allies share; OHCHR itself did not attribute by perpetrator.",
+            "sources": [
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+              "https://operationalsupport.un.org/en/syria-decade-of-brutal-war-left-nearly-307000-civilians-dead"
+            ]
+          }
+        ],
+        "notes": "SOHR's alternate March 2025 categories include 52,909 civilians killed in regime shelling/gunfire, 26,440 in regime airstrikes, 8,808 by Russian strikes, and 2,504 in Russian/regime airstrikes that could not be distinguished.",
+        "sources": [
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_torture_prison_extermination",
+          "victims_group": "Detainees and forcibly disappeared civilians",
+          "low": 15074,
+          "high": 104273,
+          "point": null,
+          "notes": "SNHR documented 15,074 regime torture deaths through March 2024. Amnesty/HRDAG estimated 17,723 custody deaths across Syria through December 2015 and Amnesty estimated 5,000-13,000 hangings at Saydnaya. SOHR's March 2025 accounting listed 78,273 regime-prison torture deaths plus over 26,000 additional excluded cases; high sums those SOHR categories.",
+          "sources": [
+            "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+            "https://www.amnesty.org/en/latest/news/2017/02/syria-investigation-uncovers-governments-secret-campaign-of-mass-hangings-and-extermination-at-saydnaya-prison/",
+            "https://www.amnesty.nl/actueel/harrowing-accounts-of-torture-inhuman-conditions-and-mass-deaths-in-syrias-prisons",
+            "https://www.syriahr.com/en/358243/"
+          ]
+        },
+        {
+          "type": "siege_starvation_medical_deprivation",
+          "victims_group": "Civilians in besieged areas",
+          "low": 552,
+          "high": null,
+          "point": 552,
+          "notes": "SNHR's 2016 siege report attributed 552 siege deaths to government forces in then-still-besieged areas; it also documented 17,145 civilians killed by government forces and allies inside besieged areas by bombardment and related direct violence.",
+          "sources": [
+            "https://snhr.org/blog/2016/06/19/23127/"
+          ]
+        },
+        {
+          "type": "health_system_collapse_displacement_food_water_sanitation",
+          "victims_group": "Syrian civilians generally",
+          "low": null,
+          "high": 70000,
+          "point": null,
+          "notes": "SCPR estimated 70,000 indirect deaths by early 2016 from collapse of healthcare, lack of food/medicine/water, sanitation failure, disease, and malnutrition. This cannot be cleanly attributed to one side, though regime/allied siege, bombardment, and aid-control policies were major documented drivers.",
+          "sources": [
+            "https://www.pbs.org/wgbh/frontline/article/a-staggering-new-death-toll-for-syrias-war-470000/",
+            "https://www.globalsecurity.org/wmd/library/news/syria/2016/syria-160211-voa03.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armed opposition factions / Syrian National Army",
+      "members": [
+        "Free Syrian Army-linked groups",
+        "Islamist opposition factions",
+        "Syrian National Army",
+        "Turkish-backed factions"
+      ],
+      "military_killed": {
+        "low": 81489,
+        "high": 85085,
+        "point": 81489,
+        "notes": "SOHR March 2025 listed 81,489 members of rebel and Islamist factions killed; including 3,596 regime army defectors gives 85,085.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2459,
+        "high": 4227,
+        "point": 4170,
+        "breakdown": [
+          {
+            "cause": "shelling, gunfire, executions, attacks",
+            "victims_group": "Civilians in government-held, SDF-held, and contested areas",
+            "low": 2459,
+            "high": 4227,
+            "notes": "SOHR March 2025 listed 2,459 civilians killed by opposition factions. SNHR documented 4,227 civilians killed by armed opposition/SNA through March 2024; subtracting 57 SNHR torture deaths gives an approximate direct non-detention point of 4,170.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/",
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+            ]
+          }
+        ],
+        "notes": "Definitions differ between SOHR and SNHR; SNHR's higher figure is used as high.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_torture",
+          "victims_group": "Detainees in opposition/SNA custody",
+          "low": 57,
+          "high": 57,
+          "point": 57,
+          "notes": "SNHR documented 57 deaths due to torture by all armed opposition factions/SNA through March 2024.",
+          "sources": [
+            "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hay'at Tahrir al-Sham / non-ISIS jihadist factions",
+      "members": [
+        "Hay'at Tahrir al-Sham",
+        "Jabhat al-Nusra",
+        "Turkistan Islamic Party",
+        "other non-ISIS jihadist factions"
+      ],
+      "military_killed": {
+        "low": 28463,
+        "high": null,
+        "point": 28463,
+        "notes": "SOHR March 2025 listed 28,463 jihadists killed; exact separation of HTS from other jihadist factions is not always possible.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 501,
+        "high": 927,
+        "point": 501,
+        "breakdown": [
+          {
+            "cause": "attacks, shelling, executions",
+            "victims_group": "Civilians in areas controlled or contested by HTS/jihadist factions",
+            "low": 501,
+            "high": 927,
+            "notes": "SNHR documented 538 civilians killed by HTS and 4 by Turkistan Islamic Party through March 2024; subtracting 41 HTS torture deaths gives about 501 direct non-detention deaths. SOHR listed 927 civilians killed by jihadists by March 2025.",
+            "sources": [
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+              "https://www.syriahr.com/en/358243/"
+            ]
+          }
+        ],
+        "notes": "HTS-specific and broader jihadist categories are not identical.",
+        "sources": [
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_torture",
+          "victims_group": "Detainees in HTS custody",
+          "low": 41,
+          "high": 41,
+          "point": 41,
+          "notes": "SNHR documented 41 deaths due to torture by HTS through March 2024.",
+          "sources": [
+            "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ISIS / Islamic State",
+      "members": [
+        "Islamic State",
+        "ISIL",
+        "ISIS cells in Syria"
+      ],
+      "military_killed": {
+        "low": 41459,
+        "high": null,
+        "point": 41459,
+        "notes": "SOHR March 2025 listed 41,459 ISIS members killed.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 4935,
+        "high": 5056,
+        "point": 5024,
+        "breakdown": [
+          {
+            "cause": "massacres, executions, attacks, bombings",
+            "victims_group": "Civilians in ISIS-held and ISIS-attacked areas",
+            "low": 4935,
+            "high": 5056,
+            "notes": "SOHR listed 4,935 civilians killed by ISIS by March 2025. SNHR documented 5,056 civilians killed by ISIS through March 2024; subtracting 32 torture deaths gives about 5,024 direct non-detention deaths.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/",
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+            ]
+          }
+        ],
+        "notes": "ISIS custody/missing deaths are likely incomplete.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_torture",
+          "victims_group": "Detainees in ISIS custody",
+          "low": 32,
+          "high": null,
+          "point": 32,
+          "notes": "SNHR documented 32 deaths due to torture by ISIS through March 2024; SOHR excluded more than 3,200 abducted civilians and fighters in ISIS prisons from its main totals, so the eventual toll may be higher.",
+          "sources": [
+            "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+            "https://www.syriahr.com/en/358243/"
+          ]
+        },
+        {
+          "type": "siege_starvation_medical_deprivation",
+          "victims_group": "Civilians in ISIS-besieged areas",
+          "low": 6,
+          "high": 6,
+          "point": 6,
+          "notes": "SNHR's 2016 siege report attributed 6 siege deaths to ISIS in then-still-besieged areas.",
+          "sources": [
+            "https://snhr.org/blog/2016/06/19/23127/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Syrian Democratic Forces / Kurdish forces",
+      "members": [
+        "Syrian Democratic Forces",
+        "YPG",
+        "YPJ",
+        "Kurdish units",
+        "Autonomous Administration-linked forces"
+      ],
+      "military_killed": {
+        "low": 15043,
+        "high": 18243,
+        "point": 15043,
+        "notes": "SOHR March 2025 listed 11,768 SDF members and 3,275 Kurdish-unit members killed; SOHR also excluded over 3,200 PKK fighters killed while fighting alongside SDF, giving a higher possible total.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 516,
+        "high": 1491,
+        "point": 1391,
+        "breakdown": [
+          {
+            "cause": "gunfire, shelling, raids, detention-related violence excluded from direct point",
+            "victims_group": "Civilians in SDF-held and contested areas",
+            "low": 516,
+            "high": 1491,
+            "notes": "SOHR listed 516 civilians killed by SDF/Kurdish forces by March 2025. SNHR documented 1,491 civilians killed by SDF through March 2024; subtracting 100 torture deaths gives about 1,391 direct non-detention deaths.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/",
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+            ]
+          }
+        ],
+        "notes": "SNHR and SOHR diverge substantially on SDF-attributed civilian deaths.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_torture",
+          "victims_group": "Detainees in SDF custody",
+          "low": 100,
+          "high": 100,
+          "point": 100,
+          "notes": "SNHR documented 100 deaths due to torture by the SDF through March 2024.",
+          "sources": [
+            "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "U.S.-led International Coalition",
+      "members": [
+        "United States",
+        "Operation Inherent Resolve coalition partners"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "SOHR stated it was unable to document International Coalition military deaths because of secrecy around missions and operations.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2679,
+        "high": 3055,
+        "point": 3055,
+        "breakdown": [
+          {
+            "cause": "airstrikes, artillery, raids",
+            "victims_group": "Civilians in ISIS-held or ISIS-contested areas",
+            "low": 2679,
+            "high": 3055,
+            "notes": "SOHR listed 2,679 civilians killed by International Coalition forces; SNHR documented 3,055 civilians killed by the U.S.-led coalition through March 2024.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/",
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+              "https://airwars.org/conflict/coalition-in-iraq-and-syria/"
+            ]
+          }
+        ],
+        "notes": "Airwars provides independent incident-level civilian-harm tracking, but Iraq+Syria combined figures are not used as Syria-only totals here.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+          "https://airwars.org/conflict/coalition-in-iraq-and-syria/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Turkey / Turkish forces",
+      "members": [
+        "Turkish Armed Forces",
+        "Turkish border forces"
+      ],
+      "military_killed": {
+        "low": 269,
+        "high": 269,
+        "point": 269,
+        "notes": "SOHR March 2025 listed 269 Turkish soldiers killed.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1155,
+        "high": 1155,
+        "point": 1155,
+        "breakdown": [
+          {
+            "cause": "airstrikes, shelling, border shootings",
+            "victims_group": "Civilians in northern Syria and border areas",
+            "low": 1155,
+            "high": 1155,
+            "notes": "SOHR March 2025 listed 1,155 civilians killed by Turkish forces.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/"
+            ]
+          }
+        ],
+        "notes": "Turkish-backed SNA civilian deaths are counted under armed opposition/SNA unless directly attributed to Turkish forces.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Israel, Jordan, and other/unknown parties",
+      "members": [
+        "Israel",
+        "Jordanian border forces",
+        "unidentified armed actors",
+        "landmines/UXO and other parties"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No clean side-specific military-death total found for these categories.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 121,
+        "high": 8978,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrikes",
+            "victims_group": "Civilians killed by Israeli strikes",
+            "low": 112,
+            "high": 112,
+            "notes": "SOHR March 2025 listed 112 civilians killed in Israeli strikes.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/"
+            ]
+          },
+          {
+            "cause": "border shootings/attacks",
+            "victims_group": "Civilians killed by Jordanian border guards",
+            "low": 9,
+            "high": 9,
+            "notes": "SOHR March 2025 listed 9 civilians killed by Jordanian border guards.",
+            "sources": [
+              "https://www.syriahr.com/en/358243/"
+            ]
+          },
+          {
+            "cause": "unknown perpetrators, mines/UXO, other causes",
+            "victims_group": "Civilians killed by other parties",
+            "low": null,
+            "high": 8978,
+            "notes": "SNHR documented 8,978 civilians killed by other parties through March 2024; this category is not a single belligerent and includes unattributed or miscellaneous incidents.",
+            "sources": [
+              "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+            ]
+          }
+        ],
+        "notes": "This is a residual category; do not interpret it as a unified side.",
+        "sources": [
+          "https://www.syriahr.com/en/358243/",
+          "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 343344,
+    "military_high": 347082,
+    "civilian_low": 231278,
+    "civilian_high": 306887,
+    "grand_low": 580000,
+    "grand_high": 656493,
+    "notes": "Military_low is SOHR non-civilian deaths through March 2024; military_high is SOHR non-civilian deaths through March 2025 and includes post-December 2024 violence. Civilian_low is SNHR documented civilian deaths through March 2024; civilian_high is OHCHR modeled direct civilian deaths through March 2021, not including later deaths or indirect mortality. Grand_low reflects UN Commission/OHCHR-style estimates around 580,000 by May 2021 cited in secondary reporting; grand_high is SOHR March 2025 total and includes post-2024 violence. These totals should not be obtained by simply summing side rows because some rows use different endpoints and attribution systems."
+  },
+  "key_atrocities": [
+    {
+      "name": "Assad detention system / Saydnaya prison mass hangings and torture deaths",
+      "year": 2011,
+      "perpetrator": "Syrian government / Assad regime",
+      "victims_group": "Detainees and forcibly disappeared civilians",
+      "low": 15074,
+      "high": 104273,
+      "notes": "SNHR documented 15,074 regime torture deaths through March 2024; Amnesty estimated 5,000-13,000 hangings at Saydnaya from 2011-2015 and HRDAG/Amnesty estimated 17,723 custody deaths across Syria by December 2015; SOHR's post-collapse accounting lists 78,273 regime-prison torture deaths plus over 26,000 excluded cases.",
+      "sources": [
+        "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+        "https://www.amnesty.org/en/latest/news/2017/02/syria-investigation-uncovers-governments-secret-campaign-of-mass-hangings-and-extermination-at-saydnaya-prison/",
+        "https://www.syriahr.com/en/358243/"
+      ]
+    },
+    {
+      "name": "Chemical weapons attacks in Syria",
+      "year": 2012,
+      "perpetrator": "Syrian government and ISIS",
+      "victims_group": "Civilians exposed to chemical agents",
+      "low": 1514,
+      "high": 1514,
+      "notes": "SNHR documented 222 chemical attacks through March 2024, 217 by the Syrian regime and 5 by ISIS; it recorded 1,514 deaths from regime chemical attacks and 11,212 injuries from all chemical attacks.",
+      "sources": [
+        "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+      ]
+    },
+    {
+      "name": "Barrel-bomb campaign",
+      "year": 2012,
+      "perpetrator": "Syrian government / Assad regime",
+      "victims_group": "Civilians in opposition-held areas",
+      "low": 11087,
+      "high": 11087,
+      "notes": "SNHR documented at least 81,916 barrel bombs dropped by regime aircraft since July 18, 2012, killing 11,087 civilians.",
+      "sources": [
+        "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/"
+      ]
+    },
+    {
+      "name": "Sieges of civilian-populated areas",
+      "year": 2012,
+      "perpetrator": "Syrian government and ISIS",
+      "victims_group": "Civilians in besieged towns and districts",
+      "low": 818,
+      "high": 818,
+      "notes": "SNHR's 2016 siege report documented 818 deaths due to siege by the Syrian regime and ISIS, including 552 attributed to government forces and 6 to ISIS in then-still-besieged areas.",
+      "sources": [
+        "https://snhr.org/blog/2016/06/19/23127/"
+      ]
+    },
+    {
+      "name": "Houla massacre",
+      "year": 2012,
+      "perpetrator": "Syrian government forces and pro-government Shabiha, according to UN investigators and cited reports",
+      "victims_group": "Civilians including children",
+      "low": 108,
+      "high": 108,
+      "notes": "Commonly cited UN observer figure is 108 civilians killed, including 49 children.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Houla_massacre",
+        "https://www.theguardian.com/world/2012/jun/01/syria-houla-massacre-un-resolution"
+      ]
+    },
+    {
+      "name": "Tadamon massacre",
+      "year": 2013,
+      "perpetrator": "Syrian Military Intelligence / Assad regime personnel",
+      "victims_group": "Civilians in Tadamon, Damascus",
+      "low": 41,
+      "high": 280,
+      "notes": "Leaked video and investigations documented at least 41 civilians executed; UN experts later referred to allegations of more than 280 civilians killed in the Tadamon area.",
+      "sources": [
+        "https://www.theguardian.com/world/2022/apr/27/massacre-in-tadamon-how-two-academics-hunted-down-a-syrian-war-criminal",
+        "https://www.cfjustice.org/36887/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Casualty data for Syria are deeply contested. SNHR is strongest for documented civilian deaths by perpetrator through March 2024; SOHR provides fuller combatant-side breakdowns and higher overall totals but uses different categories and by March 2025 includes post-Assad violence; OHCHR's 306,887 civilian estimate is modeled, direct-only, and stops at March 2021. Detention deaths and indirect deaths are the largest uncertainty: post-collapse documents pushed SOHR's regime-prison figures far above earlier documented counts, and SCPR's 70,000 indirect deaths by 2016 cannot be allocated reliably by belligerent.",
+  "sources": [
+    {
+      "url": "https://operationalsupport.un.org/en/syria-decade-of-brutal-war-left-nearly-307000-civilians-dead",
+      "title": "Syria: Decade of brutal war left nearly 307,000 civilians dead",
+      "publisher": "UN/OHCHR"
+    },
+    {
+      "url": "https://snhr.org/blog/2024/03/18/on-the-13th-anniversary-of-the-start-of-the-popular-uprising-231278-syrian-civilians-have-been-documented-killed-including-15334-due-to-torture-156757-have-been-arrested-and-or-forcibly-disappea/",
+      "title": "On the 13th Anniversary of the Start of the Popular Uprising, 231,278 Syrian Civilians Have Been Documented Killed",
+      "publisher": "Syrian Network for Human Rights"
+    },
+    {
+      "url": "https://www.syriahr.com/en/328044/",
+      "title": "Syrian Revolution 13 years on: Nearly 618,000 persons killed since the onset of the revolution",
+      "publisher": "Syrian Observatory for Human Rights"
+    },
+    {
+      "url": "https://www.syriahr.com/en/358243/",
+      "title": "14th anniversary of Syrian Revolution: Nearly 657,000 persons killed since the onset of the revolution",
+      "publisher": "Syrian Observatory for Human Rights"
+    },
+    {
+      "url": "https://snhr.org/blog/2016/06/19/23127/",
+      "title": "The death of 818 Individuals Due to the Syrian Regime\u2019s and ISIS\u2019s Siege of Civilian-populated cities",
+      "publisher": "Syrian Network for Human Rights"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2017/02/syria-investigation-uncovers-governments-secret-campaign-of-mass-hangings-and-extermination-at-saydnaya-prison/",
+      "title": "Syria: Secret campaign of mass hangings and extermination at Saydnaya Prison",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.nl/actueel/harrowing-accounts-of-torture-inhuman-conditions-and-mass-deaths-in-syrias-prisons",
+      "title": "Harrowing accounts of torture, inhuman conditions and mass deaths in Syria\u2019s prisons",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.pbs.org/wgbh/frontline/article/a-staggering-new-death-toll-for-syrias-war-470000/",
+      "title": "A Staggering New Death Toll for Syria\u2019s War \u2014 470,000",
+      "publisher": "PBS Frontline"
+    },
+    {
+      "url": "https://www.worldbank.org/en/country/syria/publication/the-toll-of-war-the-economic-and-social-consequences-of-the-conflict-in-syria",
+      "title": "The Toll of War: The Economic and Social Consequences of the Conflict in Syria",
+      "publisher": "World Bank"
+    },
+    {
+      "url": "https://airwars.org/conflict/coalition-in-iraq-and-syria/",
+      "title": "U.S.-led Coalition in Iraq & Syria",
+      "publisher": "Airwars"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2022/apr/27/massacre-in-tadamon-how-two-academics-hunted-down-a-syrian-war-criminal",
+      "title": "Massacre in Tadamon: how two academics hunted down a Syrian war criminal",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.cfjustice.org/36887/",
+      "title": "UN Calls for Immediate Investigation into the 2013 Tadamun Massacre in Syria",
+      "publisher": "Committee for Justice"
+    }
+  ]
+}

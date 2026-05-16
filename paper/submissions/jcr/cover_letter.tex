@@ -1,0 +1,41 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\address{David H.\ Silver\\
+Independent researcher\\
+Poughkeepsie, NY 12603, USA\\
+\href{mailto:silverdavi@gmail.com}{silverdavi@gmail.com}\\
+ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}}
+\signature{David H.\ Silver}
+\begin{document}
+\begin{letter}{Editor-in-Chief\\ \emph{Journal of Conflict Resolution}\\ SAGE Publications}
+
+\opening{Dear Editor,}
+
+I am submitting the enclosed manuscript, \emph{``Bounds and Estimators for the Civilian-to-Combatant Death Ratio from Aggregation of Conflicting Sources,''} for consideration as a Research Article in the \emph{Journal of Conflict Resolution}.
+
+The paper revisits the question that Spagat, Mack, Cooper, and Kreutz (2009) described as ``estimating war deaths: an arena of contestation'' with formal partial-identification and robust-Bayesian tools. Belligerents have direct incentives to inflate enemy combatants killed and deflate civilians; advocacy and intergovernmental sources have symmetric incentives in the other direction. The conventional response in conflict research has been either to defer to one channel (UCDP, ACLED, IBC, ministries of health) or to treat the figures as too contested to bound. The paper shows that this dichotomy is unnecessary: civilian-to-combatant ratios are jointly constrained by a small number of demographic and manpower facts that are produced by different, non-aligned institutions, so that the truth lies in a narrow identified set even when every belligerent claim is treated as adversarial.
+
+Concretely, the paper derives (i) a sharp identified set for the combatant share $q=D_M/D$ under a one-parameter exposure model, (ii) a precision-weighted aggregation rule for multiple demographic sources, (iii) a \emph{contradiction radius} $\rho$ that scores any disputed claim by the standardised perturbation of independent inputs that would be required to make it consistent, and (iv) a closed-form bias-robust credible interval under Huber $\varepsilon$-contamination of sources. The framework is symmetric: it rejects ``too many combatants'' and ``zero combatants'' against the same feasible set.
+
+Applied to the Gaza war 2023--2026, the framework finds that the public Israel Defense Forces claim of $17$--$25$k combatants killed has $\rho\gtrsim 20$ standard errors. A spatial Bayesian model on the same independently-measured inputs gives $q=2.5\%$ with 95\% credible interval $[1.6\%,3.8\%]$ and an implied civilian-to-combatant ratio of approximately $43{:}1$. Section~7 surveys 81 conflicts from 1900--2026 to map where the diagnostic can be applied sharply (Gaza, Iraq 2003--11, Tigray, Yemen) and where it returns only an envelope (most of the 20th century).
+
+The work fits squarely into JCR's tradition of methodologically rigorous conflict-data papers, including Spagat et al.\ (2009), Eck and Hultman (2007), Lacina and Gleditsch (2005), and the recent Vesco et al.\ (2026) probabilistic reassessment of UCDP underreporting. It is complementary to (rather than competing with) capture--recapture work in the human-rights tradition (Lum, Price and Banks, 2013; Khatib et al., 2025, \emph{Lancet}) and the Bayesian source-aggregation work of Radford et al.\ (2023, \emph{PNAS}).
+
+The manuscript runs approximately $7{,}500$ words including references, with one main figure and two supplementary figures; an online supplement contains the per-conflict tables for Section~7. Code, simulator, and Gaza inputs will be deposited in a public repository on acceptance. This work has not been considered or submitted elsewhere, and I declare no conflicts of interest.
+
+\textbf{About the author.} I am an independent researcher, with peer-reviewed publications in \emph{Nature}, \emph{PNAS}, \emph{IEEE Trans.\ Pattern Analysis and Machine Intelligence}, \emph{Human Reproduction}, and \emph{PLOS ONE}; a Microsoft Research PhD Fellowship in Biomathematics and Computational Biology jointly between the Technion and Microsoft Research Cambridge; and authorship of the peer-reviewed monograph \emph{Beyond Popular Science} (Open Book Publishers, Cambridge, 2026; DOI 10.11647/OBP.0526). The present manuscript is conducted independently and is unaffiliated with any of my industry roles.
+
+Possible reviewers include Michael Spagat (Royal Holloway), Patrick Ball (HRDAG), Megan Price (HRDAG), Lisa Hultman (Uppsala), Bethany Lacina (Rochester), and Diego Alburez-Gutierrez (MPIDR).
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

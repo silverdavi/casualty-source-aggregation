@@ -1,0 +1,507 @@
+{
+  "war_id": "balkan_wars",
+  "name": "First and Second Balkan Wars",
+  "start_year": 1912,
+  "end_year": 1913,
+  "ongoing": false,
+  "regions": [
+    "Balkans",
+    "Macedonia",
+    "Thrace",
+    "Kosovo",
+    "Albania",
+    "Epirus",
+    "Dobruja"
+  ],
+  "summary": "The First Balkan War pitted the Balkan League against the Ottoman Empire and removed nearly all remaining Ottoman territory in Europe. The Second Balkan War followed almost immediately, as Bulgaria fought Serbia and Greece over Macedonia and was then attacked by Romania and the Ottoman Empire. Military deaths are relatively well summarized by modern historians, but civilian deaths are highly contested and difficult to attribute by perpetrator.",
+  "sides": [
+    {
+      "name": "Bulgaria",
+      "members": [
+        "Kingdom of Bulgaria"
+      ],
+      "military_killed": {
+        "low": 33000,
+        "high": 65000,
+        "point": 65000,
+        "notes": "About 65,000 Bulgarian dead across both Balkan Wars is the most useful combined-war estimate. The lower value reflects widely cited First Balkan War non-recoverable deaths, often broken down as 14,000 killed and 19,000 dead of disease.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+          "https://en.wikipedia.org/wiki/Second_Balkan_War",
+          "https://en.wikipedia.org/wiki/First_Balkan_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 700,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Greek civilians at Doxato",
+            "low": 500,
+            "high": 600,
+            "notes": "Doxato is commonly listed at 500-600 killed; Carnegie complicated attribution by emphasizing local Turks allegedly armed or directed by Bulgarian officers.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Doxato",
+              "https://www.promacedonia.org/en/carnegie/appendix_b.html"
+            ]
+          },
+          {
+            "cause": "burning and massacre",
+            "victims_group": "Greek civilians at Serres",
+            "low": 200,
+            "high": 200,
+            "notes": "Serres is commonly listed as about 200 killed with roughly 4,000 of 6,000 houses destroyed.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_places_burned_during_the_Balkan_Wars",
+              "https://www.promacedonia.org/en/carnegie/appendix_b.html"
+            ]
+          },
+          {
+            "cause": "execution of prisoners of war",
+            "victims_group": "Ottoman POWs",
+            "low": 500,
+            "high": 600,
+            "notes": "A secondary summary citing Hall gives 500-600 Ottoman POWs killed by Bulgarians at Stara Zagora; counted as POW/military deaths, not civilian deaths.",
+            "sources": [
+              "https://www.scribd.com/doc/285751734/Balkan-Wars-Map",
+              "https://ijsoc.goacademica.com/index.php/ijsoc/article/download/566/535/"
+            ]
+          }
+        ],
+        "notes": "No reliable aggregate civilian-death total caused by Bulgarian forces was found. The low value is only a documented-event minimum for Doxato and Serres, not a total.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Doxato",
+          "https://en.wikipedia.org/wiki/List_of_places_burned_during_the_Balkan_Wars",
+          "https://www.promacedonia.org/en/carnegie/appendix_b.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Ottoman Muslim civilians in conquered Ottoman Europe",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Bulgaria contributed to the wider Ottoman Muslim refugee and mortality catastrophe, but the available sources do not cleanly separate Bulgarian-caused deaths from deaths caused by Serbian, Greek, Montenegrin, irregular, disease, hunger, and flight conditions.",
+          "sources": [
+            "https://www.tc-america.org/issues-information/turkish-history/1912--1913-balkan-wars-death-and-forced-exile-of-ottoman-muslims-an-annotated-map-755.htm",
+            "https://www.tc-america.org/files/news/pdf/balkan-wars-map.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Serbia",
+      "members": [
+        "Kingdom of Serbia"
+      ],
+      "military_killed": {
+        "low": 36000,
+        "high": 36550,
+        "point": 36000,
+        "notes": "Hall gives at least 36,000 Serbian dead; another Hall book snippet gives 36,550 dead and 55,000 wounded across both wars.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+          "https://filedn.eu/l42SBo4Ys5t4NBu6SpvlzV4/MES%20LIVRES/LIVRES%20MACEDOINE%20HISTOIRE/2000-Balkan_Wars_1912-1913._Prelude_to_the_First_World_War.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 20000,
+        "high": 120000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre and ethnic cleansing",
+            "victims_group": "Albanian civilians in Kosovo Vilayet and wider Albanian-inhabited areas",
+            "low": 20000,
+            "high": 120000,
+            "notes": "The lower range of 20,000-25,000 is commonly cited for Kosovo Vilayet early in the war; broader estimates for Serbian/Montenegrin-occupied Albanian areas reach about 120,000. These estimates are highly contested and not cleanly separable between Serbia and Montenegro.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars",
+              "https://en.wikipedia.org/wiki/Serbian_invasion_of_Kosovo_(1912)"
+            ]
+          }
+        ],
+        "notes": "Serbian responsibility is central in accounts of Albanian massacres, but high estimates usually combine Serbian and Montenegrin forces and may include deaths from flight, hunger, or cold.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars",
+          "https://en.wikipedia.org/wiki/Serbian_invasion_of_Kosovo_(1912)"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Albanians deported or displaced from Old Serbia and adjacent areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Displacement estimates such as 60,000-300,000 expelled are cited in secondary summaries, but deaths among the displaced are not separated from massacre totals.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Balkan_Wars",
+            "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Greece",
+      "members": [
+        "Kingdom of Greece"
+      ],
+      "military_killed": {
+        "low": 6719,
+        "high": 9500,
+        "point": 9500,
+        "notes": "Hall gives about 9,500 Greek dead across the wars. A First Balkan War breakdown gives 5,169 killed and 1,550 dead of disease, or 6,719 deaths before Second Balkan War losses.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+          "https://en.wikipedia.org/wiki/First_Balkan_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 195,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre and village killings",
+            "victims_group": "Muslim civilians in Strumnitsa/Drama-region villages",
+            "low": 195,
+            "high": 195,
+            "notes": "Carnegie Appendix A summarizes a Turkish document listing 195 killed in a set of village incidents attributed to Greeks or Greek bands.",
+            "sources": [
+              "https://www.promacedonia.org/en/carnegie/appendix_a.html"
+            ]
+          },
+          {
+            "cause": "burning, shooting, and reprisal killings",
+            "victims_group": "Bulgarian civilians and peasants",
+            "low": null,
+            "high": null,
+            "notes": "Carnegie Appendix C published Greek soldiers' letters describing burning Bulgarian villages and killing Bulgarians, including women and children, but did not provide an aggregate death toll.",
+            "sources": [
+              "https://www.promacedonia.org/en/carnegie/appendix_c.html"
+            ]
+          }
+        ],
+        "notes": "No reliable aggregate civilian-death total caused by Greek forces was found. The low value is a documented-event minimum, not a total.",
+        "sources": [
+          "https://www.promacedonia.org/en/carnegie/appendix_a.html",
+          "https://www.promacedonia.org/en/carnegie/appendix_c.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "scorched_earth",
+          "victims_group": "Bulgarian villagers in Macedonia",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Greek village-burning and forced flight are documented in Carnegie materials, but deaths from displacement, exposure, or disease are not aggregated by perpetrator.",
+          "sources": [
+            "https://www.promacedonia.org/en/carnegie/appendix_c.html",
+            "https://www.promacedonia.org/en/carnegie/chapter4_1.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Montenegro",
+      "members": [
+        "Kingdom of Montenegro"
+      ],
+      "military_killed": {
+        "low": 2836,
+        "high": 3242,
+        "point": 3000,
+        "notes": "Hall gives about 3,000 Montenegrin dead. A First Balkan War breakdown gives 2,836 killed and 406 dead of disease.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+          "https://en.wikipedia.org/wiki/First_Balkan_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre and ethnic cleansing",
+            "victims_group": "Albanian civilians",
+            "low": null,
+            "high": null,
+            "notes": "Montenegrin forces participated in the wider violence against Albanians, but estimates are usually combined with Serbian responsibility and cannot be separated reliably.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars"
+            ]
+          }
+        ],
+        "notes": "No reliable Montenegro-only civilian death total found.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Albanians displaced from areas occupied by Serbian and Montenegrin forces",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Montenegrin contribution to displacement is documented but not numerically separable from Serbian operations.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars",
+            "https://en.wikipedia.org/wiki/Balkan_Wars"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Romania",
+      "members": [
+        "Kingdom of Romania"
+      ],
+      "military_killed": {
+        "low": 1500,
+        "high": 1600,
+        "point": 1600,
+        "notes": "Romania's Second Balkan War deaths were overwhelmingly from cholera rather than combat; estimates are about 1,500-1,600.",
+        "sources": [
+          "https://www.onwar.com/data/balkan1913.html",
+          "https://en.wikipedia.org/wiki/1913_Romanian_Army_cholera_outbreak",
+          "https://military-history.fandom.com/wiki/1913_Romanian_Army_cholera_outbreak"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "No reliable evidence found of a significant documented civilian death toll directly caused by Romanian forces in the brief 1913 invasion of Bulgaria.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/1913_Romanian_Army_cholera_outbreak",
+          "https://www.onwar.com/data/balkan1913.html"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Ottoman Empire",
+      "members": [
+        "Ottoman Empire"
+      ],
+      "military_killed": {
+        "low": 125000,
+        "high": 125000,
+        "point": 125000,
+        "notes": "Hall gives Ottoman military dead as many as 125,000. The figure should be treated as a maximum-style point estimate rather than a precise count.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+          "https://api.drum.lib.umd.edu/server/api/core/bitstreams/db7b526a-1497-49ad-b09e-8a516a876731/content"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 15960,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre, burning, and ethnic cleansing",
+            "victims_group": "Thracian Bulgarians",
+            "low": 15960,
+            "high": null,
+            "notes": "Carnegie is summarized as saying 15,960 Bulgarians were killed, burned in houses, or scattered among mountains. A broader 200,000 figure combines killed and expelled and is not used as a deaths-only total.",
+            "sources": [
+              "https://everything.explained.today/Destruction_of_the_Thracian_Bulgarians_in_1913/"
+            ]
+          }
+        ],
+        "notes": "The direct-death minimum is based on Carnegie's summarized figure; the high is unknown because larger figures usually combine deaths and expulsions.",
+        "sources": [
+          "https://everything.explained.today/Destruction_of_the_Thracian_Bulgarians_in_1913/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Thracian Bulgarians in Eastern Thrace",
+          "low": 15960,
+          "high": null,
+          "point": null,
+          "notes": "Ottoman reconquest of Eastern Thrace caused mass killing, burning, and expulsion. The often-cited 200,000 figure is killed-or-expelled, not deaths alone.",
+          "sources": [
+            "https://everything.explained.today/Destruction_of_the_Thracian_Bulgarians_in_1913/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 240000,
+    "military_high": 241000,
+    "civilian_low": 632000,
+    "civilian_high": 1500000,
+    "grand_low": 872000,
+    "grand_high": 1741000,
+    "notes": "Military totals roll up Hall's state-level estimates plus Romanian cholera deaths. Civilian totals use the broad Ottoman Muslim demographic range of 632,000-1,500,000; this overlaps with some Albanian estimates and cannot be cleanly attributed per perpetrator. Event-based documented civilian minimums are far lower but incomplete."
+  },
+  "key_atrocities": [
+    {
+      "name": "Ottoman Muslim civilian catastrophe in conquered Europe",
+      "year": 1912,
+      "perpetrator": "Balkan League forces and irregulars; attribution mixed",
+      "victims_group": "Ottoman Muslim civilians, including Turks, Albanians, Pomaks, and others",
+      "low": 632000,
+      "high": 1500000,
+      "notes": "McCarthy's demographic reconstruction gives 632,000 deaths in conquered Ottoman Europe, excluding an estimated 100,000 in Albania; wider summaries cite 632,000-1,500,000. Attribution by state is not possible.",
+      "sources": [
+        "https://www.tc-america.org/issues-information/turkish-history/1912--1913-balkan-wars-death-and-forced-exile-of-ottoman-muslims-an-annotated-map-755.htm",
+        "https://www.tc-america.org/files/news/pdf/balkan-wars-map.pdf",
+        "https://en.wikipedia.org/wiki/Balkan_Wars"
+      ]
+    },
+    {
+      "name": "Massacres of Albanians in the Balkan Wars",
+      "year": 1912,
+      "perpetrator": "Serbian and Montenegrin forces and irregulars",
+      "victims_group": "Albanian civilians",
+      "low": 20000,
+      "high": 120000,
+      "notes": "Lower estimates of 20,000-25,000 refer mainly to Kosovo Vilayet early in the war; broader estimates for Serbian/Montenegrin-occupied Albanian areas reach around 120,000 or more.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars",
+        "https://en.wikipedia.org/wiki/Serbian_invasion_of_Kosovo_(1912)"
+      ]
+    },
+    {
+      "name": "Doxato massacre",
+      "year": 1913,
+      "perpetrator": "Bulgarian-linked forces; Carnegie emphasized local Turks allegedly armed or directed by Bulgarian officers",
+      "victims_group": "Greek civilians",
+      "low": 500,
+      "high": 600,
+      "notes": "Commonly listed as 500-600 killed. Attribution is disputed between regular Bulgarian troops and local Turkish auxiliaries connected to Bulgarian command.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Doxato",
+        "https://www.promacedonia.org/en/carnegie/appendix_b.html"
+      ]
+    },
+    {
+      "name": "Burning of Serres",
+      "year": 1913,
+      "perpetrator": "Bulgarian-linked forces",
+      "victims_group": "Greek civilians",
+      "low": 200,
+      "high": 200,
+      "notes": "About 200 killed and roughly 4,000 of 6,000 houses destroyed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_places_burned_during_the_Balkan_Wars",
+        "https://www.promacedonia.org/en/carnegie/appendix_b.html"
+      ]
+    },
+    {
+      "name": "Greek reprisals against Bulgarian villages",
+      "year": 1913,
+      "perpetrator": "Greek army and associated forces",
+      "victims_group": "Bulgarian civilians",
+      "low": null,
+      "high": null,
+      "notes": "Carnegie published Greek soldiers' letters describing burning villages and killing Bulgarians, including women and children, but no aggregate death toll was provided.",
+      "sources": [
+        "https://www.promacedonia.org/en/carnegie/appendix_c.html"
+      ]
+    },
+    {
+      "name": "Destruction of the Thracian Bulgarians",
+      "year": 1913,
+      "perpetrator": "Ottoman forces and associated irregulars",
+      "victims_group": "Bulgarian civilians in Eastern Thrace",
+      "low": 15960,
+      "high": null,
+      "notes": "Carnegie is summarized as identifying 15,960 killed, burned in houses, or scattered. Broader 200,000 figures combine killed and expelled and are not deaths-only.",
+      "sources": [
+        "https://everything.explained.today/Destruction_of_the_Thracian_Bulgarians_in_1913/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Military deaths are comparatively well summarized, though some sources mix killed, disease deaths, wounded, and missing. Civilian deaths are highly contested: Carnegie documented atrocities but did not produce complete civilian mortality totals, while McCarthy's Ottoman Muslim figures are demographic reconstructions and remain controversial. Many atrocities were committed by irregulars, local auxiliaries, or armed civilians alongside regular armies, so clean perpetrator attribution is often impossible. Several headline figures, especially for Thracian Bulgarians, combine killed and expelled and should not be treated as deaths-only totals.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/article/balkan-wars-1912-1913/",
+      "title": "Balkan Wars 1912-1913",
+      "publisher": "1914-1918 Online / International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://www.britannica.com/topic/Balkan-Wars",
+      "title": "Balkan Wars",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://openlibrary.org/books/OL7040305M/Report_of_the_International_Commission_to_Inquire_into_the_Causes_and_Conduct_of_the_Balkan_War.",
+      "title": "Report of the International Commission to Inquire into the Causes and Conduct of the Balkan Wars",
+      "publisher": "Carnegie Endowment for International Peace"
+    },
+    {
+      "url": "https://www.promacedonia.org/en/carnegie/appendix_a.html",
+      "title": "Carnegie Report Appendix A: The Plight of the Macedonian Moslems during the First War",
+      "publisher": "Carnegie Endowment for International Peace / Promacedonia mirror"
+    },
+    {
+      "url": "https://www.promacedonia.org/en/carnegie/appendix_b.html",
+      "title": "Carnegie Report Appendix B: The Conduct of the Bulgarians in the Second War",
+      "publisher": "Carnegie Endowment for International Peace / Promacedonia mirror"
+    },
+    {
+      "url": "https://www.promacedonia.org/en/carnegie/appendix_c.html",
+      "title": "Carnegie Report Appendix C: The Bulgarian Peasant and the Greek Army",
+      "publisher": "Carnegie Endowment for International Peace / Promacedonia mirror"
+    },
+    {
+      "url": "https://carnegieendowment.org/research/1993/01/other-balkan-wars-a-1913-carnegie-endowment-inquiry-in-retrospect",
+      "title": "Other Balkan Wars: A 1913 Carnegie Endowment Inquiry in Retrospect",
+      "publisher": "Carnegie Endowment for International Peace"
+    },
+    {
+      "url": "https://www.tc-america.org/issues-information/turkish-history/1912--1913-balkan-wars-death-and-forced-exile-of-ottoman-muslims-an-annotated-map-755.htm",
+      "title": "1912-1913 Balkan Wars: Death and Forced Exile of Ottoman Muslims",
+      "publisher": "Turkish Coalition of America / Justin McCarthy"
+    },
+    {
+      "url": "https://www.tc-america.org/files/news/pdf/balkan-wars-map.pdf",
+      "title": "1912-1913 Balkan Wars: Death and Forced Exile of More than 1.5 Million Muslims in Ottoman Europe",
+      "publisher": "Turkish Coalition of America / Justin McCarthy"
+    },
+    {
+      "url": "https://www.onwar.com/data/balkan1913.html",
+      "title": "Second Balkan War 1913",
+      "publisher": "OnWar"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1913_Romanian_Army_cholera_outbreak",
+      "title": "1913 Romanian Army cholera outbreak",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Massacres_of_Albanians_in_the_Balkan_Wars",
+      "title": "Massacres of Albanians in the Balkan Wars",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Doxato",
+      "title": "Doxato",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_places_burned_during_the_Balkan_Wars",
+      "title": "List of places burned during the Balkan Wars",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://everything.explained.today/Destruction_of_the_Thracian_Bulgarians_in_1913/",
+      "title": "Destruction of the Thracian Bulgarians in 1913",
+      "publisher": "Everything Explained Today"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "war_id": "chinese_civil_war_finale",
+  "name": "Chinese Civil War (post-1945 phase)",
+  "start_year": 1945,
+  "end_year": 1949,
+  "ongoing": false,
+  "regions": [
+    "China",
+    "Manchuria",
+    "North China",
+    "Central China",
+    "South China",
+    "Taiwan"
+  ],
+  "summary": "The post-1945 phase of the Chinese Civil War was the final struggle between the Kuomintang-led Republic of China and the Chinese Communist Party/People's Liberation Army after Japan's surrender. It ended with the establishment of the People's Republic of China on the mainland in October 1949 and the Nationalist retreat to Taiwan. Best-supported casualty accounting suggests roughly 5.8 to 6.2 million deaths, but civilian deaths cannot be cleanly separated by direct killing versus famine, disease, siege, conscription, displacement, and repression.",
+  "sides": [
+    {
+      "name": "Kuomintang / Republic of China",
+      "members": [
+        "Kuomintang",
+        "Republic of China government",
+        "National Revolutionary Army / Republic of China Armed Forces",
+        "ROC security and intelligence organs"
+      ],
+      "military_killed": {
+        "low": 600000,
+        "high": null,
+        "point": 600000,
+        "notes": "Britannica reports about 600,000 Nationalist troops killed in combat. Rummel gives 1,201,000 total Chinese war/rebellion dead for 1945-1949 but does not split them by side, so a side-specific high estimate is not assigned.",
+        "sources": [
+          "https://www.britannica.com/event/Chinese-Civil-War/Nationalist-collapse-and-the-establishment-of-the-Peoples-Republic-of-China-1949",
+          "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 10000,
+        "high": 28000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "suppression / massacre",
+            "victims_group": "Taiwanese civilians and suspected opponents during the February 28 / 228 Incident",
+            "low": 10000,
+            "high": 28000,
+            "notes": "The National 228 Memorial Foundation says the most frequently mentioned total killed or injured is 10,000-20,000; other sources cite up to 28,000 civilian casualties/deaths. This is a discrete event and does not capture all KMT direct killing in 1945-1949.",
+            "sources": [
+              "https://www.228.org.tw/en/the228incident",
+              "https://thediplomat.com/2016/03/the-228-incident-and-taiwans-transitional-justice/",
+              "https://www.britannica.com/event/White-Terror-Taiwan"
+            ]
+          },
+          {
+            "cause": "political repression / torture / executions",
+            "victims_group": "political dissidents, suspected Communists, and opposition activists",
+            "low": null,
+            "high": null,
+            "notes": "Nationalist security organs are reported to have arrested, tortured, and killed dissidents in 1946-1949, but no reliable phase-specific death total was found separate from aggregate democide estimates.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_war_crimes",
+              "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+            ]
+          }
+        ],
+        "notes": "Only the 228 Incident is given a discrete numeric range. Rummel attributes 2,645,000 civil-war-period democide victims to the Nationalists, but that aggregate includes direct and indirect deaths and is not placed wholly in this direct-killing field.",
+        "sources": [
+          "https://www.228.org.tw/en/the228incident",
+          "https://thediplomat.com/2016/03/the-228-incident-and-taiwans-transitional-justice/",
+          "https://www.britannica.com/event/White-Terror-Taiwan",
+          "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "democide / forced_conscription / repression / famine_policy",
+          "victims_group": "Chinese civilians, forced conscripts, political opponents, and populations affected by Nationalist requisitioning, corruption, repression, and coercive wartime administration",
+          "low": null,
+          "high": null,
+          "point": 2645000,
+          "notes": "Rummel attributes 2,645,000 democide victims to the Nationalists in the 1945-1949 civil-war period. This is an aggregate that likely includes both direct and indirect deaths; it cannot be cleanly split into direct executions versus indirect policy deaths.",
+          "sources": [
+            "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chinese Communist Party / People's Liberation Army",
+      "members": [
+        "Chinese Communist Party",
+        "People's Liberation Army",
+        "Communist local governments and militias"
+      ],
+      "military_killed": {
+        "low": 260000,
+        "high": null,
+        "point": 260000,
+        "notes": "A commonly cited PLA breakdown for the 1945-1949 phase gives about 260,000 killed, 190,000 missing, and 850,000 wounded, excluding some irregulars. Britannica reports official Communist figures of about 1.5 million PLA dead and wounded.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+          "https://www.britannica.com/event/Chinese-Civil-War/Nationalist-collapse-and-the-establishment-of-the-Peoples-Republic-of-China-1949"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "land reform / class violence / executions",
+            "victims_group": "landlords, alleged collaborators, class enemies, local elites, and suspected opponents",
+            "low": null,
+            "high": null,
+            "notes": "Direct killings occurred, but a reliable 1945-1949-only total separate from later PRC campaigns and from indirect deaths was not found. Rummel's 2,323,000 Communist democide estimate is aggregate and not direct-only.",
+            "sources": [
+              "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf",
+              "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+            ]
+          }
+        ],
+        "notes": "No clean direct-civilian-killing subtotal was found. Rummel's Communist democide figure is treated as an aggregate in deaths_from_actions rather than assigned entirely to direct killing.",
+        "sources": [
+          "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade / siege / starvation",
+          "victims_group": "civilians in Changchun",
+          "low": 120000,
+          "high": 330000,
+          "point": 150000,
+          "notes": "The PLA siege/blockade of Changchun in 1948 caused mass starvation. Commonly cited ranges run from 120,000 to 330,000 civilian deaths; 150,000 is also a frequently cited point estimate. This event should not be added on top of Rummel's aggregate Communist democide if already included there.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_massacres_in_China",
+            "https://s3-euw1-ap-pe-df-pch-content-store-p.s3.eu-west-1.amazonaws.com/9781315702711/67cbad1f-6b3a-4d2a-8aa7-d6ccb0c20199/preview.pdf"
+          ]
+        },
+        {
+          "type": "democide / land_reform / repression / forced_labor / displacement",
+          "victims_group": "Chinese civilians, class enemies, alleged collaborators, local elites, and populations affected by Communist military-political campaigns",
+          "low": null,
+          "high": null,
+          "point": 2323000,
+          "notes": "Rummel attributes 2,323,000 democide victims to the Communists in the 1945-1949 civil-war period. This is an aggregate including direct and indirect deaths and overlaps with specific events such as Changchun if those are included in the underlying democide estimate.",
+          "sources": [
+            "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 860000,
+    "military_high": 1201000,
+    "civilian_low": 4968000,
+    "civilian_high": 5000000,
+    "grand_low": 5828000,
+    "grand_high": 6194000,
+    "notes": "Military low combines about 600,000 Nationalist combat deaths with about 260,000 PLA killed. Military high uses Rummel's 1,201,000 total Chinese war/rebellion dead for 1945-1949. Civilian low uses Rummel's 4,968,000 democide figure; civilian high uses Britannica's approximately 5,000,000 civilian deaths from combat, famine, and disease. Grand low is the military-low plus Rummel civilian/democide low; grand high is Rummel's total 6,194,000 dead."
+  },
+  "key_atrocities": [
+    {
+      "name": "Siege of Changchun",
+      "year": 1948,
+      "perpetrator": "Chinese Communist Party / People's Liberation Army",
+      "victims_group": "civilians in Changchun",
+      "low": 120000,
+      "high": 330000,
+      "notes": "Civilian starvation during the PLA blockade/siege. Estimates vary widely; 150,000 is also frequently cited.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_in_China",
+        "https://s3-euw1-ap-pe-df-pch-content-store-p.s3.eu-west-1.amazonaws.com/9781315702711/67cbad1f-6b3a-4d2a-8aa7-d6ccb0c20199/preview.pdf"
+      ]
+    },
+    {
+      "name": "February 28 / 228 Incident",
+      "year": 1947,
+      "perpetrator": "Kuomintang / Republic of China",
+      "victims_group": "Taiwanese civilians, protesters, intellectuals, local elites, and suspected opponents",
+      "low": 10000,
+      "high": 28000,
+      "notes": "Suppression of a Taiwan uprising by KMT/ROC authorities and troops. Sources vary from 10,000-20,000 killed or injured to up to 28,000 civilian casualties/deaths; exact deaths remain disputed.",
+      "sources": [
+        "https://www.228.org.tw/en/the228incident",
+        "https://thediplomat.com/2016/03/the-228-incident-and-taiwans-transitional-justice/",
+        "https://www.britannica.com/event/White-Terror-Taiwan"
+      ]
+    },
+    {
+      "name": "Nationalist political repression during the final civil-war phase",
+      "year": null,
+      "perpetrator": "Kuomintang / Republic of China",
+      "victims_group": "political dissidents, suspected Communists, and opposition activists",
+      "low": null,
+      "high": null,
+      "notes": "Known arrests, torture, and killings occurred from 1946 to 1949, but no reliable event-level or campaign-level total was found separate from Rummel's broader Nationalist democide estimate.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_war_crimes",
+        "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf"
+      ]
+    },
+    {
+      "name": "Communist land-reform and class-violence campaigns during the final civil-war phase",
+      "year": null,
+      "perpetrator": "Chinese Communist Party / People's Liberation Army",
+      "victims_group": "landlords, alleged collaborators, local elites, and suspected class enemies",
+      "low": null,
+      "high": null,
+      "notes": "Direct killings occurred, but the 1945-1949 total cannot be cleanly separated from Rummel's aggregate Communist democide estimate or from later post-1949 campaigns.",
+      "sources": [
+        "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf",
+        "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is categorical: sources often give aggregate civilian mortality or democide rather than cleanly separating direct civilian killing, indirect deaths from siege/famine/disease/displacement, and ordinary combat deaths. Rummel provides rare side-attributed estimates, but his democide category is broader than conventional civilian-casualty accounting and mixes direct and indirect mechanisms. Britannica provides a useful independent cross-check for broad military and civilian totals but does not attribute civilian deaths by side. Specific events such as Changchun and the 228 Incident are better documented than most other atrocities, but even those have wide ranges.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Chinese-Civil-War/Nationalist-collapse-and-the-establishment-of-the-Peoples-Republic-of-China-1949",
+      "title": "Chinese Civil War - Nationalist collapse and the establishment of the People's Republic of China",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.agathonlibrary.com/wp-content/uploads/2022/02/RUMMELR.J.-Death_by_Government_1994.pdf",
+      "title": "Death by Government",
+      "publisher": "R. J. Rummel / Agathon Library PDF"
+    },
+    {
+      "url": "https://academic.oup.com/reference/62399/reference-article/555386864",
+      "title": "Chinese Civil War, 1945-1949",
+      "publisher": "Oxford Bibliographies / Oxford University Press"
+    },
+    {
+      "url": "https://www.228.org.tw/en/the228incident",
+      "title": "The 228 Incident",
+      "publisher": "National 228 Memorial Foundation"
+    },
+    {
+      "url": "https://www.britannica.com/event/White-Terror-Taiwan",
+      "title": "White Terror",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://thediplomat.com/2016/03/the-228-incident-and-taiwans-transitional-justice/",
+      "title": "The 228 Incident and Taiwan's Transitional Justice",
+      "publisher": "The Diplomat"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_massacres_in_China",
+      "title": "List of massacres in China",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+      "title": "Chinese Civil War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_war_crimes",
+      "title": "List of war crimes",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

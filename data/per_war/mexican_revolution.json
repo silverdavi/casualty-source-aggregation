@@ -1,0 +1,609 @@
+{
+  "war_id": "mexican_revolution",
+  "name": "Mexican Revolution",
+  "start_year": 1910,
+  "end_year": 1920,
+  "ongoing": false,
+  "regions": [
+    "Mexico",
+    "United States-Mexico borderlands"
+  ],
+  "summary": "The Mexican Revolution was a sequence of overlapping civil wars and foreign-intervention episodes from 1910 to 1920. The strongest demographic estimate is Robert McCaa's preferred figure of about 1.4 million excess deaths, within a broader responsible range of roughly 0.5 million to 2.0 million excess deaths; McCaa's 2.1 million figure is total demographic loss, including lost births and emigration. Faction-by-faction death attribution is largely unavailable, so most national totals must be treated as aggregate all-belligerent figures.",
+  "sides": [
+    {
+      "name": "Porfirian / Federal / Huertista government forces",
+      "members": [
+        "Porfirio D\u00edaz government",
+        "Mexican Federal Army",
+        "Victoriano Huerta regime",
+        "associated federal and local forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable side-specific national total found. The all-faction combat-death range used in this report is 125,000 to 250,000. Veracruz produced about 193 Mexican soldier deaths, but that is only one event and not a Federal/Huertista war total.",
+        "sources": [
+          "https://www.war-memorial.net/Mexican-Revolution--3.39",
+          "https://www.necrometrics.com/20c1m.htm",
+          "https://en.wikipedia.org/wiki/Mexican_Revolution"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "scorched_earth_bombardment_public_execution",
+            "victims_group": "Civilians in Morelos and other counterinsurgency zones",
+            "low": null,
+            "high": null,
+            "notes": "Sources document scorched earth, burned towns, bombardment of civilians, concentration in military camps, terror, and public execution, but no reliable aggregate death count was found.",
+            "sources": [
+              "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+              "https://www.scielo.org.mx/scielo.php?pid=S0185-26202006000100109&script=sci_arttext"
+            ]
+          }
+        ],
+        "notes": "Direct civilian killing by federal/Huertista forces is documented qualitatively but not countable nationally from the sources found.",
+        "sources": [
+          "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+          "https://www.scielo.org.mx/scielo.php?pid=S0185-26202006000100109&script=sci_arttext"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "scorched_earth_displacement_concentration_public_health_collapse",
+          "victims_group": "Mexican civilians in federal counterinsurgency areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Federal campaigns contributed to indirect mortality, but McCaa's national excess-death estimate is not apportioned by faction.",
+          "sources": [
+            "https://users.pop.umn.edu/~rmccaa/missmill/mxrev.htm",
+            "https://experts.umn.edu/en/publications/missing-millions-the-demographic-costs-of-the-mexican-revolution/",
+            "https://www.scielo.org.mx/scielo.php?pid=S0185-26202006000100109&script=sci_arttext"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maderistas and early anti-D\u00edaz revolutionaries",
+      "members": [
+        "Francisco I. Madero supporters",
+        "early revolutionary forces",
+        "local revolutionary mobs"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No side-specific national total found. Early-phase Maderista losses are included in aggregate Revolution combat-death estimates.",
+        "sources": [
+          "https://www.war-memorial.net/Mexican-Revolution--3.39",
+          "https://www.necrometrics.com/20c1m.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 303,
+        "high": 308,
+        "point": 303,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Chinese and other Asian residents of Torre\u00f3n",
+            "low": 303,
+            "high": 308,
+            "notes": "The Torre\u00f3n massacre is usually given as 303 Chinese killed; some accounts give 308 Asians total, including 303 Chinese and 5 Japanese.",
+            "sources": [
+              "https://www.theguardian.com/world/2021/may/16/mexico-chinese-massacre-centenary-torreon",
+              "https://www.taipeitimes.com/News/world/archives/2021/05/19/2003757683",
+              "https://en.wikipedia.org/wiki/Torre%C3%B3n_massacre"
+            ]
+          }
+        ],
+        "notes": "This is a documented event floor, not a national total for all Maderista direct civilian killings.",
+        "sources": [
+          "https://www.theguardian.com/world/2021/may/16/mexico-chinese-massacre-centenary-torreon",
+          "https://www.taipeitimes.com/News/world/archives/2021/05/19/2003757683",
+          "https://en.wikipedia.org/wiki/Torre%C3%B3n_massacre"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Constitutionalists / Carrancistas / Obregonistas",
+      "members": [
+        "Venustiano Carranza forces",
+        "\u00c1lvaro Obreg\u00f3n forces",
+        "Constitutionalist Army",
+        "later Carranza government forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable national total by side found. Event reports include 138 Constitutionalist killed in one Celaya phase, but this is not a total.",
+        "sources": [
+          "https://www.historynet.com/mexican-revolution-battle-of-celaya/",
+          "https://www.war-memorial.net/Mexican-Revolution--3.39"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "Executions and reprisals are documented, but no reliable direct-civilian national total by Constitutionalist/Carrancista forces was found.",
+        "sources": [
+          "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+          "https://en.wikipedia.org/wiki/Mexican_Revolution"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "campaign_displacement_requisition_public_health_collapse",
+          "victims_group": "Mexican civilians in areas of Constitutionalist operations",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Constitutionalist campaigns contributed to the national demographic disaster, but indirect deaths are not apportioned by faction in the demographic literature found.",
+          "sources": [
+            "https://users.pop.umn.edu/~rmccaa/missmill/mxrev.htm",
+            "https://experts.umn.edu/en/publications/missing-millions-the-demographic-costs-of-the-mexican-revolution/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Villistas / Conventionist northern forces",
+      "members": [
+        "Pancho Villa forces",
+        "Divisi\u00f3n del Norte",
+        "Conventionist northern forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable national total by side found. Event-level reports include about 4,000 Villistas dead in one Celaya phase and about 70 to 100 attackers killed during the Columbus raid.",
+        "sources": [
+          "https://www.historynet.com/mexican-revolution-battle-of-celaya/",
+          "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e",
+          "https://www.archives.gov/publications/prologue/1997/fall/mexican-punitive-expedition-1.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 26,
+        "high": 28,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "U.S. citizens at Santa Isabel",
+            "low": 16,
+            "high": 16,
+            "notes": "Villa executed 16 U.S. citizens in January 1916 according to History.com's account.",
+            "sources": [
+              "https://www.history.com/this-day-in-history/june-21/pershing-attacked-by-mexican-troops"
+            ]
+          },
+          {
+            "cause": "raid",
+            "victims_group": "U.S. civilian residents of Columbus, New Mexico",
+            "low": 10,
+            "high": 12,
+            "notes": "AP reports 18 Americans killed, mostly civilians, with around a dozen residents and 8 U.S. soldiers; the U.S. Army summary gives 14 military and 10 civilian American casualties.",
+            "sources": [
+              "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e",
+              "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/"
+            ]
+          }
+        ],
+        "notes": "This is an event floor for two prominent incidents, not a national total of all Villista direct civilian killings.",
+        "sources": [
+          "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e",
+          "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/",
+          "https://www.history.com/this-day-in-history/june-21/pershing-attacked-by-mexican-troops"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Zapatistas / Liberation Army of the South",
+      "members": [
+        "Emiliano Zapata forces",
+        "Ej\u00e9rcito Libertador del Sur"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable Zapatista military-death total found; losses are included in aggregate Revolution combat-death estimates.",
+        "sources": [
+          "https://www.war-memorial.net/Mexican-Revolution--3.39",
+          "https://www.necrometrics.com/20c1m.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "terror_public_execution",
+            "victims_group": "Civilians and opponents in Morelos and surrounding areas",
+            "low": null,
+            "high": null,
+            "notes": "The Library of Congress states that Zapata's rebels, like Robles's federal forces, used terrorism and public execution, but gives no aggregate count.",
+            "sources": [
+              "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html"
+            ]
+          }
+        ],
+        "notes": "Direct killings are documented qualitatively but not countable nationally from the sources found.",
+        "sources": [
+          "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "United States forces, Texas Rangers, border law-enforcement, and vigilantes",
+      "members": [
+        "United States Navy and Marines at Veracruz",
+        "United States Army Punitive Expedition",
+        "Texas Rangers",
+        "local ranchers and vigilantes",
+        "U.S. border forces"
+      ],
+      "military_killed": {
+        "low": 31,
+        "high": 51,
+        "point": null,
+        "notes": "Approximate event-based range from Veracruz, Columbus, and other Punitive Expedition/border incidents; not a single official all-cause total from the sources found. Veracruz caused about 19-21 U.S. servicemen killed; Columbus caused 8 U.S. soldiers killed in AP's account and 14 military American casualties in the U.S. Army summary.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mexican_Revolution",
+          "https://en.wikipedia.org/wiki/Battle_of_Veracruz_(1914)",
+          "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e",
+          "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 15,
+        "high": 300,
+        "point": 15,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Unarmed Mexican/Mexican-American men and boys at Porvenir, Texas",
+            "low": 15,
+            "high": 15,
+            "notes": "Texas Rangers, local ranchers, and U.S. soldiers killed 15 unarmed men and boys at Porvenir in January 1918.",
+            "sources": [
+              "https://www.tshaonline.org/handbook/entries/porvenir-massacre",
+              "https://www.britannica.com/event/Porvenir-Massacre",
+              "https://www.texasobserver.org/who-writes-history-the-fight-to-commemorate-a-massacre-by-the-texas-rangers/"
+            ]
+          },
+          {
+            "cause": "border_reprisals_law_enforcement_violence",
+            "victims_group": "Ethnic Mexicans and Mexican Americans in Texas borderlands",
+            "low": null,
+            "high": 300,
+            "notes": "Texas Standard and Time describe hundreds, and in some accounts hundreds to thousands, killed by Rangers or law-enforcement/vigilante violence during 1915-1919. The high value of 300 is a conservative cap for Revolution-linked roll-up; broader estimates are not cleanly attributable to the Mexican Revolution proper.",
+            "sources": [
+              "https://www.texasstandard.org/stories/texas-exhibit-refuses-to-forget-one-of-the-worst-periods-of-state-sanctioned-violence/",
+              "https://time.com/5682139/porvenir-massacre-descendants/"
+            ]
+          }
+        ],
+        "notes": "Porvenir is the confirmed point estimate. Broader Texas border violence is relevant context but overlaps only partly with the Mexican Revolution as a war.",
+        "sources": [
+          "https://www.tshaonline.org/handbook/entries/porvenir-massacre",
+          "https://www.texasstandard.org/stories/texas-exhibit-refuses-to-forget-one-of-the-worst-periods-of-state-sanctioned-violence/",
+          "https://time.com/5682139/porvenir-massacre-descendants/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Unattributed aggregate of all Mexican belligerents and war conditions",
+      "members": [
+        "All Mexican factions combined",
+        "unattributed combatants",
+        "civilians affected by war, famine, disease, displacement, and public-health collapse"
+      ],
+      "military_killed": {
+        "low": 125000,
+        "high": 250000,
+        "point": 125000,
+        "notes": "COW-derived strict battle deaths are 125,000. Other summarized estimates give about 200,000 to 250,000 combat or military deaths.",
+        "sources": [
+          "https://www.war-memorial.net/Mexican-Revolution--3.39",
+          "https://www.necrometrics.com/20c1m.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 125000,
+        "high": 125000,
+        "point": 125000,
+        "breakdown": [
+          {
+            "cause": "incidental_direct_civilian_war_deaths",
+            "victims_group": "Mexican and foreign civilians in war zones",
+            "low": 125000,
+            "high": 125000,
+            "notes": "Rummel/Eckhardt-style summaries give 125,000 civilian deaths, but do not cleanly separate perpetrator or direct/incidental mechanisms.",
+            "sources": [
+              "https://www.necrometrics.com/20c1m.htm"
+            ]
+          }
+        ],
+        "notes": "This is an aggregate literature-derived estimate, not a per-side attribution.",
+        "sources": [
+          "https://www.necrometrics.com/20c1m.htm"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine_disease_displacement_public_health_collapse",
+          "victims_group": "Mexican civilians and noncombatants nationally",
+          "low": 250000,
+          "high": 1750000,
+          "point": 1050000,
+          "notes": "Residual estimate. McCaa reports responsible mortality scenarios from about 0.5 million to 2.0 million excess deaths and prefers 1.4 million excess deaths. Subtracting broad combat/direct-death components produces a residual indirect-death range; this is an accounting inference, not a published factional figure.",
+          "sources": [
+            "https://users.pop.umn.edu/~rmccaa/missmill/mxrev.htm",
+            "https://experts.umn.edu/en/publications/missing-millions-the-demographic-costs-of-the-mexican-revolution/",
+            "https://www.cambridge.org/core/journals/americas/article/spanish-flu-and-the-sanitary-dictatorship-mexicos-response-to-the-1918-influenza-pandemic/A2402D3D96BA7100491428D80759FB4C"
+          ]
+        },
+        {
+          "type": "epidemic",
+          "victims_group": "Mexican population affected by the 1918 influenza pandemic",
+          "low": 300000,
+          "high": 600000,
+          "point": null,
+          "notes": "Modern scholarship gives 300,000 to 600,000 flu deaths in Mexico. McCaa treats the flu as part of the broader revolutionary demographic disaster because war reduced public-health capacity.",
+          "sources": [
+            "https://www.cambridge.org/core/journals/americas/article/spanish-flu-and-the-sanitary-dictatorship-mexicos-response-to-the-1918-influenza-pandemic/A2402D3D96BA7100491428D80759FB4C",
+            "https://users.pop.umn.edu/~rmccaa/missmill/mxrev.htm"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 125000,
+    "military_high": 250000,
+    "civilian_low": 250000,
+    "civilian_high": 1750000,
+    "grand_low": 500000,
+    "grand_high": 2000000,
+    "notes": "Grand death range is based on McCaa's reported mortality-scenario range of roughly 0.5 million to 2.0 million excess deaths, with McCaa's preferred estimate of about 1.4 million excess deaths. McCaa's 2.1 million figure is total demographic loss, not deaths alone. Military totals are all-faction aggregate combat deaths, not side-attributed."
+  },
+  "key_atrocities": [
+    {
+      "name": "Torre\u00f3n massacre",
+      "year": 1911,
+      "perpetrator": "Maderista revolutionary troops and local mob",
+      "victims_group": "Chinese and other Asian residents of Torre\u00f3n",
+      "low": 303,
+      "high": 308,
+      "notes": "Usually reported as 303 Chinese killed; some accounts give 308 Asians total, including 303 Chinese and 5 Japanese.",
+      "sources": [
+        "https://www.theguardian.com/world/2021/may/16/mexico-chinese-massacre-centenary-torreon",
+        "https://www.taipeitimes.com/News/world/archives/2021/05/19/2003757683",
+        "https://en.wikipedia.org/wiki/Torre%C3%B3n_massacre"
+      ]
+    },
+    {
+      "name": "Decena Tr\u00e1gica / Ten Tragic Days",
+      "year": 1913,
+      "perpetrator": "Anti-Madero rebels and Federal/Huertista forces in Mexico City",
+      "victims_group": "Civilians and combatants in Mexico City",
+      "low": null,
+      "high": null,
+      "notes": "Civilian casualties were high, but no reliable count was found in the sources used.",
+      "sources": [
+        "https://www.britannica.com/place/Mexico/The-Mexican-Revolution-and-its-aftermath-1910-40"
+      ]
+    },
+    {
+      "name": "Morelos scorched-earth and public-execution campaigns",
+      "year": 1913,
+      "perpetrator": "Federal/Huertista forces under Robles; Zapatista forces also used terror and public execution",
+      "victims_group": "Civilians in Morelos and surrounding areas",
+      "low": null,
+      "high": null,
+      "notes": "Sources document scorched earth, burned towns, bombardment of civilians, concentration in military camps, terror, and public execution, but no aggregate death count.",
+      "sources": [
+        "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+        "https://www.scielo.org.mx/scielo.php?pid=S0185-26202006000100109&script=sci_arttext"
+      ]
+    },
+    {
+      "name": "Taking of Zacatecas",
+      "year": 1914,
+      "perpetrator": "Villista/Constitutionalist forces against Federal defenders",
+      "victims_group": "Soldiers; civilian casualties unrecorded",
+      "low": 7000,
+      "high": 7000,
+      "notes": "One source reports 7,000 soldiers dead and 5,000 wounded; civilian casualties were never recorded.",
+      "sources": [
+        "https://www.history.com/topics/mexico/zacatecas/pictures/zacatecas"
+      ]
+    },
+    {
+      "name": "Battles of Celaya",
+      "year": 1915,
+      "perpetrator": "Constitutionalist and Villista forces in battle",
+      "victims_group": "Combatants, especially Villistas",
+      "low": 4138,
+      "high": null,
+      "notes": "HistoryNet reports 4,000 Villista dead in one phase and 138 Constitutionalist killed; this is event-level reporting and not a full battle-series total.",
+      "sources": [
+        "https://www.historynet.com/mexican-revolution-battle-of-celaya/",
+        "https://www.britannica.com/event/Battle-of-Celaya"
+      ]
+    },
+    {
+      "name": "Santa Isabel execution of U.S. citizens",
+      "year": 1916,
+      "perpetrator": "Villistas",
+      "victims_group": "U.S. citizens",
+      "low": 16,
+      "high": 16,
+      "notes": "Villa executed 16 U.S. citizens in northern Mexico.",
+      "sources": [
+        "https://www.history.com/this-day-in-history/june-21/pershing-attacked-by-mexican-troops"
+      ]
+    },
+    {
+      "name": "Columbus raid",
+      "year": 1916,
+      "perpetrator": "Villistas",
+      "victims_group": "U.S. civilians and soldiers; Villista attackers",
+      "low": 88,
+      "high": 93,
+      "notes": "AP reports 18 Americans killed and 70 to 75 attackers killed; the American dead included around a dozen residents and 8 soldiers.",
+      "sources": [
+        "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e"
+      ]
+    },
+    {
+      "name": "Porvenir massacre",
+      "year": 1918,
+      "perpetrator": "Texas Rangers, local ranchers, and U.S. soldiers",
+      "victims_group": "Unarmed Mexican/Mexican-American men and boys",
+      "low": 15,
+      "high": 15,
+      "notes": "Fifteen unarmed men and boys were killed at Porvenir, Texas.",
+      "sources": [
+        "https://www.tshaonline.org/handbook/entries/porvenir-massacre",
+        "https://www.britannica.com/event/Porvenir-Massacre",
+        "https://www.texasobserver.org/who-writes-history-the-fight-to-commemorate-a-massacre-by-the-texas-rangers/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is not whether the Revolution was catastrophic, but how to separate deaths from lost births, emigration, and census error, and how to apportion deaths among factions. McCaa's demographic reconstruction is the best single source and gives about 1.4 million excess deaths, but not by belligerent. Combat-death datasets and historian estimates vary from 125,000 to 250,000 military/combat deaths. Direct civilian deaths are only visible in event fragments such as Torre\u00f3n, Columbus, Santa Isabel, Porvenir, and Morelos; no authoritative national direct-civilian count by perpetrator was found.",
+  "sources": [
+    {
+      "url": "https://experts.umn.edu/en/publications/missing-millions-the-demographic-costs-of-the-mexican-revolution/",
+      "title": "Missing millions: The demographic costs of the Mexican revolution",
+      "publisher": "University of Minnesota / Mexican Studies-Estudios Mexicanos"
+    },
+    {
+      "url": "https://users.pop.umn.edu/~rmccaa/missmill/mxrev.htm",
+      "title": "Missing millions: The human cost of the Mexican Revolution, 1910-1930",
+      "publisher": "University of Minnesota Population Center"
+    },
+    {
+      "url": "https://www.war-memorial.net/Mexican-Revolution--3.39",
+      "title": "Mexican Revolution",
+      "publisher": "The Polynational War Memorial"
+    },
+    {
+      "url": "https://correlatesofwar.org/data-sets/cow-war/",
+      "title": "COW War Data, 1816-2007 (v4.0, Intra-State v5.1)",
+      "publisher": "Correlates of War Project"
+    },
+    {
+      "url": "https://www.necrometrics.com/20c1m.htm",
+      "title": "Twentieth Century Atlas - Death Tolls",
+      "publisher": "Necrometrics"
+    },
+    {
+      "url": "https://www.uv.mx/apps/censos-conteos/1921/1921_archivos/sheet017.htm",
+      "title": "Resumen del Censo General de Habitantes de 1921",
+      "publisher": "Universidad Veracruzana census tables"
+    },
+    {
+      "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/historicos/2104/702825460220/702825460220_1.pdf",
+      "title": "INEGI historical census table including 1910 and 1921 population",
+      "publisher": "INEGI"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/americas/article/spanish-flu-and-the-sanitary-dictatorship-mexicos-response-to-the-1918-influenza-pandemic/A2402D3D96BA7100491428D80759FB4C",
+      "title": "The Spanish Flu and the Sanitary Dictatorship: Mexico's Response to the 1918 Influenza Pandemic",
+      "publisher": "The Americas / Cambridge Core"
+    },
+    {
+      "url": "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+      "title": "The War Against Huerta",
+      "publisher": "Library of Congress"
+    },
+    {
+      "url": "https://www.scielo.org.mx/scielo.php?pid=S0185-26202006000100109&script=sci_arttext",
+      "title": "Guerra y pol\u00edtica contra el cuartelazo. La revoluci\u00f3n zapatista durante el r\u00e9gimen de Huerta",
+      "publisher": "Scielo M\u00e9xico"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2021/may/16/mexico-chinese-massacre-centenary-torreon",
+      "title": "Mexico faces up to uneasy anniversary of Chinese massacre",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.taipeitimes.com/News/world/archives/2021/05/19/2003757683",
+      "title": "Mexican president apologizes for 1911 massacre",
+      "publisher": "Taipei Times"
+    },
+    {
+      "url": "https://www.historynet.com/mexican-revolution-battle-of-celaya/",
+      "title": "Mexican Revolution: Battle of Celaya",
+      "publisher": "HistoryNet"
+    },
+    {
+      "url": "https://www.history.com/topics/mexico/zacatecas/pictures/zacatecas",
+      "title": "Zacatecas",
+      "publisher": "History.com"
+    },
+    {
+      "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/",
+      "title": "Mexican Expedition",
+      "publisher": "U.S. Army Center of Military History"
+    },
+    {
+      "url": "https://www.archives.gov/publications/prologue/1997/fall/mexican-punitive-expedition-1.html",
+      "title": "The United States Armed Forces and the Mexican Punitive Expedition: Part 1",
+      "publisher": "National Archives"
+    },
+    {
+      "url": "https://apnews.com/article/219a1bbe94a805f4bf1091049f20bc9e",
+      "title": "Mexican president praises Pancho Villa for his 1916 attack on Columbus, New Mexico, that killed 18",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.history.com/this-day-in-history/june-21/pershing-attacked-by-mexican-troops",
+      "title": "U.S. General John J. Pershing's force attacked by Mexican troops",
+      "publisher": "History.com"
+    },
+    {
+      "url": "https://www.tshaonline.org/handbook/entries/porvenir-massacre",
+      "title": "Porvenir Massacre",
+      "publisher": "Texas State Historical Association"
+    },
+    {
+      "url": "https://www.britannica.com/event/Porvenir-Massacre",
+      "title": "Porvenir Massacre",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.texasobserver.org/who-writes-history-the-fight-to-commemorate-a-massacre-by-the-texas-rangers/",
+      "title": "Who Writes History? The Fight to Commemorate a Massacre by the Texas Rangers",
+      "publisher": "Texas Observer"
+    },
+    {
+      "url": "https://www.texasstandard.org/stories/texas-exhibit-refuses-to-forget-one-of-the-worst-periods-of-state-sanctioned-violence/",
+      "title": "The Texas Rangers Killed Hundreds of Hispanic Americans During the Mexican Revolution",
+      "publisher": "Texas Standard"
+    },
+    {
+      "url": "https://time.com/5682139/porvenir-massacre-descendants/",
+      "title": "A Century After 15 Mexican Men and Boys Were Massacred in Texas, Their Descendants Want Recognition",
+      "publisher": "Time"
+    }
+  ]
+}

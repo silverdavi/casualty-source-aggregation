@@ -1,0 +1,509 @@
+{
+  "war_id": "second_congo_war",
+  "name": "Second Congo War (Africa's World War)",
+  "start_year": 1998,
+  "end_year": 2003,
+  "ongoing": false,
+  "regions": [
+    "Democratic Republic of the Congo",
+    "Great Lakes Africa",
+    "Central Africa"
+  ],
+  "summary": "The Second Congo War began in August 1998 after Laurent-D\u00e9sir\u00e9 Kabila broke with his Rwandan and Ugandan backers, leading to a regional war fought mainly on Congolese territory. The main war ended politically with the 2003 transition, but violence in Ituri and the Kivus continued. Directly documented violent deaths are in the tens of thousands, but excess-mortality studies attribute hundreds of thousands to several million deaths to disease, hunger, displacement and health-system collapse caused by the war.",
+  "sides": [
+    {
+      "name": "Government of the DRC / Kabila coalition",
+      "members": [
+        "Democratic Republic of the Congo",
+        "Forces arm\u00e9es congolaises (FAC)",
+        "Zimbabwe",
+        "Angola",
+        "Namibia",
+        "Chad",
+        "Sudan",
+        "Mai-Mai allies",
+        "ALiR/ex-FAR/Interahamwe allies",
+        "CNDD-FDD/FDD allies"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable full military-death total by side was found. The DRC claimed 2,000 FAC deaths in fighting with Uganda or Uganda-supported rebels in its ICJ reparations case, but this is partial and litigation-specific. UCDP/PRIO gives 6,494 armed-actor deaths for the whole war but not by actor.",
+        "sources": [
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 460,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "summary execution, mob killing, burning, shooting",
+            "victims_group": "Tutsi, Rwandan-origin civilians and suspected infiltrators in Kinshasa",
+            "low": 80,
+            "high": null,
+            "notes": "At least 80 killed in late August 1998; broader campaign included several thousand arrests and several hundred disappearances, mostly summary executions, but not enough precision for aggregation.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "summary execution",
+            "victims_group": "Tutsi men in Kalemie",
+            "low": 70,
+            "high": null,
+            "notes": "More than 70 bodies were exhumed from Camp Marin after FAC executions.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Tutsi civilians in Vyura",
+            "low": 100,
+            "high": null,
+            "notes": "Several sources cited by the Mapping Report indicate over 100 Tutsis died in Vyura in August 1998.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "shooting",
+            "victims_group": "Tutsi civilians in Moba",
+            "low": 40,
+            "high": 40,
+            "notes": "FAC troops aided by residents shot around 40 members of the Tutsi community.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "execution of unarmed recruits",
+            "victims_group": "young Tutsi or Rwandan military recruits at Kamina",
+            "low": 100,
+            "high": null,
+            "notes": "Victims were unarmed; the total remains unclear but is thought to be at least 100.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "execution and disappearance",
+            "victims_group": "Tutsi/Rwandan-origin civilians in Lubumbashi, Kipushi, Likasi and Kolwezi",
+            "low": 70,
+            "high": null,
+            "notes": "ASADHO suggested over 70 victims; Mapping Report states several tens were executed.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          }
+        ],
+        "notes": "The low estimate is a non-exhaustive sum of quantified examples only; the true total attributable to this coalition is unknown and likely higher.",
+        "sources": [
+          "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement_disease_hunger_unattributed",
+          "victims_group": "Congolese civilians in government-held and contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Government actions, alliances and detention practices contributed to insecurity and excess mortality, but no defensible side-specific indirect-death estimate was found.",
+          "sources": [
+            "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf",
+            "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rwanda\u2013Uganda\u2013Burundi / anti-Kabila rebel coalition",
+      "members": [
+        "Rwanda / APR",
+        "Uganda / UPDF",
+        "Burundi / FAB",
+        "RCD/ANC",
+        "RCD-Goma",
+        "RCD-ML",
+        "MLC",
+        "FLC and other affiliated forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable full military-death total by side was found. UCDP/PRIO found 23 events involving Ugandan troops with 211 total deaths and only 3 reported Ugandan soldiers, but this is not a full UPDF/RPA/RCD/MLC count.",
+        "sources": [
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2044,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre, rape, torture, mutilation",
+            "victims_group": "civilians in Kasika, Kilungutwe and Kalama",
+            "low": 1000,
+            "high": null,
+            "notes": "ANC/APR soldiers massacred over 1,000 civilians on 24 August 1998.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "massacre, burning, shooting, pillage",
+            "victims_group": "civilians in Makobola II, Bangwe, Katuta, Mikunga and Kashekezi",
+            "low": 800,
+            "high": null,
+            "notes": "ANC/APR/FAB elements killed more than 800 people between 30 December 1998 and 2 January 1999.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "indiscriminate shelling and urban combat",
+            "victims_group": "civilians in Kisangani",
+            "low": 244,
+            "high": 760,
+            "notes": "APR and UPDF fighting from 5 to 10 June 2000 killed 244-760 civilians according to Mapping Report sources.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+              "https://www.amnesty.org/en/latest/news/2024/06/kisanganis-unhealed-scars-the-six-day-war-and-the-ongoing-struggle-for-justice-and-accountability/"
+            ]
+          },
+          {
+            "cause": "one-sided violence attributed to Uganda and affiliates",
+            "victims_group": "Congolese civilians",
+            "low": 272,
+            "high": 2291,
+            "notes": "UCDP-linked Uganda/affiliate one-sided civilian deaths were 32+240; ACLED gave 117+170; Uganda's review of the UN Mapping Report found about 2,291 deaths with reasonable suspicion of Ugandan involvement.",
+            "sources": [
+              "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20180206-WRI-01-00-EN.pdf"
+            ]
+          }
+        ],
+        "notes": "The low estimate is a non-exhaustive sum of selected quantified Rwanda/RCD/Burundi/Uganda events; Uganda-specific database estimates are not a full anti-Kabila coalition total.",
+        "sources": [
+          "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20180206-WRI-01-00-EN.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "occupation_displacement_disease",
+          "victims_group": "Ituri civilians",
+          "low": 20000,
+          "high": 74000,
+          "point": null,
+          "notes": "DRC's ICJ memorial claimed 20,000 additional Ituri deaths attributable to Uganda as occupying power, excluding direct attacks; applying the ICJ expert's model to DRC's proportions produced about 73,994 Ituri excess deaths attributable to Ugandan and allied forces.",
+          "sources": [
+            "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+          ]
+        },
+        {
+          "type": "countrywide_excess_mortality_attributed_to_Uganda_armed_action",
+          "victims_group": "Congolese civilians and combatants in DRC",
+          "low": 180000,
+          "high": 224449,
+          "point": null,
+          "notes": "DRC's litigation position attributed 180,000 deaths to Uganda armed action plus 2,000 FAC deaths; the ICJ expert's comparable model produced 224,449 excess deaths. These are contested litigation/model apportionments, not an accepted historical total.",
+          "sources": [
+            "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+          ]
+        },
+        {
+          "type": "infrastructure_shutdown",
+          "victims_group": "civilians in Bas-Congo and Kinshasa",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ANC/APR/UPDF troops stopped Inga dam turbines for three weeks in August-September 1998, depriving areas of water and electricity and increasing mortality in medical centres; no death toll is given.",
+          "sources": [
+            "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local, communal and proxy armed groups",
+      "members": [
+        "FRPI",
+        "FNI",
+        "UPC",
+        "APC",
+        "Hema militias",
+        "Lendu militias",
+        "Mai-Mai groups",
+        "ALiR/ex-FAR/Interahamwe",
+        "CNDD-FDD/FDD",
+        "other local armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable military-death total by this side was found. In Ituri, UCDP/PRIO recorded 1,036 military deaths and 3,593 unknown-status deaths, but not by group.",
+        "sources": [
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1164,
+        "high": 4341,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "ethnic massacre",
+            "victims_group": "Hema-Gegere and Bira civilians in Nyakunde and surrounding villages",
+            "low": 1000,
+            "high": null,
+            "notes": "FRPI and APC elements massacred over 1,000 civilians between 5 and 15 September 2002.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+              "https://www.hrw.org/reports/2003/ituri0703/DRC0703.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "mostly Hema civilians in Bandikado",
+            "low": 150,
+            "high": 150,
+            "notes": "FRPI elements killed around 150 people on 13 September 2002.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "killing and village burning",
+            "victims_group": "civilians in Songolo",
+            "low": 14,
+            "high": 14,
+            "notes": "UPC elements supported by Bira militiamen killed at least 14 civilians and burned over 1,000 houses.",
+            "sources": [
+              "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+            ]
+          },
+          {
+            "cause": "Ituri-wide targeted civilian violence",
+            "victims_group": "Ituri civilians",
+            "low": 4341,
+            "high": 4341,
+            "notes": "UCDP/PRIO recorded 4,341 targeted civilian deaths in Ituri, but this includes multiple perpetrators and cannot be assigned solely to local militias.",
+            "sources": [
+              "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+            ]
+          }
+        ],
+        "notes": "The low estimate is a sum of quantified local/proxy militia events. The high indicator is Ituri targeted civilian deaths, not solely local-militia perpetration.",
+        "sources": [
+          "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement_disease_hunger_unattributed",
+          "victims_group": "Congolese civilians in Ituri, Kivu, Katanga, Equateur and other affected regions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Local armed groups caused displacement, village burning, looting, road insecurity and collapse of food and health access, but no defensible group-specific indirect-death estimate was found.",
+          "sources": [
+            "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+            "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Conflict-wide / unattributed war-system consequences",
+      "members": [
+        "All belligerents",
+        "unattributed direct violence",
+        "unattributed indirect war effects"
+      ],
+      "military_killed": {
+        "low": 6494,
+        "high": 14318,
+        "point": 6494,
+        "notes": "UCDP/PRIO best estimate records 6,494 armed-actor deaths and 7,824 deaths of unknown civilian/military status. The high is a constructed upper bound if all unknown-status deaths were armed actors.",
+        "sources": [
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 14663,
+        "high": 22487,
+        "point": 14663,
+        "breakdown": [
+          {
+            "cause": "targeted civilian killing",
+            "victims_group": "DRC civilians",
+            "low": 11227,
+            "high": 11227,
+            "notes": "UCDP/PRIO targeted civilian deaths for all DRC, 1 August 1998-2 June 2003.",
+            "sources": [
+              "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+            ]
+          },
+          {
+            "cause": "collateral civilian deaths",
+            "victims_group": "DRC civilians",
+            "low": 3436,
+            "high": 3436,
+            "notes": "UCDP/PRIO collateral civilian victims for all DRC, 1 August 1998-2 June 2003.",
+            "sources": [
+              "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+            ]
+          },
+          {
+            "cause": "unknown civilian_or_military_status",
+            "victims_group": "unclassified direct-death victims",
+            "low": 0,
+            "high": 7824,
+            "notes": "UCDP/PRIO could not classify 7,824 direct-death victims as civilian or military. High civilian total adds these to known civilian deaths.",
+            "sources": [
+              "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+            ]
+          }
+        ],
+        "notes": "Whole-war direct civilian death accounting. Actor attribution is not available from UCDP/PRIO.",
+        "sources": [
+          "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disease_malnutrition_displacement_health_system_collapse",
+          "victims_group": "Congolese civilians",
+          "low": 185337,
+          "high": 7085337,
+          "point": 4958775,
+          "notes": "Point is ICJ expert model's indirect civilian excess deaths for 1998-2003. Low is constructed from ADRASS 200,000 total conflict-death estimate minus 14,663 known direct civilian deaths. High is constructed from ICJ model 7.1 million upper interval minus 14,663 known direct civilian deaths.",
+          "sources": [
+            "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf",
+            "https://www.crimesofwar.org/library/documents/2003/irc-drc-8apr.pdf",
+            "https://eprints.soton.ac.uk/363157/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 6494,
+    "military_high": 14318,
+    "civilian_low": 200000,
+    "civilian_high": 7100000,
+    "grand_low": 200000,
+    "grand_high": 7100000,
+    "notes": "Direct UCDP/PRIO deaths: 28,981 best estimate, 27,817-50,836 low/high, including 14,663 civilians, 6,494 military and 7,824 unknown. Overall conflict-death/excess-mortality range uses the low ADRASS 200,000 estimate cited by ICJ experts and the ICJ expert model interval up to 7.1 million; central scholarly/humanitarian estimates cluster around 3.3-5.0 million for 1998-2003."
+  },
+  "key_atrocities": [
+    {
+      "name": "Kasika/Kilungutwe/Kalama massacre",
+      "year": 1998,
+      "perpetrator": "ANC/APR",
+      "victims_group": "civilians, including women and children",
+      "low": 1000,
+      "high": null,
+      "notes": "Over 1,000 civilians massacred on 24 August 1998; many women raped, tortured and mutilated before killing.",
+      "sources": [
+        "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+      ]
+    },
+    {
+      "name": "Makobola II, Bangwe, Katuta, Mikunga and Kashekezi massacres",
+      "year": 1998,
+      "perpetrator": "ANC/APR/FAB",
+      "victims_group": "civilians, including women, children, Red Cross volunteers and religious leaders",
+      "low": 800,
+      "high": null,
+      "notes": "More than 800 people killed between 30 December 1998 and 2 January 1999.",
+      "sources": [
+        "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+      ]
+    },
+    {
+      "name": "Kinshasa anti-Tutsi and anti-infiltrator killings",
+      "year": 1998,
+      "perpetrator": "popular defence groups and FAC/security forces",
+      "victims_group": "Tutsi, Rwandan-origin civilians and suspected infiltrators",
+      "low": 80,
+      "high": null,
+      "notes": "At least 80 killed in late August 1998; broader campaign included several thousand arrests and several hundred disappearances.",
+      "sources": [
+        "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf"
+      ]
+    },
+    {
+      "name": "Kisangani Six-Day War",
+      "year": 2000,
+      "perpetrator": "APR and UPDF",
+      "victims_group": "Kisangani civilians",
+      "low": 244,
+      "high": 760,
+      "notes": "Rwandan and Ugandan forces fought with heavy weapons in Kisangani from 5 to 10 June 2000; UN-linked figures cite 760 killed, 1,700 wounded, over 4,000 houses damaged/destroyed/uninhabitable, and 65,000 displaced.",
+      "sources": [
+        "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+        "https://www.amnesty.org/en/latest/news/2024/06/kisanganis-unhealed-scars-the-six-day-war-and-the-ongoing-struggle-for-justice-and-accountability/"
+      ]
+    },
+    {
+      "name": "Nyakunde massacre",
+      "year": 2002,
+      "perpetrator": "FRPI and APC",
+      "victims_group": "Hema-Gegere and Bira civilians",
+      "low": 1000,
+      "high": null,
+      "notes": "Over 1,000 civilians killed between 5 and 15 September 2002, selected by ethnic origin.",
+      "sources": [
+        "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+        "https://www.hrw.org/reports/2003/ituri0703/DRC0703.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Direct violent deaths are better documented than indirect deaths, but even direct deaths cannot be reliably assigned by side because UCDP/PRIO did not break down deaths by actor. Excess mortality is highly sensitive to baseline mortality and population assumptions. The largest death category is indirect civilian mortality from disease, malnutrition, displacement and health-system collapse, which the literature generally treats as conflict-wide rather than attributable to one belligerent. The report therefore gives side-specific quantified atrocity examples where possible and keeps the main indirect-death burden in an unattributed conflict-wide category.",
+  "sources": [
+    {
+      "url": "https://paulr.org/wp-content/uploads/2020/09/drc_rapport_final_eng_18062010-2.pdf",
+      "title": "Democratic Republic of the Congo, 1993\u20132003: Report of the Mapping Exercise",
+      "publisher": "United Nations Office of the High Commissioner for Human Rights"
+    },
+    {
+      "url": "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20201219-OTH-01-00-EN.pdf",
+      "title": "Experts' Report on Reparations, DRC v. Uganda",
+      "publisher": "International Court of Justice"
+    },
+    {
+      "url": "https://icj-web.leman.un-icc.cloud/sites/default/files/case-related/116/116-20180206-WRI-01-00-EN.pdf",
+      "title": "Counter-Memorial of Uganda on the Question of Reparations",
+      "publisher": "International Court of Justice"
+    },
+    {
+      "url": "https://www.crimesofwar.org/library/documents/2003/irc-drc-8apr.pdf",
+      "title": "Mortality in the Democratic Republic of Congo: Results from a Nationwide Survey / IRC Mortality Report",
+      "publisher": "International Rescue Committee"
+    },
+    {
+      "url": "https://eprints.soton.ac.uk/363157/",
+      "title": "The Democratic Republic of Congo conflict (1998-2004): assessing excess deaths based on war and non-war scenarios",
+      "publisher": "University of Southampton ePrints / IUSSP conference paper"
+    },
+    {
+      "url": "https://www.hrw.org/reports/2003/ituri0703/DRC0703.pdf",
+      "title": "Ituri: Covered in Blood. Ethnically Targeted Violence in Northeastern DR Congo",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2024/06/kisanganis-unhealed-scars-the-six-day-war-and-the-ongoing-struggle-for-justice-and-accountability/",
+      "title": "Kisangani's Unhealed Scars: The Six-Day War and the ongoing struggle for justice and accountability",
+      "publisher": "Amnesty International"
+    }
+  ]
+}

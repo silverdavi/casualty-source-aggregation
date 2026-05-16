@@ -1,0 +1,407 @@
+{
+  "war_id": "irish_war_of_independence_civil_war",
+  "name": "Irish War of Independence and Civil War",
+  "start_year": 1919,
+  "end_year": 1923,
+  "ongoing": false,
+  "regions": [
+    "Ireland",
+    "Northern Ireland",
+    "Irish Free State",
+    "United Kingdom"
+  ],
+  "summary": "A connected conflict cycle in Ireland, 1919\u20131923, comprising the IRA campaign against British rule, partition and sectarian violence especially in Belfast and the new Northern Ireland, and the Irish Civil War between pro- and anti-Treaty forces. The best modern enumerations are O'Halpin and \u00d3 Corr\u00e1in for the revolutionary/War of Independence period and the UCC Irish Civil War Fatalities Project for the Civil War. A broad all-island fatality range is about 4,100\u20134,350 deaths, but civilian perpetrator attribution is much less certain than combatant status.",
+  "sides": [
+    {
+      "name": "Irish republican / anti-Treaty side",
+      "members": [
+        "Irish Volunteers",
+        "Irish Republican Army",
+        "Sinn F\u00e9in revolutionary institutions",
+        "Anti-Treaty IRA",
+        "Cumann na mBan",
+        "Fianna \u00c9ireann"
+      ],
+      "military_killed": {
+        "low": 929,
+        "high": 1050,
+        "point": 929,
+        "notes": "Low combines 491 IRA Volunteers killed in O'Halpin/\u00d3 Corr\u00e1in-derived War of Independence figures and 438 anti-Treaty fatalities in the UCC Civil War project. High allows for other summaries giving about 550 IRA dead in the War of Independence and roughly 500 anti-Treaty IRA dead in older Civil War estimates.",
+        "sources": [
+          "https://yalebooks.yale.edu/book/9780300257472/the-dead-of-the-irish-revolution/",
+          "https://historyireland.com/the-dead-of-the-irish-revolution/",
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+          "https://www.irishtimes.com/culture/heritage/what-was-the-real-death-toll-of-the-irish-civil-war-1.4858308"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 300,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution or killing of alleged spies/informers",
+            "victims_group": "civilians accused of informing for British/Crown forces",
+            "low": 190,
+            "high": 196,
+            "notes": "Separate studies and summaries give about 190\u2013196 civilians killed by the IRA as alleged spies or informers during the War of Independence.",
+            "sources": [
+              "https://www.theirishstory.com/2017/06/04/spies-and-informers-beware-ira-executions-of-alleged-civilian-spies-during-the-war-of-independence-1919-1921/",
+              "https://www.researchgate.net/publication/355950771_Sexual_assault_and_fatal_violence_against_women_during_the_Irish_War_of_Independence_1919-1921_Kate_Maher's_murder_in_context"
+            ]
+          },
+          {
+            "cause": "all IRA-attributed non-combatant killings",
+            "victims_group": "non-combatants in the War of Independence period",
+            "low": 281,
+            "high": 281,
+            "notes": "Dorney's synthesis of O'Halpin/\u00d3 Corr\u00e1in-derived figures gives 281 non-combatants killed by the IRA to 1921, with another 236 civilian deaths uncertain.",
+            "sources": [
+              "https://www.irishtimes.com/culture/war-of-independence-the-bloodiest-six-months-1.4193813"
+            ]
+          },
+          {
+            "cause": "massacre / sectarian killing",
+            "victims_group": "Protestant civilians in west Cork and South Armagh, 1922",
+            "low": 19,
+            "high": 19,
+            "notes": "Includes 13 Protestants killed in the Dunmanway/Bandon Valley killings and six Protestant civilians killed at Altnaveigh/Lisdrumliska. These are documented examples in the post-Treaty/pre-Civil War period, not a complete 1922 republican civilian-death total.",
+            "sources": [
+              "https://www.reddit.com/r/IrishHistory/comments/1apfljd/the_dunmanway_massacre_of_1922/",
+              "https://irishhistory1919-1923chronology.ie/june_1922.htm"
+            ]
+          },
+          {
+            "cause": "Civil War crossfire, shootings, bombings, and other direct violence",
+            "victims_group": "civilians in the Free State Civil War",
+            "low": null,
+            "high": null,
+            "notes": "UCC identifies 336 civilian deaths in the Free State Civil War period, but the accessible aggregate summary does not apportion them by anti-Treaty versus pro-Treaty fire, crossfire, accident, or other causes.",
+            "sources": [
+              "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+              "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/explore-the-fatalities-map/civil-war-fatalities-dublin/"
+            ]
+          }
+        ],
+        "notes": "The low value is a documented minimum: 281 IRA-attributed non-combatant deaths to 1921 plus at least 19 clearly documented 1922 civilian massacre victims. The national high is unknown because Civil War and Belfast/partition civilian deaths are not fully attributed in accessible aggregate sources.",
+        "sources": [
+          "https://www.irishtimes.com/culture/war-of-independence-the-bloodiest-six-months-1.4193813",
+          "https://www.theirishstory.com/2017/06/04/spies-and-informers-beware-ira-executions-of-alleged-civilian-spies-during-the-war-of-independence-1919-1921/",
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "British Crown / unionist / loyalist side",
+      "members": [
+        "British Army",
+        "Royal Irish Constabulary",
+        "Dublin Metropolitan Police",
+        "Auxiliary Division",
+        "Black and Tans",
+        "Ulster Special Constabulary",
+        "Northern Ireland security forces",
+        "loyalist and unionist militants"
+      ],
+      "military_killed": {
+        "low": 940,
+        "high": 1020,
+        "point": 940,
+        "notes": "Low uses 413 British military and 523 police deaths in O'Halpin/\u00d3 Corr\u00e1in-derived figures to the end of 1921, plus four Crown-force deaths in UCC's Civil War period. High allows for additional British Army, serving RIC, retired RIC, and USC deaths in wider 1922 partition/Civil War contexts.",
+        "sources": [
+          "https://historyireland.com/the-dead-of-the-irish-revolution/",
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+          "https://www.irishtimes.com/culture/heritage/what-was-the-real-death-toll-of-the-irish-civil-war-1.4858308"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 381,
+        "high": 617,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "reprisal, shooting, execution, counterinsurgency killing",
+            "victims_group": "non-combatants in the War of Independence period",
+            "low": 381,
+            "high": 381,
+            "notes": "Dorney's synthesis of O'Halpin/\u00d3 Corr\u00e1in-derived data gives 381 non-combatants killed by Crown forces to 1921.",
+            "sources": [
+              "https://www.irishtimes.com/culture/war-of-independence-the-bloodiest-six-months-1.4193813"
+            ]
+          },
+          {
+            "cause": "mass shooting at sporting event",
+            "victims_group": "Croke Park spectators, Bloody Sunday, Dublin",
+            "low": 14,
+            "high": 14,
+            "notes": "Crown forces killed 14 spectators and wounded 60 at Croke Park on 21 November 1920. These deaths are part of the wider Crown-force civilian-death universe, not additional to the 381 if that aggregate is used.",
+            "sources": [
+              "https://www.britannica.com/event/Irish-War-of-Independence"
+            ]
+          },
+          {
+            "cause": "partition and sectarian violence",
+            "victims_group": "Catholic and Protestant civilians in the six counties, especially Belfast",
+            "low": null,
+            "high": null,
+            "notes": "Over 550 people were killed violently in the six counties from July 1920 to July 1922, including about 300 Catholics, over 170 Protestants, and over 80 security-force members. Sources describe Catholic civilians as disproportionately affected, but deaths are not cleanly assigned among loyalist mobs, USC/police, republicans, and other actors in the aggregate source.",
+            "sources": [
+              "https://www.irishnews.com/arts/2020/07/15/news/the-eruption-of-sectarian-violence-in-belfast-s-shipyards-during-july-1920-would-define-belfast-s-future-2004487/"
+            ]
+          }
+        ],
+        "notes": "Low is the Crown-force-attributed non-combatant count in the O'Halpin/\u00d3 Corr\u00e1in-derived synthesis. High of 617 represents adding all 236 uncertain 1917\u201321 civilian deaths to the Crown-force figure, but this is an uncertainty bound rather than a claim that all uncertain deaths were Crown-caused. Additional 1922 Belfast/partition deaths cannot be cleanly assigned from public aggregate sources.",
+        "sources": [
+          "https://www.irishtimes.com/culture/war-of-independence-the-bloodiest-six-months-1.4193813",
+          "https://www.irishnews.com/arts/2020/07/15/news/the-eruption-of-sectarian-violence-in-belfast-s-shipyards-during-july-1920-would-define-belfast-s-future-2004487/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Pro-Treaty Irish Free State / National Army side",
+      "members": [
+        "Provisional Government of Ireland",
+        "Irish Free State",
+        "National Army",
+        "Civic Guard",
+        "Criminal Investigation Department",
+        "Citizens' Defence Force"
+      ],
+      "military_killed": {
+        "low": 637,
+        "high": 800,
+        "point": 648,
+        "notes": "UCC identifies 648 pro-Treaty fatalities in the Free State Civil War period. Other UCC-derived summaries give 637, while older estimates ranged from about 540 to 800 National Army deaths.",
+        "sources": [
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+          "https://en.wikipedia.org/wiki/Irish_Civil_War",
+          "https://en.wikipedia.org/wiki/Timeline_of_the_Irish_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "urban battle crossfire and shelling",
+            "victims_group": "Dublin civilians, Battle for Dublin",
+            "low": 35,
+            "high": 35,
+            "notes": "UCC says 35 Dublin civilians died during the first week of the Civil War. The accessible aggregate source does not assign each death to pro-Treaty fire, anti-Treaty fire, or crossfire.",
+            "sources": [
+              "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/explore-the-fatalities-map/civil-war-fatalities-dublin/"
+            ]
+          },
+          {
+            "cause": "checkpoint shootings",
+            "victims_group": "Dublin civilians failing to halt at checkpoints",
+            "low": null,
+            "high": 19,
+            "notes": "UCC says National Army forces were more likely than the IRA to shoot civilians who failed to halt at checkpoints in Dublin, but fatalities in these circumstances were fewer than 20.",
+            "sources": [
+              "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/explore-the-fatalities-map/civil-war-fatalities-dublin/"
+            ]
+          },
+          {
+            "cause": "Civil War civilian deaths overall",
+            "victims_group": "civilians in the Free State Civil War",
+            "low": null,
+            "high": null,
+            "notes": "UCC identifies 336 civilian deaths in the Free State Civil War period, but does not provide a public national perpetrator split in the summary.",
+            "sources": [
+              "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/"
+            ]
+          }
+        ],
+        "notes": "Pro-Treaty forces directly caused some civilian deaths, especially through fighting in Dublin, checkpoint shootings, and security operations, but a defensible national perpetrator total is not available in the public aggregate sources consulted.",
+        "sources": [
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+          "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/explore-the-fatalities-map/civil-war-fatalities-dublin/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 2506,
+    "military_high": 2870,
+    "civilian_low": 1590,
+    "civilian_high": 1800,
+    "grand_low": 4100,
+    "grand_high": 4350,
+    "notes": "Military_low sums side military lows: 929 republican/anti-Treaty + 940 Crown/unionist + 637 pro-Treaty. Military_high sums side military highs: 1050 + 1020 + 800. Civilian_low/high are approximate status totals rather than perpetrator totals: about 919 civilians in the 1917\u201321 O'Halpin/\u00d3 Corr\u00e1in period, 336 Free State Civil War civilians, plus several hundred 1922 partition/pre-Civil War civilian deaths not cleanly included in both frames. Grand range uses about 2,344\u20132,346 deaths to 1921, about 350 additional early-1922 Northern Ireland/partition deaths, and 1,485 UCC all-island Civil War deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Bloody Sunday, Dublin",
+      "year": 1920,
+      "perpetrator": "Irish republican side and British Crown forces",
+      "victims_group": "suspected British intelligence personnel and Croke Park spectators",
+      "low": 28,
+      "high": 28,
+      "notes": "IRA assassins killed at least 14 people in the morning; Crown forces killed 14 spectators at Croke Park and wounded 60.",
+      "sources": [
+        "https://www.britannica.com/event/Irish-War-of-Independence"
+      ]
+    },
+    {
+      "name": "IRA killings of alleged spies and informers",
+      "year": null,
+      "perpetrator": "Irish Republican Army",
+      "victims_group": "civilians accused of informing",
+      "low": 190,
+      "high": 196,
+      "notes": "Studies and summaries give about 190\u2013196 civilians killed by the IRA as alleged spies or informers during the War of Independence.",
+      "sources": [
+        "https://www.theirishstory.com/2017/06/04/spies-and-informers-beware-ira-executions-of-alleged-civilian-spies-during-the-war-of-independence-1919-1921/",
+        "https://www.researchgate.net/publication/355950771_Sexual_assault_and_fatal_violence_against_women_during_the_Irish_War_of_Independence_1919-1921_Kate_Maher's_murder_in_context"
+      ]
+    },
+    {
+      "name": "Belfast and six-county partition violence",
+      "year": null,
+      "perpetrator": "Mixed: loyalist/unionist, Crown/security, republican, and communal actors",
+      "victims_group": "Catholic civilians, Protestant civilians, and security-force members",
+      "low": 550,
+      "high": null,
+      "notes": "Over 550 people were killed violently in the six counties from July 1920 to July 1922; approximately 300 were Catholics, over 170 Protestants, and over 80 security-force members. Belfast accounted for just under 460 deaths.",
+      "sources": [
+        "https://www.irishnews.com/arts/2020/07/15/news/the-eruption-of-sectarian-violence-in-belfast-s-shipyards-during-july-1920-would-define-belfast-s-future-2004487/"
+      ]
+    },
+    {
+      "name": "Dunmanway / Bandon Valley killings",
+      "year": 1922,
+      "perpetrator": "IRA-linked republican actors",
+      "victims_group": "Protestant civilians",
+      "low": 13,
+      "high": 13,
+      "notes": "Thirteen Protestants were killed in west Cork in April 1922, after the Treaty and before the formal outbreak of the Civil War.",
+      "sources": [
+        "https://www.reddit.com/r/IrishHistory/comments/1apfljd/the_dunmanway_massacre_of_1922/"
+      ]
+    },
+    {
+      "name": "Altnaveigh and Lisdrumliska killings",
+      "year": 1922,
+      "perpetrator": "IRA, 4th Northern Division",
+      "victims_group": "Protestant civilians",
+      "low": 6,
+      "high": 6,
+      "notes": "IRA men killed six Protestant civilians, wounded four others, and burned or bombed twelve houses near Newry in June 1922.",
+      "sources": [
+        "https://irishhistory1919-1923chronology.ie/june_1922.htm"
+      ]
+    },
+    {
+      "name": "Free State official executions",
+      "year": null,
+      "perpetrator": "Pro-Treaty Irish Free State",
+      "victims_group": "anti-Treaty republican prisoners",
+      "low": 77,
+      "high": 81,
+      "notes": "Most summaries give at least 77 official executions; some sources count up to 81 depending on inclusion of civilians or contested categories.",
+      "sources": [
+        "https://www.britannica.com/event/Irish-Civil-War",
+        "https://www.irishtimes.com/history/century/2022/12/03/free-state-government-more-severe-on-ira-in-civil-war-than-british-in-war-of-independence-says-historian/",
+        "https://www.militaryarchives.ie/en/online-collections/military-service-pensions-collection/irish-revolution-1916-1923/civil-war/executions"
+      ]
+    },
+    {
+      "name": "Free State unofficial executions and reprisal killings",
+      "year": null,
+      "perpetrator": "Pro-Treaty Irish Free State / National Army elements",
+      "victims_group": "anti-Treaty IRA prisoners and captured combatants",
+      "low": null,
+      "high": 153,
+      "notes": "Andy Bielenberg cites Todd Andrews's claim of as many as 153 'unauthorised killings'; this is a contested high estimate, not a confirmed total.",
+      "sources": [
+        "https://www.irishtimes.com/history/century/2022/12/03/free-state-government-more-severe-on-ira-in-civil-war-than-british-in-war-of-independence-says-historian/"
+      ]
+    },
+    {
+      "name": "Ballyseedy and Kerry reprisals",
+      "year": 1923,
+      "perpetrator": "Pro-Treaty National Army elements",
+      "victims_group": "anti-Treaty IRA prisoners",
+      "low": 8,
+      "high": 20,
+      "notes": "Eight prisoners were killed at Ballyseedy; wider Kerry March 1923 reprisals are described in summaries as involving at least 20 prisoner deaths.",
+      "sources": [
+        "https://www.theirishstory.com/2022/11/17/executions-during-the-irish-civil-war/",
+        "https://www.irishtimes.com/history/century/2022/12/03/free-state-government-more-severe-on-ira-in-civil-war-than-british-in-war-of-independence-says-historian/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainties are boundary and attribution problems. O'Halpin and \u00d3 Corr\u00e1in cover 1917\u20131921, while the UCC Civil War project covers 28 June 1922\u201324 May 1923; violent early 1922 partition deaths fall between the main frames. Combatant status is usually clearer than civilian perpetrator attribution, especially for Belfast/partition violence and Civil War crossfire. No credible quantified indirect-death categories comparable to famine, blockade, camp mortality, forced labour, or epidemic mortality were found, so deaths_from_actions arrays are empty.",
+  "sources": [
+    {
+      "url": "https://yalebooks.yale.edu/book/9780300257472/the-dead-of-the-irish-revolution/",
+      "title": "The Dead of the Irish Revolution",
+      "publisher": "Yale University Press"
+    },
+    {
+      "url": "https://historyireland.com/the-dead-of-the-irish-revolution/",
+      "title": "The Dead of the Irish Revolution",
+      "publisher": "History Ireland"
+    },
+    {
+      "url": "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/research-findings/",
+      "title": "Research Findings: Death and killing in the Irish Civil War",
+      "publisher": "University College Cork"
+    },
+    {
+      "url": "https://www.ucc.ie/en/theirishrevolution/irish-civil-war-fatalities-project/explore-the-fatalities-map/civil-war-fatalities-dublin/",
+      "title": "Civil War Fatalities in Dublin",
+      "publisher": "University College Cork"
+    },
+    {
+      "url": "https://www.irishtimes.com/culture/war-of-independence-the-bloodiest-six-months-1.4193813",
+      "title": "War of Independence: the bloodiest six months",
+      "publisher": "The Irish Times"
+    },
+    {
+      "url": "https://www.irishtimes.com/culture/heritage/what-was-the-real-death-toll-of-the-irish-civil-war-1.4858308",
+      "title": "What was the real death toll of the Irish Civil War?",
+      "publisher": "The Irish Times"
+    },
+    {
+      "url": "https://www.irishtimes.com/history/century/2022/12/03/free-state-government-more-severe-on-ira-in-civil-war-than-british-in-war-of-independence-says-historian/",
+      "title": "Free State government more severe on IRA in Civil War than British were in War of Independence, says historian",
+      "publisher": "The Irish Times"
+    },
+    {
+      "url": "https://www.irishnews.com/arts/2020/07/15/news/the-eruption-of-sectarian-violence-in-belfast-s-shipyards-during-july-1920-would-define-belfast-s-future-2004487/",
+      "title": "The eruption of sectarian violence in Belfast's shipyards during July 1920 would define Belfast's future",
+      "publisher": "The Irish News"
+    },
+    {
+      "url": "https://www.britannica.com/event/Irish-War-of-Independence",
+      "title": "Irish War of Independence",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/event/Irish-Civil-War",
+      "title": "Irish Civil War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.militaryarchives.ie/en/online-collections/military-service-pensions-collection/irish-revolution-1916-1923/civil-war/executions",
+      "title": "Civil War Executions",
+      "publisher": "Military Archives of Ireland"
+    },
+    {
+      "url": "https://www.theirishstory.com/2017/06/04/spies-and-informers-beware-ira-executions-of-alleged-civilian-spies-during-the-war-of-independence-1919-1921/",
+      "title": "Spies and informers beware! IRA executions of alleged civilian spies during the War of Independence 1919\u20131921",
+      "publisher": "The Irish Story"
+    },
+    {
+      "url": "https://irishhistory1919-1923chronology.ie/june_1922.htm",
+      "title": "June 1922 Chronology",
+      "publisher": "Irish History 1919\u20131923 Chronology"
+    }
+  ]
+}

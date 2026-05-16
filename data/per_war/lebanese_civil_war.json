@@ -1,0 +1,820 @@
+{
+  "war_id": "lebanese_civil_war",
+  "name": "Lebanese Civil War",
+  "start_year": 1975,
+  "end_year": 1990,
+  "ongoing": false,
+  "regions": [
+    "Lebanon",
+    "Beirut",
+    "Mount Lebanon",
+    "South Lebanon",
+    "Bekaa",
+    "North Lebanon"
+  ],
+  "summary": "The Lebanese Civil War was a multi-sided conflict from 1975 to 1990 involving Lebanese sectarian militias, Palestinian armed groups, Syria, Israel, and foreign peacekeepers. The best national death-toll range is roughly 71,328 to 144,240 killed, with 17,415 to 19,860 missing or disappeared. No source provides a reliable perpetrator-by-perpetrator roll-up, so side-level figures are documented minima or event-based ranges.",
+  "sides": [
+    {
+      "name": "Lebanese Front / Christian militias",
+      "members": [
+        "Kataeb/Phalange",
+        "National Liberal Party/Tigers",
+        "Guardians of the Cedars",
+        "Tanzim",
+        "Lebanese Forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate by side found. ICTJ notes an estimated 800 Christian-militia fighters killed in the Tel al-Zaatar attack, but this is event-specific, not a war total.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2253,
+        "high": 5277,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bus ambush",
+            "victims_group": "Palestinian passengers",
+            "low": 27,
+            "high": 27,
+            "notes": "Ain al-Remmaneh bus attack, April 13, 1975.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "checkpoint executions and abductions",
+            "victims_group": "Lebanese Muslims and Palestinians",
+            "low": 56,
+            "high": 70,
+            "notes": "Black Saturday; 300 additional kidnapped persons had unknown fate and are not included in low/high.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Karantina/Maslakh residents and refugees",
+            "low": 600,
+            "high": 1500,
+            "notes": "ICTJ range for casualties; armed groups were present but most victims were civilians/refugees.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "massacre and siege",
+            "victims_group": "Palestinian and Lebanese residents of Tel al-Zaatar/Jisr al-Basha",
+            "low": 2200,
+            "high": 4280,
+            "notes": "Total deaths including civilians and fighters; not added fully into the side total because civilian/combatant distinction is unclear.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Palestinian and Lebanese civilians in Sabra and Shatila",
+            "low": 1390,
+            "high": 3500,
+            "notes": "ICTJ says the vast majority were civilians and attributes the killings to LF members, with Israeli responsibility/support.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Druze civilians",
+            "low": 207,
+            "high": 207,
+            "notes": "Druze civilian deaths attributed mainly to LF during the War of the Mountain.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "Low/high are event-based documented minima using only major identified events and excluding many smaller killings and shelling deaths.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Tel al-Zaatar civilians, especially children",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Many died from shortage of water and medication, but these deaths are embedded in the 2,200-4,280 Tel al-Zaatar total.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        },
+        {
+          "type": "forced_displacement",
+          "victims_group": "Muslim and Palestinian residents of Christian-controlled areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ICTJ records expulsions such as 150 civilians from Haret al-Ghawarneh-Antelias and 450 from Sebnay, but no separate death toll.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LNM / PLO / Palestinian and leftist allied militias",
+      "members": [
+        "Fatah",
+        "PLO factions",
+        "DFLP",
+        "PFLP",
+        "as-Sa'iqa",
+        "Murabitun",
+        "Lebanese Communist Party",
+        "Lebanese National Movement"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable war-total. Early 1982 reporting estimated 2,000 Palestinian fighters killed by mid-June 1982, but this is event-specific and incomplete.",
+        "sources": [
+          "https://www.upi.com/Archives/1982/06/17/214-Israelis-killed-in-Lebanon-fighting/5572393134400/",
+          "https://www.washingtonpost.com/archive/politics/1982/09/03/war-casualties-put-at-48000-in-lebanon/cf593941-6067-4239-a453-71bdcaf9eba0/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 289,
+        "high": 639,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Christian civilians in Damour and Jiyeh",
+            "low": 150,
+            "high": 500,
+            "notes": "ICTJ range; PLO's own account admitted 200 killed and 500 wounded.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "checkpoint executions",
+            "victims_group": "Christians in West Beirut",
+            "low": 30,
+            "high": 30,
+            "notes": "Retaliatory executions after Karantina.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "village attack",
+            "victims_group": "Christian civilians in Tel Abbas",
+            "low": 15,
+            "high": 15,
+            "notes": "Attack by armed men from Funaydiq with PFLP members; 9 kidnapped not counted.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "village attacks",
+            "victims_group": "Christian civilians in Taalabaya, Rahba, and related villages",
+            "low": 94,
+            "high": 94,
+            "notes": "Includes 35 in Taalabaya, 50 in Rahba, and 9 in Deir Janine; excludes additional smaller incidents where not summed.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "Event-based minima only; broader shelling and abductions cannot be cleanly attributed or summed.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Damour/Jiyeh civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Militias cut off water, supplies, and electricity and prevented Red Cross evacuations, but indirect deaths are not separated from the massacre toll.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PSP / Druze forces and pro-Syrian allies",
+      "members": [
+        "Progressive Socialist Party",
+        "People's Liberation Army",
+        "Fatah al-Intifada",
+        "PFLP-GC",
+        "other allied forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate combatant-death total found.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1372,
+        "high": 1372,
+        "point": 1372,
+        "breakdown": [
+          {
+            "cause": "massacres and village killings",
+            "victims_group": "Christian civilians in the War of the Mountain",
+            "low": 1155,
+            "high": 1155,
+            "notes": "ICTJ total for Christian civilians killed in the War of the Mountain.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "massacres and village killings",
+            "victims_group": "Christian civilians in Iqlim al-Kharoub and Saida region",
+            "low": 217,
+            "high": 217,
+            "notes": "Around 217 civilian victims in 1985 attacks, mainly Christians.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "Does not include 2,700 civilians of unknown fate after the War of the Mountain.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Christian civilians in Deir al-Qamar",
+          "low": 8,
+          "high": 8,
+          "point": 8,
+          "notes": "Deaths from lack of access to medical and food supplies during the siege.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        },
+        {
+          "type": "forced_displacement",
+          "victims_group": "Christians and Druze in Mount Lebanon",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "At least 163,000 Christians and several thousand Druze were displaced; displacement mortality not quantified.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Syria / Arab Deterrent Force",
+      "members": [
+        "Syrian Arab Army",
+        "Arab Deterrent Force",
+        "Syrian intelligence services",
+        "pro-Syrian Lebanese and Palestinian units"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable 1976-1990 total. Event-specific estimates include about 1,000-1,200 Syrian soldiers killed in the 1982 war.",
+        "sources": [
+          "https://www.upi.com/Archives/1982/06/17/214-Israelis-killed-in-Lebanon-fighting/5572393134400/",
+          "https://www.dl1.en-us.nina.az/1982_Lebanon_war.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shelling",
+            "victims_group": "East Beirut civilians",
+            "low": 160,
+            "high": null,
+            "notes": "ICTJ records at least 100 civilians killed in one ADF shelling episode and at least 60 in another; broader 1978 bombardment killed several hundred.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "shelling",
+            "victims_group": "Beirut civilians",
+            "low": null,
+            "high": null,
+            "notes": "1989 Syrian shelling of East Beirut and Aoun-led army shelling of West Beirut together left around 850 dead, most civilians, but attribution is not separable.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Aoun loyalists, prisoners, and civilians",
+            "low": 240,
+            "high": 240,
+            "notes": "One ICTJ-cited account reported 240 prisoners, including civilians, executed by Syrian forces and pro-Damascus militia in October 1990; other figures include 30-73 captured soldiers executed.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "No safe aggregate; many Syrian-caused casualties are mixed with allied-proxy actions or reciprocal shelling.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "East Beirut civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ICTJ notes deaths from lack of medicine and healthcare during the 1989 siege/bombardment, but no separate indirect total.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        },
+        {
+          "type": "detention",
+          "victims_group": "Lebanese detainees and disappeared persons",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Hundreds arrested by Syrian military intelligence in 1989 and many transferred to Syria in 1990; deaths in custody not comprehensively quantified for 1975-1990.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Israel / IDF and South Lebanon Army",
+      "members": [
+        "Israel Defense Forces",
+        "South Lebanon Army"
+      ],
+      "military_killed": {
+        "low": 657,
+        "high": 1216,
+        "point": null,
+        "notes": "Range reflects narrower Israeli war accounting versus broader 1982-1985 killed-in-action figure cited by the Center for Israel Education. SLA losses are not included reliably.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+          "https://israeled.org/resources/documents/kahan-war-lebanon/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7665,
+        "high": 23605,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing and invasion",
+            "victims_group": "Lebanese and Palestinian civilians",
+            "low": 7665,
+            "high": 23605,
+            "notes": "Low derived from An Nahar's 17,825 killed with 43% civilians; high derived from UNICEF's 29,506 killed with 80% civilians.",
+            "sources": [
+              "https://www.washingtonpost.com/archive/politics/1982/09/03/war-casualties-put-at-48000-in-lebanon/cf593941-6067-4239-a453-71bdcaf9eba0/",
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "support/encirclement during massacre",
+            "victims_group": "Sabra and Shatila civilians",
+            "low": 1390,
+            "high": 3500,
+            "notes": "Perpetrators were LF militiamen; Israeli responsibility/support is noted by ICTJ through Kahan and MacBride Commission discussions. Not added separately to avoid double counting under LF.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "The 1982 invasion toll is highly contested. The low/high range uses two major reported civilian-share estimates.",
+        "sources": [
+          "https://www.washingtonpost.com/archive/politics/1982/09/03/war-casualties-put-at-48000-in-lebanon/cf593941-6067-4239-a453-71bdcaf9eba0/",
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "West Beirut civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Israel cut water and electricity to at least 300,000 civilians for about three months; no separate indirect-death total found.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lebanese state forces / Lebanese Army factions",
+      "members": [
+        "Lebanese Army",
+        "Aoun-led Lebanese Army",
+        "Lebanese Army Sixth Brigade",
+        "Internal Security Forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate. ICTJ reports 30-73 captured Lebanese Army soldiers executed by Syrian forces in October 1990, but this is event-specific.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shelling",
+            "victims_group": "Southern Beirut civilians and militia-held areas",
+            "low": 40,
+            "high": 40,
+            "notes": "Lebanese Army shelling in clashes with Shi'a militias in December 1983 left 40 dead and 150 wounded.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "shelling",
+            "victims_group": "West Beirut civilians",
+            "low": null,
+            "high": null,
+            "notes": "Aoun-led Lebanese Army shelling of West Beirut and Syrian shelling of East Beirut together left around 850 dead, most civilians; attribution cannot be separated.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "Army factions changed allegiance and operated separately; no reliable aggregate civilian toll by Lebanese state forces found.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Amal Movement and allied Shi'a/Lebanese units",
+      "members": [
+        "Amal Movement",
+        "Lebanese Army Sixth Brigade in some operations"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate. ICTJ records some event-specific fighter losses, such as Amal reporting 53 fighters killed and Hezbollah 30 in one 1988 episode.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "siege and shelling",
+            "victims_group": "Palestinian camp residents in Sabra, Shatila, and Burj al-Barajneh",
+            "low": 76,
+            "high": 96,
+            "notes": "Killed by late May 1985 in Burj al-Barajneh and Shatila; included summary executions of prisoners and Palestinian civilians.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "fighting and shelling",
+            "victims_group": "Palestinian and Lebanese civilians",
+            "low": 120,
+            "high": 120,
+            "notes": "At least 120 civilians killed on June 17, 1985.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "shelling",
+            "victims_group": "Shatila and Burj al-Barajneh residents",
+            "low": 20,
+            "high": 20,
+            "notes": "Amal shelling on December 13, 1986; separate PFLP/PLO shelling killed another 20 in Amal areas.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "War of the Camps deaths include civilians and fighters; no complete civilian-only aggregate exists.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Palestinian camp civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Amal blockaded camps during the War of the Camps, but starvation/medical deprivation deaths are not separately enumerated.",
+          "sources": [
+            "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hezbollah / Islamic Jihad Organization and related pro-Iranian cells",
+      "members": [
+        "Hezbollah",
+        "Islamic Jihad Organization",
+        "Organization of the Oppressed on Earth"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable total for the side's own fighters. Attacks attributed to Islamic Jihad/pro-Iranian cells caused major foreign military deaths, including 241 U.S. Marines and 58 French paratroopers in 1983.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "suicide bombing",
+            "victims_group": "U.S. Embassy personnel and Lebanese/foreign civilians",
+            "low": 63,
+            "high": 63,
+            "notes": "April 18, 1983 U.S. Embassy bombing killed 63 people, but ICTJ does not provide a clean civilian-only split.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "suicide bombing",
+            "victims_group": "Civilians near French Drakkar barracks",
+            "low": 4,
+            "high": 4,
+            "notes": "A woman and her three children were killed in a neighboring building; 58 French paratroopers were also killed.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          },
+          {
+            "cause": "assassination and kidnapping",
+            "victims_group": "Lebanese and foreign civilians",
+            "low": null,
+            "high": null,
+            "notes": "Multiple assassinations and hostage cases, including Malcolm Kerr; no aggregate death toll found.",
+            "sources": [
+              "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+            ]
+          }
+        ],
+        "notes": "Attribution to Hezbollah versus Islamic Jihad and other fronts is disputed for some attacks.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Multinational Force",
+      "members": [
+        "United States",
+        "France",
+        "Italy"
+      ],
+      "military_killed": {
+        "low": 299,
+        "high": 299,
+        "point": 299,
+        "notes": "October 23, 1983 barracks bombings killed 241 U.S. Marines and 58 French paratroopers; other smaller losses not comprehensively aggregated.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "U.S. and French forces conducted strikes in 1983-1984, but no reliable civilian-death total attributable to MNF fire was found.",
+        "sources": [
+          "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 7133,
+    "military_high": null,
+    "civilian_low": 64195,
+    "civilian_high": 100000,
+    "grand_low": 71328,
+    "grand_high": 158208,
+    "notes": "Grand low is Labaki and Abou Rjeily's 71,328 killed. Grand high is the Lebanese government's 144,240 killed plus 13,968 kidnapped and presumed dead; this may overlap and should be treated as an outside-bound. Civilian low is 90% of 71,328; civilian high reflects ICTJ's 'over 100,000 civilians' summary, not a precise upper bound."
+  },
+  "key_atrocities": [
+    {
+      "name": "Black Saturday",
+      "year": 1975,
+      "perpetrator": "Kataeb / Christian militias",
+      "victims_group": "Lebanese Muslims and Palestinians",
+      "low": 56,
+      "high": 70,
+      "notes": "300 others kidnapped with unknown fate.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "Maslakh-Karantina massacre",
+      "year": 1976,
+      "perpetrator": "Kataeb and PNL",
+      "victims_group": "Lebanese Shi'a, Palestinians, Armenians, Kurds, and other civilians/refugees",
+      "low": 600,
+      "high": 1500,
+      "notes": "Armed groups were present, but the area was heavily civilian and refugee-populated.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "Tel al-Zaatar siege and fall",
+      "year": 1976,
+      "perpetrator": "Christian militias",
+      "victims_group": "Palestinian and Lebanese camp residents and fighters",
+      "low": 2200,
+      "high": 4280,
+      "notes": "Includes civilians and combatants; an association documented 3,500 Palestinian civilians and 14 Red Crescent volunteers killed.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "Damour and Jiyeh massacre",
+      "year": 1976,
+      "perpetrator": "PLO/NM and allied militias",
+      "victims_group": "Christian civilians",
+      "low": 150,
+      "high": 500,
+      "notes": "PLO's own account admitted 200 killed and 500 injured.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "Israeli invasion and siege of Beirut",
+      "year": 1982,
+      "perpetrator": "Israel / IDF",
+      "victims_group": "Lebanese and Palestinian civilians and combatants",
+      "low": 17825,
+      "high": 29506,
+      "notes": "Total killed estimates; civilian share reported as 43% by An Nahar and 80% by UNICEF.",
+      "sources": [
+        "https://www.washingtonpost.com/archive/politics/1982/09/03/war-casualties-put-at-48000-in-lebanon/cf593941-6067-4239-a453-71bdcaf9eba0/",
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "Sabra and Shatila massacre",
+      "year": 1982,
+      "perpetrator": "Lebanese Forces with Israeli support/responsibility",
+      "victims_group": "Palestinian and Lebanese civilians",
+      "low": 1390,
+      "high": 3500,
+      "notes": "ICTJ attributes killings to LF members; Kahan and MacBride Commission findings are discussed regarding Israeli responsibility.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "War of the Mountain massacres",
+      "year": 1983,
+      "perpetrator": "PSP/allies and LF",
+      "victims_group": "Christian and Druze civilians",
+      "low": 1362,
+      "high": 1362,
+      "notes": "ICTJ reports 1,155 Christian civilians and 207 Druze civilians killed, plus 2,700 civilians of unknown fate.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "War of the Camps",
+      "year": 1985,
+      "perpetrator": "Amal and allied units; Palestinian factions also shelled Amal areas",
+      "victims_group": "Palestinian camp civilians and fighters",
+      "low": null,
+      "high": null,
+      "notes": "Major recorded incidents include 76-96 killed by late May 1985 and at least 120 civilians killed on June 17, 1985; no complete total found.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    },
+    {
+      "name": "October 1990 Syrian assault and executions",
+      "year": 1990,
+      "perpetrator": "Syrian forces and pro-Damascus militia",
+      "victims_group": "Lebanese Army prisoners, Aoun supporters, and civilians",
+      "low": 30,
+      "high": 240,
+      "notes": "ICTJ cites figures from 30 captured soldiers executed to a broader report of 240 prisoners including civilians executed.",
+      "sources": [
+        "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "No comprehensive truth commission or perpetrator-level casualty database exists. Civilian/combatant splits are inconsistent, many sources mix categories, and large events overlap with national totals. Side identities and alliances shifted repeatedly, and many bombings, assassinations, disappearances, and shelling deaths remain unattributed or contested.",
+  "sources": [
+    {
+      "url": "https://www.ictj.org/sites/default/files/ICTJ-Report-Lebanon-Mapping-2013-EN_0.pdf",
+      "title": "Lebanon's Legacy of Political Violence: A Mapping of Serious Violations of International Human Rights and Humanitarian Law in Lebanon, 1975-2008",
+      "publisher": "International Center for Transitional Justice"
+    },
+    {
+      "url": "https://www.ictj.org/where-we-work/lebanon",
+      "title": "Lebanon",
+      "publisher": "International Center for Transitional Justice"
+    },
+    {
+      "url": "https://www.britannica.com/event/Lebanese-Civil-War",
+      "title": "Lebanese Civil War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://cris.tau.ac.il/en/publications/lebanese-civil-war-1975-1990/",
+      "title": "Lebanese Civil War (1975-1990)",
+      "publisher": "Tel Aviv University"
+    },
+    {
+      "url": "https://everycasualty.org/conflict/lebanon/",
+      "title": "Lebanon",
+      "publisher": "Every Casualty Counts"
+    },
+    {
+      "url": "https://www.washingtonpost.com/archive/politics/1982/09/03/war-casualties-put-at-48000-in-lebanon/cf593941-6067-4239-a453-71bdcaf9eba0/",
+      "title": "War Casualties Put at 48,000 in Lebanon",
+      "publisher": "The Washington Post"
+    },
+    {
+      "url": "https://www.upi.com/Archives/1982/06/17/214-Israelis-killed-in-Lebanon-fighting/5572393134400/",
+      "title": "214 Israelis killed in Lebanon fighting",
+      "publisher": "UPI"
+    },
+    {
+      "url": "https://israeled.org/resources/documents/kahan-war-lebanon/",
+      "title": "Kahan Commission and the First Lebanon War",
+      "publisher": "Center for Israel Education"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+      "title": "Israeli casualties of war",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/middle-east-crisis/article/2026/04/10/israel-s-long-obsession-with-southern-lebanon-and-the-litani-river_6752296_368.html",
+      "title": "Israel's long obsession with southern Lebanon and the Litani River",
+      "publisher": "Le Monde"
+    }
+  ]
+}

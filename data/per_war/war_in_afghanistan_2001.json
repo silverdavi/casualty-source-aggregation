@@ -1,0 +1,384 @@
+{
+  "war_id": "war_in_afghanistan_2001",
+  "name": "War in Afghanistan (US-led, 2001-2021)",
+  "start_year": 2001,
+  "end_year": 2021,
+  "ongoing": false,
+  "regions": [
+    "Afghanistan",
+    "South Asia",
+    "Central Asia"
+  ],
+  "summary": "The US-led War in Afghanistan began with the invasion of Afghanistan on 7 October 2001 and ended with the final US withdrawal on 30 August 2021. The best consolidated estimate is about 176,206 direct war deaths in Afghanistan through August 2021, including Afghan civilians, Afghan security forces, opposition fighters, coalition troops, contractors, journalists, and aid workers. Indirect deaths from displacement, disease, malnutrition, unsafe water, and damaged health systems are not well measured; one Costs of War estimate suggested up to about 360,000 additional indirect deaths, but this cannot be reliably apportioned by side.",
+  "sides": [
+    {
+      "name": "U.S.-led coalition / Islamic Republic of Afghanistan",
+      "members": [
+        "United States",
+        "NATO/ISAF and Resolute Support coalition members",
+        "Islamic Republic of Afghanistan",
+        "Afghan National Defense and Security Forces",
+        "pro-government militias and CIA-linked units"
+      ],
+      "military_killed": {
+        "low": 73391,
+        "high": 99526,
+        "point": 76486,
+        "notes": "Point estimate sums Costs of War figures: 69,095 Afghan military/police, 2,324 US military, 6 US DoD civilians, 3,917 US contractors, and 1,144 other allied troops. Low uses a lower 66,000 Afghan security-force estimate; high uses a reported 92,000 Afghan security-force deaths plus US/allied/contractor figures. Contractors are included here as serving war personnel to preserve the Costs of War roll-up, although they are not all lawful combatants.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+          "https://amarkfoundation.org/reports/afghanistan-war-costs/",
+          "https://www.washingtonpost.com/world/2021/12/30/afghanistan-security-forces-deaths/",
+          "https://www.defense.gov/Newsroom/Casualty-Status/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7400,
+        "high": 14000,
+        "point": 10000,
+        "breakdown": [
+          {
+            "cause": "airstrikes",
+            "victims_group": "Afghan civilians",
+            "low": null,
+            "high": null,
+            "notes": "A major pro-government mechanism, especially in 2001-2002 and again during the 2017-2019 escalation. Costs of War found a 330% increase in civilians killed by US-led airstrikes from the last Obama year to the last full Trump-year data and a 95% increase in 2017-2019 compared with the previous 10 years.",
+            "sources": [
+              "https://costsofwar.watson.brown.edu/paper/afghanistans-rising-civilian-death-toll-due-airstrikes-2017-2020",
+              "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+            ]
+          },
+          {
+            "cause": "search operations, night raids, ground engagements, and militia operations",
+            "victims_group": "Afghan civilians",
+            "low": null,
+            "high": null,
+            "notes": "UNAMA attributed substantial annual civilian casualties to pro-government forces, including Afghan national security forces, international military forces, and pro-government armed groups. Exact all-war totals are not published as a single official figure.",
+            "sources": [
+              "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+              "https://unama.unmissions.org/sites/default/files/unama_poc_midyear_report_2021_26_july.pdf"
+            ]
+          }
+        ],
+        "notes": "This is a derived attributional range, not an official all-war count. It applies UNAMA-style pro-government attribution shares and known high-airstrike years to the Costs of War civilian total of 46,319. It should not be added mechanically to the anti-government range because attribution percentages vary by year and some deaths are unattributed.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+          "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+          "https://costsofwar.watson.brown.edu/paper/afghanistans-rising-civilian-death-toll-due-airstrikes-2017-2020"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Afghan civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Pro-government military operations contributed to displacement and infrastructure damage, but no defensible side-specific indirect-death estimate was found.",
+          "sources": [
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+          ]
+        },
+        {
+          "type": "health_system_damage",
+          "victims_group": "Afghan civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Costs of War identifies reduced healthcare access, damaged infrastructure, unsafe water, malnutrition, and disease as indirect-death pathways, but does not apportion them by party.",
+          "sources": [
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Taliban / al-Qaeda / Haqqani network / IS-K and other anti-government elements",
+      "members": [
+        "Taliban",
+        "Haqqani network",
+        "al-Qaeda elements",
+        "Islamic State Khorasan Province",
+        "Hizb-i-Islami and other anti-government groups"
+      ],
+      "military_killed": {
+        "low": 52893,
+        "high": null,
+        "point": 52893,
+        "notes": "Costs of War gives 52,893 opposition fighters killed through August 2021. This is best treated as an at-least/point estimate because US, NATO, Afghan, and Taliban sources did not produce a transparent bounded all-war total.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 28300,
+        "high": 37100,
+        "point": 34700,
+        "breakdown": [
+          {
+            "cause": "IEDs and suicide/complex attacks",
+            "victims_group": "Afghan civilians",
+            "low": null,
+            "high": null,
+            "notes": "UNAMA repeatedly identified IEDs and suicide/complex attacks by anti-government elements as leading causes of civilian casualties.",
+            "sources": [
+              "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+              "https://unama.unmissions.org/sites/default/files/unama_poc_midyear_report_2021_26_july.pdf"
+            ]
+          },
+          {
+            "cause": "targeted killings, assassinations, and massacres",
+            "victims_group": "Afghan civilians, government workers, religious minorities, journalists, aid workers",
+            "low": null,
+            "high": null,
+            "notes": "UNAMA and human-rights groups documented repeated targeted killings and attacks on civilians, including schools, hospitals, religious sites, officials, journalists, and aid workers.",
+            "sources": [
+              "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+              "https://www.hrw.org/news/2021/05/10/killing-schoolgirls-afghanistan",
+              "https://www.msf.org/uk/node/48259"
+            ]
+          }
+        ],
+        "notes": "Range is derived from applying UNAMA-reported anti-government attribution shares, roughly 61-80% in annual summaries and often around 75%, to the Costs of War direct Afghan civilian total of 46,319. It is an attributional estimate, not an official all-war count.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+          "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+          "https://unama.unmissions.org/sites/default/files/unama_poc_midyear_report_2021_26_july.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Afghan civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Taliban and other anti-government attacks, territorial offensives, intimidation, and IED contamination contributed to displacement, but no defensible side-specific indirect-death estimate was found.",
+          "sources": [
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+          ]
+        },
+        {
+          "type": "health_system_damage",
+          "victims_group": "Afghan civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Attacks on healthcare, aid workers, and public spaces worsened access to care and humanitarian relief, but indirect mortality cannot be separated cleanly from the broader war environment.",
+          "sources": [
+            "https://www.msf.org/uk/node/48259",
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unattributed / crossfire / other actors",
+      "members": [
+        "Unidentified armed actors",
+        "crossfire incidents",
+        "unattributed explosive remnants of war",
+        "some border-shelling incidents"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Not a coherent military side; included only to represent deaths that cannot be assigned to the two principal belligerent blocs.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "crossfire and undetermined ground engagements",
+            "victims_group": "Afghan civilians",
+            "low": null,
+            "high": null,
+            "notes": "UNAMA often recorded casualties from ground engagements where attribution to a specific party was not possible.",
+            "sources": [
+              "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf"
+            ]
+          },
+          {
+            "cause": "explosive remnants of war",
+            "victims_group": "Afghan civilians, especially children",
+            "low": null,
+            "high": null,
+            "notes": "Explosive remnants killed and injured civilians after battles, but exact all-war fatality attribution is not cleanly separable by side.",
+            "sources": [
+              "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf"
+            ]
+          }
+        ],
+        "notes": "A residual share of civilian deaths was not attributable to a specific party. No all-war numeric count is provided here to avoid double counting against the 46,319 direct Afghan civilian deaths.",
+        "sources": [
+          "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+          "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 126284,
+    "military_high": null,
+    "civilian_low": 46839,
+    "civilian_high": 406839,
+    "grand_low": 176206,
+    "grand_high": 536206,
+    "notes": "Grand_low is the Costs of War direct-deaths total through August 2021. Civilian_low includes 46,319 Afghan civilians plus 74 journalists/media workers and 446 humanitarian/NGO workers from Costs of War. Civilian_high and grand_high add up to 360,000 possible additional indirect deaths suggested by Costs of War using a rough contemporary-war ratio; this indirect estimate is not side-attributable and should be treated as highly uncertain. Military_high is null because opposition-fighter deaths have no defensible public upper bound."
+  },
+  "key_atrocities": [
+    {
+      "name": "Dasht-i-Leili massacre",
+      "year": 2001,
+      "perpetrator": "Junbish-i Milli / forces loyal to Abdul Rashid Dostum, allied with the US-backed Northern Alliance",
+      "victims_group": "Taliban prisoners of war",
+      "low": 250,
+      "high": 2000,
+      "notes": "Alleged suffocation/shooting of Taliban POWs after the fall of Kunduz. Numbers remain highly contested; forensic investigations found evidence consistent with homicide.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dasht-i-Leili_massacre",
+        "https://everything.explained.today/Dasht-i-Leili_massacre/"
+      ]
+    },
+    {
+      "name": "Azizabad airstrike",
+      "year": 2008,
+      "perpetrator": "United States / coalition forces",
+      "victims_group": "Afghan civilians",
+      "low": 90,
+      "high": 90,
+      "notes": "UNAMA reported about 90 civilians killed, including 60 children.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Azizabad_airstrike",
+        "https://www.opendemocracy.net/en/un-90-civilians-killed-in-coalition-airstrike/"
+      ]
+    },
+    {
+      "name": "Granai / Farah airstrike",
+      "year": 2009,
+      "perpetrator": "United States Air Force",
+      "victims_group": "Afghan civilians",
+      "low": 86,
+      "high": 147,
+      "notes": "US B-1 bombing in Farah province; estimates range from 86 to 147 civilians killed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Granai_airstrike",
+        "https://en.wikipedia.org/wiki/List_of_civilian_casualties_in_the_war_in_Afghanistan_(2009)"
+      ]
+    },
+    {
+      "name": "Kunduz MSF hospital airstrike",
+      "year": 2015,
+      "perpetrator": "United States Air Force",
+      "victims_group": "MSF staff, patients, and caretakers",
+      "low": 42,
+      "high": 42,
+      "notes": "US airstrikes destroyed the MSF trauma hospital; MSF's final death toll was 42: 14 staff, 24 patients, and 4 caretakers.",
+      "sources": [
+        "https://www.msf.org/kunduz-hospital-attack-depth",
+        "https://www.msf.org/kunduz-updated-death-toll-%E2%80%93-42-people-killed-us-airstrikes-kunduz-hospital"
+      ]
+    },
+    {
+      "name": "Dasht-e-Barchi maternity ward attack",
+      "year": 2020,
+      "perpetrator": "Unidentified gunmen; anti-government/sectarian attack pattern",
+      "victims_group": "Mothers, newborns, children, MSF-supported medical staff and patients",
+      "low": 24,
+      "high": 24,
+      "notes": "MSF reported 24 killed, including 16 mothers, an MSF midwife, and two young children.",
+      "sources": [
+        "https://www.msf.org/uk/node/48259",
+        "https://www.msf.org/msf-withdraws-dasht-e-barchi-following-attack-afghanistan"
+      ]
+    },
+    {
+      "name": "Sayed ul-Shuhada school bombing",
+      "year": 2021,
+      "perpetrator": "Unclaimed anti-government/sectarian attack",
+      "victims_group": "Students, especially Hazara/Shia schoolgirls",
+      "low": 85,
+      "high": 90,
+      "notes": "UN/HRW-related reporting described 85 killed, including 42 girls, and more than 200 injured; some later counts reported at least 90 dead.",
+      "sources": [
+        "https://www.un.org/en/un-chronicle/lets-recommit-protecting-students-educators-and-schools-attack",
+        "https://www.hrw.org/news/2021/05/10/killing-schoolgirls-afghanistan",
+        "https://en.wikipedia.org/wiki/2021_Kabul_school_bombing"
+      ]
+    },
+    {
+      "name": "Kabul airport / Abbey Gate bombing",
+      "year": 2021,
+      "perpetrator": "Islamic State Khorasan Province",
+      "victims_group": "Afghan civilians and US service members",
+      "low": 183,
+      "high": 183,
+      "notes": "Killed about 170 Afghans and 13 US service members during the August 2021 evacuation.",
+      "sources": [
+        "https://apnews.com/article/28dcaccf6f946bc171a2133ddbb123de",
+        "https://www.axios.com/2023/04/26/taliban-kill-isis-leader-behind-kabul-airport-bombing"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The strongest all-war anchor is Costs of War's 176,206 direct-death total through August 2021. Afghan security-force deaths vary from roughly 66,000-69,095 to a reported 92,000; opposition-fighter deaths are at least 52,893 but lack a public upper bound. Civilian attribution is best documented after UNAMA began systematic reporting in 2008/2009; earlier years and unattributed crossfire are less certain. Indirect mortality may be very large, but the 360,000 figure is a rough upper estimate based on a ratio method and cannot be apportioned fairly to individual sides.",
+  "sources": [
+    {
+      "url": "https://costsofwar.watson.brown.edu/sites/default/files/papers/Costs-of-War_Direct-War-Deaths_9-1-21.pdf",
+      "title": "Human Cost of Post-9/11 Wars: Direct War Deaths in Major War Zones",
+      "publisher": "Costs of War Project, Brown University"
+    },
+    {
+      "url": "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-War-Casualties-Afghanistan-and-Pakistan-2001-2014.pdf",
+      "title": "War-related Death, Injury, and Displacement in Afghanistan and Pakistan 2001-2014",
+      "publisher": "Costs of War Project, Brown University"
+    },
+    {
+      "url": "https://unama.unmissions.org/sites/default/files/afghanistan_protection_of_civilians_report_2020_revs3.pdf",
+      "title": "Afghanistan Annual Report on Protection of Civilians in Armed Conflict: 2020",
+      "publisher": "UNAMA"
+    },
+    {
+      "url": "https://unama.unmissions.org/sites/default/files/unama_poc_midyear_report_2021_26_july.pdf",
+      "title": "Afghanistan Protection of Civilians in Armed Conflict: Midyear Update 2021",
+      "publisher": "UNAMA"
+    },
+    {
+      "url": "https://costsofwar.watson.brown.edu/paper/afghanistans-rising-civilian-death-toll-due-airstrikes-2017-2020",
+      "title": "Afghanistan's Rising Civilian Death Toll Due to Airstrikes, 2017-2020",
+      "publisher": "Costs of War Project, Brown University"
+    },
+    {
+      "url": "https://www.msf.org/kunduz-hospital-attack-depth",
+      "title": "Kunduz hospital attack in depth",
+      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+    },
+    {
+      "url": "https://www.msf.org/uk/node/48259",
+      "title": "Dasht-e-Barchi: an attack on Hazara mothers",
+      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+    },
+    {
+      "url": "https://www.hrw.org/news/2021/05/10/killing-schoolgirls-afghanistan",
+      "title": "Killing Schoolgirls in Afghanistan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://apnews.com/article/28dcaccf6f946bc171a2133ddbb123de",
+      "title": "Review says Abbey Gate bombing wasn't preventable",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.defense.gov/Newsroom/Casualty-Status/",
+      "title": "Casualty Status",
+      "publisher": "U.S. Department of Defense"
+    }
+  ]
+}

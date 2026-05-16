@@ -1,0 +1,413 @@
+{
+  "war_id": "vietnam_war",
+  "name": "Vietnam War (Second Indochina War, incl. Cambodia/Laos bombing)",
+  "start_year": 1955,
+  "end_year": 1975,
+  "ongoing": false,
+  "regions": [
+    "Vietnam",
+    "Cambodia",
+    "Laos"
+  ],
+  "summary": "The Vietnam War was a linked set of conflicts in Vietnam, Cambodia, and Laos between communist forces led by North Vietnam and anti-communist governments backed primarily by the United States. Death tolls are highly contested: Vietnam's 1995 official estimate gives up to 2 million civilian deaths and about 1.1 million PAVN/NLF/VC combatant deaths, while demographic and historian estimates are lower. This dataset uses a broad Indochina-wide range of about 1.8 to 3.8 million deaths and does not include the post-1975 Cambodian genocide or later postwar deaths.",
+  "sides": [
+    {
+      "name": "Anti-communist coalition",
+      "members": [
+        "Republic of Vietnam (South Vietnam)",
+        "United States",
+        "South Korea",
+        "Australia",
+        "Thailand",
+        "New Zealand",
+        "Philippines",
+        "Republic of China (Taiwan)",
+        "Khmer Republic",
+        "Royal Lao Government"
+      ],
+      "military_killed": {
+        "low": 264000,
+        "high": 314000,
+        "point": 300000,
+        "notes": "Known/common estimates: South Vietnam 200,000-250,000; United States 58,220; South Korea about 5,099; Australia about 523-526; Thailand about 351; New Zealand 37; Philippines 9; Taiwan about 25. Khmer Republic and Royal Lao losses are not reliably separable here.",
+        "sources": [
+          "https://www.britannica.com/question/How-many-people-died-in-the-Vietnam-War",
+          "https://www.archives.gov/research/military/vietnam-war/casualty-statistics",
+          "https://www.britannica.com/event/Vietnam-War",
+          "https://www.awm.gov.au/articles/event/vietnam"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 295000,
+        "high": 760000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing/shelling/ground firepower",
+            "victims_group": "South Vietnamese civilians",
+            "low": 215000,
+            "high": 430000,
+            "notes": "The Senate Refugee Subcommittee estimated 430,000 civilian deaths in South Vietnam, 1965-1974, and stated that well over 50% of civilian war casualties were attributed to GVN/U.S. firepower. The low is an inferred floor if that share is applied to deaths; attribution is not clean.",
+            "sources": [
+              "https://vva.vietnam.ttu.edu/images.php?img=/images/239/2391211001.pdf"
+            ]
+          },
+          {
+            "cause": "aerial bombing",
+            "victims_group": "North Vietnamese civilians",
+            "low": 30000,
+            "high": 182000,
+            "notes": "Estimates for civilians killed by U.S. bombing of North Vietnam range from about 30,000 to 182,000; some CIA/DoD Rolling Thunder estimates cover only partial periods.",
+            "sources": [
+              "https://www.cia.gov/readingroom/document/cia-rdp78s02149r000200080012-8",
+              "https://www.pbs.org/battlefieldvietnam/timeline/index2.html"
+            ]
+          },
+          {
+            "cause": "aerial bombing",
+            "victims_group": "Cambodian civilians",
+            "low": 50000,
+            "high": 150000,
+            "notes": "Common scholarly estimate for Cambodian civilians killed by U.S. bombing; Kiernan and Owen suggested newly released tonnage data could imply a higher toll.",
+            "sources": [
+              "https://apjjf.org/taylor-owen/2420/article",
+              "https://www.politifact.com/factchecks/2014/sep/11/henry-kissinger/kissinger-drones-have-killed-more-civilians-bombin/"
+            ]
+          },
+          {
+            "cause": "explosive ordnance / bombing",
+            "victims_group": "Laotian civilians",
+            "low": null,
+            "high": null,
+            "notes": "Laotian survey data cite about 30,000 wartime explosive-ordnance casualties, but killed versus wounded and direct bombing versus UXO deaths are not cleanly separated.",
+            "sources": [
+              "https://www.tourismlaos.org/welcome/secret-war/",
+              "https://en.wikipedia.org/wiki/Laotian_Civil_War"
+            ]
+          },
+          {
+            "cause": "counterinsurgency killings / Phoenix Program",
+            "victims_group": "Suspected Viet Cong infrastructure and civilians in South Vietnam",
+            "low": 20000,
+            "high": 26369,
+            "notes": "Colby testimony reported about 20,000 killed by mid-1971; later summaries give 26,369 killed out of 81,740 neutralized, 1968-1972. These deaths overlap with other South Vietnam casualty categories and not all victims were counted as civilians.",
+            "sources": [
+              "https://www.cia.gov/readingroom/document/loc-hak-331-4-20-7",
+              "https://en.wikipedia.org/wiki/Phoenix_Program"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Vietnamese civilians killed by South Korean troops",
+            "low": 3000,
+            "high": 9000,
+            "notes": "Rummel gives about 3,000 for South Korean democide; activists and the Korea-Vietnam Peace Foundation estimate up to about 9,000 civilians in around 80 massacres. The South Korean government has denied systematic massacres.",
+            "sources": [
+              "https://www.vice.com/en/article/south-korea-war-crimes-vietnam/",
+              "https://apnews.com/article/d59a6464135c216e64fe2e0c3ff36547"
+            ]
+          }
+        ],
+        "notes": "The low/high are rough, non-additive attribution bounds. South Vietnam, Cambodia, and North Vietnam bombing/firepower categories overlap with broader civilian death estimates; Laos is not included numerically because killed-versus-wounded is not separated.",
+        "sources": [
+          "https://vva.vietnam.ttu.edu/images.php?img=/images/239/2391211001.pdf",
+          "https://apjjf.org/taylor-owen/2420/article",
+          "https://www.cia.gov/readingroom/document/loc-hak-331-4-20-7",
+          "https://www.pbs.org/battlefieldvietnam/timeline/index2.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "South Vietnamese civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Senate Refugee Subcommittee recorded 11,683,000 cumulative refugee displacements in South Vietnam since 1964-1965, but deaths from disease, exposure, hunger, and collapse of care are not separately counted.",
+          "sources": [
+            "https://vva.vietnam.ttu.edu/images.php?img=/images/239/2391211001.pdf"
+          ]
+        },
+        {
+          "type": "chemical_exposure",
+          "victims_group": "Vietnamese civilians and later generations exposed to Agent Orange/dioxin",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The U.S. VA states more than 19 million gallons of tactical herbicides were sprayed from 1962-1971. Vietnam reports 400,000 deaths or permanent injuries and 500,000 birth defects, but no clean death-only count is established; not rolled into totals.",
+          "sources": [
+            "https://www.publichealth.va.gov/exposures/agentorange/basics.asp",
+            "https://www.britannica.com/question/How-has-Agent-Orange-affected-Vietnamese-people",
+            "https://nap.nationalacademies.org/catalog/25137/veterans-and-agent-orange-update-11-2018"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Communist coalition",
+      "members": [
+        "Democratic Republic of Vietnam (North Vietnam)",
+        "People's Army of Vietnam (PAVN)",
+        "National Liberation Front / Viet Cong",
+        "Provisional Revolutionary Government",
+        "Pathet Lao",
+        "Khmer Rouge",
+        "People's Republic of China",
+        "Soviet Union",
+        "North Korea"
+      ],
+      "military_killed": {
+        "low": 850000,
+        "high": 1100000,
+        "point": 1000000,
+        "notes": "Vietnam's later official survey is reported as 849,018 confirmed PAVN/VC military deaths for roughly 1960-1975; the 1995 official figure was about 1.1 million North Vietnamese and Viet Cong fighters killed. Chinese, Soviet, and North Korean losses were much smaller and are often reported separately; Pathet Lao and Khmer Rouge military deaths are not reliably separable.",
+        "sources": [
+          "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1995/vp950404/04040331.htm",
+          "https://www.britannica.com/question/How-many-people-died-in-the-Vietnam-War",
+          "https://en.wikipedia.org/wiki/Vietnam_War_casualties"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 116000,
+        "high": 380000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "assassination/execution/terror",
+            "victims_group": "Vietnamese civilians, officials, and suspected opponents",
+            "low": 40000,
+            "high": 302000,
+            "notes": "Lewy estimated about 40,000 South Vietnamese civilians assassinated by PAVN/VC. Rummel's broader PAVN/VC democide range is about 131,000-302,000 including North and South Vietnam.",
+            "sources": [
+              "https://everything.explained.today/%5C/Vietnam_War_casualties/",
+              "https://en.wikipedia.org/wiki/Viet_Cong_and_People%27s_Army_of_Vietnam_use_of_terror_in_the_Vietnam_War",
+              "https://www.hawaii.edu/powerkills/SOD.CHAP6.HTM"
+            ]
+          },
+          {
+            "cause": "massacre/execution",
+            "victims_group": "Civilians in Hue",
+            "low": 2800,
+            "high": 6000,
+            "notes": "Common estimate for civilians killed by PAVN/VC forces during the 1968 Tet occupation of Hue; details and attribution remain contested.",
+            "sources": [
+              "https://dewiki.de/Lexikon/Massaker_von_Hu%E1%BA%BF"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Montagnard civilians at Dak Son",
+            "low": 252,
+            "high": 252,
+            "notes": "Viet Cong forces killed 252 civilians and abducted about 100 at Dak Son on 5 December 1967.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/%C4%90%E1%BA%AFk_S%C6%A1n_massacre",
+              "https://content.time.com/time/subscriber/article/0,33009,837586,00.html"
+            ]
+          },
+          {
+            "cause": "invasion/shelling/urban combat",
+            "victims_group": "South Vietnamese civilians during the 1972 Easter Offensive",
+            "low": null,
+            "high": null,
+            "notes": "More than 25,000 civilians were killed during the Easter Offensive, but deaths resulted from PAVN invasion, artillery, urban fighting, and U.S./RVN counter-fire, so the full figure is not assigned to the communist coalition.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Easter_Offensive",
+              "https://en.wikipedia.org/wiki/1972_in_the_Vietnam_War"
+            ]
+          },
+          {
+            "cause": "assassination",
+            "victims_group": "Cambodian civilians during the Cambodian Civil War",
+            "low": 76000,
+            "high": 76000,
+            "notes": "Marek Sliwinski attributed 31.7% of 240,000 Khmer-Cambodian civil-war deaths to assassinations, a tactic primarily associated with the Khmer Rouge, implying about 76,000 deaths. This is not the post-1975 genocide.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Cambodian_Civil_War"
+            ]
+          }
+        ],
+        "notes": "Low/high are rough and non-additive. The low combines Lewy's Vietnam assassination figure with Sliwinski-derived Cambodian assassinations; the high combines Rummel's high PAVN/VC democide figure with Cambodian assassination deaths. Some battlefield civilian deaths from communist offensives are not assigned because counter-fire and mixed combat make attribution unclear.",
+        "sources": [
+          "https://everything.explained.today/%5C/Vietnam_War_casualties/",
+          "https://www.hawaii.edu/powerkills/SOD.CHAP6.HTM",
+          "https://en.wikipedia.org/wiki/Cambodian_Civil_War"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "South Vietnamese, Cambodian, and Laotian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Communist offensives, coercive village control, shelling, mined roads, and siege conditions contributed to large refugee flows and indirect mortality, but deaths from disease, hunger, and exposure are not separately quantified in the sources reviewed.",
+          "sources": [
+            "https://vva.vietnam.ttu.edu/images.php?img=/images/239/2391211001.pdf",
+            "https://en.wikipedia.org/wiki/Easter_Offensive"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 1114000,
+    "military_high": 1414000,
+    "civilian_low": 665000,
+    "civilian_high": 2372000,
+    "grand_low": 1779000,
+    "grand_high": 3786000,
+    "notes": "Rounded grand range: about 1.8-3.8 million deaths across Vietnam, Cambodia, and Laos, 1955-1975. Military total combines known/estimated anti-communist military deaths with PAVN/VC and allied communist military deaths. Civilian low combines Lewy's 405,000 Vietnam civilian deaths with approximate Cambodia/Laos lower war-death ranges; civilian high combines Vietnam's 2,000,000 civilian estimate with Cambodia 310,000 and Laos 62,000. Cambodia and Laos totals include some combatants because civilian/military separation is not always available, so totals are approximate."
+  },
+  "key_atrocities": [
+    {
+      "name": "U.S. bombing of Cambodia",
+      "year": null,
+      "perpetrator": "Anti-communist coalition",
+      "victims_group": "Cambodian civilians",
+      "low": 50000,
+      "high": 150000,
+      "notes": "Commonly cited range for civilian deaths from U.S. bombing, 1965-1973; Kiernan/Owen argue newly released tonnage data may imply a higher toll.",
+      "sources": [
+        "https://apjjf.org/taylor-owen/2420/article",
+        "https://www.politifact.com/factchecks/2014/sep/11/henry-kissinger/kissinger-drones-have-killed-more-civilians-bombin/"
+      ]
+    },
+    {
+      "name": "U.S. bombing of Laos",
+      "year": null,
+      "perpetrator": "Anti-communist coalition",
+      "victims_group": "Laotian civilians",
+      "low": null,
+      "high": null,
+      "notes": "About 580,000 bombing missions and more than 2 million tons of ordnance were dropped; wartime explosive-ordnance casualties are estimated around 30,000, but killed versus wounded is not cleanly separated.",
+      "sources": [
+        "https://www.tourismlaos.org/welcome/secret-war/",
+        "https://en.wikipedia.org/wiki/Laotian_Civil_War"
+      ]
+    },
+    {
+      "name": "My Lai massacre",
+      "year": 1968,
+      "perpetrator": "Anti-communist coalition",
+      "victims_group": "Vietnamese civilians",
+      "low": 347,
+      "high": 504,
+      "notes": "U.S. Army massacre of unarmed civilians at Son My/My Lai on 16 March 1968; Vietnamese local official count is 504.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/My_Lai_massacre",
+        "https://time.com/3739572/american-atrocity-remembering-my-lai/"
+      ]
+    },
+    {
+      "name": "Phoenix Program killings",
+      "year": null,
+      "perpetrator": "Anti-communist coalition",
+      "victims_group": "Suspected Viet Cong infrastructure and civilians",
+      "low": 20000,
+      "high": 26369,
+      "notes": "Colby testimony reported about 20,000 killed by mid-1971; later summaries give 26,369 killed out of 81,740 neutralized.",
+      "sources": [
+        "https://www.cia.gov/readingroom/document/loc-hak-331-4-20-7",
+        "https://en.wikipedia.org/wiki/Phoenix_Program"
+      ]
+    },
+    {
+      "name": "Hue massacre",
+      "year": 1968,
+      "perpetrator": "Communist coalition",
+      "victims_group": "Vietnamese civilians",
+      "low": 2800,
+      "high": 6000,
+      "notes": "Civilian executions and killings during the PAVN/VC occupation of Hue in the Tet Offensive; details remain politically contested.",
+      "sources": [
+        "https://dewiki.de/Lexikon/Massaker_von_Hu%E1%BA%BF"
+      ]
+    },
+    {
+      "name": "Dak Son massacre",
+      "year": 1967,
+      "perpetrator": "Communist coalition",
+      "victims_group": "Montagnard civilians",
+      "low": 252,
+      "high": 252,
+      "notes": "Viet Cong attack on Dak Son village killed 252 civilians and abducted about 100.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/%C4%90%E1%BA%AFk_S%C6%A1n_massacre",
+        "https://content.time.com/time/subscriber/article/0,33009,837586,00.html"
+      ]
+    },
+    {
+      "name": "South Korean troop massacres in Vietnam",
+      "year": null,
+      "perpetrator": "Anti-communist coalition",
+      "victims_group": "Vietnamese civilians",
+      "low": 3000,
+      "high": 9000,
+      "notes": "Rummel gives about 3,000; Korean/Vietnamese activists estimate up to about 9,000 civilians across around 80 incidents. South Korean courts have found state responsibility in at least one Phong Nhi/Phong Nhut survivor case.",
+      "sources": [
+        "https://www.vice.com/en/article/south-korea-war-crimes-vietnam/",
+        "https://apnews.com/article/4f0fc11cc517dd3a4098eb0f027bade5",
+        "https://apnews.com/article/d59a6464135c216e64fe2e0c3ff36547"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is Vietnamese civilian mortality and perpetrator attribution in South Vietnam. Vietnam's official civilian estimate of 2 million is far above Lewy's 405,000 and above Hirschman/Preston/Loi's roughly 1 million total Vietnamese deaths for 1965-1975. Cambodia and Laos are included with this conflict because Indochina-wide bombing and ground operations link them to the Vietnam War, but their civil-war death totals are not always separable into civilian and military deaths. Agent Orange, postwar UXO, post-1975 Cambodian genocide, boat people deaths, reeducation camp deaths, and Third Indochina War deaths are excluded from totals unless noted.",
+  "sources": [
+    {
+      "url": "https://www.archives.gov/research/military/vietnam-war/casualty-statistics",
+      "title": "Vietnam War U.S. Military Fatal Casualty Statistics",
+      "publisher": "U.S. National Archives"
+    },
+    {
+      "url": "https://www.britannica.com/question/How-many-people-died-in-the-Vietnam-War",
+      "title": "How many people died in the Vietnam War?",
+      "publisher": "Britannica"
+    },
+    {
+      "url": "https://openurl.ebsco.com/contentitem/doi%3A10.2307%2F2137774",
+      "title": "Vietnamese Casualties During the American War: A New Estimate",
+      "publisher": "Population and Development Review / EBSCO"
+    },
+    {
+      "url": "https://vva.vietnam.ttu.edu/images.php?img=/images/239/2391211001.pdf",
+      "title": "Relief and Rehabilitation of War Victims in Indochina",
+      "publisher": "U.S. Senate Refugee Subcommittee / Vietnam Center & Archive"
+    },
+    {
+      "url": "https://www.hawaii.edu/powerkills/SOD.CHAP6.HTM",
+      "title": "Statistics of Vietnamese Genocide and Mass Murder",
+      "publisher": "R. J. Rummel / University of Hawaii"
+    },
+    {
+      "url": "https://apjjf.org/taylor-owen/2420/article",
+      "title": "Bombs Over Cambodia: New Light on US Air War",
+      "publisher": "Asia-Pacific Journal: Japan Focus"
+    },
+    {
+      "url": "https://www.tourismlaos.org/welcome/secret-war/",
+      "title": "The Secret War",
+      "publisher": "Tourism Laos"
+    },
+    {
+      "url": "https://www.cia.gov/readingroom/document/loc-hak-331-4-20-7",
+      "title": "Phoenix Program",
+      "publisher": "CIA FOIA Reading Room"
+    },
+    {
+      "url": "https://apnews.com/article/d59a6464135c216e64fe2e0c3ff36547",
+      "title": "South Korean defense minister denies Vietnam War massacres",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.publichealth.va.gov/exposures/agentorange/basics.asp",
+      "title": "Facts About Herbicides",
+      "publisher": "U.S. Department of Veterans Affairs"
+    },
+    {
+      "url": "https://nap.nationalacademies.org/catalog/25137/veterans-and-agent-orange-update-11-2018",
+      "title": "Veterans and Agent Orange: Update 11 (2018)",
+      "publisher": "National Academies Press"
+    }
+  ]
+}

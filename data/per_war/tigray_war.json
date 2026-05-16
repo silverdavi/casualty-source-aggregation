@@ -1,0 +1,388 @@
+{
+  "war_id": "tigray_war",
+  "name": "Tigray War",
+  "start_year": 2020,
+  "end_year": 2022,
+  "ongoing": false,
+  "regions": [
+    "Ethiopia",
+    "Tigray",
+    "Amhara",
+    "Afar",
+    "Eritrea borderlands"
+  ],
+  "summary": "The Tigray War was a devastating armed conflict between Ethiopia's federal government and allied Eritrean/regional forces on one side and Tigray forces aligned with the TPLF on the other. The conflict formally ended with the November 2022 Cessation of Hostilities Agreement, though Eritrean and Amhara forces were reported to have remained in parts of Tigray after the deal. Death estimates vary sharply, from at least 102,000 excess deaths among people aged 15+ in Tigray to roughly 600,000 total deaths when famine, medical deprivation, and combat deaths are included.",
+  "sides": [
+    {
+      "name": "Ethiopian federal coalition",
+      "members": [
+        "Ethiopian National Defense Force",
+        "Eritrean Defence Forces",
+        "Amhara Special Forces",
+        "Afar Special Forces",
+        "Fano and allied militias",
+        "Ethiopian federal and allied regional authorities"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable public source provides a side-specific total for ENDF, EDF, Amhara/Afar forces, and allied militia killed. PRIO/UCDP reported over 100,000 battle-related deaths in Tigray in 2022, but without a per-side split and with some civilians included in battle-death definitions.",
+        "sources": [
+          "https://www.prio.org/news/3058",
+          "https://ucdp.uu.se/downloads/newsletter/issue9.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 31300,
+        "high": 89300,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/execution/shooting",
+            "victims_group": "Tigrayan civilians in Tigray",
+            "low": 31300,
+            "high": 89300,
+            "notes": "Ghent/Nyssen estimate cited by the UK House of Lords Library for civilians killed or massacred in Tigray as of August 2022; attribution is mainly to ENDF/EDF/Amhara-allied operations but not every death is unit-attributed.",
+            "sources": [
+              "https://lordslibrary.parliament.uk/conflict-in-the-tigray-region-of-ethiopia/"
+            ]
+          },
+          {
+            "cause": "airstrike/drone strike",
+            "victims_group": "Tigrayan civilians",
+            "low": 385,
+            "high": 385,
+            "notes": "Health-facility dataset for June 2021 to October 2022 recorded 1,143 airstrike casualties, including 385 deaths, mostly in civilian sites.",
+            "sources": [
+              "https://link.springer.com/article/10.1186/s12963-025-00373-1"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Axum civilians",
+            "low": 100,
+            "high": 800,
+            "notes": "OHCHR/EHRC reported more than 100 civilians killed by EDF; Ethiopian prosecutors reported 124 killed total, 118 by EDF and 6 by ENDF; Ghent/Every Casualty cited around 800.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+              "https://everycasualty.org/wp-content/uploads/2021/12/Casualties-of-the-armed-conflict-2020-2021-Tigray-Ethiopia.pdf"
+            ]
+          },
+          {
+            "cause": "massacre/execution",
+            "victims_group": "Bora/Amedwha/Mai Liham civilians",
+            "low": 70,
+            "high": 101,
+            "notes": "OHCHR/EHRC found at least 70 civilian men killed by ENDF; ICHREE later had information on 101 people killed in Bora from 8 January 2021.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+              "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+            ]
+          }
+        ],
+        "notes": "The low/high values are the main direct-civilian-killing estimate for Tigray cited by the UK House of Lords Library. UN reports document many specific massacres but do not provide a complete region-wide direct-killing total by perpetrator.",
+        "sources": [
+          "https://lordslibrary.parliament.uk/conflict-in-the-tigray-region-of-ethiopia/",
+          "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf",
+          "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+          "https://link.springer.com/article/10.1186/s12963-025-00373-1"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Tigrayan civilians",
+          "low": 228000,
+          "high": 356100,
+          "point": null,
+          "notes": "Ghent/Nyssen estimate cited by the UK House of Lords Library for famine deaths as of August 2022. ICHREE later found starvation was used as a method of warfare by the federal side and allied forces.",
+          "sources": [
+            "https://lordslibrary.parliament.uk/conflict-in-the-tigray-region-of-ethiopia/",
+            "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Tigrayan civilians lacking medical care",
+          "low": 124000,
+          "high": 155000,
+          "point": null,
+          "notes": "Ghent/Nyssen estimate cited by the UK House of Lords Library for deaths from lack of medical attention, amid blockade, destruction/looting of health infrastructure, lack of medicines, and humanitarian-access restrictions.",
+          "sources": [
+            "https://lordslibrary.parliament.uk/conflict-in-the-tigray-region-of-ethiopia/",
+            "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+          ]
+        },
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Tigrayan civilians in Western Tigray",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW/Amnesty documented systematic expulsions, killings, sexual violence, detention, pillage, forcible transfer, and denial of assistance in Western Tigray; no comprehensive death total is available.",
+          "sources": [
+            "https://www.hrw.org/report/2022/04/06/we-will-erase-you-land/crimes-against-humanity-and-ethnic-cleansing-ethiopias"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tigray forces",
+      "members": [
+        "Tigray People's Liberation Front",
+        "Tigray Defense Forces",
+        "Tigray Special Forces",
+        "Tigray regional police",
+        "Tigrayan-aligned local militias",
+        "Agew Shengo and other temporary allied elements where documented"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable public source gives a complete side-specific total for TDF/Tigray forces killed. Aggregate battle-death estimates do not separate Tigray forces from ENDF/EDF/allied forces or civilians.",
+        "sources": [
+          "https://www.prio.org/news/3058",
+          "https://ucdp.uu.se/downloads/newsletter/issue9.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 365,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/execution",
+            "victims_group": "Amhara civilians in Mai Kadra",
+            "low": 200,
+            "high": 600,
+            "notes": "OHCHR/EHRC confirmed more than 200 civilians killed; Ghent/Every Casualty cited around 600. Perpetrators were Samri/Tigrayan-aligned local actors, with contested narratives and subsequent retaliatory killings of Tigrayans by Fano.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+              "https://everycasualty.org/wp-content/uploads/2021/12/Casualties-of-the-armed-conflict-2020-2021-Tigray-Ethiopia.pdf"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Amhara civilians in Kobo and Chenna",
+            "low": 49,
+            "high": null,
+            "notes": "HRW/Amnesty reported approximately 49 civilians killed in Kobo and Chenna; ICHREE described scores killed in Kobo and documented executions in Chenna.",
+            "sources": [
+              "https://ethiopiawatch.org/2021/02/16/tigray-forces-executed-civilians-in-kobo-and-chenna-amhara-region/",
+              "https://www.amnesty.org/en/latest/news/2022/02/ethiopia-tigrayan-forces-murder-rape-and-pillage-in-attacks-on-civilians-in-amhara-towns/",
+              "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+            ]
+          },
+          {
+            "cause": "shelling/shooting",
+            "victims_group": "Afar civilians, including Galikoma and other Afar localities",
+            "low": 107,
+            "high": null,
+            "notes": "EHRC reported Tigray forces indiscriminately killed 107 civilians in an August 2021 incident; ICHREE separately documented killings in Ab'ala, Berhale, Konneba and Kasagita without a comprehensive total.",
+            "sources": [
+              "https://ehrc.org/wp-content/uploads/2022/03/English-Executive-Summary-AAIR.pdf",
+              "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Eritrean refugees at Hitsats",
+            "low": 9,
+            "high": 9,
+            "notes": "ICHREE found that Tigrayan fighters killed nine Eritrean refugees at Hitsats refugee camp.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+            ]
+          }
+        ],
+        "notes": "The low figure is a conservative floor from selected documented incidents, not a complete theater-wide total. There is no reliable high estimate for all civilians directly killed by Tigray forces in Amhara, Afar, Tigray, and refugee settings.",
+        "sources": [
+          "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+          "https://www.amnesty.org/en/latest/news/2022/02/ethiopia-tigrayan-forces-murder-rape-and-pillage-in-attacks-on-civilians-in-amhara-towns/",
+          "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf",
+          "https://ehrc.org/wp-content/uploads/2022/03/English-Executive-Summary-AAIR.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Afar and Amhara civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ICHREE documented looting, destruction of livestock/property, and displacement by Tigray forces in Afar and Amhara, with some displaced civilians dying from heat, thirst, lack of food, and lack of healthcare. No comprehensive death total is available.",
+          "sources": [
+            "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 102000,
+    "civilian_high": 600000,
+    "grand_low": 102000,
+    "grand_high": 600000,
+    "notes": "The low figure uses the peer-reviewed estimate of more than 102,000 excess deaths among people aged 15+ inside Tigray; it is not a full all-age, all-region death toll. The high figure reflects Ghent/Nyssen-style famine and medical-deprivation modeling and Obasanjo's AU-mediator estimate of about 600,000 deaths. Military deaths by side are unknown and should not be added to these ranges without avoiding double-counting."
+  },
+  "key_atrocities": [
+    {
+      "name": "Mai Kadra massacre",
+      "year": 2020,
+      "perpetrator": "Tigray-aligned Samri/local actors; followed by retaliatory Fano killings",
+      "victims_group": "Primarily Amhara civilians; later Tigrayan civilians in retaliatory killings",
+      "low": 200,
+      "high": 600,
+      "notes": "OHCHR/EHRC confirmed more than 200 killed; Ghent/Every Casualty cited around 600; narratives remain contested.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+        "https://everycasualty.org/wp-content/uploads/2021/12/Casualties-of-the-armed-conflict-2020-2021-Tigray-Ethiopia.pdf"
+      ]
+    },
+    {
+      "name": "Axum massacre",
+      "year": 2020,
+      "perpetrator": "Eritrean Defence Forces; ENDF also present",
+      "victims_group": "Tigrayan civilians",
+      "low": 100,
+      "high": 800,
+      "notes": "OHCHR/EHRC found more than 100 killed by EDF; Ethiopian prosecutors reported 124 total; Ghent/Every Casualty cited around 800.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+        "https://everycasualty.org/wp-content/uploads/2021/12/Casualties-of-the-armed-conflict-2020-2021-Tigray-Ethiopia.pdf"
+      ]
+    },
+    {
+      "name": "Mariam Dengelat massacre",
+      "year": 2020,
+      "perpetrator": "Eritrean Defence Forces",
+      "victims_group": "Tigrayan civilians and churchgoers",
+      "low": 65,
+      "high": 165,
+      "notes": "ICHREE cited lists and testimony indicating dozens to up to 165 killed.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+      ]
+    },
+    {
+      "name": "Bora/Amedwha/Mai Liham killings",
+      "year": 2021,
+      "perpetrator": "Ethiopian National Defense Force",
+      "victims_group": "Tigrayan civilian men and boys",
+      "low": 70,
+      "high": 101,
+      "notes": "OHCHR/EHRC found at least 70 civilian men killed; ICHREE had information on 101 killed in Bora from 8 January 2021.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+        "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+      ]
+    },
+    {
+      "name": "Kobo and Chenna executions",
+      "year": 2021,
+      "perpetrator": "Tigray forces",
+      "victims_group": "Amhara civilians",
+      "low": 49,
+      "high": null,
+      "notes": "HRW/Amnesty reported approximately 49 killed in Kobo and Chenna; ICHREE documented scores killed in Kobo and killings in Chenna.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2022/02/ethiopia-tigrayan-forces-murder-rape-and-pillage-in-attacks-on-civilians-in-amhara-towns/",
+        "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+      ]
+    },
+    {
+      "name": "Galikoma / Afar civilian killings",
+      "year": 2021,
+      "perpetrator": "Tigray forces",
+      "victims_group": "Afar civilians",
+      "low": 107,
+      "high": 107,
+      "notes": "EHRC reported Tigray forces indiscriminately killed 107 civilians in an August 2021 incident.",
+      "sources": [
+        "https://ehrc.org/wp-content/uploads/2022/03/English-Executive-Summary-AAIR.pdf"
+      ]
+    },
+    {
+      "name": "Dedebit IDP-camp airstrike",
+      "year": 2022,
+      "perpetrator": "Ethiopian federal air force / federal side",
+      "victims_group": "Internally displaced Tigrayan civilians",
+      "low": 56,
+      "high": 59,
+      "notes": "Reported death toll from the January 2022 airstrike on an IDP camp.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Casualties_of_the_Tigray_war",
+        "https://link.springer.com/article/10.1186/s12963-025-00373-1"
+      ]
+    },
+    {
+      "name": "Mariam Shewito / Adwa killings",
+      "year": 2022,
+      "perpetrator": "Eritrean Defence Forces",
+      "victims_group": "Tigrayan civilians",
+      "low": 94,
+      "high": 100,
+      "notes": "ICHREE had a list of 94 names and cited credible sources reporting more than 100 killed.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Casualty accounting for the Tigray War is extremely uncertain because of communications blackouts, access restrictions, ongoing political contestation, different definitions of battle deaths versus excess deaths, and the absence of a public official truth-commission death ledger. The most credible approach is to present ranges: documented incident floors for specific massacres; peer-reviewed excess-mortality estimates for part of the population; Ghent/Nyssen-style modeled famine and medical-deprivation ranges; and UCDP/PRIO aggregate battle-death data. Per-side military killed remains unknown.",
+  "sources": [
+    {
+      "url": "https://ucdp.uu.se/downloads/newsletter/issue9.html",
+      "title": "UCDP Newsletter #9: The War in Tigray",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://www.prio.org/news/3058",
+      "title": "New figures show conflict-related deaths at 28-year high, largely due to Ethiopia and Ukraine wars",
+      "publisher": "Peace Research Institute Oslo"
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/2021-11/OHCHR-EHRC-Tigray-Report.pdf",
+      "title": "Joint Investigation into Alleged Violations in the Tigray Region",
+      "publisher": "OHCHR and Ethiopian Human Rights Commission"
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/chreetiopia/a-hrc-54-crp-3.pdf",
+      "title": "Comprehensive investigative findings and legal determinations",
+      "publisher": "International Commission of Human Rights Experts on Ethiopia"
+    },
+    {
+      "url": "https://www.hrw.org/report/2022/04/06/we-will-erase-you-land/crimes-against-humanity-and-ethnic-cleansing-ethiopias",
+      "title": "We Will Erase You from This Land",
+      "publisher": "Human Rights Watch and Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2022/02/ethiopia-tigrayan-forces-murder-rape-and-pillage-in-attacks-on-civilians-in-amhara-towns/",
+      "title": "Ethiopia: Tigrayan forces murder, rape and pillage in attacks on civilians in Amhara towns",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://researchers.cdu.edu.au/en/publications/conflict-attributable-mortality-in-tigray-region-ethiopia-evidenc/",
+      "title": "Conflict-attributable mortality in Tigray Region, Ethiopia",
+      "publisher": "Conflict and Health / Charles Darwin University"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s12963-025-00373-1",
+      "title": "Civilian death and injury from airstrikes: evidence from the war in Tigray, Ethiopia",
+      "publisher": "Population Health Metrics / Springer Nature"
+    },
+    {
+      "url": "https://lordslibrary.parliament.uk/conflict-in-the-tigray-region-of-ethiopia/",
+      "title": "Conflict in the Tigray region of Ethiopia",
+      "publisher": "UK House of Lords Library"
+    },
+    {
+      "url": "https://law.yale.edu/yls-today/news/lowenstein-clinic-finds-ethiopia-and-allies-responsible-mass-starvation-tigray",
+      "title": "Lowenstein Clinic Finds Ethiopia and Allies Responsible for Mass Starvation in Tigray",
+      "publisher": "Yale Law School"
+    }
+  ]
+}

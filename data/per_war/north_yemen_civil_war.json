@@ -1,0 +1,314 @@
+{
+  "war_id": "north_yemen_civil_war",
+  "name": "North Yemen Civil War",
+  "start_year": 1962,
+  "end_year": 1970,
+  "ongoing": false,
+  "regions": [
+    "Yemen",
+    "North Yemen",
+    "Arabian Peninsula"
+  ],
+  "summary": "The North Yemen Civil War was fought from 1962 to 1970 between republicans of the Yemen Arab Republic and royalists loyal to the Mutawakkilite imamate. It became a major Arab Cold War proxy war, with Egypt/UAR intervening for the republicans and Saudi Arabia, Jordan, British-linked covert networks, and foreign mercenaries supporting the royalists. Overall death estimates are highly contested, with broad historical estimates of 100,000-200,000 killed but much lower strict battle-death coding in PRIO-style datasets.",
+  "sides": [
+    {
+      "name": "Republican coalition",
+      "members": [
+        "Yemen Arab Republic",
+        "Egypt / United Arab Republic",
+        "Soviet Union as arms supplier"
+      ],
+      "military_killed": {
+        "low": 26000,
+        "high": null,
+        "point": 26000,
+        "notes": "Best-cited side-specific figure is up to 26,000 Egyptian troops killed. This excludes unquantified Yemeni republican combatant deaths. Earlier official Egyptian army figures reported 15,194 dead, but later summaries commonly use 26,000.",
+        "sources": [
+          "https://bipartisanpolicy.org/wp-content/uploads/2019/03/Yemen-Fragility-and-Extremism.pdf",
+          "https://en.wikipedia.org/wiki/North_Yemen_civil_war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 204,
+        "high": 224,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "chemical/air attack",
+            "victims_group": "Civilians in Kawma village",
+            "low": 7,
+            "high": 7,
+            "notes": "Reported first gas attack of the war on 8 June 1963, killing about 7 and injuring about 25.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+              "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+            ]
+          },
+          {
+            "cause": "chemical/air attack",
+            "victims_group": "Civilians in a late-1966 gas-bomb attack",
+            "low": 2,
+            "high": 2,
+            "notes": "Reported 11 December 1966 gas-bomb attack with 15 bombs, killing 2 and injuring 35.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+              "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+            ]
+          },
+          {
+            "cause": "chemical/air attack",
+            "victims_group": "Civilians in Kitaf/Ketaf",
+            "low": 120,
+            "high": 140,
+            "notes": "ICRC annual-report excerpt says about 120 persons, many women and children, were killed in the 5 January 1967 air raid; other summaries report 140 fatalities and 270 casualties.",
+            "sources": [
+              "https://casebook.icrc.org/print/pdf/node/20810",
+              "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+              "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+            ]
+          },
+          {
+            "cause": "chemical/air attack",
+            "victims_group": "Civilians in Gahar/Gadafa or nearby northern village",
+            "low": 75,
+            "high": 75,
+            "notes": "ICRC reported a further May 1967 raid causing 75 deaths; Red Cross medical reporting described survivors' allegations that many inhabitants died of asphyxiation.",
+            "sources": [
+              "https://casebook.icrc.org/print/pdf/node/20810",
+              "https://international-review.icrc.org/articles/icrc-and-yemen-conflict",
+              "https://en.wikipedia.org/wiki/North_Yemen_civil_war"
+            ]
+          }
+        ],
+        "notes": "The 204-224 range is only the sum of named, documented Egyptian or Egyptian-run republican gas/air-raid incidents found in accessible sources. It is not a total civilian death toll; approximately 40 chemical-weapons incidents were reportedly recorded, but no reliable aggregate death toll was found.",
+        "sources": [
+          "https://casebook.icrc.org/print/pdf/node/20810",
+          "https://international-review.icrc.org/articles/icrc-and-yemen-conflict",
+          "https://www.tandfonline.com/doi/full/10.1080/08850607.2026.2637900",
+          "https://academic.oup.com/book/7091/chapter/151596571"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Royalist-area civilians and rural populations",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Egyptian bombing and poison-gas attacks have been described as part of a scorched-earth or countryside-depopulation approach, but no defensible numeric estimate of indirect deaths was found.",
+          "sources": [
+            "https://academic.oup.com/book/7091/chapter/151596571",
+            "https://en.wikipedia.org/wiki/North_Yemen_civil_war"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Civilians displaced or deprived by war conditions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The war produced hunger, hardship, and dislocation; no source found separates disease or deprivation deaths caused by republican/Egyptian actions from the war's combined effects and drought.",
+          "sources": [
+            "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yemen-civil-war"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Royalist coalition",
+      "members": [
+        "Mutawakkilite Kingdom loyalists",
+        "Saudi Arabia",
+        "Jordan",
+        "British-linked covert support networks",
+        "foreign mercenaries"
+      ],
+      "military_killed": {
+        "low": 40000,
+        "high": null,
+        "point": null,
+        "notes": "A historical account reports an estimated 40,000 royalist dead by the mid-war stalemate period. Some summaries separately list 1,000 Saudi dead, but that figure is less well cross-checked and is not included in the numeric low here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+          "https://en-academic.com/dic.nsf/%20enwiki%20/1556693",
+          "https://military-history.fandom.com/wiki/North_Yemen_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No credible quantified estimate was found for civilians directly killed by royalist forces. Royalist forces conducted sieges, shelling, and attacks, including the Seventy Day Siege of Sanaa, but civilian fatalities are not separated from combatant deaths in accessible sources.",
+        "sources": [
+          "https://media.defense.gov/2025/Feb/25/2003651742/-1/-1/0/20250211_NORTHYEMEN_1962-70.PDF",
+          "https://casebook.icrc.org/print/pdf/node/20810"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Civilians in and around republican-held Sanaa and other contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Royalist siege warfare likely contributed to hunger and deprivation, especially during the Seventy Day Siege of Sanaa, but no reliable numeric allocation of indirect civilian deaths to royalist actions was found.",
+          "sources": [
+            "https://media.defense.gov/2025/Feb/25/2003651742/-1/-1/0/20250211_NORTHYEMEN_1962-70.PDF",
+            "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yemen-civil-war"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Civilians displaced by prolonged royalist-republican fighting",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The war and a long drought together caused hunger, economic hardship, social dislocation, and many deaths, but sources do not allow side-specific quantification.",
+          "sources": [
+            "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yemen-civil-war"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 66000,
+    "military_high": null,
+    "civilian_low": 204,
+    "civilian_high": null,
+    "grand_low": 100000,
+    "grand_high": 200000,
+    "notes": "Military_low adds the best-cited side-specific floor of 26,000 Egyptian military deaths and 40,000 royalist deaths, excluding unquantified Yemeni republican deaths, possible Saudi deaths, and later/final royalist losses. Civilian_low is only a floor from named Egyptian gas/air attacks. Grand_low and grand_high use broad historical all-deaths estimates of 100,000-200,000; PRIO-style battle-death coding cited by RAND gives a much lower 1,200-11,000 and should not be treated as equivalent to total war deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Kitaf/Ketaf air or gas attack",
+      "year": 1967,
+      "perpetrator": "Republican coalition / Egyptian or Egyptian-run air forces",
+      "victims_group": "Civilians, including women and children",
+      "low": 120,
+      "high": 140,
+      "notes": "ICRC reported about 120 killed in the 5 January 1967 air raid; other summaries give 140 fatalities and 270 casualties.",
+      "sources": [
+        "https://casebook.icrc.org/print/pdf/node/20810",
+        "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+        "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+      ]
+    },
+    {
+      "name": "Gahar/Gadafa / Wadi Hirran gas attack",
+      "year": 1967,
+      "perpetrator": "Republican coalition / Egyptian or Egyptian-run air forces",
+      "victims_group": "Civilians in northern Yemen",
+      "low": 75,
+      "high": 75,
+      "notes": "ICRC reported a further raid in May 1967 causing 75 deaths; Red Cross medical reporting described allegations that many inhabitants died of asphyxiation.",
+      "sources": [
+        "https://casebook.icrc.org/print/pdf/node/20810",
+        "https://international-review.icrc.org/articles/icrc-and-yemen-conflict"
+      ]
+    },
+    {
+      "name": "Kawma gas attack",
+      "year": 1963,
+      "perpetrator": "Republican coalition / Egyptian forces",
+      "victims_group": "Civilians in Kawma village",
+      "low": 7,
+      "high": 7,
+      "notes": "Reported first gas attack of the war on 8 June 1963, killing about 7 people and injuring about 25.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+        "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+      ]
+    },
+    {
+      "name": "Late-1966 gas-bomb attack",
+      "year": 1966,
+      "perpetrator": "Republican coalition / Egyptian forces",
+      "victims_group": "Civilians or royalist-area inhabitants",
+      "low": 2,
+      "high": 2,
+      "notes": "Reported 11 December 1966 attack in which 15 gas bombs killed 2 and injured 35.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+        "https://en.wikipedia.org/wiki/History_of_chemical_warfare"
+      ]
+    },
+    {
+      "name": "Seventy Day Siege of Sanaa",
+      "year": 1967,
+      "perpetrator": "Royalist coalition",
+      "victims_group": "Republican defenders and civilians in Sanaa",
+      "low": null,
+      "high": null,
+      "notes": "The siege lasted into February 1968 and was the turning point of the war; no reliable civilian death toll was found.",
+      "sources": [
+        "https://media.defense.gov/2025/Feb/25/2003651742/-1/-1/0/20250211_NORTHYEMEN_1962-70.PDF"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The North Yemen Civil War lacks a comprehensive casualty registry or truth-commission-style accounting. The strongest side-specific figures are Egyptian military deaths and an estimated royalist combatant toll, but Yemeni republican combatant deaths, civilians killed by conventional fire, and indirect deaths from hunger, disease, drought, and displacement are not reliably disaggregated. Broad all-deaths estimates of 100,000-200,000 coexist with much lower PRIO-style battle-death estimates, reflecting different definitions and likely undercounting.",
+  "sources": [
+    {
+      "url": "https://casebook.icrc.org/print/pdf/node/20810",
+      "title": "ICRC Report on Yemen, 1967",
+      "publisher": "International Committee of the Red Cross / ICRC Casebook"
+    },
+    {
+      "url": "https://international-review.icrc.org/articles/icrc-and-yemen-conflict",
+      "title": "The ICRC and the Yemen conflict",
+      "publisher": "International Review of the Red Cross"
+    },
+    {
+      "url": "https://academic.oup.com/book/7091/chapter/151596571",
+      "title": "Chemical Warfare in Yemen, in Beyond the Arab Cold War",
+      "publisher": "Oxford Academic / Oxford University Press"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/08850607.2026.2637900",
+      "title": "Obscured by a Toxic Fog: Britain, Intelligence and Egypt's use of Chemical Weapons in the Yemen Civil War 1962-1968",
+      "publisher": "International Journal of Intelligence and CounterIntelligence / Taylor & Francis"
+    },
+    {
+      "url": "https://bipartisanpolicy.org/wp-content/uploads/2019/03/Yemen-Fragility-and-Extremism.pdf",
+      "title": "Fragility and Extremism in Yemen",
+      "publisher": "Bipartisan Policy Center"
+    },
+    {
+      "url": "https://www.rand.org/content/dam/rand/pubs/research_reports/RR1700/RR1727/RAND_RR1727.pdf",
+      "title": "What Factors Cause Individuals to Reject Violent Extremism in Yemen?",
+      "publisher": "RAND Corporation"
+    },
+    {
+      "url": "https://unscr.com/en/resolutions/179/",
+      "title": "UN Security Council Resolution 179 (1963)",
+      "publisher": "UNSCR"
+    },
+    {
+      "url": "https://media.defense.gov/2025/Feb/25/2003651742/-1/-1/0/20250211_NORTHYEMEN_1962-70.PDF",
+      "title": "Study of Internal Conflict: North Yemen 1962-70",
+      "publisher": "U.S. Army War College / Strategic Studies Institute"
+    },
+    {
+      "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/yemen-civil-war",
+      "title": "Yemen Civil War",
+      "publisher": "Encyclopedia.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/North_Yemen_civil_war",
+      "title": "North Yemen civil war",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_chemical_warfare",
+      "title": "History of chemical warfare",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://military-history.fandom.com/wiki/North_Yemen_Civil_War",
+      "title": "North Yemen Civil War",
+      "publisher": "Military Wiki"
+    }
+  ]
+}

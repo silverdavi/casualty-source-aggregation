@@ -1,0 +1,547 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1.7cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype,booktabs,longtable,array,xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage[colorlinks,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\renewcommand{\arraystretch}{1.13}
+\setlength{\tabcolsep}{3.2pt}
+\setlength{\emergencystretch}{3em}
+\title{Supplementary Material:\\ Dataset-Wide Tables and Diagnostics}
+\author{Companion to the main paper}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}\raggedright\small
+This supplement applies the paper's accounting framework to all 81 conflicts in the 1900--2026 dataset. For every war we compute total death ranges, civilian share ranges, combatant share ranges $q$, the share of civilian deaths that are indirect, a reproducible confidence grade, and the under fudgible relation most likely to bind if a contradiction radius analysis were performed. Only conflicts with independent demographic samples can receive a sharp contradiction radius; the rest are treated as partial identification cases.
+\end{abstract}
+\tableofcontents
+
+\section{How to read the tables}
+The \emph{civilian share} interval is computed conservatively as $[D_C^{lo}/(D_C^{lo}+D_M^{hi}),\;D_C^{hi}/(D_C^{hi}+D_M^{lo})]$. The $q$ interval is the corresponding combatant share. The \emph{binding relation} column is a triage label: \texttt{manpower budget} means the population/combatant-stock bound is the first place to look; \texttt{identified-deaths sample} means sex-age microdata would likely dominate; \texttt{excess-mortality survey} means direct attribution is less informative than survey-based excess deaths; \texttt{source harmonisation} marks conflicts where definitions, overlap, or missing high bounds dominate.
+
+\paragraph{Confidence grade.} A: total-death range ratio $<2$ and civilian-share width $<15$ percentage points. B: either ratio $<4$ or width $<30$pp. C: either ratio $<8$ or width $<45$pp. D: wider than that. These grades score internal numerical precision, not moral seriousness or historical importance.
+
+\section{Dataset summary}
+The dataset contains 81 conflicts. Confidence grades: A=30, B=31, C=14, D=6. Structural classes: combat-heavy=13, mixed=24, civilian-targeting=16, indirect=28.
+
+\subsection{All 81 conflicts, ordered by midpoint total deaths}\label{tab:all}
+This is the master table used by the main paper's empirical overview figures.
+\begin{scriptsize}
+\begin{longtable}{p{4.7cm} c r r r r p{2.8cm} c}
+\toprule
+Conflict & Period & Deaths & Civ.\ share & $q$ range & Indir./Civ. & Binding relation & Grade \\
+\midrule
+\endhead
+World War II - European/African/Atlanti\ldots{} & 1939--1945 & 42.00M & 56\%--66\% & 34\%--44\% & 66\% & demographic subsample & A \\
+Great Leap Forward famine (China) & 1958--1962 & 30.00M & 100\%--100\% & 0\%--0\% & 92\% & excess-mortality survey & B \\
+World War II - Pacific Theater / Asia-P\ldots{} & 1941--1945 & 25.00M & 67\%--83\% & 17\%--33\% & 63\% & demographic subsample & B \\
+Second Sino-Japanese War & 1937--1945 & 22.59M & 62\%--83\% & 17\%--38\% & 61\% & demographic subsample & B \\
+World War I & 1914--1918 & 18.50M & 31\%--47\% & 53\%--69\% & 100\% & excess-mortality survey & B \\
+The Holocaust (Shoah) and Nazi genocides & 1933--1945 & 14.10M & 81\%--84\% & 16\%--19\% & 51\% & demographic subsample & A \\
+Russian Civil War (including Red/White \ldots{} & 1917--1923 & 9.50M & 41\%--97\% & 3\%--59\% & 93\% & excess-mortality survey & D \\
+Soviet repression: Holodomor and Great \ldots{} & 1932--1939 & 8.44M & 100\%--100\% & 0\%--0\% & 94\% & excess-mortality survey & A \\
+Chinese Civil War (post-1945 phase) & 1945--1949 & 6.01M & 86\%--86\% & 14\%--14\% & 100\% & excess-mortality survey & A \\
+Second Congo War (Africa's World War) & 1998--2003 & 3.65M & 97\%--100\% & 0\%--3\% & 99\% & excess-mortality survey & D \\
+Korean War & 1950--1953 & 3.24M & 31\%--49\% & 51\%--69\% & 11\% & demographic subsample & B \\
+Vietnam War (Second Indochina War, incl\ldots{} & 1955--1975 & 2.78M & 23\%--51\% & 49\%--77\% & 0\% & demographic subsample & B \\
+Bengal Famine of 1943 (wartime British \ldots{} & 1943--1944 & 2.65M & 100\%--100\% & 0\%--0\% & 100\% & excess-mortality survey & B \\
+Bangladesh Liberation War / 1971 genocide & 1971--1971 & 2.18M & 89\%--100\% & 0\%--11\% & 26\% & identified-deaths sample & D \\
+Second Sudanese Civil War & 1983--2005 & 2.06M & 100\%--100\% & 0\%--0\% & 93\% & excess-mortality survey & A \\
+Khmer Rouge Cambodian Genocide & 1975--1979 & 2.03M & 98\%--99\% & 1\%--2\% & 55\% & identified-deaths sample & B \\
+Armenian Genocide and late Ottoman geno\ldots{} & 1914--1923 & 1.88M & 100\%--100\% & 0\%--0\% & 98\% & excess-mortality survey & B \\
+Nigerian Civil War (Biafra) and Biafran\ldots{} & 1967--1970 & 1.77M & 100\%--100\% & 0\%--0\% & 100\% & excess-mortality survey & C \\
+Ethiopian Civil War / Derg / 1983-85 fa\ldots{} & 1974--1991 & 1.35M & 81\%--85\% & 15\%--19\% & 70\% & demographic subsample & B \\
+First and Second Balkan Wars & 1912--1913 & 1.31M & 18\%--43\% & 57\%--82\% & 16\% & demographic subsample & B \\
+Mexican Revolution & 1910--1920 & 1.25M & 73\%--95\% & 5\%--27\% & 92\% & excess-mortality survey & C \\
+Soviet-Afghan War & 1979--1989 & 1.20M & 0\%--0\% & 100\%--100\% & 0\% & manpower budget & A \\
+Partition of India & 1947--1948 & 1.10M & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & D \\
+Greco-Turkish War and population exchange & 1919--1922 & 885.0k & 94\%--98\% & 2\%--6\% & 92\% & excess-mortality survey & C \\
+Rwandan Genocide and Rwandan Civil War & 1990--1994 & 829.5k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & B \\
+Mozambican Civil War & 1977--1992 & 800.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+Somali Civil War & 1991--2026 & 675.0k & 99\%--100\% & 0\%--1\% & 100\% & excess-mortality survey & B \\
+Angolan Civil War & 1975--2002 & 650.0k & 95\%--96\% & 4\%--5\% & 52\% & identified-deaths sample & A \\
+First Indochina War & 1946--1954 & 621.4k & 27\%--60\% & 40\%--73\% & 0\% & source harmonisation & C \\
+Syrian Civil War & 2011--2024 & 618.2k & 46\%--59\% & 41\%--54\% & 34\% & demographic subsample & A \\
+Second Italo-Ethiopian War & 1935--1937 & 609.0k & 49\%--84\% & 16\%--51\% & 88\% & excess-mortality survey & C \\
+Indonesian mass killings of 1965-66 & 1965--1966 & 600.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & C \\
+Cambodian-Vietnamese War & 1978--1989 & 588.1k & 83\%--94\% & 6\%--17\% & 60\% & identified-deaths sample & A \\
+Iran-Iraq War & 1980--1988 & 523.5k & 17\%--33\% & 67\%--83\% & 83\% & excess-mortality survey & B \\
+Algerian War of Independence & 1954--1962 & 510.0k & 63\%--75\% & 25\%--37\% & 72\% & excess-mortality survey & B \\
+Russian invasion of Ukraine (2022-) & 2022--2026 & 485.6k & 4\%--10\% & 90\%--96\% & 30\% & manpower budget & B \\
+Iraq War (2003-2011) and insurgency & 2003--2011 & 456.7k & 87\%--88\% & 12\%--13\% & 73\% & excess-mortality survey & C \\
+Spanish Civil War & 1936--1939 & 401.5k & 38\%--61\% & 39\%--62\% & 0\% & demographic subsample & B \\
+Yemeni Civil War (Saudi-led interventio\ldots{} & 2014--2026 & 377.0k & 78\%--85\% & 15\%--22\% & 0\% & demographic subsample & A \\
+South Sudanese Civil War & 2013--2020 & 376.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+Boko Haram insurgency / Lake Chad conflict & 2009--2026 & 365.0k & 94\%--94\% & 6\%--6\% & 92\% & excess-mortality survey & A \\
+War in Afghanistan (US-led, 2001-2021) & 2001--2021 & 356.2k & 19\%--29\% & 71\%--81\% & 0\% & manpower budget & B \\
+Tigray War & 2020--2022 & 351.0k & 100\%--100\% & 0\%--0\% & 88\% & excess-mortality survey & C \\
+Mexican Drug War & 2006--2026 & 345.0k & 2\%--3\% & 97\%--98\% & 0\% & manpower budget & B \\
+Darfur conflict / genocide & 2003--2020 & 235.0k & 100\%--100\% & 0\%--0\% & 71\% & excess-mortality survey & A \\
+Sudan war (RSF vs SAF, 2023-) & 2023--2026 & 229.5k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & C \\
+Philippine-American War & 1899--1902 & 211.0k & 86\%--92\% & 8\%--14\% & 82\% & excess-mortality survey & A \\
+Gulf War (1990-91) & 1990--1991 & 208.0k & 41\%--90\% & 10\%--59\% & 93\% & excess-mortality survey & D \\
+Guatemalan Civil War (incl. Maya genocide) & 1960--1996 & 195.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+Congo Crisis & 1960--1965 & 182.5k & 59\%--60\% & 40\%--41\% & 0\% & demographic subsample & B \\
+First Congo War & 1996--1997 & 173.1k & 100\%--100\% & 0\%--0\% & 2\% & identified-deaths sample & C \\
+Russo-Japanese War & 1904--1905 & 167.1k & 19\%--24\% & 76\%--81\% & 0\% & manpower budget & A \\
+Indonesian National Revolution & 1945--1949 & 163.8k & 19\%--72\% & 28\%--81\% & 0\% & source harmonisation & D \\
+Israel-Hamas / Gaza war (and Hezbollah/\ldots{} & 2023--2026 & 161.3k & 93\%--99\% & 1\%--7\% & 49\% & identified-deaths sample & B \\
+War against ISIS in Iraq and Syria (inc\ldots{} & 2014--2019 & 155.0k & 16\%--47\% & 53\%--84\% & 4\% & source harmonisation & C \\
+Indonesian occupation of East Timor & 1975--1999 & 150.3k & 96\%--98\% & 2\%--4\% & 87\% & excess-mortality survey & B \\
+North Yemen Civil War & 1962--1970 & 150.0k & 0\%--0\% & 100\%--100\% & 0\% & manpower budget & B \\
+Boxer Rebellion & 1899--1901 & 125.0k & 63\%--92\% & 8\%--37\% & 0\% & demographic subsample & B \\
+Yugoslav Wars - Bosnia/Croatia (incl. S\ldots{} & 1991--1995 & 122.5k & 0\%--1\% & 99\%--100\% & 100\% & excess-mortality survey & A \\
+Lebanese Civil War & 1975--1990 & 114.8k & 88\%--97\% & 3\%--12\% & 0\% & identified-deaths sample & B \\
+Salvadoran Civil War & 1979--1992 & 100.5k & 61\%--77\% & 23\%--39\% & 0\% & demographic subsample & B \\
+Myanmar civil war (post-2021 coup) & 2021--2026 & 93.0k & 71\%--71\% & 29\%--29\% & 18\% & demographic subsample & A \\
+Chaco War & 1932--1935 & 92.5k & 1\%--4\% & 96\%--99\% & 100\% & excess-mortality survey & A \\
+Sri Lankan Civil War & 1983--2009 & 90.0k & 42\%--48\% & 52\%--58\% & 0\% & demographic subsample & A \\
+Rif War & 1921--1927 & 85.1k & 11\%--31\% & 69\%--89\% & 100\% & excess-mortality survey & B \\
+Herero and Namaqua Genocide & 1904--1908 & 71.6k & 97\%--99\% & 1\%--3\% & 100\% & excess-mortality survey & A \\
+First Chechen War & 1994--1996 & 56.2k & 56\%--86\% & 14\%--44\% & 0\% & source harmonisation & C \\
+Second Chechen War & 1999--2009 & 56.2k & 48\%--82\% & 18\%--52\% & 11\% & source harmonisation & C \\
+Nagorno-Karabakh wars (1988-94, 2020, 2\ldots{} & 1988--2023 & 39.0k & 4\%--7\% & 93\%--96\% & 16\% & manpower budget & A \\
+Mau Mau Uprising & 1952--1960 & 37.5k & 45\%--83\% & 17\%--55\% & 91\% & excess-mortality survey & C \\
+Libyan Civil Wars (2011 and 2014-2020) & 2011--2020 & 31.5k & 7\%--12\% & 88\%--93\% & 7\% & manpower budget & A \\
+1948 Arab-Israeli War / Nakba & 1947--1949 & 24.2k & 42\%--62\% & 38\%--58\% & 0\% & demographic subsample & B \\
+Rohingya genocide / Myanmar military op\ldots{} & 2016--2026 & 22.4k & 96\%--99\% & 1\%--4\% & 21\% & identified-deaths sample & B \\
+Yom Kippur War & 1973--1973 & 16.0k & 0\%--2\% & 98\%--100\% & 0\% & manpower budget & B \\
+Six-Day War & 1967--1967 & 15.8k & 0\%--0\% & 100\%--100\% & 0\% & manpower budget & A \\
+War in Donbas (2014-2022) & 2014--2022 & 14.3k & 6\%--7\% & 93\%--94\% & 53\% & manpower budget & A \\
+Kosovo War & 1998--1999 & 13.0k & 71\%--75\% & 25\%--29\% & 0\% & demographic subsample & A \\
+Malayan Emergency & 1948--1960 & 11.4k & 22\%--28\% & 72\%--78\% & 0\% & manpower budget & A \\
+Second Intifada & 2000--2005 & 5.0k & 53\%--75\% & 25\%--47\% & 3\% & demographic subsample & B \\
+Irish War of Independence and Civil War & 1919--1923 & 4.2k & 19\%--27\% & 73\%--81\% & 0\% & manpower budget & A \\
+First Intifada & 1987--1993 & 2.2k & 97\%--97\% & 3\%--3\% & 0\% & identified-deaths sample & A \\
+\bottomrule
+\end{longtable}
+\end{scriptsize}
+
+\subsection{Largest civilian-share uncertainty widths}\label{tab:uncertain}
+These are the conflicts where additional demographic samples or source harmonisation would most improve inference.
+\begin{scriptsize}
+\begin{longtable}{p{4.7cm} c r r r r p{2.8cm} c}
+\toprule
+Conflict & Period & Deaths & Civ.\ share & $q$ range & Indir./Civ. & Binding relation & Grade \\
+\midrule
+\endhead
+Russian Civil War (including Red/White \ldots{} & 1917--1923 & 9.50M & 41\%--97\% & 3\%--59\% & 93\% & excess-mortality survey & D \\
+Indonesian National Revolution & 1945--1949 & 163.8k & 19\%--72\% & 28\%--81\% & 0\% & source harmonisation & D \\
+Gulf War (1990-91) & 1990--1991 & 208.0k & 41\%--90\% & 10\%--59\% & 93\% & excess-mortality survey & D \\
+Mau Mau Uprising & 1952--1960 & 37.5k & 45\%--83\% & 17\%--55\% & 91\% & excess-mortality survey & C \\
+Second Italo-Ethiopian War & 1935--1937 & 609.0k & 49\%--84\% & 16\%--51\% & 88\% & excess-mortality survey & C \\
+Second Chechen War & 1999--2009 & 56.2k & 48\%--82\% & 18\%--52\% & 11\% & source harmonisation & C \\
+First Indochina War & 1946--1954 & 621.4k & 27\%--60\% & 40\%--73\% & 0\% & source harmonisation & C \\
+War against ISIS in Iraq and Syria (inc\ldots{} & 2014--2019 & 155.0k & 16\%--47\% & 53\%--84\% & 4\% & source harmonisation & C \\
+First Chechen War & 1994--1996 & 56.2k & 56\%--86\% & 14\%--44\% & 0\% & source harmonisation & C \\
+Boxer Rebellion & 1899--1901 & 125.0k & 63\%--92\% & 8\%--37\% & 0\% & demographic subsample & B \\
+Vietnam War (Second Indochina War, incl\ldots{} & 1955--1975 & 2.78M & 23\%--51\% & 49\%--77\% & 0\% & demographic subsample & B \\
+First and Second Balkan Wars & 1912--1913 & 1.31M & 18\%--43\% & 57\%--82\% & 16\% & demographic subsample & B \\
+Spanish Civil War & 1936--1939 & 401.5k & 38\%--61\% & 39\%--62\% & 0\% & demographic subsample & B \\
+Mexican Revolution & 1910--1920 & 1.25M & 73\%--95\% & 5\%--27\% & 92\% & excess-mortality survey & C \\
+Second Intifada & 2000--2005 & 5.0k & 53\%--75\% & 25\%--47\% & 3\% & demographic subsample & B \\
+\bottomrule
+\end{longtable}
+\end{scriptsize}
+
+\subsection{Indirect-deaths dominated conflicts}\label{tab:indirect}
+Here direct body counts alone are structurally misleading; excess-mortality methods are the binding relation.
+\begin{scriptsize}
+\begin{longtable}{p{4.7cm} c r r r r p{2.8cm} c}
+\toprule
+Conflict & Period & Deaths & Civ.\ share & $q$ range & Indir./Civ. & Binding relation & Grade \\
+\midrule
+\endhead
+Bengal Famine of 1943 (wartime British \ldots{} & 1943--1944 & 2.65M & 100\%--100\% & 0\%--0\% & 100\% & excess-mortality survey & B \\
+Yugoslav Wars - Bosnia/Croatia (incl. S\ldots{} & 1991--1995 & 122.5k & 0\%--1\% & 99\%--100\% & 100\% & excess-mortality survey & A \\
+Chaco War & 1932--1935 & 92.5k & 1\%--4\% & 96\%--99\% & 100\% & excess-mortality survey & A \\
+Rif War & 1921--1927 & 85.1k & 11\%--31\% & 69\%--89\% & 100\% & excess-mortality survey & B \\
+Nigerian Civil War (Biafra) and Biafran\ldots{} & 1967--1970 & 1.77M & 100\%--100\% & 0\%--0\% & 100\% & excess-mortality survey & C \\
+World War I & 1914--1918 & 18.50M & 31\%--47\% & 53\%--69\% & 100\% & excess-mortality survey & B \\
+Herero and Namaqua Genocide & 1904--1908 & 71.6k & 97\%--99\% & 1\%--3\% & 100\% & excess-mortality survey & A \\
+Somali Civil War & 1991--2026 & 675.0k & 99\%--100\% & 0\%--1\% & 100\% & excess-mortality survey & B \\
+Chinese Civil War (post-1945 phase) & 1945--1949 & 6.01M & 86\%--86\% & 14\%--14\% & 100\% & excess-mortality survey & A \\
+Second Congo War (Africa's World War) & 1998--2003 & 3.65M & 97\%--100\% & 0\%--3\% & 99\% & excess-mortality survey & D \\
+Armenian Genocide and late Ottoman geno\ldots{} & 1914--1923 & 1.88M & 100\%--100\% & 0\%--0\% & 98\% & excess-mortality survey & B \\
+Soviet repression: Holodomor and Great \ldots{} & 1932--1939 & 8.44M & 100\%--100\% & 0\%--0\% & 94\% & excess-mortality survey & A \\
+Russian Civil War (including Red/White \ldots{} & 1917--1923 & 9.50M & 41\%--97\% & 3\%--59\% & 93\% & excess-mortality survey & D \\
+Gulf War (1990-91) & 1990--1991 & 208.0k & 41\%--90\% & 10\%--59\% & 93\% & excess-mortality survey & D \\
+Second Sudanese Civil War & 1983--2005 & 2.06M & 100\%--100\% & 0\%--0\% & 93\% & excess-mortality survey & A \\
+\bottomrule
+\end{longtable}
+\end{scriptsize}
+
+\subsection{Recent conflicts since 1975 with at least 1,000 deaths}\label{tab:recent}
+This table is the supplement counterpart to the recent-war filtered plots.
+\begin{scriptsize}
+\begin{longtable}{p{4.7cm} c r r r r p{2.8cm} c}
+\toprule
+Conflict & Period & Deaths & Civ.\ share & $q$ range & Indir./Civ. & Binding relation & Grade \\
+\midrule
+\endhead
+Second Congo War (Africa's World War) & 1998--2003 & 3.65M & 97\%--100\% & 0\%--3\% & 99\% & excess-mortality survey & D \\
+Vietnam War (Second Indochina War, incl\ldots{} & 1955--1975 & 2.78M & 23\%--51\% & 49\%--77\% & 0\% & demographic subsample & B \\
+Second Sudanese Civil War & 1983--2005 & 2.06M & 100\%--100\% & 0\%--0\% & 93\% & excess-mortality survey & A \\
+Khmer Rouge Cambodian Genocide & 1975--1979 & 2.03M & 98\%--99\% & 1\%--2\% & 55\% & identified-deaths sample & B \\
+Ethiopian Civil War / Derg / 1983-85 fa\ldots{} & 1974--1991 & 1.35M & 81\%--85\% & 15\%--19\% & 70\% & demographic subsample & B \\
+Soviet-Afghan War & 1979--1989 & 1.20M & 0\%--0\% & 100\%--100\% & 0\% & manpower budget & A \\
+Rwandan Genocide and Rwandan Civil War & 1990--1994 & 829.5k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & B \\
+Mozambican Civil War & 1977--1992 & 800.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+Somali Civil War & 1991--2026 & 675.0k & 99\%--100\% & 0\%--1\% & 100\% & excess-mortality survey & B \\
+Angolan Civil War & 1975--2002 & 650.0k & 95\%--96\% & 4\%--5\% & 52\% & identified-deaths sample & A \\
+Syrian Civil War & 2011--2024 & 618.2k & 46\%--59\% & 41\%--54\% & 34\% & demographic subsample & A \\
+Cambodian-Vietnamese War & 1978--1989 & 588.1k & 83\%--94\% & 6\%--17\% & 60\% & identified-deaths sample & A \\
+Iran-Iraq War & 1980--1988 & 523.5k & 17\%--33\% & 67\%--83\% & 83\% & excess-mortality survey & B \\
+Russian invasion of Ukraine (2022-) & 2022--2026 & 485.6k & 4\%--10\% & 90\%--96\% & 30\% & manpower budget & B \\
+Iraq War (2003-2011) and insurgency & 2003--2011 & 456.7k & 87\%--88\% & 12\%--13\% & 73\% & excess-mortality survey & C \\
+Yemeni Civil War (Saudi-led interventio\ldots{} & 2014--2026 & 377.0k & 78\%--85\% & 15\%--22\% & 0\% & demographic subsample & A \\
+South Sudanese Civil War & 2013--2020 & 376.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+Boko Haram insurgency / Lake Chad conflict & 2009--2026 & 365.0k & 94\%--94\% & 6\%--6\% & 92\% & excess-mortality survey & A \\
+War in Afghanistan (US-led, 2001-2021) & 2001--2021 & 356.2k & 19\%--29\% & 71\%--81\% & 0\% & manpower budget & B \\
+Tigray War & 2020--2022 & 351.0k & 100\%--100\% & 0\%--0\% & 88\% & excess-mortality survey & C \\
+Mexican Drug War & 2006--2026 & 345.0k & 2\%--3\% & 97\%--98\% & 0\% & manpower budget & B \\
+Darfur conflict / genocide & 2003--2020 & 235.0k & 100\%--100\% & 0\%--0\% & 71\% & excess-mortality survey & A \\
+Sudan war (RSF vs SAF, 2023-) & 2023--2026 & 229.5k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & C \\
+Gulf War (1990-91) & 1990--1991 & 208.0k & 41\%--90\% & 10\%--59\% & 93\% & excess-mortality survey & D \\
+Guatemalan Civil War (incl. Maya genocide) & 1960--1996 & 195.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
+First Congo War & 1996--1997 & 173.1k & 100\%--100\% & 0\%--0\% & 2\% & identified-deaths sample & C \\
+Israel-Hamas / Gaza war (and Hezbollah/\ldots{} & 2023--2026 & 161.3k & 93\%--99\% & 1\%--7\% & 49\% & identified-deaths sample & B \\
+War against ISIS in Iraq and Syria (inc\ldots{} & 2014--2019 & 155.0k & 16\%--47\% & 53\%--84\% & 4\% & source harmonisation & C \\
+Indonesian occupation of East Timor & 1975--1999 & 150.3k & 96\%--98\% & 2\%--4\% & 87\% & excess-mortality survey & B \\
+Yugoslav Wars - Bosnia/Croatia (incl. S\ldots{} & 1991--1995 & 122.5k & 0\%--1\% & 99\%--100\% & 100\% & excess-mortality survey & A \\
+\bottomrule
+\end{longtable}
+\end{scriptsize}
+
+\section{Per-conflict framework notes}
+The notes below do not re-litigate every source. They state which relation would likely bind a rigorous contradiction-radius analysis and what kind of additional data would most reduce the identified set.
+\paragraph{World War II - European/African/Atlantic Theater}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 56\%--66\%; combatant-share range 34\%--44\%; indirect/civilian share 66\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Great Leap Forward famine (China)}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 92\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{World War II - Pacific Theater / Asia-Pacific War}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 67\%--83\%; combatant-share range 17\%--33\%; indirect/civilian share 63\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Second Sino-Japanese War}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 62\%--83\%; combatant-share range 17\%--38\%; indirect/civilian share 61\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{World War I}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 31\%--47\%; combatant-share range 53\%--69\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{The Holocaust (Shoah) and Nazi genocides}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 81\%--84\%; combatant-share range 16\%--19\%; indirect/civilian share 51\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Russian Civil War (including Red/White Terror, famines, and anti-Jewish pogroms)}
+Class: \textbf{indirect}; confidence grade: \textbf{D}; civilian-share range 41\%--97\%; combatant-share range 3\%--59\%; indirect/civilian share 93\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Soviet repression: Holodomor and Great Purge}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 94\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Chinese Civil War (post-1945 phase)}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 86\%--86\%; combatant-share range 14\%--14\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Second Congo War (Africa's World War)}
+Class: \textbf{indirect}; confidence grade: \textbf{D}; civilian-share range 97\%--100\%; combatant-share range 0\%--3\%; indirect/civilian share 99\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Korean War}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 31\%--49\%; combatant-share range 51\%--69\%; indirect/civilian share 11\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Vietnam War (Second Indochina War, incl. Cambodia/Laos bombing)}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 23\%--51\%; combatant-share range 49\%--77\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Bengal Famine of 1943 (wartime British policies)}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Bangladesh Liberation War / 1971 genocide}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{D}; civilian-share range 89\%--100\%; combatant-share range 0\%--11\%; indirect/civilian share 26\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Second Sudanese Civil War}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 93\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Khmer Rouge Cambodian Genocide}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 98\%--99\%; combatant-share range 1\%--2\%; indirect/civilian share 55\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Armenian Genocide and late Ottoman genocides of Armenians, Assyrians, and Greeks}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 98\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Nigerian Civil War (Biafra) and Biafran famine}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Ethiopian Civil War / Derg / 1983-85 famine}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 81\%--85\%; combatant-share range 15\%--19\%; indirect/civilian share 70\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{First and Second Balkan Wars}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 18\%--43\%; combatant-share range 57\%--82\%; indirect/civilian share 16\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Mexican Revolution}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 73\%--95\%; combatant-share range 5\%--27\%; indirect/civilian share 92\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Soviet-Afghan War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 0\%--0\%; combatant-share range 100\%--100\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Partition of India}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{D}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Greco-Turkish War and population exchange}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 94\%--98\%; combatant-share range 2\%--6\%; indirect/civilian share 92\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Rwandan Genocide and Rwandan Civil War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Mozambican Civil War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Somali Civil War}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 99\%--100\%; combatant-share range 0\%--1\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Angolan Civil War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 95\%--96\%; combatant-share range 4\%--5\%; indirect/civilian share 52\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{First Indochina War}
+Class: \textbf{mixed}; confidence grade: \textbf{C}; civilian-share range 27\%--60\%; combatant-share range 40\%--73\%; indirect/civilian share 0\%. The binding relation is \emph{source harmonisation}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Syrian Civil War}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 46\%--59\%; combatant-share range 41\%--54\%; indirect/civilian share 34\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Second Italo-Ethiopian War}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 49\%--84\%; combatant-share range 16\%--51\%; indirect/civilian share 88\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Indonesian mass killings of 1965-66}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{C}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Cambodian-Vietnamese War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 83\%--94\%; combatant-share range 6\%--17\%; indirect/civilian share 60\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Iran-Iraq War}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 17\%--33\%; combatant-share range 67\%--83\%; indirect/civilian share 83\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Algerian War of Independence}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 63\%--75\%; combatant-share range 25\%--37\%; indirect/civilian share 72\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Russian invasion of Ukraine (2022-)}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{B}; civilian-share range 4\%--10\%; combatant-share range 90\%--96\%; indirect/civilian share 30\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Iraq War (2003-2011) and insurgency}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 87\%--88\%; combatant-share range 12\%--13\%; indirect/civilian share 73\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Spanish Civil War}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 38\%--61\%; combatant-share range 39\%--62\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Yemeni Civil War (Saudi-led intervention, blockade, famine)}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 78\%--85\%; combatant-share range 15\%--22\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{South Sudanese Civil War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Boko Haram insurgency / Lake Chad conflict}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 94\%--94\%; combatant-share range 6\%--6\%; indirect/civilian share 92\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{War in Afghanistan (US-led, 2001-2021)}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{B}; civilian-share range 19\%--29\%; combatant-share range 71\%--81\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Tigray War}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 88\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Mexican Drug War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{B}; civilian-share range 2\%--3\%; combatant-share range 97\%--98\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Darfur conflict / genocide}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 71\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Sudan war (RSF vs SAF, 2023-)}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{C}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Philippine-American War}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 86\%--92\%; combatant-share range 8\%--14\%; indirect/civilian share 82\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Gulf War (1990-91)}
+Class: \textbf{indirect}; confidence grade: \textbf{D}; civilian-share range 41\%--90\%; combatant-share range 10\%--59\%; indirect/civilian share 93\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Guatemalan Civil War (incl. Maya genocide)}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Congo Crisis}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 59\%--60\%; combatant-share range 40\%--41\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{First Congo War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{C}; civilian-share range 100\%--100\%; combatant-share range 0\%--0\%; indirect/civilian share 2\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Russo-Japanese War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 19\%--24\%; combatant-share range 76\%--81\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Indonesian National Revolution}
+Class: \textbf{mixed}; confidence grade: \textbf{D}; civilian-share range 19\%--72\%; combatant-share range 28\%--81\%; indirect/civilian share 0\%. The binding relation is \emph{source harmonisation}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 93\%--99\%; combatant-share range 1\%--7\%; indirect/civilian share 49\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{War against ISIS in Iraq and Syria (incl. Yazidi genocide)}
+Class: \textbf{mixed}; confidence grade: \textbf{C}; civilian-share range 16\%--47\%; combatant-share range 53\%--84\%; indirect/civilian share 4\%. The binding relation is \emph{source harmonisation}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Indonesian occupation of East Timor}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 96\%--98\%; combatant-share range 2\%--4\%; indirect/civilian share 87\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{North Yemen Civil War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{B}; civilian-share range 0\%--0\%; combatant-share range 100\%--100\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Boxer Rebellion}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 63\%--92\%; combatant-share range 8\%--37\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Yugoslav Wars - Bosnia/Croatia (incl. Srebrenica)}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 0\%--1\%; combatant-share range 99\%--100\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Lebanese Civil War}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 88\%--97\%; combatant-share range 3\%--12\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Salvadoran Civil War}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 61\%--77\%; combatant-share range 23\%--39\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Myanmar civil war (post-2021 coup)}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 71\%--71\%; combatant-share range 29\%--29\%; indirect/civilian share 18\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Chaco War}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 1\%--4\%; combatant-share range 96\%--99\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Sri Lankan Civil War}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 42\%--48\%; combatant-share range 52\%--58\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Rif War}
+Class: \textbf{indirect}; confidence grade: \textbf{B}; civilian-share range 11\%--31\%; combatant-share range 69\%--89\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Herero and Namaqua Genocide}
+Class: \textbf{indirect}; confidence grade: \textbf{A}; civilian-share range 97\%--99\%; combatant-share range 1\%--3\%; indirect/civilian share 100\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{First Chechen War}
+Class: \textbf{mixed}; confidence grade: \textbf{C}; civilian-share range 56\%--86\%; combatant-share range 14\%--44\%; indirect/civilian share 0\%. The binding relation is \emph{source harmonisation}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Second Chechen War}
+Class: \textbf{mixed}; confidence grade: \textbf{C}; civilian-share range 48\%--82\%; combatant-share range 18\%--52\%; indirect/civilian share 11\%. The binding relation is \emph{source harmonisation}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Nagorno-Karabakh wars (1988-94, 2020, 2023)}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 4\%--7\%; combatant-share range 93\%--96\%; indirect/civilian share 16\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Mau Mau Uprising}
+Class: \textbf{indirect}; confidence grade: \textbf{C}; civilian-share range 45\%--83\%; combatant-share range 17\%--55\%; indirect/civilian share 91\%. The binding relation is \emph{excess-mortality survey}. 
+The next useful check is a survey or capture--recapture excess-mortality estimate, because the main uncertainty is not combatant classification but indirect attribution.
+
+\paragraph{Libyan Civil Wars (2011 and 2014-2020)}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 7\%--12\%; combatant-share range 88\%--93\%; indirect/civilian share 7\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{1948 Arab-Israeli War / Nakba}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 42\%--62\%; combatant-share range 38\%--58\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Rohingya genocide / Myanmar military operations}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 96\%--99\%; combatant-share range 1\%--4\%; indirect/civilian share 21\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\paragraph{Yom Kippur War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{B}; civilian-share range 0\%--2\%; combatant-share range 98\%--100\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Six-Day War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 0\%--0\%; combatant-share range 100\%--100\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{War in Donbas (2014-2022)}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 6\%--7\%; combatant-share range 93\%--94\%; indirect/civilian share 53\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Kosovo War}
+Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 71\%--75\%; combatant-share range 25\%--29\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Malayan Emergency}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 22\%--28\%; combatant-share range 72\%--78\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{Second Intifada}
+Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 53\%--75\%; combatant-share range 25\%--47\%; indirect/civilian share 3\%. The binding relation is \emph{demographic subsample}. 
+The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Irish War of Independence and Civil War}
+Class: \textbf{combat-heavy}; confidence grade: \textbf{A}; civilian-share range 19\%--27\%; combatant-share range 73\%--81\%; indirect/civilian share 0\%. The binding relation is \emph{manpower budget}. 
+The next useful check is an independently sourced combatant-stock upper bound, because demographic samples of the dead add relatively little when most casualties are already military-classified.
+
+\paragraph{First Intifada}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 97\%--97\%; combatant-share range 3\%--3\%; indirect/civilian share 0\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
+
+\section{Reproducibility}
+All tables are generated directly from the JSON files in the project results directory. Run \texttt{python paper/build\_supplement.py} from the research folder to reproduce this PDF. The code intentionally excludes backup directories whose names contain a period.
+\end{document}

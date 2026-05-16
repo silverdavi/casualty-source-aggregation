@@ -1,0 +1,329 @@
+{
+  "war_id": "second_intifada",
+  "name": "Second Intifada",
+  "start_year": 2000,
+  "end_year": 2005,
+  "ongoing": false,
+  "regions": [
+    "Israel",
+    "West Bank",
+    "Gaza Strip",
+    "East Jerusalem"
+  ],
+  "summary": "The Second Intifada was the 2000-2005 Palestinian uprising and Israeli-Palestinian armed confrontation in Israel and the occupied Palestinian territories. It combined Palestinian mass protest, suicide bombings, shootings and rocket attacks with Israeli military incursions, targeted killings, closures, curfews, and the construction of the separation barrier. Direct-death estimates cluster around roughly 1,000 Israelis and 3,000-5,000 Palestinians, with civilian/combatant classification highly contested.",
+  "sides": [
+    {
+      "name": "Israel",
+      "members": [
+        "Israel Defense Forces",
+        "Israel Police",
+        "Israel Border Police",
+        "Shin Bet",
+        "Israeli civilians/settlers involved in lethal incidents"
+      ],
+      "military_killed": {
+        "low": 309,
+        "high": 310,
+        "point": 309,
+        "notes": "Israeli security-force personnel killed by Palestinians through end-2005. B'Tselem's end-2005 summary gives 309 security-force personnel out of 992 Israelis killed; another B'Tselem-cited summary gives 310 military deaths through 31 December 2005.",
+        "sources": [
+          "https://www.btselem.org/press_releases/20060104",
+          "https://es.wikipedia.org/wiki/Segunda_Intifada"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1265,
+        "high": 2412,
+        "point": 1849,
+        "breakdown": [
+          {
+            "cause": "shooting|shelling|airstrike|incursion|targeted_killing|crowd_control_fire",
+            "victims_group": "Palestinian civilians killed by Israeli security forces",
+            "low": 1231,
+            "high": 2378,
+            "notes": "Low derived from ICT-style classification: 44% noncombatants among 2,773 Palestinians killed by Israelis through 1 January 2005. Point uses B'Tselem's 1,815 Palestinians not participating in fighting at time of death through end-2005. High treats B'Tselem's 563 unknown-status cases as potentially civilian.",
+            "sources": [
+              "https://www.btselem.org/press_releases/20060104",
+              "https://en.wikipedia.org/wiki/Second_Intifada"
+            ]
+          },
+          {
+            "cause": "settler_or_civilian_shooting_and_other_lethal_attacks",
+            "victims_group": "Palestinians killed by Israeli civilians/settlers",
+            "low": 34,
+            "high": 34,
+            "notes": "Common end-2005 B'Tselem-based tally gives 34 Palestinians killed by Israeli civilians/settlers during the period.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Timeline_of_the_Israeli%E2%80%93Palestinian_conflict_in_2005",
+              "https://www.scottishpsc.org.uk/mass-killings/btselem-statistics-fatalities-2992000-26122008"
+            ]
+          },
+          {
+            "cause": "police_fire_during_demonstrations",
+            "victims_group": "Palestinian/Arab demonstrators inside Israel during October 2000 events",
+            "low": 13,
+            "high": 13,
+            "notes": "Included within the broader Palestinian civilian direct-death category where datasets count deaths inside Israel. Twelve were citizens of Israel and one was a Gaza resident.",
+            "sources": [
+              "https://www.adalah.org/en/content/view/10127",
+              "https://en.idi.org.il/publications/7584"
+            ]
+          }
+        ],
+        "notes": "Civilian totals are contested because B'Tselem classifies by participation at time of death while ICT-style sources classify more deaths as combatants based on affiliation or other criteria.",
+        "sources": [
+          "https://www.btselem.org/press_releases/20060104",
+          "https://en.wikipedia.org/wiki/Second_Intifada",
+          "https://www.adalah.org/en/content/view/10127"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "medical_access_restrictions",
+          "victims_group": "Palestinian civilians delayed at checkpoints or denied timely medical access",
+          "low": 40,
+          "high": 131,
+          "point": null,
+          "notes": "UN human-rights material cited 35 newborns and 5 women who died at checkpoints in childbirth-related cases. A Palestinian National Information Center/IMEMC report claimed 131 checkpoint-delay deaths, including children, elderly people, and pregnant women. These are documented indirect-death estimates and may overlap with some broader Palestinian totals.",
+          "sources": [
+            "https://www.un.org/unispal/document/auto-insert-189429/",
+            "https://imemc.org/article/11423/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Palestinian armed groups and Palestinian Authority-linked armed actors",
+      "members": [
+        "Fatah/Tanzim",
+        "Al-Aqsa Martyrs' Brigades",
+        "Hamas/Izz ad-Din al-Qassam Brigades",
+        "Palestinian Islamic Jihad",
+        "Popular Front for the Liberation of Palestine",
+        "Palestinian Authority security personnel involved in hostilities",
+        "Unaffiliated Palestinian attackers"
+      ],
+      "military_killed": {
+        "low": 1008,
+        "high": 1571,
+        "point": null,
+        "notes": "Low is B'Tselem's count of Palestinians killed while participating in fighting through end-2005. High adds B'Tselem's 563 unknown-status cases. ICT's shorter-period estimate of about 1,542 combatants among 2,773 Palestinians killed by Israelis through 1 January 2005 supports the upper end.",
+        "sources": [
+          "https://www.btselem.org/press_releases/20060104",
+          "https://en.wikipedia.org/wiki/Second_Intifada"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 818,
+        "high": 1338,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "suicide_bombing|shooting|roadside_bomb|rocket|stabbing|lynching",
+            "victims_group": "Israeli civilians",
+            "low": 683,
+            "high": 887,
+            "notes": "B'Tselem's end-2005 summary gives 683 Israeli civilians killed by Palestinians since 29 September 2000. ICT-style figures give 887 civilians among 1,137 Israelis killed in attacks from September 2000-2005.",
+            "sources": [
+              "https://www.btselem.org/press_releases/20060104",
+              "https://everything.explained.today/Civilian_casualties_in_the_Second_Intifada/"
+            ]
+          },
+          {
+            "cause": "bombing|shooting|other_attacks",
+            "victims_group": "Foreign civilians/nationals",
+            "low": 15,
+            "high": 45,
+            "notes": "MIFTAH reported 15 foreign citizens killed by Palestinians in the West Bank and Gaza for most of the 2000-2005 period; common Second Intifada summaries report 45 foreign nationals/citizens killed by Palestinians overall.",
+            "sources": [
+              "https://www.miftah.org/PrinterF.cfm?DocId=8590",
+              "https://en.wikipedia.org/wiki/Second_Intifada"
+            ]
+          },
+          {
+            "cause": "suspected_collaborator_execution|intra_palestinian_violence|armed_group_violence",
+            "victims_group": "Palestinian civilians or alleged collaborators killed by Palestinians",
+            "low": 120,
+            "high": 406,
+            "notes": "B'Tselem-cited material gives 120 Palestinians killed by Palestinians for suspected collaboration with Israel through April 2008. Common Second Intifada casualty summaries give 152-406 Palestinians killed by Palestinians in the 2000-2005 period.",
+            "sources": [
+              "https://campus.zoa.org/wp-content/uploads/sites/2/2015/08/FACT-SHEET-The-Second-Intifada1.pdf",
+              "https://en.wikipedia.org/wiki/Second_Intifada"
+            ]
+          }
+        ],
+        "notes": "The Israeli civilian component is the best documented. Palestinian-on-Palestinian deaths are much less cleanly classified and include suspected collaborator killings, factional violence, and other internal violence.",
+        "sources": [
+          "https://www.btselem.org/press_releases/20060104",
+          "https://everything.explained.today/Civilian_casualties_in_the_Second_Intifada/",
+          "https://www.miftah.org/PrinterF.cfm?DocId=8590"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 1317,
+    "military_high": 1881,
+    "civilian_low": 2123,
+    "civilian_high": 3881,
+    "grand_low": 4400,
+    "grand_high": 5500,
+    "notes": "Military_low/high sum Israeli security-force deaths and Palestinian combatant/militant estimates. Civilian_low/high sum direct civilian-death buckets plus the documented 40-131 checkpoint/medical-access indirect-death range. Grand_low/high is not a strict sum of category minima/maxima because some sources leave status unknown and because broader total-death sources include deaths not cleanly assigned in the sub-buckets. The core B'Tselem end-2005 direct total is 3,386 Palestinians plus 992 Israelis, or 4,378, before consistently adding foreign nationals, Palestinian-on-Palestinian deaths, and indirect deaths; broader summaries support an upper bound around 5,500."
+  },
+  "key_atrocities": [
+    {
+      "name": "Passover / Park Hotel massacre",
+      "year": 2002,
+      "perpetrator": "Palestinian armed groups - Hamas",
+      "victims_group": "Israeli civilians",
+      "low": 30,
+      "high": 30,
+      "notes": "Suicide bombing at a Passover seder in Netanya on 27 March 2002; about 140-160 wounded.",
+      "sources": [
+        "https://www.adl.org/resources/backgrounder/second-intifada-2000",
+        "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/2000-2005.aspx"
+      ]
+    },
+    {
+      "name": "Dolphinarium discotheque bombing",
+      "year": 2001,
+      "perpetrator": "Palestinian armed groups - Hamas-affiliated bomber",
+      "victims_group": "Israeli civilians, mostly teenagers",
+      "low": 21,
+      "high": 21,
+      "notes": "Suicide bombing outside the Dolphinarium discotheque in Tel Aviv on 1 June 2001; 16 of the dead were teenagers.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dolphinarium_discotheque_bombing"
+      ]
+    },
+    {
+      "name": "Sbarro restaurant bombing",
+      "year": 2001,
+      "perpetrator": "Palestinian armed groups - Hamas-linked perpetrators",
+      "victims_group": "Israeli civilians",
+      "low": 15,
+      "high": 15,
+      "notes": "Suicide bombing at a Jerusalem pizzeria on 9 August 2001; about 130 wounded.",
+      "sources": [
+        "https://en.wikipedia-on-ipfs.org/wiki/Sbarro_restaurant_suicide_bombing",
+        "https://www.jpost.com/israel-news/on-this-day-suicide-bombing-kills-15-at-sbarro-pizzeria-676228"
+      ]
+    },
+    {
+      "name": "Battle of Jenin / Jenin refugee camp operation",
+      "year": 2002,
+      "perpetrator": "Israel Defense Forces and Palestinian armed fighters in battle",
+      "victims_group": "Palestinian civilians and fighters; Israeli soldiers",
+      "low": 75,
+      "high": 75,
+      "notes": "Human Rights Watch identified 52 Palestinians killed, including 22 civilians, during the IDF operation; UN/press summaries reported 23 Israeli soldiers killed in Jenin. HRW and Amnesty alleged war crimes, while investigations did not support early claims of hundreds killed.",
+      "sources": [
+        "https://www.hrw.org/news/2002/05/02/israel/occupied-territories-jenin-war-crimes-investigation-needed",
+        "https://www.theguardian.com/world/2002/aug/01/israel",
+        "https://www.hrw.org/reports/israel0502.pdf"
+      ]
+    },
+    {
+      "name": "October 2000 killings inside Israel",
+      "year": 2000,
+      "perpetrator": "Israel Police",
+      "victims_group": "Palestinian/Arab demonstrators inside Israel",
+      "low": 13,
+      "high": 13,
+      "notes": "Between 1 and 8 October 2000, Israeli police killed 13 Palestinian/Arab demonstrators, 12 citizens of Israel and one Gaza resident.",
+      "sources": [
+        "https://www.adalah.org/en/content/view/10127",
+        "https://en.idi.org.il/publications/7584"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is not whether the conflict killed thousands, but how to classify Palestinian fatalities as civilians or combatants. B'Tselem classifies by participation in hostilities at the time of death, whereas ICT-style figures classify many more people as combatants. Endpoint choices also matter: some sources stop in February 2005, others at 31 December 2005, and some continue Intifada-era counts into 2006-2008 or 2010. Indirect deaths from closures, checkpoints, and delayed medical care are documented but not comprehensively counted.",
+  "sources": [
+    {
+      "url": "https://www.btselem.org/press_releases/20060104",
+      "title": "197 Palestinians and 50 Israelis killed in 2005",
+      "publisher": "B'Tselem"
+    },
+    {
+      "url": "https://www.btselem.org/press_releases/20060928",
+      "title": "Six years of Intifada",
+      "publisher": "B'Tselem"
+    },
+    {
+      "url": "https://www.btselem.org/press_releases/20100927",
+      "title": "10 years to the second Intifada \u2013 summary of data",
+      "publisher": "B'Tselem"
+    },
+    {
+      "url": "https://www.ochaopt.org/content/israeli-palestinian-fatalities-2000-key-trends-august-2007",
+      "title": "Israeli-Palestinian Fatalities Since 2000 - Key Trends",
+      "publisher": "UN OCHA oPt"
+    },
+    {
+      "url": "https://www.un.org/unispal/document/auto-insert-208380/",
+      "title": "Israeli-Palestinian fatalities since 2000 \u2013 OCHA Special Focus",
+      "publisher": "United Nations / UNISPAL"
+    },
+    {
+      "url": "https://www.britannica.com/event/second-intifada",
+      "title": "Second intifada",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://database.ecf.org.il/issues/issue/230",
+      "title": "Second Intifada (Al-Aqsa Intifada, 2000\u20132005?)",
+      "publisher": "Economic Cooperation Foundation"
+    },
+    {
+      "url": "https://www.hrw.org/news/2002/05/02/israel/occupied-territories-jenin-war-crimes-investigation-needed",
+      "title": "Israel/Occupied Territories: Jenin War Crimes Investigation Needed",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/mde15/143/2002/en/",
+      "title": "Israel and the Occupied Territories: Shielded from scrutiny: IDF violations in Jenin and Nablus",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/mde15/087/2004/en/",
+      "title": "Israel/Occupied Territories: Suicide attack against civilians are crime against humanity",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.adalah.org/en/content/view/10127",
+      "title": "The October 2000 Killings (October Uprising)",
+      "publisher": "Adalah"
+    },
+    {
+      "url": "https://en.idi.org.il/publications/7584",
+      "title": "The Events of October 2000",
+      "publisher": "Israel Democracy Institute"
+    },
+    {
+      "url": "https://www.adl.org/resources/backgrounder/second-intifada-2000",
+      "title": "The Second Intifada 2000",
+      "publisher": "Anti-Defamation League"
+    },
+    {
+      "url": "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/2000-2005.aspx",
+      "title": "2000-2005",
+      "publisher": "Israel Ministry of Defense Archives"
+    },
+    {
+      "url": "https://www.un.org/unispal/document/auto-insert-189429/",
+      "title": "Palestinian pregnant women giving birth at Israeli checkpoints - HRC fourth session",
+      "publisher": "United Nations / UNISPAL"
+    },
+    {
+      "url": "https://imemc.org/article/11423/",
+      "title": "Report: 4032 killed, 44666 injured since September 29, 2000",
+      "publisher": "International Middle East Media Center"
+    },
+    {
+      "url": "https://www.miftah.org/PrinterF.cfm?DocId=8590",
+      "title": "Intifada Toll Sept 2000 - Sept 2005",
+      "publisher": "MIFTAH"
+    }
+  ]
+}

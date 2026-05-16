@@ -1,0 +1,90 @@
+%! TEX program = pdflatex
+% =====================================================================
+% Journal of Peace Research (Oxford University Press, online-only since
+% Jan 2026) submission, Regular Article.
+%
+% This file is a journal-ready draft built on the shared master content
+% in ../../content/. To swap in the OUP class file:
+%
+%   1. Download the OUP authoring template (single-column variant) from
+%      https://academic.oup.com/journals/pages/authoring/journals_in_two_columns/preparing_your_manuscript
+%   2. Replace the preamble below with the oup-authoring-template skeleton
+%      and use \documentclass{oup-authoring-template}; the \input{...}
+%      bodies and \bibliography{...} below remain unchanged.
+%
+% Until then this draft uses an article-class single-column 1.5-spaced
+% layout matching JPR submission requirements.
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,multirow,array,tabularx}
+\usepackage{graphicx}
+\usepackage[hidelinks,colorlinks=false]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,decorations.pathreplacing,positioning,fit,backgrounds}
+\usepackage[round,authoryear,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=justified}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\graphicspath{{../../figures/}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\Ind}{\mathbf{1}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\title{\textbf{Bounds and Estimators for the Civilian-to-Combatant Death Ratio\\ from Aggregation of Conflicting Sources}}
+\author{David H.\ Silver\thanks{Independent researcher, Poughkeepsie, NY 12603, USA. Email: \href{mailto:silverdavi@gmail.com}{\texttt{silverdavi@gmail.com}}. ORCID: \href{https://orcid.org/0000-0002-3071-304X}{0000-0002-3071-304X}.}\\
+  \small Independent researcher, Poughkeepsie, NY, USA\\[2pt]
+  \small\emph{Submitted to Journal of Peace Research, Regular Article}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{../../content/abstract.tex}
+
+\bigskip
+\noindent\textbf{Keywords:} casualty estimation, civilian victimisation, partial identification, source aggregation, UCDP, ACLED, OHCHR, Gaza war.
+\end{abstract}
+
+\input{../../content/01_intro.tex}
+\input{../../content/02_setup.tex}
+\input{../../content/03_bounds.tex}
+\input{../../content/04_contradiction.tex}
+\input{../../content/05_bias.tex}
+\input{../../content/06_gaza.tex}
+\input{../../content/07_overview.tex}
+\input{../../content/08_discussion.tex}
+
+\paragraph{Replication Data.} Code, simulator, and Gaza application inputs are deposited at the JPR Replication Data archive on acceptance, in line with the journal's Data Replication Policy.
+
+\bibliography{../../content/refs}
+
+\end{document}

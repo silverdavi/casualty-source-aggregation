@@ -1,0 +1,465 @@
+{
+  "war_id": "indonesian_national_revolution",
+  "name": "Indonesian National Revolution",
+  "start_year": 1945,
+  "end_year": 1949,
+  "ongoing": false,
+  "regions": [
+    "Indonesia",
+    "Java",
+    "Sumatra",
+    "Sulawesi",
+    "Dutch East Indies"
+  ],
+  "summary": "The Indonesian National Revolution was the armed and diplomatic struggle following the 17 August 1945 proclamation of Indonesian independence and ending with Dutch transfer of sovereignty on 27 December 1949. It combined Dutch colonial reconquest attempts, British/Allied occupation and evacuation operations, Japanese surrender-force clashes, Indonesian Republican guerrilla warfare, and internal social-revolutionary violence. Major casualty estimates remain contested, especially for Indonesian civilians and for Bersiap victims.",
+  "sides": [
+    {
+      "name": "Indonesian Republic / Indonesian revolutionary forces",
+      "members": [
+        "Republic of Indonesia",
+        "TNI/TRI",
+        "pemuda groups",
+        "laskar militias",
+        "local revolutionary committees"
+      ],
+      "military_killed": {
+        "low": 45000,
+        "high": 100000,
+        "point": null,
+        "notes": "Adrian Vickers' range as summarized by NIOD: 45,000-100,000 Indonesian military fatalities. Attribution by killer is not clean because deaths occurred against Dutch, British/Indian, Japanese, and rival Indonesian forces.",
+        "sources": [
+          "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3500,
+        "high": 30000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "Bersiap killings and massacres",
+            "victims_group": "Dutch and Dutch-Indonesian/Eurasian civilians",
+            "low": 3500,
+            "high": 30000,
+            "notes": "NIOD gives 3,500-30,000; Frederick considers 25,000-30,000 likely.",
+            "sources": [
+              "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+              "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719370"
+            ]
+          },
+          {
+            "cause": "anti-Chinese massacres, deportations, looting, and scorched-earth violence",
+            "victims_group": "Chinese Indonesians / Chinese residents",
+            "low": 1362,
+            "high": null,
+            "notes": "Known incidents alone include 653-1,085 killed near Tangerang, about 250 at Palembang in one cited account, 293 later rising to 675 plus 106 more in 1947 Java reports, and 166 in Dec. 1948-Jan. 1949 Central Java. Raben concludes total casualties ran into several thousands, but no authoritative total exists.",
+            "sources": [
+              "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf",
+              "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719371"
+            ]
+          },
+          {
+            "cause": "killing of prisoners and surrendered troops",
+            "victims_group": "Japanese prisoners and surrendered soldiers",
+            "low": 220,
+            "high": 390,
+            "notes": "Includes 130-300 Japanese prisoners killed by retreating Republican forces in Semarang and 90 Japanese soldiers killed at Bekasi.",
+            "sources": [
+              "https://wiki.xoviet.org/en/wiki/Indonesian_National_Revolution",
+              "https://www.kompas.com/stori/read/2023/08/28/140000079/tragedi-kali-bekasi-19-oktober-1945"
+            ]
+          },
+          {
+            "cause": "internal political repression and fighting",
+            "victims_group": "PKI/FDR supporters, rival Indonesian political groups, civilians in the Madiun conflict",
+            "low": null,
+            "high": null,
+            "notes": "NIOD cites L. de Jong that several tens of thousands died in the Madiun revolt; no reliable split between combatants, civilians, executions, and battle deaths was found.",
+            "sources": [
+              "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+              "https://www.britannica.com/event/Madiun-Affair"
+            ]
+          }
+        ],
+        "notes": "The high value reflects the Bersiap range only; anti-Chinese and internal-political victims may overlap with broader civilian-fatality estimates and cannot be cleanly added. Indonesian revolutionary forces were fragmented; some killings were by local militias rather than by the central Republican state.",
+        "sources": [
+          "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+          "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719370",
+          "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Chinese Indonesians and other targeted civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Republican and militia actions included deportations, forced evacuations, looting, and burning of property, especially during Dutch offensives. No separable indirect-death estimate was found.",
+          "sources": [
+            "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf"
+          ]
+        },
+        {
+          "type": "scorched_earth",
+          "victims_group": "urban and rural civilians in contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Scorched-earth actions and evacuations caused hardship and displacement, but no credible separate mortality estimate was found.",
+          "sources": [
+            "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Netherlands-led colonial side",
+      "members": [
+        "Netherlands",
+        "Royal Netherlands Army",
+        "KNIL",
+        "Marine Brigade",
+        "NICA",
+        "pro-Dutch auxiliaries and collaborators"
+      ],
+      "military_killed": {
+        "low": 4585,
+        "high": 15000,
+        "point": null,
+        "notes": "NIOD gives 4,585 Dutch land-force deaths: 2,479 killed in action and 2,106 disease/accident deaths. Broader counts include 4,751 in Oostindie, 6,177 in the Roermond/De Leeuw database for a wider period including New Guinea, and 15,000 Dutch-side dead in Marjolein van Pagee's broader estimate including NICA/collaboration-related deaths.",
+        "sources": [
+          "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+          "https://databoks.katadata.co.id/en/demographics/statistics/68998483a48ff/the-number-of-casualties-in-the-indonesian-war-of-independence-1945-1950"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 25000,
+        "high": 100000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "counterinsurgency operations, patrol killings, shelling, bombing, executions",
+            "victims_group": "Indonesian civilians",
+            "low": 25000,
+            "high": 100000,
+            "notes": "Vickers' range for Indonesian civilian fatalities as summarized by NIOD. The range cannot be fully attributed to Dutch forces because inter-Indonesian violence is also included in some totals.",
+            "sources": [
+              "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers"
+            ]
+          },
+          {
+            "cause": "summary executions",
+            "victims_group": "Unarmed Indonesians in South Sulawesi",
+            "low": 3500,
+            "high": 3500,
+            "notes": "Beyond the Pale states at least 3,500 unarmed Indonesians were publicly executed without trial between mid-December 1946 and 22 February 1947.",
+            "sources": [
+              "https://dokumen.pub/beyond-the-pale-dutch-extreme-violence-in-the-indonesian-war-of-independence-1945-1949-9789048557172.html"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Men and boys at Rawagede/Balongsari",
+            "low": 431,
+            "high": 431,
+            "notes": "Indonesian account and Dutch court-liability reporting commonly give 431 victims.",
+            "sources": [
+              "https://www.irishtimes.com/news/dutch-state-found-liable-for-1947-massacre-of-431-men-and-boys-in-java-1.600748",
+              "https://www.rd.nl/artikel/423362-het-bloedbad-in-rawagede"
+            ]
+          },
+          {
+            "cause": "massacre and airborne assault",
+            "victims_group": "Civilians and combatants at Rengat",
+            "low": 120,
+            "high": 2000,
+            "notes": "Dutch documentation cited by Anne-Lot Hoek gives 84 noncombatants and 36 combatants; Indonesian sources estimate about 1,500-2,000 deaths.",
+            "sources": [
+              "https://www.insideindonesia.org/archive/articles/anne-lot-hoek"
+            ]
+          }
+        ],
+        "notes": "The 25,000-100,000 range is the broad Indonesian civilian-fatality range, not a clean Dutch-only total. Named atrocities demonstrate a documented minimum, while dispersed patrol, bombardment, and reprisal deaths are not comprehensively counted.",
+        "sources": [
+          "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+          "https://www.niod.nl/en/publications/beyond-pale",
+          "https://dokumen.pub/beyond-the-pale-dutch-extreme-violence-in-the-indonesian-war-of-independence-1945-1949-9789048557172.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Indonesian civilians in contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Dutch military action caused displacement, village destruction, and economic disruption, but no credible separable indirect-death estimate was found.",
+          "sources": [
+            "https://www.niod.nl/en/publications/beyond-pale",
+            "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers"
+          ]
+        },
+        {
+          "type": "economic_disruption",
+          "victims_group": "Indonesian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The war produced shortages and split Dutch/Republican economies, but sources do not provide a defensible indirect mortality count attributable to Dutch policy alone.",
+          "sources": [
+            "https://www.newworldencyclopedia.org/entry/Indonesian_War_of_Independence"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "British / British Indian Allied forces",
+      "members": [
+        "United Kingdom",
+        "British Indian Army",
+        "SEAC/AFNEI"
+      ],
+      "military_killed": {
+        "low": 600,
+        "high": 1200,
+        "point": null,
+        "notes": "UCA gives 600 British soldiers killed in the 1945-46 conflict phase; New World Encyclopedia gives 1,200 British soldiers killed or missing in Java and Sumatra in 1945-46, most of them Indian soldiers. UCA also gives a narrower 263 killed in Java/Sumatra clashes from 10 Nov. 1945 to 16 Feb. 1946.",
+        "sources": [
+          "https://uca.edu/politicalscience/home/research-projects/dadm-project/asiapacific-region/netherlandsdutch-east-indies-1927-1949/",
+          "https://www.newworldencyclopedia.org/entry/Indonesian_War_of_Independence"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing, shelling, urban combat",
+            "victims_group": "Indonesian fighters and civilians in Surabaya",
+            "low": 6300,
+            "high": 16000,
+            "notes": "Battle of Surabaya Indonesian deaths are usually given as 6,300-16,000+, but sources do not reliably split civilians from fighters. Some high estimates include civilians.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Battle_of_Surabaya",
+              "https://bbbooksss.blogspot.com/2011/02/history-of-modern-indonesia-by-adrian.html"
+            ]
+          },
+          {
+            "cause": "punitive burning",
+            "victims_group": "Bekasi residents",
+            "low": null,
+            "high": null,
+            "notes": "British Indian forces burned Bekasi on 13 December 1945; available summaries say civilians and TKR had largely evacuated and provide no robust death toll.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Burning_of_Bekasi"
+            ]
+          }
+        ],
+        "notes": "British-caused civilian deaths occurred, especially at Surabaya, but the accessible sources do not permit a credible civilian-only count.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Battle_of_Surabaya",
+          "https://en.wikipedia.org/wiki/Burning_of_Bekasi"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Japanese surrender forces / Japanese troops in Indonesia",
+      "members": [
+        "Imperial Japanese Army surrender forces",
+        "Imperial Japanese Navy personnel in Indonesia"
+      ],
+      "military_killed": {
+        "low": 1057,
+        "high": 1743,
+        "point": null,
+        "notes": "Accessible summaries report 1,057 Japanese dead in Bandung alone, only about half in combat. Some revolution casualty summaries give 1,743 Japanese killed across Indonesia, but this higher total is less securely documented in open sources.",
+        "sources": [
+          "https://www.newworldencyclopedia.org/entry/Indonesian_War_of_Independence",
+          "https://en.wikipedia.org/wiki/Indonesian_National_Revolution"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "urban fighting",
+            "victims_group": "Indonesians in Semarang",
+            "low": null,
+            "high": null,
+            "notes": "About 2,000 Indonesians and 500 Japanese were killed in Semarang, but no reliable civilian/combatant split for Indonesian deaths was found.",
+            "sources": [
+              "https://wiki.xoviet.org/en/wiki/Indonesian_National_Revolution"
+            ]
+          }
+        ],
+        "notes": "Japanese surrender forces fought Indonesian pemuda while trying to maintain order and guard arms. No robust total of civilians directly killed by Japanese forces in the post-surrender revolutionary period was found.",
+        "sources": [
+          "https://wiki.xoviet.org/en/wiki/Indonesian_National_Revolution"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 51242,
+    "military_high": 117943,
+    "civilian_low": 28500,
+    "civilian_high": 130000,
+    "grand_low": 79742,
+    "grand_high": 247943,
+    "notes": "Mechanical roll-up: military low/high adds Indonesian 45,000-100,000, Netherlands-led 4,585-15,000, British 600-1,200, and Japanese 1,057-1,743. Civilian low/high adds Vickers' Indonesian civilian range 25,000-100,000 and Bersiap Dutch/Dutch-Indonesian range 3,500-30,000. This risks overlap for Chinese and other victims and omits unquantified indirect deaths; a practical historical shorthand is about 100,000-250,000 deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Bersiap killings",
+      "year": 1945,
+      "perpetrator": "Indonesian revolutionary militias and local armed groups",
+      "victims_group": "Dutch, Eurasians/Dutch-Indonesians, Chinese, Ambonese, Minahasans, Japanese/Korean prisoners, alleged collaborators",
+      "low": 3500,
+      "high": 30000,
+      "notes": "NIOD gives 3,500-30,000 Dutch/Dutch-Indonesian civilian deaths; Frederick considers 25,000-30,000 likely.",
+      "sources": [
+        "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+        "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719370"
+      ]
+    },
+    {
+      "name": "Battle of Surabaya",
+      "year": 1945,
+      "perpetrator": "British / British Indian forces and Indonesian forces in urban battle",
+      "victims_group": "Indonesian fighters and civilians; British Indian troops; Dutch/Eurasian and Chinese civilians in surrounding violence",
+      "low": 6300,
+      "high": 16000,
+      "notes": "Indonesian deaths are commonly estimated at 6,300-16,000+; civilian/combatant split is unresolved.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Battle_of_Surabaya",
+        "https://bbbooksss.blogspot.com/2011/02/history-of-modern-indonesia-by-adrian.html"
+      ]
+    },
+    {
+      "name": "South Sulawesi campaign / Westerling operations",
+      "year": 1946,
+      "perpetrator": "Netherlands-led colonial forces, especially DST/KST and KNIL",
+      "victims_group": "Unarmed Indonesian civilians and suspected Republicans",
+      "low": 3500,
+      "high": 3500,
+      "notes": "Beyond the Pale states at least 3,500 unarmed Indonesians were publicly executed without trial between mid-Dec. 1946 and 22 Feb. 1947.",
+      "sources": [
+        "https://dokumen.pub/beyond-the-pale-dutch-extreme-violence-in-the-indonesian-war-of-independence-1945-1949-9789048557172.html"
+      ]
+    },
+    {
+      "name": "Rawagede massacre",
+      "year": 1947,
+      "perpetrator": "Dutch troops",
+      "victims_group": "Men and boys at Rawagede/Balongsari, West Java",
+      "low": 431,
+      "high": 431,
+      "notes": "Indonesian account and Dutch court-liability reporting commonly give 431 victims.",
+      "sources": [
+        "https://www.irishtimes.com/news/dutch-state-found-liable-for-1947-massacre-of-431-men-and-boys-in-java-1.600748",
+        "https://www.rd.nl/artikel/423362-het-bloedbad-in-rawagede"
+      ]
+    },
+    {
+      "name": "Rengat massacre",
+      "year": 1949,
+      "perpetrator": "Dutch paratroopers / KNIL forces",
+      "victims_group": "Residents and combatants at Rengat, Riau",
+      "low": 120,
+      "high": 2000,
+      "notes": "Dutch documentation cited by Anne-Lot Hoek gives 84 noncombatants and 36 combatants; Indonesian sources estimate about 1,500-2,000 dead.",
+      "sources": [
+        "https://www.insideindonesia.org/archive/articles/anne-lot-hoek"
+      ]
+    },
+    {
+      "name": "Anti-Chinese violence in Tangerang and other areas",
+      "year": 1946,
+      "perpetrator": "Indonesian laskar, local militias, and some army elements",
+      "victims_group": "Chinese Indonesians / Chinese residents",
+      "low": 653,
+      "high": 1085,
+      "notes": "Tangerang reports cite 653 killed in one Red Cross/Chung Hua Tsung Hui based report and 1,085 in another; broader anti-Chinese deaths across the revolution ran into several thousands.",
+      "sources": [
+        "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf"
+      ]
+    },
+    {
+      "name": "Madiun Affair and suppression",
+      "year": 1948,
+      "perpetrator": "Republican government forces and PKI/FDR forces",
+      "victims_group": "PKI/FDR members, Republican personnel, civilians, and political prisoners",
+      "low": null,
+      "high": null,
+      "notes": "NIOD cites de Jong that several tens of thousands died, but the figure is not cleanly disaggregated and is therefore not converted into a numeric JSON range.",
+      "sources": [
+        "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+        "https://www.britannica.com/event/Madiun-Affair"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Casualty estimates are highly contested. Dutch military reporting mixed civilians and combatants and may have been inflated in enemy-kill claims yet incomplete geographically. Bersiap estimates range widely from 3,500 to 30,000 Dutch/Dutch-Indonesian deaths, and anti-Chinese, Madiun, and social-revolution deaths are not consistently included in war totals. The total roll-up presented here should be read as an approximate 100,000-250,000 death envelope, not a precise census.",
+  "sources": [
+    {
+      "url": "https://www.niod.nl/en/frequently-asked-questions/indonesian-war-independence-numbers",
+      "title": "Indonesian War of Independence (in numbers)",
+      "publisher": "NIOD Institute for War, Holocaust and Genocide Studies"
+    },
+    {
+      "url": "https://www.niod.nl/en/publications/beyond-pale",
+      "title": "Beyond the Pale: Dutch Extreme Violence in the Indonesian War of Independence, 1945-1949",
+      "publisher": "NIOD / Amsterdam University Press"
+    },
+    {
+      "url": "https://dokumen.pub/beyond-the-pale-dutch-extreme-violence-in-the-indonesian-war-of-independence-1945-1949-9789048557172.html",
+      "title": "Beyond the Pale searchable text excerpt",
+      "publisher": "Amsterdam University Press / Dokumen.pub mirror"
+    },
+    {
+      "url": "https://uca.edu/politicalscience/home/research-projects/dadm-project/asiapacific-region/netherlandsdutch-east-indies-1927-1949/",
+      "title": "Netherlands/Dutch East Indies (1927-1949)",
+      "publisher": "University of Central Arkansas, DADM Project"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719371",
+      "title": "Anti-Chinese violence in Java during the Indonesian Revolution, 1945-49",
+      "publisher": "Journal of Genocide Research / Taylor & Francis"
+    },
+    {
+      "url": "https://indisch4ever.nu/wp-content/uploads/2016/06/anti-chinese_violence_in_the_indonesian.pdf",
+      "title": "Anti-Chinese Violence in the Indonesian Revolution",
+      "publisher": "Remco Raben paper PDF"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/14623528.2012.719370",
+      "title": "The killing of Dutch and Eurasians in Indonesia's national revolution (1945-49): a 'brief genocide' reconsidered",
+      "publisher": "Journal of Genocide Research / Taylor & Francis"
+    },
+    {
+      "url": "https://www.insideindonesia.org/archive/articles/anne-lot-hoek",
+      "title": "Rengat, 1949 (Part 1)",
+      "publisher": "Inside Indonesia"
+    },
+    {
+      "url": "https://www.britannica.com/event/Madiun-Affair",
+      "title": "Madiun Affair",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.irishtimes.com/news/dutch-state-found-liable-for-1947-massacre-of-431-men-and-boys-in-java-1.600748",
+      "title": "Dutch state found liable for 1947 massacre of 431 men and boys in Java",
+      "publisher": "The Irish Times"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Indonesian_War_of_Independence",
+      "title": "Indonesian War of Independence",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+}

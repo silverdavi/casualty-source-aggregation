@@ -1,0 +1,333 @@
+{
+  "war_id": "indonesian_mass_killings_1965",
+  "name": "Indonesian mass killings of 1965-66",
+  "start_year": 1965,
+  "end_year": 1966,
+  "ongoing": false,
+  "regions": [
+    "Indonesia",
+    "Java",
+    "Bali",
+    "Sumatra",
+    "Aceh",
+    "Flores",
+    "Sulawesi",
+    "Maluku"
+  ],
+  "summary": "The Indonesian mass killings of 1965-66 were a state-led and militia-assisted anti-communist campaign after the 30 September Movement killed senior Army officers. The main victims were PKI members, alleged sympathizers, affiliated unions and organizations, suspected leftists, and some ethnic Chinese Indonesians. The best-supported death-toll range is about 200,000 to 1,000,000, with roughly 500,000 the most common point estimate; hundreds of thousands more were detained, tortured, displaced, or forced into labor camps.",
+  "sides": [
+    {
+      "name": "Indonesian Army-led anti-communist coalition",
+      "members": [
+        "Indonesian Army",
+        "KOSTRAD",
+        "RPKAD",
+        "Kopkamtib",
+        "local military commands",
+        "Indonesian police and civil-defense structures",
+        "anti-communist militias",
+        "Ansor and other anti-PKI religious/youth groups",
+        "local anti-communist political organizations",
+        "external supporters: United States, United Kingdom, Australia"
+      ],
+      "military_killed": {
+        "low": 9,
+        "high": 10,
+        "point": 10,
+        "notes": "Known security-force deaths inflicted by the G30S side include six senior Army generals in Jakarta plus other Army officers such as Pierre Tendean, Katamso and Sugiyono; the high estimate counts police guard K.S. Tubun as a security-force combatant. These are initial coup-related deaths, not conventional campaign casualties.",
+        "sources": [
+          "https://www.britannica.com/event/September-30th-Movement",
+          "https://www.detik.com/sulsel/berita/d-6959012/12-daftar-nama-korban-peristiwa-g30s-pki-lengkap-dengan-profilnya/amp",
+          "https://www.kompas.com/tren/read/2024/09/27/090000065/sejarah-peristiwa-g30s--latar-belakang-kronologi-dan-tokoh-tokohnya?page=all"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 200000,
+        "high": 1000000,
+        "point": 500000,
+        "breakdown": [
+          {
+            "cause": "massacre, summary execution, shooting, stabbing, beheading, prison execution",
+            "victims_group": "PKI members, alleged PKI sympathizers, suspected leftists, affiliated union/youth/women's organizations, family members, and some ethnic Chinese Indonesians",
+            "low": 200000,
+            "high": 1000000,
+            "notes": "Cribb gives 200,000-800,000 with 500,000 most plausible; Amnesty gives 500,000-1,000,000; Robinson and many historians use about 500,000; the IPT finds 400,000-500,000 most likely but notes uncertainty.",
+            "sources": [
+              "https://www.researchgate.net/publication/41492694_How_many_deaths_Problems_in_the_statistics_of_massacre_in_Indonesia_1965-1966_and_East_Timor_1975-1980",
+              "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA2169082017ENGLISH.pdf",
+              "https://academic.oup.com/princeton-scholarship-online/book/30869",
+              "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+            ]
+          }
+        ],
+        "notes": "The direct civilian killing range is the main death toll of the conflict. A wider 500,000-3,000,000 figure appears in Indonesian public/Komnas HAM-related reporting, but the JSON roll-up uses the more defensible scholarly/human-rights range of 200,000-1,000,000.",
+        "sources": [
+          "https://www.researchgate.net/publication/41492694_How_many_deaths_Problems_in_the_statistics_of_massacre_in_Indonesia_1965-1966_and_East_Timor_1975-1980",
+          "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA2169082017ENGLISH.pdf",
+          "https://academic.oup.com/princeton-scholarship-online/book/30869",
+          "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+          "https://nasional.kompas.com/read/2012/07/24/09000971/Komnas.HAM.Kopkamtib.Bertanggung.Jawab.dalam.Peristiwa.1965-1966."
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "political prisoners and alleged PKI/leftist detainees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "At least 600,000 people were imprisoned according to the IPT, and official mid-1970s figures variously stated 500,000, 600,000, or 750,000 arrested/detained. Some were executed or died in captivity, but no reliable national death total separate from direct massacre deaths was found.",
+          "sources": [
+            "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+            "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA2169082017ENGLISH.pdf"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Buru Island and other political prisoners",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "About 11,500-11,600 political prisoners were sent to Buru Island and subjected to forced labor/enslavement conditions. Deaths occurred in captivity, but no defensible Buru or national camp-death estimate could be established from the accessible sources.",
+          "sources": [
+            "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+            "https://www.tribunal1965.org/en/narrative-report-of-the-ipt-1965/"
+          ]
+        },
+        {
+          "type": "enforced_disappearance",
+          "victims_group": "alleged PKI members, suspected leftists, and families",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Komnas HAM/IPT materials record roughly 32,774 enforced disappearances, but this is not equivalent to a separate death toll and likely overlaps with killings and detentions.",
+          "sources": [
+            "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PKI / G30S-aligned or alleged leftist side",
+      "members": [
+        "30 September Movement",
+        "small group of middle-ranking Army officers",
+        "elements of the Cakrabirawa presidential guard",
+        "some PKI leaders alleged or shown to have collaborated",
+        "broader PKI membership and affiliated organizations as accused/victim population"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Some G30S participants and PKI leaders were killed or executed during the suppression, but no reliable aggregate combatant-death figure could be found that is separable from the mass killing of civilian alleged PKI supporters.",
+        "sources": [
+          "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+          "https://www.researchgate.net/publication/41492694_How_many_deaths_Problems_in_the_statistics_of_massacre_in_Indonesia_1965-1966_and_East_Timor_1975-1980"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2,
+        "high": 2,
+        "point": 2,
+        "breakdown": [
+          {
+            "cause": "shooting during kidnapping/raid",
+            "victims_group": "civilian bystanders/family members in G30S raids",
+            "low": 2,
+            "high": 2,
+            "notes": "Indonesian summaries report 12 total G30S victims, including 10 TNI/Polri deaths, leaving two civilian deaths. Ade Irma Suryani Nasution is specifically named as a child victim; Indonesian victim lists generally identify the other civilian as Albert Naiborhu.",
+            "sources": [
+              "https://www.kompas.com/tren/read/2024/09/27/090000065/sejarah-peristiwa-g30s--latar-belakang-kronologi-dan-tokoh-tokohnya?page=all",
+              "https://www.detik.com/sulsel/berita/d-6959012/12-daftar-nama-korban-peristiwa-g30s-pki-lengkap-dengan-profilnya/amp"
+            ]
+          }
+        ],
+        "notes": "The initial G30S civilian deaths were politically consequential but numerically tiny compared with the subsequent anti-leftist massacres.",
+        "sources": [
+          "https://www.kompas.com/tren/read/2024/09/27/090000065/sejarah-peristiwa-g30s--latar-belakang-kronologi-dan-tokoh-tokohnya?page=all",
+          "https://www.detik.com/sulsel/berita/d-6959012/12-daftar-nama-korban-peristiwa-g30s-pki-lengkap-dengan-profilnya/amp"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 9,
+    "military_high": 10,
+    "civilian_low": 200002,
+    "civilian_high": 1000002,
+    "grand_low": 200011,
+    "grand_high": 1000012,
+    "notes": "Literal roll-up adds known initial G30S civilian and security-force deaths to the anti-communist massacre range, but historically the total should be rounded to about 200,000-1,000,000 because the mass-killing estimates are highly approximate. Unknown deaths in detention, forced labor, and disappearance are not added separately because no reliable non-overlapping national estimate exists."
+  },
+  "key_atrocities": [
+    {
+      "name": "Nationwide anti-leftist massacre campaign",
+      "year": 1965,
+      "perpetrator": "Indonesian Army-led anti-communist coalition",
+      "victims_group": "PKI members, suspected leftists, affiliated organizations, families, and some ethnic Chinese Indonesians",
+      "low": 200000,
+      "high": 1000000,
+      "notes": "The primary mass killing of the conflict; most defensible point estimate is about 500,000.",
+      "sources": [
+        "https://www.researchgate.net/publication/41492694_How_many_deaths_Problems_in_the_statistics_of_massacre_in_Indonesia_1965-1966_and_East_Timor_1975-1980",
+        "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA2169082017ENGLISH.pdf",
+        "https://academic.oup.com/princeton-scholarship-online/book/30869",
+        "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+      ]
+    },
+    {
+      "name": "Aceh killings",
+      "year": 1965,
+      "perpetrator": "Aceh military command and military-backed militias",
+      "victims_group": "alleged PKI members and suspected sympathizers in Aceh",
+      "low": 1941,
+      "high": 10000,
+      "notes": "Army records counted 1,941 public-killing deaths in the first phase; Jess Melvin estimates approximately 10,000 total killed in Aceh.",
+      "sources": [
+        "https://www.insideindonesia.org/editions/edition-122-oct-dec-2015/documenting-genocide",
+        "https://www.tribunal1965.org/the-state-of-knowledge-about-an-open-secret-indonesias-mass-disappearances-of-1965-66/"
+      ]
+    },
+    {
+      "name": "Bali December killings",
+      "year": 1965,
+      "perpetrator": "Indonesian Army and anti-communist local collaborators",
+      "victims_group": "alleged PKI members and suspected sympathizers in Bali",
+      "low": 6000,
+      "high": 80000,
+      "notes": "Robinson-related reporting notes an estimated 6,000 killed in three days in December 1965; broader regional summaries often cite about 80,000 killed in Bali, but that higher figure is less securely documented in the accessible sources used here.",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/14623528.2017.1393935",
+        "https://en.wikipedia.org/wiki/Indonesian_mass_killings_of_1965%E2%80%9366"
+      ]
+    },
+    {
+      "name": "Sragen extermination site",
+      "year": 1965,
+      "perpetrator": "state security forces",
+      "victims_group": "civilian alleged PKI/leftist detainees or suspects",
+      "low": 300,
+      "high": 300,
+      "notes": "Komnas HAM/IPT materials list Sragen among extermination sites with 300 victims.",
+      "sources": [
+        "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+      ]
+    },
+    {
+      "name": "Sikka-Maumere extermination site",
+      "year": 1965,
+      "perpetrator": "state security forces",
+      "victims_group": "civilian alleged PKI/leftist detainees or suspects",
+      "low": 1000,
+      "high": 1000,
+      "notes": "Komnas HAM/IPT materials list Sikka-Maumere among extermination sites with 1,000 victims.",
+      "sources": [
+        "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+      ]
+    },
+    {
+      "name": "Kali Sosok prison, Surabaya",
+      "year": 1965,
+      "perpetrator": "state security forces",
+      "victims_group": "civilian detainees",
+      "low": 600,
+      "high": 600,
+      "notes": "Komnas HAM/IPT materials list Kali Sosok prison in Surabaya among extermination sites with 600 victims.",
+      "sources": [
+        "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/"
+      ]
+    },
+    {
+      "name": "Buru Island forced-labor camp system",
+      "year": 1969,
+      "perpetrator": "Indonesian New Order state/security apparatus",
+      "victims_group": "political prisoners accused of PKI/leftist affiliation",
+      "low": null,
+      "high": null,
+      "notes": "About 11,500-11,600 prisoners were sent to Buru and subjected to forced labor; deaths occurred but a reliable death toll was not found. Year reflects the beginning of the Buru camp system, which continued beyond the 1965-66 killing period.",
+      "sources": [
+        "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+        "https://www.tribunal1965.org/en/narrative-report-of-the-ipt-1965/"
+      ]
+    },
+    {
+      "name": "G30S initial killings",
+      "year": 1965,
+      "perpetrator": "30 September Movement / G30S-aligned forces",
+      "victims_group": "Indonesian Army officers, police guard, and civilian family members",
+      "low": 11,
+      "high": 12,
+      "notes": "Six senior Army generals were killed in Jakarta; broader Indonesian victim lists give 12 total G30S victims, of whom 10 were TNI/Polri and 2 civilians.",
+      "sources": [
+        "https://www.britannica.com/event/September-30th-Movement",
+        "https://www.kompas.com/tren/read/2024/09/27/090000065/sejarah-peristiwa-g30s--latar-belakang-kronologi-dan-tokoh-tokohnya?page=all",
+        "https://www.detik.com/sulsel/berita/d-6959012/12-daftar-nama-korban-peristiwa-g30s-pki-lengkap-dengan-profilnya/amp"
+      ]
+    }
+  ],
+  "uncertainty_notes": "No complete national victim list or judicially established count exists. The best-supported range is 200,000-1,000,000 total deaths, with about 500,000 the most common point estimate; a wider 500,000-3,000,000 range appears in some Indonesian public/official reporting but is not used for the main roll-up. Indirect deaths from imprisonment, forced labor, torture, and disappearance are documented but not quantifiable nationally without double-counting. Attribution to the Army-led coalition is strong at the campaign level, but local responsibility was often shared among military units, militias, religious/youth groups, and personal or village-level actors.",
+  "sources": [
+    {
+      "url": "https://www.researchgate.net/publication/41492694_How_many_deaths_Problems_in_the_statistics_of_massacre_in_Indonesia_1965-1966_and_East_Timor_1975-1980",
+      "title": "How many deaths? Problems in the statistics of massacre in Indonesia (1965-1966) and East Timor (1975-1980)",
+      "publisher": "Robert Cribb / ResearchGate record"
+    },
+    {
+      "url": "https://academic.oup.com/princeton-scholarship-online/book/30869",
+      "title": "The Killing Season: A History of the Indonesian Massacres, 1965-66",
+      "publisher": "Princeton University Press / Oxford Academic"
+    },
+    {
+      "url": "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA2169082017ENGLISH.pdf",
+      "title": "Indonesia: Stop intimidating participants in events concerning 1965 human rights violations",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.tribunal1965.org/en/final-report-of-the-ipt-1965/",
+      "title": "Final Report of the IPT 1965: Findings and Documents of the IPT 1965",
+      "publisher": "International People's Tribunal 1965"
+    },
+    {
+      "url": "https://www.tribunal1965.org/en/narrative-report-of-the-ipt-1965/",
+      "title": "Narrative Report of the IPT 1965",
+      "publisher": "International People's Tribunal 1965"
+    },
+    {
+      "url": "https://www.tapol.org/sites/default/files/sites/default/files/pdfs/Komnas%20HAM%201965%20TAPOL%20translation.pdf",
+      "title": "Statement by Komnas HAM on the Results of its Investigations into Grave Violations of Human Rights During the Events of 1965-1966",
+      "publisher": "Komnas HAM / TAPOL translation"
+    },
+    {
+      "url": "https://nsarchive.gwu.edu/briefing-book/indonesia/2017-10-17/indonesia-mass-murder-1965-us-embassy-files",
+      "title": "U.S. Embassy Tracked Indonesia Mass Murder 1965",
+      "publisher": "National Security Archive, George Washington University"
+    },
+    {
+      "url": "https://www.insideindonesia.org/editions/edition-122-oct-dec-2015/documenting-genocide",
+      "title": "Documenting genocide",
+      "publisher": "Inside Indonesia"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/186810341303200304",
+      "title": "Why Not Genocide? Anti-Chinese Violence in Aceh, 1965-1966",
+      "publisher": "Journal of Current Southeast Asian Affairs / SAGE"
+    },
+    {
+      "url": "https://www.britannica.com/event/September-30th-Movement",
+      "title": "September 30th Movement",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.kompas.com/tren/read/2024/09/27/090000065/sejarah-peristiwa-g30s--latar-belakang-kronologi-dan-tokoh-tokohnya?page=all",
+      "title": "Sejarah Peristiwa G30S: Latar Belakang, Kronologi, dan Tokoh-tokohnya",
+      "publisher": "Kompas"
+    },
+    {
+      "url": "https://www.detik.com/sulsel/berita/d-6959012/12-daftar-nama-korban-peristiwa-g30s-pki-lengkap-dengan-profilnya/amp",
+      "title": "12 Daftar Nama Korban Peristiwa G30S PKI, Lengkap dengan Profilnya",
+      "publisher": "Detik"
+    }
+  ]
+}

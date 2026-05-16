@@ -1,0 +1,441 @@
+{
+  "war_id": "sudan_war_2023",
+  "name": "Sudan war (RSF vs SAF, 2023-)",
+  "start_year": 2023,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Sudan",
+    "Darfur",
+    "Kordofan",
+    "Khartoum",
+    "Gezira",
+    "Sennar",
+    "White Nile",
+    "Red Sea"
+  ],
+  "summary": "The Sudan war began on 15 April 2023 between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF). Reported fatalities reached at least 59,000 by April 2026, but mortality studies and humanitarian estimates suggest the true toll from violence, hunger, and health-system collapse is much higher, with published estimates ranging from about 150,000 to 400,000. Civilian deaths are heavily undercounted, and most combatant and indirect deaths cannot be reliably attributed to one side.",
+  "sides": [
+    {
+      "name": "Sudanese Armed Forces (SAF) and allied forces",
+      "members": [
+        "Sudanese Armed Forces",
+        "Sudanese Air Force",
+        "Sudanese state security forces",
+        "SAF-aligned militias and armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No independent nationwide SAF military-death total was found. ACLED reports battle fatalities but does not split them by SAF vs RSF. A localized SAF-linked claim reported 8,600 6th Infantry Division personnel killed in El Fasher by August 2025, but this is not a nationwide verified figure.",
+        "sources": [
+          "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible",
+          "https://thesudantimes.com/sudan/saf-says-8600-troops-killed-in-el-fasher-since-2023-amid-rsf-siege/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2083,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "civilian_targeting",
+            "victims_group": "Sudanese civilians",
+            "low": 2083,
+            "high": null,
+            "notes": "ACLED attributed 2,083 civilian-targeting fatalities to state forces from 15 April 2023 to 31 December 2024. This is a minimum reported count and excludes many unreported and later deaths.",
+            "sources": [
+              "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "Civilians in residential areas, markets, schools, hospitals, and displacement camps",
+            "low": 1719,
+            "high": null,
+            "notes": "Sudan Witness/CIR reported at least 1,719 civilians killed by SAF airstrikes from April 2023 to July 2025. This likely overlaps with other civilian-targeting datasets and is not added separately to the total low.",
+            "sources": [
+              "https://www.thenationalnews.com/news/mena/2025/12/11/army-air-strikes-kill-more-than-1700-civilians-in-sudans-civil-war/"
+            ]
+          },
+          {
+            "cause": "airstrike_market",
+            "victims_group": "Civilians at Kabkabiya market, North Darfur",
+            "low": 42,
+            "high": 100,
+            "notes": "OHCHR-linked reporting cited at least 42 civilians killed in the 9 December 2024 Kabkabiya market strike; other rights/media reports cited over 100 deaths.",
+            "sources": [
+              "https://www.amnesty.org.uk/latest/sudan-saf-airstrike-crowded-market-flagrant-war-crime/",
+              "https://www.theguardian.com/world/2024/dec/10/airstrike-north-darfur-market-kills-people-sudan",
+              "https://refugees.org/wp-content/uploads/2024/12/The-Humanitarian-and-Displacement-Situation-in-Sudan.pdf"
+            ]
+          },
+          {
+            "cause": "airstrike_market",
+            "victims_group": "Civilians at Tora market, North Darfur",
+            "low": 54,
+            "high": null,
+            "notes": "AP reported at least 54 killed in a March 2025 military airstrike on a local market; UN and rights groups also reported claims of hundreds killed, but no reliable high figure is used here.",
+            "sources": [
+              "https://apnews.com/article/aa7debef292a35b2fac9b73f1670c791",
+              "https://www.darfur24.com/en/2025/03/27/un-hundreds-of-civilians-killed-in-sudanese-army-airstrike-in-darfur/"
+            ]
+          }
+        ],
+        "notes": "SAF/state-force direct civilian killings are best documented through ACLED state-force civilian targeting and independent airstrike investigations. Totals are minimum reported figures and should not be added mechanically because datasets overlap.",
+        "sources": [
+          "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible",
+          "https://www.thenationalnews.com/news/mena/2025/12/11/army-air-strikes-kill-more-than-1700-civilians-in-sudans-civil-war/",
+          "https://www.amnesty.org.uk/latest/sudan-saf-airstrike-crowded-market-flagrant-war-crime/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "destruction_of_infrastructure",
+          "victims_group": "Sudanese civilians affected by destruction of health, water, power, food, and market infrastructure",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Fact-Finding Mission found both SAF and RSF responsible for large-scale attacks on civilians and destruction of infrastructure essential to survival, but no SAF-only indirect-death estimate is available.",
+          "sources": [
+            "https://sudan.un.org/en/301357-%E2%80%9C-war-atrocities%E2%80%9D-sudan-civilians-deliberately-targeted-un-fact-finding-mission-reports",
+            "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible"
+          ]
+        },
+        {
+          "type": "disease_starvation_healthcare_collapse",
+          "victims_group": "Civilians in Khartoum State and other conflict-affected areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "LSHTM estimated 61,202 all-cause deaths in Khartoum State in the first 14 months, including 26,024 intentional-injury deaths; the difference includes preventable disease, hunger, accidents, and health-care collapse, but cannot be attributed to SAF alone.",
+          "sources": [
+            "https://pubmed.ncbi.nlm.nih.gov/40845884/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rapid Support Forces (RSF), allied Arab militias, and aligned forces",
+      "members": [
+        "Rapid Support Forces",
+        "RSF-allied Arab militias",
+        "Third-Front Tamazuj elements",
+        "RSF-aligned local militias and armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No independent nationwide RSF combatant-death total was found. ACLED battle fatalities and total reported fatalities are not split into RSF vs SAF combatants.",
+        "sources": [
+          "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible",
+          "https://apnews.com/article/sudan-war-by-numbers-0e73629e08d25beb5fea82c550d445f1"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 18000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "civilian_targeting",
+            "victims_group": "Sudanese civilians",
+            "low": 5305,
+            "high": null,
+            "notes": "ACLED attributed 5,305 civilian-targeting fatalities to rebel groups from 15 April 2023 to 31 December 2024, primarily RSF and aligned forces in this conflict. This is a minimum reported count and excludes many unreported atrocities and later events.",
+            "sources": [
+              "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible"
+            ]
+          },
+          {
+            "cause": "ethnic_cleansing_massacre",
+            "victims_group": "Massalit and other non-Arab civilians in El Geneina, West Darfur",
+            "low": 10000,
+            "high": 15000,
+            "notes": "UN Panel of Experts estimate reported by Reuters; HRW documented RSF and allied militia attacks as ethnic cleansing and crimes against humanity.",
+            "sources": [
+              "https://www.investing.com/news/world-news/ethnic-killings-in-one-sudan-city-left-up-to-15000-dead--un-report-3278706",
+              "https://www.hrw.org/news/2024/05/09/sudan-ethnic-cleansing-west-darfur",
+              "https://www.hrw.org/report/2024/05/09/massalit-will-not-come-home/ethnic-cleansing-and-crimes-againhumanity-el"
+            ]
+          },
+          {
+            "cause": "massacre_siege_final_offensive",
+            "victims_group": "Civilians and fleeing civilians in El Fasher, North Darfur",
+            "low": 6000,
+            "high": null,
+            "notes": "OHCHR documented more than 6,000 killings between 25 and 27 October 2025, including at least 4,400 inside El Fasher and more than 1,600 along exit routes. The UN stated the actual toll for the week-long offensive was higher.",
+            "sources": [
+              "https://www.ungeneva.org/en/news-media/news/2026/02/115868/scene-out-horror-movie-un-report-warns-war-crimes-sudans-el-fasher",
+              "https://sudan.un.org/sites/default/files/2026-02/2026-02-13-rsf-offensive-fasher-capture-1-en.pdf"
+            ]
+          },
+          {
+            "cause": "attack_on_idp_camp",
+            "victims_group": "Civilians in Zamzam IDP camp, North Darfur",
+            "low": 1000,
+            "high": null,
+            "notes": "The UN reported more than 1,000 civilians killed in a three-day RSF attack on Zamzam camp in April 2025.",
+            "sources": [
+              "https://apnews.com/article/c7b1a81d4f70dc3e3f6b27c86278ea76"
+            ]
+          },
+          {
+            "cause": "massacres",
+            "victims_group": "Civilians in eastern and northern Al Jazirah/Gezira State",
+            "low": 1237,
+            "high": null,
+            "notes": "EUAA cited estimates of more than 1,237 civilians killed in RSF attacks between 20 October and 11 November 2024.",
+            "sources": [
+              "https://euaa.europa.eu/print/pdf/node/26177"
+            ]
+          },
+          {
+            "cause": "village_attack_shelling",
+            "victims_group": "Civilians in Wad al-Noura, Gezira State",
+            "low": 100,
+            "high": null,
+            "notes": "AP reported at least 100 people killed in RSF attacks on Wad al-Noura on 5 June 2024; UNICEF said at least 35 children were killed.",
+            "sources": [
+              "https://apnews.com/article/d9432885669564a745e9005fe4e63cb7"
+            ]
+          },
+          {
+            "cause": "market_shelling",
+            "victims_group": "Civilians at Sabrein market, Omdurman",
+            "low": 54,
+            "high": null,
+            "notes": "AP reported 54 killed and at least 158 wounded in a 1 February 2025 attack by paramilitary forces.",
+            "sources": [
+              "https://apnews.com/article/1ae73e6e00c2a390f44cd955fed26673"
+            ]
+          }
+        ],
+        "notes": "The low value is rounded and represents a conservative roll-up of major documented RSF-attributed events, not a comprehensive RSF civilian-death total. It excludes many smaller attacks, unreported killings, and deaths from hunger, disease, or displacement.",
+        "sources": [
+          "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible",
+          "https://www.investing.com/news/world-news/ethnic-killings-in-one-sudan-city-left-up-to-15000-dead--un-report-3278706",
+          "https://www.ungeneva.org/en/news-media/news/2026/02/115868/scene-out-horror-movie-un-report-warns-war-crimes-sudans-el-fasher",
+          "https://apnews.com/article/c7b1a81d4f70dc3e3f6b27c86278ea76",
+          "https://euaa.europa.eu/print/pdf/node/26177",
+          "https://apnews.com/article/d9432885669564a745e9005fe4e63cb7",
+          "https://apnews.com/article/1ae73e6e00c2a390f44cd955fed26673"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "starvation_siege",
+          "victims_group": "Civilians in besieged Darfur and Kordofan areas, including El Fasher and displacement camps",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Fact-Finding Mission found that RSF and allied militias used starvation as a method of warfare and deprived civilians of food, medicine, and relief supplies. No RSF-only indirect-death total is available.",
+          "sources": [
+            "https://sudan.un.org/en/301357-%E2%80%9C-war-atrocities%E2%80%9D-sudan-civilians-deliberately-targeted-un-fact-finding-mission-reports"
+          ]
+        },
+        {
+          "type": "displacement_disease_famine",
+          "victims_group": "Displaced and food-insecure Sudanese civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "WFP and IPC-related reporting confirmed famine conditions in conflict-cut-off areas and warned of severe malnutrition and mortality risk. Attribution to RSF alone is not possible because SAF actions, RSF actions, access restrictions, market collapse, and displacement all interact.",
+          "sources": [
+            "https://www.wfp.org/news/famine-conditions-confirmed-sudans-el-fasher-and-kadugli-hunger-and-malnutrition-ease-where",
+            "https://www.wfp.org/news/joint-news-release-wfpfaounicef-risk-famine-persists-nearly-195-million-people-face-acute-food"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 8194,
+    "civilian_high": null,
+    "grand_low": 59000,
+    "grand_high": 400000,
+    "notes": "Military deaths by side are unknown. The civilian_low of 8,194 is ACLED's reported civilian-targeting fatality total through 31 December 2024 and is not a full civilian death toll. The grand_low of 59,000 is ACLED's reported-fatality floor by April 2026. The grand_high of 400,000 reflects the high end of published all-cause estimates summarized by CSIS; 150,000 is a commonly cited lower all-cause estimate."
+  },
+  "key_atrocities": [
+    {
+      "name": "El Geneina / West Darfur ethnic-cleansing campaign",
+      "year": 2023,
+      "perpetrator": "RSF and allied Arab militias",
+      "victims_group": "Massalit and other non-Arab civilians",
+      "low": 10000,
+      "high": 15000,
+      "notes": "UN Panel of Experts estimate reported by Reuters; HRW documented ethnic cleansing and crimes against humanity.",
+      "sources": [
+        "https://www.investing.com/news/world-news/ethnic-killings-in-one-sudan-city-left-up-to-15000-dead--un-report-3278706",
+        "https://www.hrw.org/news/2024/05/09/sudan-ethnic-cleansing-west-darfur"
+      ]
+    },
+    {
+      "name": "El Fasher final offensive and massacre",
+      "year": 2025,
+      "perpetrator": "RSF and allied militias",
+      "victims_group": "Civilians and fleeing civilians in El Fasher",
+      "low": 6000,
+      "high": null,
+      "notes": "OHCHR documented more than 6,000 killings in the first three days, including at least 4,400 inside the city and more than 1,600 along exit routes.",
+      "sources": [
+        "https://www.ungeneva.org/en/news-media/news/2026/02/115868/scene-out-horror-movie-un-report-warns-war-crimes-sudans-el-fasher",
+        "https://sudan.un.org/sites/default/files/2026-02/2026-02-13-rsf-offensive-fasher-capture-1-en.pdf"
+      ]
+    },
+    {
+      "name": "Zamzam IDP camp attack",
+      "year": 2025,
+      "perpetrator": "RSF",
+      "victims_group": "Internally displaced civilians",
+      "low": 1000,
+      "high": null,
+      "notes": "UN reported more than 1,000 civilians killed in a three-day RSF attack.",
+      "sources": [
+        "https://apnews.com/article/c7b1a81d4f70dc3e3f6b27c86278ea76"
+      ]
+    },
+    {
+      "name": "Eastern and northern Gezira massacres",
+      "year": 2024,
+      "perpetrator": "RSF",
+      "victims_group": "Civilians in Al Jazirah/Gezira State",
+      "low": 1237,
+      "high": null,
+      "notes": "EUAA cited reporting of more than 1,237 civilians killed between 20 October and 11 November 2024.",
+      "sources": [
+        "https://euaa.europa.eu/print/pdf/node/26177"
+      ]
+    },
+    {
+      "name": "Wad al-Noura massacre",
+      "year": 2024,
+      "perpetrator": "RSF",
+      "victims_group": "Village civilians, including children",
+      "low": 100,
+      "high": null,
+      "notes": "AP reported at least 100 killed; UNICEF said at least 35 children were killed.",
+      "sources": [
+        "https://apnews.com/article/d9432885669564a745e9005fe4e63cb7"
+      ]
+    },
+    {
+      "name": "Kabkabiya market airstrike",
+      "year": 2024,
+      "perpetrator": "SAF",
+      "victims_group": "Market civilians in North Darfur",
+      "low": 42,
+      "high": 100,
+      "notes": "OHCHR-linked reporting cited at least 42 civilians killed; other rights/media reports cited over 100 deaths.",
+      "sources": [
+        "https://www.amnesty.org.uk/latest/sudan-saf-airstrike-crowded-market-flagrant-war-crime/",
+        "https://www.theguardian.com/world/2024/dec/10/airstrike-north-darfur-market-kills-people-sudan",
+        "https://refugees.org/wp-content/uploads/2024/12/The-Humanitarian-and-Displacement-Situation-in-Sudan.pdf"
+      ]
+    },
+    {
+      "name": "Omdurman Sabrein market attack",
+      "year": 2025,
+      "perpetrator": "RSF/paramilitary forces",
+      "victims_group": "Market civilians",
+      "low": 54,
+      "high": null,
+      "notes": "AP reported 54 killed and at least 158 wounded.",
+      "sources": [
+        "https://apnews.com/article/1ae73e6e00c2a390f44cd955fed26673"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is the lack of independent nationwide military casualty counts and the absence of perpetrator-attributed indirect mortality estimates. ACLED is a reported-fatality dataset and severely undercounts inaccessible areas; LSHTM's mortality work demonstrates that Khartoum State alone likely had more all-cause deaths in 14 months than many national reported-death counts. Direct civilian killings are documented best for major RSF atrocities and for SAF airstrikes, but these are still minimum figures and often overlap across datasets.",
+  "sources": [
+    {
+      "url": "https://apnews.com/article/sudan-war-by-numbers-0e73629e08d25beb5fea82c550d445f1",
+      "title": "The numbers behind Sudan's war",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.csis.org/analysis/sudan-war-10-charts",
+      "title": "The Sudan War in 10 Charts",
+      "publisher": "Center for Strategic and International Studies"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/sudan-country-policy-and-information-notes/country-policy-and-information-note-security-situation-sudan-january-2025-accessible",
+      "title": "Country policy and information note: security situation, Sudan, January 2025",
+      "publisher": "UK Home Office"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40845884/",
+      "title": "War-time mortality in Sudan: a multiple systems estimation analysis",
+      "publisher": "PubMed / The Lancet Global Health"
+    },
+    {
+      "url": "https://sudan.un.org/en/301357-%E2%80%9C-war-atrocities%E2%80%9D-sudan-civilians-deliberately-targeted-un-fact-finding-mission-reports",
+      "title": "A war of atrocities: Sudan civilians deliberately targeted",
+      "publisher": "United Nations in Sudan / Independent International Fact-Finding Mission"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/05/09/sudan-ethnic-cleansing-west-darfur",
+      "title": "Sudan: Ethnic Cleansing in West Darfur",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.investing.com/news/world-news/ethnic-killings-in-one-sudan-city-left-up-to-15000-dead--un-report-3278706",
+      "title": "Ethnic killings in one Sudan city left up to 15,000 dead - UN report",
+      "publisher": "Reuters via Investing.com"
+    },
+    {
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/02/115868/scene-out-horror-movie-un-report-warns-war-crimes-sudans-el-fasher",
+      "title": "UN report warns of war crimes in Sudan's El Fasher",
+      "publisher": "United Nations Office at Geneva"
+    },
+    {
+      "url": "https://sudan.un.org/sites/default/files/2026-02/2026-02-13-rsf-offensive-fasher-capture-1-en.pdf",
+      "title": "They were shooting us like animals: RSF final offensive and capture of besieged El Fasher",
+      "publisher": "OHCHR / United Nations"
+    },
+    {
+      "url": "https://apnews.com/article/c7b1a81d4f70dc3e3f6b27c86278ea76",
+      "title": "Sudanese paramilitary group RSF killed more than 1,000 civilians in Zamzam camp in April, UN says",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://euaa.europa.eu/print/pdf/node/26177",
+      "title": "Sudan: Security Situation - Al Jazirah civilian casualties",
+      "publisher": "European Union Agency for Asylum"
+    },
+    {
+      "url": "https://apnews.com/article/d9432885669564a745e9005fe4e63cb7",
+      "title": "Sudanese RSF paramilitaries clash with the army, leaving at least 100 people dead",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://apnews.com/article/1ae73e6e00c2a390f44cd955fed26673",
+      "title": "Paramilitary group attacks an open market in Sudan, killing 54 people and wounding scores",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.thenationalnews.com/news/mena/2025/12/11/army-air-strikes-kill-more-than-1700-civilians-in-sudans-civil-war/",
+      "title": "Army air strikes kill more than 1,700 civilians in Sudan's civil war",
+      "publisher": "The National"
+    },
+    {
+      "url": "https://www.amnesty.org.uk/latest/sudan-saf-airstrike-crowded-market-flagrant-war-crime/",
+      "title": "Sudan: SAF airstrike on crowded market a flagrant war crime",
+      "publisher": "Amnesty International UK"
+    },
+    {
+      "url": "https://www.wfp.org/news/famine-conditions-confirmed-sudans-el-fasher-and-kadugli-hunger-and-malnutrition-ease-where",
+      "title": "Famine conditions confirmed in Sudan's El Fasher and Kadugli",
+      "publisher": "World Food Programme"
+    },
+    {
+      "url": "https://www.wfp.org/news/joint-news-release-wfpfaounicef-risk-famine-persists-nearly-195-million-people-face-acute-food",
+      "title": "Risk of Famine persists as nearly 19.5 million people face acute food insecurity in Sudan",
+      "publisher": "WFP / FAO / UNICEF"
+    }
+  ]
+}

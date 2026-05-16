@@ -1,0 +1,287 @@
+{
+  "war_id": "war_in_donbas_2014",
+  "name": "War in Donbas (2014-2022)",
+  "start_year": 2014,
+  "end_year": 2022,
+  "ongoing": false,
+  "regions": [
+    "Eastern Ukraine",
+    "Donetsk Oblast",
+    "Luhansk Oblast",
+    "Donbas"
+  ],
+  "summary": "The War in Donbas was the eastern-Ukraine phase of the Russo-Ukrainian War, fought from April 2014 until it was subsumed by Russia's full-scale invasion on 24 February 2022. The best UN aggregate through 31 December 2021 is 14,200-14,400 deaths: at least 3,404 civilians, about 4,400 Ukrainian forces, and about 6,500 members of Russian-backed armed groups. Public sources do not permit a clean perpetrator-by-perpetrator allocation of most civilian deaths.",
+  "sides": [
+    {
+      "name": "Ukrainian government side",
+      "members": [
+        "Armed Forces of Ukraine",
+        "National Guard of Ukraine",
+        "Security Service of Ukraine",
+        "Ministry of Internal Affairs units",
+        "State Border Guard Service of Ukraine",
+        "pro-government volunteer battalions"
+      ],
+      "military_killed": {
+        "low": 4400,
+        "high": 4400,
+        "point": 4400,
+        "notes": "OHCHR estimate to 31 December 2021; includes non-combat deaths while serving in the conflict zone, including accidents, disease, killings, and suicides.",
+        "sources": [
+          "https://ukraine.un.org/sites/default/files/2022-02/Conflict-related%20civilian%20casualties%20as%20of%2031%20December%202021%20%28rev%2027%20January%202022%29%20corr%20EN_0.pdf",
+          "https://www.xinhuanet.com/english/2018-05/08/c_137164636.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "rocket attack",
+            "victims_group": "civilians in Donetsk",
+            "low": 2,
+            "high": 2,
+            "notes": "Human Rights Watch stated that circumstances pointed to Ukrainian government forces' responsibility for a 16 January 2015 Grad rocket attack in Donetsk that killed two civilians. This is a documented minimum, not an aggregate total of civilians killed by Ukrainian forces.",
+            "sources": [
+              "https://www.hrw.org/news/2015/02/03/ukraine-rising-civilian-death-toll"
+            ]
+          }
+        ],
+        "notes": "OHCHR records at least 3,404 civilian deaths overall, but does not publish a reliable aggregate perpetrator allocation. Ukrainian fire likely caused additional civilian deaths in armed-group-controlled areas, especially from shelling, but the public record does not support a clean total.",
+        "sources": [
+          "https://ukraine.un.org/sites/default/files/2022-02/Conflict-related%20civilian%20casualties%20as%20of%2031%20December%202021%20%28rev%2027%20January%202022%29%20corr%20EN_0.pdf",
+          "https://www.hrw.org/news/2015/02/03/ukraine-rising-civilian-death-toll"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "conflict-related detainees held by Government actors; mixed civilians and combatants, not separable",
+          "low": 100,
+          "high": 150,
+          "point": null,
+          "notes": "OHCHR estimated that 100-150 people detained by Government actors in the context of the armed conflict had been killed or died while in detention by 30 April 2021. The category includes members of armed groups, suspected supporters, and civilians; civilian/combatant shares are not separated.",
+          "sources": [
+            "https://www.ohchr.org/Documents/Countries/UA/UkraineArbDetTorture_EN.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Russia-backed armed groups / Russian Federation side",
+      "members": [
+        "Donetsk People's Republic armed formations",
+        "Luhansk People's Republic armed formations",
+        "Russian volunteers and contractors",
+        "Russian regular military personnel",
+        "Russian command, intelligence, logistical, political, and economic support structures"
+      ],
+      "military_killed": {
+        "low": 6500,
+        "high": 6500,
+        "point": 6500,
+        "notes": "OHCHR estimate for members of armed groups to 31 December 2021; includes non-combat deaths while serving in the conflict zone. The figure does not cleanly separate local fighters from Russian citizens or Russian regular personnel.",
+        "sources": [
+          "https://ukraine.un.org/sites/default/files/2022-02/Conflict-related%20civilian%20casualties%20as%20of%2031%20December%202021%20%28rev%2027%20January%202022%29%20corr%20EN_0.pdf",
+          "https://link.springer.com/chapter/10.1007/978-3-031-98724-3_5"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 335,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "surface-to-air missile shootdown",
+            "victims_group": "passengers and crew of Malaysia Airlines Flight MH17",
+            "low": 298,
+            "high": 298,
+            "notes": "MH17 was shot down on 17 July 2014. Dutch court materials found the aircraft was brought down by a Buk missile fired from Donetsk oblast, killing all 298 people aboard; later ECHR materials held Russia responsible.",
+            "sources": [
+              "https://www.courtmh17.com/en/summaries-and-news/news/the-operative-paragraphs-in-english.htm",
+              "https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17"
+            ]
+          },
+          {
+            "cause": "rocket attack",
+            "victims_group": "civilians in Mariupol",
+            "low": 30,
+            "high": 31,
+            "notes": "The 24 January 2015 Mariupol rocket attack killed at least 30 civilians; some field reports give 31. Human Rights Watch indicated separatist responsibility, and Bellingcat later attributed the attack to Russian officers and militants operating from Russia-controlled territory.",
+            "sources": [
+              "https://www.hrw.org/news/2015/01/24/dispatches-rebels-likely-behind-deadly-rocket-attacks-mariupol",
+              "https://www.bellingcat.com/news/uk-and-europe/2018/05/07/russian-officers-and-militants-identified-as-perpetrators-of-the-january-2015-mariupol-artillery-strike/",
+              "https://iphronline.org/articles/ukraine-field-mission-report-mariupol-20150213/"
+            ]
+          },
+          {
+            "cause": "rocket attack",
+            "victims_group": "civilians in Kramatorsk",
+            "low": 7,
+            "high": 9,
+            "notes": "OSCE reported seven civilians killed by 300mm MLRS fire on 10 February 2015; IPHR reported at least nine civilian deaths and attributed the attack to fire from separatist-held territory. Because attribution rests partly on non-OSCE sources, this is included as a documented attributed incident but not as a complete aggregate.",
+            "sources": [
+              "https://www.osce.org/ukraine-smm/139836",
+              "https://civicmonitoring.org/rockets-hit-residential-area-in-kramatorsk-ukraine/index.htm"
+            ]
+          }
+        ],
+        "notes": "The low figure is a conservative minimum from major documented incidents. It is not a full total of civilians killed by Russian-backed or Russian forces; most of the 3,404 overall civilian deaths are not publicly allocated by perpetrator.",
+        "sources": [
+          "https://ukraine.un.org/sites/default/files/2022-02/Conflict-related%20civilian%20casualties%20as%20of%2031%20December%202021%20%28rev%2027%20January%202022%29%20corr%20EN_0.pdf",
+          "https://www.courtmh17.com/en/summaries-and-news/news/the-operative-paragraphs-in-english.htm",
+          "https://www.hrw.org/news/2015/01/24/dispatches-rebels-likely-behind-deadly-rocket-attacks-mariupol",
+          "https://www.osce.org/ukraine-smm/139836"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "conflict-related detainees held by armed groups and other actors in self-proclaimed republic territory; mixed civilians and combatants, not separable",
+          "low": 200,
+          "high": 300,
+          "point": null,
+          "notes": "OHCHR estimated that 200-300 conflict-related detainees held by armed groups and other actors in territory controlled by the self-proclaimed republics had been killed or died while in detention by 30 April 2021. Victims included captured Ukrainian personnel, pro-Ukrainian civilians, suspected supporters of Ukraine, and others.",
+          "sources": [
+            "https://www.ohchr.org/Documents/Countries/UA/UkraineArbDetTorture_EN.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 10900,
+    "military_high": 10900,
+    "civilian_low": 3404,
+    "civilian_high": null,
+    "grand_low": 14200,
+    "grand_high": 14400,
+    "notes": "OHCHR aggregate for 14 April 2014 to 31 December 2021: 14,200-14,400 killed, including at least 3,404 civilians, about 4,400 Ukrainian forces, and about 6,500 members of armed groups. The per-side direct-civilian buckets are documented minimums and cannot be summed to the aggregate civilian total because most civilian deaths are not publicly attributed by perpetrator."
+  },
+  "key_atrocities": [
+    {
+      "name": "Malaysia Airlines Flight MH17 shootdown",
+      "year": 2014,
+      "perpetrator": "Russia-backed armed groups / Russian Federation side",
+      "victims_group": "civilian passengers and crew",
+      "low": 298,
+      "high": 298,
+      "notes": "Flight MH17 was shot down over Donetsk oblast on 17 July 2014, killing all 298 people aboard. Dutch court materials convicted three men linked to the Russian-backed operation; ECHR materials later held Russia responsible.",
+      "sources": [
+        "https://www.courtmh17.com/en/summaries-and-news/news/the-operative-paragraphs-in-english.htm",
+        "https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17"
+      ]
+    },
+    {
+      "name": "Mariupol rocket attack",
+      "year": 2015,
+      "perpetrator": "Russia-backed armed groups / Russian Federation side",
+      "victims_group": "civilians in Mariupol",
+      "low": 30,
+      "high": 31,
+      "notes": "Rocket attack on Mariupol on 24 January 2015. HRW indicated separatist responsibility; Bellingcat attributed the attack to Russian officers and militants from Russia-controlled territory.",
+      "sources": [
+        "https://www.hrw.org/news/2015/01/24/dispatches-rebels-likely-behind-deadly-rocket-attacks-mariupol",
+        "https://www.bellingcat.com/news/uk-and-europe/2018/05/07/russian-officers-and-militants-identified-as-perpetrators-of-the-january-2015-mariupol-artillery-strike/",
+        "https://iphronline.org/articles/ukraine-field-mission-report-mariupol-20150213/"
+      ]
+    },
+    {
+      "name": "Volnovakha bus attack",
+      "year": 2015,
+      "perpetrator": "Uncertain / contested",
+      "victims_group": "civilian bus passengers",
+      "low": 12,
+      "high": 12,
+      "notes": "OSCE reported 12 civilians killed and 17 wounded when a Grad rocket exploded near a civilian bus at a Ukrainian checkpoint near Volnovakha on 13 January 2015. Amnesty stated that the direction of fire was unclear at the time; therefore this event is not assigned to a side in the totals.",
+      "sources": [
+        "https://www.osce.org/ukraine-smm/134636",
+        "https://www.amnesty.org/en/latest/news/2015/01/eastern-ukraine-investigate-deadly-artillery-strike-civilian-bus/"
+      ]
+    },
+    {
+      "name": "Kramatorsk rocket attack",
+      "year": 2015,
+      "perpetrator": "Russia-backed armed groups / Russian Federation side",
+      "victims_group": "civilians in Kramatorsk",
+      "low": 7,
+      "high": 9,
+      "notes": "OSCE confirmed seven civilian deaths from 300mm MLRS fire on 10 February 2015; IPHR recorded at least nine civilian deaths and attributed the launch direction to separatist-held territory.",
+      "sources": [
+        "https://www.osce.org/ukraine-smm/139836",
+        "https://civicmonitoring.org/rockets-hit-residential-area-in-kramatorsk-ukraine/index.htm"
+      ]
+    },
+    {
+      "name": "Conflict-related detention, torture, and deaths in custody",
+      "year": null,
+      "perpetrator": "Both sides",
+      "victims_group": "conflict-related detainees, civilians and combatants not separable",
+      "low": 300,
+      "high": 450,
+      "notes": "OHCHR estimated 100-150 people detained by Government actors and 200-300 people detained by armed groups/other actors in self-proclaimed republic territory were killed or died while in detention by 30 April 2021.",
+      "sources": [
+        "https://www.ohchr.org/Documents/Countries/UA/UkraineArbDetTorture_EN.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The authoritative aggregate is OHCHR's 14 April 2014-31 December 2021 estimate; the pre-full-scale phase technically continued into February 2022, but I did not find an equally authoritative aggregate through 23 February 2022. Civilian deaths cannot be fully allocated by side from public OHCHR data. Territory of impact is not the same as perpetrator. Military estimates include non-combat deaths while serving, matching the requested definition but differing from KIA-only counts. Detention-death figures include mixed civilian and combatant detainees and should not be added to direct-civilian deaths without caution, because some may overlap with broader conflict-death accounting or include combatants.",
+  "sources": [
+    {
+      "url": "https://ukraine.un.org/sites/default/files/2022-02/Conflict-related%20civilian%20casualties%20as%20of%2031%20December%202021%20%28rev%2027%20January%202022%29%20corr%20EN_0.pdf",
+      "title": "Conflict-related civilian casualties in Ukraine, December 2021",
+      "publisher": "OHCHR / United Nations Human Rights Monitoring Mission in Ukraine"
+    },
+    {
+      "url": "https://www.ohchr.org/Documents/Countries/UA/UkraineArbDetTorture_EN.pdf",
+      "title": "Arbitrary detention, torture and ill-treatment in the context of armed conflict in eastern Ukraine, 2014-2021",
+      "publisher": "OHCHR"
+    },
+    {
+      "url": "https://www.ohchr.org/Documents/Countries/UA/OHCHRThematicReportUkraineJan2014-May2016_EN.pdf",
+      "title": "Accountability for killings in Ukraine from January 2014 to May 2016",
+      "publisher": "OHCHR"
+    },
+    {
+      "url": "https://www.hrw.org/news/2015/02/03/ukraine-rising-civilian-death-toll",
+      "title": "Ukraine: Rising Civilian Death Toll",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2015/01/24/dispatches-rebels-likely-behind-deadly-rocket-attacks-mariupol",
+      "title": "Dispatches: Rebels Likely Behind Deadly Rocket Attacks in Mariupol",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.bellingcat.com/news/uk-and-europe/2018/05/07/russian-officers-and-militants-identified-as-perpetrators-of-the-january-2015-mariupol-artillery-strike/",
+      "title": "Russian Officers and Militants Identified as Perpetrators of the January 2015 Mariupol Artillery Strike",
+      "publisher": "Bellingcat"
+    },
+    {
+      "url": "https://www.osce.org/ukraine-smm/134636",
+      "title": "Spot report by the OSCE Special Monitoring Mission to Ukraine: 12 civilians killed and 17 wounded near Volnovakha",
+      "publisher": "OSCE Special Monitoring Mission to Ukraine"
+    },
+    {
+      "url": "https://www.osce.org/ukraine-smm/139836",
+      "title": "Spot report by the OSCE Special Monitoring Mission to Ukraine: Shelling in Kramatorsk, 10 February 2015",
+      "publisher": "OSCE Special Monitoring Mission to Ukraine"
+    },
+    {
+      "url": "https://www.courtmh17.com/en/summaries-and-news/news/the-operative-paragraphs-in-english.htm",
+      "title": "The operative paragraphs in English",
+      "publisher": "MH17 Trial / District Court of The Hague"
+    },
+    {
+      "url": "https://www.government.nl/latest/news/2025/07/09/european-court-of-human-rights-russia-responsible-for-downing-of-flight-mh17",
+      "title": "European Court of Human Rights: Russia responsible for downing of flight MH17",
+      "publisher": "Government of the Netherlands"
+    },
+    {
+      "url": "https://www.echr.coe.int/w/grand-chamber-judgment-in-an-inter-state-case-1",
+      "title": "Grand Chamber judgment in an inter-State case: Ukraine and the Netherlands v. Russia",
+      "publisher": "European Court of Human Rights"
+    }
+  ]
+}

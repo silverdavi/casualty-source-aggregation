@@ -1,0 +1,542 @@
+{
+  "war_id": "yugoslav_wars_bosnia",
+  "name": "Yugoslav Wars - Bosnia/Croatia (incl. Srebrenica)",
+  "start_year": 1991,
+  "end_year": 1995,
+  "ongoing": false,
+  "regions": [
+    "Bosnia and Herzegovina",
+    "Croatia",
+    "Former Yugoslavia"
+  ],
+  "summary": "The 1991-1995 wars in Croatia and Bosnia-Herzegovina produced roughly 118,000-127,000 killed or missing, depending on whether the Bosnia count uses the Bosnian Book of the Dead's 95,940 named victims or the ICTY demographic estimate of 104,732. The best data identify victims by status, ethnicity, place, date, and often military formation; they do not always identify the perpetrator for each death. The largest documented atrocity was the July 1995 Srebrenica genocide, in which Bosnian Serb forces executed around 7,000-8,000 Bosnian Muslim prisoners, with many sources using 'more than 8,000' killed or missing.",
+  "sides": [
+    {
+      "name": "Bosniak-led Republic of Bosnia and Herzegovina / ARBiH",
+      "members": [
+        "Army of the Republic of Bosnia and Herzegovina (ARBiH)",
+        "Republic of Bosnia and Herzegovina government forces",
+        "Bosniak-majority formations with Serb, Croat, and other members"
+      ],
+      "military_killed": {
+        "low": 30521,
+        "high": 30521,
+        "point": 30521,
+        "notes": "Bosnian Book of the Dead formation-based figure for ARBiH soldiers killed in Bosnia-Herzegovina, including 29,631 Bosniaks, 361 Serbs, 465 Croats, and 64 others in ARBiH ranks.",
+        "sources": [
+          "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution/massacre",
+            "victims_group": "Croat civilians and prisoners of war at Trusina",
+            "low": 22,
+            "high": 22,
+            "notes": "Trusina, April 16, 1993. Sources commonly give 22 killed; breakdown varies between 16 civilians and 6 POWs or 18 civilians and 4 soldiers.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Trusina_massacre",
+              "https://balkaninsight.com/2013/04/16/trusina-attacked-by-unknown-soldiers/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Croat civilians at Grabovica",
+            "low": 13,
+            "high": 33,
+            "notes": "Grabovica, September 1993. ICTY-related accounts establish at least 13; ICMP and commemoration sources use 33 Croat civilians.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Grabovica_massacre",
+              "https://icmp.int/icmp_project/marking-the-anniversary-of-the-suffering-of-civilians-in-grabovica/",
+              "https://sarajevotimes.com/grabovica-anniversary-of-the-suffering-of-33-croat-civilians/"
+            ]
+          },
+          {
+            "cause": "abduction/execution",
+            "victims_group": "Mostly Serb civilians in Sarajevo at Kazani",
+            "low": null,
+            "high": null,
+            "notes": "Kazani pit killings by members of the ARBiH 10th Mountain Brigade under Mu\u0161an Topalovi\u0107. The number has never been officially determined; some public lists claim 150-200 but cautious sources emphasize the absence of an official total.",
+            "sources": [
+              "https://cdtp.org/en/the-anniversary-of-the-kazani-massacre/",
+              "https://balkaninsight.com/2021/11/15/sarajevo-unveils-memorial-to-victims-of-kazani-pit-killings/",
+              "https://en.wikipedia.org/wiki/Kazani_pit_killings"
+            ]
+          }
+        ],
+        "notes": "No reliable aggregate perpetrator-side total found for all civilians directly killed by ARBiH forces.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trusina_massacre",
+          "https://en.wikipedia.org/wiki/Grabovica_massacre",
+          "https://cdtp.org/en/the-anniversary-of-the-kazani-massacre/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "camp",
+          "victims_group": "Serb detainees at \u010celebi\u0107i camp",
+          "low": 13,
+          "high": 13,
+          "point": 13,
+          "notes": "ICTY proceedings established murders, torture, rape, and cruel treatment. Secondary summaries state that the ICTY indictment listed 13 deaths; this should be read as a case figure, not a complete indirect-deaths total for all ARBiH detention.",
+          "sources": [
+            "https://www.icty.org/x/file/Outreach/view_from_hague/jit_celebici_en.pdf",
+            "https://en.wikipedia.org/wiki/%C4%8Celebi%C4%87i_camp",
+            "https://www.rferl.org/a/bosnia-celebici-camp-mrndzic-arrested-boston/32417038.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Serb / Yugoslav / Republika Srpska / Republic of Serbian Krajina forces",
+      "members": [
+        "Yugoslav People's Army (JNA)",
+        "Army of Republika Srpska (VRS)",
+        "Bosnian Serb police",
+        "Republic of Serbian Krajina / RSK forces",
+        "Serbian paramilitary and state-security-linked units"
+      ],
+      "military_killed": {
+        "low": 24737,
+        "high": 26218,
+        "point": null,
+        "notes": "Low combines 20,615 JNA-VRS soldiers killed in Bosnia-Herzegovina with 4,122 Serb-side military personnel in Croatia from Veritas-type data. High adds 4,324 Serb combatants/police in Croatia and 1,279 official JNA killed-in-action from the 1991 Croatian campaign, but overlap and underreporting are possible.",
+        "sources": [
+          "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+          "https://dokumen.pub/croatia-v-serbia-section-x-list-of-serb-victims-on-the-territory-of-croatia-19901998.html",
+          "https://en.wikipedia.org/wiki/1991_Yugoslav_campaign_in_Croatia",
+          "https://en.wikipedia.org/wiki/Croatian_War_of_Independence"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution/genocide",
+            "victims_group": "Bosnian Muslim men and boys from Srebrenica, including civilians and captured POWs",
+            "low": 7000,
+            "high": 8000,
+            "notes": "ICTY Krsti\u0107 materials found up to 7,000-8,000 executed; UN summaries use up to 8,000 killed or missing and ICMP/Srebrenica Memorial commonly use more than 8,000.",
+            "sources": [
+              "https://www.icty.org/x/cases/krstic/tjug/en/krs-tj010802e-3.htm",
+              "https://www.icty.org/x/file/Outreach/view_from_hague/jit_srebrenica_en.pdf",
+              "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day/about",
+              "https://icmp.int/?p=14835"
+            ]
+          },
+          {
+            "cause": "shelling/sniping/siege",
+            "victims_group": "Civilians in Sarajevo",
+            "low": 5564,
+            "high": 5564,
+            "notes": "Bosnian Book of the Dead records 5,564 Sarajevo civilians killed; attribution is overwhelmingly to JNA/VRS siege fire for the siege campaign, but some killings inside government-held Sarajevo are separately attributed to ARBiH elements.",
+            "sources": [
+              "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+              "https://www.icty.org/x/cases/galic/tjug/en/gal-tj031205-2.htm"
+            ]
+          },
+          {
+            "cause": "ethnic_cleansing/massacre/camp killings",
+            "victims_group": "Non-Serb civilians in Prijedor area, mostly Bosniaks and Croats",
+            "low": 3176,
+            "high": 3200,
+            "notes": "Public Prijedor summaries commonly give 3,176 non-Serb civilians killed; some NGO/media accounts state more than 3,200 Bosniaks and Croats killed in and around Prijedor and Omarska.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Bosnian_War",
+              "https://www.aljazeera.com/program/al-jazeera-world/2017/5/10/bosnia-1992-the-omarska-camp/",
+              "https://www.icty.org/en/outreach/bridging-the-gap-with-local-communities/prijedor"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Non-Serb prisoners from Vukovar Hospital at Ov\u010dara",
+            "low": 194,
+            "high": 200,
+            "notes": "ICTY found murder of 194 identified non-Serb prisoners; HLC and commemorative sources commonly refer to at least/about 200 prisoners and civilians killed at Ov\u010dara.",
+            "sources": [
+              "https://www.icty.org/en/press/mrk%C5%A1i%C4%87-found-guilty-aiding-and-abetting-murders-ov%C4%8Dara-and-%C5%A1ljivan%C4%8Danin-guilty-mistreatment",
+              "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/ovcara-case-14-years-waiting-for-justice/",
+              "https://www.hlc-rdc.org/en/public-information/weremember-the-killing-of-prisoners-of-war-at-ovcara/"
+            ]
+          },
+          {
+            "cause": "war in Croatia",
+            "victims_group": "Croatian-side civilians in Croatia",
+            "low": 4508,
+            "high": null,
+            "notes": "Older Croatian official figures cited 4,508 Croatian civilians killed or missing; the later 15,007 Croatian-side total does not cleanly separate soldiers and civilians in the cited summary.",
+            "sources": [
+              "https://en-academic.com/dic.nsf/enwiki/1943004",
+              "https://en.wikipedia.org/wiki/Croatian_War_of_Independence"
+            ]
+          }
+        ],
+        "notes": "The side-wide total is not given because the best demographic sources do not assign every civilian death to a perpetrator; event-level figures alone show very large Serb/JNA/VRS/RSK responsibility for direct killings.",
+        "sources": [
+          "https://www.icty.org/x/file/Outreach/view_from_hague/jit_srebrenica_en.pdf",
+          "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+          "https://www.icty.org/en/outreach/bridging-the-gap-with-local-communities/prijedor",
+          "https://www.icty.org/en/press/mrk%C5%A1i%C4%87-found-guilty-aiding-and-abetting-murders-ov%C4%8Dara-and-%C5%A1ljivan%C4%8Danin-guilty-mistreatment"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "camp",
+          "victims_group": "Non-Serb detainees at Omarska camp",
+          "low": 100,
+          "high": 700,
+          "point": null,
+          "notes": "ICTY-related summaries state that over 100 people were killed at Omarska in late July 1992; survivor-association figures cited in public sources state about 700 killed among about 6,000 prisoners who passed through Omarska.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Prijedor_ethnic_cleansing",
+            "https://en.wikipedia.org/wiki/Omarska_concentration_camp",
+            "https://kulturasjecanja.org/en/prijedor-omarska-camp/"
+          ]
+        },
+        {
+          "type": "ethnic_cleansing/displacement",
+          "victims_group": "Bosnian Muslim population of Srebrenica",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN reports that after Srebrenica fell, up to 8,000 men and boys were killed or went missing and approximately 30,000 women, children, and elderly persons were forcibly transferred; deaths from the transfer/deprivation component are not cleanly separated from executions.",
+          "sources": [
+            "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day/about"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Croat / Croatian / HVO / Herceg-Bosna forces",
+      "members": [
+        "Croatian Army (HV)",
+        "Croatian Defence Council (HVO)",
+        "Croatian police and special police",
+        "Croatian Republic of Herzeg-Bosna authorities and forces"
+      ],
+      "military_killed": {
+        "low": 12788,
+        "high": 16499,
+        "point": null,
+        "notes": "Low combines 6,000 HV-HVO soldiers killed in Bosnia-Herzegovina with 6,788 Croatian soldiers killed/missing in Croatia from older official figures. High combines 6,000 with a rough residual of 10,499 from the later Croatian-side total of 15,007 minus the older civilian figure of 4,508; this high is methodologically uncertain.",
+        "sources": [
+          "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+          "https://en-academic.com/dic.nsf/enwiki/1943004",
+          "https://en.wikipedia.org/wiki/Croatian_War_of_Independence"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Bosniak civilians at Ahmi\u0107i",
+            "low": 100,
+            "high": 116,
+            "notes": "ICTY found more than 100 murdered, including 32 women and 11 children; commemorative and regional sources commonly give 116 Bosniak civilians killed.",
+            "sources": [
+              "https://www.icty.org/en/press/judgement-trial-chamber-iii-kordic-and-cerkez-case",
+              "https://yihr.hr/en/we-remember-the-victims-of-war-crimes-in-ahmici",
+              "https://detektor.ba/2019/04/16/bosnia-marks-anniversary-of-ahmici-village-mass-killings/?lang=en"
+            ]
+          },
+          {
+            "cause": "shelling/sniping",
+            "victims_group": "Civilians in East Mostar",
+            "low": null,
+            "high": null,
+            "notes": "Prli\u0107 indictment alleged HVO gunfire killed or wounded at least 135 civilians in East Mostar; killed-only figure not separated in the cited indictment summary.",
+            "sources": [
+              "https://www.icty.org/x/cases/prlic/ind/en/prl-ii040304e.htm"
+            ]
+          },
+          {
+            "cause": "military offensive and post-offensive killings",
+            "victims_group": "Serb civilians during and after Operation Storm",
+            "low": 116,
+            "high": 677,
+            "notes": "HRW's immediate-operation estimate reported 526 Serbs killed, 116 civilians; HHO-related figures cite 667-677 civilians killed/disappeared during and after Operation Storm, depending on inclusion rules.",
+            "sources": [
+              "https://www.hrw.org/report/1996/08/01/impunity-abuses-committed-during-operation-storm-and-denial-right-refugees-return",
+              "https://www.hina.hr/OTS/4191240",
+              "https://balkaninsight.com/2021/08/04/croatian-serbs-commemorate-victims-of-1995-operation-storm/",
+              "https://www.tportal.hr/vijesti/clanak/no-one-has-been-convicted-for-war-crimes-after-operation-storm-20110427/print"
+            ]
+          }
+        ],
+        "notes": "No reliable aggregate total found for all civilians directly killed by Croat/HV/HVO forces across Croatia and Bosnia-Herzegovina.",
+        "sources": [
+          "https://www.icty.org/en/press/judgement-trial-chamber-iii-in-the-kordic-and-cerkez-case",
+          "https://www.hrw.org/report/1996/08/01/impunity-abuses-committed-during-operation-storm-and-denial-right-refugees-return",
+          "https://www.icty.org/x/cases/prlic/ind/en/prl-ii040304e.htm"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "camp",
+          "victims_group": "Bosniak detainees at Dretelj",
+          "low": 4,
+          "high": 4,
+          "point": 4,
+          "notes": "Summaries of ICTY-related allegations report at least four Bosniak detainees died at Dretelj as a result of being beaten or shot by HVO members.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Dretelj_camp"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Bosniak detainees at Vojno",
+          "low": 13,
+          "high": 13,
+          "point": 13,
+          "notes": "Summaries report Herceg-Bosna/HVO forces killed at least 13 Bosniak men while detained at Vojno camp.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Vojno_camp"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Bosniak and other non-Croat detainees at Heliodrom",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HVO detention facility operated from September 1992 to April 21, 1994; no defensible aggregate death count found in the searched sources.",
+          "sources": [
+            "https://www.icty.org/x/cases/prlic/ind/en/prl-ii040304e.htm",
+            "https://en.wikipedia.org/wiki/Heliodrom_camp"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Autonomous Province of Western Bosnia / Fikret Abdi\u0107 forces",
+      "members": [
+        "AP Western Bosnia forces"
+      ],
+      "military_killed": {
+        "low": 558,
+        "high": 558,
+        "point": 558,
+        "notes": "Bosnian Book of the Dead formation-based count for AP Western Bosnia soldiers killed, concentrated in fighting with ARBiH in 1994 and 1995.",
+        "sources": [
+          "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No reliable quantified civilian-killing total found for AP Western Bosnia forces in the sources reviewed.",
+        "sources": []
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 68700,
+    "military_high": 75500,
+    "civilian_low": 45500,
+    "civilian_high": 49100,
+    "grand_low": 118151,
+    "grand_high": 126943,
+    "notes": "Grand low is 95,940 Bosnia-Herzegovina named victims plus 22,211 Croatia killed/missing. Grand high is ICTY's 104,732 Bosnia-Herzegovina estimate plus 22,211 Croatia killed/missing. Military/civilian lows and highs are rounded because Croatia's later 22,211 figure is not cleanly split by soldier/civilian status in the cited summary; Bosnia's Book of the Dead gives 57,701 soldiers and 38,239 civilians, while older Croatia-side and Veritas-type data provide partial soldier/civilian splits."
+  },
+  "key_atrocities": [
+    {
+      "name": "Srebrenica genocide",
+      "year": 1995,
+      "perpetrator": "Bosnian Serb / VRS forces",
+      "victims_group": "Bosnian Muslim men and boys, including civilians and captured POWs",
+      "low": 7000,
+      "high": 8000,
+      "notes": "ICTY Krsti\u0107 materials use up to 7,000-8,000 executed; UN/ICMP and memorial sources commonly use up to or more than 8,000 killed or missing.",
+      "sources": [
+        "https://www.icty.org/x/cases/krstic/tjug/en/krs-tj010802e-3.htm",
+        "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day/about",
+        "https://icmp.int/?p=14835"
+      ]
+    },
+    {
+      "name": "Siege of Sarajevo",
+      "year": 1992,
+      "perpetrator": "Primarily JNA/VRS siege forces",
+      "victims_group": "Sarajevo civilians and soldiers",
+      "low": 13756,
+      "high": 13756,
+      "notes": "Bosnian Book of the Dead records 13,756 total Sarajevo deaths and 5,564 civilians killed; siege lasted into early 1996 but the main war period was 1992-1995.",
+      "sources": [
+        "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+        "https://www.icty.org/x/cases/galic/tjug/en/gal-tj031205-2.htm"
+      ]
+    },
+    {
+      "name": "Prijedor ethnic cleansing and camps",
+      "year": 1992,
+      "perpetrator": "Bosnian Serb forces",
+      "victims_group": "Non-Serb civilians, mostly Bosniaks and Croats",
+      "low": 3176,
+      "high": 3200,
+      "notes": "Public summaries commonly give 3,176 non-Serb civilians; some accounts state more than 3,200 Bosniaks and Croats killed in and around Prijedor and Omarska.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Bosnian_War",
+        "https://www.aljazeera.com/program/al-jazeera-world/2017/5/10/bosnia-1992-the-omarska-camp/",
+        "https://www.icty.org/en/outreach/bridging-the-gap-with-local-communities/prijedor"
+      ]
+    },
+    {
+      "name": "Ov\u010dara / Vukovar hospital massacre",
+      "year": 1991,
+      "perpetrator": "JNA and Serb territorial defence/paramilitary forces",
+      "victims_group": "Non-Serb prisoners from Vukovar Hospital",
+      "low": 194,
+      "high": 200,
+      "notes": "ICTY found 194 identified victims murdered; HLC and commemoration sources commonly use about or at least 200.",
+      "sources": [
+        "https://www.icty.org/en/press/mrk%C5%A1i%C4%87-found-guilty-aiding-and-abetting-murders-ov%C4%8Dara-and-%C5%A1ljivan%C4%8Danin-guilty-mistreatment",
+        "https://www.hlc-rdc.org/en/public-information/press-releases-informisanje/ovcara-case-14-years-waiting-for-justice/",
+        "https://www.hlc-rdc.org/en/public-information/weremember-the-killing-of-prisoners-of-war-at-ovcara/"
+      ]
+    },
+    {
+      "name": "Ahmi\u0107i massacre",
+      "year": 1993,
+      "perpetrator": "HVO / Bosnian Croat forces",
+      "victims_group": "Bosniak civilians",
+      "low": 100,
+      "high": 116,
+      "notes": "ICTY found more than 100 killed, including 32 women and 11 children; commemorative sources commonly use 116.",
+      "sources": [
+        "https://www.icty.org/en/press/judgement-trial-chamber-iii-kordic-and-cerkez-case",
+        "https://yihr.hr/en/we-remember-the-victims-of-war-crimes-in-ahmici",
+        "https://detektor.ba/2019/04/16/bosnia-marks-anniversary-of-ahmici-village-mass-killings/?lang=en"
+      ]
+    },
+    {
+      "name": "Operation Storm and aftermath",
+      "year": 1995,
+      "perpetrator": "Croatian Army / Croatian police forces",
+      "victims_group": "Serb civilians in Krajina",
+      "low": 116,
+      "high": 677,
+      "notes": "HRW immediate-operation estimate includes 116 civilians; HHO-related figures cite 667-677 killed/disappeared during and after Operation Storm depending on inclusion rules.",
+      "sources": [
+        "https://www.hrw.org/report/1996/08/01/impunity-abuses-committed-during-operation-storm-and-denial-right-refugees-return",
+        "https://www.hina.hr/OTS/4191240",
+        "https://www.tportal.hr/vijesti/clanak/no-one-has-been-convicted-for-war-crimes-after-operation-storm-20110427/print"
+      ]
+    },
+    {
+      "name": "Trusina massacre",
+      "year": 1993,
+      "perpetrator": "ARBiH forces",
+      "victims_group": "Croat civilians and prisoners of war",
+      "low": 22,
+      "high": 22,
+      "notes": "Sources commonly give 22 killed, with breakdown disputed between civilian and POW categories.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trusina_massacre",
+        "https://balkaninsight.com/2013/04/16/trusina-attacked-by-unknown-soldiers/"
+      ]
+    },
+    {
+      "name": "Grabovica massacre",
+      "year": 1993,
+      "perpetrator": "ARBiH members",
+      "victims_group": "Croat civilians",
+      "low": 13,
+      "high": 33,
+      "notes": "ICTY-related accounts establish at least 13; ICMP and commemorative sources use 33 Croat civilians.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Grabovica_massacre",
+        "https://icmp.int/icmp_project/marking-the-anniversary-of-the-suffering-of-civilians-in-grabovica/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is perpetrator attribution. Bosnia-Herzegovina's best casualty data identify victims by status, ethnicity, military formation, time, and place, but not always by perpetrator. Croatia data are less harmonized: official, NGO, and Serb-source estimates use different inclusion rules for killed, missing, civilians, combatants, and post-operation deaths. Indirect deaths from camps, siege deprivation, forced labor, deportation, and displacement are documented but rarely quantified separately from direct killing and disappearance.",
+  "sources": [
+    {
+      "url": "https://everycasualty.org/wp-content/uploads/2025/02/Bosnian-Book-of-the-Dead-Vol-I.pdf",
+      "title": "Bosnian Book of the Dead: Human Losses in Bosnia and Herzegovina 1991-1995",
+      "publisher": "Research and Documentation Center / Every Casualty Counts"
+    },
+    {
+      "url": "https://www.icty.org/en/press/new-war-demographics-feature-icty-website",
+      "title": "New War Demographics Feature on the ICTY website",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.un.org/en/observances/srebrenica-genocide-commemoration-day/about",
+      "title": "About the 1995 Genocide in Srebrenica",
+      "publisher": "United Nations"
+    },
+    {
+      "url": "https://www.icty.org/x/cases/krstic/tjug/en/krs-tj010802e-3.htm",
+      "title": "Prosecutor v. Radislav Krsti\u0107, Trial Judgement",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://icmp.int/?p=14835",
+      "title": "Srebrenica",
+      "publisher": "International Commission on Missing Persons"
+    },
+    {
+      "url": "https://www.icty.org/x/cases/galic/tjug/en/gal-tj031205-2.htm",
+      "title": "Prosecutor v. Stanislav Gali\u0107, Trial Judgement",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.icty.org/en/outreach/bridging-the-gap-with-local-communities/prijedor",
+      "title": "Bridging the Gap in Prijedor, Bosnia and Herzegovina",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.icty.org/en/press/judgement-trial-chamber-iii-kordic-and-cerkez-case",
+      "title": "Judgement of Trial Chamber III in the Kordi\u0107 and \u010cerkez Case",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.icty.org/x/cases/prlic/ind/en/prl-ii040304e.htm",
+      "title": "Prli\u0107 et al. Initial Indictment",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.hrw.org/report/1996/08/01/impunity-abuses-committed-during-operation-storm-and-denial-right-refugees-return",
+      "title": "Croatia: Impunity for Abuses Committed during Operation Storm",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.icty.org/en/press/mrk%C5%A1i%C4%87-found-guilty-aiding-and-abetting-murders-ov%C4%8Dara-and-%C5%A1ljivan%C4%8Danin-guilty-mistreatment",
+      "title": "Mrk\u0161i\u0107 found guilty of aiding and abetting murders at Ov\u010dara",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    },
+    {
+      "url": "https://www.hlc-rdc.org/en/loss-database/register-of-croatian-citizens-of-serbian-ethnicity-killed-in-the-armed-conflict-in-croatia/",
+      "title": "Register of Croatian citizens of Serbian ethnicity killed in the armed conflict in Croatia",
+      "publisher": "Humanitarian Law Center"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Croatian_War_of_Independence",
+      "title": "Croatian War of Independence",
+      "publisher": "Wikipedia, citing Croatian Memorial-Documentation Center and other sources"
+    },
+    {
+      "url": "https://icmp.int/icmp_project/marking-the-anniversary-of-the-suffering-of-civilians-in-grabovica/",
+      "title": "Marking the anniversary of the suffering of civilians in Grabovica",
+      "publisher": "International Commission on Missing Persons"
+    },
+    {
+      "url": "https://www.icty.org/x/file/Outreach/view_from_hague/jit_celebici_en.pdf",
+      "title": "Crimes Against Serbs in the \u010celebi\u0107i Camp",
+      "publisher": "International Criminal Tribunal for the former Yugoslavia"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "war_id": "armenian_genocide",
+  "name": "Armenian Genocide and late Ottoman genocides of Armenians, Assyrians, and Greeks",
+  "start_year": 1914,
+  "end_year": 1923,
+  "ongoing": false,
+  "regions": [
+    "Ottoman Empire",
+    "Anatolia",
+    "Eastern Anatolia",
+    "Cilicia",
+    "Northern Syria",
+    "Mesopotamia",
+    "Pontus",
+    "Aegean Anatolia",
+    "Urmia region"
+  ],
+  "summary": "The Armenian Genocide and related late Ottoman genocides were state-organized campaigns of deportation, massacre, forced labor, starvation, disease, and expulsion directed mainly against Armenians, Assyrians/Syriac Christians, and Ottoman Greeks. The principal perpetrators were the CUP-led Ottoman state during World War I and, in the postwar phase, Turkish Nationalist/Kemalist forces and allied irregulars. A defensible death-toll range for the targeted Christian populations is about 1.20 million to 2.55 million, though direct and indirect deaths cannot usually be separated cleanly.",
+  "sides": [
+    {
+      "name": "Ottoman Empire / Committee of Union and Progress / Turkish National Movement",
+      "members": [
+        "Ottoman central government",
+        "Committee of Union and Progress",
+        "Ottoman army",
+        "Ottoman gendarmerie",
+        "Special Organization",
+        "local officials",
+        "Kurdish tribal forces and irregulars",
+        "Turkish National Movement / Kemalist forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable casualty count exists for Ottoman/Turkish forces killed specifically in genocide operations. Ottoman World War I all-front military dead/missing are often given as 771844, but that figure is not rolled into the genocide total.",
+        "sources": [
+          "https://encyclopedia.1914-1918-online.net/article/disease-and-public-health-ottoman-empiremiddle-east/",
+          "https://encyclopedia.1914-1918-online.net/article/war-losses-ottoman-empiremiddle-east/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "mass shooting, massacre, execution",
+            "victims_group": "Armenian civilians and disarmed Armenian men of fighting age",
+            "low": null,
+            "high": null,
+            "notes": "Direct killings were central to the genocide, but major sources usually combine direct killings with deaths from deportation, starvation, exposure, disease, and camp conditions.",
+            "sources": [
+              "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth",
+              "https://agmipublications.am/index.php/jgs/article/view/136"
+            ]
+          },
+          {
+            "cause": "massacre, village destruction, forced flight",
+            "victims_group": "Assyrian/Syriac Christians",
+            "low": null,
+            "high": null,
+            "notes": "Assyrian/Syriac deaths are generally reported as an aggregate Sayfo death toll rather than a direct-killing subtotal.",
+            "sources": [
+              "https://www.britannica.com/event/Assyrian-Genocide",
+              "https://www.assyrianfoundation.org/files/2011-2.pdf"
+            ]
+          },
+          {
+            "cause": "massacre, labor battalions, deportation violence",
+            "victims_group": "Ottoman Greeks, including Pontic and Anatolian Greeks",
+            "low": null,
+            "high": null,
+            "notes": "Greek death-toll sources combine direct killings with deportation, labor battalions, hunger, disease, and exposure.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Greek_genocide",
+              "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey"
+            ]
+          }
+        ],
+        "notes": "Direct civilian killings by Ottoman/CUP/Turkish Nationalist forces were extensive, but a clean all-victim direct-killing subtotal is not available.",
+        "sources": [
+          "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth",
+          "https://agmipublications.am/index.php/jgs/article/view/136",
+          "https://www.britannica.com/event/Assyrian-Genocide",
+          "https://en.wikipedia.org/wiki/Greek_genocide"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "deportation/camp/starvation/disease/ethnic_cleansing",
+          "victims_group": "Armenians",
+          "low": 664000,
+          "high": 1500000,
+          "point": null,
+          "notes": "Aggregate Armenian genocide deaths. USHMM gives 664000-1200000 for the main 1915-1916 genocide; broader historical ranges commonly extend to 1500000 for 1915-1923. Direct and indirect components are not cleanly separable.",
+          "sources": [
+            "https://www.ushmm.org/genocide-prevention/countries/armenia",
+            "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth",
+            "https://encyclopedia.1914-1918-online.net/article/armenian-genocide/"
+          ]
+        },
+        {
+          "type": "concentration_camp/starvation/disease",
+          "victims_group": "Armenians in Syrian and Mesopotamian camps",
+          "low": 400000,
+          "high": 400000,
+          "point": 400000,
+          "notes": "Tatoyan reports that detailed contemporary estimates assigned about 400000 Armenian deaths in 1916 to concentration camps in Syria and Mesopotamia due to starvation, disease, and subsequent actions. This is a subcomponent of the Armenian aggregate, not an additional total.",
+          "sources": [
+            "https://agmipublications.am/index.php/jgs/article/view/136"
+          ]
+        },
+        {
+          "type": "deportation/massacre/forced_flight/ethnic_cleansing",
+          "victims_group": "Assyrians / Syriac Christians / Chaldeans",
+          "low": 250000,
+          "high": 300000,
+          "point": null,
+          "notes": "Britannica says upwards of 250000 Assyrians were killed during World War I; 250000-300000 is a common range in Assyrian and secondary summaries.",
+          "sources": [
+            "https://www.britannica.com/event/Assyrian-Genocide",
+            "https://www.assyrianfoundation.org/files/2011-2.pdf"
+          ]
+        },
+        {
+          "type": "deportation/labor_battalions/starvation/disease/ethnic_cleansing",
+          "victims_group": "Ottoman Greeks, including Pontic and Anatolian Greeks",
+          "low": 289000,
+          "high": 750000,
+          "point": null,
+          "notes": "Academic estimates for Ottoman Greek deaths in Anatolia during 1914-1922/1923 range roughly 289000-750000. Higher claims exist but are not used in the main roll-up.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Greek_genocide",
+            "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey"
+          ]
+        },
+        {
+          "type": "blockade/famine/disease/crop_destruction",
+          "victims_group": "Armenian refugees and civilians in the First Republic of Armenia",
+          "low": 200000,
+          "high": 200000,
+          "point": 200000,
+          "notes": "Some sources state that at least 200000 people in Armenia, mostly refugees, died from starvation or disease in 1918-1920 partly due to Turkish blockade and crop destruction. This is flagged separately and not added to the main roll-up because of possible overlap with Armenian survivor/refugee counts.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Armenian_genocide"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Russian Empire / Armenian volunteer and Armenian National forces",
+      "members": [
+        "Russian Caucasus Army",
+        "Armenian volunteer units",
+        "Armenian militias",
+        "First Republic of Armenia forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable military death figure was found that is specific to this genocide dataset rather than the wider Caucasus front and Armenian-Turkish wars.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": 60000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/revenge killing",
+            "victims_group": "Muslim civilians in eastern Anatolia",
+            "low": null,
+            "high": 60000,
+            "notes": "Some summaries state that Russian and Armenian forces massacred as many as 60000 Muslims; the figure is contested and not used in the genocide roll-up.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Armenian_genocide_denial",
+              "https://en.wikipedia.org/wiki/Armenian_genocide"
+            ]
+          }
+        ],
+        "notes": "Armenian/Russian-associated forces committed revenge killings and massacres of Muslim civilians, but reliable aggregate numbers are lacking and politically contested.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Armenian_genocide_denial",
+          "https://en.wikipedia.org/wiki/Armenian_genocide"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Kingdom of Greece / Greek occupation forces and associated bands",
+      "members": [
+        "Kingdom of Greece",
+        "Greek Army in Anatolia",
+        "local Greek bands",
+        "associated Armenian bands in some areas"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Greek military deaths in 1919-1922 belong to the wider Greco-Turkish War and are not counted as part of the Ottoman genocides dataset.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "village burning, massacre, expulsion",
+            "victims_group": "Turkish/Muslim civilians in Yalova, Gemlik, and Izmit regions",
+            "low": 28,
+            "high": null,
+            "notes": "The 1921 Inter-Allied Commission directly observed 28 bodies in villages it visited and found systematic destruction of Turkish villages, but stated that the fate of much of the population was unknown and that no accurate figures could be given.",
+            "sources": [
+              "https://gutenberg.org/ebooks/73839",
+              "https://gutenberg.org/ebooks/73839.html.images"
+            ]
+          }
+        ],
+        "notes": "Greek occupation forces and associated bands committed serious atrocities against Turkish/Muslim civilians, but no reliable all-region aggregate death toll was found.",
+        "sources": [
+          "https://gutenberg.org/ebooks/73839",
+          "https://gutenberg.org/ebooks/73839.html.images"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 1203000,
+    "civilian_high": 2550000,
+    "grand_low": 1203000,
+    "grand_high": 2550000,
+    "notes": "Grand totals roll up the targeted Christian-population genocide deaths only: Armenians 664000-1500000, Assyrians 250000-300000, and Ottoman Greeks 289000-750000. Military deaths and Muslim/Turkish civilian deaths in the wider wars are not included because reliable comparable aggregates specific to the named genocide conflict are unavailable."
+  },
+  "key_atrocities": [
+    {
+      "name": "Armenian deportations and death marches",
+      "year": 1915,
+      "perpetrator": "Ottoman Empire / CUP",
+      "victims_group": "Armenians",
+      "low": 664000,
+      "high": 1500000,
+      "notes": "Aggregate Armenian genocide death range; includes direct massacres and deaths from deportation, starvation, exposure, disease, and camp conditions.",
+      "sources": [
+        "https://www.ushmm.org/genocide-prevention/countries/armenia",
+        "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth",
+        "https://encyclopedia.1914-1918-online.net/article/armenian-genocide/"
+      ]
+    },
+    {
+      "name": "Syrian and Mesopotamian concentration camps / Deir ez-Zor phase",
+      "year": 1916,
+      "perpetrator": "Ottoman Empire / CUP",
+      "victims_group": "Armenian deportees",
+      "low": 400000,
+      "high": 400000,
+      "notes": "Tatoyan reports about 400000 Armenian deaths in 1916 in concentration camps in Syria and Mesopotamia due to starvation, disease, and subsequent actions. This is a subcomponent of the Armenian genocide total.",
+      "sources": [
+        "https://agmipublications.am/index.php/jgs/article/view/136"
+      ]
+    },
+    {
+      "name": "Assyrian Genocide / Sayfo",
+      "year": 1915,
+      "perpetrator": "Ottoman Empire, allied irregulars, and Kurdish tribal forces",
+      "victims_group": "Assyrians / Syriac Christians / Chaldeans",
+      "low": 250000,
+      "high": 300000,
+      "notes": "Assyrian deaths are generally estimated at upwards of 250000, often 250000-300000.",
+      "sources": [
+        "https://www.britannica.com/event/Assyrian-Genocide",
+        "https://www.assyrianfoundation.org/files/2011-2.pdf"
+      ]
+    },
+    {
+      "name": "Ottoman Greek genocide, including Pontic Greek deportations and labor battalions",
+      "year": 1914,
+      "perpetrator": "Ottoman Empire / CUP and Turkish National Movement",
+      "victims_group": "Ottoman Greeks, including Pontic and Anatolian Greeks",
+      "low": 289000,
+      "high": 750000,
+      "notes": "Academic estimates for Ottoman Greek deaths across 1914-1922/1923 range roughly 289000-750000.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Greek_genocide",
+        "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey"
+      ]
+    },
+    {
+      "name": "Burning of Smyrna / \u0130zmir",
+      "year": 1922,
+      "perpetrator": "Turkish Nationalist forces, responsibility disputed in some sources",
+      "victims_group": "Greek and Armenian civilians",
+      "low": 10000,
+      "high": 100000,
+      "notes": "Death estimates vary widely and responsibility is disputed in some accounts; not separately added to the roll-up because victims are already within broader Greek/Armenian postwar totals.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Burning_of_Smyrna",
+        "https://daily.jstor.org/september-1922-the-great-fire-of-smyrna/"
+      ]
+    },
+    {
+      "name": "Yalova-Gemlik-Izmit atrocities against Muslim civilians",
+      "year": 1921,
+      "perpetrator": "Greek occupation forces and Greek/Armenian bands",
+      "victims_group": "Turkish/Muslim civilians",
+      "low": 28,
+      "high": null,
+      "notes": "The Inter-Allied Commission directly observed 28 bodies and found systematic destruction of Turkish villages, but did not provide an accurate aggregate death toll.",
+      "sources": [
+        "https://gutenberg.org/ebooks/73839",
+        "https://gutenberg.org/ebooks/73839.html.images"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is that direct massacres and indirect deaths from deportation, starvation, disease, exposure, forced labor, and camp confinement are intertwined in the sources. Armenian figures are the best documented; Assyrian and Greek estimates are less demographically secure. Counter-atrocities against Muslim/Turkish civilians by Armenian/Russian and Greek forces are real but lack reliable aggregate estimates comparable to the Ottoman genocide figures and are therefore not rolled into the main genocide death toll.",
+  "sources": [
+    {
+      "url": "https://www.ushmm.org/genocide-prevention/countries/armenia",
+      "title": "Armenia",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-in-depth",
+      "title": "The Armenian Genocide (1915-16): In Depth",
+      "publisher": "United States Holocaust Memorial Museum Holocaust Encyclopedia"
+    },
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/article/armenian-genocide/",
+      "title": "Armenian Genocide",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://agmipublications.am/index.php/jgs/article/view/136",
+      "title": "Calculations of the Armenian Death Toll during the Main Phase of the Armenian Genocide (1915\u20131916): Sources, Data, and Methods, 1915\u20131923",
+      "publisher": "Journal of Genocide Studies / Armenian Genocide Museum-Institute Foundation"
+    },
+    {
+      "url": "https://www.britannica.com/event/Assyrian-Genocide",
+      "title": "Assyrian Genocide",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://mail.ahiworld.org/media-center/press-releases/2008/931-international-genocide-scholars-officially-recognizes-assyrian-greek-genocides.html",
+      "title": "International Association of Genocide Scholars Officially Recognizes Assyrian, Greek Genocides",
+      "publisher": "American Hellenic Institute / IAGS resolution text"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Greek_genocide",
+      "title": "Greek genocide",
+      "publisher": "Wikipedia summary of academic estimates and cited literature"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey",
+      "title": "Population exchange between Greece and Turkey",
+      "publisher": "Wikipedia summary of academic estimates and cited literature"
+    },
+    {
+      "url": "https://gutenberg.org/ebooks/73839",
+      "title": "Reports on Atrocities in the Districts of Yalova and Guemlek and in the Ismid Peninsula",
+      "publisher": "Project Gutenberg / original HMSO 1921 Inter-Allied Commission report"
+    },
+    {
+      "url": "https://academic.oup.com/ia/article-pdf/96/1/247/31731567/iiz268.pdf",
+      "title": "Review of The Thirty-Year Genocide: Turkey's Destruction of Its Christian Minorities, 1894-1924",
+      "publisher": "International Affairs / Oxford Academic"
+    }
+  ]
+}

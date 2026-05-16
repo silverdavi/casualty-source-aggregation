@@ -1,0 +1,334 @@
+{
+  "war_id": "biafra_war",
+  "name": "Nigerian Civil War (Biafra) and Biafran famine",
+  "start_year": 1967,
+  "end_year": 1970,
+  "ongoing": false,
+  "regions": [
+    "Nigeria",
+    "Southeastern Nigeria",
+    "Biafra",
+    "Mid-Western Region",
+    "Niger Delta"
+  ],
+  "summary": "The Nigerian Civil War was fought from 1967 to 1970 between the Federal Military Government of Nigeria and the secessionist Republic of Biafra. The war's death toll is dominated by famine and disease caused principally by Nigeria's blockade and encirclement of Biafra, with published overall estimates ranging from about 500,000 to 3,000,000 deaths. Direct massacres and bombings occurred, including the Asaba massacre by Federal troops and reported Biafran killings of minority civilians accused of collaboration, but these direct civilian killings are not reliably aggregated.",
+  "sides": [
+    {
+      "name": "Federal Military Government of Nigeria",
+      "members": [
+        "Federal Republic of Nigeria",
+        "Nigerian Army",
+        "Nigerian Air Force",
+        "Nigerian Navy",
+        "Federal Military Government under Yakubu Gowon"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable Federal-only military-death split found. Commonly cited combined combatant deaths for both sides are 45,000\u2013100,000; some sources summarize about 100,000 military casualties/deaths overall.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nigerian_Civil_War",
+          "https://africandefence.co.uk/the-nigerian-civil-war-1967-1970/",
+          "https://api-kwasuspace.kwasu.edu.ng/server/api/core/bitstreams/c4c069ef-c843-4849-9375-41249a569999/content",
+          "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Asaba civilians, mostly Igbo/Anioma civilians outside secessionist Biafra",
+            "low": 1000,
+            "high": 2000,
+            "notes": "Bird and Ottanelli report at least 1,000 civilians killed in Asaba in October 1967; a Biafran submission cited one witness estimate of 2,000. The Asaba Memorial Project describes about 700 killed at Ogbe-Osawa and well over 1,000 townwide.",
+            "sources": [
+              "https://www.researchgate.net/publication/265249617_The_Asaba_massacre_and_the_Nigerian_Civil_War_Reclaiming_hidden_history",
+              "https://www.asabamemorial.org/what-happened-at-asaba"
+            ]
+          },
+          {
+            "cause": "bombing",
+            "victims_group": "Biafran civilians in markets, hospitals, settlements, and relief-related sites",
+            "low": null,
+            "high": null,
+            "notes": "Federal/Nigerian air attacks on civilian settlements, markets, and hospitals are reported, but no reliable aggregate death toll was found.",
+            "sources": [
+              "https://api.parliament.uk/historic-hansard/lords/1969/mar/11/nigeria-bombing-of-biafran-civilian",
+              "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+            ]
+          },
+          {
+            "cause": "massacre/reprisal",
+            "victims_group": "Efik, Andoni, and other minority civilians in Federal-held or contested areas",
+            "low": null,
+            "high": null,
+            "notes": "A chapter on ethnic minorities reports allegations including approximately 2,000 Efiks killed in Calabar and over 500 people killed in an Andoni-area attack, but treats wartime claims as difficult to verify; these are not added to the firm direct-death floor.",
+            "sources": [
+              "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175"
+            ]
+          }
+        ],
+        "notes": "The low estimate is only a documented floor from Asaba. Other Federal direct civilian deaths from bombing, advancing troops, reprisals, and minority-area killings are real but not reliably aggregated.",
+        "sources": [
+          "https://www.researchgate.net/publication/265249617_The_Asaba_massacre_and_the_Nigerian_Civil_War_Reclaiming_hidden_history",
+          "https://www.asabamemorial.org/what-happened-at-asaba",
+          "https://api.parliament.uk/historic-hansard/lords/1969/mar/11/nigeria-bombing-of-biafran-civilian",
+          "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Biafran civilians, predominantly Igbo civilians and refugees in the Biafran enclave",
+          "low": 500000,
+          "high": 2000000,
+          "point": null,
+          "notes": "Starvation and disease deaths caused principally by the Federal blockade, encirclement, food cutoff, and disruption of agriculture. Some broader war-death estimates go to 3,000,000 overall, but 500,000\u20132,000,000 is used here for the famine/deprivation bucket.",
+          "sources": [
+            "https://academic.oup.com/book/46670/chapter/410143605",
+            "https://en.wikipedia.org/wiki/Nigerian_Civil_War",
+            "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0013582",
+            "https://www.britannica.com/topic/Nigerian-civil-war"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Biafran civilians and displaced persons",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Disease mortality is intertwined with starvation and displacement in the famine estimates and cannot be reliably separated from the blockade/famine bucket.",
+          "sources": [
+            "https://academic.oup.com/book/46670/chapter/410143605",
+            "https://tile.loc.gov/storage-services/master/frd/copr/Nigeria.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Republic of Biafra",
+      "members": [
+        "Republic of Biafra",
+        "Biafran Armed Forces",
+        "Biafran Organization of Freedom Fighters",
+        "Biafran civil-defense and militia formations"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable Biafra-only military-death total found. Commonly cited combined combatant deaths for both sides are 45,000\u2013100,000.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nigerian_Civil_War",
+          "https://api-kwasuspace.kwasu.edu.ng/server/api/core/bitstreams/c4c069ef-c843-4849-9375-41249a569999/content"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "Detained minority civilians in Calabar area",
+            "low": 169,
+            "high": 169,
+            "notes": "A chapter on ethnic minorities reports the allegation that about 169 civilians in detention were lined up and shot by Biafran soldiers when Nigerian troops landed in Calabar on October 18, 1967. Because the allegation also appeared in Federal wartime information material, it should be treated as reported rather than independently verified.",
+            "sources": [
+              "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175"
+            ]
+          },
+          {
+            "cause": "reprisal/anti-saboteur operations",
+            "victims_group": "Efik, Ibibio, Ijaw, Rivers, Cross River, Akwa Ibom, and other minority civilians suspected of collaboration",
+            "low": null,
+            "high": null,
+            "notes": "Biafran troops and BOFF/Bende special operations units reportedly detained, tortured, killed, kidnapped, and displaced civilians accused of sabotage; incidents are described at Ikun, Asang, Attan Onoyon, Ikot Ekpenyong, Ikot Okpot, Idoro, Onne, Bolo, Ogu, and other areas, but no reliable aggregate death toll was found.",
+            "sources": [
+              "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175",
+              "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+            ]
+          },
+          {
+            "cause": "attacks during occupation",
+            "victims_group": "Civilians in the Mid-Western Region and Rivers areas",
+            "low": null,
+            "high": null,
+            "notes": "A historical account states that Biafran troops attacked civilians during their occupation of the Mid-West and attacked Rivers people for perceived disloyalty during the retreat from Port Harcourt, but provides no aggregate death toll.",
+            "sources": [
+              "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+            ]
+          }
+        ],
+        "notes": "Biafran direct civilian killings are attested in several incident reports, especially against minorities accused of sabotage, but no reliable aggregate low/high estimate was found.",
+        "sources": [
+          "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175",
+          "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "relief_obstruction",
+          "victims_group": "Biafran civilians dependent on relief and exposed to continuing war/famine",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Federal blockade was the primary famine driver, but Biafran decisions also mattered. Sources argue that relief aid strengthened Biafra and likely lengthened the war by more than a year, and that Ojukwu resisted some daylight relief flights and mercy-corridor proposals partly to preserve arms-supply routes. No credible source found provides a separable death toll attributable specifically to Biafran policy.",
+          "sources": [
+            "https://academic.oup.com/book/46670/chapter/410143605",
+            "https://www.tandfonline.com/doi/abs/10.1080/07292473.2021.1942625"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 45000,
+    "military_high": 100000,
+    "civilian_low": 501000,
+    "civilian_high": null,
+    "grand_low": 546000,
+    "grand_high": 3000000,
+    "notes": "Military low/high are combined combatant deaths for both sides. Civilian_low is a conservative floor: 500,000 famine deaths plus at least 1,000 Asaba civilians, excluding unquantified direct killings and Biafran-reported incidents. The grand_low is this floor plus the military low. The grand_high uses the upper end of published overall war-death estimates, 3,000,000, because direct civilian deaths, disease, and famine mortality are not cleanly separable and some broader sources estimate up to 3,000,000 total deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Biafran famine / Federal blockade",
+      "year": 1968,
+      "perpetrator": "Federal Military Government of Nigeria",
+      "victims_group": "Biafran civilians, predominantly Igbo civilians and refugees",
+      "low": 500000,
+      "high": 2000000,
+      "notes": "The dominant mass-death process of the war; caused by blockade, encirclement, food cutoff, disease, and displacement. Some broader total war-death estimates reach 3,000,000.",
+      "sources": [
+        "https://academic.oup.com/book/46670/chapter/410143605",
+        "https://en.wikipedia.org/wiki/Nigerian_Civil_War",
+        "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0013582",
+        "https://www.britannica.com/topic/Nigerian-civil-war"
+      ]
+    },
+    {
+      "name": "Asaba massacre",
+      "year": 1967,
+      "perpetrator": "Federal Military Government of Nigeria",
+      "victims_group": "Asaba civilians, mostly Igbo/Anioma civilians",
+      "low": 1000,
+      "high": 2000,
+      "notes": "At least 1,000 civilians killed; about 700 at Ogbe-Osawa, with one witness estimate of 2,000 cited in a Biafran submission.",
+      "sources": [
+        "https://www.researchgate.net/publication/265249617_The_Asaba_massacre_and_the_Nigerian_Civil_War_Reclaiming_hidden_history",
+        "https://www.asabamemorial.org/what-happened-at-asaba"
+      ]
+    },
+    {
+      "name": "Federal bombing of civilian targets",
+      "year": 1968,
+      "perpetrator": "Federal Military Government of Nigeria",
+      "victims_group": "Biafran civilians in markets, hospitals, settlements, and relief areas",
+      "low": null,
+      "high": null,
+      "notes": "Contemporary and later sources report bombing of civilian settlements, market places, and hospitals, but no reliable aggregate death toll was found.",
+      "sources": [
+        "https://api.parliament.uk/historic-hansard/lords/1969/mar/11/nigeria-bombing-of-biafran-civilian",
+        "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+      ]
+    },
+    {
+      "name": "Biafran anti-saboteur operations against minorities",
+      "year": 1967,
+      "perpetrator": "Republic of Biafra",
+      "victims_group": "Efik, Ibibio, Ijaw, Rivers, Cross River, Akwa Ibom, and other minority civilians",
+      "low": null,
+      "high": null,
+      "notes": "Reported killings, detentions, forced removals, and torture of minority civilians accused of collaboration or sabotage; one reported incident alleges 169 detained civilians shot at Calabar, but no reliable aggregate death toll was found.",
+      "sources": [
+        "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175",
+        "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf"
+      ]
+    },
+    {
+      "name": "1966 anti-Igbo pogroms",
+      "year": 1966,
+      "perpetrator": "Northern Nigerian mobs and elements linked to anti-Igbo violence before the war",
+      "victims_group": "Igbo civilians",
+      "low": 30000,
+      "high": 30000,
+      "notes": "Pre-war atrocity outside the 1967\u20131970 war total but central to Biafra's secession claim; one account gives about 30,000 Igbo civilians killed in 1966.",
+      "sources": [
+        "https://items.ssrc.org/how-genocides-end/colonial-legacy-elite-dissension-and-the-making-of-genocide-the-story-of-biafra/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Death registration collapsed during the war, access to Biafra was restricted, both sides used propaganda, and many victims died from overlapping causes: starvation, disease, displacement, bombing, and combat proximity. The largest uncertainty is famine mortality, with credible sources giving ranges from hundreds of thousands to up to two million, while broader total-death estimates reach three million. No reliable split of military deaths by side was found, and no credible aggregate was found for direct civilian killings by either side outside well-studied incidents such as Asaba.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/topic/Nigerian-civil-war",
+      "title": "Nigerian Civil War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/master/frd/copr/Nigeria.pdf",
+      "title": "Country Profile: Nigeria",
+      "publisher": "Library of Congress, Federal Research Division"
+    },
+    {
+      "url": "https://academic.oup.com/book/46670/chapter/410143605",
+      "title": "Nigerian Civil War, 1967\u20131970",
+      "publisher": "Oxford Scholarship Online"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0013582",
+      "title": "Hypertension, Diabetes and Overweight: Looming Legacies of the Biafran Famine",
+      "publisher": "PLOS One"
+    },
+    {
+      "url": "https://www.researchgate.net/publication/265249617_The_Asaba_massacre_and_the_Nigerian_Civil_War_Reclaiming_hidden_history",
+      "title": "The Asaba massacre and the Nigerian Civil War: Reclaiming hidden history",
+      "publisher": "Journal of Genocide Research / Taylor & Francis"
+    },
+    {
+      "url": "https://www.asabamemorial.org/what-happened-at-asaba",
+      "title": "What Happened at Asaba?",
+      "publisher": "Asaba Memorial Project"
+    },
+    {
+      "url": "https://manifold.open.umn.edu/read/chapter-1/section/8edc03ae-7a24-4c59-8087-098b6ed98175",
+      "title": "The Forgotten Victims: Ethnic Minorities in the Nigeria-Biafra War, 1967\u20131970",
+      "publisher": "OEN Manifold"
+    },
+    {
+      "url": "https://gavinwilliams.org/wp-content/uploads/2014/01/1982-The-Nigerian-Civil-War.pdf",
+      "title": "The Nigerian Civil War",
+      "publisher": "Gavin Williams archive / historical essay"
+    },
+    {
+      "url": "https://api.parliament.uk/historic-hansard/lords/1969/mar/11/nigeria-bombing-of-biafran-civilian",
+      "title": "Nigeria: Bombing of Biafran Civilian Targets",
+      "publisher": "UK Parliament Hansard"
+    },
+    {
+      "url": "https://api.parliament.uk/historic-hansard/written-answers/1968/oct/22/first-part-observers-interim-report",
+      "title": "First Part Observers' Interim Report",
+      "publisher": "UK Parliament Hansard"
+    },
+    {
+      "url": "https://brill.com/view/journals/jamh/2/2/article-p87_1.pdf",
+      "title": "What Are They Observing? The Accomplishments and Missed Opportunities of Observer Missions in the Nigerian Civil War",
+      "publisher": "Journal of African Military History / Brill"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/07292473.2021.1942625",
+      "title": "Ojukwu\u2019s Biafra: Relief Corridor, Arms Smuggling, and Broken Diplomacy in the Nigerian Civil War",
+      "publisher": "War & Society / Taylor & Francis"
+    },
+    {
+      "url": "https://items.ssrc.org/how-genocides-end/colonial-legacy-elite-dissension-and-the-making-of-genocide-the-story-of-biafra/",
+      "title": "Colonial Legacy, Elite Dissension and the Making of Genocide: The Story of Biafra",
+      "publisher": "Social Science Research Council"
+    }
+  ]
+}

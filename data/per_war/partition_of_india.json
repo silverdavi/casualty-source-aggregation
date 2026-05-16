@@ -1,0 +1,383 @@
+{
+  "war_id": "partition_of_india",
+  "name": "Partition of India",
+  "start_year": 1947,
+  "end_year": 1948,
+  "ongoing": false,
+  "regions": [
+    "British India",
+    "India",
+    "Pakistan",
+    "Punjab",
+    "Bengal",
+    "Delhi",
+    "Jammu and Kashmir",
+    "Sindh",
+    "North-West Frontier Province"
+  ],
+  "summary": "The Partition of India divided British India into the dominions of India and Pakistan in August 1947 and triggered mass migration, ethnic cleansing, massacres, abductions, and refugee-crisis deaths. The most commonly cited death range is 200,000 to 2,000,000, though narrower scholarly estimates often cluster around 360,000 to 1,000,000. Because the violence was communal and civilian rather than a conventional war, side-specific casualty attribution is highly uncertain.",
+  "sides": [
+    {
+      "name": "Muslim / Pakistan-side communal actors",
+      "members": [
+        "Muslim mobs",
+        "Muslim League National Guard",
+        "local Muslim League cadres",
+        "Pakistan-side police/local officials where implicated",
+        "armed Muslim and Pathan irregulars in Kashmir-related violence"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate found for combatant deaths among Muslim/Pakistan-side irregulars, cadres, police deserters, or militias. Partition violence was primarily communal and civilian.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 200000,
+        "high": 500000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/communal killing",
+            "victims_group": "Hindu and Sikh civilians, aggregate victim-side proxy",
+            "low": 200000,
+            "high": 500000,
+            "notes": "Uses sources that split deaths roughly by religion: Khosla's cited estimate of 200,000-250,000 non-Muslims and Butalia's approximately 1,000,000 total with roughly half non-Muslim. This is not a precise perpetrator-side count.",
+            "sources": [
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Hindu and Sikh civilians in Rawalpindi Division",
+            "low": 4000,
+            "high": 8000,
+            "notes": "Later estimates for Rawalpindi rural massacres; an official Rawalpindi district figure listed 2,263 non-Muslims killed but is widely treated as incomplete.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Rawalpindi_Massacres"
+            ]
+          },
+          {
+            "cause": "train massacre",
+            "victims_group": "Hindu and Sikh refugees at Kamoke",
+            "low": 408,
+            "high": 3350,
+            "notes": "Pakistan Punjab police figure reported 408 dead; press reports implying about 150 survivors from 3,500 refugees suggest a much higher toll. High value is an implication from reported passengers/survivors, not a settled official total.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1947_Kamoke_train_massacre"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Hindu and Sikh civilians/refugees in Mirpur and surrounding Kashmir areas",
+            "low": null,
+            "high": 20000,
+            "notes": "Christopher Snedden describes allegations of about 20,000 non-Muslims killed in Mirpur as unverifiable; included as an uncertain atrocity figure, not as a firm count.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1947_Jammu_massacres"
+            ]
+          }
+        ],
+        "notes": "Victim-side estimates are used because the literature rarely provides perpetrator-side totals. Muslim/Pakistan-side actors directly killed large numbers of Hindu and Sikh civilians, but a clean aggregate is not available.",
+        "sources": [
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Hindu and Sikh refugees displaced from West Punjab, Sindh, NWFP, and Kashmir-related areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Indirect deaths from forced flight, disease, exposure, and hunger are not separated from direct massacre deaths in the available sources.",
+          "sources": [
+            "https://pure.johnshopkins.edu/en/publications/the-demographic-impact-of-partition-in-the-punjab-in-1947-5/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hindu-Sikh / India-side communal actors",
+      "members": [
+        "Sikh jathas",
+        "Hindu communal mobs",
+        "RSS-linked/local Hindu militias where implicated",
+        "Akali-linked actors",
+        "East Punjab local actors",
+        "Dogra/princely-state forces and allied Hindu-Sikh extremists in Jammu where implicated"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate found for combatant deaths among Sikh jathas, Hindu militias, princely-state forces, local police, or other India-side armed actors.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 200000,
+        "high": 500000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre/communal killing",
+            "victims_group": "Muslim civilians, aggregate victim-side proxy",
+            "low": 200000,
+            "high": 500000,
+            "notes": "Uses sources that split deaths roughly by religion: Khosla's cited estimate of 200,000-250,000 Muslims and Butalia's approximately 1,000,000 total with roughly half Muslim. This is not a precise perpetrator-side count.",
+            "sources": [
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007"
+            ]
+          },
+          {
+            "cause": "train massacre",
+            "victims_group": "Muslim refugees at Amritsar",
+            "low": 3000,
+            "high": 3000,
+            "notes": "Estimated dead in the 22 September 1947 Amritsar train massacre; about 1,000 additional people were wounded.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1947_Amritsar_train_massacre"
+            ]
+          },
+          {
+            "cause": "massacre/expulsion",
+            "victims_group": "Muslim civilians in Jammu",
+            "low": 20000,
+            "high": 100000,
+            "notes": "Published estimates vary widely: Justice Yusuf Saraf 20,000-30,000; Pakistan early calculation 50,000; two-Englishman investigation 70,000; Ian Copland about 80,000; Ved Bhasin about 100,000.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1947_Jammu_massacres"
+            ]
+          },
+          {
+            "cause": "communal violence",
+            "victims_group": "Muslim civilians in Delhi",
+            "low": 10000,
+            "high": 10000,
+            "notes": "Talbot cites unofficial estimates that September violence in Delhi claimed about 10,000 Muslim lives; this is an event/locality figure.",
+            "sources": [
+              "https://perspectivia.net/servlets/MCRFileNodeServlet/pnet_derivate_00004226/talbot_partition.pdf"
+            ]
+          }
+        ],
+        "notes": "Victim-side estimates are used because the literature rarely provides perpetrator-side totals. Hindu-Sikh/India-side actors directly killed large numbers of Muslim civilians, but a clean aggregate is not available.",
+        "sources": [
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Muslim refugees displaced from East Punjab, Delhi, Jammu, and other India-side areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Indirect deaths from forced flight, disease, exposure, hunger, and refugee movement are not separated from direct massacre deaths in the available sources.",
+          "sources": [
+            "https://pure.johnshopkins.edu/en/publications/the-demographic-impact-of-partition-in-the-punjab-in-1947-5/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "British colonial, successor-dominion, and princely-state authorities",
+      "members": [
+        "British Raj authorities",
+        "Punjab Boundary Force",
+        "Dominion of India authorities",
+        "Dominion of Pakistan authorities",
+        "princely-state administrations including Jammu and Kashmir"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate found for troops, police, or security personnel killed in Partition-related service.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "state-force participation in massacre",
+            "victims_group": "Muslim civilians in Jammu",
+            "low": 20000,
+            "high": 100000,
+            "notes": "Jammu deaths involved Dogra/princely-state forces and allied Hindu-Sikh extremists; counted above under Hindu-Sikh/India-side actors to avoid double counting.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1947_Jammu_massacres"
+            ]
+          }
+        ],
+        "notes": "No single aggregate for direct killings by British or successor-dominion state forces was found. Most direct killings are attributed to communal mobs, militias, irregulars, and local armed groups, with Jammu as a major state-force-linked exception.",
+        "sources": [
+          "https://perspectivia.net/servlets/MCRFileNodeServlet/pnet_derivate_00004226/talbot_partition.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "state_failure",
+          "victims_group": "All Partition-affected civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The rushed partition, late boundary announcement, inadequate security, and refugee-protection failures were important causal conditions, but no reliable numerical share of deaths can be assigned to this bucket.",
+          "sources": [
+            "https://perspectivia.net/servlets/MCRFileNodeServlet/pnet_derivate_00004226/talbot_partition.pdf",
+            "https://www.britannica.com/event/Partition-of-India"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 200000,
+    "civilian_high": 2000000,
+    "grand_low": 200000,
+    "grand_high": 2000000,
+    "notes": "Total uses the conventional reported death range of 200,000-2,000,000. An indicative side-attributed subtotal based on sources that split Muslim and non-Muslim victims is about 400,000-1,000,000, but it is not used as a strict additive total because perpetrator-side attribution and indirect deaths are not separable. Demographic studies reporting 3.4 million missing or 2.3-3.2 million Punjab losses include unrecorded migration as well as deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Punjab-wide Partition massacres and ethnic cleansing",
+      "year": 1947,
+      "perpetrator": "Multiple sides",
+      "victims_group": "Muslims, Hindus, and Sikhs in Punjab",
+      "low": 500000,
+      "high": 800000,
+      "notes": "Ishtiaq Ahmed's Punjab-focused study is summarized as estimating 500,000-800,000 killed and 10 million Punjabis forced to flee.",
+      "sources": [
+        "https://search.worldcat.org/title/The-Punjab-bloodied-partitioned-and-cleansed-%3A-unravelling-the-1947-tragedy-through-secret-British-reports-and-first-person-accounts/oclc/793991363"
+      ]
+    },
+    {
+      "name": "Rawalpindi massacres",
+      "year": 1947,
+      "perpetrator": "Muslim / Pakistan-side communal actors",
+      "victims_group": "Hindu and Sikh civilians",
+      "low": 4000,
+      "high": 8000,
+      "notes": "Later estimates range around 4,000-8,000; official Rawalpindi district figure of 2,263 non-Muslims killed is considered incomplete.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rawalpindi_Massacres"
+      ]
+    },
+    {
+      "name": "Amritsar train massacre",
+      "year": 1947,
+      "perpetrator": "Hindu-Sikh / India-side communal actors",
+      "victims_group": "Muslim refugees",
+      "low": 3000,
+      "high": 3000,
+      "notes": "About 3,000 killed and about 1,000 wounded on 22 September 1947.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_Amritsar_train_massacre"
+      ]
+    },
+    {
+      "name": "Kamoke train massacre",
+      "year": 1947,
+      "perpetrator": "Muslim / Pakistan-side communal actors",
+      "victims_group": "Hindu and Sikh refugees",
+      "low": 408,
+      "high": 3350,
+      "notes": "Pakistan Punjab police reported 408 dead; some press accounts imply a far higher toll based on passenger and survivor counts.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_Kamoke_train_massacre"
+      ]
+    },
+    {
+      "name": "Jammu massacres",
+      "year": 1947,
+      "perpetrator": "Hindu-Sikh / India-side communal actors and Dogra/princely-state forces",
+      "victims_group": "Muslim civilians",
+      "low": 20000,
+      "high": 100000,
+      "notes": "Estimates vary widely, including 20,000-30,000, 50,000, 70,000, 80,000, and about 100,000.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1947_Jammu_massacres"
+      ]
+    },
+    {
+      "name": "Partition sexual violence and abductions",
+      "year": 1947,
+      "perpetrator": "Multiple sides",
+      "victims_group": "Women and girls from Muslim, Hindu, and Sikh communities",
+      "low": 75000,
+      "high": 100000,
+      "notes": "Widely cited estimates range from 75,000 to 100,000 women abducted and/or raped; deaths among these victims are not separately quantified.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violence_against_women_during_the_Partition_of_India",
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The Partition death toll is deeply contested because records collapsed, many families disappeared during migration, and reports often count victims by religion rather than by perpetrator. Military deaths are not separately available because this was not a conventional war with formal casualty returns. Demographic estimates of missing population cannot be treated as direct death counts because they include unrecorded migration and census/projection uncertainty. Indirect deaths from exposure, hunger, disease, camps, and flight are real but cannot be cleanly separated from direct killings or assigned to one side.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Partition-of-India",
+      "title": "Partition of India",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://perspectivia.net/servlets/MCRFileNodeServlet/pnet_derivate_00004226/talbot_partition.pdf",
+      "title": "The 1947 Partition of India and Migration",
+      "publisher": "Ian Talbot / Perspectivia"
+    },
+    {
+      "url": "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/thematic-chronology-mass-violence-pakistan-1947-2007",
+      "title": "Thematic Chronology of Mass Violence in Pakistan, 1947-2007",
+      "publisher": "Sciences Po Mass Violence & Resistance Research Network"
+    },
+    {
+      "url": "https://pure.johnshopkins.edu/en/publications/the-demographic-impact-of-partition-in-the-punjab-in-1947-5/",
+      "title": "The demographic impact of partition in the Punjab in 1947",
+      "publisher": "Johns Hopkins University / Population Studies"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1124093",
+      "title": "The Big March: Migratory Flows after the Partition of India",
+      "publisher": "SSRN / Harvard Kennedy School Working Paper"
+    },
+    {
+      "url": "https://search.worldcat.org/title/The-Punjab-bloodied-partitioned-and-cleansed-%3A-unravelling-the-1947-tragedy-through-secret-British-reports-and-first-person-accounts/oclc/793991363",
+      "title": "The Punjab Bloodied, Partitioned and Cleansed",
+      "publisher": "WorldCat / Oxford University Press Pakistan"
+    },
+    {
+      "url": "https://academic.oup.com/hgs/article/36/3/334/6712512",
+      "title": "Decolonization and Genocide: Re-Examining Indian Partition, 1946-1947",
+      "publisher": "Holocaust and Genocide Studies / Oxford Academic"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rawalpindi_Massacres",
+      "title": "Rawalpindi Massacres",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1947_Amritsar_train_massacre",
+      "title": "1947 Amritsar train massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1947_Kamoke_train_massacre",
+      "title": "1947 Kamoke train massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1947_Jammu_massacres",
+      "title": "1947 Jammu massacres",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Violence_against_women_during_the_Partition_of_India",
+      "title": "Violence against women during the Partition of India",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

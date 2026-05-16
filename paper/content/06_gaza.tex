@@ -1,0 +1,47 @@
+\section{Application: Gaza 2023--2026}\label{sec:gaza}
+
+We instantiate the framework using only inputs whose measurement is not controlled by either belligerent: PCBS population structure \citep{pcbs}; OCHA and Gaza MoH total deaths \citep{ochaopt}; OHCHR and MoH demographic death records \citep{ohchr2024}; Lancet excess-mortality information \citep{khatib2024,khatib2025,spagatlgh2026}; and IISS / RUSI / CSIS combatant-strength estimates \citep{iiss2024,rusi2024}. The IDF claim itself \citep{idfclaim} is the object of the test, not an input.
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Diagnostic inputs for Gaza.} The disputed quantity $D_M$ is tested against the other rows.}
+\label{tab:gaza-inputs}
+\begin{small}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Input & Value & Channel \\
+\midrule
+$w$       & $0.733$                                        & PCBS population structure \\
+$a$       & $0.255$                                        & PCBS age pyramid \\
+$\omega$  & $0.693$ (OHCHR), $0.560$ (MoH), $0.620$ blend  & identified deaths \\
+$f$       & $0.0157$--$0.0269$                             & Hamas/PIJ pre-war manpower $/$ population \\
+$D$       & $\approx 70{,}000$ direct deaths               & OCHA/MoH, late 2025 \\
+$\bar\mu$ & $2.5$                                          & exposure-cap sensitivity parameter \\
+claim     & $17$--$25$k combatants                         & IDF public statements \\
+\bottomrule
+\end{tabular}
+\end{small}
+\end{table}
+
+\paragraph{Step 1: rejecting uniform random violence.} The naive null ``violence is uniform across the population'' predicts $\E\omega=w=73.3\%$. The OHCHR sample ($n=8{,}119$, $\hat\omega=69.3\%$) gives $z=-8.16$, $p\approx 1.7\times 10^{-16}$, decisively rejecting uniformity. Adult males are overrepresented---necessarily, since the universe contains both combatants and structurally-exposed civilian men. Rejecting uniformity is necessary but not sufficient to rationalise any \emph{specific} combatant share.
+
+\paragraph{Step 2: identified set.} On the blended anchor $\hat\omega=0.620$,
+\[
+\hat q_{\mu=1}=1-\tfrac{0.620\cdot(1-0.02)}{0.733}\approx 0.17,\qquad
+q\in[0,\,0.17]\;\;\text{at}\;\bar\mu=2.5.
+\]
+On the OHCHR anchor the upper endpoint is about $7\%$ even at $\mu=1$.
+
+\paragraph{Step 3: claim test.} The IDF range of $17$--$25$k combatants over a $70$k denominator gives $q^{\mathrm{IDF}}\approx 24$--$36\%$, far above $q(1)$. At $\bar\mu=2.5$, rationalising it requires $\omega\in[0.39,0.49]$, i.e., $13$--$23$ points below the blended anchor. With $\sigma_\omega\approx 0.01$, this is roughly $20$--$23\sigma$, dominating both other axes:
+\[
+\rho_{\mathrm{IDF}}\;\gtrsim\;20.
+\]
+
+\paragraph{Step 4: spatial Bayesian posterior.} Discretising Gaza into governorate cells, placing militants under a clustering prior, modelling strike intensity as a function of militant density, and estimating civilian adult-male exposure jointly with total deaths and the demographic records yields
+\[
+q=2.5\%, \qquad 95\%\;\mathrm{CrI}=[1.6\%,\,3.8\%],\qquad
+\widehat{D_M}=1{,}779\;[1{,}112,\,2{,}720].
+\]
+The implied civilian-to-combatant ratio is $43{:}1$ with a 95\% credible interval $[30,64]$. Figure~\ref{fig:gaza-diagnostic} shows the full picture: panel A places the posterior anchors in the low-$q$ region of the $(\omega,w)$ heatmap; panel B compares the posterior on $q$ to the IDF claim band; panel C compares implied combatant counts on a log scale; panel D decomposes the $\sim$70k reported dead; panel E shows the civilian-to-combatant ratio. The point estimates align with the demographic Bayesian estimate of \citet{gomez2025} once their reporting prior is set to ignore underreporting, and with the field-survey violent-death estimates of \citet{spagatlgh2026}.
+
+\paragraph{Symmetry.} The test rejects the polar narrative $q=0$ for the same reason: that value is also outside the feasible set $\mathcal F$ given the observed overrepresentation of adult males.

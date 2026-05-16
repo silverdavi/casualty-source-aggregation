@@ -1,0 +1,318 @@
+{
+  "war_id": "first_indochina_war",
+  "name": "First Indochina War",
+  "start_year": 1946,
+  "end_year": 1954,
+  "ongoing": false,
+  "regions": [
+    "French Indochina",
+    "Vietnam",
+    "Laos",
+    "Cambodia"
+  ],
+  "summary": "The First Indochina War was fought between the Viet Minh/Democratic Republic of Vietnam and allied anti-French movements on one side, and the French Union plus the Associated States of Vietnam, Laos, and Cambodia on the other. Although major fighting began in southern Vietnam in 1945, the conventional war dates are December 1946 to July/August 1954. Total deaths are usually estimated around 400,000, with broader tabulations reaching about 842,707 killed.",
+  "sides": [
+    {
+      "name": "Viet Minh / Democratic Republic of Vietnam side",
+      "members": [
+        "Democratic Republic of Vietnam",
+        "Viet Minh",
+        "People's Army of Vietnam",
+        "Pathet Lao",
+        "Khmer Issarak",
+        "United Issarak Front"
+      ],
+      "military_killed": {
+        "low": 175000,
+        "high": 300000,
+        "point": 191605,
+        "notes": "Western estimates commonly give 175,000-300,000 Viet Minh dead or missing; a Vietnamese government figure is 191,605 dead or missing. A higher 500,000 figure exists in some summaries but appears not to be a clean military-death count.",
+        "sources": [
+          "https://en.wikipedia-on-ipfs.org/wiki/First_Indochina_War",
+          "https://everything.explained.today/French_Indochina_War/",
+          "https://www.larousse.fr/encyclopedie/divers/guerre_d_Indochine/124937"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 100000,
+        "high": 150000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "assassination and political execution",
+            "victims_group": "civilians, alleged collaborators, rival Vietnamese nationalists, officials, and noncombatants associated with the French or anti-communist factions",
+            "low": 100000,
+            "high": 150000,
+            "notes": "Arthur J. Dommen is cited for an estimate that the Viet Minh assassinated 100,000-150,000 civilians during the war.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/First_Indochina_War",
+              "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+            ]
+          },
+          {
+            "cause": "terror attack",
+            "victims_group": "unarmed people at Cap Saint-Jacques hospital/rest facility",
+            "low": 20,
+            "high": 20,
+            "notes": "Illustrative event: Viet Minh militants reportedly killed 20 unarmed people on 21 July 1952. This is not added separately to the Dommen aggregate.",
+            "sources": [
+              "https://time.com/archive/6887084/indo-china-massacre-at-cap/",
+              "https://en.wikipedia.org/wiki/First_Indochina_War"
+            ]
+          }
+        ],
+        "notes": "The main attributed civilian-death estimate for Viet Minh direct violence is Dommen's 100,000-150,000 assassinated civilians. Attribution is contested and the figure is not independently verified by a truth commission.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/First_Indochina_War",
+          "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "captivity",
+          "victims_group": "French Union and Associated States prisoners of war and missing personnel",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Large numbers of pro-French personnel died or disappeared after capture, but available sources do not support a clean death total. Chemins de m\u00e9moire says more than 20,000 French, Legionnaire, and African troops were reported prisoners or missing, plus tens of thousands of Indochinese. ANAPI cites a post-Geneva count of 40,285 missing/prisoner cases across CEFEO, indigenous Far East forces, and the Vietnamese National Army, but not all were confirmed captivity deaths.",
+          "sources": [
+            "https://www.cheminsdememoire.gouv.fr/en/french-prisoners-vietnam",
+            "https://anapi.fr/?p=3722"
+          ]
+        },
+        {
+          "type": "forced_march",
+          "victims_group": "Dien Bien Phu and other French Union prisoners",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ANAPI reports very high mortality on forced marches and cites a claim that about 70% of Dien Bien Phu prisoners died after four months of captivity, but this is not a total-war aggregate.",
+          "sources": [
+            "https://anapi.fr/?p=3722"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "French Union / Associated States side",
+      "members": [
+        "France",
+        "French Union",
+        "French Far East Expeditionary Corps",
+        "Foreign Legion",
+        "North African colonial troops",
+        "Sub-Saharan African colonial troops",
+        "Indochinese regulars and auxiliaries",
+        "State of Vietnam",
+        "Vietnamese National Army",
+        "Kingdom of Laos",
+        "Kingdom of Cambodia"
+      ],
+      "military_killed": {
+        "low": 92000,
+        "high": 134500,
+        "point": null,
+        "notes": "The low estimate uses official-style French category totals of about 92,000 dead. The high estimate uses a broader tabulation of about 75,581 French Union dead plus 58,877 State of Vietnam dead or missing, about 134,500. Some categories may overlap, so the high estimate should be treated cautiously.",
+        "sources": [
+          "https://indochine.uqam.ca/en/historical-dictionary/223-casualties-indochina-war.html",
+          "https://www.larousse.fr/encyclopedie/divers/guerre_d_Indochine/124937",
+          "https://en.wikipedia-on-ipfs.org/wiki/First_Indochina_War",
+          "https://everything.explained.today/French_Indochina_War/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 60000,
+        "high": 250000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "counterinsurgency firepower, bombardment, and repression",
+            "victims_group": "Vietnamese, Lao, and Cambodian civilians in areas targeted during the campaign against the Viet Minh",
+            "low": 60000,
+            "high": 250000,
+            "notes": "Benjamin Valentino's estimate, cited by RAND, attributes 60,000-250,000 deaths to the French campaign against the Viet Minh.",
+            "sources": [
+              "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA300/RRA307-3/RAND_RRA307-3.pdf"
+            ]
+          },
+          {
+            "cause": "bombardment",
+            "victims_group": "Vietnamese civilians in Haiphong",
+            "low": 2000,
+            "high": 6000,
+            "notes": "The Haiphong bombardment of 23 November 1946 is commonly estimated at 2,000-6,000 Vietnamese killed, mostly civilians.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Haiphong_incident",
+              "https://www.ina.fr/ina-eclaire-actu/les-evenements-sanglants-d-hanoi-marquent-le-debut-de-la-guerre-d-indochine"
+            ]
+          },
+          {
+            "cause": "massacre, rape, arson",
+            "victims_group": "Vietnamese civilians in My Trach village",
+            "low": 300,
+            "high": 326,
+            "notes": "The My Trach massacre is reported as over 300 civilians killed, with some memorial accounts using 326 and describing 326 houses burned.",
+            "sources": [
+              "https://everything.explained.today/M%E1%BB%B9_Tr%E1%BA%A1ch_massacre/",
+              "https://a.osmarks.net/content/wikipedia_en_all_maxi_2020-08/A/M%E1%BB%B9_Tr%E1%BA%A1ch_massacre"
+            ]
+          }
+        ],
+        "notes": "The 60,000-250,000 range is used as the main attribution band for French-caused direct civilian deaths. Individual massacre figures are illustrative and included within, not added on top of, that range.",
+        "sources": [
+          "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA300/RRA307-3/RAND_RRA307-3.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "Viet Minh prisoners and detainees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "French forces practiced torture against Viet Minh prisoners, but I found no reliable aggregate death toll for deaths caused by French detention and interrogation policies.",
+          "sources": [
+            "https://indochine.uqam.ca/en/component/content/article/1/1420-torture-french.html"
+          ]
+        },
+        {
+          "type": "execution",
+          "victims_group": "Viet Minh prisoners in some Associated States / Vietnamese National Army-administered camps",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ANAPI reports that camps transferred in 1952-1953 to Vietnamese National Army administration were associated with summary executions, but no usable aggregate total is provided.",
+          "sources": [
+            "https://anapi.fr/?p=3722"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 267000,
+    "military_high": 434500,
+    "civilian_low": 125000,
+    "civilian_high": 400000,
+    "grand_low": 400000,
+    "grand_high": 842707,
+    "notes": "Military_low is Viet Minh low 175,000 plus French/pro-French low about 92,000. Military_high is Viet Minh high 300,000 plus French/pro-French high about 134,500. Civilian_low/high uses the commonly cited total civilian range of 125,000-400,000 because per-perpetrator estimates are methodologically different and may not be fully compatible. Grand_low/high follows published aggregate estimates of about 400,000 to 842,707 total killed."
+  },
+  "key_atrocities": [
+    {
+      "name": "Haiphong bombardment / Haiphong incident",
+      "year": 1946,
+      "perpetrator": "French Union / Associated States side",
+      "victims_group": "Vietnamese civilians in Haiphong",
+      "low": 2000,
+      "high": 6000,
+      "notes": "French naval and ground action in Haiphong on 23 November 1946; commonly cited death toll is 2,000-6,000, mostly civilians.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Haiphong_incident",
+        "https://www.ina.fr/ina-eclaire-actu/les-evenements-sanglants-d-hanoi-marquent-le-debut-de-la-guerre-d-indochine"
+      ]
+    },
+    {
+      "name": "My Trach massacre",
+      "year": 1947,
+      "perpetrator": "French Union / Associated States side",
+      "victims_group": "Vietnamese civilians in My Trach village",
+      "low": 300,
+      "high": 326,
+      "notes": "French troops reportedly killed over 300 civilians and burned 326 houses; some accounts list 170 women and 157 children among victims.",
+      "sources": [
+        "https://everything.explained.today/M%E1%BB%B9_Tr%E1%BA%A1ch_massacre/",
+        "https://a.osmarks.net/content/wikipedia_en_all_maxi_2020-08/A/M%E1%BB%B9_Tr%E1%BA%A1ch_massacre"
+      ]
+    },
+    {
+      "name": "Viet Minh assassination and terror campaign",
+      "year": null,
+      "perpetrator": "Viet Minh / Democratic Republic of Vietnam side",
+      "victims_group": "civilians, alleged collaborators, rival nationalists, officials, and noncombatants",
+      "low": 100000,
+      "high": 150000,
+      "notes": "Arthur J. Dommen is cited for 100,000-150,000 civilians assassinated by the Viet Minh during the war.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/First_Indochina_War",
+        "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+      ]
+    },
+    {
+      "name": "Cap Saint-Jacques hospital/rest-facility attack",
+      "year": 1952,
+      "perpetrator": "Viet Minh / Democratic Republic of Vietnam side",
+      "victims_group": "unarmed hospital/rest-facility occupants",
+      "low": 20,
+      "high": 20,
+      "notes": "Viet Minh militants reportedly killed 20 unarmed people on 21 July 1952.",
+      "sources": [
+        "https://time.com/archive/6887084/indo-china-massacre-at-cap/",
+        "https://en.wikipedia.org/wiki/First_Indochina_War"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainties are overlap among French Union, indigenous, and State of Vietnam military categories; inconsistent treatment of dead versus missing; the blurred line between guerrilla, militia, and civilian; and the lack of a truth-commission-style accounting of civilian deaths. The French side has better administrative records, but even those are inconsistent. Viet Minh and civilian losses are more heavily dependent on historian estimates and later official or memorial claims.",
+  "sources": [
+    {
+      "url": "https://indochine.uqam.ca/en/historical-dictionary/223-casualties-indochina-war.html",
+      "title": "Casualties, Indochina War",
+      "publisher": "UQAM / Christopher E. Goscha historical dictionary"
+    },
+    {
+      "url": "https://assets.cambridge.org/97811089/41075/excerpt/9781108941075_excerpt.pdf",
+      "title": "The First Vietnam War excerpt",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://www.larousse.fr/encyclopedie/divers/guerre_d_Indochine/124937",
+      "title": "guerre d'Indochine 1940-1954",
+      "publisher": "Larousse"
+    },
+    {
+      "url": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA300/RRA307-3/RAND_RRA307-3.pdf",
+      "title": "Proxy Warfare in Strategic Competition: Military Implications",
+      "publisher": "RAND Corporation"
+    },
+    {
+      "url": "https://anapi.fr/?p=3722",
+      "title": "Les Disparus de la Guerre d'Indochine: une comptabilit\u00e9 probl\u00e9matique, voire impossible?",
+      "publisher": "ANAPI"
+    },
+    {
+      "url": "https://www.cheminsdememoire.gouv.fr/en/french-prisoners-vietnam",
+      "title": "The French prisoners in Vietnam",
+      "publisher": "Chemins de m\u00e9moire / French Ministry of Armed Forces memory site"
+    },
+    {
+      "url": "https://www.britannica.com/event/First-Indochina-War",
+      "title": "First Indochina War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Haiphong_incident",
+      "title": "Haiphong incident",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.ina.fr/ina-eclaire-actu/les-evenements-sanglants-d-hanoi-marquent-le-debut-de-la-guerre-d-indochine",
+      "title": "Les \u00ab \u00e9v\u00e9nements sanglants d'Hano\u00ef \u00bb marquent le d\u00e9but de la guerre d'Indochine",
+      "publisher": "INA"
+    },
+    {
+      "url": "https://everything.explained.today/M%E1%BB%B9_Tr%E1%BA%A1ch_massacre/",
+      "title": "My Trach massacre explained",
+      "publisher": "Everything Explained Today"
+    },
+    {
+      "url": "https://time.com/archive/6887084/indo-china-massacre-at-cap/",
+      "title": "Indo-China: Massacre at Cap",
+      "publisher": "TIME"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/First_Indochina_War",
+      "title": "First Indochina War",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

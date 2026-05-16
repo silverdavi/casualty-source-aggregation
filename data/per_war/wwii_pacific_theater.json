@@ -1,0 +1,574 @@
+{
+  "war_id": "wwii_pacific_theater",
+  "name": "World War II - Pacific Theater / Asia-Pacific War",
+  "start_year": 1941,
+  "end_year": 1945,
+  "ongoing": false,
+  "regions": [
+    "Asia-Pacific",
+    "China",
+    "Japan",
+    "Southeast Asia",
+    "Pacific Islands",
+    "Philippines",
+    "India/Bengal",
+    "Manchuria"
+  ],
+  "summary": "This report treats the conflict as the December 1941-August/September 1945 Pacific War while noting that many China casualty sources cover the full 1937-1945 Sino-Japanese War. The death toll was dominated by Chinese military and civilian losses, Japanese military deaths, Japanese occupation-related famine and forced labor in Southeast Asia, Allied bombing of Japan, and the Bengal famine. A defensible broad range is about 20-30 million deaths, depending on whether full China 1937-45 and wider famine/occupation mortality are included.",
+  "sides": [
+    {
+      "name": "Empire of Japan / Axis-aligned side",
+      "members": [
+        "Empire of Japan",
+        "Manchukuo",
+        "Mengjiang",
+        "collaborationist regimes in occupied China and Southeast Asia"
+      ],
+      "military_killed": {
+        "low": 2120000,
+        "high": 2300000,
+        "point": 2120000,
+        "notes": "Japanese military/service deaths including combat, disease, starvation, ship sinkings, missing presumed dead and other service-related causes. The lower figure is the common WWII military-dead table estimate; the higher figure follows broader Japanese government-related categories for military/quasi-military war dead.",
+        "sources": [
+          "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+          "https://www.japan-press.co.jp/modules/news/?id=16035&pc_flag=ON",
+          "https://www.mhlw.go.jp/english/wp/wp-hw4/dl/honbun/2_2_8.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3000000,
+        "high": 10000000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre, executions, anti-guerrilla operations, air attacks",
+            "victims_group": "Chinese civilians and surrendered troops",
+            "low": 3000000,
+            "high": 6000000,
+            "notes": "Very uncertain. Includes direct killings in China; some sources cite Rummel-derived estimates of millions directly murdered by Japanese forces, while Chinese wartime categories separate only some direct deaths.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Japanese_war_crimes",
+              "https://en.wikipedia.org/wiki/World_War_II_casualties",
+              "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+            ]
+          },
+          {
+            "cause": "Three Alls policy / anti-guerrilla devastation",
+            "victims_group": "North China civilians",
+            "low": 2470000,
+            "high": 2700000,
+            "notes": "Often cited from historian Mitsuyoshi Himeta; blends direct killing with destruction, displacement and deprivation.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+            ]
+          },
+          {
+            "cause": "massacre and urban battle",
+            "victims_group": "Filipino civilians in Manila",
+            "low": 100000,
+            "high": 100000,
+            "notes": "Total civilian deaths in the Battle of Manila were about 100,000; many were attributed to Japanese massacres, while some were caused by U.S. artillery and urban combat.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Manila_massacre",
+              "https://en.wikipedia.org/wiki/Battle_of_Manila_(1945)",
+              "https://www.nationalww2museum.org/war/articles/liberation-of-philippines-cecilia-gaerlan"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Ethnic Chinese civilians in Singapore and Malaya",
+            "low": 5000,
+            "high": 50000,
+            "notes": "Sook Ching estimates range from Japanese records around 5,000-6,000 to retrospective/historical estimates around 25,000-50,000, with some higher Singaporean claims.",
+            "sources": [
+              "https://www.pacificatrocities.org/sook-ching-massacre.html",
+              "https://everything.explained.today/Sook_Ching/",
+              "https://www.nhb.gov.sg/nationalmuseum/-/media/nms2017/documents/school-programmes/teachers-hi-resource-unit-3-japanese-occupation.ashx?la=en"
+            ]
+          },
+          {
+            "cause": "biological warfare and human experimentation",
+            "victims_group": "Chinese, Korean, Mongolian, Soviet/Russian and Allied prisoners and civilians",
+            "low": 3000,
+            "high": 500000,
+            "notes": "At least 3,000 deaths are documented for Unit 731 human experimentation; broader biological-warfare death estimates in China range roughly 200,000-500,000 and are highly uncertain.",
+            "sources": [
+              "https://www.britannica.com/topic/Unit-731",
+              "https://www.china.org.cn/china/2010-05/14/content_20043489.htm",
+              "https://en.wikipedia.org/wiki/Japan_and_weapons_of_mass_destruction"
+            ]
+          }
+        ],
+        "notes": "Direct civilian killings by Japanese forces were massive but cannot be cleanly separated from indirect occupation deaths in many regions. The low/high range is intentionally broad.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Japanese_war_crimes",
+          "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+          "https://en.wikipedia.org/wiki/Manila_massacre",
+          "https://www.pacificatrocities.org/sook-ching-massacre.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Southeast Asian civilians under Japanese occupation",
+          "low": 4400000,
+          "high": 4500000,
+          "point": 4400000,
+          "notes": "Gregg Huff/Cambridge estimates that famine and forced labor accounted for most of about 4.4-4.5 million Southeast Asian civilian deaths under Japanese occupation.",
+          "sources": [
+            "https://books.google.com/books/about/World_War_II_and_Southeast_Asia.html?id=waECEAAAQBAJ",
+            "https://cambridgeblog.org/2020/11/world-war-ii-and-southeast-asia/",
+            "https://eh.net/book_reviews/world-war-ii-and-southeast-asia-economy-and-society-under-japanese-occupation/"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Indonesian/Java civilians under Japanese occupation",
+          "low": 2400000,
+          "high": 4000000,
+          "point": 3300000,
+          "notes": "Includes famine, forced labor and occupation breakdown; the 3.3 million point refers to a demographic estimate of net population loss in Java during Japanese occupation.",
+          "sources": [
+            "https://hill80.com/research/indonesia-ww2-conflict-archaeology/",
+            "https://openresearch-repository.anu.edu.au/items/ba1cae8b-4356-4e01-b42e-ad35c67f2f7a",
+            "https://www.niod.nl/en/frequently-asked-questions/japanese-occupation-and-pacific-war-numbers"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Vietnamese civilians in northern Vietnam",
+          "low": 1000000,
+          "high": 2000000,
+          "point": null,
+          "notes": "The 1944-45 Vietnam famine was caused by Japanese occupation demands, French colonial administration, transport disruption, Allied attacks and crop failures; attribution is shared but Japanese requisition and occupation policy were central.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Vietnamese_famine_of_1944%E2%80%931945",
+            "https://www.viet-studies.net/kinhte/VietNamFamine1945_HR.pdf",
+            "https://viet-studies.net/kinhte/VietFamine1945_July2021.pdf"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Allied POWs and Asian r\u014dmusha on the Burma-Thailand Railway",
+          "low": 102000,
+          "high": 106000,
+          "point": null,
+          "notes": "Many standard accounts give about 90,000 Asian civilian laborer deaths and about 12,000-16,000 Allied POW deaths. These overlap with broader Southeast Asia occupation-death estimates.",
+          "sources": [
+            "https://www.britannica.com/topic/Burma-Railway",
+            "https://www.nma.gov.au/defining-moments/resources/burma-thailand-railway",
+            "https://anzacportal.dva.gov.au/wars-and-missions/ww2/pows/burma-thailand-railway"
+          ]
+        },
+        {
+          "type": "captivity",
+          "victims_group": "Western Allied prisoners of war in Japanese custody",
+          "low": 35500,
+          "high": 41600,
+          "point": 35756,
+          "notes": "Approximately 132,000 Western Allied POWs were captured by Japan; about 27% died. Some aggregate POW-death figures differ depending on inclusion of deaths from Allied attacks on POW transport ships.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Allied_prisoners_of_war_of_Japan",
+            "https://www.britannica.com/topic/Burma-Railway",
+            "https://en.wikipedia.org/wiki/Prisoner_of_war"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Allies",
+      "members": [
+        "United States",
+        "Republic of China",
+        "United Kingdom and British Empire/Commonwealth",
+        "Australia",
+        "India under British rule",
+        "Netherlands / Dutch East Indies forces",
+        "Philippines / Commonwealth of the Philippines",
+        "Soviet Union",
+        "New Zealand",
+        "Free French and other Allied forces"
+      ],
+      "military_killed": {
+        "low": 3200000,
+        "high": 4300000,
+        "point": 3700000,
+        "notes": "Dominated by China. China is commonly listed at 3-4 million military deaths for the 1937-45 war with Japan/WWII. Additional deaths include roughly 108,000-112,000 U.S. Asia-Pacific deaths, about 57,000 Philippine military deaths, roughly 30,000 British Empire Far East deaths, Soviet killed/missing in 1945 operations, and smaller Dutch/Commonwealth losses.",
+        "sources": [
+          "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+          "https://www.ibiblio.org/hyperwar/USA/ref/Casualties/Casualties-2.html",
+          "https://www.ibiblio.org/hyperwar/USA/ref/Casualties/Casualties-1.html",
+          "https://www.lemonde.fr/en/international/article/2025/09/15/the-united-kingdom-s-nearly-forgotten-war-against-japan_6745401_4.html",
+          "https://wiki-gateway.eudic.net/wikipedia_en/Soviet_invasion_of_Manchuria.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 333000,
+        "high": 1000000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "strategic bombing",
+            "victims_group": "Japanese civilians in home-island cities",
+            "low": 333000,
+            "high": 900000,
+            "notes": "USSBS Medical Division estimated 333,000 killed and 473,000 wounded by bombing of Japan; other USSBS survey approaches produced higher estimates up to about 900,000 killed with large sampling error.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/World_War_II_casualties",
+              "https://en.wikipedia.org/wiki/Air_raids_on_Japan",
+              "https://www.ibiblio.org/hyperwar/NHC/NewPDFs/USAAF/United%20States%20Strategic%20Bombing%20Survey/USSBS%20Effects%20of%20Air%20Attack%20on%20Japanese%20Urban%20Economy%2C%20Summary%20Report.pdf"
+            ]
+          },
+          {
+            "cause": "atomic bombing",
+            "victims_group": "Civilians and military personnel in Hiroshima and Nagasaki",
+            "low": 150000,
+            "high": 246000,
+            "notes": "RERF estimates 90,000-166,000 deaths in Hiroshima and 60,000-80,000 in Nagasaki by the end of 1945. These deaths are included within the broader strategic-bombing category and should not be double counted with it.",
+            "sources": [
+              "https://www.rerf.or.jp/en/faq/",
+              "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
+            ]
+          },
+          {
+            "cause": "firebombing",
+            "victims_group": "Tokyo civilians",
+            "low": 80000,
+            "high": 100000,
+            "notes": "Operation Meetinghouse killed at least 80,000 and likely more than 100,000 in one night. These deaths are included in the broader bombing-of-Japan total.",
+            "sources": [
+              "https://www.britannica.com/event/Bombing-of-Tokyo",
+              "https://apnews.com/article/241223cc4b5405eb44b897bb8852857e"
+            ]
+          },
+          {
+            "cause": "shelling, bombing, crossfire, battle collapse",
+            "victims_group": "Okinawan civilians",
+            "low": 40000,
+            "high": 150000,
+            "notes": "Total Okinawan civilian deaths are often estimated at 40,000-150,000, frequently 100,000-150,000. Attribution between U.S. firepower, Japanese coercion, mass suicide, starvation and crossfire is not cleanly separable.",
+            "sources": [
+              "https://www.history.com/topics/world-war-ii/battle-of-okinawa",
+              "https://www.pbs.org/wgbh/americanexperience/features/pacific-civilians-okinawa/",
+              "https://www.britannica.com/topic/Battle-of-Okinawa/Intensification-and-collapse-of-Japanese-resistance"
+            ]
+          },
+          {
+            "cause": "artillery and urban combat",
+            "victims_group": "Filipino civilians in Manila",
+            "low": null,
+            "high": 40000,
+            "notes": "About 100,000 civilians died in Manila; one estimate attributes up to 40% of noncombatant deaths to U.S. military operations. This is not a firm count.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Battle_of_Manila_(1945)"
+            ]
+          }
+        ],
+        "notes": "The lower bound counts only USSBS Medical Division deaths from bombing of Japan. The upper bound includes high USSBS survey estimates and some civilian deaths from Okinawa/Manila attributable to Allied firepower; overlap and attribution uncertainty are severe.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Air_raids_on_Japan",
+          "https://www.rerf.or.jp/en/faq/",
+          "https://www.britannica.com/event/Bombing-of-Tokyo",
+          "https://www.history.com/topics/world-war-ii/battle-of-okinawa"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Bengal civilians under British Indian wartime administration",
+          "low": 2100000,
+          "high": 3800000,
+          "point": 2100000,
+          "notes": "The Bengal famine death toll is commonly summarized around 2.1 million in scholarly consensus, with wider estimates up to 3.8 million. British wartime policy was a major causal factor, but not the sole cause; Japanese conquest of Burma, transport disruption, inflation, market failure, crop issues and colonial administrative failures all contributed.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties",
+            "https://www.britannica.com/money/Bengal-famine-of-1943",
+            "https://en.banglapedia.org/index.php/Famine%2C_1943",
+            "https://journals.sagepub.com/doi/10.1177/2348448917725856"
+          ]
+        },
+        {
+          "type": "blockade",
+          "victims_group": "Japanese civilians affected by blockade and shipping collapse",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Allied submarine campaign and mining/blockade severely disrupted food and fuel flows, but I did not find a reliable separable death toll attributable specifically to blockade-induced civilian starvation in Japan.",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 5300000,
+    "military_high": 6600000,
+    "civilian_low": 14700000,
+    "civilian_high": 23400000,
+    "grand_low": 20000000,
+    "grand_high": 30000000,
+    "notes": "The military total combines roughly 3.2-4.3 million Allied military deaths with 2.12-2.3 million Japanese military deaths. The civilian range is a cautious synthesis of direct killings, bombing deaths, occupation famine/forced labor, China famine/disease and Bengal famine; it should not be treated as a precise arithmetic sum because major sources overlap and use different date boundaries. Grand total is rounded to about 20-30 million."
+  },
+  "key_atrocities": [
+    {
+      "name": "Strategic bombing of Japan",
+      "year": 1945,
+      "perpetrator": "Allies / United States",
+      "victims_group": "Japanese civilians",
+      "low": 333000,
+      "high": 900000,
+      "notes": "USSBS Medical Division estimated 333,000 killed; other survey estimates were higher.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Air_raids_on_Japan",
+        "https://en.wikipedia.org/wiki/World_War_II_casualties"
+      ]
+    },
+    {
+      "name": "Atomic bombings of Hiroshima and Nagasaki",
+      "year": 1945,
+      "perpetrator": "Allies / United States",
+      "victims_group": "Japanese civilians and military personnel in target cities",
+      "low": 150000,
+      "high": 246000,
+      "notes": "RERF estimates deaths by the end of 1945 at 90,000-166,000 in Hiroshima and 60,000-80,000 in Nagasaki.",
+      "sources": [
+        "https://www.rerf.or.jp/en/faq/",
+        "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
+      ]
+    },
+    {
+      "name": "Tokyo firebombing / Operation Meetinghouse",
+      "year": 1945,
+      "perpetrator": "Allies / United States",
+      "victims_group": "Tokyo civilians",
+      "low": 80000,
+      "high": 100000,
+      "notes": "Often described as the deadliest single air raid in history; about one million were left homeless.",
+      "sources": [
+        "https://www.britannica.com/event/Bombing-of-Tokyo",
+        "https://apnews.com/article/241223cc4b5405eb44b897bb8852857e"
+      ]
+    },
+    {
+      "name": "Japanese occupation of Southeast Asia",
+      "year": null,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Southeast Asian civilians",
+      "low": 4400000,
+      "high": 4500000,
+      "notes": "Mostly famine and forced labor deaths under occupation.",
+      "sources": [
+        "https://books.google.com/books/about/World_War_II_and_Southeast_Asia.html?id=waECEAAAQBAJ",
+        "https://cambridgeblog.org/2020/11/world-war-ii-and-southeast-asia/"
+      ]
+    },
+    {
+      "name": "Vietnam famine",
+      "year": 1945,
+      "perpetrator": "Empire of Japan and Vichy/French colonial administration, with Allied transport attacks as contributing factor",
+      "victims_group": "Vietnamese civilians",
+      "low": 1000000,
+      "high": 2000000,
+      "notes": "Attribution is shared, but Japanese requisition and occupation policy were central.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vietnamese_famine_of_1944%E2%80%931945",
+        "https://viet-studies.net/kinhte/VietFamine1945_July2021.pdf"
+      ]
+    },
+    {
+      "name": "Java/Indonesia famine and romusha forced labor",
+      "year": 1945,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Indonesian civilians and forced laborers",
+      "low": 2400000,
+      "high": 4000000,
+      "notes": "Includes famine, forced labor and occupation-related mortality; a demographic study estimates 3.3 million net population loss in Java during occupation.",
+      "sources": [
+        "https://hill80.com/research/indonesia-ww2-conflict-archaeology/",
+        "https://openresearch-repository.anu.edu.au/items/ba1cae8b-4356-4e01-b42e-ad35c67f2f7a",
+        "https://www.niod.nl/en/frequently-asked-questions/japanese-occupation-and-pacific-war-numbers"
+      ]
+    },
+    {
+      "name": "Manila massacre / Battle of Manila",
+      "year": 1945,
+      "perpetrator": "Empire of Japan, with additional deaths from Allied urban combat",
+      "victims_group": "Filipino civilians",
+      "low": 100000,
+      "high": 100000,
+      "notes": "About 100,000 civilians died; Japanese massacres were central, but U.S. artillery and urban combat also caused civilian deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Manila_massacre",
+        "https://en.wikipedia.org/wiki/Battle_of_Manila_(1945)",
+        "https://www.nationalww2museum.org/war/articles/liberation-of-philippines-cecilia-gaerlan"
+      ]
+    },
+    {
+      "name": "Battle of Okinawa civilian deaths",
+      "year": 1945,
+      "perpetrator": "Allies / United States and Empire of Japan",
+      "victims_group": "Okinawan civilians",
+      "low": 40000,
+      "high": 150000,
+      "notes": "Civilian deaths resulted from crossfire, U.S. bombardment, Japanese coercion, mass suicide, starvation and battlefield collapse.",
+      "sources": [
+        "https://www.history.com/topics/world-war-ii/battle-of-okinawa",
+        "https://www.pbs.org/wgbh/americanexperience/features/pacific-civilians-okinawa/",
+        "https://www.britannica.com/topic/Battle-of-Okinawa/Intensification-and-collapse-of-Japanese-resistance"
+      ]
+    },
+    {
+      "name": "Three Alls policy",
+      "year": 1942,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "North China civilians",
+      "low": 2470000,
+      "high": 2700000,
+      "notes": "Commonly cited from Mitsuyoshi Himeta; includes blended direct and indirect deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+      ]
+    },
+    {
+      "name": "Bengal famine",
+      "year": 1943,
+      "perpetrator": "British imperial wartime administration, with Japanese conquest of Burma and wartime disruption as contributing causes",
+      "victims_group": "Bengal civilians",
+      "low": 2100000,
+      "high": 3800000,
+      "notes": "Attribution remains debated; British wartime policy and colonial administrative failures were major factors but not the only causes.",
+      "sources": [
+        "https://www.britannica.com/money/Bengal-famine-of-1943",
+        "https://en.banglapedia.org/index.php/Famine%2C_1943",
+        "https://en.wikipedia.org/wiki/World_War_II_casualties"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is the treatment of China: many figures cover 1937-1945 rather than the 1941-1945 Pacific War. Direct Japanese civilian killings are hard to separate from famine, disease, scorched-earth policy and displacement. Several categories overlap, especially Southeast Asian occupation deaths, forced labor deaths and country totals. Bengal is included for fairness because it was a major Asia wartime famine shaped by British wartime policy, but its inclusion in a narrow Pacific Theater definition is debatable.",
+  "sources": [
+    {
+      "url": "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+      "title": "Research Starters: Worldwide Deaths in World War II",
+      "publisher": "The National WWII Museum"
+    },
+    {
+      "url": "https://www.japan-press.co.jp/modules/news/?id=16035&pc_flag=ON",
+      "title": "3.76 million war deaths, big discrepancy from government statistics",
+      "publisher": "Japan Press Weekly"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/english/wp/wp-hw4/dl/honbun/2_2_8.pdf",
+      "title": "Section 8 Creating a Welfare Society Where Elderly People Can Live with Peace of Mind",
+      "publisher": "Japan Ministry of Health, Labour and Welfare"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/ref/Casualties/Casualties-2.html",
+      "title": "Army Battle Casualties and Nonbattle Deaths in World War II: Battle and Nonbattle Deaths",
+      "publisher": "U.S. Army / HyperWar"
+    },
+    {
+      "url": "https://www.ibiblio.org/hyperwar/USA/ref/Casualties/Casualties-1.html",
+      "title": "Army Battle Casualties and Nonbattle Deaths in World War II: Battle Casualties",
+      "publisher": "U.S. Army / HyperWar"
+    },
+    {
+      "url": "https://www.rerf.or.jp/en/faq/",
+      "title": "Frequently Asked Questions",
+      "publisher": "Radiation Effects Research Foundation"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Air_raids_on_Japan",
+      "title": "Air raids on Japan",
+      "publisher": "Wikipedia, summarizing USSBS and other sources"
+    },
+    {
+      "url": "https://www.britannica.com/event/Bombing-of-Tokyo",
+      "title": "Bombing of Tokyo",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://books.google.com/books/about/World_War_II_and_Southeast_Asia.html?id=waECEAAAQBAJ",
+      "title": "World War II and Southeast Asia: Economy and Society under Japanese Occupation",
+      "publisher": "Cambridge University Press / Google Books"
+    },
+    {
+      "url": "https://cambridgeblog.org/2020/11/world-war-ii-and-southeast-asia/",
+      "title": "World War II and Southeast Asia",
+      "publisher": "Cambridge University Press Blog"
+    },
+    {
+      "url": "https://openresearch-repository.anu.edu.au/items/ba1cae8b-4356-4e01-b42e-ad35c67f2f7a",
+      "title": "Mortality from the 1944-1945 famine in Java, Indonesia",
+      "publisher": "Australian National University Open Research Repository"
+    },
+    {
+      "url": "https://www.niod.nl/en/frequently-asked-questions/japanese-occupation-and-pacific-war-numbers",
+      "title": "The Japanese Occupation and Pacific War (in numbers)",
+      "publisher": "NIOD Institute for War, Holocaust and Genocide Studies"
+    },
+    {
+      "url": "https://viet-studies.net/kinhte/VietFamine1945_July2021.pdf",
+      "title": "The Great Vietnam Famine of 1944-45 Revisited",
+      "publisher": "Economic History / Viet-Studies mirror"
+    },
+    {
+      "url": "https://www.britannica.com/topic/Burma-Railway",
+      "title": "Burma Railway",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.nma.gov.au/defining-moments/resources/burma-thailand-railway",
+      "title": "Burma-Thailand Railway",
+      "publisher": "National Museum of Australia"
+    },
+    {
+      "url": "https://www.britannica.com/money/Bengal-famine-of-1943",
+      "title": "Bengal famine of 1943",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://en.banglapedia.org/index.php/Famine%2C_1943",
+      "title": "Famine, 1943",
+      "publisher": "Banglapedia"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/2348448917725856",
+      "title": "Mr Keynes and the forgotten holocaust in Bengal, 1943-44",
+      "publisher": "SAGE Journals"
+    },
+    {
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/pacific-civilians-okinawa/",
+      "title": "Civilians on Okinawa",
+      "publisher": "PBS American Experience"
+    },
+    {
+      "url": "https://www.history.com/topics/world-war-ii/battle-of-okinawa",
+      "title": "Battle of Okinawa",
+      "publisher": "History.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Manila_massacre",
+      "title": "Manila massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.nationalww2museum.org/war/articles/liberation-of-philippines-cecilia-gaerlan",
+      "title": "Liberation of the Philippines 1945",
+      "publisher": "The National WWII Museum"
+    },
+    {
+      "url": "https://www.pacificatrocities.org/sook-ching-massacre.html",
+      "title": "Sook Ching Massacre",
+      "publisher": "Pacific Atrocities Education"
+    },
+    {
+      "url": "https://www.britannica.com/topic/Unit-731",
+      "title": "Unit 731",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.china.org.cn/china/2010-05/14/content_20043489.htm",
+      "title": "3,000 victims of Japan's Unit 731 confirmed",
+      "publisher": "China.org.cn"
+    }
+  ]
+}

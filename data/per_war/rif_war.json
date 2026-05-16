@@ -1,0 +1,383 @@
+{
+  "war_id": "rif_war",
+  "name": "Rif War",
+  "start_year": 1921,
+  "end_year": 1927,
+  "ongoing": false,
+  "regions": [
+    "Rif region",
+    "Spanish Protectorate in Morocco",
+    "French Protectorate in Morocco",
+    "Northern Morocco"
+  ],
+  "summary": "The Rif War was an anti-colonial conflict between the Republic of the Rif, led by Abd el-Krim, and Spanish colonial forces later joined by France. The main sustained war ran from July 1921 to May 1926, with Spanish pacification operations continuing into 1927. The best quantified toll is roughly 69,000 battle-related combatant fatalities in COW coding, but civilian and indirect deaths from bombing, chemical weapons, blockade, displacement, and food-infrastructure destruction were not credibly counted.",
+  "sides": [
+    {
+      "name": "Spanish colonial forces",
+      "members": [
+        "Spain",
+        "Spanish Protectorate forces",
+        "Spanish Legion",
+        "Regulares and other Moroccan colonial troops serving Spain"
+      ],
+      "military_killed": {
+        "low": 13192,
+        "high": 29000,
+        "point": null,
+        "notes": "Low is the official Spanish death toll for Annual and the subsequent rout to Melilla, including Moroccan colonial troops serving Spain. High uses the COW state-side battle-death figure as an upper-bound indicator, but this may include or overlap French state-side losses and is not a clean Spanish-only figure.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Battle_of_Annual",
+          "https://www.globalsecurity.org/military/world/war/20th-century2.htm",
+          "https://correlatesofwar.org/wp-content/uploads/Extra-StateWars_Codebook.pdf",
+          "https://www.britannica.com/event/Rif-War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "chemical_bombing",
+            "victims_group": "Riffian civilians",
+            "low": null,
+            "high": null,
+            "notes": "Spanish poison-gas use is well attested, including attacks against civilian dwellings and populated areas, but no credible death count was found.",
+            "sources": [
+              "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923",
+              "https://academic.oup.com/book/47359"
+            ]
+          },
+          {
+            "cause": "conventional_bombing_shelling_ground_operations",
+            "victims_group": "Riffian civilians",
+            "low": null,
+            "high": null,
+            "notes": "Civilian populations and infrastructure were affected and in some cases targeted, but no reliable numerical count exists.",
+            "sources": [
+              "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+            ]
+          }
+        ],
+        "notes": "Civilian deaths caused directly by Spanish forces were not systematically counted; available sources emphasize that civilian deaths were likely underestimated or omitted.",
+        "sources": [
+          "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923",
+          "https://academic.oup.com/book/47359"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Riffian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Spanish policy included blockades and destruction of resources, but starvation/disease deaths are unquantified.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        },
+        {
+          "type": "chemical_weapons_long_term_health_effects",
+          "victims_group": "Riffian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Local and NGO claims link later cancer and malformations to mustard-gas exposure, but no independent international scientific study provides a reliable death toll.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        },
+        {
+          "type": "destruction_of_food_infrastructure",
+          "victims_group": "Riffian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Operations affected livestock, markets, agricultural land, dwellings, and harvests; indirect deaths are not quantified.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "French colonial forces",
+      "members": [
+        "France",
+        "French Protectorate forces",
+        "Army of Africa",
+        "Foreign Legion units",
+        "Senegalese and North African colonial units",
+        "Moroccan auxiliaries serving France",
+        "Escadrille Cherifienne"
+      ],
+      "military_killed": {
+        "low": 8628,
+        "high": 18000,
+        "point": 8628,
+        "notes": "The 8,628 figure is a commonly cited final French deaths-from-battle-and-disease total. A French-language summary gives 10,000 French dead, while the ICRC review reports that some sources suggest 18,000 French troops died but warns that these figures should be treated with caution.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rif_War",
+          "https://www.linternaute.fr/actualite/guide-histoire/2667730-guerre-du-rif-la-resistance-berbere-d-abdelkrim-el-khattabi/",
+          "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "aerial_bombing",
+            "victims_group": "Riffian civilians",
+            "low": null,
+            "high": null,
+            "notes": "French bombing was extensive, including 1,434.62 tons dropped between May 1925 and 1926; civilian deaths are unquantified.",
+            "sources": [
+              "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+            ]
+          },
+          {
+            "cause": "chemical_weapons",
+            "victims_group": "Riffian combatants and civilians",
+            "low": null,
+            "high": null,
+            "notes": "Recent archival research documents French storage and early use of chloropicrin, phosgene, and mustard gas in April-July 1925; deaths are unquantified.",
+            "sources": [
+              "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123"
+            ]
+          },
+          {
+            "cause": "bombardment",
+            "victims_group": "Civilians in Chefchaouen",
+            "low": null,
+            "high": null,
+            "notes": "The 17 September 1925 bombing of Chefchaouen by an American mercenary squadron in French service is described as a civilian bombing, but no reliable fatality count was found.",
+            "sources": [
+              "https://www.insidehook.com/culture/rogue-american-flyers-bombed-moroccan-holy-city-chefchaouen",
+              "https://en.wikipedia.org/wiki/Bombardment_of_Chefchaouen"
+            ]
+          }
+        ],
+        "notes": "French direct civilian killing is well supported qualitatively but not numerically.",
+        "sources": [
+          "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923",
+          "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Riffian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "French participation in blockade and counter-insurgency pressure likely produced indirect deaths, but no credible numerical estimate was found.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        },
+        {
+          "type": "destruction_of_food_infrastructure",
+          "victims_group": "Riffian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Military operations affected food production infrastructure, but deaths from starvation, disease, or displacement cannot be quantified from available sources.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        },
+        {
+          "type": "chemical_weapons",
+          "victims_group": "Riffian combatants and civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "French chemical warfare in 1925 is documented, but no reliable death toll is available.",
+          "sources": [
+            "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Republic of the Rif / Riffian tribal forces",
+      "members": [
+        "Republic of the Rif",
+        "Aith Waryaghar and allied Riffian tribes",
+        "Jebala allies",
+        "Forces loyal to Abd el-Krim"
+      ],
+      "military_killed": {
+        "low": 10000,
+        "high": 40000,
+        "point": null,
+        "notes": "Low is the nearly 10,000 Riffian dead reported in a review of Schiavon's study. COW gives 40,000 non-state battle-related combatant fatalities. The ICRC review cites some sources giving 30,000 Riffian troop deaths but warns that such figures are uncertain.",
+        "sources": [
+          "https://www.defnat.com/e-RDN/vue-article.php?carticle=21227",
+          "https://www.globalsecurity.org/military/world/war/20th-century2.htm",
+          "https://correlatesofwar.org/wp-content/uploads/Extra-StateWars_Codebook.pdf",
+          "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No responsible estimate was found for civilians directly killed by Riffian forces. The better documented Riffian atrocities involved captured Spanish soldiers and prisoners of war rather than civilians.",
+        "sources": [
+          "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "captivity",
+          "victims_group": "Spanish prisoners of war",
+          "low": 224,
+          "high": 224,
+          "point": 224,
+          "notes": "In one documented prisoner group, 550 Spanish prisoners were repatriated in 1923 and only 326 returned; the remainder died of hunger or were executed. This overlaps with Spanish military deaths and should not be added to the grand total.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        },
+        {
+          "type": "execution_of_prisoners",
+          "victims_group": "Spanish surrendered soldiers and prisoners",
+          "low": 10000,
+          "high": 14000,
+          "point": null,
+          "notes": "The ICRC review reports that on several occasions, including Annual, Mont Aroui/Monte Arruit, and Nador, Spanish troops were executed and mutilated, with deaths estimated at 10,000-14,000. This likely overlaps heavily with the official Annual/rout military death toll.",
+          "sources": [
+            "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 69000,
+    "military_high": 69000,
+    "civilian_low": null,
+    "civilian_high": null,
+    "grand_low": 69000,
+    "grand_high": null,
+    "notes": "COW gives 69,000 battle-related combatant fatalities: 29,000 state-side and 40,000 non-state-side. This is a floor for deaths, not a full human toll. Civilian and indirect deaths from bombing, gas, blockade, disease, displacement, and food-infrastructure destruction are unquantified, so no responsible grand upper bound can be given."
+  },
+  "key_atrocities": [
+    {
+      "name": "Battle of Annual and subsequent rout",
+      "year": 1921,
+      "perpetrator": "Republic of the Rif / Riffian tribal forces",
+      "victims_group": "Spanish and Spanish-colonial soldiers",
+      "low": 13192,
+      "high": 13192,
+      "notes": "Official Spanish death toll for Annual and the subsequent rout to Melilla; includes Moroccan colonial troops serving Spain.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Battle_of_Annual",
+        "https://www.historynet.com/rif-war/"
+      ]
+    },
+    {
+      "name": "Massacre of Monte Arruit",
+      "year": 1921,
+      "perpetrator": "Republic of the Rif / Riffian tribal forces",
+      "victims_group": "Spanish surrendered soldiers",
+      "low": 2000,
+      "high": 3000,
+      "notes": "Spanish soldiers were killed after surrendering the Monte Arruit garrison; this is a subset of the Annual/rout death toll.",
+      "sources": [
+        "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923"
+      ]
+    },
+    {
+      "name": "Spanish chemical-weapons campaign in the Rif",
+      "year": 1924,
+      "perpetrator": "Spanish colonial forces",
+      "victims_group": "Riffian combatants and civilians",
+      "low": null,
+      "high": null,
+      "notes": "Spanish poison-gas use from spring 1924 is well attested and included attacks on civilian dwellings and populated areas, but no reliable death toll was found.",
+      "sources": [
+        "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923",
+        "https://academic.oup.com/book/47359"
+      ]
+    },
+    {
+      "name": "Bombardment of Chefchaouen",
+      "year": 1925,
+      "perpetrator": "French colonial forces / Escadrille Cherifienne",
+      "victims_group": "Civilians in Chefchaouen",
+      "low": null,
+      "high": null,
+      "notes": "An American mercenary squadron in French service bombed Chefchaouen on 17 September 1925; civilian fatalities are not reliably quantified.",
+      "sources": [
+        "https://www.insidehook.com/culture/rogue-american-flyers-bombed-moroccan-holy-city-chefchaouen",
+        "https://en.wikipedia.org/wiki/Bombardment_of_Chefchaouen"
+      ]
+    },
+    {
+      "name": "French chemical-warfare deployment in Morocco",
+      "year": 1925,
+      "perpetrator": "French colonial forces",
+      "victims_group": "Riffian combatants and civilians",
+      "low": null,
+      "high": null,
+      "notes": "Archival research documents French use and storage of chloropicrin, phosgene, and mustard gas during the 1925 campaign, but no death toll is available.",
+      "sources": [
+        "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The Rif War has no reliable comprehensive civilian death count. Military figures vary because sources mix killed, wounded, missing, battle deaths, and deaths from disease. COW provides a useful aggregate battle-related combatant death figure, but per-side Spanish/French attribution is not clean in public summary tables. Deaths from poison gas, blockade, displacement, disease, and food-infrastructure destruction were real but cannot be responsibly quantified from the available sources.",
+  "sources": [
+    {
+      "url": "https://www.globalsecurity.org/military/world/war/20th-century2.htm",
+      "title": "Early 20th Century Extra-State Wars",
+      "publisher": "GlobalSecurity.org"
+    },
+    {
+      "url": "https://correlatesofwar.org/wp-content/uploads/Extra-StateWars_Codebook.pdf",
+      "title": "Extra-state Wars (Version 4.0): Definitions and Variables",
+      "publisher": "Correlates of War Project"
+    },
+    {
+      "url": "https://international-review.icrc.org/articles/the-rif-war-a-forgotten-war-923",
+      "title": "The Rif War: A forgotten war?",
+      "publisher": "International Review of the Red Cross"
+    },
+    {
+      "url": "https://www.britannica.com/event/Rif-War",
+      "title": "Rif War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.defnat.com/e-RDN/vue-article.php?carticle=21227",
+      "title": "La guerre du Rif - Un conflit colonial oubli\u00e9 (1925-1926)",
+      "publisher": "Revue D\u00e9fense Nationale"
+    },
+    {
+      "url": "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123",
+      "title": "Hidden in plain sight: the beginnings of French chemical warfare in Morocco\u2019s Rif War (April\u2013July 1925)",
+      "publisher": "DOAJ / Frontiers in Political Science"
+    },
+    {
+      "url": "https://academic.oup.com/book/47359",
+      "title": "Deadly Embrace: Morocco and the Road to the Spanish Civil War",
+      "publisher": "Oxford Academic"
+    },
+    {
+      "url": "https://www.historynet.com/rif-war/",
+      "title": "Rif War",
+      "publisher": "HistoryNet"
+    },
+    {
+      "url": "https://www.insidehook.com/culture/rogue-american-flyers-bombed-moroccan-holy-city-chefchaouen",
+      "title": "When Rogue American Flyers Bombed a Moroccan Holy City",
+      "publisher": "InsideHook"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "war_id": "rohingya_genocide",
+  "name": "Rohingya genocide / Myanmar military operations",
+  "start_year": 2016,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Myanmar",
+    "Rakhine State",
+    "Bangladesh border / Cox's Bazar spillover"
+  ],
+  "summary": "From October 2016 onward, attacks by Rohingya militants were followed by Myanmar military and police 'clearance operations' against Rohingya civilians in northern Rakhine State. The 2017 campaign involved mass killings, rape, village-burning, forced displacement and persecution that UN investigators said warranted investigation for genocide. Since late 2023, renewed Rakhine fighting has trapped Rohingya between the Myanmar military, the Arakan Army and Rohingya armed groups, with new killings, forced recruitment, detention, displacement and severe humanitarian deprivation continuing into 2026.",
+  "sides": [
+    {
+      "name": "Myanmar military / Myanmar state security forces and aligned local auxiliaries",
+      "members": [
+        "Tatmadaw / Myanmar Armed Forces",
+        "Myanmar Police Force",
+        "Border Guard Police",
+        "Western Command",
+        "33rd Light Infantry Division",
+        "99th Light Infantry Division",
+        "organized local Rakhine and other non-Rohingya civilian auxiliaries"
+      ],
+      "military_killed": {
+        "low": 21,
+        "high": 45,
+        "point": null,
+        "notes": "Low uses UN Fact-Finding Mission figures of 9 police killed in the 9 October 2016 attacks and 12 security personnel killed in the 25 August 2017 attacks. High uses broader Myanmar official reporting that by 18 October 2016 the dead included 5 soldiers and 9 policemen, plus later reporting of 15 government troops killed in the August 2017 violence. The figures are not fully harmonized.",
+        "sources": [
+          "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf",
+          "https://time.com/4534399/burma-myanmar-maungdaw-rohingya-arakan-jihadists/",
+          "https://www.rfa.org/english/news/myanmar/toll-09012017153437.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7800,
+        "high": 26100,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "clearance_operations_2016",
+            "victims_group": "Rohingya civilians",
+            "low": 1000,
+            "high": null,
+            "notes": "UN officials and OHCHR-related reporting indicated more than 1,000 Rohingya may have been killed in the October 2016 to early 2017 crackdown; no reliable upper bound found.",
+            "sources": [
+              "https://www.genocidewatch.com/single-post/2019/12/01/UN-OHCHR-2016-Myanmar-Atrocities-Against-Rohingya",
+              "https://time.com/4664851/myanmar-rohingya-killings-crackdown-suu-kyi/"
+            ]
+          },
+          {
+            "cause": "shootings_burnings_beatings_massacres_2017",
+            "victims_group": "Rohingya civilians",
+            "low": 6700,
+            "high": 25000,
+            "notes": "MSF estimated at least 6,700 violence-related deaths in the first month after 25 August 2017. Higher survey-based estimates from the OIDA-published Forced Migration of Rohingya study are commonly reported as roughly 24,000 to 25,000 killed since August 2017.",
+            "sources": [
+              "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
+              "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",
+              "https://www.aa.com.tr/en/asia-pacific/new-report-myanmar-army-killed-over-24-000-rohingya/1235442",
+              "https://www.thedailystar.net/news/frontpage/killing-rohingyas-death-toll-could-be-over-10000-1622392"
+            ]
+          },
+          {
+            "cause": "airstrike_helicopter_boat_shooting_2024_2025",
+            "victims_group": "Rohingya civilians",
+            "low": 22,
+            "high": null,
+            "notes": "Documented examples include 8 killed by a military helicopter in Pan Taw Pyin on 10 June 2024, 8 killed in a military airstrike at Habi Anarwa on 13 July 2024, and 6 Rohingya killed when the military opened fire on a boat in Mon State on 12 February 2025. This is not a full 2024-2025 toll.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          },
+          {
+            "cause": "village_massacre_2024",
+            "victims_group": "Ethnic Rakhine civilians in Byaing Phyu village",
+            "low": 80,
+            "high": null,
+            "notes": "OHCHR reported that on 29 May 2024 the military entered Byaing Phyu village, rounded up ethnic Rakhine civilians suspected of aiding the Arakan Army and killed about 80 people.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          }
+        ],
+        "notes": "The low is a conservative additive lower bound for numerically documented civilian direct killings by Myanmar forces in this conflict frame. The high uses the upper OIDA-style Rohingya killed estimate plus documented later killings; true totals remain unknown.",
+        "sources": [
+          "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf",
+          "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
+          "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",
+          "https://www.aa.com.tr/en/asia-pacific/new-report-myanmar-army-killed-over-24-000-rohingya/1235442",
+          "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement_disease_deprivation_untreated_injuries",
+          "victims_group": "Rohingya civilians",
+          "low": 2300,
+          "high": 7059,
+          "point": null,
+          "notes": "Derived from MSF's at least 9,000 total deaths in Rakhine between 25 August and 24 September 2017 minus at least 6,700 violence-related deaths; the high uses a reported MSF overall range of about 9,425-13,759 total deaths minus the minimum violent-death count. This is a derived proxy for non-violent or indirect deaths during flight and deprivation, not a clean MSF attribution category.",
+          "sources": [
+            "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
+            "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",
+            "https://www.wsws.org/en/articles/2017/12/19/burm-d19.html"
+          ]
+        },
+        {
+          "type": "blockade_food_insecurity_medical_deprivation",
+          "victims_group": "Rohingya and other civilians in Rakhine, 2024-2026",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "OHCHR and HRW documented severe restrictions, blockades, food insecurity, lack of medicine and reports of deaths from lack of food, medicine and drinking water, but no reliable numeric death toll could be attributed solely to Myanmar military policy for 2024-2026.",
+          "sources": [
+            "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf",
+            "https://www.hrw.org/world-report/2025/country-chapters/myanmar."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arakan Rohingya Salvation Army / Rohingya armed groups",
+      "members": [
+        "Arakan Rohingya Salvation Army (ARSA)",
+        "Harakah al-Yaqin",
+        "Rohingya Solidarity Organization (RSO)",
+        "other smaller Rohingya armed groups in later Rakhine fighting"
+      ],
+      "military_killed": {
+        "low": 378,
+        "high": 400,
+        "point": null,
+        "notes": "Low combines Myanmar official claims of 8 attackers killed in the October 2016 attacks and 370 alleged Rohingya insurgents killed after 25 August 2017. High uses the broader October 2016 official figure of 30 suspected attackers plus 370 alleged insurgents. These figures are not independently verified and may include civilians misclassified as combatants.",
+        "sources": [
+          "https://time.com/4534399/burma-myanmar-maungdaw-rohingya-arakan-jihadists/",
+          "https://www.rfa.org/english/news/myanmar/toll-09012017153437.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 105,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre_execution_abduction",
+            "victims_group": "Hindu civilians in Kha Maung Seik village tract",
+            "low": 99,
+            "high": 99,
+            "notes": "Amnesty International found ARSA responsible for at least one and potentially a second massacre of Hindu villagers on 25 August 2017; combined death toll believed to be 99.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/news/2018/05/myanmar-new-evidence-reveals-rohingya-armed-group-massacred-scores-in-rakhine-state/",
+              "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA1684542018ENGLISH.pdf"
+            ]
+          },
+          {
+            "cause": "shooting_killing",
+            "victims_group": "Hindu civilians near Myo Thu Gyi",
+            "low": 6,
+            "high": 6,
+            "notes": "Amnesty documented ARSA fighters killing 6 Hindus, including children, on 26 August 2017.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/news/2018/05/myanmar-new-evidence-reveals-rohingya-armed-group-massacred-scores-in-rakhine-state/"
+            ]
+          },
+          {
+            "cause": "suspected_informant_killings_abductions",
+            "victims_group": "Rohingya, Rakhine, Mro and other civilians accused of collaboration",
+            "low": null,
+            "high": null,
+            "notes": "UN and Amnesty sources report additional ARSA killings of suspected informants and abuses against other ethnic communities, but no reliable total was found.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf",
+              "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA1684542018ENGLISH.pdf"
+            ]
+          }
+        ],
+        "notes": "At least 105 civilians were directly killed in Amnesty-documented ARSA attacks. The true total is unknown because of restricted access, intimidation and later forced-recruitment/abduction allegations.",
+        "sources": [
+          "https://www.amnesty.org/en/latest/news/2018/05/myanmar-new-evidence-reveals-rohingya-armed-group-massacred-scores-in-rakhine-state/",
+          "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA1684542018ENGLISH.pdf",
+          "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Arakan Army / United League of Arakan",
+      "members": [
+        "Arakan Army (AA)",
+        "United League of Arakan (ULA)"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Reliable AA combatant deaths specific to the Rohingya-related Rakhine conflict were not found in the reviewed sources.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 268,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shooting_mass_killing",
+            "victims_group": "Rohingya civilians at Htan Shauk Khan / Hoya Siri, Buthidaung",
+            "low": 40,
+            "high": null,
+            "notes": "OHCHR reported hundreds of civilian casualties alleged and described witnesses saying people were stopped, divided into groups and fired upon, with deaths of scores. Low uses a conservative 'scores' floor; upper bound unknown.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          },
+          {
+            "cause": "artillery_shelling",
+            "victims_group": "Rohingya civilians sheltering in a school in Buthidaung",
+            "low": 4,
+            "high": 4,
+            "notes": "OHCHR reported that on 6 May 2024, artillery shelling reportedly carried out by the Arakan Army hit a school sheltering over 10,000 civilians, killing 4 and wounding 15.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          },
+          {
+            "cause": "drone_attack",
+            "victims_group": "Rohingya civilians in Thi Ho Kyun village",
+            "low": 6,
+            "high": 6,
+            "notes": "OHCHR reported a drone attack attributed by interviewees to the Arakan Army killed 6 Rohingya civilians.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          },
+          {
+            "cause": "drone_artillery_shelling",
+            "victims_group": "Rohingya civilians fleeing at the Naf riverbank, Maungdaw",
+            "low": 180,
+            "high": null,
+            "notes": "HRW reported nearly 200 or approximately 180 people reportedly killed on 5 August 2024; SAC-M said up to 200; OHCHR described possibly hundreds killed and recorded survivor accounts of 46 killed in one boat.",
+            "sources": [
+              "https://www.hrw.org/news/2024/08/22/myanmar-new-atrocities-against-rohingya",
+              "https://specialadvisorycouncil.org/wp-content/uploads/2024/08/PR_AA_Naf_River_Massacre_Rakhine_English.pdf",
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          },
+          {
+            "cause": "drone_attack_on_boat",
+            "victims_group": "Rohingya civilians fleeing by boat",
+            "low": 38,
+            "high": 38,
+            "notes": "OHCHR recorded a 6 August 2024 boat attack in which 38 people, including 4 children, were killed.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+            ]
+          }
+        ],
+        "notes": "The low is a conservative sum of discrete incidents. OHCHR also recorded claims that over 1,000 Rohingya may have been killed during the 2024 Rakhine fighting, but did not verify or attribute a full casualty estimate.",
+        "sources": [
+          "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf",
+          "https://www.hrw.org/news/2024/08/22/myanmar-new-atrocities-against-rohingya",
+          "https://specialadvisorycouncil.org/wp-content/uploads/2024/08/PR_AA_Naf_River_Massacre_Rakhine_English.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "movement_restrictions_forced_labor_food_insecurity_detention",
+          "victims_group": "Rohingya civilians in AA-controlled northern Rakhine",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW and OHCHR documented AA restrictions, forced labor, forced recruitment, confiscation of property, detention, torture, food insecurity and reports of deaths from lack of food, medicine and drinking water, but no reliable numeric death toll was found.",
+          "sources": [
+            "https://www.hrw.org/news/2025/07/28/myanmar-arakan-army-oppresses-rohingya-muslims",
+            "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 399,
+    "military_high": 445,
+    "civilian_low": 10475,
+    "civilian_high": null,
+    "grand_low": 10874,
+    "grand_high": null,
+    "notes": "The low total adds the conservative lower-bound military deaths and civilian direct/indirect deaths: Myanmar direct 7,800; Myanmar indirect 2,300; ARSA direct 105; AA direct 268; and combatants 399. A rough research-supported civilian range using high OIDA and MSF-derived indirect estimates is about 10,500 to 33,000+ civilians, but JSON high values are null because ARSA, AA and 2024-2026 indirect deaths lack reliable upper bounds."
+  },
+  "key_atrocities": [
+    {
+      "name": "2016 northern Rakhine clearance operations",
+      "year": 2016,
+      "perpetrator": "Myanmar military / state security forces",
+      "victims_group": "Rohingya civilians",
+      "low": 1000,
+      "high": null,
+      "notes": "UN officials said more than 1,000 Rohingya may have been killed after the 9 October 2016 attacks; official Myanmar counts were much lower.",
+      "sources": [
+        "https://www.genocidewatch.com/single-post/2019/12/01/UN-OHCHR-2016-Myanmar-Atrocities-Against-Rohingya",
+        "https://time.com/4664851/myanmar-rohingya-killings-crackdown-suu-kyi/"
+      ]
+    },
+    {
+      "name": "August-September 2017 clearance operations",
+      "year": 2017,
+      "perpetrator": "Myanmar military / state security forces and aligned local auxiliaries",
+      "victims_group": "Rohingya civilians",
+      "low": 6700,
+      "high": 25000,
+      "notes": "MSF estimated at least 6,700 violent deaths in the first month; OIDA-style survey estimates place killings since August 2017 at around 24,000-25,000.",
+      "sources": [
+        "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
+        "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",
+        "https://www.aa.com.tr/en/asia-pacific/new-report-myanmar-army-killed-over-24-000-rohingya/1235442"
+      ]
+    },
+    {
+      "name": "Tula Toli / Min Gyi massacre",
+      "year": 2017,
+      "perpetrator": "Myanmar military and local Rakhine auxiliaries",
+      "victims_group": "Rohingya civilians",
+      "low": null,
+      "high": null,
+      "notes": "HRW described systematic killings and rape of several hundred Rohingya; exact toll contested.",
+      "sources": [
+        "https://www.hrw.org/report/2017/12/19/massacre-river/burmese-army-crimes-against-humanity-tula-toli",
+        "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf"
+      ]
+    },
+    {
+      "name": "Maung Nu massacre",
+      "year": 2017,
+      "perpetrator": "Myanmar military",
+      "victims_group": "Rohingya civilians",
+      "low": null,
+      "high": null,
+      "notes": "HRW reported summary executions of several dozen Rohingya Muslims in Maung Nu on 27 August 2017.",
+      "sources": [
+        "https://www.hrw.org/news/2017/10/03/burma-military-massacres-dozens-rohingya-village."
+      ]
+    },
+    {
+      "name": "Chut Pyin massacre",
+      "year": 2017,
+      "perpetrator": "Myanmar security forces and local vigilantes",
+      "victims_group": "Rohingya civilians",
+      "low": null,
+      "high": null,
+      "notes": "Amnesty documented executions, rape, shooting of fleeing civilians and burning of the Rohingya area; precise death toll remains contested.",
+      "sources": [
+        "https://www.amnesty.org/ru/wp-content/uploads/2021/05/ASA1686302018ENGLISH.pdf",
+        "https://phr.org/wp-content/uploads/2020/03/PHR-Chut-Pyin-report-July-2018-FINAL-Reduced-Size.pdf"
+      ]
+    },
+    {
+      "name": "Inn Din massacre",
+      "year": 2017,
+      "perpetrator": "Myanmar military and local villagers",
+      "victims_group": "Rohingya men and boys",
+      "low": 10,
+      "high": 10,
+      "notes": "Myanmar military admitted soldiers and villagers were responsible for 10 Rohingya men and boys found in a mass grave.",
+      "sources": [
+        "https://time.com/5098233/myanmar-military-soldiers-rohingya-mass-grave/"
+      ]
+    },
+    {
+      "name": "Kha Maung Seik massacre",
+      "year": 2017,
+      "perpetrator": "ARSA",
+      "victims_group": "Hindu civilians",
+      "low": 99,
+      "high": 99,
+      "notes": "Amnesty found ARSA responsible for at least one and potentially a second massacre of Hindu villagers in the Kha Maung Seik cluster on 25 August 2017.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2018/05/myanmar-new-evidence-reveals-rohingya-armed-group-massacred-scores-in-rakhine-state/",
+        "https://www.amnesty.org/en/wp-content/uploads/2021/05/ASA1684542018ENGLISH.pdf"
+      ]
+    },
+    {
+      "name": "Htan Shauk Khan / Hoya Siri killings",
+      "year": 2024,
+      "perpetrator": "Arakan Army, alleged",
+      "victims_group": "Rohingya civilians",
+      "low": 40,
+      "high": null,
+      "notes": "OHCHR described witness accounts of Rohingya civilians stopped, divided into groups and fired upon, with deaths of scores and hundreds of casualties alleged.",
+      "sources": [
+        "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+      ]
+    },
+    {
+      "name": "Naf riverbank / Maungdaw attacks",
+      "year": 2024,
+      "perpetrator": "Arakan Army, alleged by witnesses; AA denied/blamed Rohingya armed groups",
+      "victims_group": "Rohingya civilians fleeing toward Bangladesh",
+      "low": 180,
+      "high": null,
+      "notes": "HRW reported approximately 180 or nearly 200 killed, SAC-M said up to 200, and OHCHR described possibly hundreds killed by drone and artillery attacks on 5 August 2024, with further fatal boat attacks on 6 August.",
+      "sources": [
+        "https://www.hrw.org/news/2024/08/22/myanmar-new-atrocities-against-rohingya",
+        "https://specialadvisorycouncil.org/wp-content/uploads/2024/08/PR_AA_Naf_River_Massacre_Rakhine_English.pdf",
+        "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is the 2017 death toll: MSF provides a conservative first-month mortality estimate, while OIDA-style survey estimates are much higher and broader. Combatant counts rely heavily on Myanmar official claims and may include civilians. For 2024-2026 Rakhine, OHCHR explicitly stated that internet shutdowns, insecurity and fear prevented a verifiable full casualty estimate; AA, junta and Rohingya armed group abuses are therefore undercounted. Indirect deaths from hunger, disease, displacement, lack of medicine and sea flight are known to exist but rarely quantified or cleanly attributable.",
+  "sources": [
+    {
+      "url": "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/FFM-Myanmar/A_HRC_39_64.pdf",
+      "title": "Report of the Independent International Fact-Finding Mission on Myanmar, A/HRC/39/64",
+      "publisher": "United Nations Human Rights Council / OHCHR"
+    },
+    {
+      "url": "https://bangkok.ohchr.org/sites/default/files/documents/2025-09/A%20HRC%2060%2020%20AdvanceEditedVersion.pdf",
+      "title": "Situation of human rights of Rohingya Muslims and other minorities in Myanmar, A/HRC/60/20",
+      "publisher": "OHCHR"
+    },
+    {
+      "url": "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
+      "title": "MSF surveys estimate that at least 6,700 Rohingya were killed during attacks in Myanmar",
+      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+    },
+    {
+      "url": "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",
+      "title": "MSF: At least 6,700 Rohingya killed during attacks in Myanmar",
+      "publisher": "Doctors Without Borders / MSF USA"
+    },
+    {
+      "url": "https://www.amnesty.org/ru/wp-content/uploads/2021/05/ASA1686302018ENGLISH.pdf",
+      "title": "We Will Destroy Everything: Military Responsibility for Crimes against Humanity in Rakhine State, Myanmar",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2018/05/myanmar-new-evidence-reveals-rohingya-armed-group-massacred-scores-in-rakhine-state/",
+      "title": "Myanmar: New evidence reveals Rohingya armed group massacred scores in Rakhine State",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.hrw.org/report/2017/12/19/massacre-river/burmese-army-crimes-against-humanity-tula-toli",
+      "title": "Massacre by the River: Burmese Army Crimes against Humanity in Tula Toli",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2017/10/03/burma-military-massacres-dozens-rohingya-village.",
+      "title": "Burma: Military Massacres Dozens in Rohingya Village",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/08/22/myanmar-new-atrocities-against-rohingya",
+      "title": "Myanmar: New Atrocities Against Rohingya",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2025/07/28/myanmar-arakan-army-oppresses-rohingya-muslims",
+      "title": "Myanmar: Arakan Army Oppresses Rohingya Muslims",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.aa.com.tr/en/asia-pacific/new-report-myanmar-army-killed-over-24-000-rohingya/1235442",
+      "title": "New report: Myanmar army killed over 24,000 Rohingya",
+      "publisher": "Anadolu Agency"
+    },
+    {
+      "url": "https://www.thedailystar.net/news/frontpage/killing-rohingyas-death-toll-could-be-over-10000-1622392",
+      "title": "Killing of Rohingyas: Death toll could be up to 25,000",
+      "publisher": "The Daily Star"
+    },
+    {
+      "url": "https://time.com/4534399/burma-myanmar-maungdaw-rohingya-arakan-jihadists/",
+      "title": "The Military Continues to Search for Suspected Jihadists in Western Burma",
+      "publisher": "TIME"
+    },
+    {
+      "url": "https://www.rfa.org/english/news/myanmar/toll-09012017153437.html",
+      "title": "Nearly 400 Rohingya Insurgents Killed in Rakhine Violence: Myanmar Military Chief",
+      "publisher": "Radio Free Asia"
+    },
+    {
+      "url": "https://specialadvisorycouncil.org/wp-content/uploads/2024/08/PR_AA_Naf_River_Massacre_Rakhine_English.pdf",
+      "title": "Arakan Army Must Facilitate Access for International Aid, Monitors and Investigators to Northern Rakhine State",
+      "publisher": "Special Advisory Council for Myanmar"
+    }
+  ]
+}

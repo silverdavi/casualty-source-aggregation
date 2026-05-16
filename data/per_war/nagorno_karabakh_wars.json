@@ -1,0 +1,418 @@
+{
+  "war_id": "nagorno_karabakh_wars",
+  "name": "Nagorno-Karabakh wars (1988-94, 2020, 2023)",
+  "start_year": 1988,
+  "end_year": 2023,
+  "ongoing": false,
+  "regions": [
+    "Nagorno-Karabakh",
+    "Armenia",
+    "Azerbaijan",
+    "South Caucasus"
+  ],
+  "summary": "The Nagorno-Karabakh wars were fought between Armenian/Artsakh forces and Azerbaijan over Nagorno-Karabakh and surrounding territories. The 1988-1994 war killed tens of thousands and displaced hundreds of thousands; Azerbaijan regained much territory in the 2020 war and took full control in the September 2023 offensive. Casualty accounting is highly contested, especially for the first war and for indirect deaths from blockade, displacement, mines, and exodus.",
+  "sides": [
+    {
+      "name": "Armenian / Artsakh side",
+      "members": [
+        "Republic of Armenia",
+        "Republic of Artsakh / Nagorno-Karabakh Defence Army",
+        "Armenian volunteer and militia forces"
+      ],
+      "military_killed": {
+        "low": 9766,
+        "high": 10023,
+        "point": 9900,
+        "notes": "Low combines 5,856 Armenian military deaths in 1988-1994, 3,712 Armenian servicemen in 2020, and inferred 198 combatants/security personnel in 2023. High uses 6,000 for 1988-1994 and 3,825 for 2020, plus inferred 198 for 2023. Excludes many 1994-2019 ceasefire deaths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+          "https://hetq.am/en/article/137722",
+          "https://armenpress.am/en/article/1127400"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 261,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Azerbaijani civilians at Khojaly",
+            "low": 167,
+            "high": 763,
+            "notes": "Azerbaijan's official figure is 613 civilians; cited ranges run from 167 to 763, and HRW attributed direct responsibility for civilian deaths to Armenian forces. Total Azerbaijani civilian deaths in 1988-1994 remain unknown.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+              "https://www.ataa.org/press-releases/ataa-remembers-the-victims-of-the-1992-khojaly-massacre-2/"
+            ]
+          },
+          {
+            "cause": "missile, rocket, artillery and cluster-munition strikes",
+            "victims_group": "Azerbaijani civilians in 2020",
+            "low": 94,
+            "high": 100,
+            "notes": "Amnesty reports at least 94 Azerbaijani civilians killed by Armenian strikes; Azerbaijani official figures report 100 civilian deaths in the 2020 war.",
+            "sources": [
+              "https://www.amnesty.ch/de/laender/europa-zentralasien/aserbaidschan/dok/2023/blockade-des-latschin-korridors-gefaehrdet-tausende-menschenleben/amnesty-bericht-bergkarabach-aserbaidschan-armenien-bewaffneter-konflikt-januar-2021.pdf",
+              "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict"
+            ]
+          },
+          {
+            "cause": "cluster munition strike",
+            "victims_group": "Azerbaijani civilians in Barda",
+            "low": 21,
+            "high": 29,
+            "notes": "HRW documented 21 killed in the 28 October 2020 Barda cluster-munition attack; Azerbaijani prosecutor materials list 29 civilian deaths in Barda district across several attacks.",
+            "sources": [
+              "https://www.hrw.org/news/2020/10/30/armenia-cluster-munitions-kill-civilians-azerbaijan",
+              "https://www.mfa.gov.az/files/violation-of-international-humanitarian-law-by-armenia-and-killing-of-civilians-based-on-national-racial-and-religious-hatred-or-enmity-september-november-2020.pdf"
+            ]
+          },
+          {
+            "cause": "ballistic missile strikes",
+            "victims_group": "Azerbaijani civilians in Ganja",
+            "low": 21,
+            "high": 26,
+            "notes": "HRW confirmed Scud-B strikes on residential areas; Azerbaijani prosecutor materials report 26 civilian deaths in Ganja attacks.",
+            "sources": [
+              "https://www.hrw.org/news/2020/12/11/armenia-unlawful-rocket-missile-strikes-azerbaijan",
+              "https://www.mfa.gov.az/files/violation-of-international-humanitarian-law-by-armenia-and-killing-of-civilians-based-on-national-racial-and-religious-hatred-or-enmity-september-november-2020.pdf"
+            ]
+          }
+        ],
+        "notes": "The documented minimum is at least 261 using Khojaly low-end plus Amnesty's 2020 figure. The full high is unknown because total Azerbaijani civilian deaths in 1988-1994 are not comprehensively established.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+          "https://www.amnesty.ch/de/laender/europa-zentralasien/aserbaidschan/dok/2023/blockade-des-latschin-korridors-gefaehrdet-tausende-menschenleben/amnesty-bericht-bergkarabach-aserbaidschan-armenien-bewaffneter-konflikt-januar-2021.pdf",
+          "https://www.hrw.org/news/2020/10/30/armenia-cluster-munitions-kill-civilians-azerbaijan"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "landmines",
+          "victims_group": "Azerbaijani civilians after the 2020 ceasefire",
+          "low": 23,
+          "high": null,
+          "point": null,
+          "notes": "HRW cited Azerbaijani prosecutor-general data that 23 Azerbaijani civilians were killed by mines laid in areas previously under Armenian forces' control by August 2021; exact unit attribution is often unclear.",
+          "sources": [
+            "https://www.hrw.org/world-report/2022/country-chapters/azerbaijan"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Azerbaijani civilians fleeing Kalbajar and other areas in 1993-1994",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Some accounts report hundreds of civilians died from exposure/frostbite during flight from Kalbajar, but no robust audited number was found.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_Kalbajar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Azerbaijan / Azerbaijan side",
+      "members": [
+        "Republic of Azerbaijan",
+        "Azerbaijani SSR/security forces until 1991",
+        "Azerbaijani Armed Forces",
+        "Syrian fighters/mercenaries fighting for Azerbaijan in 2020",
+        "Turkey as supporter in 2020"
+      ],
+      "military_killed": {
+        "low": 15196,
+        "high": 33639,
+        "point": 15196,
+        "notes": "Low/point uses Azerbaijan's stated 11,557 soldiers killed in 1988-1994, 2,906 Azerbaijani servicemen killed in 2020, 192 Azerbaijani troops killed in 2023, and 541 Syrian fighters killed fighting for Azerbaijan. High uses the much higher cited Western/Russian 25,000-30,000 Azerbaijani-side combatant estimate for 1988-1994, plus the same later figures.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+          "https://www.panarmenian.net/eng/news/309780/",
+          "https://en.wikipedia.org/wiki/Casualties_of_the_Second_Nagorno-Karabakh_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1341,
+        "high": 1374,
+        "point": 1360,
+        "breakdown": [
+          {
+            "cause": "shelling, pogroms, massacres, and other first-war violence",
+            "victims_group": "Armenian civilians in 1988-1994",
+            "low": 1264,
+            "high": 1264,
+            "notes": "Conflict summaries report 1,264 Armenian civilians killed in 1988-1994; not every death can be tied to a regular Azerbaijani military unit.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Armenian civilians at Maraga/Maragha",
+            "low": 53,
+            "high": 53,
+            "notes": "HRW/Helsinki Watch materials cited Nagorno-Karabakh parliament chairman Gevorg Petrossian saying 53 civilians were killed during or as a result of the Azerbaijani attack on Maraga.",
+            "sources": [
+              "https://www.hrw.org/reports/1992%20Bloodshed%20in%20Cauc%20-%20Escalation%20in%20NK.pdf"
+            ]
+          },
+          {
+            "cause": "indiscriminate strikes",
+            "victims_group": "Armenian civilians in Nagorno-Karabakh and Armenia in 2020",
+            "low": 52,
+            "high": 85,
+            "notes": "Amnesty reported some 52 Armenian civilians killed by Azerbaijani attacks; Armenian/conflict-summary figures count 85 Armenian civilian fatalities including missing later treated as deaths.",
+            "sources": [
+              "https://www.amnesty.ch/de/laender/europa-zentralasien/aserbaidschan/dok/2023/blockade-des-latschin-korridors-gefaehrdet-tausende-menschenleben/amnesty-bericht-bergkarabach-aserbaidschan-armenien-bewaffneter-konflikt-januar-2021.pdf",
+              "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict"
+            ]
+          },
+          {
+            "cause": "shelling and offensive operations",
+            "victims_group": "Nagorno-Karabakh Armenian civilians in 2023",
+            "low": 25,
+            "high": 25,
+            "notes": "Armenia's Investigative Committee reported 223 total deaths in the September 2023 attack, including 25 civilians.",
+            "sources": [
+              "https://armenpress.am/en/article/1127400"
+            ]
+          }
+        ],
+        "notes": "The range adds first-war Armenian civilian deaths, 2020 Armenian civilian deaths, and 2023 Armenian civilian deaths. Attribution is broad and includes pogroms, shelling, bombardment, and offensive operations; first-war sub-attribution is especially uncertain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+          "https://www.amnesty.ch/de/laender/europa-zentralasien/aserbaidschan/dok/2023/blockade-des-latschin-korridors-gefaehrdet-tausende-menschenleben/amnesty-bericht-bergkarabach-aserbaidschan-armenien-bewaffneter-konflikt-januar-2021.pdf",
+          "https://armenpress.am/en/article/1127400"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Ethnic Armenian civilians in Nagorno-Karabakh, 2022-2023",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW and ICRC documented acute shortages and disruption of food, medicine, fuel, and humanitarian movement. No audited blockade-specific mortality count was found.",
+          "sources": [
+            "https://www.hrw.org/news/2023/09/23/azerbaijan-ensure-civilians-rights-nagorno-karabakh",
+            "https://www.icrc.org/en/document/operational-update-icrcs-work-across-lachin-corridor"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Ethnic Armenians fleeing Nagorno-Karabakh in September 2023",
+          "low": 70,
+          "high": null,
+          "point": null,
+          "notes": "Armenia's Investigative Committee said over 70 people died en route from Nagorno-Karabakh to Armenia or shortly after arrival, mostly due to severe psychological impact; this is an associated exodus-death count, not a direct-combat figure.",
+          "sources": [
+            "https://armenpress.am/en/article/1127400"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Ethnic Armenians at the Berkadzor/Stepanakert fuel depot during the 2023 exodus",
+          "low": 218,
+          "high": 218,
+          "point": 218,
+          "notes": "At least 218 died in the 25 September 2023 fuel-depot explosion while civilians were trying to obtain fuel during the mass flight. Attribution to Azerbaijani policy/action is indirect and contested; the event is best treated as exodus-associated mortality.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Berkadzor_fuel_depot_explosion",
+            "https://www.theguardian.com/world/2023/sep/26/nagorno-karabakh-blast-fuel-depot-armenia-azerbaijan"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 24962,
+    "military_high": 43662,
+    "civilian_low": 1602,
+    "civilian_high": null,
+    "grand_low": 28000,
+    "grand_high": 50000,
+    "notes": "The structured military low/high is a side-sum and is not as reliable as independent aggregate estimates. The grand range uses independent aggregate estimates: 17,000-38,000 for 1988-1994, up to 3,000 ceasefire-period deaths by 2009 plus later spikes, roughly 7,300-7,700 for 2020, roughly 415-422 direct deaths in 2023, and 218-288 associated exodus deaths. Civilian high is null because Azerbaijani first-war civilian deaths and blockade-related deaths are not comprehensively known."
+  },
+  "key_atrocities": [
+    {
+      "name": "Khojaly massacre",
+      "year": 1992,
+      "perpetrator": "Armenian / Artsakh side",
+      "victims_group": "Azerbaijani civilians",
+      "low": 167,
+      "high": 763,
+      "notes": "Azerbaijan's official figure is 613 civilians killed; cited ranges include 167-763.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nagorno-Karabakh_conflict",
+        "https://www.ataa.org/press-releases/ataa-remembers-the-victims-of-the-1992-khojaly-massacre-2/"
+      ]
+    },
+    {
+      "name": "Maraga/Maragha massacre",
+      "year": 1992,
+      "perpetrator": "Azerbaijan / Azerbaijan side",
+      "victims_group": "Armenian civilians",
+      "low": 53,
+      "high": 53,
+      "notes": "HRW/Helsinki Watch material cited 53 civilians killed during or as a result of the attack.",
+      "sources": [
+        "https://www.hrw.org/reports/1992%20Bloodshed%20in%20Cauc%20-%20Escalation%20in%20NK.pdf"
+      ]
+    },
+    {
+      "name": "Sumgait pogrom",
+      "year": 1988,
+      "perpetrator": "Azerbaijani mobs / Azerbaijani SSR authorities failed to protect",
+      "victims_group": "Armenian civilians and others",
+      "low": 32,
+      "high": null,
+      "notes": "Official Soviet death toll was 32 people, commonly reported as 26 Armenians and 6 Azerbaijanis; higher Armenian and journalistic estimates exist but are contested.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sumgait_pogrom",
+        "https://chisinau.mfa.gov.az/files/file/Information_about_the_Sumgayit_events_of_February_1988_based_on_the_investigative_records__testimonies_and_primary_sources.pdf"
+      ]
+    },
+    {
+      "name": "Barda cluster-munition strike",
+      "year": 2020,
+      "perpetrator": "Armenian / Artsakh side",
+      "victims_group": "Azerbaijani civilians",
+      "low": 21,
+      "high": 29,
+      "notes": "HRW documented 21 deaths in the 28 October strike; Azerbaijani materials list 29 civilian deaths in Barda district over several attacks.",
+      "sources": [
+        "https://www.hrw.org/news/2020/10/30/armenia-cluster-munitions-kill-civilians-azerbaijan",
+        "https://www.mfa.gov.az/files/violation-of-international-humanitarian-law-by-armenia-and-killing-of-civilians-based-on-national-racial-and-religious-hatred-or-enmity-september-november-2020.pdf"
+      ]
+    },
+    {
+      "name": "Ganja missile attacks",
+      "year": 2020,
+      "perpetrator": "Armenian / Artsakh side",
+      "victims_group": "Azerbaijani civilians",
+      "low": 21,
+      "high": 26,
+      "notes": "HRW confirmed Scud-B attacks on residential areas; Azerbaijani prosecutor materials report 26 civilian deaths in Ganja attacks.",
+      "sources": [
+        "https://www.hrw.org/news/2020/12/11/armenia-unlawful-rocket-missile-strikes-azerbaijan",
+        "https://www.mfa.gov.az/files/violation-of-international-humanitarian-law-by-armenia-and-killing-of-civilians-based-on-national-racial-and-religious-hatred-or-enmity-september-november-2020.pdf"
+      ]
+    },
+    {
+      "name": "Stepanakert bombardment",
+      "year": 2020,
+      "perpetrator": "Azerbaijan / Azerbaijan side",
+      "victims_group": "Armenian civilians",
+      "low": 13,
+      "high": 13,
+      "notes": "HRW reported Azerbaijani use of cluster munitions and other explosive weapons; the local ombudsman reported 13 civilians killed in Stepanakert.",
+      "sources": [
+        "https://www.hrw.org/news/2020/12/11/azerbaijan-unlawful-strikes-nagorno-karabakh"
+      ]
+    },
+    {
+      "name": "September 2023 Azerbaijani offensive",
+      "year": 2023,
+      "perpetrator": "Azerbaijan / Azerbaijan side",
+      "victims_group": "Nagorno-Karabakh Armenians",
+      "low": 223,
+      "high": 223,
+      "notes": "Armenia's Investigative Committee reported 223 total deaths, including 25 civilians, in the 19-20 September 2023 attack.",
+      "sources": [
+        "https://armenpress.am/en/article/1127400"
+      ]
+    },
+    {
+      "name": "Berkadzor/Stepanakert fuel-depot explosion during exodus",
+      "year": 2023,
+      "perpetrator": "Indirect/contested; associated with 2023 exodus after Azerbaijani offensive",
+      "victims_group": "Ethnic Armenian civilians",
+      "low": 218,
+      "high": 218,
+      "notes": "At least 218 people died in the fuel-depot explosion while residents sought fuel during the flight from Nagorno-Karabakh. It is not treated as a direct attack.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Berkadzor_fuel_depot_explosion",
+        "https://www.theguardian.com/world/2023/sep/26/nagorno-karabakh-blast-fuel-depot-armenia-azerbaijan"
+      ]
+    }
+  ],
+  "uncertainty_notes": "First-war totals are the central uncertainty: aggregate estimates range from 17,000 to 38,000, and side-specific Azerbaijani military estimates vary from an official 11,557 to cited Western/Russian estimates of 25,000-30,000. Civilian/combatant classification, missing-person accounting, and indirect deaths from blockade, flight, mines, captivity, and deprivation are incomplete. The 2023 blockade and exodus clearly caused severe humanitarian harm, but no neutral audited mortality study has quantified blockade-specific deaths.",
+  "sources": [
+    {
+      "url": "https://www.hrw.org/report/1994/12/01/seven-years-conflict-nagorno-karabakh",
+      "title": "Azerbaijan: Seven Years of Conflict in Nagorno-Karabakh",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11113-023-09790-2",
+      "title": "The Casualties of War: An Excess Mortality Estimate of Lives Lost in the 2020 Nagorno-Karabakh Conflict",
+      "publisher": "Population Research and Policy Review / Springer"
+    },
+    {
+      "url": "https://www.icrc.org/en/document/nagorno-karabakh-conflict-price-being-paid",
+      "title": "Nagorno-Karabakh conflict: The price being paid",
+      "publisher": "International Committee of the Red Cross"
+    },
+    {
+      "url": "https://www.amnesty.ch/de/laender/europa-zentralasien/aserbaidschan/dok/2023/blockade-des-latschin-korridors-gefaehrdet-tausende-menschenleben/amnesty-bericht-bergkarabach-aserbaidschan-armenien-bewaffneter-konflikt-januar-2021.pdf",
+      "title": "In the Line of Fire: Civilian Casualties from Unlawful Strikes in the Armenian-Azerbaijani Conflict over Nagorno-Karabakh",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.hrw.org/news/2023/09/23/azerbaijan-ensure-civilians-rights-nagorno-karabakh",
+      "title": "Azerbaijan: Ensure Civilians' Rights in Nagorno Karabakh",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.icrc.org/en/document/operational-update-icrcs-work-across-lachin-corridor",
+      "title": "Operational update on ICRC's work across the Lachin Corridor",
+      "publisher": "International Committee of the Red Cross"
+    },
+    {
+      "url": "https://armenpress.am/en/article/1127400",
+      "title": "2023 Azeri attack in Nagorno-Karabakh killed 223 people, including 5 children",
+      "publisher": "Armenpress"
+    },
+    {
+      "url": "https://arka.am/en/news/politics/armenia_s_investigative_committee_unveils_updated_data_on_casualties_in_2020_war_in_nagorno_karabakh/",
+      "title": "Armenia's Investigative Committee unveils updated data on casualties in 2020 war in Nagorno-Karabakh",
+      "publisher": "ARKA News Agency"
+    },
+    {
+      "url": "https://hetq.am/en/article/137722",
+      "title": "3,712 Armenian Soldiers, 76 Civilians Killed in 2020 Karabakh War",
+      "publisher": "Hetq"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/10/30/armenia-cluster-munitions-kill-civilians-azerbaijan",
+      "title": "Armenia: Cluster Munitions Kill Civilians in Azerbaijan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/12/11/armenia-unlawful-rocket-missile-strikes-azerbaijan",
+      "title": "Armenia: Unlawful Rocket, Missile Strikes on Azerbaijan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2020/12/11/azerbaijan-unlawful-strikes-nagorno-karabakh",
+      "title": "Azerbaijan: Unlawful Strikes in Nagorno-Karabakh",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://ungeneva.org/en/news-media/news/2023/10/85788/un-karabakh-mission-told-sudden-exodus-means-few-50-ethnic-armenians",
+      "title": "UN Karabakh mission told sudden exodus means as few as 50 ethnic Armenians may remain",
+      "publisher": "United Nations Office at Geneva"
+    },
+    {
+      "url": "https://www.panarmenian.net/eng/news/309780/",
+      "title": "Azerbaijan admits death of 192 soldiers in Karabakh offensive",
+      "publisher": "PanARMENIAN.Net"
+    },
+    {
+      "url": "https://english.alarabiya.net/News/world/2023/09/21/Azerbaijan-says-six-Russian-peacekeepers-killed-during-Karabakh-offensive",
+      "title": "Azerbaijan says six Russian peacekeepers killed during Karabakh offensive",
+      "publisher": "Al Arabiya English"
+    }
+  ]
+}

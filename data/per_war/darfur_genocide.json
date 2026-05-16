@@ -1,0 +1,307 @@
+{
+  "war_id": "darfur_genocide",
+  "name": "Darfur conflict / genocide",
+  "start_year": 2003,
+  "end_year": 2020,
+  "ongoing": false,
+  "regions": [
+    "Sudan",
+    "Darfur",
+    "Eastern Chad refugee camps"
+  ],
+  "summary": "The Darfur conflict began in 2003 when SLM/A and JEM rebels challenged the Sudanese state. The Sudanese government responded with armed forces and allied Janjaweed militias in a counterinsurgency widely characterized as ethnic cleansing and, by some governments and scholars, genocide against Fur, Masalit, Zaghawa and other non-Arab communities. Mortality estimates are contested, but the best-supported range for 2003-2020 is roughly 170,000-300,000 deaths, overwhelmingly civilian, with most indirect deaths caused by displacement, disease, hunger, and destruction of survival systems.",
+  "sides": [
+    {
+      "name": "Government of Sudan and allied Janjaweed / RSF-type forces",
+      "members": [
+        "Sudanese Armed Forces",
+        "Sudanese police and security forces",
+        "Popular Defence Forces",
+        "Border Guards",
+        "Janjaweed militias",
+        "Rapid Support Forces elements after formalization"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable public source found that disaggregates Sudanese government/allied combatant deaths for Darfur 2003-2020. UCDP-derived work estimates 8,000-13,000 state-based direct fatalities in Darfur, but this is not side-specific and includes more than government combatants.",
+        "sources": [
+          "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 35000,
+        "high": 128000,
+        "point": 35000,
+        "breakdown": [
+          {
+            "cause": "direct violence in village attacks, massacres, shootings, bombing, and executions",
+            "victims_group": "Primarily Fur, Masalit, Zaghawa and other non-Arab Darfuri civilians",
+            "low": 35000,
+            "high": 128000,
+            "notes": "CRED estimated 35,000 violent deaths in early mortality work. Bloodhound estimated 57,000-128,000 direct-violence fatalities up to September 2005 and attributed 97% of reported village attacks to Government of Sudan/Janjaweed forces; this high estimate was not reviewed by GAO because it appeared after the GAO expert meeting.",
+            "sources": [
+              "https://www.cred.be/sites/default/files/DarfurCountingtheDeaths.pdf",
+              "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+              "https://www.gao.gov/assets/gao-07-24.pdf"
+            ]
+          }
+        ],
+        "notes": "The point estimate uses the conservative CRED direct-violence figure. The high estimate uses Bloodhound's direct-violence upper bound; these methodologies are not perfectly comparable.",
+        "sources": [
+          "https://www.cred.be/sites/default/files/DarfurCountingtheDeaths.pdf",
+          "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+          "https://www.gao.gov/assets/gao-07-24.pdf",
+          "https://encyclopedia.ushmm.org/content/en/article/darfur",
+          "https://www.hrw.org/report/2007/09/20/darfur-2007-chaos-design/peacekeeping-challenges-amis-and-unamid"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Displaced Darfuri civilians, especially Fur, Masalit, Zaghawa and other non-Arab communities",
+          "low": 135000,
+          "high": 265000,
+          "point": 135000,
+          "notes": "De Waal's ICC expert statement summarizes the CRED update as about 35,000 direct-violence deaths and 135,000 deaths from hunger and disease through July 2005. The high value is an inferred ceiling: if the UN/USHMM 300,000 civilian-death figure by 2008 is accepted and at least 35,000 were direct violent deaths, as many as 265,000 were indirect/excess deaths. This range should not be added to the direct high estimate without double-counting.",
+          "sources": [
+            "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+            "https://encyclopedia.ushmm.org/content/en/article/darfur",
+            "https://www.globalsecurity.org/military/library/news/2008/04/mil-080423-rianovosti01.htm"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Darfuri civilians in besieged or displaced communities",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Famine/starvation deaths are embedded in the broader indirect-deaths estimate. Kailak in April 2004 is a documented example where a UN team found mortality far above emergency thresholds after destruction of foodstuffs and prevention of aid and escape.",
+          "sources": [
+            "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Displaced civilians and refugees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Disease deaths are embedded in the broader indirect-deaths estimate. CRED and WHO-related mortality work found that disease and malnutrition accounted for the majority of excess mortality after displacement.",
+          "sources": [
+            "https://www.cred.be/sites/default/files/DarfurCountingtheDeaths.pdf",
+            "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Darfur rebel movements",
+      "members": [
+        "Sudan Liberation Movement/Army (SLM/A, SLA)",
+        "Justice and Equality Movement (JEM)",
+        "SLA-Minni Minnawi faction",
+        "SLA-Abdul Wahid faction",
+        "Other splinter factions"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable public source found that separates rebel combatant deaths from government combatant deaths or civilian deaths. UCDP-derived figures for state-based fatalities and rebel-rebel fighting are not convertible into rebel military killed without inventing a side split.",
+        "sources": [
+          "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "killings of civilians, herders, traders, and prisoners of war",
+            "victims_group": "Arab nomadic communities, traders, prisoners, and other civilians",
+            "low": null,
+            "high": null,
+            "notes": "Rebel abuses are documented, and Bloodhound attributed 3% of reported village attacks to rebels, but this is an attack share rather than a fatality estimate. De Waal notes that Arab nomadic populations were underrepresented in surveys and rebel-attributable deaths may be underestimated.",
+            "sources": [
+              "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+              "https://www.hrw.org/report/2004/11/14/if-we-return-we-will-be-killed-consolidation-ethnic-cleansing-darfur-sudan"
+            ]
+          }
+        ],
+        "notes": "No defensible civilian-death range found for rebel-caused direct killings. The available literature indicates the rebel share was much smaller than the government/Janjaweed share but not zero.",
+        "sources": [
+          "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+          "https://www.hrw.org/report/2004/11/14/if-we-return-we-will-be-killed-consolidation-ethnic-cleansing-darfur-sudan"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Intercommunal and tribal armed groups not cleanly aligned with one belligerent",
+      "members": [
+        "Arab communal militias",
+        "Non-Arab communal self-defense groups",
+        "Other local armed groups involved in communal conflicts"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Communal-conflict deaths are not reliably reported as combatant deaths by side.",
+        "sources": [
+          "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "communal fighting and revenge attacks",
+            "victims_group": "Arab and non-Arab Darfuri communities",
+            "low": null,
+            "high": null,
+            "notes": "UCDP-derived research estimates 4,700-5,400 fatalities in Darfur communal conflicts, but these are not civilian-only and are not assignable to a single belligerent side.",
+            "sources": [
+              "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf"
+            ]
+          }
+        ],
+        "notes": "No reliable civilian-only, side-attributed estimate found for communal armed groups.",
+        "sources": [
+          "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 170000,
+    "civilian_high": 300000,
+    "grand_low": 170000,
+    "grand_high": 300000,
+    "notes": "The lower bound reflects the CRED-based summary of about 35,000 direct-violence deaths plus about 135,000 hunger/disease deaths through July 2005. The upper bound reflects the conventional UN/USHMM estimate of about 300,000 civilian deaths by 2008. Later 2008-2020 violence is not comprehensively surveyed; adding separate direct-violence high estimates to indirect-death high estimates would double-count because methodologies and time frames overlap."
+  },
+  "key_atrocities": [
+    {
+      "name": "Scorched-earth campaign against Fur, Masalit, and Zaghawa communities",
+      "year": 2003,
+      "perpetrator": "Government of Sudan and Janjaweed",
+      "victims_group": "Fur, Masalit, Zaghawa and other non-Arab Darfuri civilians",
+      "low": 200000,
+      "high": 200000,
+      "notes": "USHMM describes the 2003-2005 genocide phase as causing an estimated 200,000 civilian deaths and displacing 2 million people through violence, disease, starvation and forced displacement.",
+      "sources": [
+        "https://encyclopedia.ushmm.org/content/en/article/darfur"
+      ]
+    },
+    {
+      "name": "Kodoom, Bindisi, Mukjar and Arawala attacks",
+      "year": 2003,
+      "perpetrator": "Government of Sudan and Janjaweed under Ali Kushayb and associated officials",
+      "victims_group": "Primarily Fur civilians",
+      "low": 100,
+      "high": null,
+      "notes": "ICC prosecution materials state that the Bindisi attack lasted about five days and killed more than 100 civilians, including 30 children; the broader Wadi Salih attack pattern included killings, rapes, torture, pillage and destruction.",
+      "sources": [
+        "https://www.icc-cpi.int/news/icc-prosecutor-opening-remarks",
+        "https://www.asil.org/insights/volume/11/issue/7/situation-darfur-prosecutors-application-under-article-587-rome-statute"
+      ]
+    },
+    {
+      "name": "Bareh-area killings east of El Geneina",
+      "year": 2003,
+      "perpetrator": "Janjaweed accompanied by Sudanese soldiers",
+      "victims_group": "Civilians in Arey, Haskanita and Terchana",
+      "low": 111,
+      "high": 111,
+      "notes": "Human Rights Watch reported 111 people killed in one day on 11 December 2003 in three villages in the Bareh area.",
+      "sources": [
+        "https://www.hrw.org/reports/2004/sudan0504/5.htm"
+      ]
+    },
+    {
+      "name": "Kailak starvation siege",
+      "year": 2004,
+      "perpetrator": "Government of Sudan forces and allied forces",
+      "victims_group": "Civilians in Kailak, South Darfur",
+      "low": null,
+      "high": null,
+      "notes": "A UN team cited by de Waal found mortality 41 times the emergency threshold and under-five mortality 147 times the emergency threshold after destruction of food and obstruction of aid and exit; no single death-count estimate is provided in the source.",
+      "sources": [
+        "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf"
+      ]
+    },
+    {
+      "name": "Haskanita attack on African Union peacekeepers",
+      "year": 2007,
+      "perpetrator": "Darfur rebel forces",
+      "victims_group": "African Union peacekeepers",
+      "low": null,
+      "high": null,
+      "notes": "Major rebel attack on an AU base; included here as a key atrocity/war-crime episode but not counted in civilian deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Raids_on_Haskanita"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Darfur casualty accounting is exceptionally uncertain. The GAO expert review found no estimate consistently accurate, though experts had the greatest relative confidence in CRED's work. Major uncertainties include inaccessible populations, shifting displacement, deaths of whole households, baseline mortality choices, under-surveying of Arab nomadic communities, and lack of side-specific combatant casualty data. The 2023-present Sudan war and renewed Darfur atrocities are excluded from this 2003-2020 dataset.",
+  "sources": [
+    {
+      "url": "https://www.cred.be/sites/default/files/DarfurCountingtheDeaths.pdf",
+      "title": "Darfur: Counting the Deaths: Mortality Estimates from Multiple Survey Data",
+      "publisher": "Centre for Research on the Epidemiology of Disasters (CRED)"
+    },
+    {
+      "url": "https://www.gao.gov/assets/gao-07-24.pdf",
+      "title": "Darfur Crisis: Death Estimates Demonstrate Severity of Crisis, but Their Accuracy and Credibility Could Be Enhanced",
+      "publisher": "U.S. Government Accountability Office"
+    },
+    {
+      "url": "https://worldpeacefoundation.org/wp-content/uploads/2024/04/AdW-expert-witness-statement-DF-for-ICC.pdf",
+      "title": "The Conflict in Darfur, Sudan: Expert Witness Statement",
+      "publisher": "World Peace Foundation / Alex de Waal"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/darfur",
+      "title": "Darfur",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://www.hrw.org/report/2007/09/20/darfur-2007-chaos-design/peacekeeping-challenges-amis-and-unamid",
+      "title": "Darfur 2007: Chaos by Design",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/2004/sudan0504",
+      "title": "Darfur Destroyed: Ethnic Cleansing by Government and Militia Forces in Western Sudan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.diva-portal.org/smash/get/diva2%3A677431/FULLTEXT01.pdf",
+      "title": "Masters of War: The Role of Elites in Sudan's Communal Conflicts",
+      "publisher": "Uppsala University / DiVA"
+    },
+    {
+      "url": "https://www.icc-cpi.int/news/icc-prosecutor-opening-remarks",
+      "title": "ICC Prosecutor Opening Remarks on Darfur Suspects",
+      "publisher": "International Criminal Court"
+    },
+    {
+      "url": "https://unamid.unmissions.org/en/node/26759",
+      "title": "UNAMID Ends its Mandate on 31 December 2020",
+      "publisher": "UNAMID"
+    },
+    {
+      "url": "https://www.un.org/en/delegate/darfur-un-transition-peacebuilding",
+      "title": "Darfur: UN transition to peacebuilding",
+      "publisher": "United Nations"
+    }
+  ]
+}

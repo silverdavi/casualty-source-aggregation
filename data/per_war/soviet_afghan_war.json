@@ -1,0 +1,305 @@
+{
+  "war_id": "soviet_afghan_war",
+  "name": "Soviet-Afghan War",
+  "start_year": 1979,
+  "end_year": 1989,
+  "ongoing": false,
+  "regions": [
+    "Afghanistan",
+    "Central Asia",
+    "South Asia"
+  ],
+  "summary": "The Soviet-Afghan War was fought from the Soviet intervention in December 1979 until the final Soviet withdrawal in February 1989. Soviet and Afghan government forces fought a fragmented mujahideen insurgency supported by Pakistan, the United States, Saudi Arabia, China, and others. The war caused roughly 0.9 to 1.5 million total deaths, overwhelmingly Afghan civilians, but sources rarely separate direct civilian killing from indirect deaths caused by displacement, mines, and destruction of rural livelihoods.",
+  "sides": [
+    {
+      "name": "Soviet Union and DRA/Republic of Afghanistan government",
+      "members": [
+        "Soviet Union",
+        "40th Army",
+        "Soviet border troops and KGB units",
+        "Soviet MVD/internal troops",
+        "Democratic Republic of Afghanistan / Republic of Afghanistan armed forces",
+        "KHAD/WAD security services",
+        "pro-government militias"
+      ],
+      "military_killed": {
+        "low": 31833,
+        "high": 32453,
+        "point": 32453,
+        "notes": "Low uses the Pravda/Soviet army figure of 13,833 Soviet soldiers plus about 18,000 Afghan government troops. High/point uses the broader official Soviet armed-services total of 14,453 plus about 18,000 Afghan government troops. Afghan government troop deaths are much less securely documented than Soviet deaths.",
+        "sources": [
+          "https://www.upi.com/Archives/1989/08/17/Soviets-reveal-yearly-combat-death-tolls-in-Afghan-war/2156619329600/",
+          "https://czasopisma.uni.lodz.pl/historica/article/view/2889",
+          "https://thediplomat.com/2015/07/afghanistan-and-the-stinger-myth/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing, shelling, aerial attack, rocket attack",
+            "victims_group": "Afghan civilians in rural villages, provincial towns, and government/resistance-contested areas",
+            "low": null,
+            "high": null,
+            "notes": "No reliable direct-only aggregate exists. HRW/Asia Watch believed over 1 million Afghan civilians had been killed since the war began, most in aerial bombardments; UN mapping material says bombardment was by far the largest cause in Sliwinski's 1.28 million excess-mortality estimate.",
+            "sources": [
+              "https://www.refworld.org/reference/countryrep/hrw/1991/41560",
+              "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+            ]
+          },
+          {
+            "cause": "massacre and summary execution",
+            "victims_group": "Afghan civilians in villages and areas suspected of supporting resistance forces",
+            "low": null,
+            "high": null,
+            "notes": "No national aggregate exists. Documented incidents include Laghman 1985 with 500-1,000 civilians killed, Padkhwab-e Shana 1982 with 105 killed, and Kulchabat/Bala Karz/Mushkizi 1983 with up to 360 killed.",
+            "sources": [
+              "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf",
+              "https://www.upi.com/Archives/1982/12/14/Report-Soviets-burned-105-Afghans/3970408690000/",
+              "https://www.govinfo.gov/content/pkg/GPO-CRECB-1986-pt5/pdf/GPO-CRECB-1986-pt5-1.pdf"
+            ]
+          }
+        ],
+        "notes": "The Soviet/DRA side caused the overwhelming majority of Afghan civilian mortality, but the sources do not permit a defensible direct-only total separated from indirect deaths.",
+        "sources": [
+          "https://www.refworld.org/reference/countryrep/hrw/1991/41560",
+          "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Afghan rural civilians displaced by bombing, reprisal operations, and depopulation strategy",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW/UN mapping material describes Soviet/DRA strategy as bombing and sweeping villages, destroying agricultural systems, and forcing populations to abandon resistance areas or flee into exile. Resulting deaths are embedded in broader excess-mortality estimates and cannot be separately counted.",
+          "sources": [
+            "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+          ]
+        },
+        {
+          "type": "mine",
+          "victims_group": "Afghan civilians and combatants killed or injured by landmines and unexploded ordnance",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Soviet and Afghan government forces laid many antipersonnel mines. The ICRC later estimated 200,000 Afghans killed or wounded by mines over 23 years of war, but this combines deaths and injuries and spans multiple conflict phases.",
+          "sources": [
+            "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+          ]
+        },
+        {
+          "type": "destruction_of_livelihoods",
+          "victims_group": "Afghan rural civilians affected by destruction of crops, orchards, livestock, irrigation, homes, and markets",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Destruction of agricultural systems and depopulation was repeatedly documented, but deaths from hunger, exposure, disease, and displacement are not separately quantified in reliable national totals.",
+          "sources": [
+            "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Afghan mujahideen resistance",
+      "members": [
+        "Jamiat-e Islami",
+        "Hizb-e Islami (Hekmatyar)",
+        "Hizb-e Islami (Khalis)",
+        "Harakat-i Inqilab-i Islami",
+        "Ittihad-e Islami",
+        "Mahaz-e Milli",
+        "Jabha-e Nejat-e Milli",
+        "Shia mujahideen factions",
+        "foreign volunteer fighters"
+      ],
+      "military_killed": {
+        "low": 75000,
+        "high": 90000,
+        "point": 90000,
+        "notes": "Giustozzi is cited as estimating 150,000-180,000 mujahideen casualties, roughly half killed, implying 75,000-90,000 deaths. Many general casualty summaries repeat 90,000 mujahideen fighters killed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Soviet_war_crimes_in_the_Soviet%E2%80%93Afghan_War",
+          "https://thediplomat.com/2015/07/afghanistan-and-the-stinger-myth/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution, assassination, hostage killing, attack on suspected collaborators",
+            "victims_group": "Afghan officials, police, schoolteachers, suspected communists, alleged spies, rival activists, and civilians associated with the government",
+            "low": null,
+            "high": null,
+            "notes": "Documented but not aggregated. The UN mapping report records attacks on schools and government buildings, killings of officials and schoolteachers suspected of communism, hostage killings, and extrajudicial executions.",
+            "sources": [
+              "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+            ]
+          },
+          {
+            "cause": "indiscriminate rocket attack",
+            "victims_group": "Civilians in government-controlled cities",
+            "low": null,
+            "high": null,
+            "notes": "Large quantified examples mostly occurred after the February 1989 Soviet withdrawal and are not included in the core Soviet-war roll-up. HRW reported 500 civilians killed in Jalalabad shelling/rocket attacks in spring 1989 and 1,000 civilians killed in Kabul rocket attacks by the end of 1989.",
+            "sources": [
+              "https://www.refworld.org/reference/countryrep/hrw/1991/41560"
+            ]
+          }
+        ],
+        "notes": "Mujahideen abuses were real and documented, but no reliable national civilian-death total attributable to them exists for the Soviet-war period.",
+        "sources": [
+          "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf",
+          "https://www.refworld.org/reference/countryrep/hrw/1991/41560"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "mine",
+          "victims_group": "Afghan civilians and combatants exposed to mujahideen-laid mines",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW reported that mujahideen forces laid mines without adequate marking or mapping. Civilian mine deaths attributable specifically to mujahideen for 1979-1989 cannot be separated from mine casualties caused by Soviet/DRA and other actors.",
+          "sources": [
+            "https://www.refworld.org/reference/countryrep/hrw/1991/41560",
+            "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 106833,
+    "military_high": 122453,
+    "civilian_low": 768825,
+    "civilian_high": 1407000,
+    "grand_low": 890658,
+    "grand_high": 1514453,
+    "notes": "Grand low equals Khalidi's 876,825 Afghan deaths by 1987 plus 13,833 Soviet military deaths. Grand high equals the UN-coordinator 1.5 million Afghan death figure cited by Ermacora plus 14,453 Soviet military deaths. Military low/high sum Soviet, Afghan government, and mujahideen military deaths. Civilian low/high are inferred by subtracting Afghan combatant deaths from Afghan all-deaths estimates and should be treated as an accounting approximation, not a directly observed series."
+  },
+  "key_atrocities": [
+    {
+      "name": "Rural bombardment and depopulation campaign",
+      "year": null,
+      "perpetrator": "Soviet Union and DRA/Republic of Afghanistan government",
+      "victims_group": "Afghan rural civilians",
+      "low": null,
+      "high": null,
+      "notes": "UN/HRW materials describe repeated bombing of villages, ground sweeps, destruction of agricultural systems, and forced displacement; Sliwinski estimated 1.28 million excess deaths in 1979-1987 and found bombardment the largest cause.",
+      "sources": [
+        "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf",
+        "https://www.refworld.org/reference/countryrep/hrw/1991/41560"
+      ]
+    },
+    {
+      "name": "Laghman massacre",
+      "year": 1985,
+      "perpetrator": "Soviet forces",
+      "victims_group": "Afghan civilians in Laghman villages",
+      "low": 500,
+      "high": 1000,
+      "notes": "UN/HRW sources give 500-1,000 killed; a casualty table compares source totals of 1,000, 900, and 505.",
+      "sources": [
+        "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+      ]
+    },
+    {
+      "name": "Padkhwab-e Shana massacre",
+      "year": 1982,
+      "perpetrator": "Soviet forces",
+      "victims_group": "Afghan villagers and fighters hiding in a karez/irrigation tunnel",
+      "low": 105,
+      "high": 105,
+      "notes": "Reports describe 105 people killed after Soviet troops allegedly poured inflammable substances into the tunnel and ignited them.",
+      "sources": [
+        "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf",
+        "https://www.upi.com/Archives/1982/12/14/Report-Soviets-burned-105-Afghans/3970408690000/"
+      ]
+    },
+    {
+      "name": "Kulchabat, Bala Karz and Mushkizi massacre",
+      "year": 1983,
+      "perpetrator": "Soviet forces",
+      "victims_group": "Afghan civilians in Kandahar-province villages",
+      "low": null,
+      "high": 360,
+      "notes": "Secondary and congressional-report summaries report up to 360 civilians killed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Soviet_war_crimes_in_the_Soviet%E2%80%93Afghan_War",
+        "https://www.govinfo.gov/content/pkg/GPO-CRECB-1986-pt5/pdf/GPO-CRECB-1986-pt5-1.pdf"
+      ]
+    },
+    {
+      "name": "Mujahideen executions of prisoners at Jawar and other sites",
+      "year": 1986,
+      "perpetrator": "Afghan mujahideen resistance",
+      "victims_group": "Captured Afghan government soldiers and officers; Soviet prisoners in some incidents",
+      "low": 45,
+      "high": null,
+      "notes": "The UN mapping report documents multiple prisoner-execution incidents, including 45 Afghan officers executed after Jawar in 1986; other reports include 50 prisoners shot after Barri Fort and claims by one judge of much larger numbers, but no reliable aggregate exists.",
+      "sources": [
+        "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Afghanistan had weak demographic records, no comprehensive casualty registry, and extremely limited wartime access for investigators. The strongest numbers are Soviet military deaths and broad Afghan demographic estimates; the weakest are side-attributed civilian direct and indirect death counts. The report therefore uses broad demographic totals for grand totals, while leaving direct/indirect side buckets null where the literature does not support a clean split.",
+  "sources": [
+    {
+      "url": "https://www.afghanistan-analysts.org/en/wp-content/uploads/sites/2/2024/08/UNMappingReportAfghanistan.pdf",
+      "title": "UN Mapping Report: Afghanistan",
+      "publisher": "UN/OHCHR report hosted by Afghanistan Analysts Network"
+    },
+    {
+      "url": "https://www.refworld.org/reference/countryrep/hrw/1991/41560",
+      "title": "Afghanistan: The Forgotten War: Human Rights Abuses and Violations of the Laws of War Since the Soviet Withdrawal",
+      "publisher": "Human Rights Watch / Asia Watch via Refworld"
+    },
+    {
+      "url": "https://www.hrw.org/report/1988/03/01/all-parties-conflict/violations-laws-war-afghanistan",
+      "title": "By All Parties to the Conflict: Violations of the Laws of War in Afghanistan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12317412/",
+      "title": "Afghanistan: Demographic Consequences of War, 1978-1987",
+      "publisher": "Central Asian Survey / PubMed"
+    },
+    {
+      "url": "https://czasopisma.uni.lodz.pl/historica/article/view/2889",
+      "title": "Conditions of Existence and Morale of Soviet Army in Afghanistan (1979\u20131989)",
+      "publisher": "Acta Universitatis Lodziensis. Folia Historica"
+    },
+    {
+      "url": "https://www.upi.com/Archives/1989/08/17/Soviets-reveal-yearly-combat-death-tolls-in-Afghan-war/2156619329600/",
+      "title": "Soviets reveal yearly combat death tolls in Afghan war",
+      "publisher": "UPI Archives"
+    },
+    {
+      "url": "https://thediplomat.com/2015/07/afghanistan-and-the-stinger-myth/",
+      "title": "Afghanistan and The Stinger Myth",
+      "publisher": "The Diplomat"
+    },
+    {
+      "url": "https://www.britannica.com/event/Afghan-War",
+      "title": "Afghan War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.upi.com/Archives/1982/12/14/Report-Soviets-burned-105-Afghans/3970408690000/",
+      "title": "Report Soviets burned 105 Afghans",
+      "publisher": "UPI Archives"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GPO-CRECB-1986-pt5/pdf/GPO-CRECB-1986-pt5-1.pdf",
+      "title": "Congressional Record, 1986, references to Afghanistan atrocities",
+      "publisher": "U.S. Government Publishing Office"
+    }
+  ]
+}

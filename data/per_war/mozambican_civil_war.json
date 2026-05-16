@@ -1,0 +1,275 @@
+{
+  "war_id": "mozambican_civil_war",
+  "name": "Mozambican Civil War",
+  "start_year": 1977,
+  "end_year": 1992,
+  "ongoing": false,
+  "regions": [
+    "Mozambique",
+    "Southern Africa"
+  ],
+  "summary": "The Mozambican Civil War was fought primarily between the FRELIMO-led government and RENAMO from 1977 until the Rome General Peace Accord of October 4, 1992. Total deaths are usually estimated in the hundreds of thousands to about one million, with most deaths civilian and many caused indirectly by famine, disease, displacement, and destruction of health, transport, and food systems. RENAMO is more often numerically linked to direct civilian killing, but government forces also committed serious abuses and the indirect death toll cannot be cleanly attributed to a single side.",
+  "sides": [
+    {
+      "name": "FRELIMO-led Government of Mozambique and allied forces",
+      "members": [
+        "Government of Mozambique",
+        "FRELIMO",
+        "Mozambique Armed Forces",
+        "Zimbabwean forces",
+        "Tanzanian forces",
+        "Malawian forces",
+        "other foreign advisers/supporters"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No authoritative per-side combatant death rollup was found. UCDP/PRIF records 13,924 total conflict deaths but does not separate FRELIMO/government, allied, RENAMO, and civilian deaths.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Mozambique__Renamo__1977-1992.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "mass killings, torture, sexual violence, indiscriminate violence",
+            "victims_group": "Mozambican civilians and suspected RENAMO supporters",
+            "low": null,
+            "high": null,
+            "notes": "Human Rights Watch states that both sides committed war crimes against civilians, but no defensible war-wide numeric estimate for direct civilian killings by FRELIMO/government forces was found.",
+            "sources": [
+              "https://www.hrw.org/report/2018/01/12/next-one-die/state-security-force-and-renamo-abuses-mozambique",
+              "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf"
+            ]
+          }
+        ],
+        "notes": "Government abuses are documented qualitatively, but not quantified in a reliable war-wide death estimate.",
+        "sources": [
+          "https://www.hrw.org/report/2018/01/12/next-one-die/state-security-force-and-renamo-abuses-mozambique",
+          "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Mozambican civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "FRELIMO/government policies and military conduct contributed to displacement, requisitioning, forced relocation, and population-control measures, but deaths cannot be isolated from RENAMO actions, drought, and the wider war economy.",
+          "sources": [
+            "https://www.jointdatacenter.org/wp-content/uploads/2022/01/Forced_Displacement_full.pdf",
+            "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Mozambican civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The broader war displaced millions and produced hunger and disease mortality; no clean FRELIMO-only allocation was found.",
+          "sources": [
+            "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf",
+            "https://www.hrw.org/report/2018/01/12/next-one-die/state-security-force-and-renamo-abuses-mozambique"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RENAMO and supporting external patrons",
+      "members": [
+        "RENAMO",
+        "Mozambique National Resistance / MNR",
+        "Rhodesian intelligence and security support",
+        "South African military/intelligence support",
+        "smaller anti-FRELIMO factions in some phases"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No authoritative RENAMO combatant death total was found. UCDP/PRIF provides a total conflict-death figure but not a per-side combatant count.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Mozambique__Renamo__1977-1992.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1400,
+        "high": null,
+        "point": 100000,
+        "breakdown": [
+          {
+            "cause": "one-sided violence and massacres",
+            "victims_group": "Mozambican civilians",
+            "low": 1400,
+            "high": null,
+            "notes": "UCDP/PRIF records 1,400 civilian victims of RENAMO one-sided violence within its narrower dataset. The Gersony report tradition, summarized by Human Rights Watch, accused RENAMO of killing at least 100,000 people; this is not an upper bound.",
+            "sources": [
+              "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Mozambique__Renamo__1977-1992.pdf",
+              "https://www.hrw.org/reports/1997/lmsa/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "civilians in Homoine, including women, children, and hospital patients",
+            "low": 424,
+            "high": 424,
+            "notes": "Official death toll for the Homoine massacre, July 18, 1987.",
+            "sources": [
+              "https://www.mozambiquehistory.net/homoine.php"
+            ]
+          },
+          {
+            "cause": "convoy ambush and massacre",
+            "victims_group": "civilians travelling near Taninga",
+            "low": 211,
+            "high": 211,
+            "notes": "Mozambique History Net dossier gives 211 dead in the October 1987 Taninga attack.",
+            "sources": [
+              "https://www.mozambiquehistory.net/87_10.php"
+            ]
+          }
+        ],
+        "notes": "RENAMO is the only side for which the sources found provide a broad numerical estimate for direct civilian killing. The 100,000 figure should be treated as an estimate/minimum rather than a maximum.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Mozambique__Renamo__1977-1992.pdf",
+          "https://www.hrw.org/reports/1997/lmsa/",
+          "https://www.mozambiquehistory.net/homoine.php",
+          "https://www.mozambiquehistory.net/87_10.php"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Mozambican civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "RENAMO attacks on transport, clinics, schools, food systems, civilians, and relief networks were a major driver of famine and disease mortality, but the number attributable solely to RENAMO cannot be separated from government actions, drought, and the wider conflict. These deaths are included in the total 600,000-1,000,000 war-death range.",
+          "sources": [
+            "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf",
+            "https://www.jointdatacenter.org/wp-content/uploads/2022/01/Forced_Displacement_full.pdf"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Mozambican civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "RENAMO violence and territorial control drove mass displacement and indirect mortality; no side-specific death estimate was found.",
+          "sources": [
+            "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf",
+            "https://www.hrw.org/reports/1997/lmsa/"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "civilians in RENAMO-controlled areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Human Rights Watch summarizes the Gersony report as accusing RENAMO of running what were effectively slave-labor camps, but no deaths-only number for this subcategory was found.",
+          "sources": [
+            "https://www.hrw.org/reports/1997/lmsa/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 30000,
+    "military_high": 50000,
+    "civilian_low": 570000,
+    "civilian_high": 950000,
+    "grand_low": 600000,
+    "grand_high": 1000000,
+    "notes": "Grand total uses the broad historical/humanitarian range of 600,000 to 1,000,000 deaths. Military and civilian totals are inferred by applying the cited 95% civilian share to that range; they are not a per-side body count. Per-side military deaths remain unknown."
+  },
+  "key_atrocities": [
+    {
+      "name": "Homoine massacre",
+      "year": 1987,
+      "perpetrator": "RENAMO/MNR",
+      "victims_group": "civilians, including women, children, and hospital patients",
+      "low": 424,
+      "high": 424,
+      "notes": "Attack on Homoine on July 18, 1987; official death toll reached 424.",
+      "sources": [
+        "https://www.mozambiquehistory.net/homoine.php"
+      ]
+    },
+    {
+      "name": "Taninga convoy massacre",
+      "year": 1987,
+      "perpetrator": "RENAMO",
+      "victims_group": "civilian convoy passengers and bystanders",
+      "low": 211,
+      "high": 211,
+      "notes": "October 1987 convoy ambush near Taninga; Mozambique History Net gives 211 dead.",
+      "sources": [
+        "https://www.mozambiquehistory.net/87_10.php"
+      ]
+    },
+    {
+      "name": "RENAMO direct-killing campaign against civilians",
+      "year": null,
+      "perpetrator": "RENAMO",
+      "victims_group": "Mozambican civilians",
+      "low": 100000,
+      "high": null,
+      "notes": "Gersony report tradition, summarized by Human Rights Watch, accused RENAMO of killing at least 100,000 people. This is not an upper bound.",
+      "sources": [
+        "https://www.hrw.org/reports/1997/lmsa/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is the allocation of indirect deaths. UCDP-style data capture a much smaller documented death total than demographic/humanitarian estimates because the latter include famine, disease, displacement, and destroyed services. RENAMO is much more frequently quantified for direct civilian killing, while FRELIMO/government abuses are documented but not given a defensible war-wide numeric death toll in the sources found. The 600,000-1,000,000 total is therefore a top-down estimate, not the sum of fully observed per-side casualty ledgers.",
+  "sources": [
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Mozambique__Renamo__1977-1992.pdf",
+      "title": "WARID: Mozambique (Renamo) 1977\u20131992",
+      "publisher": "Peace Research Institute Frankfurt / UCDP-based conflict profile"
+    },
+    {
+      "url": "https://www.jointdatacenter.org/wp-content/uploads/2022/01/Forced_Displacement_full.pdf",
+      "title": "Forced Displacement and Human Capital: Evidence from Postwar Mozambique",
+      "publisher": "Joint Data Center / academic working paper"
+    },
+    {
+      "url": "https://ciaotest.cc.columbia.edu/wps/wibu/0015220/f_0015220_12850.pdf",
+      "title": "The Policies of Mercy: UN Coordination in Afghanistan, Mozambique, and Rwanda",
+      "publisher": "Humanitarianism and War Project / UN-related study"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1997/lmsa/",
+      "title": "Landmines in Southern Africa: Mozambique section",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/report/2018/01/12/next-one-die/state-security-force-and-renamo-abuses-mozambique",
+      "title": "The Next One to Die: State Security Force and Renamo Abuses in Mozambique",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.mozambiquehistory.net/homoine.php",
+      "title": "The Massacre at Homo\u00edne",
+      "publisher": "Mozambique History Net"
+    },
+    {
+      "url": "https://www.mozambiquehistory.net/87_10.php",
+      "title": "The Conflict with Renamo, October 1987",
+      "publisher": "Mozambique History Net"
+    },
+    {
+      "url": "https://www.jstor.org/stable/10.7722/j.ctt2111dhd",
+      "title": "The War Within: New Perspectives on the Civil War in Mozambique, 1976\u20131992",
+      "publisher": "JSTOR / Boydell & Brewer"
+    }
+  ]
+}

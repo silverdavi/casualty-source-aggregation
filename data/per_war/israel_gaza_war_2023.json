@@ -1,0 +1,738 @@
+{
+  "war_id": "israel_gaza_war_2023",
+  "name": "Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)",
+  "start_year": 2023,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Gaza Strip",
+    "Israel",
+    "Lebanon",
+    "West Bank",
+    "Occupied Palestinian Territory"
+  ],
+  "summary": "An ongoing multi-front war that began with the Hamas-led 7 October 2023 attack on Israel and Israel's subsequent campaign in Gaza, with related escalation in the West Bank and on the Hezbollah/Lebanon front. Early-2026 reported direct deaths are at least in the low 80,000s across the Gaza, Israel, Lebanon and West Bank fronts, while excess-mortality estimates for Gaza make the plausible all-cause attributable toll much higher. Civilian/combatant splits are particularly contested in Gaza and Lebanon; this dataset does not use Israeli public militant-killed claims as the central Gaza estimate.",
+  "sides": [
+    {
+      "name": "Israel / Israeli state forces and aligned settler actors",
+      "members": [
+        "Israel Defense Forces",
+        "Israel Police",
+        "Shin Bet",
+        "Israeli government",
+        "armed Israeli settlers"
+      ],
+      "military_killed": {
+        "low": 845,
+        "high": 921,
+        "point": null,
+        "notes": "Low combines 373 security-force members killed in the 7 October attack count with 472 Israeli soldiers killed in Gaza since the ground operation as reported by OCHA on 18 March 2026. High adds reported Lebanon-front Israeli military/security deaths, but categories overlap and differ by source.",
+        "sources": [
+          "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
+          "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+          "https://en.wikipedia.org/wiki/Hezbollah%E2%80%93Israel_conflict_%282023%E2%80%93present%29"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 62634,
+        "high": 97907,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrikes_shelling_ground_fire",
+            "victims_group": "Palestinian civilians/unverified non-combatants in Gaza",
+            "low": 49158,
+            "high": 61531,
+            "notes": "Derived from OCHA/MoH identified-death denominator of 71,444 plus 809 reported but not demographically broken out. Low counts women, children, elderly and an adult-male-civilian allowance equal to adult women; high applies an approximately 85% civilian share informed by OHCHR/AOAV, peer-reviewed survey findings and leaked-database reporting. Unverified 'militant' deaths are not assigned to Hamas without evidence.",
+            "sources": [
+              "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
+              "https://www.ohchr.org/sites/default/files/documents/countries/opt/20241106-Gaza-Update-Report-OPT.pdf",
+              "https://aoav.org.uk/2024/the-ohchr-report-on-gaza-insights-flaws-and-the-wheres-daddy-programme/",
+              "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
+              "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html"
+            ]
+          },
+          {
+            "cause": "airstrikes_ground_operations",
+            "victims_group": "Lebanese civilians and unverified non-combatants",
+            "low": 5572,
+            "high": 6178,
+            "notes": "Approximate non-Hezbollah-identified remainder from Lebanon all-status death totals. Lebanese MoPH totals generally do not distinguish civilians from fighters; Hezbollah fighter deaths are separately estimated at 494-1,100 for the 2026 escalation.",
+            "sources": [
+              "https://www.gov.uk/government/publications/lebanon-country-policy-and-information-notes/country-bulletin-security-situation-lebanon-may-2026",
+              "https://www.emro.who.int/images/stories/lebanon/Lebanon-Emergency-Sitrep-14-2026.pdf",
+              "https://www.hrw.org/news/2025/03/07/israel/lebanon-hezbollah-attacks-endangered-civilians"
+            ]
+          },
+          {
+            "cause": "raids_shootings_settler_violence",
+            "victims_group": "Palestinians in the West Bank, including civilians and unverified status victims",
+            "low": 1000,
+            "high": null,
+            "notes": "Minimum rounded component. West Bank reporting after 7 October 2023 includes civilians, armed Palestinians and people killed during Israeli raids; a clean civilian-only aggregate was not found.",
+            "sources": [
+              "https://apnews.com/article/d230dc14e42fd45f319b4ad083a1495f",
+              "https://www.lemonde.fr/en/international/article/2026/03/04/in-the-west-bank-s-qaryout-a-palestinian-village-is-besieged-by-settlers_6751100_4.html",
+              "https://www.ochaopt.org/content/humanitarian-situation-report-2-april-2026"
+            ]
+          }
+        ],
+        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 62,634-97,907 (median 76,198); see `bayesian_combatant_share` for the simulator details.",
+        "sources": [
+          "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
+          "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
+          "https://www.gov.uk/government/publications/lebanon-country-policy-and-information-notes/country-bulletin-security-situation-lebanon-may-2026",
+          "https://apnews.com/article/d230dc14e42fd45f319b4ad083a1495f"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade_siege_healthcare_collapse_famine_displacement",
+          "victims_group": "Palestinian civilians in Gaza",
+          "low": 4500,
+          "high": 148604,
+          "point": 8450,
+          "notes": "Low/high-confidence measured excess non-violent deaths from the 2026 Lancet Global Health household survey are 4,500-12,500 with point 8,450 by 5 January 2025. The broad high subtracts 37,396 direct reported deaths from the 2024 Lancet correspondence's scenario of 186,000 or more total attributable deaths; this is a projection, not a confirmed count.",
+          "sources": [
+            "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html",
+            "https://doi.org/10.1016/S0140-6736(24)01169-3",
+            "https://www.snopes.com/news/2024/07/24/lancet-death-toll-gaza/"
+          ]
+        },
+        {
+          "type": "custody_detention",
+          "victims_group": "Palestinians dying in Israeli custody",
+          "low": 90,
+          "high": null,
+          "point": null,
+          "notes": "OCHA/OHCHR reporting cited at least 87 verified deaths in Israeli custody by 13 January 2026 and at least 90 by 31 March 2026; causes include concerns about torture, ill-treatment, denial of medical care and restricted monitoring.",
+          "sources": [
+            "https://www.ochaopt.org/content/humanitarian-situation-update-353-gaza-strip",
+            "https://www.ochaopt.org/content/humanitarian-situation-report-2-april-2026"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hamas-led Palestinian armed groups in Gaza",
+      "members": [
+        "Hamas",
+        "Izz ad-Din al-Qassam Brigades",
+        "Palestinian Islamic Jihad",
+        "Al-Quds Brigades",
+        "other Gaza-based armed factions"
+      ],
+      "military_killed": {
+        "low": 1112,
+        "high": 2720,
+        "point": 1779,
+        "notes": "Spatial Bayesian importance sampler (n=200k, ESS=2277). Posterior on militant share of all Gaza dead: 2.5% (95% CI 1.6%\u20133.8%). IDF/Israeli-intel claim of 17\u201325k Hamas+PIJ killed is incompatible with the demographic profile of identified deaths and is recorded as a belligerent_claim only.",
+        "sources": [
+          "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
+          "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+          "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext",
+          "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza"
+        ],
+        "belligerent_claim_idf": [
+          17000,
+          25000
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 766,
+        "high": 850,
+        "point": 766,
+        "breakdown": [
+          {
+            "cause": "massacre_shootings_hostage_taking_rocket_fire",
+            "victims_group": "Israeli civilians and foreign nationals killed on 7 October 2023 and immediate aftermath",
+            "low": 766,
+            "high": 850,
+            "notes": "Detailed social-security-derived breakdown: 695 Israeli civilians and 71 foreign nationals among 1,139 deaths; higher range reflects broader lists and classification differences. Security-force deaths are counted under Israeli military killed.",
+            "sources": [
+              "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+              "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf"
+            ]
+          }
+        ],
+        "notes": "Civilian deaths from hostage captivity and later rocket fire are not comprehensively separated here due to case-by-case attribution problems.",
+        "sources": [
+          "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+          "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Hezbollah / Lebanon-front armed groups",
+      "members": [
+        "Hezbollah",
+        "Radwan Force",
+        "allied Lebanon-based armed elements"
+      ],
+      "military_killed": {
+        "low": 494,
+        "high": 1100,
+        "point": null,
+        "notes": "Low is a non-exhaustive Le Monde identification of Hezbollah fighters killed since 2 March 2026 from death notices and affiliated local/social accounts. High is the Israeli military claim of around 1,100 Hezbollah operatives killed in the same escalation, treated as a disputed belligerent upper figure.",
+        "sources": [
+          "https://www.lemonde.fr/en/international/article/2026/04/21/hezbollah-suffers-heavy-losses-in-lebanon_6752657_4.html",
+          "https://www.gov.uk/government/publications/lebanon-country-policy-and-information-notes/country-bulletin-security-situation-lebanon-may-2026"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 46,
+        "high": 46,
+        "point": 46,
+        "breakdown": [
+          {
+            "cause": "rocket_drone_anti_tank_missile_attacks",
+            "victims_group": "Israeli civilians killed on the Lebanon/Hezbollah front",
+            "low": 46,
+            "high": 46,
+            "notes": "Later conflict summaries report 46 Israeli civilians killed by Hezbollah attacks; earlier Israeli PMO/JNS reporting gave 28 Israeli civilians plus two foreign nationals by October 2024.",
+            "sources": [
+              "https://www.jns.org/fifty-nine-people-killed-in-israel-by-hezbollah-fire-since-oct-8-2023/",
+              "https://en.wikipedia.org/wiki/Hezbollah%E2%80%93Israel_conflict_%282023%E2%80%93present%29"
+            ]
+          },
+          {
+            "cause": "rocket_strike",
+            "victims_group": "Druze children in Majdal Shams",
+            "low": 12,
+            "high": 12,
+            "notes": "The Majdal Shams strike killed 12 children; Israel attributed it to Hezbollah, while Hezbollah denied responsibility.",
+            "sources": [
+              "https://www.hrw.org/news/2025/01/16/lebanon-hostilities-wreak-havoc-civilians",
+              "https://www.lemonde.fr/en/les-decodeurs/article/2024/08/05/understanding-the-tensions-between-hezbollah-and-israel-in-five-key-dates_6709662_8.html"
+            ]
+          }
+        ],
+        "notes": "Israeli civilian fatalities from the Lebanon front are much lower than Lebanese fatalities from Israeli strikes, but classification of some border security personnel varies by source.",
+        "sources": [
+          "https://www.jns.org/fifty-nine-people-killed-in-israel-by-hezbollah-fire-since-oct-8-2023/",
+          "https://en.wikipedia.org/wiki/Hezbollah%E2%80%93Israel_conflict_%282023%E2%80%93present%29"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 2451,
+    "military_high": 4741,
+    "civilian_low": 68036,
+    "civilian_high": 247407,
+    "grand_low": 70487,
+    "grand_high": 252148,
+    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. See `bayesian_combatant_share`."
+  },
+  "key_atrocities": [
+    {
+      "name": "7 October 2023 Hamas-led attack in southern Israel",
+      "year": 2023,
+      "perpetrator": "Hamas-led Palestinian armed groups",
+      "victims_group": "Israeli civilians, foreign nationals, and Israeli security forces",
+      "low": 1139,
+      "high": 1200,
+      "notes": "Detailed breakdown often cited: 695 Israeli civilians, 71 foreign nationals, 373 security-force members. OCHA later reported 1,162 identified fatalities and over 1,200 total Israeli/foreign fatalities including immediate aftermath.",
+      "sources": [
+        "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+        "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf"
+      ]
+    },
+    {
+      "name": "Nova music festival massacre",
+      "year": 2023,
+      "perpetrator": "Hamas-led Palestinian armed groups",
+      "victims_group": "Israeli and foreign civilians",
+      "low": 360,
+      "high": 364,
+      "notes": "One of the deadliest single sites of the 7 October attack.",
+      "sources": [
+        "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+        "https://en.wikipedia.org/wiki/October_7_attacks"
+      ]
+    },
+    {
+      "name": "Gaza residential-building mass-fatality pattern",
+      "year": 2023,
+      "perpetrator": "Israel / Israeli state forces",
+      "victims_group": "Palestinian civilians in Gaza",
+      "low": 7607,
+      "high": 8119,
+      "notes": "OHCHR verified 8,119 fatalities in the subset it examined, including 2,036 women and 3,588 children; AOAV/Spagat noted 7,607 were in residential buildings or similar housing and estimated 93.8% civilians in that home-destruction subset.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/documents/countries/opt/20241106-Gaza-Update-Report-OPT.pdf",
+        "https://aoav.org.uk/2024/the-ohchr-report-on-gaza-insights-flaws-and-the-wheres-daddy-programme/"
+      ]
+    },
+    {
+      "name": "Lebanon airstrike wave of 23 September 2024",
+      "year": 2024,
+      "perpetrator": "Israel / Israeli state forces",
+      "victims_group": "Lebanese civilians and Hezbollah-linked targets",
+      "low": 558,
+      "high": 558,
+      "notes": "Lebanon Public Health Ministry figure cited by HRW for one day of widespread Israeli strikes.",
+      "sources": [
+        "https://www.hrw.org/news/2025/03/07/israel/lebanon-hezbollah-attacks-endangered-civilians"
+      ]
+    },
+    {
+      "name": "Majdal Shams strike",
+      "year": 2024,
+      "perpetrator": "Hezbollah, disputed by Hezbollah",
+      "victims_group": "Druze children in Israeli-occupied Golan Heights",
+      "low": 12,
+      "high": 12,
+      "notes": "Israel attributed the rocket strike to Hezbollah; Hezbollah denied responsibility.",
+      "sources": [
+        "https://www.hrw.org/news/2025/01/16/lebanon-hostilities-wreak-havoc-civilians",
+        "https://www.lemonde.fr/en/les-decodeurs/article/2024/08/05/understanding-the-tensions-between-hezbollah-and-israel-in-five-key-dates_6709662_8.html"
+      ]
+    },
+    {
+      "name": "Lebanon strike wave of 8 April 2026",
+      "year": 2026,
+      "perpetrator": "Israel / Israeli state forces",
+      "victims_group": "Lebanese civilians and alleged Hezbollah targets",
+      "low": 303,
+      "high": 357,
+      "notes": "HRW/Lebanese ministry reporting cited at least 303 killed and more than 1,150 injured; another Lebanese Health Ministry figure cited in the UK bulletin was 357 killed.",
+      "sources": [
+        "https://www.gov.uk/government/publications/lebanon-country-policy-and-information-notes/country-bulletin-security-situation-lebanon-may-2026"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Gaza combatant-share estimates are the largest uncertainty. This report explicitly rejects use of Israeli MOD/IDF public militant-killed claims such as ~17,000 or ~25,000+ as the central estimate or floor; those are belligerent_claim values and are inconsistent with several independent demographic and verification analyses unless nearly all working-age male deaths are treated as combatants. The Gaza civilian/combatant range is derived from identified-death age/sex structure, OHCHR verification, AOAV/Spagat reasoning, peer-reviewed mortality work, and leaked-database reporting; unverified 'militant' deaths are not automatically assigned to Hamas. Indirect deaths are also highly uncertain: the measured 2026 Lancet Global Health excess non-violent estimate through 5 January 2025 is far narrower than the broader 2024 Lancet projection, which could imply roughly 149,000 indirect Gaza deaths but is a scenario rather than a confirmed count.",
+  "sources": [
+    {
+      "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
+      "title": "Reported Impact Snapshot | Gaza Strip | 18 March 2026",
+      "publisher": "UN OCHA oPt"
+    },
+    {
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-update-353-gaza-strip",
+      "title": "Humanitarian Situation Update #353 | Gaza Strip",
+      "publisher": "UN OCHA oPt"
+    },
+    {
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-27-march-2026",
+      "title": "Humanitarian Situation Report | 27 March 2026",
+      "publisher": "UN OCHA oPt"
+    },
+    {
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-april-2026",
+      "title": "Humanitarian Situation Report | 2 April 2026",
+      "publisher": "UN OCHA oPt"
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/documents/countries/opt/20241106-Gaza-Update-Report-OPT.pdf",
+      "title": "Six-month update report on the human rights situation in Gaza: 1 November 2023 to 30 April 2024",
+      "publisher": "OHCHR"
+    },
+    {
+      "url": "https://aoav.org.uk/2024/the-ohchr-report-on-gaza-insights-flaws-and-the-wheres-daddy-programme/",
+      "title": "The OHCHR Report on Gaza: insights, flaws, and the 'Where's Daddy?' programme",
+      "publisher": "Action on Armed Violence"
+    },
+    {
+      "url": "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
+      "title": "Revealed: Israeli military's own data indicates civilian death rate of 83% in Gaza war",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html",
+      "title": "Gaza's local authorities massively underreported deaths, says international research team",
+      "publisher": "Le Monde"
+    },
+    {
+      "url": "https://doi.org/10.1016/S0140-6736(24)01169-3",
+      "title": "Counting the dead in Gaza: difficult but essential",
+      "publisher": "The Lancet"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/lebanon-country-policy-and-information-notes/country-bulletin-security-situation-lebanon-may-2026",
+      "title": "Country bulletin: security situation, Lebanon, May 2026",
+      "publisher": "UK Home Office"
+    },
+    {
+      "url": "https://www.emro.who.int/images/stories/lebanon/Lebanon-Emergency-Sitrep-14-2026.pdf",
+      "title": "Lebanon Health Emergency Situation Update #14, 27 March 2026",
+      "publisher": "World Health Organization / EMRO"
+    },
+    {
+      "url": "https://www.hrw.org/news/2025/03/07/israel/lebanon-hezbollah-attacks-endangered-civilians",
+      "title": "Israel/Lebanon: Hezbollah Attacks Endangered Civilians",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/international/article/2025/10/07/israeli-kibbutzim-ravaged-by-october-7-attacks-rebuild-while-honoring-the-past_6746174_4.html",
+      "title": "Israeli kibbutzim ravaged by October 7 attacks rebuild while honoring the past",
+      "publisher": "Le Monde"
+    },
+    {
+      "url": "https://www.jns.org/fifty-nine-people-killed-in-israel-by-hezbollah-fire-since-oct-8-2023/",
+      "title": "Fifty-nine people killed in Israel by Hezbollah fire since Oct. 8, 2023",
+      "publisher": "Jewish News Syndicate"
+    },
+    {
+      "url": "https://apnews.com/article/d230dc14e42fd45f319b4ad083a1495f",
+      "title": "Palestinian man shot dead while climbing West Bank barrier into Israel in search of work",
+      "publisher": "Associated Press"
+    }
+  ],
+  "bayesian_combatant_share": {
+    "method": "spatial_importance_sampler (5 govs \u00d7 80 cells)",
+    "ess": 2277,
+    "n_draws": 200000,
+    "posterior": {
+      "militant_share_q": {
+        "median": 0.0254,
+        "ci_95": [
+          0.0163,
+          0.0384
+        ]
+      },
+      "militants_killed": {
+        "median": 1779,
+        "ci_95": [
+          1112,
+          2720
+        ]
+      },
+      "civilian_adult_males_killed": {
+        "median": 25563,
+        "ci_95": [
+          22100,
+          29385
+        ]
+      },
+      "women_plus_children_killed": {
+        "median": 50635,
+        "ci_95": [
+          40534,
+          68522
+        ]
+      },
+      "total_direct_deaths_true": {
+        "median": 78298,
+        "ci_95": [
+          65384,
+          97441
+        ]
+      },
+      "civ_to_mil_ratio": {
+        "median": 43.2,
+        "ci_95": [
+          30.1,
+          64.1
+        ]
+      }
+    },
+    "facts_used": {
+      "as_of_date": "2026-05-16",
+      "geography": {
+        "area_km2": {
+          "low": 360.0,
+          "high": 365.0,
+          "point": 365.0,
+          "sources": [
+            "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+            "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-22-january-2025",
+            "https://www.gov.uk/government/publications/palestine-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-in-gaza-palestine-november-2024-accessible"
+          ]
+        },
+        "governorates": [
+          {
+            "name": "North Gaza",
+            "area_km2": 60.9,
+            "population_2023": 444412,
+            "displaced_into_2024": -254000,
+            "sources": [
+              "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+              "https://archive.ph/2026.01.06-085518/https%3A/www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&table_id=676",
+              "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_DisplacedGaza2023E.pdf",
+              "https://www.pcbs.gov.ps/en/post-details/?postId=20551"
+            ]
+          },
+          {
+            "name": "Gaza",
+            "area_km2": 74.6,
+            "population_2023": 749100,
+            "displaced_into_2024": -429000,
+            "sources": [
+              "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+              "https://archive.ph/2026.01.06-085518/https%3A/www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&table_id=676",
+              "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_DisplacedGaza2023E.pdf",
+              "https://www.pcbs.gov.ps/en/post-details/?postId=20551"
+            ]
+          },
+          {
+            "name": "Deir al-Balah",
+            "area_km2": 56.7,
+            "population_2023": 319208,
+            "displaced_into_2024": null,
+            "sources": [
+              "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+              "https://archive.ph/2026.01.06-085518/https%3A/www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&table_id=676",
+              "https://www.pcbs.gov.ps/en/post-details/?postId=20551"
+            ]
+          },
+          {
+            "name": "Khan Younis",
+            "area_km2": 109.7,
+            "population_2023": 438557,
+            "displaced_into_2024": null,
+            "sources": [
+              "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+              "https://archive.ph/2026.01.06-085518/https%3A/www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&table_id=676",
+              "https://www.pcbs.gov.ps/en/post-details/?postId=20551"
+            ]
+          },
+          {
+            "name": "Rafah",
+            "area_km2": 63.1,
+            "population_2023": 275267,
+            "displaced_into_2024": 825000,
+            "sources": [
+              "https://www.pcbs.gov.ps/Portals/_Rainbow/Documents/Land-use-table%201E-2019.html",
+              "https://archive.is/EoYR0",
+              "https://www.pcbs.gov.ps/en/post-details/?postId=20551"
+            ]
+          }
+        ]
+      },
+      "population": {
+        "total_2023": {
+          "low": 2098389,
+          "high": 2257000,
+          "point": 2226544,
+          "sources": [
+            "https://www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&table_id=210",
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_IntPopulationDy2023E.pdf",
+            "https://www.gov.uk/government/publications/palestine-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-in-gaza-palestine-november-2024-accessible",
+            "https://english.wafa.ps/Pages/Details/136707"
+          ]
+        },
+        "median_age": {
+          "low": 18.0,
+          "high": 19.5,
+          "sources": [
+            "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en",
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_WPD2024E.pdf",
+            "https://www.gov.uk/government/publications/palestine-country-policy-and-information-notes/country-policy-and-information-note-humanitarian-situation-in-gaza-palestine-november-2024-accessible"
+          ]
+        },
+        "share_under_18": {
+          "low": 0.465,
+          "high": 0.473,
+          "sources": [
+            "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+            "https://www.pcbs.gov.ps/en/post-details/?postId=20512",
+            "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
+          ]
+        },
+        "share_female_all_ages": {
+          "low": 0.49,
+          "high": 0.493,
+          "sources": [
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
+            "https://www.oicstatcom.org/event-detail.php?id=2924",
+            "https://english.wafa.ps/Pages/Details/136707"
+          ]
+        },
+        "share_women_plus_children": {
+          "low": 0.728,
+          "high": 0.738,
+          "point": 0.733,
+          "definition": "females all ages + males <18",
+          "sources": [
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
+            "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+            "https://www.oicstatcom.org/event-detail.php?id=2924"
+          ]
+        },
+        "share_adult_males_18_60": {
+          "low": 0.245,
+          "high": 0.27,
+          "point": 0.255,
+          "sources": [
+            "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
+            "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
+          ]
+        }
+      },
+      "militant_strength": {
+        "hamas_pij_total_fighters_pre_war": {
+          "low": 35000,
+          "high": 60000,
+          "point": 45000,
+          "notes": "as of late 2023 / pre-Oct 7",
+          "sources": [
+            "https://www.axios.com/2023/10/21/palestine-hamas-military-power",
+            "https://www.aljazeera.com/amp/features/2023/12/30/analysis-has-israel-weakened-hamas-enough-to-win-the-war-on-gaza",
+            "https://www.rusi.org/explore-our-research/publications/commentary/conflict-gaza-past-and-present",
+            "https://www.rusi.org/news-and-comment/in-the-news/how-do-israeli-military-and-hamas-compare-size-and-strength"
+          ]
+        },
+        "share_of_population": {
+          "low": 0.0157,
+          "high": 0.0269,
+          "point": 0.0202
+        }
+      },
+      "munitions_and_strikes": {
+        "total_air_strikes_through_jan_2025": {
+          "low": 29000,
+          "high": 40000,
+          "point": 35000,
+          "sources": [
+            "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza",
+            "https://www.jpost.com/breaking-news/article-835662",
+            "https://aoav.org.uk/2025/explosive-violence-in-january-2025/",
+            "https://archive-2025.airwars.org/civilian_harm_status/confirmed/"
+          ]
+        },
+        "total_munitions_dropped_tonnes": {
+          "low": 25000,
+          "high": 50000,
+          "point": 35000,
+          "sources": [
+            "https://www.ungeneva.org/en/news-media/news/2024/11/100265/gaza-israeli-war-tactics-condemned-aid-still-blocked-reaching-north",
+            "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza",
+            "https://factually.co/fact-checks/military/total-tonnage-bombs-dropped-gaza-c83b52"
+          ]
+        },
+        "average_munition_yield_kg_tnt_equivalent": {
+          "low": 90,
+          "high": 430,
+          "point": 220,
+          "sources": [
+            "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza",
+            "https://www.dsca.mil/press-media/major-arms-sales/israel-munitions",
+            "https://www.forbes.com/sites/siladityaray/2023/12/14/nearly-half-of-all-munitions-dropped-over-gaza-are-dumb-bombs-report-citing-us-intel-assessment-says/"
+          ]
+        },
+        "share_unguided_dumb_bombs": {
+          "low": 0.4,
+          "high": 0.45,
+          "point": 0.425,
+          "notes": "e.g. CNN/Forbes/AA reporting on a US ODNI intelligence assessment covering about 29,000 air-to-ground munitions used by mid-December 2023",
+          "sources": [
+            "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza",
+            "https://www.forbes.com/sites/siladityaray/2023/12/14/nearly-half-of-all-munitions-dropped-over-gaza-are-dumb-bombs-report-citing-us-intel-assessment-says/",
+            "https://www.aa.com.tr/en/middle-east/us-intel-indicates-half-of-all-weapons-dropped-by-israel-on-gaza-are-dumb-bombs-report/3082836"
+          ]
+        }
+      },
+      "deaths_observed": {
+        "gaza_moh_total_through_jan_2025": {
+          "low": 46006,
+          "high": 47500,
+          "point": 47306,
+          "sources": [
+            "https://www.pbs.org/newshour/world/more-than-46000-palestinians-killed-in-israel-hamas-war-gaza-health-officials-say",
+            "https://english.ahram.org.eg/NewsContentP/58/538970/War-on-Gaza/Gaza-death-toll-at-%2C-Health-ministry-.aspx",
+            "https://www.brecorder.com/news/40344696",
+            "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-22-january-2025"
+          ]
+        },
+        "gaza_moh_total_through_late_2025": {
+          "low": 69000,
+          "high": 70500,
+          "point": 70100,
+          "sources": [
+            "https://apnews.com/article/d262329a0122ab65dc27787c4b43159c",
+            "https://apnews.com/article/a83bba11bc506771aa7233326ab97e42",
+            "https://www.lemonde.fr/en/international/article/2025/12/05/silent-deaths-among-gaza-s-sick-and-wounded-denied-medical-evacuation_6748174_4.html",
+            "https://www.ochaopt.org/content/humanitarian-situation-update-349-gaza-strip"
+          ]
+        },
+        "lancet_excess_total_estimate": {
+          "low": 83000,
+          "high": 186000,
+          "point": 100000,
+          "notes": "Khatib/Lancet 2024 + 2025 follow-ups; direct + indirect. Low reflects early-2025 survey-based violent plus excess non-violent deaths through 5 Jan 2025; high reflects the 2024 Lancet correspondence's conservative 4:1 indirect-to-direct scenario; point reflects later peer-reviewed/statistical estimates around late 2025 rather than the speculative upper scenario.",
+          "sources": [
+            "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext",
+            "https://doi.org/10.1016/S0140-6736(24)02678-3",
+            "https://www.bmj.com/content/388/bmj.r73",
+            "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html"
+          ]
+        },
+        "ohchr_identification_sample": {
+          "n": 8119,
+          "share_children_under_18": 0.442,
+          "share_women_18_plus": 0.251,
+          "share_men_18_plus": 0.307,
+          "sources": [
+            "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
+            "https://www.un.org/unispal/document/update-report-08nov24/",
+            "https://english.ahram.org.eg/News/534949.aspx",
+            "https://www.reuters.com/world/middle-east/nearly-70-gaza-war-dead-women-children-un-rights-office-says-2024-11-08/"
+          ]
+        },
+        "moh_demographic_breakdown_full_record": {
+          "share_children_under_18": 0.32,
+          "share_women_18_plus": 0.24,
+          "share_men_18_plus": 0.44,
+          "sources": [
+            "https://apnews.com/article/65e18f3362674245356c539e4bc0b67a",
+            "https://apnews.com/article/360c6aabc03421c718d4a8452cec2c67",
+            "https://www.amnesty.org/en/wp-content/uploads/2024/12/MDE1586682024ENGLISH.pdf",
+            "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf"
+          ]
+        },
+        "estimated_undercount_factor": {
+          "low": 1.35,
+          "high": 1.7,
+          "notes": "factor by which MoH may understate true direct dead (missing-bodies, rubble, family-rolls). Capture-recapture and household-survey estimates imply roughly 35-41% of violent/direct deaths may be missing from contemporaneous MoH counts, corresponding approximately to 1.5-1.7 true deaths per reported MoH death for comparable periods; the lower bound allows for better MoH capture in later named/identified updates.",
+          "sources": [
+            "https://doi.org/10.1016/S0140-6736(24)02678-3",
+            "https://www.bmj.com/content/388/bmj.r73",
+            "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html"
+          ]
+        }
+      },
+      "building_damage": {
+        "buildings_destroyed_or_damaged_through_late_2024": {
+          "low": 160000,
+          "high": 170000,
+          "point": 170000,
+          "sources": [
+            "https://unosat.org/static/unosat_filesystem/4047/OCHA-OPT_019_UNOSAT_GazaStrip_CDA_01December2024.pdf",
+            "https://www.un.org/unispal/document/unosat-gaza-strip-31may24/",
+            "https://www.axios.com/2024/10/05/gaza-destruction-map-israel-hamas",
+            "https://www.lemonde.fr/en/international/article/2024/10/08/one-map-to-visualize-one-year-of-destruction-in-the-gaza-strip_6728633_4.html"
+          ]
+        },
+        "share_residential": {
+          "low": 0.8,
+          "high": 0.9,
+          "point": 0.85,
+          "sources": [
+            "https://unhabitat.org/sites/default/files/2024/04/hsp-eb-2024-_inf_-6-_preliminary_report_on_efforts_to_reconstruct_human_settlements_in_garza_strip.pdf",
+            "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_05_November_2024_0.pdf",
+            "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf",
+            "https://unosat.org/static/unosat_filesystem/4047/OCHA-OPT_019_UNOSAT_GazaStrip_CDA_01December2024.pdf"
+          ]
+        }
+      },
+      "deaths_per_strike_estimates": {
+        "killed_per_air_strike_low": 1.2,
+        "killed_per_air_strike_high": 2.8,
+        "sources": [
+          "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-22-january-2025",
+          "https://www.pbs.org/newshour/world/more-than-46000-palestinians-killed-in-israel-hamas-war-gaza-health-officials-say",
+          "https://doi.org/10.1016/S0140-6736(24)02678-3",
+          "https://amp.cnn.com/cnn/2023/12/13/politics/intelligence-assessment-dumb-bombs-israel-gaza",
+          "https://aoav.org.uk/2025/explosive-violence-in-january-2025/"
+        ]
+      },
+      "notes_on_uncertainty": "Governorate-level 2024 displacement is the weakest geography field: PCBS gives firm pre-war populations and several combined 2023-2024 residency totals, but not a clean public five-governorate IDP matrix, so North/Gaza and Rafah are net-change estimates while Deir al-Balah and Khan Younis are left null. Strike and tonnage estimates are also uncertain because public sources mix 'airstrikes,' 'targets,' and 'air-to-ground munitions,' and official Israeli military totals are not used as priors except where independently echoed or used only as bounds. MoH death totals are reported direct deaths and do not distinguish civilian/combatant status; peer-reviewed capture-recapture and household-survey work indicates contemporaneous undercounting rather than inflation. The Lancet 186,000 figure is a scenario for direct plus indirect deaths, not an observed count, so it is treated as a high-end excess-mortality scenario rather than the central estimate."
+    },
+    "notes": "Posterior over (M, \u03b3, \u03c3, \u03b1, \u03b2, \u03bc_M, \u03b5_C, d_bar, K_total, uc) with priors anchored to PCBS demographics, OCHA/UNOSAT bombing stats, IISS/CSIS Hamas+PIJ strength estimates.  Likelihood from MoH late-2025 total deaths + OHCHR & MoH demographic share of dead.  No belligerent (IDF or Hamas) casualty claims used as priors."
+  }
+}

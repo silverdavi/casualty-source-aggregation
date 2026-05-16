@@ -1,0 +1,527 @@
+{
+  "war_id": "yemeni_civil_war",
+  "name": "Yemeni Civil War (Saudi-led intervention, blockade, famine)",
+  "start_year": 2014,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Yemen",
+    "Arabian Peninsula",
+    "Red Sea"
+  ],
+  "summary": "The Yemeni Civil War began when Ansar Allah (the Houthis) seized Sana'a in 2014 and escalated after the Saudi-led coalition intervened in March 2015 on behalf of the internationally recognized government. The most cited comprehensive mortality model, by UNDP/Pardee, estimated 377,000 deaths by the end of 2021, most of them indirect deaths from hunger, disease, water, sanitation, and health-system collapse. Direct civilian harm is best documented for Saudi-led coalition airstrikes and Houthi/Saleh shelling, mines, and missile attacks, but combatant deaths by side and indirect deaths by perpetrator remain poorly quantified.",
+  "sides": [
+    {
+      "name": "Ansar Allah / Houthi-led Sana'a authorities and allied Saleh forces",
+      "members": [
+        "Ansar Allah (Houthis)",
+        "Houthi-controlled security forces",
+        "Forces loyal to Ali Abdullah Saleh until 2017"
+      ],
+      "military_killed": {
+        "low": 1968,
+        "high": null,
+        "point": null,
+        "notes": "The low is only a documented subset: the UN Panel of Experts reportedly listed 1,406 Houthi-recruited children killed in 2020 and 562 in January-May 2021. No credible total Houthi/Saleh combatant death toll for 2014-2026 was found.",
+        "sources": [
+          "https://feeds.bbci.co.uk/news/world-middle-east-60190484"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1900,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "direct civilian targeting",
+            "victims_group": "Yemeni civilians",
+            "low": 1900,
+            "high": null,
+            "notes": "ACLED reported over 1,900 civilian fatalities from direct civilian targeting by Houthis and allies in its 2015-mid-2019 data.",
+            "sources": [
+              "https://acleddata.com/press/yemen-war-death-toll-exceeds-90000-according-new-acled-data-2015"
+            ]
+          },
+          {
+            "cause": "shelling and rockets",
+            "victims_group": "Civilians in Aden and Taizz",
+            "low": 475,
+            "high": null,
+            "notes": "UN figures cited by HRW attributed 475 civilian deaths to Houthi-aligned shelling between 1 July 2015 and 30 June 2016; HRW separately documented 7 indiscriminate attacks killing 139 civilians.",
+            "sources": [
+              "https://www.hrw.org/world-report/2017/country-chapters/yemen"
+            ]
+          },
+          {
+            "cause": "landmines and explosive remnants",
+            "victims_group": "Civilians in Hodeida, Taizz and other contaminated areas",
+            "low": 140,
+            "high": null,
+            "notes": "HRW cited CIMP data that landmines killed or injured at least 140 civilians in Hodeida and Taizz since January 2018, but warned the data underreported the real toll.",
+            "sources": [
+              "https://www.hrw.org/news/2019/04/22/yemen-houthi-landmines-kill-civilians-block-aid"
+            ]
+          }
+        ],
+        "notes": "No authoritative cumulative 2014-2026 total was found. The 1,900 figure is a partial ACLED count through mid-2019 for direct targeting only and excludes many later or differently coded civilian deaths.",
+        "sources": [
+          "https://acleddata.com/press/yemen-war-death-toll-exceeds-90000-according-new-acled-data-2015",
+          "https://www.hrw.org/world-report/2017/country-chapters/yemen"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Yemeni civilians in Houthi-controlled and contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Mwatana/GRC concluded that Ansar Allah, along with the Saudi/UAE-led coalition, used starvation as a method of warfare through aid obstruction, arrests/intimidation of aid workers, blocking convoys, seizure of aid property, shelling areas affecting food access, and mining the Red Sea Mills. The share of UNDP's 223,000-227,000 indirect deaths attributable to Ansar Allah cannot be quantified from available sources.",
+          "sources": [
+            "https://www.mwatana.org/reports-en/starvation-makers-e",
+            "https://caat.org.uk/data/countries/saudi-arabia/yemens-humanitarian-catastrophe/"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Civilians displaced or prevented from returning by mines and siege conditions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Houthi-laid landmines impeded return, farming, water access, and aid delivery; no credible estimate converts this to indirect deaths.",
+          "sources": [
+            "https://www.hrw.org/news/2019/04/22/yemen-houthi-landmines-kill-civilians-block-aid"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Internationally recognized Yemeni government and Saudi-led coalition",
+      "members": [
+        "Republic of Yemen Government / internationally recognized government",
+        "Saudi Arabia",
+        "United Arab Emirates",
+        "Bahrain",
+        "Sudan",
+        "other coalition participants",
+        "pro-government Yemeni forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No consolidated 2014-2026 combatant death toll by coalition/government side was found. Known fragments include 45 UAE soldiers killed in September 2015 and a Marib attack reported to have killed 52 Emirati, 10 Saudi, 5 Bahraini, and 36 pro-Hadi Yemeni troops.",
+        "sources": [
+          "https://www.kuna.net.kw/ArticleDetails.aspx?Language=en&id=2458765",
+          "https://en.wikipedia.org/wiki/2015_Marib_attack"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 4946,
+        "high": 9200,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrikes and explosive weapons",
+            "victims_group": "Yemeni civilians",
+            "low": 4946,
+            "high": null,
+            "notes": "AOAV recorded 4,946 civilian fatalities attributed to the Saudi-led coalition from explosive weapons in 2014-2023.",
+            "sources": [
+              "https://aoav.org.uk/2024/briefing-note-explosive-weapons-use-in-yemen-2014-2023/"
+            ]
+          },
+          {
+            "cause": "coalition operations",
+            "victims_group": "Yemeni civilians",
+            "low": 9200,
+            "high": null,
+            "notes": "ACLED's Saudi-led coalition actor profile states that over 9,200 civilians were estimated killed as a result of coalition operations from March 2015 to July 2023, likely an undercount because it excludes some deaths at military sites.",
+            "sources": [
+              "https://acleddata.com/yemen-conflict-observatory/actor-profiles/saudi-led-coalition/"
+            ]
+          },
+          {
+            "cause": "direct civilian targeting",
+            "victims_group": "Yemeni civilians",
+            "low": 8000,
+            "high": null,
+            "notes": "ACLED's 2015-mid-2019 release reported that the Saudi-led coalition and allies were responsible for over 8,000 of about 11,700 direct civilian-targeting fatalities.",
+            "sources": [
+              "https://acleddata.com/press/yemen-war-death-toll-exceeds-90000-according-new-acled-data-2015"
+            ]
+          }
+        ],
+        "notes": "The low and high are not strict statistical confidence bounds; they are two conservative event-data measurements with different methodologies. The true direct civilian toll from coalition operations may be higher.",
+        "sources": [
+          "https://aoav.org.uk/2024/briefing-note-explosive-weapons-use-in-yemen-2014-2023/",
+          "https://acleddata.com/yemen-conflict-observatory/actor-profiles/saudi-led-coalition/",
+          "https://yemendataproject.org/data/saudi-air-war-2015-2022"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Yemeni civilians dependent on imports, fuel, medical travel, water and health systems",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW reported that Saudi-led coalition import restrictions and naval/air blockade measures worsened the humanitarian crisis and restricted fuel, food, medical access, and water/hospital systems. The coalition likely contributed substantially to UNDP's 223,000-227,000 indirect deaths by end-2021, but no source found quantifies the coalition-only share.",
+          "sources": [
+            "https://www.hrw.org/news/2017/09/27/yemen-coalitions-blocking-aid-fuel-endangers-civilians",
+            "https://www.hrw.org/world-report/2017/country-chapters/yemen",
+            "https://caat.org.uk/data/countries/saudi-arabia/yemens-humanitarian-catastrophe/"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Yemeni civilians affected by attacks on food, water, health, transport and electricity infrastructure",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Mwatana/GRC concluded that the Saudi/UAE-led coalition attacked objects indispensable to survival, including farms, water facilities, fishing boats, markets, food and water storage and production sites, roads, bridges, electricity, and health facilities, supporting a finding of starvation as a method of warfare. No credible numerical perpetrator-specific indirect-death estimate was found.",
+          "sources": [
+            "https://www.mwatana.org/reports-en/starvation-makers-e"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UAE-backed Southern Transitional Council and other southern / anti-Houthi armed groups",
+      "members": [
+        "Southern Transitional Council",
+        "Security Belt forces",
+        "UAE-backed southern forces",
+        "other local anti-Houthi armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No consolidated public combatant death toll by faction was found.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "Credible reporting attributes detention abuses, torture and deaths in unofficial prisons to UAE-backed, government-backed and Houthi forces, but available figures are not cleanly separated for STC/UAE-backed forces.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/War_crimes_in_the_Yemeni_civil_war_(2014%E2%80%93present)"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "AQAP, Islamic State in Yemen, and other jihadist actors",
+      "members": [
+        "Al-Qaeda in the Arabian Peninsula",
+        "Islamic State in Yemen"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No consolidated 2014-2026 death toll for AQAP/IS-Yemen fighters was found.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "AQAP and IS-Yemen carried out attacks, but no authoritative cumulative civilian-death estimate for the war period was found.",
+        "sources": []
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "United States, United Kingdom, and Israel operations against Houthi-controlled Yemen",
+      "members": [
+        "United States",
+        "United Kingdom",
+        "Israel",
+        "supporting Red Sea coalition states"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No meaningful own-combatant death toll for these external forces in Yemen was found.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 238,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrikes",
+            "victims_group": "Yemeni civilians",
+            "low": 238,
+            "high": null,
+            "notes": "HRW, citing Yemen Data Project, reported at least 238 civilians killed and 467 injured by U.S. airstrikes between 15 March and 6 May 2025.",
+            "sources": [
+              "https://www.hrw.org/world-report/2026/country-chapters/yemen"
+            ]
+          },
+          {
+            "cause": "port strike",
+            "victims_group": "Civilians at Ras Issa Port",
+            "low": 84,
+            "high": null,
+            "notes": "HRW reported that a U.S. strike on Ras Issa Port on 17 April 2025 killed 84 civilians and injured more than 150.",
+            "sources": [
+              "https://www.hrw.org/world-report/2026/country-chapters/yemen"
+            ]
+          },
+          {
+            "cause": "detention center strike",
+            "victims_group": "African migrants detained in Saada",
+            "low": 68,
+            "high": null,
+            "notes": "HRW reported that a U.S. strike on a migrant detention center in Saada on 28 April 2025 killed over 68 civilians; Amnesty called the strike indiscriminate.",
+            "sources": [
+              "https://www.hrw.org/world-report/2026/country-chapters/yemen",
+              "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/"
+            ]
+          },
+          {
+            "cause": "media complex strike",
+            "victims_group": "Journalists in Sana'a",
+            "low": 31,
+            "high": null,
+            "notes": "HRW, citing CPJ, reported that an Israeli strike on a Sana'a media complex on 10 September 2025 killed 31 journalists.",
+            "sources": [
+              "https://www.hrw.org/world-report/2026/country-chapters/yemen"
+            ]
+          }
+        ],
+        "notes": "These deaths are part of the later regionalized Yemen/Red Sea escalation and should not be merged uncritically with earlier Saudi-led coalition totals.",
+        "sources": [
+          "https://www.hrw.org/world-report/2026/country-chapters/yemen",
+          "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "infrastructure_damage",
+          "victims_group": "Yemeni civilians dependent on airports, ports, fuel, electricity and medical travel",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "U.S. and Israeli strikes damaged ports, airports and infrastructure, but no credible source was found translating this into indirect-death estimates.",
+          "sources": [
+            "https://www.hrw.org/world-report/2026/country-chapters/yemen",
+            "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": null,
+    "civilian_high": null,
+    "grand_low": 377000,
+    "grand_high": null,
+    "notes": "UNDP/Pardee estimated 377,000 total direct and indirect war deaths by the end of 2021, including about 154,000 direct and 223,000 indirect deaths. No updated comprehensive all-cause model through 2026 was found, so the current total is higher but not responsibly quantifiable from the sources consulted."
+  },
+  "key_atrocities": [
+    {
+      "name": "Mokha residential compound airstrike",
+      "year": 2015,
+      "perpetrator": "Saudi-led coalition",
+      "victims_group": "Civilian power-plant workers and families",
+      "low": 57,
+      "high": 120,
+      "notes": "HRW reported at least 57 civilian deaths; other reports put the toll between 65 and 120.",
+      "sources": [
+        "https://www.hrw.org/news/2015/10/13/tragic-civilian-toll-airstrikes-yemen",
+        "https://www.rt.com/news/310976-saudi-strike-hrw-crime/"
+      ]
+    },
+    {
+      "name": "Sanaa funeral hall airstrike",
+      "year": 2016,
+      "perpetrator": "Saudi-led coalition",
+      "victims_group": "Funeral mourners",
+      "low": 140,
+      "high": 155,
+      "notes": "UN officials reported more than 140 killed and more than 525 wounded; some later summaries cite 155 killed.",
+      "sources": [
+        "https://www.theguardian.com/world/2016/oct/08/saudi-led-coalition-airstrike-hit-yemen-funeral-officials-say",
+        "https://en.wikipedia.org/wiki/Sanaa_funeral_airstrike"
+      ]
+    },
+    {
+      "name": "Dahyan / Saada school-bus airstrike",
+      "year": 2018,
+      "perpetrator": "Saudi-led coalition",
+      "victims_group": "Children and civilians in market / school bus",
+      "low": 34,
+      "high": 51,
+      "notes": "ICRC/Xinhua reported 51 killed, including 40 children; HRW documented 34 named deaths and called it an apparent war crime.",
+      "sources": [
+        "https://www.xinhuanet.com/english/2018-08/14/c_137390291.htm",
+        "https://www.hrw.org/news/2018/09/02/yemen-coalition-bus-bombing-apparent-war-crime"
+      ]
+    },
+    {
+      "name": "Dhamar detention-facility airstrike",
+      "year": 2019,
+      "perpetrator": "Saudi-led coalition",
+      "victims_group": "Detainees / prisoners",
+      "low": 130,
+      "high": null,
+      "notes": "ICRC said every detainee was killed or injured; reports citing ICRC put at least 130 prisoners presumed dead.",
+      "sources": [
+        "https://www.icrc.org/en/document/yemen-scenes-devastation-every-single-detainee-either-killed-or-injured-attack",
+        "https://www.xinhuanet.com/english/2019-09/02/c_138356346.htm"
+      ]
+    },
+    {
+      "name": "Houthi/Saleh shelling of Aden and Taizz",
+      "year": 2015,
+      "perpetrator": "Ansar Allah / Houthi-Saleh forces",
+      "victims_group": "Civilians in Aden and Taizz",
+      "low": 139,
+      "high": 475,
+      "notes": "HRW documented seven indiscriminate attacks killing 139 civilians; UN figures cited by HRW attributed 475 civilian deaths to Houthi-aligned shelling from July 2015 to June 2016.",
+      "sources": [
+        "https://www.hrw.org/world-report/2017/country-chapters/yemen"
+      ]
+    },
+    {
+      "name": "Taizz artillery attacks",
+      "year": 2017,
+      "perpetrator": "Ansar Allah / Houthi-Saleh forces",
+      "victims_group": "Civilians in Taizz",
+      "low": 30,
+      "high": null,
+      "notes": "HRW reported at least 30 civilians killed and over 160 wounded in ten days of shelling in May 2017.",
+      "sources": [
+        "https://www.hrw.org/news/2017/08/09/yemen-artillery-attacks-kill-civilians-taizz"
+      ]
+    },
+    {
+      "name": "Marib fuel-station missile/drone attack",
+      "year": 2021,
+      "perpetrator": "Ansar Allah / Houthis",
+      "victims_group": "Civilians in Marib",
+      "low": 17,
+      "high": null,
+      "notes": "Yemeni government reports cited by Al Jazeera said at least 17 people were killed; Houthis denied targeting civilians.",
+      "sources": [
+        "https://www.aljazeera.com/news/2021/6/6/houthi-missile-kills-at-least-17-in-yemens-marib-government"
+      ]
+    },
+    {
+      "name": "Ras Issa Port strike",
+      "year": 2025,
+      "perpetrator": "United States",
+      "victims_group": "Civilians at Ras Issa Port",
+      "low": 84,
+      "high": null,
+      "notes": "HRW reported 84 civilians killed and more than 150 injured.",
+      "sources": [
+        "https://www.hrw.org/world-report/2026/country-chapters/yemen"
+      ]
+    },
+    {
+      "name": "Saada migrant detention-center strike",
+      "year": 2025,
+      "perpetrator": "United States",
+      "victims_group": "African migrants detained by Houthi authorities",
+      "low": 68,
+      "high": null,
+      "notes": "HRW reported over 68 civilians killed; Amnesty concluded the strike was indiscriminate and should be investigated as a war crime.",
+      "sources": [
+        "https://www.hrw.org/world-report/2026/country-chapters/yemen",
+        "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/"
+      ]
+    },
+    {
+      "name": "Sana'a media-complex strike",
+      "year": 2025,
+      "perpetrator": "Israel",
+      "victims_group": "Journalists",
+      "low": 31,
+      "high": null,
+      "notes": "HRW, citing the Committee to Protect Journalists, reported 31 journalists killed.",
+      "sources": [
+        "https://www.hrw.org/world-report/2026/country-chapters/yemen"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The best comprehensive all-cause toll remains the UNDP/Pardee estimate of 377,000 deaths by end-2021. Direct event data and civilian-impact monitoring continue after 2021, but there is no updated all-cause 2026 model. Military deaths by side and indirect deaths by perpetrator are especially uncertain; the indirect deaths are shared products of blockade, siege, infrastructure destruction, aid obstruction, economic collapse, disease, hunger, displacement and health-system breakdown.",
+  "sources": [
+    {
+      "url": "https://www.undp.org/yemen/publications/assessing-impact-war-yemen-pathways-recovery",
+      "title": "Assessing the Impact of War in Yemen: Pathways for Recovery",
+      "publisher": "United Nations Development Programme"
+    },
+    {
+      "url": "https://caat.org.uk/data/countries/saudi-arabia/yemens-humanitarian-catastrophe/",
+      "title": "A humanitarian crisis, created by war",
+      "publisher": "Campaign Against Arms Trade"
+    },
+    {
+      "url": "https://acleddata.com/press/yemen-war-death-toll-exceeds-90000-according-new-acled-data-2015",
+      "title": "Yemen War Death Toll Exceeds 90,000 According to New ACLED Data for 2015",
+      "publisher": "ACLED"
+    },
+    {
+      "url": "https://acleddata.com/yemen-conflict-observatory/actor-profiles/saudi-led-coalition/",
+      "title": "Saudi-led Coalition Actor Profile",
+      "publisher": "ACLED"
+    },
+    {
+      "url": "https://yemendataproject.org/data/saudi-air-war-2015-2022",
+      "title": "Saudi Air War 2015-2022",
+      "publisher": "Yemen Data Project"
+    },
+    {
+      "url": "https://www.civilianimpactmonitoring.org/onewebmedia/CIMP%20Annual%20Report%202024.pdf",
+      "title": "Civilian Impact Monitoring Project 2024 Annual Report",
+      "publisher": "Civilian Impact Monitoring Project / Protection Cluster Yemen"
+    },
+    {
+      "url": "https://aoav.org.uk/2024/briefing-note-explosive-weapons-use-in-yemen-2014-2023/",
+      "title": "Briefing note: Explosive weapons use in Yemen, 2014-2023",
+      "publisher": "Action on Armed Violence"
+    },
+    {
+      "url": "https://www.mwatana.org/reports-en/starvation-makers-e",
+      "title": "Starvation Makers: The use of starvation by warring parties in Yemen",
+      "publisher": "Mwatana for Human Rights / Global Rights Compliance"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2017/country-chapters/yemen",
+      "title": "World Report 2017: Yemen",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2019/04/22/yemen-houthi-landmines-kill-civilians-block-aid",
+      "title": "Yemen: Houthi Landmines Kill Civilians, Block Aid",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2026/country-chapters/yemen",
+      "title": "World Report 2026: Yemen",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/",
+      "title": "Yemen 2025/26",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.icrc.org/en/document/yemen-scenes-devastation-every-single-detainee-either-killed-or-injured-attack",
+      "title": "Yemen: Scenes of devastation as every single detainee either killed or injured in attack",
+      "publisher": "International Committee of the Red Cross"
+    }
+  ]
+}

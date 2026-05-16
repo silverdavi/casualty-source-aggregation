@@ -1,0 +1,324 @@
+{
+  "war_id": "russia_ukraine_war_2022",
+  "name": "Russian invasion of Ukraine (2022-)",
+  "start_year": 2022,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Ukraine",
+    "Russia",
+    "Black Sea",
+    "Occupied Crimea"
+  ],
+  "summary": "Russia launched a full-scale invasion of Ukraine on 24 February 2022, expanding the Russo-Ukrainian war into a high-intensity interstate conflict. The largest death toll is among combatants, but verified civilian deaths in Ukraine exceed 15,000 and are substantially undercounted in occupied areas. Military losses are classified and contested; independent estimates place Russian military deaths in the low hundreds of thousands and Ukrainian military deaths in the high tens to low hundreds of thousands.",
+  "sides": [
+    {
+      "name": "Russian Federation and allied/proxy forces",
+      "members": [
+        "Russian Federation Armed Forces",
+        "Rosgvardia",
+        "Wagner and other Russian irregular formations",
+        "Donetsk People's Republic forces",
+        "Luhansk People's Republic forces",
+        "other Russia-aligned occupation/security bodies"
+      ],
+      "military_killed": {
+        "low": 230000,
+        "high": 500000,
+        "point": 352000,
+        "notes": "Low uses the lower end of The Economist's February 2026 range summarized by Russia Matters. High uses the Netherlands Military Intelligence and Security Service estimate summarized by Russia Matters as more than 500,000 dead. Point estimate uses Mediazona/Meduza's probate-registry estimate of 352,000 Russian soldiers killed by end-2025. These estimates are not strictly identical in definition and date.",
+        "sources": [
+          "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-may-13-2026",
+          "https://en.zona.media/article/2026/05/09/casualties_eng-trl",
+          "https://www.csis.org/analysis/russias-grinding-war-ukraine",
+          "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-01/260127_Jones_War_Ukraine.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 15172,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "explosive weapons, missiles, drones, shelling, small arms, mines and other conflict-related violence in Ukraine",
+            "victims_group": "civilians in Ukraine",
+            "low": 15172,
+            "high": null,
+            "notes": "OHCHR verified 15,172 civilian deaths in Ukraine from 24 February 2022 to 31 January 2026; most casualties occurred in Ukrainian-government-controlled territory, but OHCHR's aggregate is not a perfect perpetrator-attribution table.",
+            "sources": [
+              "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+            ]
+          },
+          {
+            "cause": "executions in occupied areas and detention",
+            "victims_group": "civilian detainees and civilians in areas controlled by Russian authorities",
+            "low": 182,
+            "high": null,
+            "notes": "OHCHR verified at least 182 civilians executed in areas controlled by Russian authorities, including places of detention, by January 2026.",
+            "sources": [
+              "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "civilians sheltering in Mariupol Drama Theatre",
+            "low": 15,
+            "high": 600,
+            "notes": "HRW documented at least 15 killed; AP's reconstruction found evidence for about 600 deaths. The full number remains disputed because Mariupol is occupied and evidence was destroyed or inaccessible.",
+            "sources": [
+              "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol",
+              "https://www.ap.org/news-highlights/best-of-the-week/2022/evidence-of-600-dead-in-mariupol-theater-airstrike/"
+            ]
+          },
+          {
+            "cause": "missile strike",
+            "victims_group": "civilians at funeral reception in Hroza, Kharkiv region",
+            "low": 59,
+            "high": 59,
+            "notes": "OHCHR found reasonable grounds to believe Russia carried out the 5 October 2023 strike; all 59 victims were civilians.",
+            "sources": [
+              "https://ukraine.ohchr.org/en/un-report-links-russia-deadly-attack-ukrainian-village-EN",
+              "https://ukraine.ohchr.org/en/attack-funeral-reception-hroza-EN"
+            ]
+          }
+        ],
+        "notes": "The OHCHR-verified civilian death total is a conservative dated minimum and not a clean perpetrator-attribution total. The high value is unknown because of lack of access to Russian-occupied territory, especially Mariupol and other early-2022 battle zones.",
+        "sources": [
+          "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf",
+          "https://ukraine.ohchr.org/en/UN-Human-Rights-Monitors-Warn-of-Rising-Civilian-Casualties",
+          "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Mariupol residents and other people in Mariupol",
+          "low": 8000,
+          "high": null,
+          "point": null,
+          "notes": "HRW/Truth Hounds/SITU estimated at least 8,000 excess war-related deaths in Mariupol between March 2022 and February 2023 from fighting and war-related causes including lack of medical care or clean water. This overlaps with direct-civilian-death categories and should not be added without deduplication.",
+          "sources": [
+            "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol"
+          ]
+        },
+        {
+          "type": "detention",
+          "victims_group": "civilian detainees held by Russian authorities",
+          "low": 40,
+          "high": null,
+          "point": null,
+          "notes": "OHCHR verified at least 40 civilian detainees died in Russian custody by January 2026.",
+          "sources": [
+            "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+          ]
+        },
+        {
+          "type": "infrastructure",
+          "victims_group": "Ukrainian civilians affected by attacks on energy, heating, water, rail and port infrastructure",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "OHCHR documents systematic Russian attacks on Ukraine's energy and heating infrastructure causing severe hardship and service disruption, but no reliable separate indirect-death estimate is available.",
+          "sources": [
+            "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ukraine",
+      "members": [
+        "Armed Forces of Ukraine",
+        "National Guard of Ukraine",
+        "Security Service of Ukraine",
+        "Ukrainian territorial defense and other state security forces"
+      ],
+      "military_killed": {
+        "low": 55000,
+        "high": 140000,
+        "point": 100000,
+        "notes": "Low uses President Zelenskyy's February 2026 public figure summarized by Russia Matters. High uses CSIS's January 2026 estimate of 100,000-140,000 Ukrainian military fatalities through December 2025. Point uses the lower end of CSIS's range rather than the official Ukrainian figure.",
+        "sources": [
+          "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-may-13-2026",
+          "https://www.csis.org/analysis/russias-grinding-war-ukraine",
+          "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-01/260127_Jones_War_Ukraine.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 621,
+        "high": 7254,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "cross-border shelling, missiles, drones and sabotage/strike incidents",
+            "victims_group": "civilians in internationally recognized Russia and annexed/occupied Crimea, according to Russian official claims",
+            "low": 621,
+            "high": 7254,
+            "notes": "The low figure is a Russian Investigative Committee claim reported by Novaya Gazeta Europe in May 2025. The high figure is a Russian Foreign Ministry claim reported by Le Monde for December 2025. OHCHR says it cannot verify Russian-authority reports because of lack of access and limited public information.",
+            "sources": [
+              "https://novayagazeta.eu/articles/2025/05/19/top-investigator-says-over-600-russian-civilians-killed-in-ukrainian-attacks-since-start-of-war-en-news",
+              "https://www.lemonde.fr/en/international/article/2026/02/27/with-an-estimated-500-000-dead-the-russia-ukraine-war-is-europe-s-deadliest-since-1945_6750914_4.html",
+              "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+            ]
+          }
+        ],
+        "notes": "No independent comprehensive verified figure exists for civilians killed directly by Ukrainian forces. Russian official claims are included as reported claims, not as independently verified totals.",
+        "sources": [
+          "https://novayagazeta.eu/articles/2025/05/19/top-investigator-says-over-600-russian-civilians-killed-in-ukrainian-attacks-since-start-of-war-en-news",
+          "https://www.lemonde.fr/en/international/article/2026/02/27/with-an-estimated-500-000-dead-the-russia-ukraine-war-is-europe-s-deadliest-since-1945_6750914_4.html",
+          "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 285000,
+    "military_high": 640000,
+    "civilian_low": 15793,
+    "civilian_high": null,
+    "grand_low": 300793,
+    "grand_high": null,
+    "notes": "Military low sums 230,000 Russian/allied and 55,000 Ukrainian military deaths. Military high sums 500,000 Russian/allied and 140,000 Ukrainian military deaths. Civilian low uses 15,172 OHCHR-verified civilian deaths in Ukraine through 31 January 2026 plus 621 Russian Investigative Committee-reported civilian deaths in Russian regions; this is not a fully deduplicated or independently verified global civilian total. Civilian high and grand high are null because civilian deaths in occupied Ukraine and Russian official claims cannot be independently bounded."
+  },
+  "key_atrocities": [
+    {
+      "name": "Siege and destruction of Mariupol",
+      "year": 2022,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "Mariupol civilians and residents",
+      "low": 8000,
+      "high": null,
+      "notes": "HRW/Truth Hounds/SITU estimated at least 8,000 excess war-related deaths between March 2022 and February 2023; the full death toll may never be known.",
+      "sources": [
+        "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol"
+      ]
+    },
+    {
+      "name": "Mariupol Drama Theatre airstrike",
+      "year": 2022,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "civilians sheltering in the theatre",
+      "low": 15,
+      "high": 600,
+      "notes": "HRW strictly documented at least 15 killed; AP's reconstruction found evidence for about 600 deaths.",
+      "sources": [
+        "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol",
+        "https://www.ap.org/news-highlights/best-of-the-week/2022/evidence-of-600-dead-in-mariupol-theater-airstrike/"
+      ]
+    },
+    {
+      "name": "Bucha killings",
+      "year": 2022,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "civilians in Bucha",
+      "low": 73,
+      "high": 178,
+      "notes": "OHCHR documented 73 civilian killings in Bucha and was corroborating an additional 105 alleged killings in December 2022. Later local counts are higher, but this entry uses OHCHR's documented and pending figures.",
+      "sources": [
+        "https://ukraine.ohchr.org/en/UN-report-details-summary-executions-of-civilians-by-Russian-troops-in-northern-Ukraine-from-February-to-April"
+      ]
+    },
+    {
+      "name": "Hroza funeral reception missile strike",
+      "year": 2023,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "civilians at a funeral reception",
+      "low": 59,
+      "high": 59,
+      "notes": "OHCHR found reasonable grounds to believe a Russian Iskander missile struck the caf\u00e9 and killed 59 civilians.",
+      "sources": [
+        "https://ukraine.ohchr.org/en/un-report-links-russia-deadly-attack-ukrainian-village-EN",
+        "https://ukraine.ohchr.org/en/attack-funeral-reception-hroza-EN"
+      ]
+    },
+    {
+      "name": "Dnipro residential building missile strike",
+      "year": 2023,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "apartment residents and civilians",
+      "low": 45,
+      "high": 46,
+      "notes": "AP reported the death toll reached 45, including six children; later official casualty summaries state 46 killed.",
+      "sources": [
+        "https://apnews.com/article/1b518f84fc4e70708d56e1a1ea708929",
+        "https://en.wikipedia.org/wiki/2023_Dnipro_residential_building_airstrike"
+      ]
+    },
+    {
+      "name": "Kramatorsk railway station attack",
+      "year": 2022,
+      "perpetrator": "Russian Federation and allied/proxy forces",
+      "victims_group": "civilians at evacuation railway station",
+      "low": 63,
+      "high": 63,
+      "notes": "Ukrainian investigative data reported 63 killed, including 9 children. Russia denied responsibility.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kramatorsk_railway_station_attack"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Military death estimates differ by source, definition, and date, and both governments have incentives to conceal or manipulate casualty data. Civilian deaths in Ukrainian-government-controlled territory are comparatively well documented by OHCHR; deaths in Russian-occupied areas, especially Mariupol and early-2022 battle zones, are severely undercounted. Russian claims about civilians killed by Ukrainian attacks are included as claims but are not independently verified by OHCHR. Mariupol siege deaths, detention deaths, and OHCHR civilian totals overlap and should not be mechanically added without deduplication.",
+  "sources": [
+    {
+      "url": "https://ukraine.ohchr.org/sites/default/files/2026-02/2026-02-16%20HRMMU_Four%20Years%20On_fact%20sheet_1.pdf",
+      "title": "Four Years Since the Full-Scale Invasion of Ukraine: Key Facts and Findings",
+      "publisher": "OHCHR / UN Human Rights Monitoring Mission in Ukraine"
+    },
+    {
+      "url": "https://ukraine.ohchr.org/en/UN-Human-Rights-Monitors-Warn-of-Rising-Civilian-Casualties",
+      "title": "UN Human Rights Monitors Warn of Rising Civilian Casualties",
+      "publisher": "OHCHR / UN Human Rights Monitoring Mission in Ukraine"
+    },
+    {
+      "url": "https://www.csis.org/analysis/russias-grinding-war-ukraine",
+      "title": "Russia's Grinding War in Ukraine",
+      "publisher": "Center for Strategic and International Studies"
+    },
+    {
+      "url": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-01/260127_Jones_War_Ukraine.pdf",
+      "title": "Russia's Grinding War in Ukraine PDF",
+      "publisher": "Center for Strategic and International Studies"
+    },
+    {
+      "url": "https://en.zona.media/article/2026/05/09/casualties_eng-trl",
+      "title": "Russian losses in the war with Ukraine. Mediazona count, updated",
+      "publisher": "Mediazona / BBC Russian Service / Meduza"
+    },
+    {
+      "url": "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-may-13-2026",
+      "title": "Russia-Ukraine War Report Card, May 13, 2026",
+      "publisher": "Russia Matters"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/02/08/ukraine-new-findings-russias-devastation-mariupol",
+      "title": "Ukraine: New Findings on Russia's Devastation of Mariupol",
+      "publisher": "Human Rights Watch / Truth Hounds / SITU Research"
+    },
+    {
+      "url": "https://www.ap.org/news-highlights/best-of-the-week/2022/evidence-of-600-dead-in-mariupol-theater-airstrike/",
+      "title": "Evidence of 600 dead in Mariupol theater airstrike",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://ukraine.ohchr.org/en/un-report-links-russia-deadly-attack-ukrainian-village-EN",
+      "title": "UN report links Russia to deadly attack on Ukrainian village",
+      "publisher": "OHCHR / UN Human Rights Monitoring Mission in Ukraine"
+    },
+    {
+      "url": "https://ukraine.ohchr.org/en/attack-funeral-reception-hroza-EN",
+      "title": "Attack on Funeral Reception in Hroza, 5 October 2023",
+      "publisher": "OHCHR / UN Human Rights Monitoring Mission in Ukraine"
+    },
+    {
+      "url": "https://novayagazeta.eu/articles/2025/05/19/top-investigator-says-over-600-russian-civilians-killed-in-ukrainian-attacks-since-start-of-war-en-news",
+      "title": "Top investigator says over 600 Russian civilians killed in Ukrainian attacks since start of war",
+      "publisher": "Novaya Gazeta Europe"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/international/article/2026/02/27/with-an-estimated-500-000-dead-the-russia-ukraine-war-is-europe-s-deadliest-since-1945_6750914_4.html",
+      "title": "With an estimated 500,000 killed, the Russia-Ukraine war is Europe's deadliest since 1945",
+      "publisher": "Le Monde"
+    }
+  ]
+}

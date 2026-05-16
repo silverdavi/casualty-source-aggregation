@@ -1,0 +1,478 @@
+{
+  "war_id": "sri_lankan_civil_war",
+  "name": "Sri Lankan Civil War",
+  "start_year": 1983,
+  "end_year": 2009,
+  "ongoing": false,
+  "regions": [
+    "Sri Lanka",
+    "Northern Province",
+    "Eastern Province",
+    "Colombo",
+    "Jaffna Peninsula",
+    "Vanni",
+    "Mullaitivu"
+  ],
+  "summary": "The Sri Lankan Civil War was fought mainly between the Government of Sri Lanka and the Liberation Tigers of Tamil Eelam (LTTE) from 1983 to May 2009, with an Indian Peace Keeping Force intervention from 1987 to 1990. Broad UN-cited estimates put total deaths at 80,000\u2013100,000, while UCDP's narrower structured organized-violence coding gives 59,193\u201375,601 deaths for 1990\u20132009. The bloodiest and most disputed period was the final Vanni/Mullivaikkal offensive in January\u2013May 2009, for which a UN Panel found that up to 40,000 civilian deaths could not be ruled out.",
+  "sides": [
+    {
+      "name": "Government of Sri Lanka and allied security forces",
+      "members": [
+        "Sri Lanka Army",
+        "Sri Lanka Navy",
+        "Sri Lanka Air Force",
+        "Sri Lanka Police",
+        "Civil Defence Force/Home Guards",
+        "pro-government Tamil paramilitaries including EPDP and TMVP/Karuna faction"
+      ],
+      "military_killed": {
+        "low": 23790,
+        "high": 28708,
+        "point": null,
+        "notes": "Low is Gotabaya Rajapaksa's state-TV-cited figure for military/security personnel killed since 1981; high is later official-record figure for security personnel killed. Composition is inconsistent across sources and may or may not include police and Civil Defence personnel.",
+        "sources": [
+          "https://www.ndtv.com/world-news/sri-lanka-lost-24-000-soldiers-in-defeating-ltte-394670",
+          "https://www.lankabusinessonline.com/2009/05/22/sri-lanka-lost-over-6200-troops-to-beat-tigers-report/",
+          "https://www.ft.lk/news/Failure-to-differentiate-terrorist-and-war-hero-a-shame--President/56-655564",
+          "https://www.wsws.org/en/articles/2018/05/26/pres-m26.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": 40000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shelling, bombardment, and attacks in No Fire Zones and civilian areas",
+            "victims_group": "Tamil civilians and other civilians trapped in the Vanni/Mullivaikkal area",
+            "low": 7721,
+            "high": 40000,
+            "notes": "The UN Country Team counted 7,721 killed up to 13 May 2009 but the UN Panel said this was likely too low; up to 40,000 civilian deaths could not be ruled out. These are not cleanly attributable to one side, but the UN Panel found that most final-phase civilian casualties were caused by Government shelling.",
+            "sources": [
+              "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+              "https://www.refworld.org/reference/countryrep/unsecgen/2011/78961",
+              "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session30/documents/a-hrc-30-crp-2.pdf"
+            ]
+          },
+          {
+            "cause": "state-enabled/allied mob pogrom",
+            "victims_group": "Tamil civilians during Black July",
+            "low": 400,
+            "high": 3000,
+            "notes": "Black July was perpetrated mainly by Sinhalese mobs, with many sources describing state enabling, complicity, or failure to protect; not all perpetrators were uniformed state forces.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Black_July",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/massacres-sri-lanka-during-black-july-riots-1983.html"
+            ]
+          },
+          {
+            "cause": "deliberate one-sided violence coded by UCDP",
+            "victims_group": "civilians in Sri Lanka, 1990\u20132009",
+            "low": 368,
+            "high": 1666,
+            "notes": "Older UCDP summary figure for deliberate one-sided violence by the Government of Sri Lanka; narrower than all civilian deaths from shelling, disappearance, or deprivation.",
+            "sources": [
+              "https://ucdp.uu.se/downloads/",
+              "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war"
+            ]
+          }
+        ],
+        "notes": "No reliable all-war civilian-death total can be cleanly attributed to Government forces alone. The 2009 Vanni toll is the largest component; the UN found most final-phase civilian casualties were caused by Government shelling but did not provide a numerical split.",
+        "sources": [
+          "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+          "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session30/documents/a-hrc-30-crp-2.pdf",
+          "https://ucdp.uu.se/downloads/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "denial_of_humanitarian_assistance",
+          "victims_group": "civilians trapped in the Vanni, especially wounded, children, elderly, and malnourished civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Panel found that the Government deliberately used reduced civilian population estimates, causing food and medical supplies to be inadequate and unnecessarily costing many lives; no separate quantified death toll is available.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations"
+          ]
+        },
+        {
+          "type": "detention_displacement_disease",
+          "victims_group": "IDPs and suspected LTTE cadres after leaving the conflict zone",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Panel described closed camps, overcrowding, screening, disappearances, executions, and unnecessary deaths, but no reliable aggregate death toll is available.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/Executive_Summary",
+            "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session30/documents/a-hrc-30-crp-2.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Liberation Tigers of Tamil Eelam (LTTE)",
+      "members": [
+        "LTTE military wing",
+        "Sea Tigers",
+        "Black Tigers",
+        "LTTE political and administrative structures",
+        "forced recruits and auxiliaries"
+      ],
+      "military_killed": {
+        "low": 22390,
+        "high": 27000,
+        "point": null,
+        "notes": "Low is LTTE's own reported fighter deaths through November 2008; high is a commonly cited all-war figure for LTTE cadres killed. Late-2009 losses, forced recruits, and auxiliaries are uncertain.",
+        "sources": [
+          "https://thuppahis.com/2016/09/27/sri-lankas-success-in-the-eelam-war-iv-some-insights/",
+          "https://en.wikipedia.org/wiki/Sri_Lankan_civil_war",
+          "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2252,
+        "high": 4100,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombings, massacres, suicide attacks, assassinations, and other attacks on civilians",
+            "victims_group": "Sinhalese, Muslim, Tamil, and other civilians",
+            "low": 3700,
+            "high": 4100,
+            "notes": "Common broad estimate of civilians killed by LTTE attacks in over 200 attacks across the war.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war",
+              "https://en.wikipedia.org/wiki/List_of_attacks_attributed_to_the_LTTE"
+            ]
+          },
+          {
+            "cause": "one-sided violence coded by UCDP",
+            "victims_group": "civilians, 1990\u20132009",
+            "low": 2252,
+            "high": 3110,
+            "notes": "Older UCDP summary for deliberate civilian killings by LTTE under one-sided-violence coding.",
+            "sources": [
+              "https://ucdp.uu.se/downloads/",
+              "https://wiki-gateway.eudic.net/wikipedia_en/Casualties_of_the_Sri_Lankan_Civil_War.html"
+            ]
+          },
+          {
+            "cause": "shooting civilians attempting to flee",
+            "victims_group": "civilians trapped in LTTE-controlled Vanni areas in 2009",
+            "low": null,
+            "high": null,
+            "notes": "UN Panel found that LTTE shot civilians trying to escape from February 2009 onward, significantly adding to the death toll, but no separate quantified toll is available.",
+            "sources": [
+              "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+              "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/Executive_Summary"
+            ]
+          }
+        ],
+        "notes": "The 3,700\u20134,100 range is the broadest civilian-attack estimate found, but it excludes an independently quantified final-phase escape-shooting total. The 1990 police massacre is treated under state/security-force combatant deaths, not civilian deaths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war",
+          "https://www.newindianexpress.com/world/2009/Jan/13/ltte-has-staged-highest-number-of-suicide-attacks-17558.html",
+          "https://ucdp.uu.se/downloads/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "human_buffer_hostage_policy",
+          "victims_group": "civilians trapped in LTTE-controlled Vanni areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Panel found that the LTTE refused civilians permission to leave, used them as hostages and a human buffer, and that this added significantly to the total death toll. No separate numerical toll is available.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/Executive_Summary"
+          ]
+        },
+        {
+          "type": "forced_recruitment",
+          "victims_group": "Tamil adults and children, including children as young as 14",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Panel found forced recruitment throughout the war and intensified final-phase recruitment, including children as young as 14, but did not quantify resulting deaths separately.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "civilians forced to dig trenches and defensive works",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN Panel found that forced labour blurred the combatant/civilian distinction and exposed civilians to additional harm from shelling; no separate death estimate is available.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "India / Indian Peace Keeping Force (IPKF)",
+      "members": [
+        "Indian Army",
+        "Indian Peace Keeping Force"
+      ],
+      "military_killed": {
+        "low": 1165,
+        "high": 1500,
+        "point": null,
+        "notes": "The lower figure is commonly cited as IPKF deaths; secondary summaries sometimes give 1,500 Indian soldiers killed during the 1987\u20131990 intervention.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war",
+          "https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "hospital massacre",
+            "victims_group": "patients, staff, and medical personnel at Jaffna Teaching Hospital",
+            "low": 60,
+            "high": 70,
+            "notes": "IPKF troops killed between 60 and 70 patients and staff on 21\u201322 October 1987; another source gives 68 killed including 21 medical personnel.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Jaffna_hospital_massacre",
+              "https://www.tamilguardian.com/content/indian-peace-keeping-force-massacre-jaffna-hospital-commemorated"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Tamil civilians in Valvettiturai",
+            "low": 64,
+            "high": 64,
+            "notes": "64 Tamil civilians were killed by IPKF soldiers during the Valvettiturai massacre on 2\u20133 August 1989.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1989_Valvettiturai_massacre"
+            ]
+          },
+          {
+            "cause": "disappearances",
+            "victims_group": "Tamil civilians and detainees in northeast Sri Lanka",
+            "low": 43,
+            "high": 43,
+            "notes": "Amnesty documented 43 disappearance cases during the IPKF deployment; this is a case dossier, not a total death estimate.",
+            "sources": [
+              "https://www.amnesty.org/zh-hans/documents/asa37/030/1990/en/"
+            ]
+          }
+        ],
+        "notes": "No authoritative all-IPKF civilian-death total was found. The numbers here are documented components, not a complete total.",
+        "sources": [
+          "https://www.amnesty.org/zh-hans/documents/asa37/030/1990/en/",
+          "https://en.wikipedia.org/wiki/Jaffna_hospital_massacre",
+          "https://en.wikipedia.org/wiki/1989_Valvettiturai_massacre"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disappearance_detention_abuse",
+          "victims_group": "civilians and detainees in IPKF-controlled areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Amnesty and UTHR material document disappearances, arbitrary arrests, torture, and deaths in custody during the IPKF period, but not a reliable aggregate death toll.",
+          "sources": [
+            "https://www.amnesty.org/zh-hans/documents/asa37/030/1990/en/",
+            "https://uthr.org/Reports/Report3/Report3.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 47345,
+    "military_high": 57208,
+    "civilian_low": 22792,
+    "civilian_high": 52655,
+    "grand_low": 80000,
+    "grand_high": 100000,
+    "notes": "Grand total uses the broad UN/OCHA-cited 80,000\u2013100,000 war-death range. Military subtotal adds Sri Lankan security forces, LTTE, and IPKF reported killed. Civilian range is an arithmetic implication of the broad total minus the military range, not a victim-by-victim register. UCDP's narrower 1990\u20132009 structured figure is 59,193\u201375,601 and is not directly comparable to the full 1983\u20132009 total."
+  },
+  "key_atrocities": [
+    {
+      "name": "Final Vanni / Mullivaikkal killings",
+      "year": 2009,
+      "perpetrator": "Primarily Government of Sri Lanka shelling, with LTTE actions also significantly increasing civilian deaths",
+      "victims_group": "Tamil civilians and other civilians trapped in the Vanni",
+      "low": 7721,
+      "high": 40000,
+      "notes": "UN Country Team counted 7,721 killed up to 13 May 2009; UN Panel found this likely too low and that up to 40,000 civilian deaths could not be ruled out. A 75,000 population-balance estimate existed but was not adopted as authoritative.",
+      "sources": [
+        "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+        "https://www.refworld.org/reference/countryrep/unsecgen/2011/78961",
+        "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session30/documents/a-hrc-30-crp-2.pdf"
+      ]
+    },
+    {
+      "name": "Black July anti-Tamil pogrom",
+      "year": 1983,
+      "perpetrator": "Sinhalese mobs with alleged state enabling/complicity or failure to protect",
+      "victims_group": "Tamil civilians",
+      "low": 400,
+      "high": 3000,
+      "notes": "Estimates range from 400 to 3,000 killed; official figures were lower than many NGO and minority-community estimates.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_July",
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/massacres-sri-lanka-during-black-july-riots-1983.html"
+      ]
+    },
+    {
+      "name": "1990 massacre of surrendered Sri Lankan police officers",
+      "year": 1990,
+      "perpetrator": "LTTE",
+      "victims_group": "Sri Lankan police officers",
+      "low": 600,
+      "high": null,
+      "notes": "LTTE killed over 600 surrendered police officers; treated as security-force/combatant deaths rather than civilian deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1990_massacre_of_Sri_Lankan_Police_officers"
+      ]
+    },
+    {
+      "name": "Jaffna Teaching Hospital massacre",
+      "year": 1987,
+      "perpetrator": "Indian Peace Keeping Force",
+      "victims_group": "patients, staff, and medical personnel",
+      "low": 60,
+      "high": 70,
+      "notes": "IPKF troops killed 60\u201370 patients and staff; another source gives 68 killed, including 21 medical personnel.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jaffna_hospital_massacre",
+        "https://www.tamilguardian.com/content/indian-peace-keeping-force-massacre-jaffna-hospital-commemorated"
+      ]
+    },
+    {
+      "name": "Valvettiturai massacre",
+      "year": 1989,
+      "perpetrator": "Indian Peace Keeping Force",
+      "victims_group": "Tamil civilians",
+      "low": 64,
+      "high": 64,
+      "notes": "64 Tamil civilians were killed by IPKF soldiers.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1989_Valvettiturai_massacre"
+      ]
+    },
+    {
+      "name": "LTTE attacks on civilians across the war",
+      "year": null,
+      "perpetrator": "LTTE",
+      "victims_group": "Sinhalese, Muslim, Tamil, and other civilians",
+      "low": 3700,
+      "high": 4100,
+      "notes": "Common broad estimate for civilians killed in over 200 LTTE attacks; a Sri Lankan official-cited statistic reported 3,262 civilians killed in 346 civilian-targeting attacks from 1984\u20132006.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war",
+        "https://www.newindianexpress.com/world/2009/Jan/13/ltte-has-staged-highest-number-of-suicide-attacks-17558.html"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is the final 2009 Vanni/Mullivaikkal death toll and attribution. The UN Panel found no authoritative figure, accepted 7,721 as a conservative starting count up to 13 May 2009, and said up to 40,000 civilian deaths could not be ruled out; it also found most final-phase civilian casualties were caused by Government shelling while LTTE hostage, human-buffer, escape-shooting, forced-recruitment, and forced-labour policies significantly increased deaths. UCDP's 59,193\u201375,601 figure covers organized violence for 1990\u20132009 under narrower coding rules and is not a complete 1983\u20132009 all-cause death toll. Disappearances and indirect deaths are widely reported but cannot be converted into confirmed deaths without case-level investigation.",
+  "sources": [
+    {
+      "url": "https://www.refworld.org/reference/countryrep/unsecgen/2011/78961",
+      "title": "Report of the Secretary General's Panel of Experts on Accountability in Sri Lanka",
+      "publisher": "UN Secretary-General / Refworld"
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/III_Nature_and_Scope_of_Alleged_Violations",
+      "title": "Report of the Secretary-General's Panel of Experts on Accountability in Sri Lanka, III. Nature and Scope of Alleged Violations",
+      "publisher": "United Nations / Wikisource"
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Report_of_the_Secretary-General%27s_Panel_of_Experts_on_Accountability_in_Sri_Lanka/Executive_Summary",
+      "title": "Report of the Secretary-General's Panel of Experts on Accountability in Sri Lanka, Executive Summary",
+      "publisher": "United Nations / Wikisource"
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session30/documents/a-hrc-30-crp-2.pdf",
+      "title": "Report of the OHCHR Investigation on Sri Lanka (OISL), A/HRC/30/CRP.2",
+      "publisher": "OHCHR"
+    },
+    {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Dataset Download Center",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://www.hrw.org/report/2009/02/19/war-displaced/sri-lankan-army-and-ltte-abuses-against-civilians-vanni",
+      "title": "War on the Displaced: Sri Lankan Army and LTTE Abuses against Civilians in the Vanni",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2009-05-20/upto-100000-killed-in-sri-lankas-civil-warun/1689524",
+      "title": "Up to 100,000 killed in Sri Lanka's civil war: UN",
+      "publisher": "ABC News"
+    },
+    {
+      "url": "https://www.ndtv.com/world-news/sri-lanka-lost-24-000-soldiers-in-defeating-ltte-394670",
+      "title": "Sri Lanka lost 24,000 soldiers in defeating LTTE",
+      "publisher": "NDTV"
+    },
+    {
+      "url": "https://www.lankabusinessonline.com/2009/05/22/sri-lanka-lost-over-6200-troops-to-beat-tigers-report/",
+      "title": "Sri Lanka lost over 6,200 troops to beat Tigers: report",
+      "publisher": "Lanka Business Online / AFP"
+    },
+    {
+      "url": "https://www.ft.lk/news/Failure-to-differentiate-terrorist-and-war-hero-a-shame--President/56-655564",
+      "title": "Failure to differentiate terrorist and war hero a shame: President",
+      "publisher": "Daily FT"
+    },
+    {
+      "url": "https://thuppahis.com/2016/09/27/sri-lankas-success-in-the-eelam-war-iv-some-insights/",
+      "title": "Sri Lanka's Success in the Eelam War IV: Some Insights",
+      "publisher": "Thuppahi's Blog"
+    },
+    {
+      "url": "https://www.newindianexpress.com/world/2009/Jan/13/ltte-has-staged-highest-number-of-suicide-attacks-17558.html",
+      "title": "LTTE has staged highest number of suicide attacks",
+      "publisher": "The New Indian Express"
+    },
+    {
+      "url": "https://www.amnesty.org/zh-hans/documents/asa37/030/1990/en/",
+      "title": "Sri Lanka: The Indian Peace Keeping Force and disappearances",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/massacres-sri-lanka-during-black-july-riots-1983.html",
+      "title": "The massacres in Sri Lanka during the Black July riots of 1983",
+      "publisher": "Sciences Po Mass Violence and Resistance Research Network"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_July",
+      "title": "Black July",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Jaffna_hospital_massacre",
+      "title": "Jaffna hospital massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1989_Valvettiturai_massacre",
+      "title": "1989 Valvettiturai massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1990_massacre_of_Sri_Lankan_Police_officers",
+      "title": "1990 massacre of Sri Lankan Police officers",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Casualties_of_the_Sri_Lankan_civil_war",
+      "title": "Casualties of the Sri Lankan Civil War",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

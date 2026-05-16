@@ -1,0 +1,373 @@
+{
+  "war_id": "first_arab_israeli_war_1948",
+  "name": "1948 Arab-Israeli War / Nakba",
+  "start_year": 1947,
+  "end_year": 1949,
+  "ongoing": false,
+  "regions": [
+    "Mandatory Palestine",
+    "Israel",
+    "West Bank",
+    "Gaza Strip",
+    "Jerusalem",
+    "Galilee",
+    "Negev",
+    "Lebanon border area"
+  ],
+  "summary": "The 1948 Arab-Israeli War began as a civil war in Mandatory Palestine after the UN partition vote of 29 November 1947 and became an interstate war after Israel declared independence and Arab state armies entered on 15 May 1948. It ended through 1949 armistice agreements, the last with Syria on 20 July 1949. The war killed roughly 19,000 to 28,000 or more people and produced the Palestinian Nakba, including the flight or expulsion of roughly 700,000 Palestinians.",
+  "sides": [
+    {
+      "name": "Jewish / Israeli side",
+      "members": [
+        "Yishuv",
+        "Haganah",
+        "Palmach",
+        "Israel Defense Forces",
+        "Irgun / Etzel",
+        "Lehi"
+      ],
+      "military_killed": {
+        "low": 4000,
+        "high": 4624,
+        "point": 4624,
+        "notes": "Israeli official and secondary sources vary: IDF public history gives about 4,000 soldiers; the Israel Ministry of Defense archive gives 4,624 soldiers fallen in the war; overall Israeli/Jewish deaths are often given as about 5,700-6,400 or 6,373.",
+        "sources": [
+          "https://www.idf.il/en/mini-sites/wars-and-operations/israels-war-of-independence-1948/",
+          "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1947-1949.aspx",
+          "https://www.jewishvirtuallibrary.org/jsource/History/1948_War.html",
+          "https://www.britannica.com/event/1948-Arab-Israeli-War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1749,
+        "high": 2400,
+        "point": 2000,
+        "breakdown": [
+          {
+            "cause": "massacre / workplace killing",
+            "victims_group": "Jewish refinery workers at Haifa Oil Refinery",
+            "low": 39,
+            "high": 39,
+            "notes": "Arab workers killed 39 Jewish workers after an Irgun bomb killed about 6 Arabs at the refinery gate.",
+            "sources": [
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/",
+              "https://en.wikipedia.org/wiki/Haifa_Oil_Refinery_massacre"
+            ]
+          },
+          {
+            "cause": "convoy ambush / massacre",
+            "victims_group": "Jewish medical personnel, patients, students, faculty, and Haganah escorts in the Hadassah convoy",
+            "low": 78,
+            "high": 79,
+            "notes": "The Hadassah convoy attack killed 78 Jews and 1 British soldier; sources sometimes report 79 total killed.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Hadassah_medical_convoy_massacre",
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          },
+          {
+            "cause": "massacre after battle / POW killing",
+            "victims_group": "Kfar Etzion residents and defenders",
+            "low": 120,
+            "high": 150,
+            "notes": "Mixed civilian/defender category; Arab irregulars, with disputed Arab Legion participation in some accounts, killed roughly 120-150 residents/defenders after Kfar Etzion fell.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          }
+        ],
+        "notes": "Israeli civilian deaths are usually given as more than 2,000 or about 2,400 in rounded casualty splits. A lower inferred figure of about 1,749 results from subtracting the Israeli Ministry of Defense soldier count of 4,624 from the overall 6,373 Israeli total.",
+        "sources": [
+          "https://www.idf.il/en/mini-sites/wars-and-operations/israels-war-of-independence-1948/",
+          "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+          "https://www.jewishvirtuallibrary.org/jsource/History/1948_War.html",
+          "https://www.britannica.com/event/1948-Arab-Israeli-War"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Arab side",
+      "members": [
+        "Palestinian Arab militias",
+        "Arab Liberation Army",
+        "Army of the Holy War",
+        "Egypt",
+        "Transjordan / Jordan Arab Legion",
+        "Iraq",
+        "Syria",
+        "Lebanon",
+        "Saudi and other Arab volunteers"
+      ],
+      "military_killed": {
+        "low": 5653,
+        "high": 8953,
+        "point": null,
+        "notes": "Computed as 3,700-7,000 Arab-state soldiers plus 1,953 Palestinians listed by al-Aref as having died in combat situations. The Palestinian combatant figure is a known/listed subset and may undercount irregulars.",
+        "sources": [
+          "https://www.britannica.com/event/1948-Arab-Israeli-War",
+          "https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War",
+          "https://wiki2.org/en/1948_Palestine_war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 8047,
+        "high": 13047,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacres / POW killings",
+            "victims_group": "Palestinian Arab civilians and prisoners of war in multiple villages and towns",
+            "low": 800,
+            "high": 800,
+            "notes": "Documented subset attributed in summaries of Benny Morris: roughly 800 Arab civilians and POWs killed in 24 massacres. This is not the total Palestinian civilian death toll.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Palestinian villagers at Deir Yassin",
+            "low": 107,
+            "high": 254,
+            "notes": "Modern scholarship generally places the death toll around 100-120 or about 110; older wartime claims gave 254.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Deir_Yassin_massacre",
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          },
+          {
+            "cause": "massacre / urban killing",
+            "victims_group": "Palestinian civilians and detainees in Lydda/Lod",
+            "low": 250,
+            "high": 250,
+            "notes": "Benny Morris describes about 250 civilians and detainees killed in Lydda on 12 July 1948.",
+            "sources": [
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          },
+          {
+            "cause": "reprisal massacre",
+            "victims_group": "Arab villagers at Balad al-Sheikh",
+            "low": 60,
+            "high": 60,
+            "notes": "Haganah raid after the Haifa Oil Refinery killings; about 60 Arabs killed.",
+            "sources": [
+              "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Palestinian civilians at al-Dawayima",
+            "low": 80,
+            "high": null,
+            "notes": "Some summaries give about 80-100; Morris is reported as estimating hundreds. High left null because 'hundreds' is imprecise.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Al-Dawayima_massacre",
+              "https://www.rahs-open-lid.com/wp-content/uploads/2024/01/Masalha-Nur-The-Palestine-Nakba_-Decolonising-History-Narrating-the-Subaltern-Reclaiming-Memory-Zed-Books-2012.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Arab villagers at Saliha",
+            "low": 60,
+            "high": 80,
+            "notes": "Common estimates range from 60-70 to 70-80 killed.",
+            "sources": [
+              "https://en.wikipedia-on-ipfs.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+              "https://www.rahs-open-lid.com/wp-content/uploads/2024/01/Masalha-Nur-The-Palestine-Nakba_-Decolonising-History-Narrating-the-Subaltern-Reclaiming-Memory-Zed-Books-2012.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Arab villagers at Hula, Lebanon",
+            "low": 35,
+            "high": 58,
+            "notes": "Carmeli Brigade killings of male villagers; estimates commonly 35-58.",
+            "sources": [
+              "https://en.wikipedia-on-ipfs.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+              "https://www.rahs-open-lid.com/wp-content/uploads/2024/01/Masalha-Nur-The-Palestine-Nakba_-Decolonising-History-Narrating-the-Subaltern-Reclaiming-Memory-Zed-Books-2012.pdf"
+            ]
+          }
+        ],
+        "notes": "The civilian range is inferred from total Palestinian Arab deaths of 10,000-15,000 minus 1,953 known/listed Palestinian combat deaths. This is approximate; the literature does not provide a universally accepted civilian/combatant split.",
+        "sources": [
+          "https://www.britannica.com/event/1948-Arab-Israeli-War",
+          "https://wiki2.org/en/1948_Palestine_war",
+          "https://www.pcbs.gov.ps/Portals/_pcbs/PressRelease/nakba_62e.pdf",
+          "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement / ethnic_cleansing / prevention_of_return",
+          "victims_group": "Palestinian Arab refugees and internally displaced persons",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Displacement is well documented, with UNCCP estimates of 726,000 and 711,000 refugees/displaced persons and broader estimates from about 520,000 to 1,000,000. However, no reliable separate death toll for disease, exposure, starvation, or other indirect mortality during the 1947-49 refugee crisis was found; deaths during expulsions and flight are generally embedded in the direct death totals.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_estimates_of_the_1948_Palestinian_expulsion_and_flight",
+            "https://www.britannica.com/event/1948-Arab-Israeli-War",
+            "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 9653,
+    "military_high": 13577,
+    "civilian_low": 9796,
+    "civilian_high": 15447,
+    "grand_low": 19449,
+    "grand_high": 29024,
+    "notes": "Bucketed arithmetic total based on this report's categories. A simpler aggregate-source total is roughly 19,400-28,400+ deaths: 5,700-6,400 Jews/Israelis, 10,000-15,000 Palestinian Arabs, and 3,700-7,000 Arab-state soldiers. The bucketed total is slightly wider because the Palestinian civilian/combatant split and Israeli military/civilian splits are reconstructed from sources using different definitions."
+  },
+  "key_atrocities": [
+    {
+      "name": "Deir Yassin massacre",
+      "year": 1948,
+      "perpetrator": "Jewish / Israeli side",
+      "victims_group": "Palestinian Arab villagers",
+      "low": 107,
+      "high": 254,
+      "notes": "Modern scholarship usually places the toll around 100-120 or about 110; older claims gave 254.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deir_Yassin_massacre",
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+      ]
+    },
+    {
+      "name": "Lydda/Lod killings",
+      "year": 1948,
+      "perpetrator": "Jewish / Israeli side",
+      "victims_group": "Palestinian Arab civilians and detainees",
+      "low": 250,
+      "high": 250,
+      "notes": "Benny Morris describes about 250 civilians and detainees killed during/after fighting in Lydda.",
+      "sources": [
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+      ]
+    },
+    {
+      "name": "Balad al-Sheikh raid",
+      "year": 1947,
+      "perpetrator": "Jewish / Israeli side",
+      "victims_group": "Arab villagers",
+      "low": 60,
+      "high": 60,
+      "notes": "Haganah reprisal after the Haifa Oil Refinery killings.",
+      "sources": [
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+      ]
+    },
+    {
+      "name": "Al-Dawayima massacre",
+      "year": 1948,
+      "perpetrator": "Jewish / Israeli side",
+      "victims_group": "Palestinian Arab civilians",
+      "low": 80,
+      "high": null,
+      "notes": "Some summaries give about 80-100; Morris has estimated hundreds. High left null because the upper figure is imprecise.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Al-Dawayima_massacre",
+        "https://www.palestine-studies.org/node/1651779"
+      ]
+    },
+    {
+      "name": "Haifa Oil Refinery massacre",
+      "year": 1947,
+      "perpetrator": "Arab side",
+      "victims_group": "Jewish refinery workers",
+      "low": 39,
+      "high": 39,
+      "notes": "Arab workers killed 39 Jewish workers after an Irgun bomb killed about 6 Arabs at the refinery gate.",
+      "sources": [
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/",
+        "https://en.wikipedia.org/wiki/Haifa_Oil_Refinery_massacre"
+      ]
+    },
+    {
+      "name": "Hadassah medical convoy massacre",
+      "year": 1948,
+      "perpetrator": "Arab side",
+      "victims_group": "Jewish medical personnel, patients, students, faculty, and Haganah escorts",
+      "low": 78,
+      "high": 79,
+      "notes": "78 Jews and 1 British soldier were killed; some sources report 79 total killed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hadassah_medical_convoy_massacre",
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+      ]
+    },
+    {
+      "name": "Kfar Etzion massacre",
+      "year": 1948,
+      "perpetrator": "Arab side",
+      "victims_group": "Jewish residents and defenders",
+      "low": 120,
+      "high": 150,
+      "notes": "Mixed civilian/defender category; killings occurred after the settlement fell.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+        "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is the Palestinian civilian/combatant split. Total Palestinian deaths are often given as 10,000-15,000, but only a subset of combatants is named or categorized, and massacre counts differ sharply by author and definition. Israeli casualties are better recorded, but even there rounded summaries differ from official military fallen counts. Indirect deaths from the Palestinian refugee crisis are not separately quantified in reliable sources and are therefore recorded as null rather than estimated.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/1948-Arab-Israeli-War",
+      "title": "1948 Arab-Israeli War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1947-1949.aspx",
+      "title": "1947-1949: The War of Independence",
+      "publisher": "Israel Ministry of Defense / IDF and Defense Establishment Archives"
+    },
+    {
+      "url": "https://www.idf.il/en/mini-sites/wars-and-operations/israels-war-of-independence-1948/",
+      "title": "Israel's War of Independence 1948",
+      "publisher": "Israel Defense Forces"
+    },
+    {
+      "url": "https://www.jewishvirtuallibrary.org/jsource/History/1948_War.html",
+      "title": "Background & Overview - Israel War of Independence",
+      "publisher": "Jewish Virtual Library"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_estimates_of_the_1948_Palestinian_expulsion_and_flight",
+      "title": "List of estimates of the 1948 Palestinian expulsion and flight",
+      "publisher": "Wikipedia, summarizing UNCCP and other estimates"
+    },
+    {
+      "url": "https://www.pcbs.gov.ps/Portals/_pcbs/PressRelease/nakba_62e.pdf",
+      "title": "Special Statistical Bulletin on the 62nd Anniversary of the Palestinian Nakba",
+      "publisher": "Palestinian Central Bureau of Statistics"
+    },
+    {
+      "url": "https://www.pcbs.gov.ps/portals/_pcbs/pressrelease/nakba_64e.pdf",
+      "title": "Special Statistical Bulletin on the 64th Anniversary of the Palestinian Nakba",
+      "publisher": "Palestinian Central Bureau of Statistics"
+    },
+    {
+      "url": "https://www.crimesofwar.org/a-z-guide/arab-israeli-war/",
+      "title": "Arab-Israeli War",
+      "publisher": "Crimes of War Project / Benny Morris"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Killings_and_massacres_during_the_1948_Palestine_war",
+      "title": "Killings and massacres during the 1948 Palestine war",
+      "publisher": "Wikipedia, secondary summary"
+    },
+    {
+      "url": "https://wiki2.org/en/1948_Palestine_war",
+      "title": "1948 Palestine war",
+      "publisher": "Wiki2 mirror, secondary summary"
+    }
+  ]
+}

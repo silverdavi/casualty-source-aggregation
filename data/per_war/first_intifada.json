@@ -1,0 +1,266 @@
+{
+  "war_id": "first_intifada",
+  "name": "First Intifada",
+  "start_year": 1987,
+  "end_year": 1993,
+  "ongoing": false,
+  "regions": [
+    "Israel",
+    "West Bank",
+    "Gaza Strip",
+    "East Jerusalem",
+    "Occupied Palestinian Territories"
+  ],
+  "summary": "The First Intifada was a Palestinian uprising against Israeli rule in the occupied territories, usually dated from 9 December 1987 to the Oslo I signing on 13 September 1993. It combined mass demonstrations, strikes, boycotts, stone-throwing, Molotov cocktails, militant attacks, Israeli military/police repression, and substantial intra-Palestinian violence against alleged collaborators. The most defensible death-toll range is roughly 2,100-2,350 deaths, depending on cutoff dates and whether AP, IDF, B'Tselem, or official Israeli figures are used.",
+  "sides": [
+    {
+      "name": "Israel / Israeli forces and civilians",
+      "members": [
+        "Israel Defense Forces",
+        "Israel Border Police",
+        "Israel Police",
+        "Israeli Civil Administration",
+        "Israeli civilians/settlers"
+      ],
+      "military_killed": {
+        "low": 60,
+        "high": 65,
+        "point": 60,
+        "notes": "Israeli security-force personnel killed by Palestinians. Low/point uses the canonical Oslo cutoff, 9 Dec 1987-13 Sep 1993: 43 in the occupied territories plus 17 within the Green Line. High counts through 31 Dec 1993: 46 in the occupied territories plus 19 within the Green Line.",
+        "sources": [
+          "https://www.btselem.org/statistics/first_intifada_tables"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1162,
+        "high": 1204,
+        "point": 1162,
+        "breakdown": [
+          {
+            "cause": "shooting/beating/tear gas/direct force by Israeli security forces in occupied territories",
+            "victims_group": "Palestinians in the occupied territories including East Jerusalem",
+            "low": 1070,
+            "high": 1100,
+            "notes": "B'Tselem gives 1,070 Palestinians killed by Israeli security forces in the occupied territories through 13 Sep 1993; adding 14 Sep-31 Dec 1993 gives 1,100. B'Tselem does not provide a clean civilian/combatant split for Palestinian fatalities in this table.",
+            "sources": [
+              "https://www.btselem.org/statistics/first_intifada_tables"
+            ]
+          },
+          {
+            "cause": "settler/Israeli civilian violence in occupied territories",
+            "victims_group": "Palestinians in the occupied territories including East Jerusalem",
+            "low": 54,
+            "high": 62,
+            "notes": "B'Tselem gives 54 Palestinians killed by Israeli civilians in the occupied territories through 13 Sep 1993; adding 14 Sep-31 Dec 1993 gives 62.",
+            "sources": [
+              "https://www.btselem.org/statistics/first_intifada_tables"
+            ]
+          },
+          {
+            "cause": "direct force by Israeli security forces within the Green Line",
+            "victims_group": "Palestinians within the Green Line",
+            "low": 17,
+            "high": 21,
+            "notes": "B'Tselem gives 17 through 13 Sep 1993; adding 14 Sep-31 Dec 1993 gives 21.",
+            "sources": [
+              "https://www.btselem.org/statistics/first_intifada_tables"
+            ]
+          },
+          {
+            "cause": "violence by Israeli civilians within the Green Line",
+            "victims_group": "Palestinians within the Green Line",
+            "low": 21,
+            "high": 21,
+            "notes": "B'Tselem gives 21 through 13 Sep 1993 and no additional deaths in this category through 31 Dec 1993.",
+            "sources": [
+              "https://www.btselem.org/statistics/first_intifada_tables"
+            ]
+          }
+        ],
+        "notes": "This bucket records Palestinians directly killed by Israeli security forces or Israeli civilians. The public B'Tselem first-intifada table does not separate Palestinian combatants from civilians, so these figures are direct-death totals rather than a verified civilians-only count.",
+        "sources": [
+          "https://www.btselem.org/statistics/first_intifada_tables",
+          "https://www.makan.org.uk/hub/glossary/first_intifada/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "curfew_closure_detention_demolition_collective_punishment",
+          "victims_group": "Palestinian civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Human Rights Watch and other sources document curfews, school/university closures, deportations, administrative detention, house demolitions, travel restrictions, and other collective punishments during the uprising, but I found no reliable separate estimate of indirect deaths from these measures distinct from direct killings.",
+          "sources": [
+            "https://www.refworld.org/reference/annualreport/hrw/1990/93675"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Palestinian uprising organizations, militants, and local death squads",
+      "members": [
+        "Unified National Leadership of the Uprising",
+        "Fatah local networks",
+        "Popular Front for the Liberation of Palestine",
+        "Democratic Front for the Liberation of Palestine",
+        "Palestinian Communist Party/Palestinian People's Party",
+        "Hamas",
+        "Palestinian Islamic Jihad",
+        "local militants",
+        "groups executing alleged collaborators"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Palestinian combatants/militants killed are not separately identified in the main public first-intifada fatality tables. Palestinian fatalities killed by Israelis are reported as Palestinians killed, without a clean civilian/combatant split.",
+        "sources": [
+          "https://www.btselem.org/statistics/first_intifada_tables"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 871,
+        "high": 1056,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shooting/stabbing/bombing/vehicular and other attacks",
+            "victims_group": "Israeli civilians",
+            "low": 100,
+            "high": 114,
+            "notes": "B'Tselem gives 100 Israeli civilians killed by Palestinians through 13 Sep 1993: 47 in the occupied territories and 53 within the Green Line. Counting through 31 Dec 1993 gives 114: 58 in the occupied territories and 56 within the Green Line.",
+            "sources": [
+              "https://www.btselem.org/statistics/first_intifada_tables"
+            ]
+          },
+          {
+            "cause": "execution/killing of alleged collaborators",
+            "victims_group": "Palestinians accused of collaboration with Israel",
+            "low": 771,
+            "high": 942,
+            "notes": "B'Tselem cites Associated Press for 771 and the IDF Spokesperson for 942 Palestinians killed by other Palestinians on suspicion of collaboration between 9 Dec 1987 and 30 Nov 1993.",
+            "sources": [
+              "https://www.btselem.org/publications/summaries/199401_collaboration_suspects"
+            ]
+          }
+        ],
+        "notes": "This combines Israeli civilians killed by Palestinians and Palestinians killed by other Palestinians as alleged collaborators. The alleged-collaborator figures are especially uncertain and politically sensitive.",
+        "sources": [
+          "https://www.btselem.org/statistics/first_intifada_tables",
+          "https://www.btselem.org/publications/summaries/199401_collaboration_suspects"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 60,
+    "military_high": 65,
+    "civilian_low": 2033,
+    "civilian_high": 2260,
+    "grand_low": 2093,
+    "grand_high": 2325,
+    "notes": "Grand low uses the Oslo-cutoff direct bilateral deaths from B'Tselem plus AP's 771 alleged-collaborator killings: 1,162 Palestinians killed by Israelis + 160 Israelis killed by Palestinians + 771 alleged collaborators = 2,093. Grand high uses end-1993 B'Tselem bilateral deaths plus the IDF Spokesperson's 942 alleged-collaborator killings: 1,204 + 179 + 942 = 2,325. If the official Israeli total of about 200 is substituted for B'Tselem's 179, the high-end roll-up rises to about 2,346. Palestinian combatant deaths are not separately coded, so military totals include only Israeli security-force fatalities."
+  },
+  "key_atrocities": [
+    {
+      "name": "Haram al-Sharif / Temple Mount killings",
+      "year": 1990,
+      "perpetrator": "Israel / Israeli Border Police",
+      "victims_group": "Palestinian civilians/protesters",
+      "low": 17,
+      "high": 21,
+      "notes": "On 8 Oct 1990, Israeli Border Police/security forces shot dead Palestinians at Haram al-Sharif/Temple Mount. Later PHRIC/IPS summaries use 17 deaths; early accounts reported 19-21.",
+      "sources": [
+        "https://www.palestine-studies.org/en/node/41225",
+        "https://en.wikipedia.org/wiki/1990_Temple_Mount_killings"
+      ]
+    },
+    {
+      "name": "Tel Aviv-Jerusalem Bus 405 attack",
+      "year": 1989,
+      "perpetrator": "Palestinian Islamic Jihad militant",
+      "victims_group": "Israeli and foreign civilian bus passengers",
+      "low": 16,
+      "high": 16,
+      "notes": "On 6 Jul 1989, Abd al-Hadi Ghanim seized the steering wheel of Egged bus 405 and drove it into a ravine, killing 16 civilians and wounding 27.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1989_Tel_Aviv%E2%80%93Jerusalem_bus_attack",
+        "https://www.ynetnews.com/articles/0,7340,L-4135891,00.html"
+      ]
+    },
+    {
+      "name": "Killings of suspected Palestinian collaborators",
+      "year": null,
+      "perpetrator": "Palestinian local militants/death squads",
+      "victims_group": "Palestinians accused of collaboration with Israel",
+      "low": 771,
+      "high": 942,
+      "notes": "Associated Press estimated 771; the IDF Spokesperson estimated 942 Palestinians killed by other Palestinians on suspicion of collaboration from 9 Dec 1987 to 30 Nov 1993.",
+      "sources": [
+        "https://www.btselem.org/publications/summaries/199401_collaboration_suspects"
+      ]
+    },
+    {
+      "name": "Mehola Junction bombing",
+      "year": 1993,
+      "perpetrator": "Hamas",
+      "victims_group": "Civilian at Mehola Junction",
+      "low": 1,
+      "high": 1,
+      "notes": "On 16 Apr 1993, a Hamas-claimed suicide car bombing killed one civilian plus the bomber and injured 7-9 people.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mehola_Junction_bombing"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainties are the cutoff date, the lack of a Palestinian combatant/civilian split in major fatality tables, and the range for Palestinians killed as alleged collaborators. B'Tselem gives precise direct-death tables by perpetrator and location, but not a full combatant-status coding for Palestinians. Indirect deaths from curfews, closures, deportations, detention, and house demolitions are documented as policies but not reliably quantified as a separate mortality category.",
+  "sources": [
+    {
+      "url": "https://www.btselem.org/statistics/first_intifada_tables",
+      "title": "Fatalities in the first Intifada",
+      "publisher": "B'Tselem"
+    },
+    {
+      "url": "https://www.btselem.org/publications/summaries/199401_collaboration_suspects",
+      "title": "Collaborators in the Occupied Territories: Human Rights Abuses and Violations",
+      "publisher": "B'Tselem"
+    },
+    {
+      "url": "https://www.britannica.com/place/Palestine/The-first-intifada",
+      "title": "Palestine - The first intifada",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/hrw/1990/93675",
+      "title": "Human Rights Watch World Report 1989 - Israeli-Occupied Territories",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://palquest.palestine-studies.org/en/highlight/29773/first-intifada-1987-1993",
+      "title": "The First Intifada, 1987-1993",
+      "publisher": "Interactive Encyclopedia of the Palestine Question / Institute for Palestine Studies"
+    },
+    {
+      "url": "https://www.palestine-studies.org/en/node/41225",
+      "title": "The Haram al-Sharif (Temple Mount) Killings",
+      "publisher": "Institute for Palestine Studies"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1989_Tel_Aviv%E2%80%93Jerusalem_bus_attack",
+      "title": "1989 Tel Aviv-Jerusalem bus attack",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.ynetnews.com/articles/0,7340,L-4135891,00.html",
+      "title": "Victims of 1989 attack on bus No. 405 cry out",
+      "publisher": "Ynetnews"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mehola_Junction_bombing",
+      "title": "Mehola Junction bombing",
+      "publisher": "Wikipedia"
+    }
+  ]
+}
