@@ -1,0 +1,346 @@
+{
+  "war_id": "gulf_war_1991",
+  "name": "Gulf War (1990-91)",
+  "start_year": 1990,
+  "end_year": 1991,
+  "ongoing": false,
+  "regions": [
+    "Iraq",
+    "Kuwait",
+    "Saudi Arabia",
+    "Israel",
+    "Persian Gulf"
+  ],
+  "summary": "Iraq invaded and annexed Kuwait on August 2, 1990. A U.S.-led coalition, acting under UN authorization, launched an air campaign on January 17, 1991 and a short ground offensive on February 24, expelling Iraqi forces by February 28. Casualty estimates are sharply disputed for Iraqi military deaths and for indirect Iraqi civilian deaths from infrastructure destruction, sanctions interaction, disease, displacement, and the immediate postwar uprisings.",
+  "sides": [
+    {
+      "name": "Iraq / Ba'athist Iraqi state",
+      "members": [
+        "Iraq"
+      ],
+      "military_killed": {
+        "low": 20000,
+        "high": 120000,
+        "point": 26000,
+        "notes": "Preferred operational reconstruction is 20,000-26,000 Iraqi combatants killed; older public-health/UN-derived summaries cite 50,000-120,000. Includes air war, fixed military targets, air/sea losses, ground operations, and some ceasefire-adjacent deaths.",
+        "sources": [
+          "https://www.comw.org/pda/0310rm8ap2.html",
+          "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 603,
+        "high": 1503,
+        "point": 1085,
+        "breakdown": [
+          {
+            "cause": "occupation killings, executions, torture deaths, disappearances",
+            "victims_group": "Kuwaiti civilians, stateless residents, foreign residents and other civilians in occupied Kuwait",
+            "low": 600,
+            "high": 1500,
+            "notes": "Middle East Watch estimated at least 600 killed in the first three months; Amnesty indicated deliberate killings may have exceeded 1,000; a U.S. report cited 1,082 Kuwaiti civilians dying as a direct result of Iraqi criminal conduct. Categories and victim definitions overlap.",
+            "sources": [
+              "https://www.refworld.org/reference/annualreport/hrw/1991/43631",
+              "https://www.amnesty.org/en/wp-content/uploads/2021/05/MDE140161990ENGLISH.pdf",
+              "https://www.latimes.com/archives/la-xpm-1993-03-20-mn-13194-story.html"
+            ]
+          },
+          {
+            "cause": "ballistic missile attacks",
+            "victims_group": "Israeli and Saudi civilians",
+            "low": 3,
+            "high": 3,
+            "notes": "Lewis, Fetter and Gronlund identify 2 direct Israeli civilian deaths from Scud attacks; Saudi data indicate 1 civilian killed in Riyadh. The 28 Dhahran deaths were U.S. soldiers and are not counted here.",
+            "sources": [
+              "https://dgi.umd.edu/sites/default/files/2019-08/1993-DACS-Scud.pdf",
+              "https://www.hrw.org/reports/1991/gulfwar/CHAP9.htm"
+            ]
+          }
+        ],
+        "notes": "Direct civilian deaths caused by Iraq combine occupation killings in Kuwait and direct civilian deaths from Scud attacks. Iraqi postwar repression and refugee deaths are listed under deaths_from_actions.",
+        "sources": [
+          "https://www.refworld.org/reference/annualreport/hrw/1991/43631",
+          "https://www.amnesty.org/en/wp-content/uploads/2021/05/MDE140161990ENGLISH.pdf",
+          "https://dgi.umd.edu/sites/default/files/2019-08/1993-DACS-Scud.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "repression",
+          "victims_group": "Iraqi civilians in the 1991 uprisings and related postwar violence",
+          "low": 20000,
+          "high": 35000,
+          "point": null,
+          "notes": "Immediate post-ceasefire deaths from Iraqi government suppression of uprisings and related civil violence. Included in broad war-and-aftermath accounting, not in the narrow January-February battlefield total.",
+          "sources": [
+            "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Kurdish and Shi'a Iraqi refugees and displaced people",
+          "low": 15000,
+          "high": 30000,
+          "point": null,
+          "notes": "Medact summarizes UN 1991 estimates of 15,000-30,000 refugee deaths by May 1991 from displacement, exposure, disease, malnutrition, inadequate shelter and medical care. Attribution is mixed but rooted heavily in Iraqi regime repression and mass flight.",
+          "sources": [
+            "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+          ]
+        },
+        {
+          "type": "environmental_destruction",
+          "victims_group": "Kuwaiti and regional civilian populations exposed to oil-well fires and oil spills",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Iraqi forces set hundreds of Kuwaiti oil wells ablaze and caused large oil spills; reliable mortality attributable solely to these environmental acts was not found.",
+          "sources": [
+            "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "U.S.-led coalition including Kuwait",
+      "members": [
+        "United States",
+        "United Kingdom",
+        "France",
+        "Saudi Arabia",
+        "Kuwait",
+        "Egypt",
+        "Syria",
+        "United Arab Emirates",
+        "Qatar",
+        "Bahrain",
+        "Oman",
+        "Canada",
+        "Italy",
+        "Australia",
+        "and other coalition contributors"
+      ],
+      "military_killed": {
+        "low": 700,
+        "high": 1025,
+        "point": 1000,
+        "notes": "Coalition military death totals vary by inclusion rule. U.S. in-theater deaths are 382 in CRS; British KIA are commonly cited as 47. Non-Kuwaiti coalition operational deaths are often given around 292-390, while broader counts including U.S. noncombat deaths, Senegalese deployment accident deaths, and Kuwaiti military losses approach or exceed 1,000.",
+        "sources": [
+          "https://www2.law.umaryland.edu/marshall/crsreports/crsdocuments/RL32492_05142008.pdf",
+          "https://www.britannica.com/event/Persian-Gulf-War",
+          "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47807/pdf/GOVPUB-D301-PURL-LPS47807.pdf",
+          "https://kuwait-info.com/gulf-war-overview/impact-of-war/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2540,
+        "high": 15054,
+        "point": 3718,
+        "breakdown": [
+          {
+            "cause": "bombing, missile attacks, ground combat and attacks on vehicles",
+            "victims_group": "Iraqi civilians",
+            "low": 2500,
+            "high": 15000,
+            "notes": "HRW/Middle East Watch estimated 2,500-3,000 direct Iraqi civilian deaths from allied bombing and missiles; Daponte's compiled estimate as summarized by PDA is 3,664; Medact cites a wider 3,500-15,000 range for Iraqi civilians killed during the war.",
+            "sources": [
+              "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm",
+              "https://www.comw.org/pda/0310rm8ap2.html",
+              "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+            ]
+          },
+          {
+            "cause": "shelter bombing",
+            "victims_group": "Iraqi civilians in the Amiriyah/Ameriyya shelter, Baghdad",
+            "low": 408,
+            "high": 408,
+            "notes": "Included within the Iraqi civilian direct-death totals, not added separately in the side total.",
+            "sources": [
+              "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm"
+            ]
+          },
+          {
+            "cause": "reprisal killings, execution, torture deaths in custody",
+            "victims_group": "Palestinians, Bedoons, Iraqis and other suspected collaborators in post-liberation Kuwait",
+            "low": 40,
+            "high": 54,
+            "notes": "Middle East Watch documented over 40 extrajudicial killings and found records of 54 unidentified bodies at al-Rigga cemetery; scores may have been killed and many disappeared.",
+            "sources": [
+              "https://www.refworld.org/reference/annualreport/hrw/1992/96798"
+            ]
+          }
+        ],
+        "notes": "Point estimate uses Daponte/PDA 3,664 direct Iraqi civilian deaths plus 54 documented post-liberation Kuwait reprisal deaths. High uses Medact's 15,000 upper bound for Iraqi wartime civilian deaths plus 54 post-liberation killings.",
+        "sources": [
+          "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm",
+          "https://www.comw.org/pda/0310rm8ap2.html",
+          "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf",
+          "https://www.refworld.org/reference/annualreport/hrw/1992/96798"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "infrastructure_destruction",
+          "victims_group": "Iraqi civilians, especially children under five",
+          "low": 47000,
+          "high": 110000,
+          "point": 70000,
+          "notes": "Indirect/reverberating deaths from destruction of electricity, water, sewage, transport, health and food systems, interacting with sanctions and Iraqi government policy. NEJM/Harvard-linked work estimated more than 46,900 excess under-five deaths from January-August 1991; a commonly cited Daponte estimate is about 70,000 indirect deaths; Medact cites 110,000 Iraqi civilian deaths in 1991 from health effects of the war.",
+          "sources": [
+            "https://www.researchgate.net/publication/344544557_Effect_of_the_Gulf_War_on_Infant_and_Child_Mortality_in_Iraq_N_Engl_J_Med_1992_327931-936",
+            "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf",
+            "https://www.bloomberg.com/news/articles/2003-02-05/toting-the-casualties-of-war",
+            "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 20700,
+    "military_high": 121025,
+    "civilian_low": 61186,
+    "civilian_high": 213057,
+    "grand_low": 81886,
+    "grand_high": 334082,
+    "notes": "Grand totals include broad immediate-aftermath indirect deaths: coalition-attributed Iraqi public-health deaths, Iraqi-regime uprising repression deaths, and refugee deaths. A narrower direct wartime total excluding broad indirect and uprising/refugee aftermath is approximately 24,000-137,500 deaths. These totals intentionally preserve the wide uncertainty in Iraqi military deaths and indirect civilian mortality."
+  },
+  "key_atrocities": [
+    {
+      "name": "Iraqi occupation killings in Kuwait",
+      "year": 1990,
+      "perpetrator": "Iraq / Ba'athist Iraqi state",
+      "victims_group": "Kuwaiti civilians, stateless residents, foreign residents and other civilians",
+      "low": 600,
+      "high": 1500,
+      "notes": "Includes extrajudicial executions, torture deaths, disappearances and other direct killings under Iraqi occupation; exact enumeration remains uncertain.",
+      "sources": [
+        "https://www.refworld.org/reference/annualreport/hrw/1991/43631",
+        "https://www.amnesty.org/en/wp-content/uploads/2021/05/MDE140161990ENGLISH.pdf",
+        "https://www.latimes.com/archives/la-xpm-1993-03-20-mn-13194-story.html"
+      ]
+    },
+    {
+      "name": "Ameriyya / Amiriyah shelter bombing",
+      "year": 1991,
+      "perpetrator": "U.S.-led coalition including Kuwait",
+      "victims_group": "Iraqi civilians",
+      "low": 408,
+      "high": 408,
+      "notes": "U.S. aircraft struck a Baghdad shelter on February 13, 1991. The U.S. argued it was a military command facility; human-rights groups questioned targeting and precautions.",
+      "sources": [
+        "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm"
+      ]
+    },
+    {
+      "name": "Highway of Death",
+      "year": 1991,
+      "perpetrator": "U.S.-led coalition including Kuwait",
+      "victims_group": "Retreating Iraqi military personnel and possibly civilians in commandeered civilian vehicles",
+      "low": 800,
+      "high": 1000,
+      "notes": "PDA estimates 800-1,000 killed in the February 25-27 attacks; other estimates ranged far lower and far higher. Civilian/combatant separation is difficult because many civilian-type vehicles were commandeered by Iraqi forces.",
+      "sources": [
+        "https://www.comw.org/pda/0310rm8ap2.html"
+      ]
+    },
+    {
+      "name": "Iraqi Scud attacks on Israel and Saudi Arabia",
+      "year": 1991,
+      "perpetrator": "Iraq / Ba'athist Iraqi state",
+      "victims_group": "Israeli civilians, Saudi civilians, U.S. soldiers in Saudi Arabia",
+      "low": 31,
+      "high": 31,
+      "notes": "Over 80 Scuds caused 31 deaths overall: 28 U.S. soldiers, 2 direct Israeli civilian deaths, and 1 Saudi civilian death. Indirect Israeli deaths from gas-mask misuse and heart attacks are not included in the direct count.",
+      "sources": [
+        "https://dgi.umd.edu/sites/default/files/2019-08/1993-DACS-Scud.pdf"
+      ]
+    },
+    {
+      "name": "Suppression of 1991 Iraqi uprisings",
+      "year": 1991,
+      "perpetrator": "Iraq / Ba'athist Iraqi state",
+      "victims_group": "Iraqi civilians and rebels, especially Shi'a in the south and Kurds in the north",
+      "low": 20000,
+      "high": 35000,
+      "notes": "Immediate postwar violence after the ceasefire; included in broad Gulf War aftermath accounting but not in the narrow combat-campaign total.",
+      "sources": [
+        "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf"
+      ]
+    },
+    {
+      "name": "Post-liberation reprisals in Kuwait",
+      "year": 1991,
+      "perpetrator": "U.S.-led coalition including Kuwait",
+      "victims_group": "Palestinians, Bedoons, Iraqis and other suspected collaborators",
+      "low": 40,
+      "high": 54,
+      "notes": "Middle East Watch documented over 40 extrajudicial killings and found 54 unidentified bodies in al-Rigga cemetery records; disappearances suggest possible undercounting.",
+      "sources": [
+        "https://www.refworld.org/reference/annualreport/hrw/1992/96798"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is Iraqi military mortality: transparent operational reconstructions give 20,000-26,000, while older public-health/UN-derived summaries cite 50,000-120,000. Direct Iraqi civilian bombing deaths range from HRW's 2,500-3,000 to Daponte/PDA's 3,664 and Medact's broader 3,500-15,000. Indirect public-health deaths in Iraq are much larger but causally mixed among coalition infrastructure destruction, UN sanctions, Iraqi government decisions, relief constraints and prewar vulnerability. Kuwaiti occupation deaths and post-liberation reprisal deaths are also under-enumerated because of disappearances, POW/missing cases and inconsistent victim categories.",
+  "sources": [
+    {
+      "url": "https://www.comw.org/pda/0310rm8ap2.html",
+      "title": "Iraqi Combatant and Noncombatant Fatalities in the 1991 Gulf War",
+      "publisher": "Project on Defense Alternatives"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1991/gulfwar/INTRO.htm",
+      "title": "Needless Deaths in the Gulf War: Introduction and Summary of Conclusions",
+      "publisher": "Human Rights Watch / Middle East Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1991/gulfwar/",
+      "title": "Needless Deaths in the Gulf War",
+      "publisher": "Human Rights Watch / Middle East Watch"
+    },
+    {
+      "url": "https://dgi.umd.edu/sites/default/files/2019-08/1993-DACS-Scud.pdf",
+      "title": "Casualties and Damage from Scud Attacks in the 1991 Gulf War",
+      "publisher": "Defense and Arms Control Studies Program / MIT"
+    },
+    {
+      "url": "https://www.statewatch.org/media/documents/cia/documents/medact-Iraq-report-collateral-damage.pdf",
+      "title": "Collateral Damage: The Health and Environmental Costs of War on Iraq",
+      "publisher": "Medact"
+    },
+    {
+      "url": "https://www2.law.umaryland.edu/marshall/crsreports/crsdocuments/RL32492_05142008.pdf",
+      "title": "American War and Military Operations Casualties: Lists and Statistics",
+      "publisher": "Congressional Research Service"
+    },
+    {
+      "url": "https://www.britannica.com/event/Persian-Gulf-War",
+      "title": "Persian Gulf War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/hrw/1992/96798",
+      "title": "Human Rights Watch World Report 1992 - Kuwait",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/hrw/1991/43631",
+      "title": "Human Rights Watch World Report 1990 - Iraq and occupied Kuwait",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://www.amnesty.org/en/wp-content/uploads/2021/05/MDE140161990ENGLISH.pdf",
+      "title": "Iraq/Occupied Kuwait: Human rights violations since 2 August",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://kuwait-info.com/gulf-war-overview/impact-of-war/",
+      "title": "Impact of War",
+      "publisher": "Kuwait Information"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-LPS47807/pdf/GOVPUB-D301-PURL-LPS47807.pdf",
+      "title": "The USAF in the Persian Gulf War",
+      "publisher": "U.S. Air Force / GovInfo"
+    }
+  ]
+}

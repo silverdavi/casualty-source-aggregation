@@ -1,0 +1,408 @@
+{
+  "war_id": "second_sudanese_civil_war",
+  "name": "Second Sudanese Civil War",
+  "start_year": 1983,
+  "end_year": 2005,
+  "ongoing": false,
+  "regions": [
+    "Sudan",
+    "Southern Sudan",
+    "Bahr el Ghazal",
+    "Upper Nile",
+    "Equatoria",
+    "Nuba Mountains",
+    "Blue Nile"
+  ],
+  "summary": "The Second Sudanese Civil War was the 1983-2005 north-south war between the Government of Sudan and the SPLM/A, complicated by government-backed militias and SPLA factional splits. The war ended with the 2005 Comprehensive Peace Agreement and led to South Sudan's 2011 independence. The best-supported core death toll is about 2.0-2.13 million, mostly civilians dying indirectly from famine, disease, displacement, and relief obstruction rather than battle.",
+  "sides": [
+    {
+      "name": "Government of Sudan and aligned forces",
+      "members": [
+        "Government of Sudan",
+        "Sudan Armed Forces",
+        "Popular Defence Forces",
+        "Muraheleen",
+        "government-backed tribal militias",
+        "government-aligned southern militias",
+        "Janjaweed in overlapping Darfur conflict"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable source found disaggregates Government of Sudan military deaths. UCDP/PRIO-derived conflict-level battle deaths are reported as 61,528 for Sudan 1983-2005 in one survey table, while World Bank/UCDP annual values for 1989-2005 sum to 41,240; these are all-side battle-related deaths and include some civilians.",
+        "sources": [
+          "https://www.researchgate.net/publication/233603091_The_Conflict-Development_Nexus_A_Survey_of_Armed_Conflicts_in_Sub-Saharan_Africa_1980-2005",
+          "https://www.indexmundi.com/facts/sudan/indicator/VC.BTL.DETH"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing, scorched-earth attacks, executions, militia raids",
+            "victims_group": "southern civilians suspected of supporting SPLA",
+            "low": null,
+            "high": null,
+            "notes": "HRW documents these patterns but does not provide a comprehensive death count for the whole war.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+            ]
+          },
+          {
+            "cause": "one-sided violence",
+            "victims_group": "civilians in Sudan, heavily Darfur-related for 2004",
+            "low": 2593,
+            "high": 2593,
+            "notes": "UCDP Paper No. 3 lists Government of Sudan in 2004 with 2,593 civilians killed. This is an actor-year figure and not a full Second Sudanese Civil War total.",
+            "sources": [
+              "https://uu.diva-portal.org/smash/get/diva2%3A358870/FULLTEXT01.pdf"
+            ]
+          }
+        ],
+        "notes": "The overall direct civilian death toll caused by government and aligned forces is unknown. Available sources document widespread killing, bombardment, scorched earth, abduction, and militia raids but do not produce a comprehensive perpetrator-specific total.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+          "https://uu.diva-portal.org/smash/get/diva2%3A358870/FULLTEXT01.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "southern Sudanese civilians, especially Dinka civilians in Bahr el Ghazal",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Government and allied militia actions were central to famine-producing mechanisms, including raiding, asset-stripping, displacement, and relief obstruction. HRW says the 1998 famine affected 2.6 million people and that government/militia and opposition abuses caused or worsened it, but it does not assign a government-only death count.",
+          "sources": [
+            "https://www.hrw.org/reports/1999/sudan/",
+            "https://www.refworld.org/reference/countryrep/hrw/1999/en/91497"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "southern civilians displaced by scorched earth and counterinsurgency",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW documented government scorched-earth tactics, burning and looting villages, and relief restrictions; these contributed to the conflict's mostly indirect mortality but cannot be separated numerically from other causes and perpetrators.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+          ]
+        },
+        {
+          "type": "relief_obstruction",
+          "victims_group": "civilians dependent on Operation Lifeline Sudan and other relief",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW and U.S. government sources describe restrictions on relief and use of food as a weapon. No reliable government-only death count is available.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+            "https://www.justice.gov/file/289811/dl"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SPLM/A mainstream and allied anti-government forces",
+      "members": [
+        "Sudan People's Liberation Movement/Army",
+        "SPLA-Torit",
+        "SPLA-Mainstream",
+        "local allied anti-government forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable source found disaggregates SPLA military deaths. Available battle-death data are conflict-level and not side-specific.",
+        "sources": [
+          "https://www.researchgate.net/publication/233603091_The_Conflict-Development_Nexus_A_Survey_of_Armed_Conflicts_in_Sub-Saharan_Africa_1980-2005",
+          "https://www.indexmundi.com/facts/sudan/indicator/VC.BTL.DETH"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "one-sided violence",
+            "victims_group": "civilians in Sudan civil-war event data",
+            "low": 2662,
+            "high": 2662,
+            "notes": "A Konstanz One-Sided Violence dataset summary identifies SPLA as a leading perpetrator with 2,662 civilian victims in its Sudan civil-war corpus. This is a documented-event count, not a full mortality estimate.",
+            "sources": [
+              "https://academic.oup.com/view-large/542825874"
+            ]
+          },
+          {
+            "cause": "indiscriminate attacks, executions, forced recruitment, looting",
+            "victims_group": "civilians in rival SPLA faction or government-held areas",
+            "low": null,
+            "high": null,
+            "notes": "HRW documents these patterns but provides no comprehensive direct-death total.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+            ]
+          }
+        ],
+        "notes": "The full civilian death toll directly caused by SPLA mainstream forces is unknown. The SPLA is documented as a perpetrator of civilian abuses, but sources do not provide a comprehensive total.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+          "https://academic.oup.com/view-large/542825874"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "civilians in government garrison towns",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW states that SPLA-Torit besieged garrison towns and on some occasions used starvation of civilians as a method of combat. No reliable death count is available.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "southern civilians affected by food seizure, transport attacks, and relief diversion",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW found SPLA actions, including starving garrison towns and attacks on transport, contributed to famine. It does not provide a separable SPLA-only death count.",
+          "sources": [
+            "https://www.hrw.org/reports/1999/sudan/SUDAWEB2-09.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SPLA-Nasir, SPLA-United, SSIM/A, SSDF and other southern breakaway forces",
+      "members": [
+        "SPLA-Nasir",
+        "SPLA-United",
+        "South Sudan Independence Movement/Army",
+        "South Sudan Defence Forces",
+        "Anya-Nya II elements",
+        "Nuer White Army elements"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable source found disaggregates military deaths for SPLA-Nasir, SSDF, or other breakaway forces.",
+        "sources": [
+          "https://csf-sudan.org/wp-content/uploads/2021/10/c_806526-l_1-k_ucdp_special_bulletin_sudan.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Dinka civilians in Bor and Kongor districts",
+            "low": 2000,
+            "high": 2000,
+            "notes": "HRW reports that about 2,000 civilians perished in the 1991 Bor Massacre by SPLA-Nasir forces and associated raiders.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+            ]
+          }
+        ],
+        "notes": "At least 2,000 direct civilian deaths are documented for Bor; broader direct civilian killings by breakaway factions are not comprehensively counted.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+          "https://csf-sudan.org/wp-content/uploads/2021/10/c_806526-l_1-k_ucdp_special_bulletin_sudan.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Dinka civilians displaced after Bor raids",
+          "low": 25000,
+          "high": null,
+          "point": null,
+          "notes": "Secondary summaries report about 25,000 additional famine deaths after the Bor massacre due to displacement and cattle loss. This figure is less secure than HRW's direct-death figure.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Bor_massacre",
+            "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+          ]
+        },
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "civilians in rival factional territories",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW and UCDP document ethnic targeting and factional attacks, but no complete death count is available.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+            "https://csf-sudan.org/wp-content/uploads/2021/10/c_806526-l_1-k_ucdp_special_bulletin_sudan.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 2000000,
+    "civilian_high": 2127337,
+    "grand_low": 2000000,
+    "grand_high": 2127337,
+    "notes": "Core narrow north-south Second Sudanese Civil War total. CFR gives about 2,000,000 deaths. A mortality reconstruction summarized in Global Burden of Armed Violence gives 1,700,000 deaths for 1983-1998 plus 427,337 excess deaths for 1999-2005, totaling 2,127,337. Military deaths cannot be separated and are embedded in the total. Darfur 2003-2005 is excluded from this core rollup; including it would add roughly 142,000-200,000 additional deaths but would mix in a distinct overlapping conflict."
+  },
+  "key_atrocities": [
+    {
+      "name": "1988 Bahr el Ghazal famine",
+      "year": 1988,
+      "perpetrator": "Government of Sudan and aligned militias; broader war conditions",
+      "victims_group": "Bahr el Ghazal civilians, especially Dinka communities",
+      "low": 250000,
+      "high": 250000,
+      "notes": "HRW references the 1988 Bahr el Ghazal famine as killing an estimated 250,000 people. Attribution is to famine conditions shaped by war, raiding, displacement, and asset-stripping.",
+      "sources": [
+        "https://www.hrw.org/reports/1999/sudan/",
+        "https://en.wikipedia.org/wiki/1988_Sudan_famine"
+      ]
+    },
+    {
+      "name": "Bor Massacre",
+      "year": 1991,
+      "perpetrator": "SPLA-Nasir and associated raiders",
+      "victims_group": "Dinka civilians in Bor and Kongor",
+      "low": 2000,
+      "high": 2000,
+      "notes": "HRW reports about 2,000 civilians perished in raids that became known as the Bor Massacre.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+      ]
+    },
+    {
+      "name": "Post-Bor famine and displacement",
+      "year": 1991,
+      "perpetrator": "SPLA-Nasir and associated raiders",
+      "victims_group": "Displaced Dinka civilians",
+      "low": 25000,
+      "high": null,
+      "notes": "Secondary accounts report about 25,000 additional famine deaths after cattle were stolen or killed and civilians were displaced. This is less securely documented than the direct Bor massacre figure.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bor_massacre",
+        "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf"
+      ]
+    },
+    {
+      "name": "1998 Bahr el Ghazal famine",
+      "year": 1998,
+      "perpetrator": "Government of Sudan and aligned militias; SPLA and opposition forces also contributed",
+      "victims_group": "Southern Sudanese civilians, especially Dinka civilians",
+      "low": 70000,
+      "high": null,
+      "notes": "HRW says the famine affected 2.6 million people and that government/militia and opposition abuses caused or worsened it; other HRW commentary later described the toll as between 70,000 and several hundred thousand.",
+      "sources": [
+        "https://www.hrw.org/news/2014/08/15/famine-crimes-south-sudan",
+        "https://www.hrw.org/reports/1999/sudan/"
+      ]
+    },
+    {
+      "name": "Southern Sudan excess mortality, 1999-2005",
+      "year": null,
+      "perpetrator": "All parties through war, famine, displacement, and relief obstruction",
+      "victims_group": "Civilians in Upper Nile, Bahr el Ghazal, and Equatoria",
+      "low": 427337,
+      "high": 427337,
+      "notes": "Bijleveld, Degomme, and Mehlbaum estimate 427,337 excess deaths in 1999-2005, with only 1,381 coded as direct violent deaths.",
+      "sources": [
+        "https://ageoftransformation.org/content/files/2019/08/gbav08-ch2.pdf"
+      ]
+    },
+    {
+      "name": "Darfur 2003-2005 overlap",
+      "year": 2003,
+      "perpetrator": "Government of Sudan and Janjaweed",
+      "victims_group": "Fur, Zaghawa, Masalit, and other Darfuri civilians",
+      "low": 142000,
+      "high": 200000,
+      "notes": "Usually treated as a distinct overlapping conflict, not part of the narrow north-south Second Sudanese Civil War total. Epidemiological summaries give 142,000 total deaths in 2003-2005; USHMM gives 200,000 deaths and 2 million forced displacement for the genocide phase.",
+      "sources": [
+        "https://direct.mit.edu/daed/article/146/1/139/27137/The-Epidemiologic-Challenge-to-the-Conduct-of-Just",
+        "https://encyclopedia.ushmm.org/content/en/article/darfur"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The biggest uncertainty is perpetrator attribution, not the broad scale. The best-supported core total is about 2.0-2.13 million, overwhelmingly civilians and overwhelmingly indirect deaths. Military deaths are not separable by side. Direct civilian-death datasets undercount southern Sudan because reporting access was poor. Darfur overlaps chronologically with 2003-2005 but is usually treated separately; including it would add roughly 142,000-200,000 deaths to the broader Sudan war complex.",
+  "sources": [
+    {
+      "url": "https://www.hrw.org/reports/pdfs/s/sudan/sudan946.pdf",
+      "title": "Civilian Devastation: Abuses by All Parties in the War in Southern Sudan",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1999/sudan/",
+      "title": "Famine in Sudan, 1998: The Human Rights Causes",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://ageoftransformation.org/content/files/2019/08/gbav08-ch2.pdf",
+      "title": "Global Burden of Armed Violence, Chapter 2: Indirect Conflict Deaths",
+      "publisher": "Geneva Declaration / Small Arms Survey"
+    },
+    {
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/power-struggle-sudan",
+      "title": "Civil War in Sudan",
+      "publisher": "Council on Foreign Relations"
+    },
+    {
+      "url": "https://www.indexmundi.com/facts/sudan/indicator/VC.BTL.DETH",
+      "title": "Sudan - Battle-related deaths (number of people)",
+      "publisher": "IndexMundi / World Bank / UCDP"
+    },
+    {
+      "url": "https://www.researchgate.net/publication/233603091_The_Conflict-Development_Nexus_A_Survey_of_Armed_Conflicts_in_Sub-Saharan_Africa_1980-2005",
+      "title": "The Conflict-Development Nexus: A Survey of Armed Conflicts in Sub-Saharan Africa 1980-2005",
+      "publisher": "ResearchGate-hosted academic paper"
+    },
+    {
+      "url": "https://csf-sudan.org/wp-content/uploads/2021/10/c_806526-l_1-k_ucdp_special_bulletin_sudan.pdf",
+      "title": "UCDP Bulletin Special: Organized Violence During Bashir",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://uu.diva-portal.org/smash/get/diva2%3A358870/FULLTEXT01.pdf",
+      "title": "UCDP Paper No. 3: Revisiting One-sided Violence",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://www.justice.gov/file/289811/dl",
+      "title": "U.S. Commission report discussing Sudan civil war and atrocities",
+      "publisher": "U.S. Department of Justice archive / USCIRF-related report"
+    },
+    {
+      "url": "https://www.ushmm.org/genocide-prevention/countries/sudan/sudan",
+      "title": "Sudan, A Case Study",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/darfur",
+      "title": "Darfur",
+      "publisher": "United States Holocaust Memorial Museum Holocaust Encyclopedia"
+    },
+    {
+      "url": "https://direct.mit.edu/daed/article/146/1/139/27137/The-Epidemiologic-Challenge-to-the-Conduct-of-Just",
+      "title": "The Epidemiologic Challenge to the Conduct of Just War: Confronting Indirect Civilian Casualties of War",
+      "publisher": "Daedalus / MIT Press"
+    },
+    {
+      "url": "https://www.gao.gov/products/gao-07-24",
+      "title": "Darfur Crisis: Death Estimates Demonstrate Severity of Crisis, but Their Accuracy and Credibility Could Be Enhanced",
+      "publisher": "U.S. Government Accountability Office"
+    }
+  ]
+}

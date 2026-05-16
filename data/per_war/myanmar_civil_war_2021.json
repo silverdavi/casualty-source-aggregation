@@ -1,0 +1,439 @@
+{
+  "war_id": "myanmar_civil_war_2021",
+  "name": "Myanmar civil war (post-2021 coup)",
+  "start_year": 2021,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Myanmar",
+    "Southeast Asia"
+  ],
+  "summary": "Myanmar\u2019s post-2021 coup civil war began after the Tatmadaw overthrew the elected government on 1 February 2021, violently suppressed protests, and triggered nationwide armed resistance by PDFs, local defense forces, and ethnic armed organizations. By January 2026, ACLED recorded nearly 93,000 fatalities, but public data do not cleanly split these deaths by side or civilian/combatant status. The junta is responsible for the overwhelming majority of verified direct civilian killings, while anti-junta forces have also killed civilians, especially alleged collaborators and, in Rakhine, Rohingya civilians.",
+  "sides": [
+    {
+      "name": "Myanmar military junta / State Administration Council",
+      "members": [
+        "Tatmadaw",
+        "Myanmar Police Force",
+        "Border Guard Forces",
+        "Pyu Saw Htee militias",
+        "other pro-military militias"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No independently verified cumulative 2021-2026 junta combatant death total was found. The NUG Ministry of Defence claimed 14,093 junta/security deaths and 7,363 injured in 2024 military reporting, but this is a partisan claim and was criticized as methodologically opaque.",
+        "sources": [
+          "https://eng.mizzima.com/2025/01/22/18468",
+          "https://eng.mizzima.com/2025/01/07/18046",
+          "https://asiatimes.com/2025/01/myanmars-nug-cooks-the-books-on-resistance-success/",
+          "https://www.linkedin.com/posts/acleddata_myanmar-acled-activity-7424073603547172865-1gbA"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7646,
+        "high": null,
+        "point": 7747,
+        "breakdown": [
+          {
+            "cause": "airstrikes, drone strikes, paramotor/gyrocopter attacks",
+            "victims_group": "civilians nationwide",
+            "low": 982,
+            "high": null,
+            "notes": "OHCHR verified 982 civilian deaths from airstrikes in 2025 alone, including 232 children and 368 women. ACLED recorded more than 6,300 military air and drone strikes causing at least 4,700 fatalities from 1 February 2021 to 23 January 2026, but ACLED\u2019s figure is not civilian-only.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf",
+              "https://www.linkedin.com/posts/acleddata_myanmar-acled-activity-7424073603547172865-1gbA"
+            ]
+          },
+          {
+            "cause": "massacres",
+            "victims_group": "civilians",
+            "low": 1776,
+            "high": null,
+            "notes": "ISP-Myanmar recorded 91 civilian massacres by junta forces killing 1,776 civilians from 1 February 2021 to 9 December 2025.",
+            "sources": [
+              "https://ispmyanmar.com/cst-02/"
+            ]
+          },
+          {
+            "cause": "protest repression",
+            "victims_group": "anti-coup protesters and bystanders",
+            "low": 884,
+            "high": null,
+            "notes": "PRIO reports that AAPP identified 884 protest-related killings by security forces in the early post-coup period.",
+            "sources": [
+              "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf"
+            ]
+          },
+          {
+            "cause": "detention, torture, extrajudicial killing",
+            "victims_group": "detainees and political prisoners",
+            "low": 2237,
+            "high": null,
+            "notes": "OHCHR verified 2,237 deaths in military custody since the coup; some of these deaths may overlap with direct-civilian-killing totals.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+            ]
+          }
+        ],
+        "notes": "OHCHR gives a minimum of 7,646 civilians killed at the hands of the military since the coup; AAPP reported 7,747 pro-democracy activists and civilians killed by the junta and pro-military groups as of 4 February 2026. True totals are higher because thousands of reported deaths remain unverified.",
+        "sources": [
+          "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf",
+          "https://aappb.org/daily-briefing-in-relation-to-the-military-coup-1283/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "political prisoners and detainees",
+          "low": 2237,
+          "high": null,
+          "point": 2237,
+          "notes": "Verified deaths in military custody since the coup, caused by torture, denial of care, prison conditions, and related custody abuses; overlap with direct-killing figures is possible.",
+          "sources": [
+            "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+          ]
+        },
+        {
+          "type": "blockade",
+          "victims_group": "conflict-affected civilians needing humanitarian assistance",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Deaths from aid denial, health collapse, food insecurity, and displacement are not credibly quantified. The UN estimates over 16 million people need life-saving humanitarian assistance/protection in 2026; WFP says more than 12 million face acute hunger and displacement may rise from 3.6 million to 4 million.",
+          "sources": [
+            "https://myanmar.un.org/en/306830-conflict-fuels-suffering-myanmar-un-publishes-humanitarian-report-forecasting-most-urgent",
+            "https://www.wfp.org/news/wfp-warns-myanmar-faces-rising-displacement-and-unacceptable-hunger-levels-2026"
+          ]
+        },
+        {
+          "type": "scorched_earth",
+          "victims_group": "rural civilians, especially in Sagaing and central Myanmar",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Deaths from arson/destruction are not separately quantified. HRW reported more than 100,000 homes burned by the military from May 2021 to August 2024.",
+          "sources": [
+            "https://www.hrw.org/world-report/2025/country-chapters/myanmar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anti-junta forces",
+      "members": [
+        "National Unity Government",
+        "People\u2019s Defence Forces",
+        "local defense forces",
+        "Karen National Union / Karen National Liberation Army",
+        "Kachin Independence Army",
+        "Karenni Nationalities Defense Force",
+        "Chin National Front / Chin National Army",
+        "Arakan Army",
+        "Myanmar National Democratic Alliance Army",
+        "Ta\u2019ang National Liberation Army",
+        "other ethnic armed organizations and allied resistance groups"
+      ],
+      "military_killed": {
+        "low": 5005,
+        "high": null,
+        "point": 5005,
+        "notes": "SRD/Mizzima reported 5,005 revolutionary-force deaths from the coup to 18 January 2025, including 1,144 in 2024. This is a documented subset and likely excludes some EAO losses.",
+        "sources": [
+          "https://eng.mizzima.com/2025/01/22/18468"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2332,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "targeted killings",
+            "victims_group": "alleged informants, local administrators, USDP members, civil servants, religious personnel and other alleged collaborators",
+            "low": 2152,
+            "high": null,
+            "notes": "PRIO attributed 2,152 reported civilian killings to armed opponents of the coup from 1 February 2021 to 30 September 2022. No comparable nationwide post-2022 aggregate was found.",
+            "sources": [
+              "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf"
+            ]
+          },
+          {
+            "cause": "drone strikes and shelling",
+            "victims_group": "Rohingya civilians fleeing Maungdaw/Naf River area",
+            "low": 180,
+            "high": 180,
+            "notes": "HRW\u2019s 2025 World Report states approximately 180 people were reportedly killed following drone strikes and shelling on civilians fleeing Maungdaw on 5 August 2024; survivors and Rohingya sources blamed the Arakan Army, which denied attacking civilians.",
+            "sources": [
+              "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
+              "https://www.hrw.org/news/2024/08/12/myanmar-armies-target-ethnic-rohingya-rakhine"
+            ]
+          },
+          {
+            "cause": "attacks on civilian officials and suspected sympathizers",
+            "victims_group": "administrators, election officials, family members, civilians, religious personnel",
+            "low": null,
+            "high": null,
+            "notes": "OHCHR reported at least 169 incidents claimed by anti-military groups in 2025 involving attacks on local administrators, family members, civilians and religious personnel, but did not publish a death total.",
+            "sources": [
+              "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+            ]
+          }
+        ],
+        "notes": "No current comprehensive nationwide aggregate exists. The low estimate combines PRIO\u2019s first-20-month figure with the separately reported 2024 Maungdaw/Naf River mass-casualty incident and is almost certainly incomplete.",
+        "sources": [
+          "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf",
+          "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
+          "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Rohingya civilians in Buthidaung and Maungdaw, Rakhine State",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Deaths from displacement and access restrictions are not separately quantified. HRW reported Arakan Army operations and arson displaced an estimated 70,000 people from Buthidaung in May 2024.",
+          "sources": [
+            "https://www.hrw.org/news/2024/08/12/myanmar-armies-target-ethnic-rohingya-rakhine"
+          ]
+        },
+        {
+          "type": "forced_recruitment",
+          "victims_group": "youth and civilians in areas under EAO or anti-military armed-group control",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "OHCHR reported forced recruitment concerns by anti-military armed groups, especially in Kachin, Shan and Rakhine, but did not quantify deaths.",
+          "sources": [
+            "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+          ]
+        },
+        {
+          "type": "landmine",
+          "victims_group": "civilians in contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Anti-military armed groups reportedly used anti-personnel landmines and remote-detonated roadside bombs. Myanmar had 889 documented civilian casualties from landmines and explosive remnants in the first nine months of 2024, but public sources do not cleanly attribute deaths by side.",
+          "sources": [
+            "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
+            "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 5005,
+    "military_high": null,
+    "civilian_low": 9978,
+    "civilian_high": null,
+    "grand_low": 93000,
+    "grand_high": null,
+    "notes": "ACLED recorded nearly 93,000 fatalities from 1 February 2021 to 23 January 2026; this is the best all-fatalities benchmark but is not a clean roll-up from side-specific military/civilian buckets. The civilian_low of 9,978 is a conservative additive floor from OHCHR's 7,646 military-attributed civilian deaths plus at least 2,332 attributed to anti-junta actors; true civilian and indirect totals are higher. military_low includes only documented anti-junta combatant deaths because no independently verified junta combatant total was found."
+  },
+  "key_atrocities": [
+    {
+      "name": "Hlaing Tharyar massacre",
+      "year": 2021,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "anti-coup protesters and civilians",
+      "low": 65,
+      "high": null,
+      "notes": "Military and police killed at least 65 people in Hlaing Tharyar on 14 March 2021.",
+      "sources": [
+        "https://www.hrw.org/news/2021/12/02/myanmar-protesters-targeted-march-massacre",
+        "https://wp.progressivevoicemyanmar.org/wp-content/uploads/2022/03/2022-03-24-FR_Nowherer-is-Safe-Fortify-Rights-Report-en.pdf"
+      ]
+    },
+    {
+      "name": "Bago massacre",
+      "year": 2021,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "anti-coup protesters and civilians",
+      "low": 82,
+      "high": null,
+      "notes": "Security forces killed at least 82 people in Bago on 9 April 2021.",
+      "sources": [
+        "https://www.hrw.org/news/2021/07/31/myanmar-coup-leads-crimes-against-humanity",
+        "https://www.info-res.org/myanmar-witness/reports/violence-against-protestors-in-bago/"
+      ]
+    },
+    {
+      "name": "Moso / Hpruso Christmas Eve massacre",
+      "year": 2021,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "civilians and aid workers",
+      "low": 30,
+      "high": null,
+      "notes": "More than 30 people, including two Save the Children staff, were killed in Kayah State on Christmas Eve 2021.",
+      "sources": [
+        "https://www.axios.com/2021/12/26/myanmar-army-kill-aid-group"
+      ]
+    },
+    {
+      "name": "Let Yet Kone school attack",
+      "year": 2022,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "schoolchildren, teachers and villagers",
+      "low": 13,
+      "high": null,
+      "notes": "Military helicopters attacked a school and village, killing at least 13 people including seven children; UNICEF later cited 11 children killed.",
+      "sources": [
+        "https://www.theguardian.com/world/2022/sep/20/myanmar-seven-children-killed-in-junta-strike-on-village-school",
+        "https://www.independent.co.uk/asia/southeast-asia/myanmar-junta-deadliest-school-attack-b2172026.html"
+      ]
+    },
+    {
+      "name": "Hpakant / A Nang Pa concert airstrike",
+      "year": 2022,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "concertgoers, Kachin civilians, entertainers and KIO/KIA personnel",
+      "low": 80,
+      "high": 80,
+      "notes": "Military airstrikes killed as many as 80 people at a KIO anniversary concert in Hpakant.",
+      "sources": [
+        "https://thediplomat.com/2022/10/airstrikes-on-concert-in-northern-myanmar-kill-80-reports-say/",
+        "https://www.hrw.org/breaking-news/2022/10/25/myanmar-junta-airstrike-apparent-laws-war-violation"
+      ]
+    },
+    {
+      "name": "Pa Zi Gyi / Pazigyi airstrike",
+      "year": 2023,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "civilians at opposition-linked ceremony",
+      "low": 160,
+      "high": null,
+      "notes": "HRW found the military used a thermobaric/enhanced-blast munition in an attack that killed more than 160 people, including children.",
+      "sources": [
+        "https://www.hrw.org/news/2023/05/09/myanmar-enhanced-blast-strike-likely-war-crime"
+      ]
+    },
+    {
+      "name": "Buthidaung and Maungdaw Rohingya attacks",
+      "year": 2024,
+      "perpetrator": "Arakan Army and Myanmar military junta / allied Rohingya armed groups in related incidents",
+      "victims_group": "Rohingya and Rakhine civilians",
+      "low": 180,
+      "high": 180,
+      "notes": "HRW reported atrocities by both junta forces and the Arakan Army in Rakhine; roughly 180 people were reportedly killed following drone strikes and shelling on civilians fleeing Maungdaw on 5 August 2024. The Arakan Army denied attacking civilians.",
+      "sources": [
+        "https://www.hrw.org/news/2024/08/12/myanmar-armies-target-ethnic-rohingya-rakhine",
+        "https://www.hrw.org/world-report/2025/country-chapters/myanmar"
+      ]
+    },
+    {
+      "name": "Kyauk Ni Maw market airstrike",
+      "year": 2025,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "civilians in Ramree Township, Rakhine State",
+      "low": 41,
+      "high": 41,
+      "notes": "OHCHR reported 41 civilians killed, including 12 women and seven children, in a military bombing of a Muslim village market.",
+      "sources": [
+        "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+      ]
+    },
+    {
+      "name": "Oe Htein Kwin school airstrike",
+      "year": 2025,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "students and teachers",
+      "low": 24,
+      "high": 24,
+      "notes": "OHCHR reported 22 students and two female teachers killed when a military aircraft bombed a high school during class hours.",
+      "sources": [
+        "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+      ]
+    },
+    {
+      "name": "Mrauk-U hospital airstrike",
+      "year": 2025,
+      "perpetrator": "Myanmar military junta",
+      "victims_group": "patients, medical staff and civilians",
+      "low": 33,
+      "high": null,
+      "notes": "OHCHR reported at least 33 civilians killed and over 70 injured when military planes struck Mrauk-U general hospital on 10 December 2025.",
+      "sources": [
+        "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The major uncertainty is not whether the toll is catastrophic, but how to allocate deaths by side and category. ACLED provides a high all-fatalities benchmark of nearly 93,000 through 23 January 2026, while OHCHR/AAPP provide verified junta-attributed civilian counts around 7,646-7,747. Anti-junta civilian killings are systematically counted only for the first 20 months by PRIO; later incidents are documented qualitatively or event-by-event. No credible nationwide indirect-death estimate exists despite massive displacement, hunger, health collapse and aid-denial risks.",
+  "sources": [
+    {
+      "url": "https://www.linkedin.com/posts/acleddata_myanmar-acled-activity-7424073603547172865-1gbA",
+      "title": "ACLED post: Nearly 93,000 fatalities since February 2021",
+      "publisher": "ACLED"
+    },
+    {
+      "url": "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf",
+      "title": "Annual update on the Human Rights Situation in Myanmar",
+      "publisher": "Office of the UN High Commissioner for Human Rights"
+    },
+    {
+      "url": "https://aappb.org/daily-briefing-in-relation-to-the-military-coup-1283/",
+      "title": "Daily Briefing in Relation to the Military Coup, 4 February 2026",
+      "publisher": "Assistance Association for Political Prisoners"
+    },
+    {
+      "url": "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf",
+      "title": "Counting Myanmar\u2019s Dead: Reported Civilian Casualties since the 2021 Military Coup",
+      "publisher": "Peace Research Institute Oslo / Every Casualty Counts"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
+      "title": "World Report 2025: Myanmar",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2024/08/12/myanmar-armies-target-ethnic-rohingya-rakhine",
+      "title": "Myanmar: Armies Target Ethnic Rohingya, Rakhine",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://myanmar.un.org/en/306830-conflict-fuels-suffering-myanmar-un-publishes-humanitarian-report-forecasting-most-urgent",
+      "title": "As conflict fuels suffering in Myanmar, UN publishes humanitarian report forecasting most urgent needs for 2026",
+      "publisher": "United Nations in Myanmar / OCHA"
+    },
+    {
+      "url": "https://www.wfp.org/news/wfp-warns-myanmar-faces-rising-displacement-and-unacceptable-hunger-levels-2026",
+      "title": "WFP warns that Myanmar faces rising displacement and unacceptable hunger levels in 2026",
+      "publisher": "World Food Programme"
+    },
+    {
+      "url": "https://eng.mizzima.com/2025/01/22/18468",
+      "title": "Toll on revolutionary forces mounts in Myanmar",
+      "publisher": "Mizzima"
+    },
+    {
+      "url": "https://eng.mizzima.com/2025/01/07/18046",
+      "title": "NUG statement on the 2024 Military Progress Report and achievements of the People's Spring Revolution",
+      "publisher": "Mizzima / National Unity Government statement"
+    },
+    {
+      "url": "https://asiatimes.com/2025/01/myanmars-nug-cooks-the-books-on-resistance-success/",
+      "title": "Myanmar\u2019s NUG cooks the books on resistance success",
+      "publisher": "Asia Times"
+    },
+    {
+      "url": "https://ispmyanmar.com/cst-02/",
+      "title": "95 Civilian Massacres Recorded Since the Coup",
+      "publisher": "ISP-Myanmar"
+    },
+    {
+      "url": "https://www.hrw.org/news/2023/05/09/myanmar-enhanced-blast-strike-likely-war-crime",
+      "title": "Myanmar: Enhanced Blast Strike Likely War Crime",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/breaking-news/2022/10/25/myanmar-junta-airstrike-apparent-laws-war-violation",
+      "title": "Myanmar Junta Airstrike Apparent Laws-of-War Violation",
+      "publisher": "Human Rights Watch"
+    }
+  ]
+}

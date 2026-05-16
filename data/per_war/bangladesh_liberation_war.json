@@ -1,0 +1,306 @@
+{
+  "war_id": "bangladesh_liberation_war",
+  "name": "Bangladesh Liberation War / 1971 genocide",
+  "start_year": 1971,
+  "end_year": 1971,
+  "ongoing": false,
+  "regions": [
+    "East Pakistan",
+    "Bangladesh",
+    "India-Pakistan eastern and western fronts"
+  ],
+  "summary": "The Bangladesh Liberation War began after the Pakistan Army launched Operation Searchlight in East Pakistan in March 1971 and ended with the surrender of Pakistani forces in Dhaka on 16 December 1971. The conflict created Bangladesh and involved mass civilian killings, sexual violence, displacement of roughly 10 million refugees into India, and direct Indian military intervention in December. Death tolls remain highly contested, ranging from Pakistan's roughly 26,000 figure to Bangladesh's official 3 million figure; scholarly estimates often fall between several hundred thousand and over one million.",
+  "sides": [
+    {
+      "name": "Pakistan state and pro-Pakistan auxiliaries",
+      "members": [
+        "Pakistan Armed Forces",
+        "Pakistan Eastern Command",
+        "Razakars",
+        "Al-Badr",
+        "Al-Shams",
+        "Shanti Committees",
+        "pro-Pakistan local collaborators"
+      ],
+      "military_killed": {
+        "low": 5866,
+        "high": 9000,
+        "point": null,
+        "notes": "Covers Pakistani armed-forces deaths in the 1971 war; collaborator militia deaths are not reliably separated. Lower figure is a commonly cited estimate; higher figure appears in military-casualty summaries for Army, Navy and Air Force.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War",
+          "https://liberationwarbangladesh.org/?p=9727"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 26000,
+        "high": 3000000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "Operation Searchlight and early urban massacres",
+            "victims_group": "Bengali civilians, students, political activists, Hindus and other civilians in Dhaka and other cities",
+            "low": 50000,
+            "high": null,
+            "notes": "Banglapedia estimates more than 50,000 killed in Dhaka, Chittagong, Jessore, Mymensingh, Kushtia and other cities within the first three days beginning 25 March 1971. This is an event estimate and may overlap with broader death totals.",
+            "sources": [
+              "https://en.banglapedia.org/index.php?title=Genocide%2C_1971"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Bengali Hindu refugees/civilians at Chuknagar",
+            "low": 10000,
+            "high": 12000,
+            "notes": "Local estimates for the 20 May 1971 Chuknagar massacre; exact number disputed.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Chuknagar_massacre"
+            ]
+          },
+          {
+            "cause": "targeted execution",
+            "victims_group": "Bengali intellectuals, professionals, teachers, journalists, doctors, lawyers, writers and engineers",
+            "low": 200,
+            "high": 1111,
+            "notes": "Banglapedia says over 200 intellectuals were abducted in Dhaka on 14 December 1971; traced nationwide categories include 991 educationists, 13 journalists, 49 physicians, 42 lawyers, 9 litterateurs/artists, 5 engineers and 2 others. Other early compilations cite about 1,070.",
+            "sources": [
+              "https://en.banglapedia.org/index.php?title=Killing_of_Intellectuals",
+              "https://www.dhakatribune.com/amp/bangladesh/286127/bangladesh-pays-rich-tribute-to-martyred"
+            ]
+          },
+          {
+            "cause": "mass killings, shelling, executions, village destruction and anti-Hindu/anti-Awami League terror",
+            "victims_group": "Bengali civilians across East Pakistan",
+            "low": 26000,
+            "high": 3000000,
+            "notes": "Aggregate range from Pakistan GHQ/Hamoodur Rahman Commission low figure to Bangladesh official national figure; includes many incidents and may include overlapping categories.",
+            "sources": [
+              "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1971War/hamoodur.pdf",
+              "https://www.britannica.com/event/Bangladesh-Liberation-War",
+              "https://en.banglapedia.org/index.php?title=Genocide%2C_1971"
+            ]
+          }
+        ],
+        "notes": "The range is extremely contested. The low end is the Pakistan GHQ/Hamoodur Rahman figure; the high end is Bangladesh's official 3 million figure. Scholarly estimates often avoid a clean direct/indirect split.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1971War/hamoodur.pdf",
+          "https://www.britannica.com/event/Bangladesh-Liberation-War",
+          "https://en.banglapedia.org/index.php?title=Genocide%2C_1971",
+          "https://www.cambridge.org/core/books/abs/civilianization-of-war/east-pakistanbangladesh-19711972-how-many-victims-who-and-why/A133E09382910B5E4332412FAD212721"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Bangladeshi refugees in India",
+          "low": 323562,
+          "high": 802268,
+          "point": 562915,
+          "notes": "Estimated excess deaths among roughly 9.9 million refugees in Indian camps due to elevated mortality from disease, malnutrition, overcrowding and poor camp conditions caused by flight from the war; 95% confidence interval 323,562\u2013802,268.",
+          "sources": [
+            "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0320760"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "internally displaced and rural civilians inside East Pakistan/Bangladesh",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Gerlach argues rural dwellers were heavily affected by conflict-related famine and that 16\u201317 million people were internally displaced, but the accessible summary does not provide a separable death total for this category.",
+          "sources": [
+            "https://www.cambridge.org/core/books/abs/civilianization-of-war/east-pakistanbangladesh-19711972-how-many-victims-who-and-why/A133E09382910B5E4332412FAD212721"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bangladesh/India joint side",
+      "members": [
+        "Provisional Government of Bangladesh",
+        "Mukti Bahini",
+        "Bangladesh Forces",
+        "Indian Armed Forces",
+        "Bengali nationalist militias and mobs"
+      ],
+      "military_killed": {
+        "low": 6213,
+        "high": 33843,
+        "point": null,
+        "notes": "Low adds 3,713 Bangladeshi armed-forces dead from Bangladesh defence-ministry statistics to a low estimate of 2,500 Indian military dead. High adds a broader Mukti Bahini/Bangladesh Liberation Army estimate of about 30,000 killed to 3,843 Indian military dead. Categories overlap and are not standardized.",
+        "sources": [
+          "https://www.thedailystar.net/news-detail-77080",
+          "https://twocircles.net/2009feb23/over_3_700_troops_killed_bangladeshs_liberation_war.html",
+          "https://liberationwarbangladesh.org/?p=9727",
+          "https://en.wikipedia.org/wiki/India%E2%80%93Pakistan_war_of_1971"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1000,
+        "high": 150000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "reprisal killings and massacres",
+            "victims_group": "Bihari/Urdu-speaking non-Bengali civilians and alleged collaborators",
+            "low": 1000,
+            "high": 150000,
+            "notes": "Range from Minorities at Risk low estimate to Rummel-derived high estimate; attribution varies among Mukti Bahini fighters, Bengali mobs, local militias and postwar revenge attacks.",
+            "sources": [
+              "https://www.ghrd.org/the-biharis-in-bangladesh-a-reflection-on-violence-victimhood-conflict/",
+              "https://en.wikipedia.org/wiki/Bangladesh_genocide"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Bihari and other non-Bengali civilians at Santahar",
+            "low": null,
+            "high": 15000,
+            "notes": "Santahar is alleged to have involved thousands of non-Bengali/Bihari deaths; some secondary summaries report allegations of about 15,000 killed, but the figure is disputed and not treated here as a firm point estimate.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Santahar_massacre",
+              "https://en.wikipedia.org/wiki/Mukti_Bahini"
+            ]
+          }
+        ],
+        "notes": "Bihari/non-Bengali deaths are among the most disputed parts of the war's casualty record. The best usable range found here is 1,000\u2013150,000, with no reliable point estimate.",
+        "sources": [
+          "https://www.ghrd.org/the-biharis-in-bangladesh-a-reflection-on-violence-victimhood-conflict/",
+          "https://www.britannica.com/event/Bangladesh-Liberation-War"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 12079,
+    "military_high": 42843,
+    "civilian_low": 350562,
+    "civilian_high": 3952268,
+    "grand_low": 362641,
+    "grand_high": 3995111,
+    "notes": "Mechanical roll-up: Pakistan military 5,866\u20139,000 plus Bangladesh/India military 6,213\u201333,843; Pakistan direct civilian deaths 26,000\u20133,000,000 plus refugee excess deaths 323,562\u2013802,268 plus Bangladesh-side Bihari/non-Bengali direct deaths 1,000\u2013150,000. The high-end civilian and grand totals likely double-count because Bangladesh's 3,000,000 figure may already include indirect/displacement deaths. The most common non-additive headline range remains roughly 300,000\u20133,000,000 total deaths, while Gerlach argues for 500,000\u20131,000,000 overall."
+  },
+  "key_atrocities": [
+    {
+      "name": "Operation Searchlight and first three days of urban massacres",
+      "year": 1971,
+      "perpetrator": "Pakistan state and pro-Pakistan auxiliaries",
+      "victims_group": "Bengali civilians, students, political activists, Hindus and other civilians",
+      "low": 50000,
+      "high": null,
+      "notes": "Banglapedia estimates more than 50,000 killed in Dhaka, Chittagong, Jessore, Mymensingh, Kushtia and other cities within the first three days beginning 25 March 1971.",
+      "sources": [
+        "https://en.banglapedia.org/index.php?title=Genocide%2C_1971"
+      ]
+    },
+    {
+      "name": "Chuknagar massacre",
+      "year": 1971,
+      "perpetrator": "Pakistan state and pro-Pakistan auxiliaries",
+      "victims_group": "Bengali Hindu refugees/civilians",
+      "low": 10000,
+      "high": 12000,
+      "notes": "Local estimate for deaths on 20 May 1971; exact toll disputed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chuknagar_massacre"
+      ]
+    },
+    {
+      "name": "Killing of Bengali intellectuals",
+      "year": 1971,
+      "perpetrator": "Pakistan state and pro-Pakistan auxiliaries",
+      "victims_group": "Bengali intellectuals, teachers, journalists, doctors, lawyers, writers and engineers",
+      "low": 200,
+      "high": 1111,
+      "notes": "Over 200 abducted in Dhaka on 14 December 1971; traced nationwide categories in Banglapedia sum to more than 1,100 depending on compilation method.",
+      "sources": [
+        "https://en.banglapedia.org/index.php?title=Killing_of_Intellectuals",
+        "https://www.dhakatribune.com/amp/bangladesh/286127/bangladesh-pays-rich-tribute-to-martyred"
+      ]
+    },
+    {
+      "name": "Bihari/non-Bengali reprisal killings",
+      "year": 1971,
+      "perpetrator": "Bangladesh/India joint side",
+      "victims_group": "Bihari and Urdu-speaking non-Bengali civilians and alleged collaborators",
+      "low": 1000,
+      "high": 150000,
+      "notes": "Wide range reflects estimates from Minorities at Risk and Rummel-derived high estimates; attribution among Mukti Bahini, Bengali mobs and postwar revenge attacks is uncertain.",
+      "sources": [
+        "https://www.ghrd.org/the-biharis-in-bangladesh-a-reflection-on-violence-victimhood-conflict/",
+        "https://www.britannica.com/event/Bangladesh-Liberation-War"
+      ]
+    },
+    {
+      "name": "Bangladeshi refugee-camp mortality in India",
+      "year": 1971,
+      "perpetrator": "Pakistan state and pro-Pakistan auxiliaries",
+      "victims_group": "Bangladeshi refugees in India",
+      "low": 323562,
+      "high": 802268,
+      "notes": "Excess mortality from disease, malnutrition and camp conditions among refugees displaced by the war; point estimate 562,915.",
+      "sources": [
+        "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0320760"
+      ]
+    }
+  ],
+  "uncertainty_notes": "No single death toll is universally accepted. Pakistan's 26,000 figure is a low official/military figure, Bangladesh's 3,000,000 figure is an official national claim without a transparent demographic survey, and scholarly estimates often mix direct killings with deaths from famine, displacement and refugee-camp conditions. Bihari/non-Bengali deaths and Mukti Bahini military losses are especially uncertain, and the high-end mechanical roll-up likely double-counts some deaths because broad national totals may already include indirect mortality.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Bangladesh-Liberation-War",
+      "title": "Bangladesh Liberation War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1971War/hamoodur.pdf",
+      "title": "Hamoodur Rahman Commission Report",
+      "publisher": "Government of Pakistan / reproduced PDF"
+    },
+    {
+      "url": "https://en.banglapedia.org/index.php?title=Genocide%2C_1971",
+      "title": "Genocide, 1971",
+      "publisher": "Banglapedia"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/civilianization-of-war/east-pakistanbangladesh-19711972-how-many-victims-who-and-why/A133E09382910B5E4332412FAD212721",
+      "title": "East Pakistan/Bangladesh 1971\u20131972: How Many Victims, Who, and Why?",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0320760",
+      "title": "Death toll among the Bangladeshi refugees of the 1971 war",
+      "publisher": "PLOS ONE"
+    },
+    {
+      "url": "https://liberationwarbangladesh.org/?p=9727",
+      "title": "Bangladesh-India-Pakistan\u2019s Military Casualties during Bangladesh Liberation War 1971",
+      "publisher": "Liberation War Bangladesh / Muktijuddho e-Archive"
+    },
+    {
+      "url": "https://www.thedailystar.net/news-detail-77080",
+      "title": "Govt plans major defence spending",
+      "publisher": "The Daily Star"
+    },
+    {
+      "url": "https://www.ghrd.org/the-biharis-in-bangladesh-a-reflection-on-violence-victimhood-conflict/",
+      "title": "The Biharis in Bangladesh: A Reflection on Violence, Victimhood, and Conflict",
+      "publisher": "Global Human Rights Defence"
+    },
+    {
+      "url": "https://en.banglapedia.org/index.php?title=Killing_of_Intellectuals",
+      "title": "Killing of Intellectuals",
+      "publisher": "Banglapedia"
+    },
+    {
+      "url": "https://www.dhakatribune.com/amp/bangladesh/286127/bangladesh-pays-rich-tribute-to-martyred",
+      "title": "Bangladesh pays rich tribute to martyred intellectuals of 1971",
+      "publisher": "Dhaka Tribune"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chuknagar_massacre",
+      "title": "Chuknagar massacre",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

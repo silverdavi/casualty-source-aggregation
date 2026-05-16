@@ -1,0 +1,496 @@
+{
+  "war_id": "wwii_european_theater",
+  "name": "World War II - European/African/Atlantic Theater",
+  "start_year": 1939,
+  "end_year": 1945,
+  "ongoing": false,
+  "regions": [
+    "Europe",
+    "North Africa",
+    "Atlantic",
+    "Mediterranean"
+  ],
+  "summary": "The European/African/Atlantic Theater of World War II ran from Germany's invasion of Poland in September 1939 to Germany's surrender in May 1945. It included conventional war, strategic bombing, occupation terror, genocide, siege starvation, forced labor, mass deportation, and the Battle of the Atlantic. The theater caused roughly 39\u201345 million deaths, with Axis\u2014especially Nazi German\u2014policies responsible for the overwhelming majority of civilian deaths.",
+  "sides": [
+    {
+      "name": "Axis powers",
+      "members": [
+        "Nazi Germany",
+        "Italy",
+        "Romania until 1944",
+        "Hungary",
+        "Finland as co-belligerent",
+        "Bulgaria until 1944",
+        "Slovakia",
+        "Croatia",
+        "other Axis-aligned forces"
+      ],
+      "military_killed": {
+        "low": 6300000,
+        "high": 6900000,
+        "point": 6650000,
+        "notes": "Approximate European/African/Atlantic Axis military deaths. Germany dominates; estimates for German military dead range from about 5.3 million in Overmans to 5.533 million in the National WWII Museum table, with Italy, Romania, Hungary, Finland, Bulgaria, and smaller Axis partners adding roughly 0.8\u20131.3 million depending on definitions.",
+        "sources": [
+          "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+          "https://www.britannica.com/event/World-War-II/Costs-of-the-war",
+          "https://en.wikipedia.org/wiki/German_casualties_in_World_War_II"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 8000000,
+        "high": 11000000,
+        "point": 9500000,
+        "breakdown": [
+          {
+            "cause": "mass shooting and mobile killing operations",
+            "victims_group": "Jews, Roma, Soviet civilians, communist officials, and others in occupied eastern Europe",
+            "low": 1400000,
+            "high": 1600000,
+            "notes": "Einsatzgruppen and associated mobile killing operations killed more than 1.4 million people, mostly Jews. This overlaps with the six million Jewish Holocaust total and with Soviet/Polish national death totals.",
+            "sources": [
+              "https://www.britannica.com/event/Holocaust/The-Einsatzgruppen-and-their-fellow-mobile-killers",
+              "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+            ]
+          },
+          {
+            "cause": "intentional killing under occupation",
+            "victims_group": "Soviet civilians",
+            "low": 7420000,
+            "high": 7420000,
+            "notes": "Russian-source civilian-loss accounting reports 7.42 million Soviet civilians intentionally killed under German occupation. This figure overlaps with Jewish victims and other categories.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/World_War_II_casualties",
+              "https://en.wikipedia.org/wiki/World_War_II_casualties_of_the_Soviet_Union"
+            ]
+          },
+          {
+            "cause": "occupation terror, executions, massacres",
+            "victims_group": "non-Jewish Polish civilians",
+            "low": 1800000,
+            "high": 1900000,
+            "notes": "Common scholarly/USHMM-linked summaries estimate about 1.8\u20131.9 million non-Jewish Polish civilians killed by German occupation policies and war. This is separate from roughly 3 million Polish Jews murdered in the Holocaust.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/World_War_II_casualties_of_Poland",
+              "https://www.ushmm.org/information/press/press-releases/collaboration-and-complicity-during-the-holocaust"
+            ]
+          },
+          {
+            "cause": "bombing and shelling",
+            "victims_group": "British, French, Soviet, Dutch, Belgian, Yugoslav, Greek, and other civilians",
+            "low": 150000,
+            "high": 250000,
+            "notes": "Axis aerial bombardment and shelling killed civilians across Europe, including about 60,595 in Britain, 53,601 in France, and 51,000 in the USSR in Richard Overy's bombing-war synthesis.",
+            "sources": [
+              "https://www.timeshighereducation.com/node/115839"
+            ]
+          }
+        ],
+        "notes": "Not arithmetically summable because Jewish, Soviet, Polish, Roma, and other victims overlap across national, ethnic, and method-of-killing categories.",
+        "sources": [
+          "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+          "https://www.britannica.com/event/Holocaust/The-Einsatzgruppen-and-their-fellow-mobile-killers",
+          "https://en.wikipedia.org/wiki/World_War_II_casualties",
+          "https://www.timeshighereducation.com/node/115839"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "genocide_camp_ghetto_mass_murder",
+          "victims_group": "European Jews",
+          "low": 6000000,
+          "high": 6000000,
+          "point": 6000000,
+          "notes": "Canonical Holocaust total for Jews murdered by Nazi Germany and collaborators; includes shootings, killing centers, camps, ghettos, starvation, disease, forced labor, and death marches. About 2.7 million Jews were murdered in killing centers.",
+          "sources": [
+            "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+            "https://encyclopedia.ushmm.org/content/en/article/killing-centers-an-overview",
+            "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+          ]
+        },
+        {
+          "type": "pow_starvation_exposure_execution_forced_labor",
+          "victims_group": "Soviet prisoners of war",
+          "low": 2800000,
+          "high": 3300000,
+          "point": 3000000,
+          "notes": "Soviet POWs in German captivity died from deliberate starvation, exposure, executions, disease, and forced labor; common estimates are 2.8\u20133.3 million deaths out of about 5.7 million captured.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/German_atrocities_committed_against_Soviet_prisoners_of_war",
+            "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/soviet-prisoners-war-1941-1945",
+            "https://www.tandfonline.com/doi/full/10.1080/13518046.2024.2340839"
+          ]
+        },
+        {
+          "type": "famine_disease_forced_labor_siege",
+          "victims_group": "Soviet civilians",
+          "low": 6200000,
+          "high": 7500000,
+          "point": 6800000,
+          "notes": "Includes Russian-source categories of 2.164 million forced-labor deaths in Germany and 4.1 million famine/disease deaths in occupied territory, plus uncertainty around siege and occupation mortality. The Siege of Leningrad alone caused at least 750,000 and commonly about 800,000\u20131,000,000+ civilian deaths.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties",
+            "https://link.springer.com/chapter/10.1057/9781403938824_1",
+            "https://www.worldhistory.org/article/2680/siege-of-leningrad/"
+          ]
+        },
+        {
+          "type": "genocide",
+          "victims_group": "Roma and Sinti",
+          "low": 250000,
+          "high": 500000,
+          "point": 300000,
+          "notes": "USHMM gives 250,000\u2013500,000 Roma murdered; other museum summaries state over 250,000.",
+          "sources": [
+            "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+            "https://encyclopedia.ushmm.org/content/en/article/genocide-of-european-roma-gypsies-1939-1945",
+            "https://www.nationalww2museum.org/war/articles/genocide-roma"
+          ]
+        },
+        {
+          "type": "euthanasia_program",
+          "victims_group": "people with physical and mental disabilities",
+          "low": 250000,
+          "high": 250000,
+          "point": 250000,
+          "notes": "USHMM lists about 250,000 people with disabilities murdered by Nazi Germany and collaborators.",
+          "sources": [
+            "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+            "https://www.nationalww2museum.org/war/articles/holocaust"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Allied powers",
+      "members": [
+        "Soviet Union",
+        "United Kingdom",
+        "Commonwealth forces",
+        "United States",
+        "Free France and French forces",
+        "Poland",
+        "Yugoslav Partisans",
+        "Greece",
+        "Netherlands",
+        "Belgium",
+        "Norway",
+        "Czechoslovak forces",
+        "other Allied forces"
+      ],
+      "military_killed": {
+        "low": 11300000,
+        "high": 13400000,
+        "point": 12200000,
+        "notes": "Approximate Allied military deaths in the European/African/Atlantic theater. Soviet losses dominate: National WWII Museum gives 8.8\u201310.7 million Soviet military deaths, while Russian official figures give 8,668,400 Soviet armed-forces losses. Other Allied military losses include Polish, Yugoslav, British/Commonwealth, French, Greek, U.S. European/Mediterranean, and smaller Allied forces.",
+        "sources": [
+          "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+          "https://en.special.kremlin.ru/catalog/glossary/90",
+          "https://en.wikipedia.org/wiki/World_War_II_casualties_of_the_Soviet_Union",
+          "https://www.ibiblio.org/hyperwar/USA/ref/Casualties/Casualties-1.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 550000,
+        "high": 1000000,
+        "point": 750000,
+        "breakdown": [
+          {
+            "cause": "strategic_bombing",
+            "victims_group": "German civilians and civilians in German-occupied or Axis Europe",
+            "low": 400000,
+            "high": 650000,
+            "notes": "USSBS gave a minimum of 305,000 killed by air attack in Germany; Overy gives 353,000 bombing deaths in Germany and additional deaths in France, Italy, occupied Europe, and elsewhere.",
+            "sources": [
+              "https://b24.net/survey.htm",
+              "https://www.timeshighereducation.com/node/115839"
+            ]
+          },
+          {
+            "cause": "massacre_execution",
+            "victims_group": "Polish POWs and prisoners",
+            "low": 21768,
+            "high": 22000,
+            "notes": "Katyn massacre: IPN's minimum estimate is 21,768 victims; general descriptions often round to almost 22,000.",
+            "sources": [
+              "https://eng.ipn.gov.pl/en/news/4041%2CThe-IPNs-prosecutors-on-the-investigation-into-the-Katyn-Massacre.html",
+              "https://eng.ipn.gov.pl/en/news/1105%2CKatyn-Massacre-Basic-Facts.html"
+            ]
+          },
+          {
+            "cause": "massacre_execution",
+            "victims_group": "political prisoners in Soviet-annexed eastern Europe",
+            "low": 30000,
+            "high": 100000,
+            "notes": "NKVD prisoner massacres in 1941 are estimated by location; some summaries give an approximate total up to 100,000 extrajudicial executions over several weeks.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/NKVD_prisoner_massacres"
+            ]
+          },
+          {
+            "cause": "invasion_violence_and_reprisals",
+            "victims_group": "German and other civilians during the Red Army advance and occupation",
+            "low": 100000,
+            "high": 250000,
+            "notes": "Direct violent-death component is difficult to isolate from broader German flight/expulsion mortality. German Federal Archive-derived discussions cite about 100,000\u2013120,000 civilians killed during flight/evacuation and higher broader categories when camps, forced labor, hunger, and disease are included.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Flight_and_expulsion_of_Germans_%281944%E2%80%931950%29",
+              "https://en.wikipedia.org/wiki/Soviet_war_crimes"
+            ]
+          }
+        ],
+        "notes": "Includes direct civilian killing by Allied bombing and Soviet security/military violence. Does not include ordinary battlefield collateral deaths where perpetrator cannot be reliably identified.",
+        "sources": [
+          "https://b24.net/survey.htm",
+          "https://www.timeshighereducation.com/node/115839",
+          "https://eng.ipn.gov.pl/en/news/4041%2CThe-IPNs-prosecutors-on-the-investigation-into-the-Katyn-Massacre.html",
+          "https://en.wikipedia.org/wiki/NKVD_prisoner_massacres"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "forced_transfer_expulsion_flight",
+          "victims_group": "German civilians and ethnic Germans from eastern/central Europe",
+          "low": 500000,
+          "high": 2384000,
+          "point": null,
+          "notes": "Highly contested. Modern lower estimates often emphasize about 500,000\u2013600,000 confirmed/supportable deaths; older demographic estimates and Britannica-style summaries cite 2.384 million German deaths during 1944\u201346 from Soviet invasion and forced transfers.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Flight_and_expulsion_of_Germans_%281944%E2%80%931950%29",
+            "https://en.wikipedia.org/wiki/German_casualties_in_World_War_II",
+            "https://www.britannica.com/event/Eastern-Front-World-War-II/Russian-advance-to-the-Vistula-summer-1944"
+          ]
+        },
+        {
+          "type": "pow_captivity",
+          "victims_group": "Axis POWs in Soviet captivity",
+          "low": 580589,
+          "high": 1100000,
+          "point": 700000,
+          "notes": "Soviet archival-based figures list 580,589 Axis POW deaths in Soviet captivity, including 381,067 Germans. Some Western/German estimates for German POW deaths in Soviet custody alone approach 1.0\u20131.1 million.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties",
+            "https://www.reddit.com/r/ww2/comments/1hl4e77"
+          ]
+        },
+        {
+          "type": "gulag_deportation_mortality",
+          "victims_group": "Soviet citizens, annexed populations, deportees, and prisoners",
+          "low": 621637,
+          "high": 932000,
+          "point": 750000,
+          "notes": "Soviet archival figures give 621,637 Gulag prisoner deaths in 1941\u201345; other Russian-source/Applebaum-cited totals give 932,000 deaths. These deaths are policy-caused but not all are directly linked to battlefield operations.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties_of_the_Soviet_Union",
+            "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/patrioticwar2006.pdf",
+            "https://www.upi.com/Archives/1989/11/10/New-figures-Nearly-1-million-died-in-gulag/5532626677200/"
+          ]
+        },
+        {
+          "type": "deportation_forced_labor_repression",
+          "victims_group": "Polish citizens under Soviet occupation, 1939\u201341",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "IPN-linked summaries report roughly 1.0 million Polish citizens arrested, conscripted, or deported by Soviet occupiers in 1939\u201341, including 475,000 deported to remote USSR regions, but deaths cannot be cleanly separated without double-counting Gulag/deportation mortality.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties_of_Poland"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 17600000,
+    "military_high": 20300000,
+    "civilian_low": 21000000,
+    "civilian_high": 27000000,
+    "grand_low": 39000000,
+    "grand_high": 45000000,
+    "notes": "The grand total is a theater-level approximation. Side-caused death categories cannot be summed directly because Holocaust, national, camp, POW, Soviet, Polish, and expulsion categories overlap. The lower bound reflects a European-theater total of at least about 39 million; the upper bound allows for higher Soviet, German expulsion, famine/disease, and uncertain civilian categories while excluding the Asia-Pacific theater."
+  },
+  "key_atrocities": [
+    {
+      "name": "The Holocaust",
+      "year": null,
+      "perpetrator": "Axis powers",
+      "victims_group": "European Jews",
+      "low": 6000000,
+      "high": 6000000,
+      "notes": "Nazi Germany and collaborators murdered six million Jews through shootings, killing centers, ghettos, camps, starvation, disease, forced labor, and death marches.",
+      "sources": [
+        "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+        "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution"
+      ]
+    },
+    {
+      "name": "Nazi murder of Soviet POWs",
+      "year": null,
+      "perpetrator": "Axis powers",
+      "victims_group": "Soviet prisoners of war",
+      "low": 2800000,
+      "high": 3300000,
+      "notes": "Soviet POWs died in German captivity from starvation, exposure, shootings, disease, and forced labor.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/German_atrocities_committed_against_Soviet_prisoners_of_war",
+        "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/soviet-prisoners-war-1941-1945"
+      ]
+    },
+    {
+      "name": "Siege of Leningrad",
+      "year": 1941,
+      "perpetrator": "Axis powers",
+      "victims_group": "Soviet civilians",
+      "low": 750000,
+      "high": 1100000,
+      "notes": "Civilian deaths were caused mainly by starvation, cold, disease, bombardment, and siege conditions.",
+      "sources": [
+        "https://link.springer.com/chapter/10.1057/9781403938824_1",
+        "https://www.worldhistory.org/article/2680/siege-of-leningrad/"
+      ]
+    },
+    {
+      "name": "Katyn massacre",
+      "year": 1940,
+      "perpetrator": "Allied powers",
+      "victims_group": "Polish POWs, police, officials, and prisoners",
+      "low": 21768,
+      "high": 22000,
+      "notes": "Soviet NKVD executions of Polish prisoners following the Soviet invasion and occupation of eastern Poland.",
+      "sources": [
+        "https://eng.ipn.gov.pl/en/news/4041%2CThe-IPNs-prosecutors-on-the-investigation-into-the-Katyn-Massacre.html",
+        "https://eng.ipn.gov.pl/en/news/1105%2CKatyn-Massacre-Basic-Facts.html"
+      ]
+    },
+    {
+      "name": "Wola massacre",
+      "year": 1944,
+      "perpetrator": "Axis powers",
+      "victims_group": "Polish civilians in Warsaw",
+      "low": 40000,
+      "high": 50000,
+      "notes": "German and collaborationist forces systematically killed civilians during suppression of the Warsaw Uprising; some Polish estimates are higher.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wola_massacre"
+      ]
+    },
+    {
+      "name": "Bombing of Dresden",
+      "year": 1945,
+      "perpetrator": "Allied powers",
+      "victims_group": "German civilians",
+      "low": 25000,
+      "high": 35000,
+      "notes": "Britannica gives 25,000\u201335,000; a German official commission concluded up to about 25,000 deaths.",
+      "sources": [
+        "https://www.britannica.com/event/bombing-of-Dresden",
+        "https://www.thelocal.de/20100317/25945"
+      ]
+    },
+    {
+      "name": "Operation Gomorrah / Bombing of Hamburg",
+      "year": 1943,
+      "perpetrator": "Allied powers",
+      "victims_group": "German civilians",
+      "low": 34000,
+      "high": 46000,
+      "notes": "The Hamburg firestorm killed tens of thousands; common figures range from about 34,000 to 46,000.",
+      "sources": [
+        "https://www.worldhistory.org/Operation_Gomorrah/",
+        "https://en.wikipedia.org/wiki/Bombing_of_Hamburg_in_World_War_II"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Major uncertainties include theater boundaries; overlap between ethnicity, nationality, and place-of-death categories; inconsistent treatment of POWs and missing persons; whether postwar expulsion deaths through 1946 or 1950 are included; and the political sensitivity of Soviet, German, Polish, and Holocaust-related casualty accounting. The JSON estimates should be read as source-supported ranges, not exact counts.",
+  "sources": [
+    {
+      "url": "https://main.ushmm.org/teach/fundamentals/holocaust-questions",
+      "title": "Frequently Asked Questions about the Holocaust for Educators",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/killing-centers-an-overview",
+      "title": "Nazi Killing Centers: An Overview",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution",
+      "title": "Documenting Numbers of Victims of the Holocaust and Nazi Persecution",
+      "publisher": "United States Holocaust Memorial Museum"
+    },
+    {
+      "url": "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+      "title": "Research Starters: Worldwide Deaths in World War II",
+      "publisher": "The National WWII Museum"
+    },
+    {
+      "url": "https://www.britannica.com/event/World-War-II/Costs-of-the-war",
+      "title": "World War II - Costs of the War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/event/casualties-of-World-War-II-2231003",
+      "title": "Casualties of World War II",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://b24.net/survey.htm",
+      "title": "The United States Strategic Bombing Survey: Summary Report (European War)",
+      "publisher": "United States Strategic Bombing Survey"
+    },
+    {
+      "url": "https://www.timeshighereducation.com/node/115839",
+      "title": "The Bombing War: Europe 1939-1945, by Richard Overy",
+      "publisher": "Times Higher Education"
+    },
+    {
+      "url": "https://eng.ipn.gov.pl/en/news/1105%2CKatyn-Massacre-Basic-Facts.html",
+      "title": "Katyn Massacre \u2013 Basic Facts",
+      "publisher": "Institute of National Remembrance"
+    },
+    {
+      "url": "https://eng.ipn.gov.pl/en/news/4041%2CThe-IPNs-prosecutors-on-the-investigation-into-the-Katyn-Massacre.html",
+      "title": "The IPN\u2019s prosecutors on the investigation into the Katyn Massacre",
+      "publisher": "Institute of National Remembrance"
+    },
+    {
+      "url": "https://www.gazetaprawna.pl/wiadomosci/artykuly/347424%2Cipn-w-ii-wojnie-sw-zginelo-od-56-do-58-mln-polakow.html",
+      "title": "IPN: w II wojnie \u015bwiatowej zgin\u0119\u0142o od 5,6 do 5,8 mln Polak\u00f3w",
+      "publisher": "Gazeta Prawna / IPN reporting"
+    },
+    {
+      "url": "https://en.special.kremlin.ru/catalog/glossary/90",
+      "title": "Great Patriotic War glossary entry",
+      "publisher": "President of Russia official website"
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1057/9781403938824_1",
+      "title": "Introduction: Leningrad\u2019s Place in the History of Famine",
+      "publisher": "SpringerLink"
+    },
+    {
+      "url": "https://www.worldhistory.org/article/2680/siege-of-leningrad/",
+      "title": "Siege of Leningrad",
+      "publisher": "World History Encyclopedia"
+    },
+    {
+      "url": "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/soviet-prisoners-war-1941-1945",
+      "title": "Soviet Prisoners of War, 1941 to 1945",
+      "publisher": "Encyclopedia.com"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13518046.2024.2340839",
+      "title": "The Extermination of Red Army Soldiers in German Captivity, 1941\u20131945",
+      "publisher": "Taylor & Francis"
+    },
+    {
+      "url": "https://www.britannica.com/event/Eastern-Front-World-War-II/Russian-advance-to-the-Vistula-summer-1944",
+      "title": "Eastern Front - Russian advance to the Vistula",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/patrioticwar2006.pdf",
+      "title": "Patriotic War, 1941 to 1945",
+      "publisher": "University of Warwick / Mark Harrison"
+    }
+  ]
+}

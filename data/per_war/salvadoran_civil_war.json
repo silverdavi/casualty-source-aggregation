@@ -1,0 +1,232 @@
+{
+  "war_id": "salvadoran_civil_war",
+  "name": "Salvadoran Civil War",
+  "start_year": 1979,
+  "end_year": 1992,
+  "ongoing": false,
+  "regions": [
+    "El Salvador",
+    "Central America"
+  ],
+  "summary": "The Salvadoran Civil War was fought between the U.S.-backed Salvadoran government and security forces, allied paramilitaries and death squads, and the FMLN guerrilla coalition. The UN-backed Truth Commission documented systematic state and insurgent abuses, with the overwhelming majority of registered serious-violence complaints attributed to state agents and allied forces. Modern statistical work estimates about 71,629 civilian killings and disappearances during 1980\u20131992, with substantial uncertainty.",
+  "sides": [
+    {
+      "name": "Government of El Salvador and allied forces",
+      "members": [
+        "Government of El Salvador",
+        "Salvadoran Armed Forces",
+        "National Guard",
+        "Treasury Police",
+        "National Police",
+        "ORDEN",
+        "civil defense units",
+        "paramilitary death squads",
+        "foreign mercenaries"
+      ],
+      "military_killed": {
+        "low": 10360,
+        "high": null,
+        "point": 10360,
+        "notes": "Reported as 10,360+ government-side combatants killed; treat as a minimum/point estimate, not a firm upper bound. The Truth Commission report notes annex lists of armed-forces members killed, but the accessible report text did not provide a total.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Salvadoran_Civil_War",
+          "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 51277,
+        "high": 71209,
+        "point": 60885,
+        "breakdown": [
+          {
+            "cause": "extrajudicial execution, enforced disappearance, massacre, death-squad assassination, bombing and shelling",
+            "victims_group": "Salvadoran civilians, especially suspected FMLN sympathizers, peasants in conflict zones, political opponents, clergy, labor activists, students, teachers, journalists and human-rights workers",
+            "low": 51277,
+            "high": 71209,
+            "notes": "Inferred by applying the Truth Commission's 'almost 85%' state/allied attribution share to Hoover Green & Ball's estimated 60,326\u201383,775 civilian killings and disappearances. This is not a direct demographic side-attribution estimate.",
+            "sources": [
+              "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+              "https://www.demographic-research.org/volumes/vol41/27/41-27.pdf",
+              "https://hrdag.org/2019/10/01/new-research-on-civilian-deaths-and-disappearances-in-el-salvador/"
+            ]
+          }
+        ],
+        "notes": "The Truth Commission attributed almost 85% of registered cases to state agents, allied paramilitary groups, and death squads. Because the Commission's data are complaints and not a full mortality database, the numeric range is a proportional inference.",
+        "sources": [
+          "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+          "https://www.demographic-research.org/volumes/vol41/27/41-27.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "internally displaced persons and refugees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Government counterinsurgency tactics produced mass displacement and refugee flight, but no reliable separately quantified indirect-death estimate was found. Violent deaths from massacres, executions, shelling and bombing are counted under civilians_killed_directly.",
+          "sources": [
+            "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Farabundo Mart\u00ed National Liberation Front (FMLN)",
+      "members": [
+        "FMLN",
+        "FPL",
+        "ERP",
+        "RN/FARN",
+        "PRTC",
+        "PCES/FAL"
+      ],
+      "military_killed": {
+        "low": 12274,
+        "high": 23840,
+        "point": null,
+        "notes": "Seligson and McElhinny are reported as estimating 12,274\u201323,840 FMLN combatant deaths; another common summary gives 12,274\u201320,000.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Farabundo_Mart%C3%AD_National_Liberation_Front",
+          "https://en.wikipedia.org/wiki/Salvadoran_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3016,
+        "high": 4189,
+        "point": 3581,
+        "breakdown": [
+          {
+            "cause": "extrajudicial execution, assassination, disappearance, kidnapping, bombings, land mines",
+            "victims_group": "mayors, public officials, suspected informers, alleged traitors, right-wing supporters, judges, civilians in FMLN-controlled areas, and civilians harmed by mines",
+            "low": 3016,
+            "high": 4189,
+            "notes": "Inferred by applying the Truth Commission's approximately 5% FMLN attribution share to Hoover Green & Ball's 60,326\u201383,775 civilian killings/disappearances estimate. The Truth Commission registered more than 800 serious-violence complaints attributed to FMLN and about 300 disappearance complaints in areas of FMLN control, but did not verify a general FMLN leadership directive for disappearances.",
+            "sources": [
+              "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+              "https://www.demographic-research.org/volumes/vol41/27/41-27.pdf"
+            ]
+          }
+        ],
+        "notes": "The FMLN was responsible for a much smaller but real share of documented abuses. The range is a proportional inference from complaint attribution and the modern civilian-death estimate.",
+        "sources": [
+          "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+          "https://www.demographic-research.org/volumes/vol41/27/41-27.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 22634,
+    "military_high": 34200,
+    "civilian_low": 60326,
+    "civilian_high": 83775,
+    "grand_low": 82960,
+    "grand_high": 117975,
+    "notes": "Military low sums 10,360 government-side deaths and 12,274 FMLN deaths; military high uses 10,360 plus the reported FMLN high of 23,840, so it is a minimum high because the government-side upper bound is unknown. Civilian totals use Hoover Green & Ball's 60,326\u201383,775 estimate for civilian killings and disappearances. The arithmetic grand range is therefore 82,960\u2013117,975+, but this is not directly comparable to the conventional roughly 75,000 figure or Seligson & McElhinny's reported 58,382\u201392,823 total-death range because definitions and methods differ."
+  },
+  "key_atrocities": [
+    {
+      "name": "El Mozote massacre and surrounding villages",
+      "year": 1981,
+      "perpetrator": "Government of El Salvador and allied forces",
+      "victims_group": "civilians in El Mozote and nearby villages",
+      "low": 500,
+      "high": 1200,
+      "notes": "The Truth Commission reported more than 500 identified victims at El Mozote and surrounding villages, with many others unidentified; later reporting and legal/forensic work commonly cites about 900\u20131,200 victims or at least 986 identified victims.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+        "https://www.theguardian.com/world/2016/oct/02/el-salvador-judge-reopens-case-of-1981-massacre-at-el-mozote",
+        "https://english.elpais.com/usa/2021-12-16/el-mozote-40-years-after-the-worst-military-massacre-in-the-americas-victims-still-calling-for-justice.html"
+      ]
+    },
+    {
+      "name": "Sumpul River massacre",
+      "year": 1980,
+      "perpetrator": "Government of El Salvador and allied forces",
+      "victims_group": "unarmed civilians fleeing toward Honduras",
+      "low": 300,
+      "high": 600,
+      "notes": "The Truth Commission found no less than 300 unarmed civilians massacred; survivors' judicial complaint referred to the murder of 600 people.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf"
+      ]
+    },
+    {
+      "name": "El Calabozo massacre",
+      "year": 1982,
+      "perpetrator": "Government of El Salvador and allied forces",
+      "victims_group": "men, women and children held prisoner",
+      "low": 200,
+      "high": null,
+      "notes": "The Truth Commission found that Atlacatl Battalion troops killed over 200 men, women and children whom they were holding prisoner.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+        "https://eaaf.org/el-salvador/?lang=en"
+      ]
+    },
+    {
+      "name": "UCA Jesuit murders",
+      "year": 1989,
+      "perpetrator": "Government of El Salvador and allied forces",
+      "victims_group": "six Jesuit priests, a cook, and her 16-year-old daughter",
+      "low": 8,
+      "high": 8,
+      "notes": "The Truth Commission found that senior military officers ordered the killing of Father Ignacio Ellacur\u00eda and that no witnesses be left; eight people were killed.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf"
+      ]
+    },
+    {
+      "name": "FMLN executions of mayors",
+      "year": 1988,
+      "perpetrator": "Farabundo Mart\u00ed National Liberation Front (FMLN)",
+      "victims_group": "non-combatant mayors and local officials",
+      "low": 11,
+      "high": null,
+      "notes": "The Truth Commission described 11 executions in detail and stated there were more; it rejected FMLN arguments that the mayors were legitimate military targets.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The major uncertainties are definitional and methodological. The Truth Commission provides attribution percentages for complaints, not a complete death census; Hoover Green & Ball provide the best modern estimate of civilian killings and disappearances, but not a clean perpetrator-by-perpetrator allocation; Seligson & McElhinny provide older combatant and total-death estimates summarized in secondary sources. Indirect deaths from displacement, hunger, disease, or exposure are not separately quantified in the sources found, so they are not included as numeric estimates.",
+  "sources": [
+    {
+      "url": "https://www.usip.org/sites/default/files/file/ElSalvador-Report.pdf",
+      "title": "From Madness to Hope: The 12-Year War in El Salvador",
+      "publisher": "United Nations Commission on the Truth for El Salvador / USIP"
+    },
+    {
+      "url": "https://www.demographic-research.org/volumes/vol41/27/41-27.pdf",
+      "title": "Civilian killings and disappearances during civil war in El Salvador (1980\u20131992)",
+      "publisher": "Demographic Research / Max Planck Society"
+    },
+    {
+      "url": "https://hrdag.org/2019/10/01/new-research-on-civilian-deaths-and-disappearances-in-el-salvador/",
+      "title": "New Research on Civilian Deaths and Disappearances in El Salvador",
+      "publisher": "Human Rights Data Analysis Group"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/El_Salvador__FMLN__1980-1991.pdf",
+      "title": "WARID: El Salvador (FMLN) 1980\u20131991",
+      "publisher": "Peace Research Institute Frankfurt"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Salvadoran_Civil_War",
+      "title": "Salvadoran Civil War",
+      "publisher": "Wikipedia, used only as a secondary pointer for Seligson & McElhinny casualty figures"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Farabundo_Mart%C3%AD_National_Liberation_Front",
+      "title": "Farabundo Mart\u00ed National Liberation Front",
+      "publisher": "Wikipedia, used only as a secondary pointer for Seligson & McElhinny casualty figures"
+    },
+    {
+      "url": "https://eaaf.org/el-salvador/?lang=en",
+      "title": "El Salvador",
+      "publisher": "Argentine Forensic Anthropology Team (EAAF)"
+    }
+  ]
+}

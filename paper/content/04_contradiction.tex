@@ -1,0 +1,84 @@
+\section{Bounds: contradiction radius}\label{sec:contradiction}
+
+Theorem~\ref{thm:bounds} returns an interval; a public claim returns a point. The diagnostic measures their distance after standardising each input by its measurement uncertainty.
+
+\begin{definition}[Feasible set]\label{def:feasible}
+For inputs $x=(\omega,w,a,f,M,D)$ and exposure cap $\bar\mu$,
+\begin{equation}\label{eq:feasible}
+\mathcal F(x;\bar\mu)=
+\Bigl\{q\in[0,1]:\;
+\exists\,\mu\in[1,\bar\mu]\;\text{with}\;
+q=1-\omega\tfrac{w+\mu(a-f)}{w}
+\;\text{and}\; qD\le M\Bigr\}.
+\end{equation}
+\end{definition}
+
+A claim $\hat D_M^{(i)}$ converts to $q^{(i)}=\hat D_M^{(i)}/\hat D$ and is feasible iff $q^{(i)}\in\mathcal F(\hat x;\bar\mu)$.
+
+\begin{definition}[Contradiction radius]\label{def:radius}
+Let $\hat x=(\hat\omega,\hat w,\hat a,\hat f,\hat M,\hat D)$ with measured standard errors $\sigma_\omega,\sigma_w,\sigma_M$. The contradiction radius of claim $q^{(i)}$ is
+\begin{equation}\label{eq:rho}
+\rho^{(i)}
+=\inf_{\omega',w',M'}\;
+\max\!\left\{
+\tfrac{|\omega'-\hat\omega|}{\sigma_\omega},\;
+\tfrac{|w'-\hat w|}{\sigma_w},\;
+\tfrac{(M'-\hat M)_+}{\sigma_M}
+\right\}
+\quad\text{s.t.}\quad
+q^{(i)}\in \mathcal F((\omega',w',\hat a,\hat f,M',\hat D);\bar\mu).
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Feasibility and contradiction]\label{thm:contradiction}
+With $(\hat a,\hat f,\hat D,\bar\mu)$ fixed, a claim is consistent with the independent inputs iff $\rho^{(i)}=0$. If $\rho^{(i)}>0$, every rationalisation moves at least one of $\omega,w,M$ by $\rho^{(i)}$ standard-error units.
+\end{theorem}
+\begin{proof}
+$\mathcal F$ is the intersection of the identified set from Theorem~\ref{thm:bounds} with $qD\le M$, and is closed in $(\omega,w,M)$. The infimum in \eqref{eq:rho} is zero iff the observed inputs themselves are feasible, by closedness. Otherwise, the $\ell_\infty$ objective bounds every coordinate move from below.
+\end{proof}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  >=Stealth, font=\small,
+  vert/.style={circle,draw=black!75,fill=white,inner sep=1.5pt,minimum size=4mm},
+  feas/.style={fill=blue!10,draw=blue!55,thick},
+  arr/.style={->,>=Stealth,gray!70,thick},
+  lab/.style={font=\footnotesize,inner sep=2pt}
+]
+\coordinate (T)  at ( 0   , 2.5);
+\coordinate (BL) at (-3.0 ,-0.9);
+\coordinate (BR) at ( 3.0 ,-0.9);
+
+\draw[feas] (T) -- (BL) -- (BR) -- cycle;
+\node[lab,align=center] at (0,0.55) {feasible set\\$\mathcal F(\hat x;\bar\mu)$};
+
+\node[vert,fill=blue!55] (P) at (0.4, 0.0) {};
+\node[lab,below=1pt of P] {posterior $\hat q$};
+
+\node[vert,fill=red!70] (Q) at (4.7,0.95) {};
+\node[lab,right=1pt of Q] {disputed $q^{(\mathrm{IDF})}$};
+
+\draw[arr] (Q) -- ($(T)!0.18!(Q)$)  node[midway,above,sloped,font=\scriptsize] {$\rho_\omega$};
+\draw[arr] (Q) -- ($(BR)!0.20!(Q)$) node[midway,below,sloped,font=\scriptsize] {$\rho_M$};
+\draw[arr] (Q) -- ($(BL)!0.30!(Q)$) node[midway,above,sloped,font=\scriptsize] {$\rho_w$};
+
+\node[lab] at (T)  [above=2pt] {$\hat\omega$ axis (demographic deaths)};
+\node[lab] at (BL) [below left=1pt,align=center]  {$\hat w$ axis\\(population)};
+\node[lab] at (BR) [below right=1pt,align=center] {$\hat M/D$ axis\\(manpower)};
+\end{tikzpicture}
+\caption{\textbf{Contradiction triangle.} The feasible set $\mathcal F$ is bounded by three independently measured ``axes''; the contradiction radius $\rho=\min(\rho_\omega,\rho_w,\rho_M)$ is the shortest standardised perturbation from a disputed claim into $\mathcal F$.}
+\label{fig:contradiction-triangle}
+\end{figure}
+
+\paragraph{Computation.} Because $q(\mu)$ is monotone, the boundary of $\mathcal F$ is attained on one of three axes: the demographic axis ($\omega$ moves), the population-composition axis ($w$), or the manpower axis ($M/D$). This is the contradiction triangle of Figure~\ref{fig:contradiction-triangle}; \eqref{eq:rho} is a low-dimensional convex programme.
+
+\paragraph{Diagnostic procedure.}
+\begin{enumerate}[label=\textbf{D\arabic*.},leftmargin=*]
+\item Fix the analysis window and total deaths $D$.
+\item Estimate $(w,a)$ from the population baseline and $\omega$ from an identified-deaths sample.
+\item Choose $\bar\mu$ and an independent upper bound on $M$.
+\item Compute $\mathcal F(\hat x;\bar\mu)$ from \eqref{eq:feasible}.
+\item For every disputed $\hat D_M^{(i)}$, report $q^{(i)}=\hat D_M^{(i)}/D$, the membership $q^{(i)}\in\mathcal F$, and $\rho^{(i)}$.
+\end{enumerate}
+The test is symmetric: it rejects ``too many combatants'' and ``zero combatants'' against the same set.

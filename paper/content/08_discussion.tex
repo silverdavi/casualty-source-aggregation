@@ -1,0 +1,13 @@
+\section{Discussion}\label{sec:discussion}
+
+The conceptual contribution is the contradiction triangle (Theorem~\ref{thm:contradiction}): no single number can be manipulated without forcing matching deviations in independently-measured quantities. The contradiction radius $\rho$ then provides a unit-free measure of how far a claim sits from the consensus-feasible polytope. Whereas \citet{spagat2009} frame war-death estimation as an \emph{arena of contestation}, our framework gives the analyst a numerical referee for that arena, in the spirit of \citet{lumpricebanks2013} for multiple systems estimation and \citet{radford2023} for Bayesian source aggregation.
+
+\paragraph{Limitations.}
+\begin{enumerate}[leftmargin=*]
+\item Class $\mathrm{AM}$ is treated as a single bucket; finer age partitions (18--29, 30--49, 50+) tighten the bounds when age-resolved data exists.
+\item Assumption~\ref{ass:mu} caps $\bar\mu$ a priori; if reality has $\bar\mu\to\infty$, only the manpower bound survives. Empirically $\bar\mu\le 3$ in studied urban sieges.
+\item The radius is conservative for non-Gaussian errors; a bootstrap or non-parametric posterior is preferred for small demographic samples.
+\item The framework does not identify indirect deaths from blockade, famine, or healthcare collapse; these require separate excess-mortality methodology \citep{checchiroberts2008,burnham2006,degommeguhasapir2010,gomez2025} and enter only via $\hat D$.
+\end{enumerate}
+
+\paragraph{Reproducibility.} Code, simulator, and inputs for the Gaza application are available at the companion repository.

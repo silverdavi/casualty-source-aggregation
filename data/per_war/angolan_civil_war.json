@@ -1,0 +1,378 @@
+{
+  "war_id": "angolan_civil_war",
+  "name": "Angolan Civil War",
+  "start_year": 1975,
+  "end_year": 2002,
+  "ongoing": false,
+  "regions": [
+    "Angola",
+    "Cabinda",
+    "Southern Africa"
+  ],
+  "summary": "The Angolan Civil War was fought from independence in 1975 until the 2002 government-UNITA ceasefire, principally between the MPLA-led Angolan state and UNITA, with early FNLA participation and major Cold War external intervention. The best supported overall range is about 500,000 to 800,000 conflict-related deaths, with the World Bank using a point estimate of 750,000. Direct killing was substantial, but much of the mortality came from siege, famine, displacement, blocked relief, disease, landmines, and destruction of health and food systems. Available sources do not permit a clean side-by-side numerical attribution for most deaths.",
+  "sides": [
+    {
+      "name": "MPLA / Angolan government side",
+      "members": [
+        "MPLA",
+        "People's Republic of Angola / Republic of Angola",
+        "FAPLA / FAA",
+        "Cuba",
+        "Soviet Union",
+        "SWAPO/PLAN and other aligned forces at various times"
+      ],
+      "military_killed": {
+        "low": 2054,
+        "high": null,
+        "point": null,
+        "notes": "This low figure counts only identifiable foreign allied losses: at least about 2,000 Cuban troops in one PRIO-cited survey plus 54 Soviet deaths from a compiled casualty table. Other sources give 4,000 Cuban deaths or 2,016-5,000 Cuban deaths. Angolan government military losses are not cleanly separated from total battle-death or war-death estimates.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+          "https://en.wikipedia.org/wiki/Angolan_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution/disappearance/post-election purge",
+            "victims_group": "suspected UNITA supporters, Bakongo and Ovimbundu civilians",
+            "low": 2000,
+            "high": null,
+            "notes": "Amnesty and HRW describe thousands killed or executed, especially after the 1992 election crisis; no reliable upper bound was found.",
+            "sources": [
+              "https://www.amnesty.org/en/documents/AFR12/004/1993/en/",
+              "https://www.refworld.org/reference/annualreport/amnesty/1994/en/17661",
+              "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+            ]
+          },
+          {
+            "cause": "indiscriminate aerial bombardment",
+            "victims_group": "civilians in UNITA-held population centers",
+            "low": null,
+            "high": null,
+            "notes": "HRW reports thousands killed or injured by government bombing, but does not provide a clean all-war fatality total.",
+            "sources": [
+              "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+            ]
+          }
+        ],
+        "notes": "At least several thousand direct civilian deaths are attributable to government forces, but no comprehensive perpetrator-coded total was found.",
+        "sources": [
+          "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections",
+          "https://www.amnesty.org/en/documents/AFR12/004/1993/en/",
+          "https://www.refworld.org/reference/annualreport/amnesty/1994/en/17661"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "civilians in former UNITA-controlled or contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "MSF documented government forced displacement and regroupment policies from 1998-2002, including death-site regroupment areas. Mortality surveys recorded extreme rates, but deaths cannot be cleanly apportioned between government actions, UNITA actions, battle, disease, and blocked aid.",
+          "sources": [
+            "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+          ]
+        },
+        {
+          "type": "scorched_earth",
+          "victims_group": "rural civilians in contested areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "MSF describes systematic scorched-earth and population-control practices intended to deprive UNITA of resources; no all-war death total is available.",
+          "sources": [
+            "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "displaced civilians in regroupment camps and newly accessible war zones",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "MSF recorded crude mortality rates such as 5.5 per 10,000 people per day in Bunjei and 3.7 per 10,000 per day in another Bunjei survey period, with deaths from malnutrition, malaria, diarrhea, respiratory infections, and measles. These are local survey findings, not a national perpetrator-coded total.",
+          "sources": [
+            "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UNITA / FNLA / anti-MPLA side",
+      "members": [
+        "UNITA",
+        "FALA",
+        "FNLA in the early phase",
+        "South African Defence Force during interventions",
+        "Zairian forces/support networks",
+        "foreign mercenaries and advisers at various times"
+      ],
+      "military_killed": {
+        "low": 1000,
+        "high": null,
+        "point": null,
+        "notes": "This low figure counts only identifiable foreign allied losses: PRIO cites roughly 800-1,000 South African personnel killed and a few hundred Zairian dead in some surveys. UNITA/FNLA combatant losses are not available as a reliable all-war total.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 30500,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "siege/shelling/starvation",
+            "victims_group": "Kuito civilians",
+            "low": 20000,
+            "high": 30000,
+            "notes": "HRW estimated 20,000-30,000 people died in UNITA's siege of Kuito.",
+            "sources": [
+              "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+            ]
+          },
+          {
+            "cause": "siege/shelling/starvation",
+            "victims_group": "Huambo civilians",
+            "low": 10000,
+            "high": 10000,
+            "notes": "HRW estimated 10,000 people died in the siege of Huambo.",
+            "sources": [
+              "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+            ]
+          },
+          {
+            "cause": "train attack",
+            "victims_group": "passengers on Luanda-Dondo train",
+            "low": 500,
+            "high": null,
+            "notes": "MSF's chronology records over 500 dead during August 2001 in the attack on the last train between Luanda and Dondo.",
+            "sources": [
+              "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+            ]
+          },
+          {
+            "cause": "execution/abduction/terror attacks",
+            "victims_group": "rural civilians and suspected government supporters",
+            "low": null,
+            "high": null,
+            "notes": "HRW and Amnesty document summary executions, mutilations, abductions, hostage-taking, and attacks on relief operations by UNITA, but no comprehensive total was found.",
+            "sources": [
+              "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections",
+              "https://www.refworld.org/reference/annualreport/amnesty/2002/en/29335"
+            ]
+          }
+        ],
+        "notes": "The low figure is the sum of named HRW/MSF deadly contexts only and should not be treated as an all-war total for UNITA direct civilian killing.",
+        "sources": [
+          "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections",
+          "https://www.refworld.org/reference/annualreport/amnesty/2002/en/29335",
+          "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Kuito civilians",
+          "low": 20000,
+          "high": 30000,
+          "point": null,
+          "notes": "HRW attributed 20,000-30,000 deaths to UNITA's siege of Kuito; this overlaps with direct shelling and starvation mechanisms and should not be double-counted with the direct-civilian bucket.",
+          "sources": [
+            "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+          ]
+        },
+        {
+          "type": "siege",
+          "victims_group": "Huambo civilians",
+          "low": 10000,
+          "high": 10000,
+          "point": 10000,
+          "notes": "HRW attributed about 10,000 deaths to UNITA's siege of Huambo; this overlaps with direct shelling and starvation mechanisms and should not be double-counted with the direct-civilian bucket.",
+          "sources": [
+            "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "civilians forced to accompany or support UNITA forces",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "MSF documented UNITA forcing civilians to move with its retreating forces, preventing civilians from leaving, and using civilians as logistical support; no national death total was found.",
+          "sources": [
+            "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+          ]
+        },
+        {
+          "type": "blockade",
+          "victims_group": "civilians in UNITA-controlled or contested grey zones",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "UNITA blocked freedom of movement and relief access in some areas; MSF and HRW link these practices to famine and high mortality, but attribution overlaps with government offensives and broader collapse.",
+          "sources": [
+            "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections",
+            "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cabinda separatist / FLEC actors",
+      "members": [
+        "FLEC factions"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "UCDP/PRIO codes Cabinda/FLEC separately in selected years, but the available summarized estimates do not provide reliable all-period FLEC military deaths.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "Information is described by PRIO as extremely limited. Reports mention abuses by both FAA and FLEC, but no reliable all-period civilian-death total attributable to FLEC was found.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 40000,
+    "military_high": null,
+    "civilian_low": 100000,
+    "civilian_high": null,
+    "grand_low": 500000,
+    "grand_high": 800000,
+    "notes": "The military_low is the SIPRI/PRIO-cited figure of more than 40,000 military deaths by 1975-1995, not side-attributed. The civilian_low is HRW's estimate of 100,000 civilian deaths since the 1992 restart by late 1994 alone, not an all-war civilian total. The grand range uses the common 500,000-800,000 war-related range, with the World Bank point estimate of 750,000."
+  },
+  "key_atrocities": [
+    {
+      "name": "Siege of Kuito",
+      "year": 1993,
+      "perpetrator": "UNITA / anti-MPLA side",
+      "victims_group": "Kuito civilians",
+      "low": 20000,
+      "high": 30000,
+      "notes": "HRW estimated 20,000-30,000 deaths in UNITA's siege of Kuito.",
+      "sources": [
+        "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+      ]
+    },
+    {
+      "name": "Siege / battle of Huambo",
+      "year": 1993,
+      "perpetrator": "UNITA / anti-MPLA side",
+      "victims_group": "Huambo civilians",
+      "low": 10000,
+      "high": 10000,
+      "notes": "HRW estimated 10,000 deaths in the siege of Huambo.",
+      "sources": [
+        "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections"
+      ]
+    },
+    {
+      "name": "Halloween / Weekend War post-election killings",
+      "year": 1992,
+      "perpetrator": "MPLA / Angolan government side",
+      "victims_group": "suspected UNITA supporters, Bakongo and Ovimbundu civilians",
+      "low": 2000,
+      "high": null,
+      "notes": "Amnesty documented targeted arbitrary arrests, disappearances, and extrajudicial executions after 31 October-3 November 1992; later reporting said thousands were reportedly executed in Luanda alone.",
+      "sources": [
+        "https://www.amnesty.org/en/documents/AFR12/004/1993/en/",
+        "https://www.refworld.org/reference/annualreport/amnesty/1994/en/17661"
+      ]
+    },
+    {
+      "name": "Luanda-Dondo train attack",
+      "year": 2001,
+      "perpetrator": "UNITA / anti-MPLA side",
+      "victims_group": "train passengers",
+      "low": 500,
+      "high": null,
+      "notes": "MSF's chronology records over 500 dead during August 2001 in the attack on the last train between Luanda and Dondo.",
+      "sources": [
+        "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+      ]
+    },
+    {
+      "name": "1998-2002 grey-zone famine and regroupment mortality",
+      "year": 2002,
+      "perpetrator": "Both MPLA/government and UNITA",
+      "victims_group": "displaced and trapped civilians in formerly inaccessible areas",
+      "low": null,
+      "high": null,
+      "notes": "MSF found famine-level mortality after the ceasefire opened previously inaccessible areas; local findings included 3,975 recorded deaths in Chipindo between September 2001 and 21 April 2002 and crude mortality rates above emergency thresholds.",
+      "sources": [
+        "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "No comprehensive truth-commission-style fatality registry was found. Battle-death datasets, humanitarian reports, and secondary historical surveys differ sharply because some count only direct battle deaths while others include famine, disease, displacement, siege, landmines, and collapse of services. Per-side attribution is especially weak for indirect deaths because both the Angolan government and UNITA deliberately moved, confined, or used civilian populations, and the resulting mortality often arose from interacting strategies.",
+  "sources": [
+    {
+      "url": "https://documents.worldbank.org/curated/en/469841468204833634/pdf/762250CAS0Ango0800OUO0900Box379823B.pdf",
+      "title": "Angola Country Partnership Strategy / Country Context",
+      "publisher": "World Bank"
+    },
+    {
+      "url": "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+      "title": "PRIO Battle Deaths Dataset 3.0 Documentation",
+      "publisher": "Peace Research Institute Oslo / PRIO"
+    },
+    {
+      "url": "https://www.hrw.org/report/1994/11/01/arms-trade-and-violations-laws-war-1992-elections",
+      "title": "Angola: Arms Trade and Violations of the Laws of War since the 1992 Elections",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/AFR12/004/1993/en/",
+      "title": "Angola: Assault on the Right to Life",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/amnesty/1994/en/17661",
+      "title": "Amnesty International Report 1994 - Angola",
+      "publisher": "Amnesty International / Refworld"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/amnesty/2002/en/29335",
+      "title": "Amnesty International Report 2002 - Angola",
+      "publisher": "Amnesty International / Refworld"
+    },
+    {
+      "url": "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf",
+      "title": "Angola: Sacrifice of a People",
+      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+    },
+    {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Dataset Download Center",
+      "publisher": "Uppsala Conflict Data Program"
+    },
+    {
+      "url": "https://www.prio.org/data/4",
+      "title": "UCDP/PRIO Armed Conflict Dataset",
+      "publisher": "Peace Research Institute Oslo"
+    },
+    {
+      "url": "https://www.blackpast.org/global-african-history/angolan-civil-war-1975-2002/",
+      "title": "Angolan Civil War (1975-2002)",
+      "publisher": "BlackPast"
+    }
+  ]
+}

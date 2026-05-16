@@ -1,0 +1,369 @@
+{
+  "war_id": "boxer_rebellion",
+  "name": "Boxer Rebellion",
+  "start_year": 1899,
+  "end_year": 1901,
+  "ongoing": false,
+  "regions": [
+    "China",
+    "North China",
+    "Beijing",
+    "Tianjin",
+    "Shandong",
+    "Shanxi",
+    "Zhili/Hebei",
+    "Manchuria/Amur region"
+  ],
+  "summary": "The Boxer Rebellion was an anti-foreign, anti-Christian uprising in North China that escalated in 1900 into war between Boxer/Qing forces and an Eight-Nation expeditionary coalition. The conflict included massacres of missionaries and Chinese Christians, sieges in Beijing, Allied military operations, and punitive expeditions marked by executions, village destruction, and civilian killings. Total deaths are usually summarized at about 100,000 or more, with some modern summaries giving roughly 100,000\u2013150,000.",
+  "sides": [
+    {
+      "name": "Qing Empire / Boxer side",
+      "members": [
+        "Qing dynasty loyalist forces",
+        "Boxer militias / Yihequan",
+        "Gansu Braves",
+        "pro-Boxer Qing officials and provincial forces"
+      ],
+      "military_killed": {
+        "low": 2500,
+        "high": 20000,
+        "point": null,
+        "notes": "Low is inferred from Britannica's approximate 3,000 total military killed with the great bulk Chinese, minus the commonly cited 526 foreign soldiers killed. High reflects secondary summaries stating about 20,000 Imperial troops probably died. No audited Qing/Boxer military death roll is available.",
+        "sources": [
+          "https://www.britannica.com/event/Boxer-Rebellion",
+          "https://www.thoughtco.com/chinas-boxer-rebellion-in-photos-195618"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 32200,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre / anti-Christian violence",
+            "victims_group": "Chinese Catholic Christians",
+            "low": 30000,
+            "high": 30000,
+            "notes": "Common missionary-history breakdown; direct killings by Boxers, Qing soldiers, and pro-Boxer officials are not always separable.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Boxer_Rebellion",
+              "https://www.christianitytoday.com/2015/08/power-of-gentleness/"
+            ]
+          },
+          {
+            "cause": "massacre / anti-Christian violence",
+            "victims_group": "Chinese Protestant Christians",
+            "low": 2000,
+            "high": 2000,
+            "notes": "Common missionary-history breakdown.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Boxer_Rebellion",
+              "https://www.christianitytoday.com/2015/08/power-of-gentleness/"
+            ]
+          },
+          {
+            "cause": "massacre / anti-Christian violence",
+            "victims_group": "Russian Orthodox Christians in Beijing",
+            "low": 200,
+            "high": 400,
+            "notes": "Estimated deaths among a community of about 700 Russian Orthodox Christians in Beijing.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Boxer_Rebellion"
+            ]
+          },
+          {
+            "cause": "massacre / killings of foreign civilians and missionaries",
+            "victims_group": "Foreign civilians, mostly missionaries and families",
+            "low": 200,
+            "high": 250,
+            "notes": "Britannica gives about 200\u2013250 foreign nationals, mostly missionaries; detailed missionary lists give 136 Protestant missionaries, 53 children, and 47 Catholic priests/nuns in major categories.",
+            "sources": [
+              "https://www.britannica.com/event/Boxer-Rebellion",
+              "https://en.wikipedia.org/wiki/Boxer_Rebellion"
+            ]
+          },
+          {
+            "cause": "execution / murder of suspected foreign sympathizers, officials, urbanites, shopkeepers, and other non-Christian Chinese",
+            "victims_group": "Non-Christian Chinese civilians and suspected sympathizers",
+            "low": null,
+            "high": null,
+            "notes": "Klein, citing Cohen, says the Chinese victims of Boxer violence are unknown, with estimates ranging from several thousand to tens of thousands; no reliable precise number is available.",
+            "sources": [
+              "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+            ]
+          }
+        ],
+        "notes": "The numeric low includes only Chinese Christian and foreign-civilian categories that recur in multiple summaries. It excludes the unknown number of non-Christian Chinese civilians killed by Boxer/Qing forces.",
+        "sources": [
+          "https://www.britannica.com/event/Boxer-Rebellion",
+          "https://en.wikipedia.org/wiki/Boxer_Rebellion",
+          "https://www.christianitytoday.com/2015/08/power-of-gentleness/",
+          "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Chinese Christians and foreign clergy/civilians at Beitang/Peitang Cathedral",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Available Preston/Clark excerpts state that over 400 Chinese and foreigners died at the Peitang, including 166 children, but the figure mixes direct mine/explosion deaths, siege deprivation, and possibly other causes; it is not safely separable from direct-civilian categories.",
+          "sources": [
+            "https://www.battle-of-qurman.com.cn/literature/Preston-2000.pdf",
+            "https://dokumen.pub/china-gothic-the-bishop-of-beijing-and-his-cathedral-029574667x-9780295746678.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eight-Nation Alliance",
+      "members": [
+        "Japan",
+        "Russia",
+        "United Kingdom",
+        "France",
+        "United States",
+        "Germany",
+        "Italy",
+        "Austria-Hungary"
+      ],
+      "military_killed": {
+        "low": 526,
+        "high": 526,
+        "point": 526,
+        "notes": "A commonly cited compact figure is 526 foreign soldiers killed. U.S. official histories give component figures such as 95 American casualties at Tientsin and 7 U.S. Legation Guard killed; the 526 figure should be treated as a secondary-summary number, not a fully audited all-cause service-death register.",
+        "sources": [
+          "https://www.thoughtco.com/chinas-boxer-rebellion-in-photos-195618",
+          "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/China-Relief-Expedition/",
+          "https://www.archives.gov/publications/prologue/1999/winter/boxer-rebellion-1.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre / pogrom",
+            "victims_group": "Han, Manchu, and Daur civilians in Blagoveshchensk and the Amur region",
+            "low": 3000,
+            "high": 3500,
+            "notes": "Cambridge Core summary states Russian forces massacred around 3,000\u20133,500 men, women, and children; other summaries give more than 3,000 Qing subjects killed.",
+            "sources": [
+              "https://www.cambridge.org/core/product/63EE577E7EE2418093D8F12F6B5AA99B/core-reader",
+              "https://en.wikipedia.org/wiki/1900_Amur_anti-Chinese_pogroms"
+            ]
+          },
+          {
+            "cause": "punitive expedition / mass execution / village destruction",
+            "victims_group": "Chinese civilians and suspected Boxers in North China",
+            "low": null,
+            "high": null,
+            "notes": "Klein says it is impossible to tell how many died at the hands of foreign troops; Allied operations included indiscriminate killing sprees, torture, mass executions, and destruction of villages. One cited estimate gives around 10,000 people perished at Tianjin alone, but this mixes combatants and civilians.",
+            "sources": [
+              "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+            ]
+          },
+          {
+            "cause": "punitive assault",
+            "victims_group": "Population of Liangxiang",
+            "low": null,
+            "high": null,
+            "notes": "Klein says around one quarter of the small town's population was killed in the September 11, 1900 capture by German and British troops, but the absolute population denominator is not provided in the accessible excerpt.",
+            "sources": [
+              "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+            ]
+          }
+        ],
+        "notes": "The numeric low includes only the Amur/Blagoveshchensk massacres. The broader Allied civilian toll is certainly higher but not quantifiable with the sources consulted.",
+        "sources": [
+          "https://www.cambridge.org/core/product/63EE577E7EE2418093D8F12F6B5AA99B/core-reader",
+          "https://en.wikipedia.org/wiki/1900_Amur_anti-Chinese_pogroms",
+          "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Chinese civilians in villages targeted by Allied punitive expeditions and Amur-region expulsions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Allied looting, forced requisitions, village destruction, and expulsions caused displacement and likely secondary deaths, but no defensible separate death count is available. The Sixty-Four Villages East of the River lost Chinese residency rights after the Amur massacres.",
+          "sources": [
+            "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf",
+            "https://en.wikipedia.org/wiki/1900_Amur_anti-Chinese_pogroms"
+          ]
+        },
+        {
+          "type": "requisition / looting",
+          "victims_group": "Chinese civilians in occupied North China",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Klein notes looting and forcible seizure of provisions and says Allied strategy and tactics took a great death toll among innocent Chinese, but the indirect share is not quantifiable.",
+          "sources": [
+            "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 3000,
+    "military_high": 20526,
+    "civilian_low": 35200,
+    "civilian_high": null,
+    "grand_low": 100000,
+    "grand_high": 150000,
+    "notes": "Grand total is a broad literature-derived range, not the arithmetic sum of per-side buckets. Military_low reflects Britannica's about 3,000 military killed in combat; military_high combines the cited 20,000 possible Qing/Imperial troop deaths with 526 foreign soldiers. Civilian_low includes only well-documented Chinese Christian/foreign civilian victims and the lower Amur massacre estimate. Civilian_high is null because non-Christian Chinese deaths, Allied punitive-expedition deaths, and overlaps between military/civilian categories are not cleanly quantified."
+  },
+  "key_atrocities": [
+    {
+      "name": "Massacres of Chinese Christians and foreign missionaries in North China",
+      "year": 1900,
+      "perpetrator": "Qing Empire / Boxer side",
+      "victims_group": "Chinese Christians and foreign missionaries",
+      "low": 32200,
+      "high": 32650,
+      "notes": "Commonly cited breakdown: 30,000 Chinese Catholics, 2,000 Chinese Protestants, 200\u2013400 Orthodox Christians, and about 200\u2013250 foreign nationals mostly missionaries; attribution between Boxers, Qing troops, and officials varies by locality.",
+      "sources": [
+        "https://www.britannica.com/event/Boxer-Rebellion",
+        "https://en.wikipedia.org/wiki/Boxer_Rebellion",
+        "https://www.christianitytoday.com/2015/08/power-of-gentleness/"
+      ]
+    },
+    {
+      "name": "Taiyuan massacre",
+      "year": 1900,
+      "perpetrator": "Qing Empire / Boxer side",
+      "victims_group": "Foreign missionaries and Christians",
+      "low": 44,
+      "high": 45,
+      "notes": "Klein gives 44 foreign missionaries killed at Taiyuan on July 9, 1900; other summaries state 45 Christians killed.",
+      "sources": [
+        "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf",
+        "https://20thcenturywars.com/july-9-1900-forty-five-christians-are-killed-in-the-taiyuan-massacre-during-the-boxer-rebellion/"
+      ]
+    },
+    {
+      "name": "Baoding / Paotingfu massacres",
+      "year": 1900,
+      "perpetrator": "Qing Empire / Boxer side",
+      "victims_group": "Foreign missionaries",
+      "low": 15,
+      "high": 15,
+      "notes": "Klein gives 15 foreign missionaries killed at Baoding/Paotingfu from June 30 to July 1.",
+      "sources": [
+        "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+      ]
+    },
+    {
+      "name": "Beitang / Peitang Cathedral siege",
+      "year": 1900,
+      "perpetrator": "Qing Empire / Boxer side",
+      "victims_group": "Chinese Christians, foreign clergy, and defenders at Beitang/Peitang",
+      "low": 400,
+      "high": null,
+      "notes": "Preston/Clark excerpts say over 400 Chinese and foreigners died, including 166 children; causes include mines, siege conditions, and violence, so direct and indirect deaths cannot be separated.",
+      "sources": [
+        "https://www.battle-of-qurman.com.cn/literature/Preston-2000.pdf",
+        "https://dokumen.pub/china-gothic-the-bishop-of-beijing-and-his-cathedral-029574667x-9780295746678.html"
+      ]
+    },
+    {
+      "name": "Blagoveshchensk and Amur anti-Chinese massacres",
+      "year": 1900,
+      "perpetrator": "Eight-Nation Alliance - Russian forces",
+      "victims_group": "Han, Manchu, and Daur civilians",
+      "low": 3000,
+      "high": 3500,
+      "notes": "Russian forces massacred around 3,000\u20133,500 civilians in the Amur/Blagoveshchensk violence; other summaries give more than 3,000 Qing subjects killed.",
+      "sources": [
+        "https://www.cambridge.org/core/product/63EE577E7EE2418093D8F12F6B5AA99B/core-reader",
+        "https://en.wikipedia.org/wiki/1900_Amur_anti-Chinese_pogroms"
+      ]
+    },
+    {
+      "name": "Allied punitive expeditions in North China",
+      "year": 1900,
+      "perpetrator": "Eight-Nation Alliance",
+      "victims_group": "Chinese civilians, suspected Boxers, and villages in occupied North China",
+      "low": null,
+      "high": null,
+      "notes": "Klein describes indiscriminate killing, torture, mass executions, village destruction, looting, and forcible seizure of provisions. The number killed is impossible to assess; one cited estimate gives around 10,000 people perished in Tianjin alone, but this is not cleanly civilian-only.",
+      "sources": [
+        "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The most reliable specific figures concern missionaries, Chinese Christians, and some foreign military casualties. Chinese combatant deaths, non-Christian Chinese civilian deaths, and Allied punitive-expedition deaths are poorly recorded and often overlap with categories such as suspected Boxers, irregular combatants, armed civilians, refugees, and siege victims. The 100,000\u2013150,000 grand-total range is therefore an order-of-magnitude synthesis rather than an audited demographic total.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Boxer-Rebellion",
+      "title": "Boxer Rebellion",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.battle-of-qurman.com.cn/literature/Klein-2008.pdf",
+      "title": "The Boxer War - The Boxer Uprising",
+      "publisher": "Mass Violence & R\u00e9sistance / Sciences Po"
+    },
+    {
+      "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/China-Relief-Expedition/",
+      "title": "China Relief Expedition Campaigns",
+      "publisher": "U.S. Army Center of Military History"
+    },
+    {
+      "url": "https://www.archives.gov/publications/prologue/1999/winter/boxer-rebellion-1.html",
+      "title": "U.S. Marines in the Boxer Rebellion",
+      "publisher": "U.S. National Archives"
+    },
+    {
+      "url": "https://www.cambridge.org/core/product/63EE577E7EE2418093D8F12F6B5AA99B/core-reader",
+      "title": "Atrocity and reciprocity during the Boxer War (1900\u20131901): Socio-legal perspectives",
+      "publisher": "Cambridge Core / Modern Asian Studies"
+    },
+    {
+      "url": "https://www.christianitytoday.com/2015/08/power-of-gentleness/",
+      "title": "Hudson Taylor and the Power of Gentleness",
+      "publisher": "Christianity Today"
+    },
+    {
+      "url": "https://origins.osu.edu/read/boxer-rebellion",
+      "title": "The Boxer Rebellion",
+      "publisher": "Origins: Current Events in Historical Perspective / Ohio State University"
+    },
+    {
+      "url": "https://theconflictarchive.com/conflict/boxer-rebellion",
+      "title": "Boxer Rebellion",
+      "publisher": "The Conflict Archive"
+    },
+    {
+      "url": "https://www.thoughtco.com/chinas-boxer-rebellion-in-photos-195618",
+      "title": "China's Boxer Rebellion in Photos",
+      "publisher": "ThoughtCo"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Boxer_Rebellion",
+      "title": "Boxer Rebellion",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1900_Amur_anti-Chinese_pogroms",
+      "title": "1900 Amur anti-Chinese pogroms",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://dokumen.pub/china-gothic-the-bishop-of-beijing-and-his-cathedral-029574667x-9780295746678.html",
+      "title": "China Gothic: The Bishop of Beijing and His Cathedral",
+      "publisher": "University of Washington Press excerpt / Dokumen"
+    },
+    {
+      "url": "https://www.battle-of-qurman.com.cn/literature/Preston-2000.pdf",
+      "title": "The Boxer Rebellion: The Dramatic Story of China's War on Foreigners That Shook the World in the Summer of 1900",
+      "publisher": "Diana Preston / PDF mirror"
+    }
+  ]
+}

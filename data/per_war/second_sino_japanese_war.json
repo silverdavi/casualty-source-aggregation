@@ -1,0 +1,404 @@
+{
+  "war_id": "second_sino_japanese_war",
+  "name": "Second Sino-Japanese War",
+  "start_year": 1937,
+  "end_year": 1945,
+  "ongoing": false,
+  "regions": [
+    "China",
+    "Manchuria / Northeast China",
+    "East Asia"
+  ],
+  "summary": "The Second Sino-Japanese War was the full-scale war between China and the Empire of Japan from 1937 to 1945, following Japan's earlier seizure of Manchuria in 1931. It was one of the deadliest theaters of World War II, involving mass conventional battles, occupation violence, massacres, famine, forced labor, chemical weapons, and biological warfare. Chinese deaths are usually placed in the tens of millions, but attribution among direct killing, famine, disease, displacement, and Chinese defensive policies is highly contested.",
+  "sides": [
+    {
+      "name": "China / Chinese United Front",
+      "members": [
+        "Republic of China",
+        "National Revolutionary Army",
+        "Kuomintang / Nationalist government",
+        "Chinese Communist Party forces",
+        "Eighth Route Army",
+        "New Fourth Army",
+        "local resistance forces"
+      ],
+      "military_killed": {
+        "low": 2000000,
+        "high": 4000000,
+        "point": 3000000,
+        "notes": "Low uses Westad/Mitter-style combat-death estimate; high uses National WWII Museum's 3-4 million Chinese military deaths. The official ROC/Nationalist-only figure of about 1.32 million killed plus 120,000 missing is narrower and excludes many categories.",
+        "sources": [
+          "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+          "https://en.wikipedia.org/wiki/World_War_II_casualties",
+          "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 30000,
+        "high": 89000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "deliberate_flooding",
+            "victims_group": "Chinese civilians in Henan, Anhui, and Jiangsu",
+            "low": 30000,
+            "high": 89000,
+            "notes": "Immediate drowning deaths from the 1938 Yellow River dike breach by Nationalist forces; later famine and disease deaths are counted under deaths_from_actions.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1938_Yellow_River_flood",
+              "https://disasterhistory.org/yellow-river-flood-1938-47"
+            ]
+          }
+        ],
+        "notes": "Direct civilian deaths caused by Chinese forces are much less systematically counted than Japanese atrocities. The Yellow River immediate drowning range is the best-documented direct figure. The 1938 Changsha fire is often cited at about 30,000 deaths but is not included in the numeric range due to weaker open-source support in this search.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/1938_Yellow_River_flood",
+          "https://disasterhistory.org/yellow-river-flood-1938-47",
+          "https://www.britannica.com/event/Huang-He-floods",
+          "https://en.wikipedia.org/wiki/1938_Changsha_fire"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "scorched_earth_environmental_warfare",
+          "victims_group": "Chinese civilians in the Yellow River flooded zone",
+          "low": 400000,
+          "high": 900000,
+          "point": null,
+          "notes": "Total deaths from the 1938 Nationalist dike breach, including drowning, famine, disease, exposure, and displacement. Specialist summaries often give 400,000-500,000; broader encyclopedic ranges reach 900,000.",
+          "sources": [
+            "https://disasterhistory.org/yellow-river-flood-1938-47",
+            "https://www.britannica.com/event/Huang-He-floods",
+            "https://en.wikipedia.org/wiki/1938_Yellow_River_flood"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Henan civilians, 1942-1943",
+          "low": 700000,
+          "high": 4000000,
+          "point": null,
+          "notes": "Attribution is mixed: drought, locusts, Japanese occupation, Nationalist requisitioning and relief failures, market disruption, and divided control all contributed. Garnaut argues for a much lower figure, often summarized around 700,000, while older and broader estimates range from 2 million to 4 million.",
+          "sources": [
+            "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/quantitative-description-of-the-henan-famine-of-1942/36663986B38CE1D33C0A0638BA2653CA",
+            "https://en.wikipedia.org/wiki/Chinese_famine_of_1942%E2%80%931943",
+            "https://pacificaffairs.ubc.ca/book-reviews/the-chinese-people-at-war-human-suffering-and-social-transformation-1937-1945-by-diana-lary/"
+          ]
+        },
+        {
+          "type": "conscription_mistreatment",
+          "victims_group": "Chinese conscripts and military laborers",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Brutal conscription and transport deaths are well documented, but no consensus figure is used here. R. J. Rummel's estimate of 3,081,000 conscripts dead from Nationalist mistreatment is cited in casualty compilations but is controversial and not rolled into totals as a firm figure.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/World_War_II_casualties",
+            "https://www.reddit.com/r/AskHistorians/comments/10mio9w/during_the_second_sino_japanese_war_was_the/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Empire of Japan and collaborationist regimes",
+      "members": [
+        "Empire of Japan",
+        "Imperial Japanese Army",
+        "Imperial Japanese Navy",
+        "Kwantung Army",
+        "China Expeditionary Army",
+        "Manchukuo",
+        "Wang Jingwei regime",
+        "other collaborationist forces"
+      ],
+      "military_killed": {
+        "low": 480000,
+        "high": 700000,
+        "point": 502400,
+        "notes": "Low is the Library of Congress guide's Japanese soldiers killed on Chinese soil. Point uses a Japanese-front figure including Northeast China cited in Genocide and Mass Violence in Asia. High uses a Yomiuri-derived estimate summarized in casualty literature; scopes differ.",
+        "sources": [
+          "https://guides.loc.gov/sino-japanese-war-1937-1945",
+          "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/30/28/58/2021302858/2021302858.pdf",
+          "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3900000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Chinese civilians and surrendered soldiers at Nanjing",
+            "low": 100000,
+            "high": 300000,
+            "notes": "Most estimates range from 100,000 to more than 300,000; some institutional summaries give 200,000-300,000.",
+            "sources": [
+              "https://www.britannica.com/event/Nanjing-Massacre",
+              "https://libguides.usc.edu/vha/NanjingMassacres",
+              "https://www.japantimes.co.jp/news/2007/12/13/national/history/nanjing-massacre-certitude-toll-will-elude/"
+            ]
+          },
+          {
+            "cause": "aerial_bombing",
+            "victims_group": "Chinese civilians in Chongqing",
+            "low": 11000,
+            "high": 11000,
+            "notes": "About 11,000 killed and more than 10,000 wounded in the Chongqing bombing campaign.",
+            "sources": [
+              "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/30/28/58/2021302858/2021302858.pdf"
+            ]
+          },
+          {
+            "cause": "punitive_campaign_massacres",
+            "victims_group": "Chinese civilians in Zhejiang and Jiangxi",
+            "low": 250000,
+            "high": 250000,
+            "notes": "Chinese estimate for civilians killed in the 1942 Zhejiang-Jiangxi punitive campaign; may overlap with biological-warfare and regional occupation deaths.",
+            "sources": [
+              "https://ww2db.com/battle_spec.php?battle_id=287"
+            ]
+          },
+          {
+            "cause": "chemical_warfare",
+            "victims_group": "Chinese soldiers and civilians",
+            "low": null,
+            "high": null,
+            "notes": "Japan used chemical weapons on over 2,000 occasions, primarily in China. Fatalities are not cleanly separable from battle and civilian death totals.",
+            "sources": [
+              "https://link.springer.com/chapter/10.1007/978-3-319-51664-6_14",
+              "https://en.wikipedia.org/wiki/Japanese_war_crimes"
+            ]
+          }
+        ],
+        "notes": "The 3.9 million low uses Rummel's China-specific estimate of direct Japanese operational killing, mostly civilians. A high value is left null because broad civilian-death totals include indirect famine, disease, forced labor, displacement, and Chinese-caused disasters.",
+        "sources": [
+          "https://search.worldcat.org/cs/title/China%27s-bloody-century-%3A-genocide-and-mass-murder-since-1900/oclc/22421624",
+          "https://en.wikipedia.org/wiki/Japanese_war_crimes"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "counterinsurgency_scorched_earth",
+          "victims_group": "Chinese civilians in North China base areas",
+          "low": 2470000,
+          "high": 2700000,
+          "point": null,
+          "notes": "Three Alls Policy / sanko sakusen. Himeta estimates roughly 2.47-2.7 million Chinese civilians killed directly and indirectly.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Three_Alls_policy",
+            "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+          ]
+        },
+        {
+          "type": "biological_warfare_and_human_experimentation",
+          "victims_group": "Chinese, Korean, Russian, and other detainees and Chinese civilians exposed to biological attacks",
+          "low": 200000,
+          "high": 580000,
+          "point": null,
+          "notes": "The in-facility Unit 731 death figure is much lower, about 3,000-5,000 detainees at Pingfang; wider biological-warfare estimates range from about 200,000-500,000 to a 580,000 symposium figure.",
+          "sources": [
+            "https://www.lemonde.fr/en/international/article/2025/05/29/in-japan-newly-released-archives-reveal-the-scale-of-human-experimentation-between-1938-and-1945_6741787_4.html",
+            "https://en.wikipedia.org/wiki/Unit_731",
+            "https://en.wikipedia.org/wiki/Japanese_war_crimes"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Chinese forced laborers in Datong coal mines",
+          "low": 60000,
+          "high": 155000,
+          "point": null,
+          "notes": "Datong is a documented subcase, not an all-China forced-labor total. Earlier estimates cite over 60,000 miners' lives; later research by Li Jinwen gives more than 155,000 laborers.",
+          "sources": [
+            "https://www.chinadaily.com.cn/english/doc/2005-01/19/content_410319.htm",
+            "https://www.china.org.cn/china/2015-08/31/content_36456158.htm",
+            "https://www.tandfonline.com/doi/full/10.1080/14616688.2024.2337198"
+          ]
+        },
+        {
+          "type": "occupation_famine_disease_displacement",
+          "victims_group": "Chinese civilians under occupation and in war-disrupted regions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Large but not cleanly separable from the overall Chinese civilian-death totals. Westad/Mitter-style estimates imply about 12 million Chinese civilian deaths; Lary gives 20-30 million total Chinese soldiers and civilians dead.",
+          "sources": [
+            "https://www.cambridge.org/core/books/abs/chinese-people-at-war/introduction-the-human-cost-of-war/A7D0E9A37FFB88404545C9CE8A7BEC12",
+            "https://en.wikipedia.org/wiki/World_War_II_casualties",
+            "https://www.theguardian.com/books/2013/jun/06/china-war-japan-rana-mitter-review"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 2480000,
+    "military_high": 4700000,
+    "civilian_low": 10000000,
+    "civilian_high": 28000000,
+    "grand_low": 14480000,
+    "grand_high": 30700000,
+    "notes": "Grand low adds about 14 million Chinese deaths to 480,000 Japanese military deaths. Grand high adds Lary's 30 million Chinese deaths to 700,000 Japanese military deaths. Civilian low/high are inferred from broad Chinese total ranges minus military ranges and are not a clean perpetrator-attributed total. Atrocity and indirect-death sub-buckets overlap and should not be summed independently."
+  },
+  "key_atrocities": [
+    {
+      "name": "Nanjing Massacre",
+      "year": 1937,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Chinese civilians and surrendered soldiers",
+      "low": 100000,
+      "high": 300000,
+      "notes": "Most estimates range from 100,000 to more than 300,000; some institutional summaries give 200,000-300,000.",
+      "sources": [
+        "https://www.britannica.com/event/Nanjing-Massacre",
+        "https://libguides.usc.edu/vha/NanjingMassacres"
+      ]
+    },
+    {
+      "name": "Three Alls Policy",
+      "year": 1942,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Chinese civilians in North China",
+      "low": 2470000,
+      "high": 2700000,
+      "notes": "Counterinsurgency campaigns of killing, looting, burning, forced relocation, and village destruction; direct and indirect deaths are not separable.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Three_Alls_policy",
+        "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+      ]
+    },
+    {
+      "name": "1938 Yellow River flood",
+      "year": 1938,
+      "perpetrator": "China / Nationalist government",
+      "victims_group": "Chinese civilians in Henan, Anhui, and Jiangsu",
+      "low": 400000,
+      "high": 900000,
+      "notes": "Deliberate breach of dikes near Huayuankou; immediate drowning deaths were lower, but total deaths from drowning, famine, and disease reached several hundred thousand.",
+      "sources": [
+        "https://disasterhistory.org/yellow-river-flood-1938-47",
+        "https://www.britannica.com/event/Huang-He-floods",
+        "https://en.wikipedia.org/wiki/1938_Yellow_River_flood"
+      ]
+    },
+    {
+      "name": "Henan famine",
+      "year": 1942,
+      "perpetrator": "Mixed / not cleanly attributable",
+      "victims_group": "Henan civilians",
+      "low": 700000,
+      "high": 4000000,
+      "notes": "Deaths resulted from drought, locusts, market collapse, war disruption, Japanese occupation, Nationalist requisition and relief failures, and divided control.",
+      "sources": [
+        "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/quantitative-description-of-the-henan-famine-of-1942/36663986B38CE1D33C0A0638BA2653CA",
+        "https://en.wikipedia.org/wiki/Chinese_famine_of_1942%E2%80%931943",
+        "https://pacificaffairs.ubc.ca/book-reviews/the-chinese-people-at-war-human-suffering-and-social-transformation-1937-1945-by-diana-lary/"
+      ]
+    },
+    {
+      "name": "Unit 731 and Japanese biological warfare",
+      "year": null,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Detainees and Chinese civilians exposed to biological attacks",
+      "low": 200000,
+      "high": 580000,
+      "notes": "Unit 731 facility deaths are estimated at 3,000-5,000; wider biological-warfare deaths are much more contested and may overlap with regional epidemic deaths.",
+      "sources": [
+        "https://www.lemonde.fr/en/international/article/2025/05/29/in-japan-newly-released-archives-reveal-the-scale-of-human-experimentation-between-1938-and-1945_6741787_4.html",
+        "https://en.wikipedia.org/wiki/Unit_731",
+        "https://en.wikipedia.org/wiki/Japanese_war_crimes"
+      ]
+    },
+    {
+      "name": "Chongqing bombing",
+      "year": 1939,
+      "perpetrator": "Empire of Japan",
+      "victims_group": "Chinese civilians in Chongqing",
+      "low": 11000,
+      "high": 11000,
+      "notes": "Sustained bombing campaign, especially 1939-1941; cited figure is about 11,000 killed and more than 10,000 wounded.",
+      "sources": [
+        "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/30/28/58/2021302858/2021302858.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is not whether deaths were massive, but how to assign them. Chinese war-death estimates range from about 14 million to 30 million depending on whether the compiler uses conservative military/civilian counts, demographic loss, famine estimates, or official Chinese commemorative totals. Direct Japanese killing, Japanese occupation-induced deaths, Chinese Nationalist scorched-earth deaths, famine from mixed causes, and disease/displacement deaths overlap heavily. Rummel's democide figures are cited as boundary markers but are controversial and not used as the sole basis for totals.",
+  "sources": [
+    {
+      "url": "https://www.cambridge.org/core/books/abs/chinese-people-at-war/introduction-the-human-cost-of-war/A7D0E9A37FFB88404545C9CE8A7BEC12",
+      "title": "Introduction: The Human Cost of War, The Chinese People at War",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://www.nationalww2museum.org/learn/education/for-students/ww2-history/ww2-by-the-numbers/world-wide-deaths.html",
+      "title": "Research Starters: Worldwide Deaths in World War II",
+      "publisher": "The National WWII Museum"
+    },
+    {
+      "url": "https://www.britannica.com/event/Second-Sino-Japanese-War",
+      "title": "Second Sino-Japanese War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://guides.loc.gov/sino-japanese-war-1937-1945",
+      "title": "Sino-Japanese War of 1937-1945: A Resource Guide",
+      "publisher": "Library of Congress"
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/30/28/58/2021302858/2021302858.pdf",
+      "title": "Genocide and Mass Violence in Asia",
+      "publisher": "De Gruyter / Library of Congress hosted PDF"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/quantitative-description-of-the-henan-famine-of-1942/36663986B38CE1D33C0A0638BA2653CA",
+      "title": "A Quantitative Description of the Henan Famine of 1942",
+      "publisher": "Modern Asian Studies / Cambridge University Press"
+    },
+    {
+      "url": "https://disasterhistory.org/yellow-river-flood-1938-47",
+      "title": "Yellow River flood, 1938-47",
+      "publisher": "DisasterHistory.org"
+    },
+    {
+      "url": "https://www.britannica.com/event/Huang-He-floods",
+      "title": "Huang He floods",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/event/Nanjing-Massacre",
+      "title": "Nanjing Massacre",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://libguides.usc.edu/vha/NanjingMassacres",
+      "title": "Nanjing Massacres",
+      "publisher": "USC Shoah Foundation Visual History Archive"
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-51664-6_14",
+      "title": "No Retaliation in Kind: Japanese Chemical Warfare Policy in World War II",
+      "publisher": "Springer"
+    },
+    {
+      "url": "https://www.lemonde.fr/en/international/article/2025/05/29/in-japan-newly-released-archives-reveal-the-scale-of-human-experimentation-between-1938-and-1945_6741787_4.html",
+      "title": "In Japan, newly released archives reveal the scale of human experimentation between 1938 and 1945",
+      "publisher": "Le Monde"
+    },
+    {
+      "url": "https://www.chinadaily.com.cn/english/doc/2005-01/19/content_410319.htm",
+      "title": "New book doubles death from Japanese invasion",
+      "publisher": "China Daily"
+    },
+    {
+      "url": "https://ww2db.com/battle_spec.php?battle_id=287",
+      "title": "Zhejiang-Jiangxi Campaign",
+      "publisher": "World War II Database"
+    },
+    {
+      "url": "https://search.worldcat.org/cs/title/China%27s-bloody-century-%3A-genocide-and-mass-murder-since-1900/oclc/22421624",
+      "title": "China's Bloody Century: Genocide and Mass Murder Since 1900",
+      "publisher": "WorldCat"
+    }
+  ]
+}

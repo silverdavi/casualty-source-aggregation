@@ -1,0 +1,324 @@
+{
+  "war_id": "indonesian_invasion_east_timor",
+  "name": "Indonesian occupation of East Timor",
+  "start_year": 1975,
+  "end_year": 1999,
+  "ongoing": false,
+  "regions": [
+    "East Timor",
+    "Timor-Leste",
+    "West Timor",
+    "Indonesia"
+  ],
+  "summary": "Indonesia invaded East Timor on 7 December 1975 and occupied the territory until 1999. The best-supported mortality estimate is CAVR/HRDAG's minimum of 102,800 East Timorese non-combatant conflict-related deaths, made up of about 18,600 killings/disappearances and about 84,200 excess deaths from hunger and illness. The largest attributable bucket is deprivation caused by Indonesian military occupation policies, forced displacement, resettlement camps, and destruction or denial of food sources.",
+  "sides": [
+    {
+      "name": "Indonesian state and pro-integration forces",
+      "members": [
+        "Republic of Indonesia",
+        "ABRI/TNI",
+        "Indonesian Police/Polri",
+        "Kopassus",
+        "Kostrad",
+        "Indonesian civil administration",
+        "Hansip",
+        "Ratih",
+        "Wanra",
+        "Kamra",
+        "pro-autonomy militias",
+        "East Timorese auxiliaries"
+      ],
+      "military_killed": {
+        "low": 3600,
+        "high": null,
+        "point": 3600,
+        "notes": "Gerry van Klinken's corrected analysis of an Indonesian official list gives about 3,600 combat deaths, including about 2,100 mostly Indonesian regulars/police and about 40% East Timorese irregulars. This is combat deaths, not all-cause military deaths, and excludes unregistered civilians forced to assist operations.",
+        "sources": [
+          "https://ecommons.cornell.edu/server/api/core/bitstreams/edc214c2-61d1-45fc-8e6f-25bb40855b22/content",
+          "https://ecommons.cornell.edu/entities/publication/4dc78a3f-639a-4ea6-b61a-ee93cb9c64e2"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 12320,
+        "high": 13720,
+        "point": 13020,
+        "breakdown": [
+          {
+            "cause": "unlawful killing and enforced disappearance",
+            "victims_group": "East Timorese non-combatants",
+            "low": 12320,
+            "high": 13720,
+            "notes": "Approximation applying CAVR's finding that about 70% of the estimated 17,600-19,600 killings/disappearances were committed by Indonesian security forces including East Timorese auxiliaries.",
+            "sources": [
+              "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+              "https://hrdag.org/timorlestefaqs/"
+            ]
+          }
+        ],
+        "notes": "CAVR documented-case tables attribute 67.6% of reported unlawful killings and 86.3% of enforced disappearances to Indonesian military/police and Timorese auxiliaries. The nationalized number here is a proportional calculation, not a separate CAVR perpetrator-specific estimate.",
+        "sources": [
+          "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+          "https://hrdag.org/content/timorleste/Benetech-Report-to-CAVR.pdf",
+          "https://hrdag.org/timorlestefaqs/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "East Timorese civilians and non-combatants",
+          "low": 72200,
+          "high": 183000,
+          "point": 84200,
+          "notes": "HRDAG's conservative statistical estimate is 84,200 excess hunger/illness deaths with a 95% margin of error of +/- 12,000; HRDAG's upper-bound model is 183,000. CAVR's responsibility chapter finds the Government of Indonesia and Indonesian security forces primarily responsible for 100,000-180,000 hunger/illness deaths.",
+          "sources": [
+            "https://hrdag.org/timorlestefaqs/",
+            "https://hrdag.org/content/timorleste/Benetech-Report-to-CAVR.pdf",
+            "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "East Timorese civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Deaths are included within the excess hunger/illness bucket. HRDAG estimated 108,200 households experienced 282,800 displacement events, and CAVR tied displacement, mortality, resettlement camps, destruction of food sources, and denial of aid to Indonesian occupation policy.",
+          "sources": [
+            "https://hrdag.org/timorlestefaqs/",
+            "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "East Timorese resistance",
+      "members": [
+        "Fretilin",
+        "Falintil",
+        "CNRM",
+        "CNRT",
+        "clandestine pro-independence networks"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable total Falintil/Fretilin combatant-death estimate was found. CAVR/HRDAG explicitly did not estimate combatant deaths.",
+        "sources": [
+          "https://hrdag.org/timorlestefaqs/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 4050,
+        "high": 4510,
+        "point": 4280,
+        "breakdown": [
+          {
+            "cause": "unlawful killing and enforced disappearance",
+            "victims_group": "East Timorese non-combatants, including victims of the 1975 internal conflict and later occupation-era killings",
+            "low": 4050,
+            "high": 4510,
+            "notes": "Approximation applying the combined documented-case share for Fretilin/Falintil: 1,297 of 5,108 unlawful killings and 71 of 833 disappearances, about 23% combined, to the CAVR direct-killing/disappearance range of 17,600-19,600.",
+            "sources": [
+              "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+              "https://hrdag.org/timorlestefaqs/"
+            ]
+          }
+        ],
+        "notes": "CAVR indicates many Fretilin-attributed killings occurred in the 1975 internal party conflict. These are documented-case proportions applied to a national estimate, not a separate CAVR statistical perpetrator estimate.",
+        "sources": [
+          "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+          "https://hrdag.org/content/timorleste/Benetech-Report-to-CAVR.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "East Timorese civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRDAG reports Falintil was named as the institution telling households to move in 15.0% of displacement reports, but no reliable source provides a separate death toll from Falintil-caused displacement. Most famine/deprivation deaths are attributed by CAVR to Indonesian invasion and occupation policies.",
+          "sources": [
+            "https://hrdag.org/timorlestefaqs/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other East Timorese political factions and non-TNI-attributed actors",
+      "members": [
+        "UDT",
+        "Apodeti",
+        "other institutions",
+        "civilian perpetrators not classified as Indonesian-command auxiliaries or Fretilin/Falintil"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable all-cause combatant-death total found for these factions.",
+        "sources": [
+          "https://hrdag.org/timorlestefaqs/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1230,
+        "high": 1370,
+        "point": 1300,
+        "breakdown": [
+          {
+            "cause": "unlawful killing",
+            "victims_group": "East Timorese non-combatants",
+            "low": null,
+            "high": null,
+            "notes": "CAVR documented-case table attributes 150 of 5,108 reported unlawful killings to UDT, 41 to Apodeti, and 165 to other institutions. The aggregate estimate is an approximate residual after Indonesian/pro-integration and Fretilin/Falintil shares are applied.",
+            "sources": [
+              "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf"
+            ]
+          }
+        ],
+        "notes": "These estimates should be treated cautiously because CAVR did not publish an independent national statistical estimate by each minor perpetrator group.",
+        "sources": [
+          "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+          "https://hrdag.org/content/timorleste/Benetech-Report-to-CAVR.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 3600,
+    "military_high": null,
+    "civilian_low": 90800,
+    "civilian_high": 202600,
+    "grand_low": 94400,
+    "grand_high": null,
+    "notes": "Civilian_low/civilian_high reflect the CAVR/HRDAG East Timorese non-combatant range: 17,600-19,600 killings/disappearances plus deprivation estimates from the conservative lower bound through the upper-bound hunger/illness model. Grand_low adds the known approximately 3,600 Indonesian/pro-integration combat deaths. Grand_high is null because Falintil/Fretilin combatant deaths and comprehensive all-cause combatant deaths are not reliably estimated; a known-plus-estimated upper figure before unknown resistance combatant deaths would be about 206,200."
+  },
+  "key_atrocities": [
+    {
+      "name": "Forced displacement and famine under Indonesian occupation",
+      "year": null,
+      "perpetrator": "Indonesian state and pro-integration forces",
+      "victims_group": "East Timorese civilians and non-combatants",
+      "low": 72200,
+      "high": 183000,
+      "notes": "HRDAG estimates 84,200 excess hunger/illness deaths with +/-12,000 margin; upper-bound model 183,000. CAVR responsibility chapter attributes 100,000-180,000 hunger/illness deaths to Indonesian invasion and occupation policies.",
+      "sources": [
+        "https://hrdag.org/timorlestefaqs/",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf"
+      ]
+    },
+    {
+      "name": "Kraras / Viqueque massacres",
+      "year": 1983,
+      "perpetrator": "Indonesian state and pro-integration forces",
+      "victims_group": "East Timorese villagers and suspected resistance supporters",
+      "low": null,
+      "high": 300,
+      "notes": "Van Klinken notes reprisals after the Craras incident left up to 300 people dead; exact number remains uncertain.",
+      "sources": [
+        "https://ecommons.cornell.edu/server/api/core/bitstreams/edc214c2-61d1-45fc-8e6f-25bb40855b22/content"
+      ]
+    },
+    {
+      "name": "Santa Cruz / Dili massacre",
+      "year": 1991,
+      "perpetrator": "Indonesian Army",
+      "victims_group": "East Timorese pro-independence demonstrators and civilians",
+      "low": 250,
+      "high": 271,
+      "notes": "Common estimates give at least 250 killed; lists compiled by A Paz \u00e9 Poss\u00edvel em Timor-Leste counted 271 killed, 278 wounded, and 270 disappeared.",
+      "sources": [
+        "https://www.etan.org/timor/SntaCRUZ.htm",
+        "https://www.etan.org/factsheets/santa_cruz.htm"
+      ]
+    },
+    {
+      "name": "1999 referendum terror campaign",
+      "year": 1999,
+      "perpetrator": "Indonesian state and pro-integration forces",
+      "victims_group": "East Timorese pro-independence civilians and communities",
+      "low": 2008,
+      "high": 3260,
+      "notes": "CAVR/HRDAG estimate 2,634 killings in 1999 with +/-626 margin; CAVR found Indonesian military, police and civil authorities planned or controlled militia violence.",
+      "sources": [
+        "https://www.etan.org/etanpdf/2006/CAVR/Chega%21-Report-Executive-Summary.pdf",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf"
+      ]
+    },
+    {
+      "name": "Suai Church massacre",
+      "year": 1999,
+      "perpetrator": "Pro-Indonesia Laksaur militia and Indonesian military elements",
+      "victims_group": "Civilians sheltering at Suai church compound, including clergy",
+      "low": 27,
+      "high": 200,
+      "notes": "UN Serious Crimes Unit indictments included 27 murder counts; later investigators identified about 40 probable victims, while some accounts alleged higher totals up to about 200.",
+      "sources": [
+        "https://www.laohamutuk.org/Justice/99/bere/SuaiChurchMassacreGRobinson.pdf",
+        "https://www.rtp.pt/noticias/mundo/em-timor-leste-sete-milicianos-acusados-de-massacre-na-igreja-de-suai_n103100",
+        "https://www.etan.org/news/2001a/09suai.htm"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The CAVR/HRDAG non-combatant mortality estimate is the strongest source, but it is conservative because many deaths occurred in remote areas and some deaths could no longer be remembered by 2004. Perpetrator-specific direct-killing figures for Fretilin/Falintil and minor factions are proportional approximations from documented-case tables, not independent national statistical estimates. Combatant deaths are poorly measured except for the Indonesian/pro-integration side official-list analysis.",
+  "sources": [
+    {
+      "url": "https://hrdag.org/content/timorleste/Benetech-Report-to-CAVR.pdf",
+      "title": "The Profile of Human Rights Violations in Timor-Leste, 1974-1999",
+      "publisher": "Human Rights Data Analysis Group / Benetech"
+    },
+    {
+      "url": "https://hrdag.org/timorlestefaqs/",
+      "title": "Timor-Leste FAQs",
+      "publisher": "Human Rights Data Analysis Group"
+    },
+    {
+      "url": "https://www.etan.org/etanpdf/2006/CAVR/Chega%21-Report-Executive-Summary.pdf",
+      "title": "Chega! Executive Summary",
+      "publisher": "Commission for Reception, Truth and Reconciliation in East Timor / ETAN"
+    },
+    {
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB176/CAVR_responsibility.pdf",
+      "title": "Chega! Part 8: Responsibility and Accountability",
+      "publisher": "Commission for Reception, Truth and Reconciliation in East Timor / National Security Archive"
+    },
+    {
+      "url": "https://ecommons.cornell.edu/entities/publication/4dc78a3f-639a-4ea6-b61a-ee93cb9c64e2",
+      "title": "Indonesian Casualties in East Timor, 1975-1999: Analysis of an Official List",
+      "publisher": "Cornell University Southeast Asia Program, Indonesia"
+    },
+    {
+      "url": "https://ecommons.cornell.edu/server/api/core/bitstreams/edc214c2-61d1-45fc-8e6f-25bb40855b22/content",
+      "title": "Indonesian Casualties in East Timor, 1975-1999: Analysis of an Official List PDF",
+      "publisher": "Cornell University eCommons"
+    },
+    {
+      "url": "https://www.etan.org/timor/SntaCRUZ.htm",
+      "title": "Santa Cruz Massacre",
+      "publisher": "East Timor and Indonesia Action Network"
+    },
+    {
+      "url": "https://www.etan.org/factsheets/santa_cruz.htm",
+      "title": "Santa Cruz Massacre Factsheet",
+      "publisher": "East Timor and Indonesia Action Network"
+    },
+    {
+      "url": "https://www.laohamutuk.org/Justice/99/bere/SuaiChurchMassacreGRobinson.pdf",
+      "title": "Excerpt about Suai Church Massacre, September 6, 1999",
+      "publisher": "La'o Hamutuk / Geoffrey Robinson"
+    },
+    {
+      "url": "https://www.etan.org/news/2001a/09suai.htm",
+      "title": "Suai, East Timor",
+      "publisher": "East Timor and Indonesia Action Network"
+    },
+    {
+      "url": "https://gsp.yale.edu/sites/default/files/files/KiernanRevised1.pdf",
+      "title": "The Demography of Genocide in Southeast Asia: The Death Tolls in Cambodia, 1975-79, and East Timor, 1975-80",
+      "publisher": "Critical Asian Studies / Yale Genocide Studies Program"
+    }
+  ]
+}

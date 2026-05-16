@@ -1,0 +1,501 @@
+{
+  "war_id": "somali_civil_war",
+  "name": "Somali Civil War",
+  "start_year": 1991,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Somalia",
+    "Somaliland",
+    "Puntland",
+    "South-Central Somalia",
+    "Mogadishu",
+    "Bay and Bakool",
+    "Lower Shabelle",
+    "Lower Juba",
+    "Galguduud",
+    "Hiraan",
+    "Sool and Sanaag"
+  ],
+  "summary": "The Somali Civil War began with the 1991 collapse of the Siad Barre government and evolved into overlapping wars among clan factions, warlords, Islamist insurgents, Somali governments, regional administrations, African Union forces, neighboring states, and other international actors. Its death toll is dominated by famine and excess-mortality crises, especially 1991-1992/1993 and 2010-2012, as well as continuing direct violence from al-Shabaab, state forces, clan militias, and regional conflicts. Overall post-1991 estimates commonly range from about 350,000 to 1,000,000 deaths, with roughly 500,000 often cited, but attribution by belligerent is highly uncertain.",
+  "sides": [
+    {
+      "name": "Early clan and warlord factions",
+      "members": [
+        "United Somali Congress factions",
+        "Somali National Alliance",
+        "Ali Mahdi faction",
+        "Somali National Front",
+        "Somali Patriotic Movement",
+        "other clan militias and warlord coalitions"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable actor-by-actor military killed total was found for the 1991-2006 warlord period. UCDP/World Bank battle-death data exist for Somalia but do not provide a clean factional own-combatant death ledger.",
+        "sources": [
+          "https://data.worldbank.org/indicator/VC.BTL.DETH?locations=SO"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "indiscriminate shelling and urban fighting",
+            "victims_group": "Mogadishu civilians and combatants, not separated",
+            "low": 14000,
+            "high": 14000,
+            "notes": "Africa Watch/Physicians for Human Rights estimated 14,000 killed and 27,000 wounded in Mogadishu from 17 November 1991 to 29 February 1992. This was not a civilian-only count, though the report emphasizes indiscriminate fire and civilian suffering.",
+            "sources": [
+              "https://www.hrw.org/reports/1992/somalia/"
+            ]
+          },
+          {
+            "cause": "massacre and attacks on civilians",
+            "victims_group": "Rahanweyn, Hawiye, Bantu and other southern civilians",
+            "low": null,
+            "high": null,
+            "notes": "Human Rights Watch described factional attacks on civilians, including SNF slaughter of non-Darod civilians and broader attacks that destroyed food production and distribution, but did not provide a reliable perpetrator-specific total.",
+            "sources": [
+              "https://www.hrw.org/report/1993/03/01/somalia-beyond-warlords/need-verdict-human-rights-abuses"
+            ]
+          }
+        ],
+        "notes": "The early war produced tens of thousands of direct violent deaths, but most sources do not cleanly separate civilians from combatants or perpetrators by faction.",
+        "sources": [
+          "https://www.hrw.org/reports/1992/somalia/",
+          "https://www.hrw.org/report/1993/03/01/somalia-beyond-warlords/need-verdict-human-rights-abuses"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Somali civilians, especially southern farming, displaced, Rahanweyn and Bantu communities",
+          "low": 200000,
+          "high": 500000,
+          "point": null,
+          "notes": "The 1991-1992/1993 famine is usually estimated at 200,000-300,000 deaths; later comparative work cites 212,000-248,000; a UN historical account states 500,000 Somalis fell victim to famine and war in 1992. Attribution is collective to war, looting, displacement, relief obstruction, and drought rather than a single faction.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1992_famine_in_Somalia",
+            "https://digitallibrary.un.org/record/205118/files/%5EST_%5EDPI_1677-EN.pdf",
+            "https://fews.net/sites/default/files/documents/reports/Somalia_Mortality_Estimates_Final_Report_1May2013_upload.pdf",
+            "https://www.hrw.org/reports/1992/somalia/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Al-Shabaab and allied jihadist or Islamist insurgent forces",
+      "members": [
+        "Al-Shabaab",
+        "post-ICU Islamist insurgent networks",
+        "Hizbul Islam elements when aligned or merged"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Al-Shabaab combatant deaths are numerous but not reliably audited across 2006-2026. ACLED summaries provide non-civilian fatalities for all actors, not al-Shabaab own killed.",
+        "sources": [
+          "https://www.gov.uk/government/publications/somalia-country-policy-and-information-notes/country-policy-and-information-note-mogadishu-al-shabab-and-the-security-situation-somalia-july-2025-accessible",
+          "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/14-recent-overall-security-trends/141-security-incidents-estimated-civilian-fatalities-and-casualties"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1563,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "IEDs, suicide attacks, targeted killings, executions and armed attacks",
+            "victims_group": "Somali civilians",
+            "low": 1563,
+            "high": 1563,
+            "notes": "UNSOM/OHCHR attributed 3,526 civilian casualties to al-Shabaab in 2017-2019, including 1,563 killed and 1,963 injured.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          },
+          {
+            "cause": "IEDs and VBIEDs",
+            "victims_group": "Somali civilians",
+            "low": 1197,
+            "high": 1197,
+            "notes": "UNSOM/OHCHR recorded 2,927 civilian casualties from al-Shabaab IEDs in 2017-2019, including 1,197 killed.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          },
+          {
+            "cause": "public executions",
+            "victims_group": "civilians accused by al-Shabaab courts",
+            "low": 121,
+            "high": 121,
+            "notes": "UNSOM/OHCHR verified 56 executions in 2017, 31 in 2018, and 34 in 2019.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          },
+          {
+            "cause": "truck bombing",
+            "victims_group": "Mogadishu civilians",
+            "low": 512,
+            "high": 512,
+            "notes": "The 14 October 2017 Mogadishu bombing caused at least 512 deaths and 316 injuries according to UNSOM/OHCHR.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          }
+        ],
+        "notes": "The low value is only the UNSOM/OHCHR documented killed count for 2017-2019. The true all-years al-Shabaab civilian death toll is higher but no audited 2007-2026 total was found.",
+        "sources": [
+          "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf",
+          "https://www.gov.uk/government/publications/somalia-country-policy-and-information-notes/country-policy-and-information-note-mogadishu-al-shabab-and-the-security-situation-somalia-july-2025-accessible"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "southern and central Somali civilians affected by 2010-2012 famine",
+          "low": 143000,
+          "high": 273000,
+          "point": 258000,
+          "notes": "This is the total 2010-2012 famine and severe food insecurity mortality estimate, not all attributable to al-Shabaab. Al-Shabaab restrictions and control of affected areas were a major access bottleneck; other causes included drought, food prices, insecurity, counter-terrorism restrictions, and aid diversion by multiple actors.",
+          "sources": [
+            "https://fews.net/east-africa/somalia/special-report/may-2013",
+            "https://www.ipcinfo.org/ipcinfo-website/resources/resources-details/en/c/1129216/",
+            "https://www.sciencedirect.com/science/article/abs/pii/S2211912412000053",
+            "https://www.sciencedirect.com/science/article/pii/S221191241200003X"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Somali governments and allied international forces",
+      "members": [
+        "Transitional Federal Government",
+        "Federal Government of Somalia",
+        "Somali National Army",
+        "Somali Police Force",
+        "NISA",
+        "Federal Member State forces",
+        "AMISOM",
+        "ATMIS",
+        "AUSSOM",
+        "Ethiopia",
+        "Kenya",
+        "United States",
+        "UNITAF",
+        "UNOSOM"
+      ],
+      "military_killed": {
+        "low": 3543,
+        "high": null,
+        "point": null,
+        "notes": "This floor includes about 3,500 AU peacekeeper fatalities since 2007 and 43 US service members in the 1992-1994 intervention. It excludes Somali government forces, Ethiopian/Kenyan unilateral forces, and UN contingents where no reliable cumulative killed total was found in the searched sources.",
+        "sources": [
+          "https://www.globalsecurity.org/military/library/news/2023/04/mil-230411-voa05.htm",
+          "https://www.warcosts.org/conflicts/somalia",
+          "https://www.britannica.com/topic/UNOSOM"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 113,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shootings and ground operations",
+            "victims_group": "Somali civilians",
+            "low": 63,
+            "high": 63,
+            "notes": "UNSOM/OHCHR states SNA shootings caused 121 civilian casualties in 2017-2019, including 63 killed and 58 injured. The all-method SNA killed total may be higher, but the public text excerpt does not provide a single killed-only total.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          },
+          {
+            "cause": "AMISOM operations",
+            "victims_group": "Somali civilians",
+            "low": 50,
+            "high": 50,
+            "notes": "UNSOM/OHCHR attributed 34 civilian deaths to AMISOM in 2017, 11 in 2018, and 5 in 2019.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          },
+          {
+            "cause": "urban fighting and bombardment",
+            "victims_group": "Mogadishu and south-central Somali civilians",
+            "low": null,
+            "high": null,
+            "notes": "Amnesty reported about 6,000 civilians killed in 2007 fighting involving TFG, Ethiopian, and insurgent forces, but did not provide a TFG/Ethiopian-only death count.",
+            "sources": [
+              "https://www.amnesty.org/en/documents/afr52/006/2008/en/"
+            ]
+          },
+          {
+            "cause": "airstrikes",
+            "victims_group": "Somali civilians",
+            "low": null,
+            "high": null,
+            "notes": "UNSOM/OHCHR recorded 148 airstrikes in 2017-2019; 123 were US strikes. Civilian casualties from airstrikes were 30 in 2017, 15 in 2018, and 9 in 2019, but killed-only totals were not provided in the excerpt.",
+            "sources": [
+              "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+            ]
+          }
+        ],
+        "notes": "The numeric low is a documented floor for selected 2017-2019 SNA and AMISOM killed figures. It is not an all-years total.",
+        "sources": [
+          "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf",
+          "https://www.amnesty.org/en/documents/afr52/006/2008/en/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "southern and central Somali civilians affected by 2010-2012 famine",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The 2010-2012 famine killed an estimated 143,000-273,000 people overall, but no defensible share can be assigned to the Somali government/allied side. Literature identifies aid diversion by armed groups and corrupt TFG officials in Mogadishu and counter-terrorism restrictions as bottlenecks, alongside al-Shabaab restrictions, drought, and insecurity.",
+          "sources": [
+            "https://www.ipcinfo.org/ipcinfo-website/resources/resources-details/en/c/1129216/",
+            "https://www.sciencedirect.com/science/article/abs/pii/S2211912412000053"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other non-state, regional and local armed actors",
+      "members": [
+        "clan militias not otherwise classified",
+        "Ahlu Sunna Wal Jama'a",
+        "Islamic State in Somalia",
+        "Puntland forces",
+        "Somaliland forces",
+        "SSC-Khatumo forces and militias",
+        "Macawiisley local militias"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Recent ACLED/EUAA data report aggregate fatalities for clan conflicts, ISIS-Somalia clashes, and Somaliland/SSC-Khatumo fighting, but not own combatant killed by actor.",
+        "sources": [
+          "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "inter- and intra-clan conflict",
+            "victims_group": "Somali civilians and combatants, not separated",
+            "low": 1214,
+            "high": 1214,
+            "notes": "EUAA, based on ACLED, reports 472 inter- and intra-clan conflict incidents with 1,214 estimated fatalities in April 2023-March 2025; civilian and combatant fatalities are not separated.",
+            "sources": [
+              "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments"
+            ]
+          },
+          {
+            "cause": "ISIS-Somalia related fighting",
+            "victims_group": "Somali civilians and combatants, not separated",
+            "low": 769,
+            "high": 769,
+            "notes": "EUAA, based on ACLED, reports 126 ISIS-Somalia-related security incidents with 769 estimated fatalities in April 2023-March 2025; civilian and combatant fatalities are not separated.",
+            "sources": [
+              "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments"
+            ]
+          },
+          {
+            "cause": "Somaliland and SSC-Khatumo fighting",
+            "victims_group": "armed forces and civilians in Sool/Sanaag/Cayn areas",
+            "low": null,
+            "high": null,
+            "notes": "EUAA reports about 5,000 casualties, including armed forces and civilian fatalities, in the first months of the 2023 Sool conflict, plus more than 200,000 displaced; killed-only and civilian-only totals are not provided.",
+            "sources": [
+              "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments"
+            ]
+          }
+        ],
+        "notes": "Available data are aggregate event fatalities or casualties rather than directly killed civilians by side.",
+        "sources": [
+          "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": null,
+    "civilian_high": null,
+    "grand_low": 350000,
+    "grand_high": 1000000,
+    "notes": "Grand total uses the common post-1991 overall range of roughly 350,000-1,000,000 deaths. The low/high cannot be rolled up cleanly from per-side buckets because famine and excess-mortality deaths are not attributable to single sides and because direct violent deaths are often reported as aggregate fatalities rather than civilian/combatant or perpetrator-specific deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Mogadishu fighting, November 1991-February 1992",
+      "year": 1992,
+      "perpetrator": "early clan and warlord factions",
+      "victims_group": "Mogadishu civilians and combatants, mostly civilians affected by indiscriminate fire",
+      "low": 14000,
+      "high": 14000,
+      "notes": "Africa Watch/Physicians for Human Rights estimated 14,000 killed and 27,000 wounded from 17 November 1991 to 29 February 1992.",
+      "sources": [
+        "https://www.hrw.org/reports/1992/somalia/"
+      ]
+    },
+    {
+      "name": "1991-1992/1993 Somalia famine",
+      "year": 1992,
+      "perpetrator": "collective war-caused famine involving multiple factions and drought",
+      "victims_group": "Somali civilians, especially southern displaced and farming communities",
+      "low": 200000,
+      "high": 500000,
+      "notes": "Most sources give 200,000-300,000 famine deaths; later comparative famine work cites 212,000-248,000; a UN historical account states 500,000 famine-and-war victims in 1992.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1992_famine_in_Somalia",
+        "https://digitallibrary.un.org/record/205118/files/%5EST_%5EDPI_1677-EN.pdf",
+        "https://fews.net/sites/default/files/documents/reports/Somalia_Mortality_Estimates_Final_Report_1May2013_upload.pdf"
+      ]
+    },
+    {
+      "name": "2007 Mogadishu and south-central Somalia fighting",
+      "year": 2007,
+      "perpetrator": "TFG, Ethiopian forces and insurgent forces",
+      "victims_group": "Somali civilians",
+      "low": 6000,
+      "high": 6000,
+      "notes": "Amnesty reported about 6,000 civilians killed in fighting in Mogadishu and south-central Somalia in 2007, while attributing abuses to all parties.",
+      "sources": [
+        "https://www.amnesty.org/en/documents/afr52/006/2008/en/"
+      ]
+    },
+    {
+      "name": "2010-2012 Somalia famine and severe food insecurity emergency",
+      "year": 2011,
+      "perpetrator": "conflict-driven humanitarian access crisis involving al-Shabaab, insecurity, donor restrictions and TFG-linked aid diversion",
+      "victims_group": "southern and central Somali civilians",
+      "low": 143000,
+      "high": 273000,
+      "notes": "FAO FSNAU/FEWS NET estimate: 143,000-273,000 deaths, best estimate 258,000, including 133,000 children under five.",
+      "sources": [
+        "https://fews.net/east-africa/somalia/special-report/may-2013",
+        "https://www.ipcinfo.org/ipcinfo-website/resources/resources-details/en/c/1129216/"
+      ]
+    },
+    {
+      "name": "14 October 2017 Mogadishu bombing",
+      "year": 2017,
+      "perpetrator": "Al-Shabaab attributed in conflict context; UNSOM records the event as VBIED attack",
+      "victims_group": "Mogadishu civilians",
+      "low": 512,
+      "high": 512,
+      "notes": "UNSOM/OHCHR recorded at least 512 killed and 316 injured.",
+      "sources": [
+        "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf"
+      ]
+    },
+    {
+      "name": "2021-2024 Somalia drought mortality",
+      "year": 2024,
+      "perpetrator": "not assigned to a single belligerent",
+      "victims_group": "Somali civilians",
+      "low": 71100,
+      "high": 71100,
+      "notes": "WHO/UNICEF/Somali government-supported study estimated 71,100 drought-related excess deaths from January 2022 to June 2024. This is included as war-context humanitarian mortality but not assigned to a single side.",
+      "sources": [
+        "https://www.unicef.org/somalia/press-releases/71000-drought-related-excess-deaths",
+        "https://www.unicef.org/esa/press-releases/new-study-finds-43000-excess-deaths-may-have-occurred-2022-drought-somalia"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Casualty accounting for Somalia is unusually uncertain because the state collapsed in 1991, death registration was absent or fragmentary, many regions were inaccessible, and direct violent deaths, famine deaths, displacement deaths, and disease deaths are often mixed. Famine deaths should not be added mechanically to direct battle-death datasets, and most famine mortality cannot be assigned to one perpetrator. Recent ACLED/UCDP figures are better for direct fatalities than for excess mortality and are still evolving for 2025-2026.",
+  "sources": [
+    {
+      "url": "https://www.hrw.org/reports/1992/somalia/",
+      "title": "Somalia: No Mercy in Mogadishu",
+      "publisher": "Africa Watch / Physicians for Human Rights"
+    },
+    {
+      "url": "https://www.hrw.org/report/1993/03/01/somalia-beyond-warlords/need-verdict-human-rights-abuses",
+      "title": "Somalia: Beyond the Warlords: The Need for a Verdict on Human Rights Abuses",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://digitallibrary.un.org/record/205118/files/%5EST_%5EDPI_1677-EN.pdf",
+      "title": "The United Nations and Somalia, 1992-1996",
+      "publisher": "United Nations"
+    },
+    {
+      "url": "https://www.ohchr.org/sites/default/files/Documents/Countries/SO/UNSOM_protection_of_civilians_2020.pdf",
+      "title": "Protection of Civilians Report: Building the Foundation for Peace, Security and Human Rights in Somalia, 1 January 2017-31 December 2019",
+      "publisher": "UNSOM / OHCHR"
+    },
+    {
+      "url": "https://fews.net/east-africa/somalia/special-report/may-2013",
+      "title": "258,000 died due to severe food insecurity",
+      "publisher": "FEWS NET"
+    },
+    {
+      "url": "https://www.ipcinfo.org/ipcinfo-website/resources/resources-details/en/c/1129216/",
+      "title": "Mortality among populations of Southern and Central Somalia affected by severe food insecurity and famine 2010-2012",
+      "publisher": "IPC / FAO FSNAU / FEWS NET"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2211912412000053",
+      "title": "No access: Critical bottlenecks in the 2011 Somali famine",
+      "publisher": "Global Food Security"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S221191241200003X",
+      "title": "The 2011 Somalia famine: Context, causes, and complications",
+      "publisher": "Global Food Security"
+    },
+    {
+      "url": "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/14-recent-overall-security-trends/141-security-incidents-estimated-civilian-fatalities-and-casualties",
+      "title": "Somalia: Security Situation, May 2025 - Security incidents, estimated civilian fatalities and casualties",
+      "publisher": "European Union Agency for Asylum"
+    },
+    {
+      "url": "https://www.euaa.europa.eu/coi/somalia/2025/security-situation/1-general-description-security-situation-somalia/13-conflict-layers-and-main-developments",
+      "title": "Somalia: Security Situation, May 2025 - Conflict layers and main developments",
+      "publisher": "European Union Agency for Asylum"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/somalia-country-policy-and-information-notes/country-policy-and-information-note-mogadishu-al-shabab-and-the-security-situation-somalia-july-2025-accessible",
+      "title": "Country policy and information note: Mogadishu: Al Shabab and the security situation, Somalia, July 2025",
+      "publisher": "UK Home Office"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/VC.BTL.DETH?locations=SO",
+      "title": "Battle-related deaths (number of people) - Somalia",
+      "publisher": "World Bank / UCDP"
+    },
+    {
+      "url": "https://www.globalsecurity.org/military/library/news/2023/04/mil-230411-voa05.htm",
+      "title": "Exclusive: At Least 3,500 AU Soldiers Killed in Somalia Since 2007",
+      "publisher": "VOA via GlobalSecurity.org"
+    },
+    {
+      "url": "https://www.unicef.org/somalia/press-releases/71000-drought-related-excess-deaths",
+      "title": "New study estimates that 71,000 drought-related excess deaths may have occurred in Somalia between 2022-2024",
+      "publisher": "UNICEF Somalia"
+    },
+    {
+      "url": "https://www.unicef.org/esa/press-releases/new-study-finds-43000-excess-deaths-may-have-occurred-2022-drought-somalia",
+      "title": "New study finds that 43,000 excess deaths may have occurred in 2022 from the drought in Somalia",
+      "publisher": "UNICEF Eastern and Southern Africa"
+    }
+  ]
+}

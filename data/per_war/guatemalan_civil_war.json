@@ -1,0 +1,266 @@
+{
+  "war_id": "guatemalan_civil_war",
+  "name": "Guatemalan Civil War (incl. Maya genocide)",
+  "start_year": 1960,
+  "end_year": 1996,
+  "ongoing": false,
+  "regions": [
+    "Guatemala",
+    "Central America"
+  ],
+  "summary": "The Guatemalan Civil War was a 1960-1996 internal armed conflict between the Guatemalan state and leftist guerrilla organizations, later united as the URNG. The best-supported overall toll is about or over 200,000 people killed or forcibly disappeared, overwhelmingly civilians and disproportionately Maya. The UN-backed CEH attributed 93% of documented violations to state forces and related paramilitaries, 3% to guerrillas, and concluded that state agents committed acts of genocide against Maya groups in 1981-1983.",
+  "sides": [
+    {
+      "name": "State of Guatemala and allied forces",
+      "members": [
+        "Guatemalan Army",
+        "National Police and security forces",
+        "Military intelligence",
+        "Civil Self-Defense Patrols (PAC)",
+        "Military commissioners",
+        "State-linked death squads",
+        "Successive Guatemalan governments"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable per-side total for government/PAC/security-force combatants killed was found. UCDP/PRIF reports 1,019 battle-related deaths for 1975-1995 and an adjusted UCDP-based total of about 3,461 deaths including one-sided violence and missing years, but these are not state military KIA figures and are incomplete for 1960-1996.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Guatemala__URNG_et_al__1965-1995.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 119000,
+        "high": 186000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "arbitrary_execution_forced_disappearance_massacre_state_terror",
+            "victims_group": "Guatemalan civilians, especially Maya communities, peasants, activists, students, trade unionists, human-rights defenders, and suspected guerrilla supporters",
+            "low": 119000,
+            "high": 186000,
+            "notes": "Approximation only. Low uses REMHI's 150,000 dead/disappeared estimate multiplied by REMHI's 79.3% Army responsibility share. High uses CEH's over-200,000 killed/disappeared estimate multiplied by CEH's 93% state responsibility share; 186,000 is therefore not a hard upper bound because CEH says over 200,000 total.",
+            "sources": [
+              "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+              "https://practicalactionpublishing.com/book/2508/guatemala-never-again",
+              "https://www.justice.gov/file/273101/dl?inline="
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Maya and other civilian communities",
+            "low": null,
+            "high": null,
+            "notes": "CEH registered 626 massacres attributable to state forces and related paramilitary groups; victim totals overlap with the aggregate direct-death estimate and cannot be safely summed separately.",
+            "sources": [
+              "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf"
+            ]
+          }
+        ],
+        "notes": "The figures are responsibility-share proxies, not a forensic perpetrator-by-perpetrator death census. CEH responsibility shares are for documented violations and acts of violence, not solely deaths.",
+        "sources": [
+          "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+          "https://practicalactionpublishing.com/book/2508/guatemala-never-again",
+          "https://www.justice.gov/file/273101/dl?inline="
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement_scorched_earth_starvation_exposure_disease",
+          "victims_group": "Maya and rural civilian communities displaced by scorched-earth operations",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "CEH documented destruction of homes, cattle, crops, collective fields and harvests, razing of villages, pursuit and bombing of displaced persons, and deliberate infliction of destructive living conditions. Sanford summarizes CEH as reporting 1.5 million displaced and 150,000 refugees in Mexico. No defensible separate death count for starvation, disease, exposure, or displacement was found.",
+          "sources": [
+            "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+            "https://macmillan.yale.edu/gsp/violence-and-genocide-guatemala"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "URNG and predecessor guerrilla organizations",
+      "members": [
+        "Rebel Armed Forces (FAR)",
+        "Guerrilla Army of the Poor (EGP)",
+        "Organization of the People in Arms (ORPA)",
+        "Guatemalan Workers' Party (PGT)",
+        "Guatemalan National Revolutionary Unity (URNG)"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable total of guerrilla combatants killed was found. UCDP/PRIF battle-related deaths are not disaggregated into guerrilla and government combatants.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Guatemala__URNG_et_al__1965-1995.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 4500,
+        "high": 18600,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "arbitrary_execution_kidnapping_massacre",
+            "victims_group": "Civilians, PAC members, military commissioners, landowners/businesspeople, kidnapped persons, and some guerrilla members executed by guerrillas",
+            "low": 4500,
+            "high": 18600,
+            "notes": "Approximation only. Low uses CEH's 3% guerrilla responsibility share applied to REMHI's lower 150,000 dead/disappeared estimate. High uses REMHI's 9.3% guerrilla share applied to a 200,000 total. CEH registered 32 guerrilla massacres, especially in 1981-1982.",
+            "sources": [
+              "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+              "https://practicalactionpublishing.com/book/2508/guatemala-never-again"
+            ]
+          }
+        ],
+        "notes": "The figures are responsibility-share proxies, not a precise death census. CEH found guerrilla abuses grave but far smaller in scale than state violence.",
+        "sources": [
+          "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+          "https://practicalactionpublishing.com/book/2508/guatemala-never-again"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 190000,
+    "civilian_high": 200000,
+    "grand_low": 190000,
+    "grand_high": 200000,
+    "notes": "Best headline estimate is about or over 200,000 killed or disappeared. JSON high=200,000 should be read as 'about/at least 200,000', not a hard ceiling, because CEH states over 200,000. Military deaths and indirect deaths are not separately quantified and are included, if at all, inside aggregate killed/disappeared estimates."
+  },
+  "key_atrocities": [
+    {
+      "name": "State genocide and scorched-earth campaign against Maya communities",
+      "year": 1982,
+      "perpetrator": "State of Guatemala and allied forces",
+      "victims_group": "Maya communities",
+      "low": null,
+      "high": null,
+      "notes": "CEH concluded that state agents committed acts of genocide against Maya groups in 1981-1983, including killings, serious bodily and mental harm, and destructive conditions of life. CEH registered 626 state-attributable massacres.",
+      "sources": [
+        "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf"
+      ]
+    },
+    {
+      "name": "Ixil/Ixc\u00e1n massacres",
+      "year": 1982,
+      "perpetrator": "State of Guatemala and allied forces",
+      "victims_group": "Ixil and other Maya civilians",
+      "low": 3102,
+      "high": 3102,
+      "notes": "Sanford identifies 77 massacres in the Ixil/Ixc\u00e1n region between March 1981 and March 1983, with 3,102 known victims.",
+      "sources": [
+        "https://macmillan.yale.edu/gsp/violence-and-genocide-guatemala"
+      ]
+    },
+    {
+      "name": "Plan de S\u00e1nchez massacre",
+      "year": 1982,
+      "perpetrator": "State of Guatemala and allied forces",
+      "victims_group": "Maya-Ach\u00ed civilians",
+      "low": 170,
+      "high": 268,
+      "notes": "Reported victim counts vary; Inter-American-system summaries cite 268 killed, while some legal summaries list smaller named-victim counts. The perpetrators were Guatemalan Army forces and civil collaborators/PAC members.",
+      "sources": [
+        "https://www.law.cornell.edu/gender-justice/resource/case_of_plan_de_s%C3%A1nchez_massacre_v._guatemala",
+        "https://iachr.lls.edu/cases/plan-de-s%C3%A1nchez-massacre-v-guatemala",
+        "https://www.amnesty.org/en/latest/news/2012/03/guatemala-court-convicts-paramilitaries-over-massacre/"
+      ]
+    },
+    {
+      "name": "Dos Erres massacre",
+      "year": 1982,
+      "perpetrator": "State of Guatemala and allied forces",
+      "victims_group": "Dos Erres civilians",
+      "low": 251,
+      "high": 251,
+      "notes": "Inter-American legal summaries state that a specialized Guatemalan military unit executed 251 members of the community; Amnesty summarizes the toll as about 250.",
+      "sources": [
+        "https://www.law.cornell.edu/gender-justice/resource/case_of_the_%E2%80%9Clas_dos_erres%E2%80%9D_massacre_v._guatemala",
+        "https://www.amnesty.org/en/latest/press-release/2011/08/guatemalan-former-soldiers-sentenced-6060-years-massacre/"
+      ]
+    },
+    {
+      "name": "R\u00edo Negro massacres",
+      "year": 1982,
+      "perpetrator": "State of Guatemala and allied forces",
+      "victims_group": "Maya-Ach\u00ed civilians of R\u00edo Negro",
+      "low": 444,
+      "high": 444,
+      "notes": "GHRC summarizes that 444 of R\u00edo Negro's almost 800 Maya-Ach\u00ed inhabitants were killed in massacres between 1980 and 1982.",
+      "sources": [
+        "https://www.ghrc-usa.org/our-work/2014-annual-report/rio-negro/"
+      ]
+    },
+    {
+      "name": "Guerrilla massacres and arbitrary executions",
+      "year": 1982,
+      "perpetrator": "URNG and predecessor guerrilla organizations",
+      "victims_group": "Civilians, PAC members, military commissioners, landowners/businesspeople, kidnapped persons, and internal guerrilla victims",
+      "low": null,
+      "high": null,
+      "notes": "CEH registered 32 guerrilla massacres, especially in 1981-1982, and documented arbitrary executions and executions of kidnapped persons.",
+      "sources": [
+        "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is that authoritative totals usually combine killed and forcibly disappeared, and responsibility percentages are based on documented violations/acts of violence rather than a complete death-by-perpetrator census. Military deaths are not reliably available by side. Indirect deaths from scorched earth, displacement, starvation, exposure, or disease were likely real but are not separately quantified in the sources found, so they are left null rather than invented.",
+  "sources": [
+    {
+      "url": "https://hrdag.org/wp-content/uploads/2013/01/CEHreport-english.pdf",
+      "title": "Guatemala: Memory of Silence \u2014 Report of the Commission for Historical Clarification, Conclusions and Recommendations",
+      "publisher": "Commission for Historical Clarification / HRDAG archive"
+    },
+    {
+      "url": "https://practicalactionpublishing.com/book/2508/guatemala-never-again",
+      "title": "Guatemala: Never Again",
+      "publisher": "REMHI / Practical Action Publishing"
+    },
+    {
+      "url": "https://www.justice.gov/file/273101/dl?inline=",
+      "title": "Human Rights in Guatemala Since the Signing of the Peace Accords",
+      "publisher": "U.S. Department of Justice / Resource Information Center"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Guatemala__URNG_et_al__1965-1995.pdf",
+      "title": "WARID: Guatemala (FAR I, FAR II, ORPA, EGP, URNG)",
+      "publisher": "Peace Research Institute Frankfurt (PRIF)"
+    },
+    {
+      "url": "https://macmillan.yale.edu/gsp/violence-and-genocide-guatemala",
+      "title": "Violence and Genocide in Guatemala",
+      "publisher": "Yale Genocide Studies Program / Victoria Sanford"
+    },
+    {
+      "url": "https://www.law.cornell.edu/gender-justice/resource/case_of_plan_de_s%C3%A1nchez_massacre_v._guatemala",
+      "title": "Plan de S\u00e1nchez Massacre v. Guatemala",
+      "publisher": "Cornell Legal Information Institute"
+    },
+    {
+      "url": "https://iachr.lls.edu/cases/plan-de-s%C3%A1nchez-massacre-v-guatemala",
+      "title": "Plan de S\u00e1nchez Massacre v. Guatemala",
+      "publisher": "IACHR Project / Loyola Law School"
+    },
+    {
+      "url": "https://www.law.cornell.edu/gender-justice/resource/case_of_the_%E2%80%9Clas_dos_erres%E2%80%9D_massacre_v._guatemala",
+      "title": "Case of the Las Dos Erres Massacre v. Guatemala",
+      "publisher": "Cornell Legal Information Institute"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/press-release/2011/08/guatemalan-former-soldiers-sentenced-6060-years-massacre/",
+      "title": "Guatemalan former soldiers sentenced to 6,060 years for massacre",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.ghrc-usa.org/our-work/2014-annual-report/rio-negro/",
+      "title": "Rio Negro Massacres",
+      "publisher": "Guatemala Human Rights Commission / USA"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "war_id": "mexican_drug_war",
+  "name": "Mexican Drug War",
+  "start_year": 2006,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Mexico"
+  ],
+  "summary": "Ongoing conflict among Mexican security forces, drug cartels, cartel factions, local gangs, and self-defense groups that intensified after the federal militarized crackdown launched in December 2006. More than 463,000 homicides have been recorded in Mexico since 2006, but only a subset can be securely attributed to organized-crime or drug-war violence. Victim status is usually unclear; UCDP found that almost 97% of Mexico's 2024 organized-violence deaths were classified as unknown civilian/combatant status.",
+  "sides": [
+    {
+      "name": "Mexican state / security forces",
+      "members": [
+        "Mexican Army",
+        "Mexican Air Force",
+        "Mexican Navy / Marines",
+        "National Guard",
+        "Federal Police",
+        "state police",
+        "municipal police",
+        "prosecutors and other security officials"
+      ],
+      "military_killed": {
+        "low": 6276,
+        "high": null,
+        "point": null,
+        "notes": "Minimum assembled from non-identical series: PGR reported 3,074 public servants killed in 2006-2011, including 2,851 agents; SEDENA data cited 610 soldiers killed from 1 Dec 2006 to 30 Apr 2022; Causa en Comun reported 2,456 police killed from 1 Dec 2018 to 30 Sep 2024, 348 police killed in 2025, and 11 in the first 15 days of 2026. This is not a complete official total and leaves gaps, especially 2012-2017 and post-2022 military deaths.",
+        "sources": [
+          "https://www.excelsior.com.mx/2012/12/30/nacional/877111",
+          "https://mexicodailypost.com/2022/06/18/how-serious-is-amlos-fight-against-cartels-soldiers-killed-in-the-drug-war-357-with-calderon-185-with-pena-68-with-amlo/",
+          "https://www.razon.com.mx/mexico/2024/10/04/causa-en-comun-revela-que-en-el-gobierno-previo-fueron-asesinados-2-mil-456-policias/",
+          "https://politica.expansion.mx/mexico/2026/01/07/348-policias-son-asesinados-en-2025-sinaloa-y-guerrero-lideran-la-lista-de-homicidios",
+          "https://www.reporteindigo.com/nacional/causa-en-comun-asesinan-a-348-policias-en-2025-suben-9-los-homicidios-de-oficiales-en-mexico-20260119-0092.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 60,
+        "high": 103,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "extrajudicial killing / massacre",
+            "victims_group": "Civilians in Tlatlaya, State of Mexico",
+            "low": 22,
+            "high": 22,
+            "notes": "HRW and Mexican human-rights findings report 22 civilians killed by soldiers in June 2014; unlawful/extrajudicial status is disputed in litigation but the case is a core state-abuse case.",
+            "sources": [
+              "https://www.hrw.org/news/2014/08/22/mexico-investigate-all-evidence-killings-22-soldiers",
+              "https://mexico.quadratin.com.mx/Confirma-CNDH-que-militares-asesinaron-las-22-personas-en-Tlatlaya/"
+            ]
+          },
+          {
+            "cause": "extrajudicial execution",
+            "victims_group": "Men killed in Tanhuato, Michoacan",
+            "low": 22,
+            "high": 42,
+            "notes": "CNDH concluded Federal Police extrajudicially killed at least 22 of 42 men killed in the 2015 Tanhuato operation.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/2015_Tanhuato%E2%80%93Ecuandureo_shootout",
+              "https://expansion.mx/nacional/2016/08/18/policia-federal-ejecuto-extrajudicialmente-a-22-civiles-en-tanhuato-cndh"
+            ]
+          },
+          {
+            "cause": "alleged extrajudicial execution",
+            "victims_group": "Civilians/protesters in Apatzingan, Michoacan",
+            "low": 16,
+            "high": 16,
+            "notes": "Investigative and IACHR-cited reporting alleged at least 16 civilians were extrajudicially executed by federal agents in January 2015.",
+            "sources": [
+              "https://www.democracynow.org/2015/4/20/headlines/report_mexican_federal_police_massacred_16_in_january",
+              "https://www.oas.org/en/iachr/docs/annual/2015/doc-en/informeanual2015-cap4a-fuerza-en.pdf"
+            ]
+          },
+          {
+            "cause": "shootings and enforced disappearance",
+            "victims_group": "Ayotzinapa students and civilians in Iguala",
+            "low": 0,
+            "high": 43,
+            "notes": "The Iguala/Ayotzinapa attack left 43 students disappeared and 6 people killed. The disappeared are not counted as confirmed deaths in the low figure, but a government truth panel later said evidence suggested the students were killed and disappeared.",
+            "sources": [
+              "https://missingpersons.icrc.org/library/ayotzinapa-platform-enforced-disappearance-ayotzinapa-students",
+              "https://www.theguardian.com/world/2022/aug/18/mexico-43-students-missing-truth-commission-report"
+            ]
+          }
+        ],
+        "notes": "Only emblematic documented cases are included. Reports that the military killed about 3,000 people in 2007-2012 cannot be used as a civilian total because victims were often recorded as presumed aggressors and not reliably separated into cartel combatants, civilians, or unlawful executions.",
+        "sources": [
+          "https://www.hrw.org/news/2014/08/22/mexico-investigate-all-evidence-killings-22-soldiers",
+          "https://en.wikipedia.org/wiki/2015_Tanhuato%E2%80%93Ecuandureo_shootout",
+          "https://www.democracynow.org/2015/4/20/headlines/report_mexican_federal_police_massacred_16_in_january",
+          "https://missingpersons.icrc.org/library/ayotzinapa-platform-enforced-disappearance-ayotzinapa-students",
+          "https://www.statista.com/chart/amp/4911/dead-civilians-soldiers-mexico/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disappearance_impunity_militarization",
+          "victims_group": "Civilians indirectly harmed by militarization, disappearances, torture, displacement and impunity",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "No credible national series converts these mechanisms into attributable indirect deaths. The 130,178 persons still registered as disappeared from 2006-2026 are a mass-victimization indicator but cannot be counted as deaths.",
+          "sources": [
+            "https://efe.com/mundo/2026-03-27/mexico-130000-personas-desaparecidas-registro-oficial-actualizado-2026/",
+            "https://apnews.com/article/528f5fa913c34129b28e61279e020a4e"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cartels / organized criminal groups",
+      "members": [
+        "Sinaloa Cartel and factions",
+        "Jalisco New Generation Cartel (CJNG)",
+        "Gulf Cartel",
+        "Los Zetas / Zetas Vieja Escuela",
+        "Juarez Cartel",
+        "Tijuana / Arellano Felix networks",
+        "La Familia Michoacana",
+        "Knights Templar",
+        "Santa Rosa de Lima Cartel",
+        "Carteles Unidos",
+        "Los Viagras",
+        "Los Ardillos",
+        "Los Tlacos",
+        "Caborca Cartel",
+        "local gangs and splinter groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable all-period count of cartel combatants killed exists. UCDP records cartel-vs-cartel conflict fatalities, but Mexico's organized-violence deaths are overwhelmingly difficult to classify as civilian or combatant.",
+        "sources": [
+          "https://academic.oup.com/jpr/article/62/4/1223/8324565",
+          "https://www.visionofhumanity.org/the-organised-crime-landscape-in-mexico-2024/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 96,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "one-sided violence",
+            "victims_group": "Civilians killed by CJNG in 2024",
+            "low": 39,
+            "high": 55,
+            "notes": "UCDP one-sided violence category for 2024; best estimate 53. This is a narrow category and excludes many cartel-related deaths of unknown status.",
+            "sources": [
+              "https://academic.oup.com/jpr/article/62/4/1223/8324565"
+            ]
+          },
+          {
+            "cause": "one-sided violence",
+            "victims_group": "Civilians killed by Sinaloa Cartel in 2024",
+            "low": 34,
+            "high": 56,
+            "notes": "UCDP one-sided violence category for 2024; best estimate 43. This is a narrow category and excludes many cartel-related deaths of unknown status.",
+            "sources": [
+              "https://academic.oup.com/jpr/article/62/4/1223/8324565"
+            ]
+          },
+          {
+            "cause": "organized-crime-style homicide",
+            "victims_group": "Victims of organized-crime-style homicides, mixed civilian/combatant/unknown status",
+            "low": null,
+            "high": null,
+            "notes": "Justice in Mexico found organized-crime-style homicides represented 25.4%-44.0% of INEGI homicides in 2016 depending on source, or 30.4%-52.8% of SNSP homicides. This cannot be used as a clean civilian-only count.",
+            "sources": [
+              "https://justiceinmexico.org/wp-content/uploads/2017/03/2017_DrugViolenceinMexico.pdf"
+            ]
+          }
+        ],
+        "notes": "The low is only UCDP's 2024 high estimates for CJNG plus Sinaloa one-sided civilian killings. The true 2006-2026 civilian toll from cartels is vastly higher but cannot be separated from combatant and unknown-status organized-crime deaths with confidence.",
+        "sources": [
+          "https://academic.oup.com/jpr/article/62/4/1223/8324565",
+          "https://justiceinmexico.org/wp-content/uploads/2017/03/2017_DrugViolenceinMexico.pdf",
+          "https://www.visionofhumanity.org/the-organised-crime-landscape-in-mexico-2024/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disappearance",
+          "victims_group": "Disappeared persons, many likely killed but not confirmed dead",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Government update reported 130,178 persons still disappeared from 2006-2026. Cartels and organized crime are widely identified as major perpetrators, but disappearances cannot be converted into deaths without case-level confirmation.",
+          "sources": [
+            "https://efe.com/mundo/2026-03-27/mexico-130000-personas-desaparecidas-registro-oficial-actualizado-2026/",
+            "https://apnews.com/article/528f5fa913c34129b28e61279e020a4e"
+          ]
+        },
+        {
+          "type": "displacement_forced_recruitment_extortion",
+          "victims_group": "Civilians under cartel territorial control",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Cartel control, extortion, forced recruitment and displacement plausibly cause indirect mortality, but no credible nationwide death estimate was found.",
+          "sources": [
+            "https://www.cfr.org/backgrounders/mexicos-long-war-drugs-crime-and-cartels",
+            "https://www.visionofhumanity.org/the-organised-crime-landscape-in-mexico-2024/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Self-defense / vigilante / community police groups",
+      "members": [
+        "Michoacan autodefensas",
+        "community police forces",
+        "local armed self-defense groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable national, conflict-wide series was found for self-defense combatants killed.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "Some self-defense groups committed abuses or were absorbed into cartel/state-aligned violence, but no credible national civilian-death estimate was found.",
+        "sources": []
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 6276,
+    "military_high": null,
+    "civilian_low": 156,
+    "civilian_high": null,
+    "grand_low": 200000,
+    "grand_high": 490000,
+    "notes": "The military_low is a minimum for security/public officials killed. The civilian_low combines documented emblematic state-abuse cases and UCDP's narrow 2024 one-sided cartel civilian killings, so it is not a real all-period civilian toll. The grand_low is an analytic lower-bound estimate for organized-crime/drug-war-related deaths based on official early drug-war counts, organized-crime homicide shares, and later annual organized-crime homicide levels. The grand_high is the approximate all-homicide envelope since 2006 through early 2026, not all of which is drug-war-related."
+  },
+  "key_atrocities": [
+    {
+      "name": "San Fernando massacre",
+      "year": 2010,
+      "perpetrator": "Los Zetas",
+      "victims_group": "Migrants",
+      "low": 72,
+      "high": 72,
+      "notes": "72 migrants murdered in Tamaulipas; reports identify 58 men and 14 women.",
+      "sources": [
+        "https://elpais.com/internacional/2017/08/23/mexico/1503503716_558953.html",
+        "https://en.wikipedia.org/wiki/2010_San_Fernando_massacre"
+      ]
+    },
+    {
+      "name": "Allende / northern Coahuila massacre",
+      "year": 2011,
+      "perpetrator": "Los Zetas",
+      "victims_group": "Families and civilians accused of links to rivals or informants",
+      "low": 28,
+      "high": 300,
+      "notes": "Narrow case files support dozens of victims; broader accounts and former Zetas testimony allege up to about 300 killed/disappeared across several municipalities.",
+      "sources": [
+        "https://elpais.com/internacional/2016/10/10/mexico/1476113913_312701.html",
+        "https://elpais.com/internacional/2016/10/09/mexico/1476044097_559947.html"
+      ]
+    },
+    {
+      "name": "Casino Royale arson",
+      "year": 2011,
+      "perpetrator": "Los Zetas",
+      "victims_group": "Casino patrons and staff",
+      "low": 52,
+      "high": 52,
+      "notes": "Arson attack in Monterrey killed 52 people.",
+      "sources": [
+        "https://www.excelsior.com.mx/nacional/2016/08/25/1113044",
+        "https://en.wikipedia.org/wiki/2011_Monterrey_casino_attack"
+      ]
+    },
+    {
+      "name": "Cadereyta massacre",
+      "year": 2012,
+      "perpetrator": "Los Zetas",
+      "victims_group": "Unidentified civilians / organized-crime victims",
+      "low": 49,
+      "high": 49,
+      "notes": "49 mutilated bodies found dumped near Cadereyta, Nuevo Leon; officials attributed the killings to Los Zetas.",
+      "sources": [
+        "https://www.itv.com/news/2012-05-14/forty-nine-headless-corpses-dumped-on-road-in-north-mexico",
+        "https://en.wikipedia.org/wiki/Cadereyta_Jim%C3%A9nez_massacre"
+      ]
+    },
+    {
+      "name": "Iguala / Ayotzinapa disappearance",
+      "year": 2014,
+      "perpetrator": "Local police, Guerreros Unidos, and state-linked actors",
+      "victims_group": "Ayotzinapa students and civilians",
+      "low": 6,
+      "high": 49,
+      "notes": "6 people killed and 43 students disappeared; a government truth panel later characterized the disappearance as a state-sponsored crime.",
+      "sources": [
+        "https://missingpersons.icrc.org/library/ayotzinapa-platform-enforced-disappearance-ayotzinapa-students",
+        "https://www.theguardian.com/world/2022/aug/18/mexico-43-students-missing-truth-commission-report"
+      ]
+    },
+    {
+      "name": "Tlatlaya massacre",
+      "year": 2014,
+      "perpetrator": "Mexican Army",
+      "victims_group": "Civilians / alleged suspects",
+      "low": 22,
+      "high": 22,
+      "notes": "22 civilians killed by soldiers in State of Mexico.",
+      "sources": [
+        "https://www.hrw.org/news/2014/08/22/mexico-investigate-all-evidence-killings-22-soldiers",
+        "https://mexico.quadratin.com.mx/Confirma-CNDH-que-militares-asesinaron-las-22-personas-en-Tlatlaya/"
+      ]
+    },
+    {
+      "name": "Tanhuato killings",
+      "year": 2015,
+      "perpetrator": "Federal Police",
+      "victims_group": "Alleged CJNG members / civilians",
+      "low": 22,
+      "high": 42,
+      "notes": "42 men killed; CNDH concluded at least 22 were extrajudicially executed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2015_Tanhuato%E2%80%93Ecuandureo_shootout",
+        "https://expansion.mx/nacional/2016/08/18/policia-federal-ejecuto-extrajudicialmente-a-22-civiles-en-tanhuato-cndh"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is classification: homicide data are strong, but perpetrator and victim status are weak. Official organized-crime homicide series were discontinued; private/media series vary; UCDP reports that almost 97% of Mexico's organized-violence deaths in 2024 were unknown civilian/combatant status. Disappearances are a major hidden-mortality indicator but cannot be counted as deaths without confirmation.",
+  "sources": [
+    {
+      "url": "https://www.cfr.org/backgrounders/mexicos-long-war-drugs-crime-and-cartels",
+      "title": "Mexico's Long War: Drugs, Crime, and the Cartels",
+      "publisher": "Council on Foreign Relations"
+    },
+    {
+      "url": "https://justiceinmexico.org/wp-content/uploads/2017/03/2017_DrugViolenceinMexico.pdf",
+      "title": "Drug Violence in Mexico: Data and Analysis Through 2016",
+      "publisher": "Justice in Mexico"
+    },
+    {
+      "url": "https://academic.oup.com/jpr/article/62/4/1223/8324565",
+      "title": "Organized violence 1989-2024, and the challenges of identifying civilian victims",
+      "publisher": "Journal of Peace Research / UCDP"
+    },
+    {
+      "url": "https://www.visionofhumanity.org/the-organised-crime-landscape-in-mexico-2024/",
+      "title": "The organised crime landscape in Mexico",
+      "publisher": "Institute for Economics & Peace / Vision of Humanity"
+    },
+    {
+      "url": "https://efe.com/mundo/2026-03-27/mexico-130000-personas-desaparecidas-registro-oficial-actualizado-2026/",
+      "title": "Mexico confirms more than 130,000 disappeared persons",
+      "publisher": "EFE"
+    },
+    {
+      "url": "https://apnews.com/article/528f5fa913c34129b28e61279e020a4e",
+      "title": "Mexico says a third of 130,000 missing people might be alive, fueling criticism from families",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://www.hrw.org/news/2014/08/22/mexico-investigate-all-evidence-killings-22-soldiers",
+      "title": "Mexico: Investigate All Evidence in Killings of 22 by Soldiers",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://missingpersons.icrc.org/library/ayotzinapa-platform-enforced-disappearance-ayotzinapa-students",
+      "title": "Ayotzinapa Platform - The Enforced Disappearance of the Ayotzinapa Students",
+      "publisher": "ICRC Missing Persons Platform"
+    },
+    {
+      "url": "https://www.excelsior.com.mx/2012/12/30/nacional/877111",
+      "title": "Violencia mat\u00f3 a 3 mil funcionarios; balance sexenal de la PGR",
+      "publisher": "Excelsior"
+    },
+    {
+      "url": "https://www.razon.com.mx/mexico/2024/10/04/causa-en-comun-revela-que-en-el-gobierno-previo-fueron-asesinados-2-mil-456-policias/",
+      "title": "Causa en Comun reveals 2,456 police killed in previous government",
+      "publisher": "La Razon de Mexico"
+    }
+  ]
+}

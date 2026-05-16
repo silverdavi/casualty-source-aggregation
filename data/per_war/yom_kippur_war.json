@@ -1,0 +1,280 @@
+{
+  "war_id": "yom_kippur_war",
+  "name": "Yom Kippur War",
+  "start_year": 1973,
+  "end_year": 1973,
+  "ongoing": false,
+  "regions": [
+    "Israel",
+    "Egypt",
+    "Syria",
+    "Sinai Peninsula",
+    "Golan Heights",
+    "Suez Canal",
+    "Damascus"
+  ],
+  "summary": "The Yom Kippur War, also known as the October War or Ramadan War, was fought in October 1973 after Egypt and Syria launched a coordinated attack on Israeli-held territory in Sinai and the Golan Heights. It was primarily a high-intensity conventional war with relatively few civilian deaths compared with military casualties. The most defensible death-toll range is about 10,500\u201321,500, driven mainly by uncertainty over Arab military deaths.",
+  "sides": [
+    {
+      "name": "Israel",
+      "members": [
+        "Israel",
+        "Israel Defense Forces"
+      ],
+      "military_killed": {
+        "low": 2521,
+        "high": 2800,
+        "point": 2656,
+        "notes": "Israeli military deaths are relatively well documented but vary by source and inclusion criteria. Israel State Archives uses about 2,656 soldiers killed; other summaries give a 2,521\u20132,800 range; an Agranat-related summary gives 2,569; JVL/OnWar gives 2,688.",
+        "sources": [
+          "https://catalog.archives.gov.il/site/en/publication/ykw-en/",
+          "https://en.wikipedia.org/wiki/Yom_Kippur_War",
+          "https://israeled.org/wp-content/uploads/2014/08/1973-Agranat-Comm-Report-1973-War.pdf",
+          "https://jewishvirtuallibrary.org/jsource/History/casualties.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 28,
+        "high": 232,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrike",
+            "victims_group": "Syrian civilians in Damascus, including deaths reported around the Syrian General Staff Headquarters / Soviet cultural center",
+            "low": 26,
+            "high": 30,
+            "notes": "Syrian reporting put civilian deaths at 26 and injuries at 117; Soviet reporting put deaths in its cultural center at 30.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1973_Syrian_General_Staff_Headquarters_raid"
+            ]
+          },
+          {
+            "cause": "air raid collateral damage",
+            "victims_group": "Foreign civilian seamen aboard Greek freighter near Latakia",
+            "low": 2,
+            "high": 2,
+            "notes": "TIME reported two seamen killed when bomb fragments hit a Greek freighter anchored in Latakia harbor during Israeli raids.",
+            "sources": [
+              "https://content.time.com/time/subscriber/article/0,33009,908039-8,00.html"
+            ]
+          },
+          {
+            "cause": "air raids",
+            "victims_group": "Egyptian civilians in Port Said",
+            "low": null,
+            "high": 200,
+            "notes": "Egypt claimed Israeli raids killed 200 in Port Said. This was treated as a claimed high-end figure, not a verified postwar count.",
+            "sources": [
+              "https://web.stanford.edu/group/tomzgroup/pmwiki/uploads/3380-1973-10-24-PQ-a-sf.pdf"
+            ]
+          }
+        ],
+        "notes": "The low count includes Damascus and Latakia civilian deaths that could be specifically sourced. The high count adds the Egyptian claim of 200 killed in Port Said.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/1973_Syrian_General_Staff_Headquarters_raid",
+          "https://content.time.com/time/subscriber/article/0,33009,908039-8,00.html",
+          "https://web.stanford.edu/group/tomzgroup/pmwiki/uploads/3380-1973-10-24-PQ-a-sf.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Arab coalition led by Egypt and Syria",
+      "members": [
+        "Egypt",
+        "Syria",
+        "Iraq",
+        "Jordan",
+        "Morocco",
+        "Algeria",
+        "Libya",
+        "Tunisia",
+        "Kuwait",
+        "Saudi Arabia",
+        "Sudan",
+        "Cuba"
+      ],
+      "military_killed": {
+        "low": 8000,
+        "high": 18500,
+        "point": 15000,
+        "notes": "Arab military deaths are disputed. A common range gives 8,000 low and 18,500 high; other figures include 7,700 Egyptian and 3,500 Syrian dead, 15,000 Egyptian and 3,500 Syrian dead, and an Agranat-related summary of 10,000 Egyptian and 4,000 Syrian dead. Smaller-contingent casualty estimates, especially for Iraq and Jordan, are inconsistent and not mechanically added to every estimate.",
+        "sources": [
+          "https://www.liquisearch.com/yom_kippur_war/casualties",
+          "https://www.aljazeera.com/indepth/features/2017/10/arab-israeli-war-of-1973-what-happened-171005105247349.html",
+          "https://www.cbsnews.com/news/the-yom-kippur-war/",
+          "https://israeled.org/wp-content/uploads/2014/08/1973-Agranat-Comm-Report-1973-War.pdf",
+          "https://jewishvirtuallibrary.org/jsource/History/casualties.html",
+          "https://www.ebsco.com/research-starters/history/yom-kippur-war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [
+          {
+            "cause": "shelling/rocket fire/air and ground operations",
+            "victims_group": "Israeli civilians",
+            "low": 0,
+            "high": 0,
+            "notes": "Israeli casualty summaries list 0 civilian deaths for the Yom Kippur War. Syrian FROG-7 attacks are reported to have killed one pilot at Ramat David, a combatant rather than a civilian.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+              "https://en.wikipedia.org/wiki/Yom_Kippur_War",
+              "https://en.wikipedia.org/wiki/1973_Syrian_General_Staff_Headquarters_raid"
+            ]
+          }
+        ],
+        "notes": "No Israeli civilian deaths were found in the casualty summaries consulted. Alleged POW executions are counted as combatant/atrocity issues, not civilian deaths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+          "https://en.wikipedia.org/wiki/Yom_Kippur_War"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 10521,
+    "military_high": 21300,
+    "civilian_low": 28,
+    "civilian_high": 232,
+    "grand_low": 10549,
+    "grand_high": 21532,
+    "notes": "Totals use Israel military deaths of 2,521\u20132,800 plus Arab coalition military deaths of 8,000\u201318,500, then add direct civilian deaths of 28\u2013232. Indirect deaths are set to 0 because no credible quantified famine, camp, blockade, forced-labor, deportation, or disease-displacement death bucket was found for this short conflict."
+  },
+  "key_atrocities": [
+    {
+      "name": "Damascus General Staff Headquarters raid",
+      "year": 1973,
+      "perpetrator": "Israel",
+      "victims_group": "Syrian civilians and Soviet cultural-center personnel",
+      "low": 26,
+      "high": 30,
+      "notes": "Israeli airstrike on the Syrian GHQ area in downtown Damascus; Syria reported 26 civilians killed and 117 injured, while Soviet reporting put deaths at its cultural center at 30.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/1973_Syrian_General_Staff_Headquarters_raid"
+      ]
+    },
+    {
+      "name": "Port Said raids",
+      "year": 1973,
+      "perpetrator": "Israel",
+      "victims_group": "Egyptian civilians",
+      "low": null,
+      "high": 200,
+      "notes": "Egypt claimed Israeli raids killed 200 in Port Said; treated as a claimed high-end figure because no robust independent postwar verification was found.",
+      "sources": [
+        "https://web.stanford.edu/group/tomzgroup/pmwiki/uploads/3380-1973-10-24-PQ-a-sf.pdf"
+      ]
+    },
+    {
+      "name": "Killing of Israeli POWs by Syrian forces",
+      "year": 1973,
+      "perpetrator": "Syria / Arab coalition",
+      "victims_group": "Israeli prisoners of war",
+      "low": 28,
+      "high": 28,
+      "notes": "A cited Syrian defense-minister statement involved a soldier being honored for killing 28 Israeli prisoners. Other POW abuse and killing allegations exist but were not quantified in a stable way.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yom_Kippur_War_atrocities"
+      ]
+    },
+    {
+      "name": "Alleged killing of Israeli POWs by Egyptian forces",
+      "year": 1973,
+      "perpetrator": "Egypt / Arab coalition",
+      "victims_group": "Israeli prisoners of war",
+      "low": null,
+      "high": null,
+      "notes": "Israeli media investigations alleged dozens, perhaps hundreds, of captured Israeli soldiers were murdered by Egyptian captors; no firm count suitable for aggregation was found.",
+      "sources": [
+        "https://www.ynetnews.com/articles/1,7340,L-3378194,00.html"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The key uncertainty is Arab military deaths. Egypt and Syria did not publish a single universally accepted official accounting, and estimates differ sharply by source and by whether smaller expeditionary contingents are included. Israeli military deaths are better documented but still vary by source and inclusion criteria. Civilian death figures are much smaller but incident-specific claims, especially Port Said, remain difficult to verify.",
+  "sources": [
+    {
+      "url": "https://catalog.archives.gov.il/site/en/publication/ykw-en/",
+      "title": "The 50th Anniversary of the Yom Kippur War \u2013 Newly Declassified Material",
+      "publisher": "Israel State Archives"
+    },
+    {
+      "url": "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1973.aspx",
+      "title": "1973 \u2013 The Yom Kippur War",
+      "publisher": "Israel Ministry of Defense / IDF Archives"
+    },
+    {
+      "url": "https://israeled.org/wp-content/uploads/2014/08/1973-Agranat-Comm-Report-1973-War.pdf",
+      "title": "1973 Agranat Commission \u2013 Yom Kippur War",
+      "publisher": "Center for Israel Education"
+    },
+    {
+      "url": "https://digitallibrary.un.org/record/93466?ln=en",
+      "title": "Resolution 338 (1973)",
+      "publisher": "United Nations Digital Library"
+    },
+    {
+      "url": "https://jewishvirtuallibrary.org/jsource/History/casualties.html",
+      "title": "Military Casualties in Arab-Israeli Wars",
+      "publisher": "Jewish Virtual Library"
+    },
+    {
+      "url": "https://www.liquisearch.com/yom_kippur_war/casualties",
+      "title": "Yom Kippur War \u2013 Casualties",
+      "publisher": "LiquiSearch"
+    },
+    {
+      "url": "https://www.aljazeera.com/indepth/features/2017/10/arab-israeli-war-of-1973-what-happened-171005105247349.html",
+      "title": "The October Arab-Israeli War of 1973: What happened?",
+      "publisher": "Al Jazeera"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/the-yom-kippur-war/",
+      "title": "The Yom Kippur War",
+      "publisher": "CBS News"
+    },
+    {
+      "url": "https://www.ebsco.com/research-starters/history/yom-kippur-war",
+      "title": "Yom Kippur War",
+      "publisher": "EBSCO Research Starters"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Yom_Kippur_War",
+      "title": "Yom Kippur War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+      "title": "Israeli casualties of war",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/1973_Syrian_General_Staff_Headquarters_raid",
+      "title": "1973 Syrian General Staff Headquarters raid",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://content.time.com/time/subscriber/article/0,33009,908039-8,00.html",
+      "title": "Middle East: The War of the Day of Judgment",
+      "publisher": "TIME"
+    },
+    {
+      "url": "https://web.stanford.edu/group/tomzgroup/pmwiki/uploads/3380-1973-10-24-PQ-a-sf.pdf",
+      "title": "Egypt: Israeli Raids Killed 200 in Port Said",
+      "publisher": "The Washington Post / ProQuest via Stanford"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Yom_Kippur_War_atrocities",
+      "title": "Yom Kippur War atrocities",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.ynetnews.com/articles/1,7340,L-3378194,00.html",
+      "title": "Israeli documentary: Egyptians killed Israeli POWs in 1973 war",
+      "publisher": "Ynetnews"
+    }
+  ]
+}

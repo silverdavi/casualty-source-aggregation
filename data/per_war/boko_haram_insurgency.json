@@ -1,0 +1,371 @@
+{
+  "war_id": "boko_haram_insurgency",
+  "name": "Boko Haram insurgency / Lake Chad conflict",
+  "start_year": 2009,
+  "end_year": null,
+  "ongoing": true,
+  "regions": [
+    "Nigeria",
+    "Chad",
+    "Cameroon",
+    "Niger",
+    "Lake Chad Basin"
+  ],
+  "summary": "The Boko Haram insurgency began in north-eastern Nigeria in 2009 and expanded into a regional Lake Chad Basin conflict involving Nigeria, Cameroon, Chad, Niger, the MNJTF, local vigilantes, Boko Haram/JAS, ISWAP, and splinter factions. The best conflict-wide mortality estimate remains UNDP's model of nearly 350,000 deaths by the end of 2020, mostly indirect deaths from hunger, disease, displacement, and service collapse. The conflict remains ongoing as of May 2026, and no authoritative 2026 indirect-death update was found.",
+  "sides": [
+    {
+      "name": "Boko Haram / JAS / ISWAP and splinter factions",
+      "members": [
+        "Jama'atu Ahlis Sunna Lidda'awati wal-Jihad (JAS/Boko Haram)",
+        "Islamic State West Africa Province (ISWAP)",
+        "Bakura faction and other Lake Chad splinters"
+      ],
+      "military_killed": {
+        "low": 18950,
+        "high": null,
+        "point": 18950,
+        "notes": "CFR/Nigeria Security Tracker disaggregated 18,950 Boko Haram militant deaths for June 2011-June 2018. No authoritative 2009-2026 all-region militant-death total was found; later deaths from government operations and intra-jihadist fighting are not cleanly aggregated.",
+        "sources": [
+          "https://www.cfr.org/articles/boko-harams-deadly-impact",
+          "https://www.un.org/peacebuilding/sites/www.un.org.peacebuilding/files/documents/icg_-_boko_haram_splitners_march_2024.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 15107,
+        "high": 35000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "violence against civilians",
+            "victims_group": "civilians in north-east Nigeria and Lake Chad Basin",
+            "low": 15107,
+            "high": 15953,
+            "notes": "ACLED attributed 15,107 deaths to violence against civilians in Boko Haram-involved incidents through June 2018; NST documented 15,953 civilian deaths and CFR states the vast majority resulted from Boko Haram attacks.",
+            "sources": [
+              "https://www.cfr.org/articles/boko-harams-deadly-impact"
+            ]
+          },
+          {
+            "cause": "terrorist attacks",
+            "victims_group": "civilians, security personnel, and others killed in Boko Haram attacks",
+            "low": 26081,
+            "high": 26081,
+            "notes": "Fondation pour l\u2019innovation politique counted 26,081 deaths in 3,546 Boko Haram attacks from 2009-April 2024; civilians were the target in 64.1% of attacks, but the death total is not exclusively civilian.",
+            "sources": [
+              "https://www.fondapol.org/app/uploads/2024/09/enquete-terrorisme_2021_gb_2024-09-18_w.pdf"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "residents of Baga and surrounding communities",
+            "low": 150,
+            "high": 2000,
+            "notes": "January 2015 Baga massacre estimates range from the Nigerian government's 150 total killed, including militants, to around 2,000 reported killed or missing.",
+            "sources": [
+              "https://time.com/3665006/boko-haram-nigeria-death-toll-150-2000/",
+              "https://www.hrw.org/news/2015/01/14/dispatches-what-really-happened-baga-nigeria"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "residents of Gamboru Ngala",
+            "low": 300,
+            "high": 400,
+            "notes": "Boko Haram killed at least 300, and possibly up to 400, civilians in the May 2014 Gamboru Ngala massacre.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/2014_Gamboru_Ngala_massacre",
+              "https://en.wikipedia.org/wiki/Fall_of_Gamboru_Ngala"
+            ]
+          }
+        ],
+        "notes": "The low figure is a partial documented 2011-2018 dataset count. The high figure uses UN-linked reporting of around 35,000 civilians killed in the wider conflict; this is not a clean Boko Haram-only perpetrator count.",
+        "sources": [
+          "https://www.cfr.org/articles/boko-harams-deadly-impact",
+          "https://apnews.com/article/3579523f5f1b978ea7d32b4374c8e036",
+          "https://apnews.com/article/310861541c0753c22a49cd3476094cb5"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "conflict-affected civilians, especially children under five in north-east Nigeria",
+          "low": null,
+          "high": 314000,
+          "point": 314000,
+          "notes": "UNDP estimated 314,000 indirect conflict-attributable deaths by end-2020 from hunger, disease, lack of clean water, destroyed livelihoods, and health-system collapse. Boko Haram/ISWAP actions were a primary driver, but the figure is conflict-wide and cannot be assigned exclusively to one side.",
+          "sources": [
+            "https://www.undp.org/nigeria/publications/assessing-impact-conflict-development-north-east-nigeria",
+            "https://korbel.du.edu/sites/default/files/2022-02/Assessing%20the%20impact%20of%20Conflict%20on%20Development%20in%20North-East%20Nigeria_0.pdf",
+            "https://www.hrw.org/node/383116"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "internally displaced people, refugees, and host communities",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Boko Haram/ISWAP attacks caused mass displacement and restricted access to farms, markets, roads, and aid. Mortality attributable specifically to insurgent-caused displacement is not separately quantified beyond UNDP's conflict-wide indirect-deaths model.",
+          "sources": [
+            "https://www.hrw.org/node/383116",
+            "https://www.wfp.org/emergencies/nigeria-emergency"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lake Chad Basin governments / MNJTF / allied militias",
+      "members": [
+        "Nigeria",
+        "Cameroon",
+        "Chad",
+        "Niger",
+        "Multinational Joint Task Force (MNJTF)",
+        "Civilian Joint Task Force and other pro-government vigilantes"
+      ],
+      "military_killed": {
+        "low": 3384,
+        "high": null,
+        "point": null,
+        "notes": "CFR/NST documented roughly 3,384 state security-service deaths since 2012 across the core Lake Chad theatre. Nigeria-only reporting by former CDS Lucky Irabor put Nigerian officers and soldiers killed at 2,700 for 2009-2021. The true 2009-2026 regional total is higher but not authoritatively aggregated.",
+        "sources": [
+          "https://www.cfr.org/articles/measuring-boko-harams-impact-state-security-services",
+          "https://leadership.ng/boko-haram-war-2700-soldiers-killed-gen-irabor/",
+          "https://apnews.com/article/4f091478e56b757957c7e16d303ae75c"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1700,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "extrajudicial execution",
+            "victims_group": "suspected Boko Haram members and civilians detained or screened by Nigerian forces",
+            "low": 1200,
+            "high": null,
+            "notes": "Amnesty International reported more than 1,200 extrajudicial executions by Nigerian military forces in counter-Boko Haram operations.",
+            "sources": [
+              "https://www.amnesty.org/en/documents/afr44/1657/2015/en/"
+            ]
+          },
+          {
+            "cause": "execution after detention escape",
+            "victims_group": "recaptured detainees from Giwa barracks",
+            "low": 640,
+            "high": 640,
+            "notes": "Amnesty reported more than 640 men and boys killed by Nigerian soldiers after the March 14, 2014 Giwa barracks attack.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/news/2016/03/nigeria-no-justice-for-the-640-men-and-boys-slain-by-military-following-giwa-barracks-attack-two-years-ago-2/",
+              "https://www.amnesty.org/en/latest/news/2016/03/the-blood-dried-the-rains-came-but-justice-remains-elusive-for-the-giwa-640/"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "IDPs and civilians in Rann and other northern Nigerian communities",
+            "low": 500,
+            "high": null,
+            "notes": "SBM Intelligence, cited by AP, estimated over 500 civilian deaths from Nigerian military airstrikes since 2017; Rann 2017 alone is reported from at least 70 to more than 160 killed depending on source.",
+            "sources": [
+              "https://apnews.com/article/99f88b5cee5fdb0b68d6940ce645cb3d",
+              "https://time.com/4642997/a-catastrophic-error-in-nigeria-kills-scores/",
+              "https://www.militarytimes.com/news/your-military/2022/09/14/congress-asks-for-answers-about-us-role-in-2017s-nigerian-airstrikes/"
+            ]
+          },
+          {
+            "cause": "raid / reprisal operation",
+            "victims_group": "Baga civilians",
+            "low": 185,
+            "high": 185,
+            "notes": "Amnesty reported at least 185 people killed in Baga in April 2013 after a Boko Haram-government clash and subsequent military operation.",
+            "sources": [
+              "https://www.amnestyusa.org/reports/stars-on-their-shoulders-blood-on-their-hands-war-crimes-committed-by-the-nigerian-military/"
+            ]
+          }
+        ],
+        "notes": "The 1,700 low is a conservative floor combining Amnesty's 1,200+ extrajudicial killings and the 500+ airstrike-death estimate. Some incident categories may overlap with broader Amnesty counts, so no high-confidence total is available.",
+        "sources": [
+          "https://www.amnesty.org/en/documents/afr44/1657/2015/en/",
+          "https://apnews.com/article/99f88b5cee5fdb0b68d6940ce645cb3d"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention",
+          "victims_group": "suspected Boko Haram detainees, including men, boys, women, and children",
+          "low": 7000,
+          "high": null,
+          "point": 7000,
+          "notes": "Amnesty International reported at least 7,000 deaths in Nigerian military detention by 2015, attributed to starvation, suffocation, torture, disease, and inhumane conditions.",
+          "sources": [
+            "https://www.amnesty.org/en/documents/afr44/1657/2015/en/",
+            "https://www.dw.com/en/amnesty-international-over-8000-have-died-in-nigerian-military-custody/a-18495500"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "IDPs affected by camp closures, restrictions, and unsafe returns",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW documented severe harms from Borno camp closures and forced or unsafe returns, but no authoritative death toll specifically attributable to government displacement policy was found.",
+          "sources": [
+            "https://www.hrw.org/node/383116"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 22334,
+    "military_high": null,
+    "civilian_low": 35000,
+    "civilian_high": null,
+    "grand_low": 350000,
+    "grand_high": null,
+    "notes": "Military_low sums the partial documented CFR/NST militant figure of 18,950 through June 2018 and state security-service deaths of 3,384 since 2012; it is not a full 2009-2026 total. Civilian_low uses the widely cited 35,000 direct-death/civilian-death reference, but direct civilian deaths by perpetrator cannot be cleanly summed. Grand_low uses UNDP's nearly 350,000 conflict-attributable deaths by end-2020. No authoritative post-2020 indirect-deaths update or 2026 grand total was found."
+  },
+  "key_atrocities": [
+    {
+      "name": "2009 Boko Haram uprising and crackdown",
+      "year": 2009,
+      "perpetrator": "Boko Haram and Nigerian security forces",
+      "victims_group": "Boko Haram members, civilians, and security personnel",
+      "low": 1000,
+      "high": 1000,
+      "notes": "Around 1,000 people were killed in the initial July 2009 uprising and crackdown; the execution of Mohammed Yusuf became a major radicalizing event.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2009_Boko_Haram_uprising"
+      ]
+    },
+    {
+      "name": "Giwa barracks killings",
+      "year": 2014,
+      "perpetrator": "Nigerian Army",
+      "victims_group": "recaptured detainees",
+      "low": 640,
+      "high": 640,
+      "notes": "Amnesty reported more than 640 men and boys killed by Nigerian soldiers after detainees escaped during a Boko Haram attack.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2016/03/nigeria-no-justice-for-the-640-men-and-boys-slain-by-military-following-giwa-barracks-attack-two-years-ago-2/",
+        "https://www.amnesty.org/en/latest/news/2016/03/the-blood-dried-the-rains-came-but-justice-remains-elusive-for-the-giwa-640/"
+      ]
+    },
+    {
+      "name": "Gamboru Ngala massacre",
+      "year": 2014,
+      "perpetrator": "Boko Haram",
+      "victims_group": "civilians",
+      "low": 300,
+      "high": 400,
+      "notes": "Boko Haram attacked the twin towns of Gamboru and Ngala, killing at least 300 civilians, with some accounts reporting up to 400.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2014_Gamboru_Ngala_massacre",
+        "https://en.wikipedia.org/wiki/Fall_of_Gamboru_Ngala"
+      ]
+    },
+    {
+      "name": "Baga massacre",
+      "year": 2015,
+      "perpetrator": "Boko Haram",
+      "victims_group": "civilians and some combatants",
+      "low": 150,
+      "high": 2000,
+      "notes": "The Nigerian government reported 150 killed, including militants; Amnesty, HRW, and media reports described estimates up to around 2,000 killed or missing.",
+      "sources": [
+        "https://time.com/3665006/boko-haram-nigeria-death-toll-150-2000/",
+        "https://www.hrw.org/news/2015/01/14/dispatches-what-really-happened-baga-nigeria"
+      ]
+    },
+    {
+      "name": "Rann IDP camp airstrike",
+      "year": 2017,
+      "perpetrator": "Nigerian Air Force",
+      "victims_group": "IDPs, civilians, and aid workers",
+      "low": 70,
+      "high": 160,
+      "notes": "A Nigerian military aircraft mistakenly struck an IDP camp during operations against Boko Haram; early reporting put the toll at at least 70, while later reporting cited more than 160 civilians.",
+      "sources": [
+        "https://time.com/4642997/a-catastrophic-error-in-nigeria-kills-scores/",
+        "https://www.militarytimes.com/news/your-military/2022/09/14/congress-asks-for-answers-about-us-role-in-2017s-nigerian-airstrikes/"
+      ]
+    },
+    {
+      "name": "Koshebe / Zabarmari massacre",
+      "year": 2020,
+      "perpetrator": "Boko Haram",
+      "victims_group": "farmers and civilians",
+      "low": 43,
+      "high": 110,
+      "notes": "Boko Haram killed farmers near Maiduguri; reported tolls vary, with up to 110 civilians cited.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Koshebe_massacre"
+      ]
+    },
+    {
+      "name": "Barka Tolorom island attack",
+      "year": 2026,
+      "perpetrator": "Boko Haram",
+      "victims_group": "Chadian soldiers",
+      "low": 23,
+      "high": 23,
+      "notes": "Boko Haram militants killed 23 Chadian soldiers in a May 2026 attack in the Lake Chad region.",
+      "sources": [
+        "https://apnews.com/article/4f091478e56b757957c7e16d303ae75c"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest number, UNDP's nearly 350,000 deaths by end-2020, is an excess-deaths model for north-east Nigeria and cannot be cleanly assigned to individual perpetrators. Event datasets such as ACLED, NST, UCDP, and terrorism databases use different definitions, geographic scopes, and inclusion thresholds. State abuses, detention deaths, remote-area massacres, and intra-jihadist fighting are likely undercounted. Because the war remains ongoing and no authoritative 2026 indirect-deaths update exists, the true death toll is higher than the 2020 UNDP floor but cannot be responsibly stated as a precise current total.",
+  "sources": [
+    {
+      "url": "https://www.undp.org/nigeria/publications/assessing-impact-conflict-development-north-east-nigeria",
+      "title": "Assessing the Impact of Conflict on Development in North-East Nigeria",
+      "publisher": "United Nations Development Programme"
+    },
+    {
+      "url": "https://korbel.du.edu/sites/default/files/2022-02/Assessing%20the%20impact%20of%20Conflict%20on%20Development%20in%20North-East%20Nigeria_0.pdf",
+      "title": "Assessing the Impact of Conflict on Development in North-East Nigeria PDF",
+      "publisher": "UNDP / Pardee Center copy"
+    },
+    {
+      "url": "https://www.hrw.org/node/383116",
+      "title": "Those Who Returned Are Suffering: Impact of Camp Shutdowns on People Displaced By Boko Haram Conflict in Nigeria",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.cfr.org/articles/boko-harams-deadly-impact",
+      "title": "Boko Haram\u2019s Deadly Impact",
+      "publisher": "Council on Foreign Relations"
+    },
+    {
+      "url": "https://www.cfr.org/articles/measuring-boko-harams-impact-state-security-services",
+      "title": "Measuring Boko Haram\u2019s Impact on State Security Services",
+      "publisher": "Council on Foreign Relations"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/afr44/1657/2015/en/",
+      "title": "Stars on their Shoulders: Blood on their Hands",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.amnesty.org/en/documents/afr44/3060/2015/en/",
+      "title": "Our job is to shoot, slaughter and kill: Boko Haram's reign of terror in north east Nigeria",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.fondapol.org/app/uploads/2024/09/enquete-terrorisme_2021_gb_2024-09-18_w.pdf",
+      "title": "Islamist Terrorist Attacks in the World 1979-April 2024",
+      "publisher": "Fondation pour l\u2019innovation politique"
+    },
+    {
+      "url": "https://www.acaps.org/fileadmin/Data_Product/Main_media/20251118_ACAPS_Nigeria_-_Conflict_dynamics_and_humanitarian_implications_in_North_East__North_West__and_North_Central_Nigeria_.pdf",
+      "title": "Nigeria: Conflict dynamics and humanitarian implications",
+      "publisher": "ACAPS"
+    },
+    {
+      "url": "https://apnews.com/article/4f091478e56b757957c7e16d303ae75c",
+      "title": "Boko Haram militants kill 23 soldiers in an attack on a military post, Chad says",
+      "publisher": "Associated Press"
+    }
+  ]
+}

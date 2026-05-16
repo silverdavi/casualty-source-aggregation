@@ -1,0 +1,275 @@
+{
+  "war_id": "chaco_war",
+  "name": "Chaco War",
+  "start_year": 1932,
+  "end_year": 1935,
+  "ongoing": false,
+  "regions": [
+    "Bolivia",
+    "Paraguay",
+    "Chaco Boreal",
+    "Gran Chaco",
+    "South America"
+  ],
+  "summary": "The Chaco War was an interstate war between Bolivia and Paraguay over the Chaco Boreal / Gran Chaco, fought from 1932 until the armistice of 12 June 1935, with a final peace settlement in 1938. Paraguay won control of most of the disputed territory, while Bolivia received a corridor and port access to the Paraguay River. The death toll was overwhelmingly military, driven by combat, thirst, disease, exposure, wounds, and captivity rather than by enumerated civilian massacre campaigns.",
+  "sides": [
+    {
+      "name": "Bolivia",
+      "members": [
+        "Republic of Bolivia",
+        "Bolivian Army",
+        "Bolivian Aviation Corps"
+      ],
+      "military_killed": {
+        "low": 50000,
+        "high": 65000,
+        "point": 57500,
+        "notes": "All-cause military deaths while serving. Responsible sources give more than 50,000 Bolivian deaths, 50,000, 52,397, about 60,000, and up to 65,000. Causes include combat, wounds, disease, dehydration, exposure, snakebite, and deaths in captivity. POW deaths in Paraguayan captivity are treated as a subset of this total, not added separately.",
+        "sources": [
+          "https://journals.sagepub.com/doi/10.1177/0968344519842358",
+          "https://historynet.com/chaco-war-1932-1935-battle-barrens/",
+          "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/November-December-2025/Chaco-War/",
+          "https://dokumen.pub/politics-of-the-chaco-peace-conference-19351939-9781477302934.html",
+          "https://www.britannica.com/event/Chaco-War",
+          "https://www.globalsecurity.org/military/world/war/chaco-war.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No reliable aggregate estimate found for civilians directly killed by Bolivian forces. The war zone was sparsely settled but not empty; Indigenous and civilian disruption is documented, but side-attributed direct civilian death figures are not responsibly quantifiable from the sources consulted.",
+        "sources": [
+          "https://cdm21069.contentdm.oclc.org/digital/api/collection/ppl1/id/452440/download",
+          "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Paraguay",
+      "members": [
+        "Republic of Paraguay",
+        "Paraguayan Army",
+        "Paraguayan air and riverine forces"
+      ],
+      "military_killed": {
+        "low": 30000,
+        "high": 40000,
+        "point": 35000,
+        "notes": "All-cause military deaths while serving. Common estimates include 30,000 Paraguayan dead, 31,500 dead and missing, about 36,000, and 40,000. Causes include combat, wounds, disease, dehydration, exposure, and other service-related causes.",
+        "sources": [
+          "https://www.ip.gov.py/ip/2018/06/12/a-83-anos-del-fin-de-la-guerra-del-chaco/",
+          "https://historynet.com/chaco-war-1932-1935-battle-barrens/",
+          "https://san.beck.org/22-4-Paraguay1850-1935.html",
+          "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/November-December-2025/Chaco-War/",
+          "https://academic.oup.com/reference/62379/reference-article-abstract/554976882"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No reliable aggregate estimate found for civilians directly killed by Paraguayan forces. Sources document civilian capture, Indigenous disruption, epidemics, and forced migration, but not a clean direct-civilian-killing total by Paraguayan forces.",
+        "sources": [
+          "https://cdm21069.contentdm.oclc.org/digital/api/collection/ppl1/id/452440/download",
+          "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "captivity",
+          "victims_group": "Bolivian prisoners of war",
+          "low": 1097,
+          "high": 3000,
+          "point": 1097,
+          "notes": "Captain Dent Sharp / Chaco Peace Conference materials listed 1,097 Bolivian POWs as having died in captivity; the author of Politics of the Chaco Peace Conference reasoned that perhaps about 3,000 Bolivians died in Paraguayan detention camps. These are military POW deaths and are treated as part of Bolivia's military_killed total, not additional deaths.",
+          "sources": [
+            "https://dokumen.pub/politics-of-the-chaco-peace-conference-19351939-9781477302934.html",
+            "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html",
+            "https://avarchives.icrc.org/Picture/20068"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Bolivian prisoners of war",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Bolivian POW labor in Paraguay is documented by ICRC archival material and by scholarship on Bolivian prisoners, but deaths specifically attributable to forced labor, as distinct from captivity, deprivation, illness, accidents, wounds, and suicide, are not separately quantified.",
+          "sources": [
+            "https://avarchives.icrc.org/Picture/20068",
+            "https://journals.sagepub.com/doi/10.1177/0968344519842358",
+            "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 80000,
+    "military_high": 105000,
+    "civilian_low": null,
+    "civilian_high": null,
+    "grand_low": 80000,
+    "grand_high": 105000,
+    "notes": "Grand range is the sum of known/estimated military deaths: Bolivia 50,000-65,000 plus Paraguay 30,000-40,000. Civilian deaths and Indigenous indirect deaths are not added because no reliable aggregate or side-attributed figures were found. Bolivian POW deaths in Paraguayan captivity are treated as a subset of Bolivian military deaths, not additional to the total."
+  },
+  "key_atrocities": [
+    {
+      "name": "Siege/Battle of Boqueron",
+      "year": 1932,
+      "perpetrator": "Paraguay",
+      "victims_group": "Bolivian garrison and relief forces; Paraguayan assault troops also suffered heavy losses",
+      "low": 700,
+      "high": 6000,
+      "notes": "Battle-level figures are contested. Army University Press gives 2,200 Bolivian soldiers killed and captured and about 500 Paraguayan killed plus 1,500 wounded; a Paraguayan historian interviewed by ABC Color gave about 6,000 total dead, including about 3,000 Paraguayans and about 1,000 Bolivians. This is treated as a deadly battle, not an atrocity in the strict legal sense.",
+      "sources": [
+        "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/November-December-2025/Chaco-War/",
+        "https://www.abc.com.py/edicion-impresa/politica/boqueron-fue-la-clave-para-ganar-la-guerra-del-chaco-1636745.html"
+      ]
+    },
+    {
+      "name": "First and Second Battles of Nanawa",
+      "year": 1933,
+      "perpetrator": "Bolivia",
+      "victims_group": "Paraguayan defenders and Bolivian attacking forces",
+      "low": 2248,
+      "high": 5500,
+      "notes": "Army University Press reports over 2,000 Bolivian losses and 248 Paraguayan casualties in the first battle, and 2,000 Bolivian and 500 Paraguayan losses in the second battle. Encyclopedia.com reports that after the second battle Paraguay admitted 150 killed and Bolivia reported 2,000-3,000 casualties. Treated as extremely deadly failed assaults, not a massacre.",
+      "sources": [
+        "https://www.armyupress.army.mil/Portals/7/military-review/Archives/English/ND-25/Chaco-War-ua.pdf",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanawa-battle"
+      ]
+    },
+    {
+      "name": "Campo Via pocket",
+      "year": 1933,
+      "perpetrator": "Paraguay",
+      "victims_group": "Bolivian 4th and 9th Divisions",
+      "low": 2000,
+      "high": 2686,
+      "notes": "A decisive Paraguayan encirclement. The Past gives 2,686 Bolivians dead and 4,856 captured; other summaries give up to 2,000 killed and 7,000 captured. This was a battlefield disaster rather than a documented massacre.",
+      "sources": [
+        "https://the-past.com/feature/into-the-green-hell-the-chaco-war-1932-1935/",
+        "https://en.wikipedia.org/wiki/Campo_V%C3%ADa_pocket"
+      ]
+    },
+    {
+      "name": "El Carmen / Ballivian campaign",
+      "year": 1934,
+      "perpetrator": "Paraguay",
+      "victims_group": "Bolivian troops",
+      "low": 2000,
+      "high": 2000,
+      "notes": "Army University Press reports 2,000 Bolivian dead and 4,000 surrendering after Paraguayan forces enveloped two Bolivian divisions. Treated as a deadly battlefield event.",
+      "sources": [
+        "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/November-December-2025/Chaco-War/"
+      ]
+    },
+    {
+      "name": "Bolivian POW deaths in Paraguayan captivity",
+      "year": null,
+      "perpetrator": "Paraguay",
+      "victims_group": "Bolivian prisoners of war",
+      "low": 1097,
+      "high": 3000,
+      "notes": "Chaco Peace Conference materials list 1,097 deaths in captivity; the author of Politics of the Chaco Peace Conference argues that perhaps about 3,000 Bolivian POWs died in Paraguayan detention camps. Evidence also describes deprivation, disease, hard labor, accidents, and suicide among POWs.",
+      "sources": [
+        "https://dokumen.pub/politics-of-the-chaco-peace-conference-19351939-9781477302934.html",
+        "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html",
+        "https://avarchives.icrc.org/Picture/20068"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The Chaco War's casualty literature often mixes killed, dead of disease, missing, captured, and wounded. The military-death range of 80,000-105,000 is the best-supported roll-up from side estimates, but civilian and Indigenous indirect deaths are not cleanly enumerated. The only quantified indirect-death category found is Bolivian POW deaths in Paraguayan captivity, which are treated as a subset of Bolivian military deaths. Some published figures, including a Bloomsbury/Google Books blurb saying approximately 52,000 total Bolivians and Paraguayans died, conflict with multiple sources that put Bolivian deaths alone at more than 50,000 and are therefore not used for the roll-up.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Chaco-War",
+      "title": "Chaco War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://academic.oup.com/reference/62379/reference-article-abstract/554976882",
+      "title": "Chaco War",
+      "publisher": "Oxford Bibliographies in Latin American Studies / Oxford University Press"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0968344519842358",
+      "title": "Prisoners of the Chaco: The Bolivian Experience of Captivity",
+      "publisher": "War in History / SAGE"
+    },
+    {
+      "url": "https://historynet.com/chaco-war-1932-1935-battle-barrens/",
+      "title": "The Chaco War 1932-1935: Battle in the Barrens",
+      "publisher": "Military History Quarterly / HistoryNet"
+    },
+    {
+      "url": "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/November-December-2025/Chaco-War/",
+      "title": "Operational Art and the Chaco War",
+      "publisher": "U.S. Army University Press / Military Review"
+    },
+    {
+      "url": "https://www.armyupress.army.mil/Portals/7/military-review/Archives/English/ND-25/Chaco-War-ua.pdf",
+      "title": "Operational Art and the Chaco War PDF",
+      "publisher": "U.S. Army University Press / Military Review"
+    },
+    {
+      "url": "https://www.ip.gov.py/ip/2018/06/12/a-83-anos-del-fin-de-la-guerra-del-chaco/",
+      "title": "A 83 a\u00f1os del fin de la Guerra del Chaco",
+      "publisher": "Agencia IP Paraguay"
+    },
+    {
+      "url": "https://www.abc.com.py/edicion-impresa/politica/boqueron-fue-la-clave-para-ganar-la-guerra-del-chaco-1636745.html",
+      "title": "Boquer\u00f3n fue la clave para ganar la Guerra del Chaco",
+      "publisher": "ABC Color"
+    },
+    {
+      "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/nanawa-battle",
+      "title": "Nanawa, Battle of",
+      "publisher": "Encyclopedia.com / Encyclopedia of Latin American History and Culture"
+    },
+    {
+      "url": "https://dokumen.pub/politics-of-the-chaco-peace-conference-19351939-9781477302934.html",
+      "title": "Politics of the Chaco Peace Conference, 1935-1939",
+      "publisher": "University of Texas Press scan / Dokumen"
+    },
+    {
+      "url": "https://dokumen.pub/the-chaco-war-environment-ethnicity-and-nationalism-9781474248846-9781474248907-9781474248877.html",
+      "title": "The Chaco War: Environment, Ethnicity, and Nationalism",
+      "publisher": "Bloomsbury Academic scan / Dokumen"
+    },
+    {
+      "url": "https://books.google.com/books/about/The_Chaco_War.html?id=64hyCwAAQBAJ",
+      "title": "The Chaco War: Environment, Ethnicity, and Nationalism",
+      "publisher": "Bloomsbury Academic / Google Books"
+    },
+    {
+      "url": "https://avarchives.icrc.org/Picture/20068",
+      "title": "Chaco war 1932-1935. Pozo Azul. Bolivian prisoners of war at work.",
+      "publisher": "ICRC Audiovisual Archives"
+    },
+    {
+      "url": "https://www.prio.org/data/1",
+      "title": "PRIO Battledeaths Dataset",
+      "publisher": "Peace Research Institute Oslo"
+    },
+    {
+      "url": "https://the-past.com/feature/into-the-green-hell-the-chaco-war-1932-1935/",
+      "title": "Into the Green Hell: The Chaco War, 1932-1935",
+      "publisher": "The Past"
+    },
+    {
+      "url": "https://san.beck.org/22-4-Paraguay1850-1935.html",
+      "title": "Paraguay 1850-1935",
+      "publisher": "Sanderson Beck"
+    },
+    {
+      "url": "https://cdm21069.contentdm.oclc.org/digital/api/collection/ppl1/id/452440/download",
+      "title": "The Nomos of Border-Making Discourses: The Chaco War, League of Nations",
+      "publisher": "Digital archive PDF"
+    }
+  ]
+}

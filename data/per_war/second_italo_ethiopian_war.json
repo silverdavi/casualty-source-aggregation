@@ -1,0 +1,332 @@
+{
+  "war_id": "second_italo_ethiopian_war",
+  "name": "Second Italo-Ethiopian War",
+  "start_year": 1935,
+  "end_year": 1937,
+  "ongoing": false,
+  "regions": [
+    "Ethiopia",
+    "Italian Eritrea",
+    "Italian Somaliland"
+  ],
+  "summary": "Fascist Italy invaded the Ethiopian Empire on 3 October 1935, captured Addis Ababa in May 1936, and annexed Ethiopia into Italian East Africa. Organized Ethiopian resistance continued into 1937, and Italian occupation violence continued until liberation in 1941; many casualty totals therefore blend the war, early repression, and wider occupation. Estimates range from a narrow conventional-war toll of tens of thousands of combatants to Ethiopian postwar claims of 760,300 Ethiopian deaths from war and occupation.",
+  "sides": [
+    {
+      "name": "Ethiopian Empire",
+      "members": [
+        "Ethiopian Imperial Army",
+        "Ethiopian Patriots / Arbegnoch",
+        "Ethiopian irregular and provincial forces"
+      ],
+      "military_killed": {
+        "low": 70000,
+        "high": 377500,
+        "point": null,
+        "notes": "Low is the Italian estimate of 50,000 killed on the northern front plus 20,000 on the southern front. High combines the Ethiopian government's postwar categories: 275,000 soldiers killed in action, 78,500 Patriots killed in hostilities during the occupation, and 24,000 Patriots killed by summary courts. The high figure extends into the occupation period and should not be read as a strictly October 1935-February 1937 battlefield count.",
+        "sources": [
+          "https://alamoana.net/info/en/?search=Second_Italo-Ethiopian_War",
+          "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+          "https://en.wikipedia.org/wiki/Army_of_the_Ethiopian_Empire"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 78,
+        "high": 619,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre",
+            "victims_group": "Italian civilians at the Gondrand construction site",
+            "low": 78,
+            "high": 78,
+            "notes": "Del Boca-derived summaries list 78 civilians killed in the Gondrand shipyard/construction-site massacre.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+            ]
+          },
+          {
+            "cause": "war-related killing of civilians/workers",
+            "victims_group": "Italian civilian workers and merchant-marine personnel",
+            "low": null,
+            "high": 619,
+            "notes": "Upper bound treats Del Boca's non-military Italian categories, 78 civilians plus 453 workers plus 88 merchant marines, as civilian or civilian-like deaths attributable to Ethiopian action. The exact circumstances of all deaths are not clearly separated in accessible summaries.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+            ]
+          }
+        ],
+        "notes": "No evidence found for large-scale Ethiopian direct killing of Ethiopian civilians. The main identified civilian victims of Ethiopian action were Italian civilians/workers, especially at Gondrand; the larger upper bound is uncertain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War",
+          "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Kingdom of Italy / Italian East African forces",
+      "members": [
+        "Kingdom of Italy",
+        "Regio Esercito",
+        "Blackshirts / MVSN",
+        "Regia Aeronautica",
+        "Regia Marina",
+        "Eritrean ascari",
+        "Somali dubats and askaris",
+        "other Italian colonial troops"
+      ],
+      "military_killed": {
+        "low": 3291,
+        "high": 8231,
+        "point": null,
+        "notes": "Low is an approximate main-campaign figure combining Italian white-troop deaths and colonial troops: Castellani gives 1,099 killed or died of wounds and 599 deaths from disease/non-enemy injury among white troops; Barker/official summaries give 1,593 Eritrean troops killed. High uses Del Boca's estimate through 31 December 1936: 3,731 Italian soldiers plus about 4,500 askaris. Askari losses are described in the literature as vague.",
+        "sources": [
+          "https://stimson.contentdm.oclc.org/digital/api/collection/p15290coll6/id/428/download",
+          "https://justapedia.org/wiki/Second_Italo-Ethiopian_War",
+          "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War",
+          "https://www.netwargamingitalia.net/forum/goto/post?id=279204"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 38423,
+        "high": 49833,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing",
+            "victims_group": "Ethiopian women and children",
+            "low": 17800,
+            "high": 17800,
+            "notes": "Ethiopian government postwar claim for women and children killed by Italian bombing. The figure is widely repeated but not independently reconstructed in the sources found.",
+            "sources": [
+              "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+              "https://en.wikipedia.org/wiki/Army_of_the_Ethiopian_Empire"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Ethiopian civilians in Addis Ababa during Yekatit 12",
+            "low": 19200,
+            "high": 30000,
+            "notes": "Ian Campbell's detailed modern estimate is about 19,200; the Ethiopian government's postwar claim was 30,000.",
+            "sources": [
+              "https://academic.oup.com/book/35100/chapter/299169592",
+              "https://www.proquest.com/openview/a9fc11c1914e9a6d96516d1fff628489/1?cbl=24212&pq-origsite=gscholar",
+              "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Monks, clergy, pilgrims, and associated civilians at Debre Libanos",
+            "low": 1423,
+            "high": 2033,
+            "notes": "Modern reconstruction summarized in Paolo Borruso/Routledge preview from Campbell gives 1,423-2,033 victims; other summaries give roughly 1,700-2,100 or 1,800-2,200. Older Italian figures acknowledged only 297 monks and 23 laymen in one execution phase.",
+            "sources": [
+              "https://dokumen.pub/debre-libanos-1937-routledge-studies-in-the-modern-history-of-italy-1.html",
+              "https://www.lastampa.it/vatican-insider/en/2016/05/18/news/do-away-with-those-monks-signed-viceroy-graziani-1.35005872/",
+              "https://en.wikipedia.org/wiki/Debre_Libanos"
+            ]
+          },
+          {
+            "cause": "chemical_weapons",
+            "victims_group": "Ethiopian combatants and civilians exposed to sulphur mustard and other chemical agents",
+            "low": null,
+            "high": null,
+            "notes": "SIPRI confirms Italian chemical-weapons use and cites a Soviet estimate that 15,000 of 50,000 Ethiopian casualties were caused by chemical weapons, but this is casualties rather than deaths; no reliable death total is available.",
+            "sources": [
+              "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf"
+            ]
+          }
+        ],
+        "notes": "Direct civilian death totals are assembled from major documented categories. They should not be added mechanically to the Ethiopian government's 760,300 total without checking for overlap, especially for 1937 reprisals.",
+        "sources": [
+          "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+          "https://academic.oup.com/book/35100/chapter/299169592",
+          "https://dokumen.pub/debre-libanos-1937-routledge-studies-in-the-modern-history-of-italy-1.html",
+          "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "camp",
+          "victims_group": "Ethiopian detainees in Italian concentration/prison camps including Danane and Nocra",
+          "low": 35000,
+          "high": 35000,
+          "point": 35000,
+          "notes": "Ethiopian government postwar claim for persons who died in concentration camps from privation and maltreatment. The existence of camps is well attested, but the 35,000 mortality figure is less independently reconstructed than the major massacres.",
+          "sources": [
+            "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+            "https://en.wikipedia.org/wiki/Italian_war_crimes",
+            "https://en.wikipedia.org/wiki/Danane_concentration_camp",
+            "https://en.wikipedia.org/wiki/Nocra_prison_camp"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Ethiopian civilians whose villages, farms, or food base were destroyed",
+          "low": 300000,
+          "high": 300000,
+          "point": 300000,
+          "notes": "Ethiopian government postwar claim for deaths from privation after village destruction. Related claims include destruction of 525,000 houses, 2,000 churches, and mass confiscation or slaughter of livestock. This is the largest and most uncertain category.",
+          "sources": [
+            "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+            "https://en.wikipedia.org/wiki/Italian_war_crimes"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 73291,
+    "military_high": 385731,
+    "civilian_low": 373501,
+    "civilian_high": 385452,
+    "grand_low": 446792,
+    "grand_high": 771183,
+    "notes": "Totals are approximate roll-ups of the buckets above. Military_low combines 70,000 Ethiopian and 3,291 Italian/colonial deaths. Military_high combines 377,500 Ethiopian combatant/resistance deaths and 8,231 Italian/colonial deaths. Civilian totals combine direct civilian deaths attributed to each side plus Italian-caused camp and privation deaths; these figures may overlap with the Ethiopian government's 760,300 postwar total. A simpler high-end formulation is 760,300 Ethiopian deaths plus 8,231 Italian/colonial military deaths plus up to 619 Italian civilian deaths, or about 769,150 total."
+  },
+  "key_atrocities": [
+    {
+      "name": "Italian chemical warfare in Ethiopia",
+      "year": 1935,
+      "perpetrator": "Kingdom of Italy / Italian East African forces",
+      "victims_group": "Ethiopian combatants and civilians",
+      "low": null,
+      "high": null,
+      "notes": "Chemical attacks began in December 1935 and continued into April 1936. SIPRI cites a Soviet estimate that 15,000 of 50,000 Ethiopian casualties were caused by chemical weapons, but reliable death totals are not available.",
+      "sources": [
+        "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf"
+      ]
+    },
+    {
+      "name": "Bombing of Red Cross hospitals and medical units",
+      "year": 1935,
+      "perpetrator": "Kingdom of Italy / Italian East African forces",
+      "victims_group": "Medical personnel, patients, and nearby civilians",
+      "low": null,
+      "high": null,
+      "notes": "Baudendistel, as summarized in the International Review of the Red Cross, identified 17 incidents including 7 direct bombings. The Dessie bombing initially produced estimates of 50 dead and 200 wounded.",
+      "sources": [
+        "https://international-review.icrc.org/sites/default/files/pdf/1590391258/irc101_2/S1816383120000016a.pdf"
+      ]
+    },
+    {
+      "name": "Yekatit 12 / Addis Ababa massacre",
+      "year": 1937,
+      "perpetrator": "Kingdom of Italy / Italian East African forces",
+      "victims_group": "Ethiopian civilians in Addis Ababa",
+      "low": 19200,
+      "high": 30000,
+      "notes": "Ian Campbell's modern estimate is about 19,200 deaths; the Ethiopian government's postwar claim was 30,000.",
+      "sources": [
+        "https://academic.oup.com/book/35100/chapter/299169592",
+        "https://www.proquest.com/openview/a9fc11c1914e9a6d96516d1fff628489/1?cbl=24212&pq-origsite=gscholar",
+        "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php"
+      ]
+    },
+    {
+      "name": "Debre Libanos massacre",
+      "year": 1937,
+      "perpetrator": "Kingdom of Italy / Italian East African forces",
+      "victims_group": "Ethiopian Orthodox monks, clergy, pilgrims, and associated civilians",
+      "low": 1423,
+      "high": 2033,
+      "notes": "Modern reconstruction summarized from Campbell gives 1,423-2,033 victims; older Italian figures acknowledged only 297 monks and 23 laymen in one phase.",
+      "sources": [
+        "https://dokumen.pub/debre-libanos-1937-routledge-studies-in-the-modern-history-of-italy-1.html",
+        "https://en.wikipedia.org/wiki/Debre_Libanos",
+        "https://www.lastampa.it/vatican-insider/en/2016/05/18/news/do-away-with-those-monks-signed-viceroy-graziani-1.35005872/"
+      ]
+    },
+    {
+      "name": "Italian concentration/prison camps including Danane and Nocra",
+      "year": 1936,
+      "perpetrator": "Kingdom of Italy / Italian East African forces",
+      "victims_group": "Ethiopian detainees and political prisoners",
+      "low": 35000,
+      "high": 35000,
+      "notes": "Ethiopian postwar claim for deaths in camps from privation and maltreatment. The existence of Danane and Nocra is attested, but the mortality total is difficult to verify independently.",
+      "sources": [
+        "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+        "https://en.wikipedia.org/wiki/Danane_concentration_camp",
+        "https://en.wikipedia.org/wiki/Nocra_prison_camp"
+      ]
+    },
+    {
+      "name": "Gondrand massacre and Ethiopian atrocities against prisoners",
+      "year": 1936,
+      "perpetrator": "Ethiopian Empire",
+      "victims_group": "Italian civilians/workers and captured Italian or colonial troops",
+      "low": 78,
+      "high": 78,
+      "notes": "Del Boca-derived summaries list 78 civilians killed at Gondrand. SIPRI also notes League of Nations material on mutilation and decapitation of Italian prisoners, but no comprehensive death total for those prisoner atrocities is available.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War",
+        "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest figures come from Ethiopian postwar reparations memoranda covering invasion and occupation, not a neutral demographic survey. Italian official figures likely understate Italian losses, while Ethiopian postwar totals may overstate or aggregate categories for diplomatic and reparations purposes. Chemical-weapons mortality, camp mortality, and privation deaths cannot be cleanly separated from battlefield, massacre, displacement, and disease deaths. The report therefore presents low/high ranges and explicitly labels occupation-era figures that extend beyond the narrow 1935-1937 frame.",
+  "sources": [
+    {
+      "url": "https://www.sipri.org/sites/default/files/Italo-Ethiopian-war.pdf",
+      "title": "The use of chemical weapons in the 1935\u201336 Italo-Ethiopian War",
+      "publisher": "Stockholm International Peace Research Institute"
+    },
+    {
+      "url": "https://international-review.icrc.org/sites/default/files/pdf/1590391258/irc101_2/S1816383120000016a.pdf",
+      "title": "Medical care in armed conflict: Perpetrator discourse in historical perspective",
+      "publisher": "International Review of the Red Cross"
+    },
+    {
+      "url": "https://stimson.contentdm.oclc.org/digital/api/collection/p15290coll6/id/428/download",
+      "title": "Medical Aspects of the Italo-Ethiopian War",
+      "publisher": "The Army Medical Bulletin / Stimson Library digital collection"
+    },
+    {
+      "url": "https://academic.oup.com/book/35100",
+      "title": "The Addis Ababa Massacre: Italy's National Shame",
+      "publisher": "Oxford University Press"
+    },
+    {
+      "url": "https://academic.oup.com/book/35100/chapter/299169592",
+      "title": "The Reckoning, in The Addis Ababa Massacre",
+      "publisher": "Oxford University Press"
+    },
+    {
+      "url": "https://dokumen.pub/debre-libanos-1937-routledge-studies-in-the-modern-history-of-italy-1.html",
+      "title": "Debre Libanos 1937",
+      "publisher": "Routledge / online preview"
+    },
+    {
+      "url": "https://www.lastampa.it/vatican-insider/en/2016/05/18/news/do-away-with-those-monks-signed-viceroy-graziani-1.35005872/",
+      "title": "Do away with those monks. Signed: Viceroy Graziani",
+      "publisher": "La Stampa"
+    },
+    {
+      "url": "https://erenow.org/ww/holy-war-untold-story-catholic-italy-crusade-against-ethiopian-orthodox-church/25.php",
+      "title": "Appendix I: The Final Toll, in Holy War: The Untold Story of Catholic Italy's Crusade Against the Ethiopian Orthodox Church",
+      "publisher": "Erenow / Hurst book excerpt"
+    },
+    {
+      "url": "https://correlatesofwar.org/wp-content/uploads/Inter-StateWarsList.pdf",
+      "title": "The List of Inter-State Wars",
+      "publisher": "Correlates of War Project"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War",
+      "title": "Second Italo-Ethiopian War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Italian_war_crimes",
+      "title": "Italian war crimes",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Army_of_the_Ethiopian_Empire",
+      "title": "Army of the Ethiopian Empire",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

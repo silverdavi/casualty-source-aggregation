@@ -1,0 +1,408 @@
+{
+  "war_id": "soviet_purges_holodomor",
+  "name": "Soviet repression: Holodomor and Great Purge",
+  "start_year": 1932,
+  "end_year": 1939,
+  "ongoing": false,
+  "regions": [
+    "USSR",
+    "Soviet Ukraine",
+    "Kazakh ASSR / Soviet Kazakhstan",
+    "Russian SFSR",
+    "North Caucasus",
+    "Volga region",
+    "Western Siberia",
+    "Gulag and special-settlement zones"
+  ],
+  "summary": "This was an internal Soviet state-repression complex rather than a conventional war. The largest lethal component was the Soviet famine of 1932\u20131933, including the Holodomor in Ukraine and famine in Kazakhstan, followed by the Great Terror of 1937\u20131938, Gulag deaths, and deaths in special settlements and deportation schemes. Because categories overlap, the overall death toll is best treated as an approximate range rather than a single exact total.",
+  "sides": [
+    {
+      "name": "Soviet party-state / OGPU-NKVD / Stalinist security apparatus",
+      "members": [
+        "Communist Party leadership under Joseph Stalin",
+        "OGPU",
+        "NKVD",
+        "Soviet courts and extrajudicial troikas",
+        "Internal troops",
+        "Local party and state organs"
+      ],
+      "military_killed": {
+        "low": 780,
+        "high": null,
+        "point": null,
+        "notes": "At least 780 general-grade Red Army officers were executed during the 1937\u20131938 military purge; total military personnel killed is unknown. The figure overlaps with Great Terror execution totals and should not be added separately in a grand total without deduplication.",
+        "sources": [
+          "https://bfi.uchicago.edu/working-papers/the-anatomy-of-the-great-terror-a-quantitative-analysis-of-the-1937-38-purges-in-the-red-army/",
+          "https://newleftreview.org/issues/i214/articles/r-w-davies-forced-labour-under-stalin-the-archive-revelations"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 681692,
+        "high": 1000000,
+        "point": 681692,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "Great Terror victims, all categories including mostly civilians and some military/state personnel",
+            "low": 681692,
+            "high": 681692,
+            "notes": "Official archival figure for executions in 1937\u20131938; not purely civilian because it includes some military and state personnel.",
+            "sources": [
+              "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
+              "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges"
+            ]
+          },
+          {
+            "cause": "execution under NKVD Order No. 00447",
+            "victims_group": "Former kulaks, alleged criminals, and alleged anti-Soviet elements",
+            "low": 386798,
+            "high": 386798,
+            "notes": "Executions under NKVD Order No. 00447 by the end of 1938; included within the broader Great Terror execution total.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/NKVD_Order_No._00447"
+            ]
+          },
+          {
+            "cause": "ethnic/national operations executions",
+            "victims_group": "Targeted national minorities and people accused of foreign ties",
+            "low": 247157,
+            "high": 247157,
+            "notes": "Executions in NKVD national operations from August 1937 to October 1938; included within the broader Great Terror execution total.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Mass_operations_of_the_NKVD"
+            ]
+          },
+          {
+            "cause": "Polish Operation executions",
+            "victims_group": "Poles and people accused of Polish connections in the USSR",
+            "low": 111091,
+            "high": 111091,
+            "notes": "Largest single national operation; included within national operations and broader Great Terror totals.",
+            "sources": [
+              "https://www.pap.pl/en/news/news%2C282483%2Cpolish-ipn-prosecutors-say-nkvds-1930s-polish-operation-genocide.html",
+              "https://eng.ipn.gov.pl/en/news/977%2CWhat-was-the-Polish-Operation-by-the-NKVD.pdf"
+            ]
+          },
+          {
+            "cause": "death sentences under Law of 7 August 1932",
+            "victims_group": "People convicted of theft of state or collective-farm property",
+            "low": 16801,
+            "high": 16801,
+            "notes": "Getty, Rittersporn, and Zemskov report 5,338 death sentences in 1932 and 11,463 in 1933 under the decree.",
+            "sources": [
+              "https://paperzz.com/doc/8177982/victims-of-the-soviet-penal-system-in-the-pre"
+            ]
+          }
+        ],
+        "notes": "The best documented direct killing figure is 681,692 executions in 1937\u20131938. A civilian-only total cannot be precisely separated because the execution total includes some military and state personnel; older or broader estimates put people 'put to death' around one million.",
+        "sources": [
+          "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
+          "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges",
+          "https://paperzz.com/doc/8177982/victims-of-the-soviet-penal-system-in-the-pre"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Population of Soviet famine zones including Ukraine, Kazakhstan, North Caucasus, Volga, Russia, and other affected regions",
+          "low": 5500000,
+          "high": 8700000,
+          "point": 6500000,
+          "notes": "Includes Holodomor and Kazakh famine within the broader Soviet famine complex. Davies and Wheatcroft are often summarized at 5.5\u20136.5 million; wider summaries reach 8.7 million.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Soviet_famine_of_1930%E2%80%931933",
+            "https://www.britannica.com/event/Holodomor"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Soviet Ukraine / Holodomor victims",
+          "low": 3300000,
+          "high": 3900000,
+          "point": 3900000,
+          "notes": "Best modern demographic work estimates 3.9 million direct excess deaths and 0.6 million lost births in Soviet Ukraine; broader public ranges sometimes extend to 5 million.",
+          "sources": [
+            "https://www.gis.huri.harvard.edu/publications/demography-man-made-human-catastrophe-case-massive-famine-ukraine-1932%E2%80%931933",
+            "https://cla.umn.edu/chgs/holocaust-genocide-education/resource-guides/holodomor",
+            "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CA%5CFamine6Genocideof1932hD73.htm",
+            "https://www.nber.org/papers/w29089"
+          ]
+        },
+        {
+          "type": "famine",
+          "victims_group": "Kazakh ASSR / ethnic Kazakhs and other Kazakhstan residents",
+          "low": 1300000,
+          "high": 2300000,
+          "point": 1500000,
+          "notes": "Common scholarly shorthand is about 1.5 million deaths; wider summaries give 1.3\u20132.3 million, most victims being ethnic Kazakhs.",
+          "sources": [
+            "https://ewjus.com/index.php/ewjus/article/view/220",
+            "https://www.cornellpress.cornell.edu/the-hidden-history-of-the-kazakh-famine/",
+            "https://www.wilsoncenter.org/publication/the-kazakh-famine-1930-33-and-the-politics-history-the-post-soviet-space",
+            "https://en.wikipedia.org/wiki/Kazakh_famine_of_1930%E2%80%931933"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Gulag camp prisoners",
+          "low": 346770,
+          "high": 346770,
+          "point": 346770,
+          "notes": "Sum of reported annual Gulag camp deaths for 1932\u20131939: 13,197 + 67,297 + 25,187 + 31,636 + 24,993 + 31,056 + 108,654 + 44,750. Archival coverage is incomplete and does not include all post-release deaths.",
+          "sources": [
+            "https://everything.explained.today/Soviet_gulag/",
+            "https://paperzz.com/doc/8177982/victims-of-the-soviet-penal-system-in-the-pre"
+          ]
+        },
+        {
+          "type": "special_settlement",
+          "victims_group": "Dekulakized peasants and other special settlers",
+          "low": 241355,
+          "high": 389521,
+          "point": null,
+          "notes": "Documented special-settlement deaths include 89,754 in 1932 and 151,601 in 1933, totaling 241,355 for the two peak years. A broader 1932\u20131940 kulak-exile figure gives 389,521 deaths.",
+          "sources": [
+            "https://istmat.org/node/52095",
+            "https://blogs.helsinki.fi/gulagechoes/2022/03/24/escapes-concealing-death-the-importance-of-regional-archives-for-clarification-of-gulag-death-toll/",
+            "https://gwern.net/doc/history/2000-pohl.pdf"
+          ]
+        },
+        {
+          "type": "deportation",
+          "victims_group": "Nazino Island deportees",
+          "low": 1500,
+          "high": 4000,
+          "point": null,
+          "notes": "About 6,000\u20136,700 deportees were abandoned on Nazino Island in 1933; estimates range from 1,500\u20132,000 deaths in thirteen weeks to around 4,000 dead or disappeared in memorial accounts.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Nazino_tragedy",
+            "https://www.cipdh.gob.ar/memorias-situadas/en/lugar-de-memoria/memorial-de-la-isla-nazino/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Targeted populations and victims of Soviet repression",
+      "members": [
+        "Ukrainian peasants and villagers",
+        "Kazakh pastoralists and famine refugees",
+        "Dekulakized peasants",
+        "Special settlers",
+        "Gulag prisoners",
+        "Ethnic minorities targeted in NKVD national operations",
+        "Poles in the USSR",
+        "Clergy and religious believers",
+        "Intellectuals",
+        "Party and state cadres",
+        "Red Army officers targeted as alleged conspirators"
+      ],
+      "military_killed": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "notes": "The targeted populations were not an organized belligerent military side. Red Army officers killed by Soviet repression are counted under the Soviet state's own military personnel killed.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "No comparable organized killing apparatus is attributable to this side. Sporadic resistance or flight did not constitute a systematic civilian-killing campaign.",
+        "sources": []
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 780,
+    "military_high": null,
+    "civilian_low": 6769817,
+    "civilian_high": 10117983,
+    "grand_low": 6769817,
+    "grand_high": 10117983,
+    "notes": "Working roll-up: low = 5,500,000 famine + 681,692 Great Terror executions + 346,770 Gulag camp deaths for 1932\u20131939 + 241,355 special-settlement deaths in 1932\u20131933. High = 8,700,000 famine + 681,692 executions + 346,770 Gulag camp deaths + 389,521 broader 1932\u20131940 kulak-exile deaths. Military purge deaths overlap with Great Terror executions and are not added separately. The total is approximate because famine, camp, deportation, and special-settlement categories may overlap."
+  },
+  "key_atrocities": [
+    {
+      "name": "Holodomor in Soviet Ukraine",
+      "year": 1933,
+      "perpetrator": "Soviet party-state / OGPU-NKVD / Stalinist security apparatus",
+      "victims_group": "Ukrainian peasants and rural/urban famine victims in Soviet Ukraine",
+      "low": 3300000,
+      "high": 3900000,
+      "notes": "Best point estimate is 3.9 million excess deaths, with 0.6 million lost births not counted as deaths.",
+      "sources": [
+        "https://www.gis.huri.harvard.edu/publications/demography-man-made-human-catastrophe-case-massive-famine-ukraine-1932%E2%80%931933",
+        "https://cla.umn.edu/chgs/holocaust-genocide-education/resource-guides/holodomor",
+        "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CA%5CFamine6Genocideof1932hD73.htm"
+      ]
+    },
+    {
+      "name": "Kazakh famine / Asharshylyk",
+      "year": 1932,
+      "perpetrator": "Soviet party-state / OGPU-NKVD / Stalinist security apparatus",
+      "victims_group": "Kazakh pastoralists, famine refugees, and other residents of Soviet Kazakhstan",
+      "low": 1300000,
+      "high": 2300000,
+      "notes": "Common scholarly point estimate is about 1.5 million deaths, most of them ethnic Kazakhs.",
+      "sources": [
+        "https://ewjus.com/index.php/ewjus/article/view/220",
+        "https://www.cornellpress.cornell.edu/the-hidden-history-of-the-kazakh-famine/",
+        "https://www.wilsoncenter.org/publication/the-kazakh-famine-1930-33-and-the-politics-history-the-post-soviet-space",
+        "https://en.wikipedia.org/wiki/Kazakh_famine_of_1930%E2%80%931933"
+      ]
+    },
+    {
+      "name": "Great Terror executions",
+      "year": 1938,
+      "perpetrator": "NKVD and Soviet extrajudicial/judicial organs",
+      "victims_group": "Alleged enemies of the people, former kulaks, clergy, minorities, party cadres, state officials, and military personnel",
+      "low": 681692,
+      "high": 681692,
+      "notes": "Official archival execution total for 1937\u20131938: 353,074 in 1937 and 328,618 in 1938.",
+      "sources": [
+        "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
+        "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges"
+      ]
+    },
+    {
+      "name": "NKVD Order No. 00447 anti-kulak operation",
+      "year": 1938,
+      "perpetrator": "NKVD",
+      "victims_group": "Former kulaks, alleged criminals, and alleged anti-Soviet elements",
+      "low": 386798,
+      "high": 386798,
+      "notes": "Executions by the end of 1938; included in the broader Great Terror total.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/NKVD_Order_No._00447"
+      ]
+    },
+    {
+      "name": "NKVD national operations",
+      "year": 1938,
+      "perpetrator": "NKVD",
+      "victims_group": "Targeted national minorities and persons accused of foreign ties",
+      "low": 247157,
+      "high": 247157,
+      "notes": "Executions from 353,513 arrests between August 1937 and October 1938.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mass_operations_of_the_NKVD"
+      ]
+    },
+    {
+      "name": "Polish Operation of the NKVD",
+      "year": 1938,
+      "perpetrator": "NKVD",
+      "victims_group": "Poles and people accused of Polish connections in the USSR",
+      "low": 111091,
+      "high": 111091,
+      "notes": "Largest single national operation; included within national-operations and Great Terror totals.",
+      "sources": [
+        "https://www.pap.pl/en/news/news%2C282483%2Cpolish-ipn-prosecutors-say-nkvds-1930s-polish-operation-genocide.html",
+        "https://eng.ipn.gov.pl/en/news/977%2CWhat-was-the-Polish-Operation-by-the-NKVD.pdf"
+      ]
+    },
+    {
+      "name": "Nazino Island deportation disaster",
+      "year": 1933,
+      "perpetrator": "Soviet deportation and special-settlement authorities",
+      "victims_group": "Urban deportees and special settlers sent to Nazino Island",
+      "low": 1500,
+      "high": 4000,
+      "notes": "Approximately 6,000\u20136,700 deportees were abandoned; estimates range from 1,500\u20132,000 deaths to about 4,000 dead or disappeared.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nazino_tragedy",
+        "https://www.cipdh.gob.ar/memorias-situadas/en/lugar-de-memoria/memorial-de-la-isla-nazino/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is overlap: famine mortality, deaths among deportees, camp deaths, and special-settlement deaths are sometimes counted separately and sometimes embedded in broader demographic excess-death estimates. Great Terror executions are better documented than famine deaths, but they are not cleanly separable into civilian and military victims. The event is not a conventional war, so the belligerent-side accounting is asymmetric and should be read as perpetrator/victim accounting rather than battlefield casualty accounting.",
+  "sources": [
+    {
+      "url": "https://www.gis.huri.harvard.edu/publications/demography-man-made-human-catastrophe-case-massive-famine-ukraine-1932%E2%80%931933",
+      "title": "Demography of a Man-Made Human Catastrophe: the Case of Massive Famine in Ukraine 1932\u20131933",
+      "publisher": "Harvard Ukrainian Research Institute / MAPA"
+    },
+    {
+      "url": "https://www.nber.org/papers/w29089",
+      "title": "The Causes of Ukrainian Famine Mortality, 1932\u201333",
+      "publisher": "National Bureau of Economic Research"
+    },
+    {
+      "url": "https://cla.umn.edu/chgs/holocaust-genocide-education/resource-guides/holodomor",
+      "title": "Holodomor",
+      "publisher": "University of Minnesota Center for Holocaust & Genocide Studies"
+    },
+    {
+      "url": "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CA%5CFamine6Genocideof1932hD73.htm",
+      "title": "Famine-Genocide of 1932\u20133",
+      "publisher": "Encyclopedia of Ukraine"
+    },
+    {
+      "url": "https://ewjus.com/index.php/ewjus/article/view/220",
+      "title": "The Kazakh Famine of 1930\u201333: Current Research and New Directions",
+      "publisher": "East/West: Journal of Ukrainian Studies"
+    },
+    {
+      "url": "https://www.cornellpress.cornell.edu/the-hidden-history-of-the-kazakh-famine/",
+      "title": "The Hidden History of the Kazakh Famine / The Hungry Steppe",
+      "publisher": "Cornell University Press"
+    },
+    {
+      "url": "https://www.wilsoncenter.org/publication/the-kazakh-famine-1930-33-and-the-politics-history-the-post-soviet-space",
+      "title": "The Kazakh Famine of 1930\u201333 and the Politics of History in the Post-Soviet Space",
+      "publisher": "Wilson Center"
+    },
+    {
+      "url": "https://paperzz.com/doc/8177982/victims-of-the-soviet-penal-system-in-the-pre",
+      "title": "Victims of the Soviet Penal System in the Pre-War Years: A First Approach on the Basis of Archival Evidence",
+      "publisher": "American Historical Review / Oxford University Press"
+    },
+    {
+      "url": "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
+      "title": "Master of the House: Stalin and His Inner Circle",
+      "publisher": "Yale University Press"
+    },
+    {
+      "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges",
+      "title": "Purges",
+      "publisher": "Encyclopedia.com"
+    },
+    {
+      "url": "https://bfi.uchicago.edu/working-papers/the-anatomy-of-the-great-terror-a-quantitative-analysis-of-the-1937-38-purges-in-the-red-army/",
+      "title": "The Anatomy of the Great Terror: A Quantitative Analysis of the 1937\u201338 Purges in the Red Army",
+      "publisher": "Becker Friedman Institute, University of Chicago"
+    },
+    {
+      "url": "https://newleftreview.org/issues/i214/articles/r-w-davies-forced-labour-under-stalin-the-archive-revelations",
+      "title": "Forced Labour Under Stalin: The Archive Revelations",
+      "publisher": "New Left Review"
+    },
+    {
+      "url": "https://www.pap.pl/en/news/news%2C282483%2Cpolish-ipn-prosecutors-say-nkvds-1930s-polish-operation-genocide.html",
+      "title": "Polish IPN prosecutors say NKVD's 1930s 'Polish Operation' is genocide",
+      "publisher": "Polska Agencja Prasowa"
+    },
+    {
+      "url": "https://eng.ipn.gov.pl/en/news/977%2CWhat-was-the-Polish-Operation-by-the-NKVD.pdf",
+      "title": "What was the Polish Operation by the NKVD?",
+      "publisher": "Institute of National Remembrance"
+    },
+    {
+      "url": "https://istmat.org/node/52095",
+      "title": "Special report on political mood and counter-revolutionary activity of special settlers",
+      "publisher": "Istmat / Historical Materials Project"
+    },
+    {
+      "url": "https://blogs.helsinki.fi/gulagechoes/2022/03/24/escapes-concealing-death-the-importance-of-regional-archives-for-clarification-of-gulag-death-toll/",
+      "title": "Escapes concealing death: the importance of regional archives for clarification of GULAG death toll",
+      "publisher": "University of Helsinki Gulag Echoes"
+    },
+    {
+      "url": "https://www.cipdh.gob.ar/memorias-situadas/en/lugar-de-memoria/memorial-de-la-isla-nazino/",
+      "title": "Nazino Island Memorial",
+      "publisher": "CIPDH-UNESCO"
+    }
+  ]
+}

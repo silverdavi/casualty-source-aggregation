@@ -1,0 +1,244 @@
+{
+  "war_id": "philippine_american_war",
+  "name": "Philippine-American War",
+  "start_year": 1899,
+  "end_year": 1902,
+  "ongoing": false,
+  "regions": [
+    "Philippines",
+    "Luzon",
+    "Visayas",
+    "Samar",
+    "Batangas"
+  ],
+  "summary": "The Philippine-American War was fought between the United States and the First Philippine Republic after the United States acquired the Philippines from Spain and refused to recognize Philippine independence. The war began in February 1899 and was declared over by the United States in July 1902, though related resistance and the cholera epidemic continued afterward. Most deaths were Filipino civilian deaths from violence, famine, disease, displacement, and the consequences of U.S. counterinsurgency.",
+  "sides": [
+    {
+      "name": "United States and U.S.-aligned forces",
+      "members": [
+        "United States Army",
+        "U.S. Volunteers",
+        "Philippine Scouts",
+        "Macabebe Scouts",
+        "Philippine Constabulary and other local auxiliaries"
+      ],
+      "military_killed": {
+        "low": 4165,
+        "high": 4300,
+        "point": 4200,
+        "notes": "Counts primarily U.S. military deaths from all causes. Sources give 4,165, over 4,200, or about 4,300 American military deaths; local Filipino auxiliaries are not cleanly included because sources often combine killed and wounded.",
+        "sources": [
+          "https://www.britannica.com/event/Philippine-American-War/The-guerrilla-campaign",
+          "https://history.state.gov/milestones/1899-1913/war",
+          "https://www.armyheritage.org/soldier-stories-information/the-philippine-insurrection/",
+          "https://en.wikipedia.org/wiki/Campaigns_of_the_Philippine%E2%80%93American_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 34000,
+        "high": 34000,
+        "point": 34000,
+        "breakdown": [
+          {
+            "cause": "direct war violence, combat, massacres, shootings, and reprisals",
+            "victims_group": "Filipino civilians and noncombatants",
+            "low": 34000,
+            "high": 34000,
+            "notes": "U.S. Army Combat Studies Institute summary says about 34,000 Filipinos died as a direct result of the war, separate from 16,000-20,000 insurgents and another 200,000 noncombatants in cholera. It does not fully disaggregate specific mechanisms.",
+            "sources": [
+              "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf"
+            ]
+          },
+          {
+            "cause": "punitive campaign and massacre/reprisal",
+            "victims_group": "Filipino civilians in Samar",
+            "low": 2000,
+            "high": 5000,
+            "notes": "Samar retaliation after Balangiga is commonly estimated at 2,000-2,500 Filipino civilian deaths, with some historians giving up to 5,000. Included within the direct-war deaths bucket, not additive to the 34,000 point estimate.",
+            "sources": [
+              "https://www.legistorm.com/reports/view/crs/322477/The_Return_of_the_Bells_of_Balangiga_to_the_Republic_of_the_Philippines_in_Context.html",
+              "https://en.wikipedia.org/wiki/Pacification_of_Samar"
+            ]
+          }
+        ],
+        "notes": "Direct civilian killing is the least cleanly separated category. The 34,000 figure is used as a conservative point estimate for direct-war Filipino civilian deaths, but some deaths in combat zones may blur civilian/combatant categories.",
+        "sources": [
+          "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+          "https://history.state.gov/milestones/1899-1913/war"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disease",
+          "victims_group": "Filipino civilians and noncombatants",
+          "low": 109461,
+          "high": 200000,
+          "point": 200000,
+          "notes": "Official Bureau of Health records reported 109,461 cholera deaths in 1902-1904; war summaries often cite up to 200,000 noncombatant deaths from cholera/disease in the war's immediate aftermath. Attribution to U.S. action is partial: wartime disruption, displacement, reconcentration, and food destruction worsened conditions, but cholera was also an epidemic disease.",
+          "sources": [
+            "https://jamanetwork.com/journals/jama/articlepdf/462583/jama_XLVIII_10_001d.pdf",
+            "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+            "https://history.state.gov/milestones/1899-1913/war"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Filipino civilians in reconcentration zones, especially Batangas and nearby provinces",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Bell's reconcentration policy and destruction of food supplies increased civilian mortality and disease transmission. Some modern summaries attribute over 11,000 deaths directly to reconcentration, but overlap with cholera and broader disease/famine deaths prevents a clean additive estimate.",
+          "sources": [
+            "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+            "https://research.monash.edu/en/publications/reconcentration-and-the-camp-system-the-legacy-of-the-philippine-/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "First Philippine Republic / Philippine Republican Army",
+      "members": [
+        "First Philippine Republic",
+        "Philippine Republican Army",
+        "local guerrilla forces under Filipino revolutionary commanders"
+      ],
+      "military_killed": {
+        "low": 16000,
+        "high": 20000,
+        "point": 20000,
+        "notes": "U.S. Army Combat Studies Institute gives 16,000-20,000 insurrectos killed; U.S. State Department gives over 20,000 Filipino combatants dead.",
+        "sources": [
+          "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+          "https://history.state.gov/milestones/1899-1913/war",
+          "https://www.britannica.com/event/Philippine-American-War/The-guerrilla-campaign"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "Filipino guerrillas assassinated collaborators and attacked U.S. soldiers, but no credible aggregate civilian-death estimate for civilians directly killed by Philippine Republican forces was found. The Balangiga attack killed U.S. soldiers, not civilians.",
+        "sources": [
+          "https://www.britannica.com/event/Philippine-American-War/The-guerrilla-campaign",
+          "https://en.wikipedia.org/wiki/Philippine%E2%80%93American_War",
+          "https://www.legistorm.com/reports/view/crs/322477/The_Return_of_the_Bells_of_Balangiga_to_the_Republic_of_the_Philippines_in_Context.html"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 20165,
+    "military_high": 24300,
+    "civilian_low": 143461,
+    "civilian_high": 234000,
+    "grand_low": 163626,
+    "grand_high": 258300,
+    "notes": "Grand totals combine U.S. military deaths, Filipino combatant deaths, about 34,000 direct-war Filipino civilian deaths, and 109,461-200,000 cholera/disease/displacement deaths. These are conservative roll-ups. Gates's demographic ceiling of 321,000 Philippine war-related deaths for 1898-1903 would imply an outer total around 325,000 if U.S. military deaths are added."
+  },
+  "key_atrocities": [
+    {
+      "name": "Samar retaliatory campaign after Balangiga",
+      "year": 1901,
+      "perpetrator": "United States and U.S.-aligned forces",
+      "victims_group": "Filipino civilians in Samar",
+      "low": 2000,
+      "high": 5000,
+      "notes": "After Filipino forces and townspeople killed roughly 44-54 U.S. soldiers at Balangiga, Gen. Jacob H. Smith ordered a punitive campaign. Common estimates for Filipino civilians killed in the retaliation are 2,000-2,500, with some historians giving up to 5,000.",
+      "sources": [
+        "https://www.legistorm.com/reports/view/crs/322477/The_Return_of_the_Bells_of_Balangiga_to_the_Republic_of_the_Philippines_in_Context.html",
+        "https://en.wikipedia.org/wiki/Pacification_of_Samar",
+        "https://www.theodorerooseveltcenter.org/digital-library/o274576/"
+      ]
+    },
+    {
+      "name": "Balangiga attack",
+      "year": 1901,
+      "perpetrator": "First Philippine Republic / local Filipino guerrillas and townspeople",
+      "victims_group": "U.S. soldiers",
+      "low": 44,
+      "high": 54,
+      "notes": "The Congressional Research Service gives an estimated 44-48 U.S. soldiers killed; other summaries give 54. These were military deaths, not civilian deaths.",
+      "sources": [
+        "https://www.legistorm.com/reports/view/crs/322477/The_Return_of_the_Bells_of_Balangiga_to_the_Republic_of_the_Philippines_in_Context.html",
+        "https://en.wikipedia.org/wiki/Pacification_of_Samar"
+      ]
+    },
+    {
+      "name": "Batangas reconcentration and pacification",
+      "year": 1902,
+      "perpetrator": "United States and U.S.-aligned forces",
+      "victims_group": "Filipino civilians and insurgents in Batangas, Laguna, and nearby provinces",
+      "low": null,
+      "high": null,
+      "notes": "Bell's campaign concentrated civilians into zones, burned over 6,000 structures, destroyed or captured over 1,400 tons of rice, and worsened disease mortality. Some modern summaries attribute over 11,000 deaths to reconcentration, but this overlaps with cholera/famine/disease totals.",
+      "sources": [
+        "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+        "https://research.monash.edu/en/publications/reconcentration-and-the-camp-system-the-legacy-of-the-philippine-/"
+      ]
+    },
+    {
+      "name": "1902-1904 cholera epidemic in the Philippines",
+      "year": 1902,
+      "perpetrator": "Indirect consequence of war, displacement, public health breakdown, and epidemic disease",
+      "victims_group": "Filipino civilians and noncombatants",
+      "low": 109461,
+      "high": 200000,
+      "notes": "Official Bureau of Health records reported 166,252 cases and 109,461 deaths; war-related summaries often use up to 200,000 noncombatant deaths. Not all deaths can be attributed solely to deliberate policy, but war and reconcentration worsened diffusion and mortality.",
+      "sources": [
+        "https://jamanetwork.com/journals/jama/articlepdf/462583/jama_XLVIII_10_001d.pdf",
+        "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+        "https://journals.sagepub.com/doi/10.1177/096834450000700103"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is the boundary between direct violence and indirect deaths from disease, famine, displacement, reconcentration, and the 1902-1904 cholera epidemic. The widely cited 200,000 Filipino civilian deaths is a bundled estimate; the 34,000 direct-war plus 200,000 cholera split is useful but not universally adopted. High claims of 600,000-1,000,000+ deaths exist, but Gates's demographic work criticized such claims and proposed 321,000 as a maximum possible Philippine war-related death toll for 1898-1903. Filipino-caused civilian deaths and U.S.-aligned Filipino auxiliary deaths are not credibly quantified in the sources found.",
+  "sources": [
+    {
+      "url": "https://history.state.gov/milestones/1899-1913/war",
+      "title": "The Philippine-American War, 1899\u20131902",
+      "publisher": "U.S. Department of State, Office of the Historian"
+    },
+    {
+      "url": "https://www.armyupress.army.mil/Portals/7/combat-studies-institute/csi-books/ramsey_24.pdf",
+      "title": "Savage Wars of Peace: Case Studies of Pacification in the Philippines, 1900\u20131902",
+      "publisher": "Combat Studies Institute Press / U.S. Army"
+    },
+    {
+      "url": "https://www.britannica.com/event/Philippine-American-War/The-guerrilla-campaign",
+      "title": "Philippine-American War: The guerrilla campaign",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.armyheritage.org/soldier-stories-information/the-philippine-insurrection/",
+      "title": "The Philippine Insurrection",
+      "publisher": "Army Heritage Center Foundation"
+    },
+    {
+      "url": "https://jamanetwork.com/journals/jama/articlepdf/462583/jama_XLVIII_10_001d.pdf",
+      "title": "The Outbreak of Cholera in the Philippines in 1905: The Methods Used in Combating It, with Statistics to Jan. 1, 1906",
+      "publisher": "JAMA"
+    },
+    {
+      "url": "https://www.persee.fr/doc/adh_0066-2062_1986_num_1985_1_1634",
+      "title": "150,000 Missing Filipinos: A Demographic Crisis in Batangas, 1887\u20131903",
+      "publisher": "Annales de d\u00e9mographie historique / Pers\u00e9e"
+    },
+    {
+      "url": "https://www.legistorm.com/reports/view/crs/322477/The_Return_of_the_Bells_of_Balangiga_to_the_Republic_of_the_Philippines_in_Context.html",
+      "title": "The Return of the Bells of Balangiga to the Republic of the Philippines, in Context",
+      "publisher": "Congressional Research Service"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/096834450000700103",
+      "title": "The Epidemiological Legacy of War: The Philippine-American War and the Diffusion of Cholera in Batangas and La Laguna, South-West Luz\u00f3n, 1902\u20131904",
+      "publisher": "War in History / SAGE"
+    },
+    {
+      "url": "https://research.monash.edu/en/publications/reconcentration-and-the-camp-system-the-legacy-of-the-philippine-/",
+      "title": "Reconcentration and the Camp System: The Legacy of the Philippine-American War",
+      "publisher": "Monash University research repository"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "war_id": "bengal_famine_1943",
+  "name": "Bengal Famine of 1943 (wartime British policies)",
+  "start_year": 1943,
+  "end_year": 1944,
+  "ongoing": false,
+  "regions": [
+    "British India",
+    "Bengal",
+    "present-day West Bengal",
+    "present-day Bangladesh"
+  ],
+  "summary": "The Bengal Famine of 1943\u201344 was a wartime mass-mortality crisis in British-ruled Bengal during World War II. Deaths were overwhelmingly civilian and indirect, caused by starvation, disease, displacement, inflation, food-distribution failure, wartime transport and import constraints, and administrative failure. The defensible mortality range is about 1.5 million to 3.8 million excess civilian deaths, with about 2.1 million often treated as a modern best estimate.",
+  "sides": [
+    {
+      "name": "British colonial / Allied wartime authorities",
+      "members": [
+        "Government of Bengal",
+        "Government of India",
+        "India Office",
+        "British War Cabinet",
+        "British Indian Army and Allied military logistics authorities"
+      ],
+      "military_killed": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "notes": "No famine-specific military killed category is normally counted. This excludes unrelated World War II combat deaths in the Burma campaign or Indian Army service elsewhere.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "No major body of scholarship treats the Bengal famine death toll as direct killings by British or Allied forces through massacre, shooting, or bombing. Deaths were indirect famine and disease deaths.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf",
+          "https://journals.sagepub.com/doi/abs/10.1177/001946469102800303"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Bengali civilians, especially rural poor, landless laborers, fishermen, artisans, destitute migrants, women, children, and disease-weakened households",
+          "low": 1500000,
+          "high": 3800000,
+          "point": 2100000,
+          "notes": "This is the overall famine excess-mortality range under British wartime rule and policy failure, not a clean apportionment proving that every death was caused solely by one British decision. Official inquiry gave about 1.5 million; later demographic and historical work often gives about 2.1 million as a best estimate, while higher estimates reach about 3.5\u20133.8 million depending on method and time window.",
+          "sources": [
+            "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf",
+            "https://journals.sagepub.com/doi/abs/10.1177/001946469102800303",
+            "https://cepr.org/voxeu/columns/famines-wwii",
+            "https://www.britannica.com/money/Bengal-famine-of-1943",
+            "https://en.banglapedia.org/index.php/Famine%2C_1943"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Fishermen, boat-dependent delta communities, and families displaced by military requisitioning",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Famine Inquiry Commission recorded 66,563 boats in the denial area and reported that removal of so many boats restricted foodgrain movement and severely affected fishermen. It also recorded that more than 30,000 families were required to evacuate homes and land for military purposes, many becoming famine victims. No separate mortality estimate exists for this subcomponent.",
+          "sources": [
+            "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Malnourished and displaced Bengali civilians exposed to malaria, cholera, smallpox, and other epidemic diseases",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Disease caused a large share of excess deaths, especially in 1944 after the worst food-price crisis had begun to ease. The literature does not allow a clean separation between starvation deaths and disease deaths caused by wartime policy failure.",
+          "sources": [
+            "https://journals.sagepub.com/doi/abs/10.1177/001946469102800303",
+            "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart2.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Imperial Japan",
+      "members": [
+        "Empire of Japan",
+        "Japanese forces in Burma"
+      ],
+      "military_killed": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "notes": "No Japanese military deaths are counted in the Bengal famine toll. Japanese deaths in the Burma campaign are outside this famine accounting.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "Japanese forces did not occupy Bengal during the famine, and the famine toll is not normally counted as direct Japanese killings inside Bengal.",
+        "sources": [
+          "https://www.britannica.com/money/Bengal-famine-of-1943",
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Bengali civilians affected by loss of Burma rice imports and wartime market disruption",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Japan's conquest of Burma ended rice imports from Burma and helped trigger severe price and supply shocks in Indian rice markets. The Famine Inquiry Commission treated this as an important factor but did not provide a separate mortality estimate attributable solely to Japan.",
+          "sources": [
+            "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf",
+            "https://www.britannica.com/money/Bengal-famine-of-1943"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bengal private market actors",
+      "members": [
+        "grain traders",
+        "larger producers",
+        "hoarders",
+        "profiteers",
+        "employers and priority-supply networks"
+      ],
+      "military_killed": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "notes": "This was not a military side; it is included as a causal actor because official and scholarly sources discuss hoarding, profiteering, and unequal access to food.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 0,
+        "high": 0,
+        "point": 0,
+        "breakdown": [],
+        "notes": "No separate direct-killing toll is attributed to private market actors. Their role was indirect through speculation, hoarding, price escalation, and unequal access to food.",
+        "sources": [
+          "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Poor food purchasers and destitute civilians priced out of rice markets",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Famine Inquiry Commission wrote that enormous profits were made and that profits for some meant death for others, but it did not estimate a separate death toll attributable to traders, hoarders, or large producers. These deaths overlap with the total famine toll attributed to administrative and wartime policy failure.",
+          "sources": [
+            "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 0,
+    "military_high": 0,
+    "civilian_low": 1500000,
+    "civilian_high": 3800000,
+    "grand_low": 1500000,
+    "grand_high": 3800000,
+    "notes": "The total is not a sum of side-specific subtotals because causal attributions overlap. It is the independent range of excess civilian deaths from the famine and associated disease, starvation, displacement, and relief failure. A commonly used modern point estimate is about 2.1 million; a widely cited higher figure is about 3 million."
+  },
+  "key_atrocities": [
+    {
+      "name": "Boat denial and rice denial policies",
+      "year": 1942,
+      "perpetrator": "British colonial / Allied wartime authorities",
+      "victims_group": "Boat-dependent delta communities, fishermen, rice consumers, and rural poor in coastal Bengal",
+      "low": null,
+      "high": null,
+      "notes": "66,563 boats capable of carrying 10 or more people were registered in the denial area; large numbers were requisitioned, destroyed, sunk, removed, or taken to reception stations. The official inquiry said the removal restricted foodgrain movement and severely affected fishermen, but no separate death toll exists.",
+      "sources": [
+        "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+      ]
+    },
+    {
+      "name": "De-control, unrestricted free trade, delayed rationing, and price explosion",
+      "year": 1943,
+      "perpetrator": "Government of Bengal and Government of India",
+      "victims_group": "Poor consumers, rural laborers, artisans, migrants, and destitute households",
+      "low": null,
+      "high": null,
+      "notes": "The Famine Inquiry Commission called de-control and unrestricted free trade mistakes and said rice prices rose to five to six times early-1942 levels. These policies are central mechanisms within the overall 1.5\u20133.8 million excess-death range, but no separate death toll is available.",
+      "sources": [
+        "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+      ]
+    },
+    {
+      "name": "Delayed famine relief and non-declaration of famine",
+      "year": 1943,
+      "perpetrator": "Government of Bengal, with Government of India responsibility",
+      "victims_group": "Starving and disease-affected civilians in rural Bengal",
+      "low": null,
+      "high": null,
+      "notes": "Detailed relief instructions were delayed until August 1943 and a Famine Relief Commissioner was not appointed until late September 1943. The official inquiry concluded that better relief and medical measures would have prevented some mortality, but did not estimate a separate death toll.",
+      "sources": [
+        "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf"
+      ]
+    },
+    {
+      "name": "Loss of Burma rice imports after Japanese conquest",
+      "year": 1942,
+      "perpetrator": "Imperial Japan",
+      "victims_group": "Bengali and Indian rice consumers affected by price and supply shocks",
+      "low": null,
+      "high": null,
+      "notes": "Japan's conquest of Burma stopped rice imports and helped destabilize Indian rice markets. The Famine Inquiry Commission and later summaries treat this as an important causal shock, but not as a separately quantifiable death toll.",
+      "sources": [
+        "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf",
+        "https://www.britannica.com/money/Bengal-famine-of-1943"
+      ]
+    },
+    {
+      "name": "Famine-associated epidemic mortality",
+      "year": 1944,
+      "perpetrator": "Overlapping famine conditions, malnutrition, displacement, and inadequate public health response",
+      "victims_group": "Malnourished Bengali civilians exposed to malaria, cholera, smallpox, and other diseases",
+      "low": null,
+      "high": null,
+      "notes": "Excess mortality continued into 1944, especially through disease after the worst starvation phase. This is included in the overall famine mortality range but is not separately attributable to one side.",
+      "sources": [
+        "https://journals.sagepub.com/doi/abs/10.1177/001946469102800303",
+        "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart2.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The death toll is disputed because vital registration was incomplete, the time window varies, and disease deaths in 1944 are sometimes included differently. The official inquiry's roughly 1.5 million is lower than most later estimates; 2.1 million is a common modern best estimate; 3 million is widely cited; and 3.5\u20133.8 million appears in higher estimates that often use broader time windows. Causal attribution is more uncertain than mortality: British wartime and colonial policy failure was central, but Japan's conquest of Burma, crop damage, disease ecology, private hoarding/profiteering, all-India trade barriers, inflation, and local administrative failure interacted. No source provides a defensible side-by-side numerical split of deaths by perpetrator.",
+  "sources": [
+    {
+      "url": "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart1.pdf",
+      "title": "Famine Inquiry Commission: Report on Bengal, Part I",
+      "publisher": "Government of India / India of the Past scan"
+    },
+    {
+      "url": "https://www.indiaofthepast.org/sites/indiaofthepast.org/files/pdf/1940s/bengalfamine/ficreportpart2.pdf",
+      "title": "Famine Inquiry Commission: Report on Bengal, Part II: Death and Disease in the Bengal Famine",
+      "publisher": "Government of India / India of the Past scan"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/001946469102800303",
+      "title": "Excess mortality during the Bengal famine: A re-evaluation",
+      "publisher": "The Indian Economic and Social History Review / SAGE"
+    },
+    {
+      "url": "https://cepr.org/voxeu/columns/famines-wwii",
+      "title": "The famines of WWII",
+      "publisher": "CEPR / VoxEU"
+    },
+    {
+      "url": "https://www.britannica.com/money/Bengal-famine-of-1943",
+      "title": "Bengal famine of 1943",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://en.banglapedia.org/index.php/Famine%2C_1943",
+      "title": "Famine, 1943",
+      "publisher": "Banglapedia"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/2348448917725856",
+      "title": "Mr Keynes and the forgotten holocaust in Bengal, 1943\u201344: Or, the macroeconomics of extreme demand compression",
+      "publisher": "Studies in People\u2019s History / SAGE"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/0306615031000169125",
+      "title": "Entitlement, Shortage and the 1943 Bengal Famine: Another Look",
+      "publisher": "The Journal of Peasant Studies / Taylor & Francis"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/025764300502200101",
+      "title": "Imperial Governance and the Challenges of War: Management of Food Supplies in Bengal, 1943\u201344",
+      "publisher": "Studies in History / SAGE"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/23484489211041149",
+      "title": "Famine of 1943 in Bakarganj and British Colonial Policy",
+      "publisher": "Studies in People\u2019s History / SAGE"
+    }
+  ]
+}

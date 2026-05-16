@@ -1,0 +1,332 @@
+{
+  "war_id": "six_day_war",
+  "name": "Six-Day War",
+  "start_year": 1967,
+  "end_year": 1967,
+  "ongoing": false,
+  "regions": [
+    "Israel",
+    "Egypt",
+    "Sinai Peninsula",
+    "Gaza Strip",
+    "Jordan",
+    "West Bank",
+    "East Jerusalem",
+    "Syria",
+    "Golan Heights"
+  ],
+  "summary": "The Six-Day War was fought from 5 to 10 June 1967 between Israel and an Arab coalition led by Egypt/UAR, Jordan, and Syria, with smaller Iraqi and other Arab participation. Israel won a rapid victory and captured Sinai, Gaza, the West Bank including East Jerusalem, and the Golan Heights. Known deaths were overwhelmingly military, especially Egyptian, but Arab civilian deaths and indirect deaths from displacement are not reliably quantified.",
+  "sides": [
+    {
+      "name": "Israel",
+      "members": [
+        "Israel Defense Forces",
+        "Israeli Air Force",
+        "Israeli Navy"
+      ],
+      "military_killed": {
+        "low": 736,
+        "high": 983,
+        "point": 776,
+        "notes": "Israeli Ministry of Defense pages give 736 soldiers killed in the war on one timeline and 776 dead between 5 and 14 June 1967 on the 'Price of War' page. Some secondary tables give an upper figure of 983, but 776 is the best-supported official working figure.",
+        "sources": [
+          "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1967.aspx",
+          "https://archives.mod.gov.il/sites/English/Exhibitions/The_Six-Day_War/Pages/The-Price-of-War.aspx",
+          "https://www.jewishvirtuallibrary.org/jsource/History/casualty_table.html",
+          "https://en.wikipedia.org/wiki/Six-Day_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "air and naval attack",
+            "victims_group": "USS Liberty personnel, including one civilian NSA employee according to common incident summaries",
+            "low": null,
+            "high": null,
+            "notes": "The USS Liberty incident killed 34 U.S. personnel in total, mostly U.S. Navy/Marine personnel and one civilian NSA employee in common summaries. Because the source mix does not provide a separately official civilian-only number in the material used here, the civilian subtotal for Israel's direct civilian killings is left null.",
+            "sources": [
+              "https://www.nsa.gov/History/National-Cryptologic-Museum/Exhibits-Artifacts/Exhibit-View/Article/2718838/cold-war-uss-liberty/",
+              "https://www.history.com/this-day-in-history/june-8/israel-attacks-uss-liberty",
+              "https://en.wikipedia.org/wiki/USS_Liberty_incident"
+            ]
+          },
+          {
+            "cause": "village expulsion and demolition",
+            "victims_group": "Palestinian civilians in Imwas, Yalo, and Bayt Nuba",
+            "low": null,
+            "high": null,
+            "notes": "Sources document expulsion and razing of the Latrun villages, but no reliable aggregate death count was found.",
+            "sources": [
+              "https://www.alhaq.org/advocacy/7274.html",
+              "https://en.wikipedia.org/wiki/Bayt_Nuba",
+              "https://en.wikipedia.org/wiki/Yalo",
+              "https://en.wikipedia.org/wiki/Imwas"
+            ]
+          }
+        ],
+        "notes": "No reliable war-wide count of Arab civilians killed directly by Israeli forces during 5-10 June 1967 was found. Documented non-belligerent deaths caused by Israel include 15 UNEF peacekeepers and 34 USS Liberty personnel, but these are not counted as Arab civilian deaths.",
+        "sources": [
+          "https://www.alhaq.org/advocacy/7274.html",
+          "https://en.wikipedia.org/wiki/Six-Day_War",
+          "https://www.nsa.gov/History/National-Cryptologic-Museum/Exhibits-Artifacts/Exhibit-View/Article/2718838/cold-war-uss-liberty/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Palestinians displaced from the West Bank and Gaza Strip",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "UNRWA reported over 300,000 persons, including about 120,000 registered refugees, rendered homeless or leaving their homes; other summaries give roughly 280,000-325,000 Palestinians displaced. No reliable death toll from this displacement was found.",
+          "sources": [
+            "https://www.un.org/unispal/document/auto-insert-198325/",
+            "https://en.wikipedia.org/wiki/Six-Day_War",
+            "https://www.un.org/unispal/document/auto-insert-177212/"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Syrian civilians displaced from the Golan Heights",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "UNRWA reported Syrian movement of the order of 80,000, while other summaries give about 100,000 displaced Syrians. Akevot cites ICRC material and an Israeli census showing only 6,396 Syrian residents remaining in the occupied Golan in August 1967. No reliable death toll from this displacement was found.",
+          "sources": [
+            "https://www.un.org/unispal/document/auto-insert-177212/",
+            "https://www.akevot.org.il/en/article/israel-shoots-propaganda-film-golan-heights-residents-flee/",
+            "https://en.wikipedia.org/wiki/Six-Day_War"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arab coalition",
+      "members": [
+        "Egypt / United Arab Republic",
+        "Jordan",
+        "Syria",
+        "Iraq",
+        "smaller Arab contingents and air forces"
+      ],
+      "military_killed": {
+        "low": 11497,
+        "high": 18210,
+        "point": null,
+        "notes": "Roll-up: Egypt 9,800-15,000 killed or missing; Jordan 696-700 killed; Syria 1,000-2,500 killed; Iraq 1-10 killed. Broader summaries often give 15,000-20,000 Arab soldiers killed, or more than 15,000 Arab fatalities.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Six-Day_War",
+          "https://www.cambridge.org/core/books/1967-arabisraeli-war/egypt/69213F4EB95816FD4184E6BCD17A9FF5",
+          "https://www.sixdaywar.org/players/syria/",
+          "https://www.newworldencyclopedia.org/entry/Six-Day_War",
+          "https://ecf.org.il/issues/issue/238"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 20,
+        "high": 20,
+        "point": 20,
+        "breakdown": [
+          {
+            "cause": "air strikes and shelling",
+            "victims_group": "Israeli civilians",
+            "low": 20,
+            "high": 20,
+            "notes": "Israeli civilian deaths during the Six-Day War are generally reported as 20, commonly associated with Arab attacks on Jerusalem and Israeli localities.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+              "https://en.wikipedia.org/wiki/Six-Day_War"
+            ]
+          }
+        ],
+        "notes": "The clearest civilian-death count attributable to Arab coalition action is 20 Israeli civilians killed. No comparable, reliable total was found for civilians killed by Arab forces outside Israel during the six-day combat phase.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+          "https://en.wikipedia.org/wiki/Six-Day_War"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 12233,
+    "military_high": 19193,
+    "civilian_low": 20,
+    "civilian_high": 20,
+    "grand_low": 12302,
+    "grand_high": 19262,
+    "notes": "Military_low and military_high add Israel 736-983 plus Arab coalition 11,497-18,210. Civilian_low/high include only the reliably counted 20 Israeli civilian deaths. Grand totals add 49 known non-belligerent personnel deaths: 15 UNEF peacekeepers and 34 USS Liberty personnel. The totals exclude unquantified Arab civilian deaths and unquantified deaths from displacement."
+  },
+  "key_atrocities": [
+    {
+      "name": "Ras Sedr massacre",
+      "year": 1967,
+      "perpetrator": "Israel",
+      "victims_group": "Egyptian prisoners of war",
+      "low": 52,
+      "high": 52,
+      "notes": "Reported killing of at least 52 Egyptian POWs after Israeli capture of Ras Sedr on 8 June 1967. These deaths may overlap with Egyptian military killed/missing totals.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ras_Sedr_massacre"
+      ]
+    },
+    {
+      "name": "El Arish / Sinai Egyptian POW grave allegations",
+      "year": 1967,
+      "perpetrator": "Israel",
+      "victims_group": "Egyptian prisoners of war",
+      "low": 30,
+      "high": 60,
+      "notes": "Egyptian reports described shallow graves near El Arish containing remains of 30-60 Egyptian prisoners allegedly shot by Israeli soldiers during the 1967 war. These deaths may overlap with Egyptian military killed/missing totals.",
+      "sources": [
+        "https://www.newworldencyclopedia.org/entry/Six-Day_War"
+      ]
+    },
+    {
+      "name": "Expulsion and destruction of Imwas, Yalo, and Bayt Nuba",
+      "year": 1967,
+      "perpetrator": "Israel",
+      "victims_group": "Palestinian civilians of the Latrun villages",
+      "low": null,
+      "high": null,
+      "notes": "About 12,000 inhabitants of the Latrun area are often cited as expelled, and the villages were razed. A reliable death toll was not found.",
+      "sources": [
+        "https://www.alhaq.org/advocacy/7274.html",
+        "https://en.wikipedia.org/wiki/Latrun_salient",
+        "https://en.wikipedia.org/wiki/Bayt_Nuba",
+        "https://en.wikipedia.org/wiki/Yalo"
+      ]
+    },
+    {
+      "name": "Israeli civilian deaths from Arab attacks",
+      "year": 1967,
+      "perpetrator": "Arab coalition",
+      "victims_group": "Israeli civilians",
+      "low": 20,
+      "high": 20,
+      "notes": "Israeli civilian deaths in the Six-Day War are commonly given as 20.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+        "https://en.wikipedia.org/wiki/Six-Day_War"
+      ]
+    },
+    {
+      "name": "UNEF peacekeepers killed in Sinai",
+      "year": 1967,
+      "perpetrator": "Israel",
+      "victims_group": "United Nations Emergency Force peacekeepers",
+      "low": 15,
+      "high": 15,
+      "notes": "Fifteen UNEF personnel are commonly reported killed during the war by Israeli strikes in Sinai. They are counted in the grand total as non-belligerent personnel, not as either side's own military deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Six-Day_War",
+        "https://en.wikipedia.org/wiki/Origins_of_the_Six-Day_War"
+      ]
+    },
+    {
+      "name": "USS Liberty incident",
+      "year": 1967,
+      "perpetrator": "Israel",
+      "victims_group": "United States Navy, Marine, NSA, and other U.S. personnel aboard USS Liberty",
+      "low": 34,
+      "high": 34,
+      "notes": "Israeli air and naval forces attacked USS Liberty on 8 June 1967, killing 34 U.S. personnel and wounding 171. They are counted in the grand total as non-belligerent personnel.",
+      "sources": [
+        "https://www.nsa.gov/History/National-Cryptologic-Museum/Exhibits-Artifacts/Exhibit-View/Article/2718838/cold-war-uss-liberty/",
+        "https://www.history.com/this-day-in-history/june-8/israel-attacks-uss-liberty",
+        "https://en.wikipedia.org/wiki/USS_Liberty_incident"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is Egypt's death toll, which is variously reported as 9,800-15,000 killed or missing, about 10,000 killed, or 11,500 killed in a broader casualty total. Syrian deaths are also contested, with common estimates of 1,000-2,500 but at least one lower secondary figure of 450. Arab civilian deaths during the six-day combat phase are not reliably aggregated in the sources found. Displacement of Palestinians and Syrians was massive, but the located sources do not provide a defensible indirect-death estimate.",
+  "sources": [
+    {
+      "url": "https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1967.aspx",
+      "title": "1967 - The Six Day War",
+      "publisher": "Israel Ministry of Defense Archives"
+    },
+    {
+      "url": "https://archives.mod.gov.il/sites/English/Exhibitions/The_Six-Day_War/Pages/The-Price-of-War.aspx",
+      "title": "The Price of War",
+      "publisher": "Israel Ministry of Defense Archives"
+    },
+    {
+      "url": "https://www.jewishvirtuallibrary.org/jsource/History/casualty_table.html",
+      "title": "Israeli Casualties in Battle (1860-Present)",
+      "publisher": "Jewish Virtual Library"
+    },
+    {
+      "url": "https://www.britannica.com/event/Six-Day-War",
+      "title": "Six-Day War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://ecf.org.il/issues/issue/238",
+      "title": "Six Day War (1967)",
+      "publisher": "Economic Cooperation Foundation"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/1967-arabisraeli-war/egypt/69213F4EB95816FD4184E6BCD17A9FF5",
+      "title": "Egypt - The 1967 Arab-Israeli War",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://www.sixdaywar.org/players/syria/",
+      "title": "Syria",
+      "publisher": "SixDayWar.org"
+    },
+    {
+      "url": "https://www.un.org/unispal/document/auto-insert-198325/",
+      "title": "UNRWA - Report of the Commissioner-General (1 July 1966 - 30 June 1967)",
+      "publisher": "United Nations / UNISPAL"
+    },
+    {
+      "url": "https://www.un.org/unispal/document/auto-insert-177212/",
+      "title": "UNRWA operations following 1967 hostilities - 2nd report",
+      "publisher": "United Nations / UNISPAL"
+    },
+    {
+      "url": "https://www.akevot.org.il/en/article/israel-shoots-propaganda-film-golan-heights-residents-flee/",
+      "title": "Israel shoots propaganda film. Golan Heights residents flee",
+      "publisher": "Akevot"
+    },
+    {
+      "url": "https://www.alhaq.org/advocacy/7274.html",
+      "title": "Where Villages Stood: Israel's Continuing Violations of International Law in Occupied Latroun, 1967-2007",
+      "publisher": "Al-Haq"
+    },
+    {
+      "url": "https://www.nsa.gov/History/National-Cryptologic-Museum/Exhibits-Artifacts/Exhibit-View/Article/2718838/cold-war-uss-liberty/",
+      "title": "Cold War: U.S.S. Liberty",
+      "publisher": "National Security Agency"
+    },
+    {
+      "url": "https://www.history.com/this-day-in-history/june-8/israel-attacks-uss-liberty",
+      "title": "Israel attacks USS Liberty",
+      "publisher": "History.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Six-Day_War",
+      "title": "Six-Day War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Israeli_casualties_of_war",
+      "title": "Israeli casualties of war",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ras_Sedr_massacre",
+      "title": "Ras Sedr massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.newworldencyclopedia.org/entry/Six-Day_War",
+      "title": "Six-Day War",
+      "publisher": "New World Encyclopedia"
+    }
+  ]
+}

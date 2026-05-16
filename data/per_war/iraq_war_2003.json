@@ -1,0 +1,398 @@
+{
+  "war_id": "iraq_war_2003",
+  "name": "Iraq War (2003-2011) and insurgency",
+  "start_year": 2003,
+  "end_year": 2011,
+  "ongoing": false,
+  "regions": [
+    "Iraq"
+  ],
+  "summary": "The Iraq War began with the U.S.-led invasion of March 2003, overthrew the Ba'athist government, and evolved into an occupation, insurgency, sectarian civil conflict, and counterinsurgency until the withdrawal of most U.S. forces in December 2011. A conservative documentary count records about 162,333 direct violent deaths through 2011, while population-based mortality studies estimate several hundred thousand excess deaths, many from indirect war-related causes.",
+  "sides": [
+    {
+      "name": "U.S.-led coalition and post-2003 Iraqi government/security forces",
+      "members": [
+        "United States",
+        "United Kingdom",
+        "other Multi-National Force-Iraq contingents",
+        "Coalition Provisional Authority",
+        "post-2003 Iraqi government",
+        "Iraqi Security Forces",
+        "Iraqi police"
+      ],
+      "military_killed": {
+        "low": 14927,
+        "high": null,
+        "point": 14927,
+        "notes": "Documented floor: 4,802 U.S./coalition military deaths in 2003-2011 plus Brookings/CRS composite of 10,125 Iraqi police/security-force deaths through July 2011. Iraqi security-force deaths are likely incomplete and not cleanly comparable across sources.",
+        "sources": [
+          "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data",
+          "https://www.everycrsreport.com/reports/R40824.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 14705,
+        "high": 15164,
+        "point": 15164,
+        "breakdown": [
+          {
+            "cause": "air and ground operations during invasion",
+            "victims_group": "Iraqi civilians",
+            "low": 7286,
+            "high": 7286,
+            "notes": "IBC/Guardian reported civilian deaths reaching 7,286 by 1 May 2003, nearly all attributable to U.S.-led coalition forces.",
+            "sources": [
+              "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data"
+            ]
+          },
+          {
+            "cause": "airstrikes",
+            "victims_group": "Iraqi civilians",
+            "low": 5840,
+            "high": 5840,
+            "notes": "IBC recorded 5,840 civilians killed by airstrikes, including cannon-fire, bombs, and missiles, across 2003-2011.",
+            "sources": [
+              "https://www.iraqbodycount.org/analysis/numbers/2011/"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Iraqi civilians in Haditha",
+            "low": 24,
+            "high": 24,
+            "notes": "U.S. Marines killed 24 Iraqi civilians on 19 November 2005.",
+            "sources": [
+              "https://amp.cnn.com/cnn/2013/10/30/middleeast/haditha-killings-fast-facts",
+              "https://www.pbs.org/wgbh/frontline/article/newly-discovered-documents-recount-killing-of-iraqi-citizens-in-haditha/"
+            ]
+          },
+          {
+            "cause": "private-security-contractor shooting",
+            "victims_group": "Iraqi civilians in Nisour Square, Baghdad",
+            "low": 17,
+            "high": 17,
+            "notes": "Blackwater guards under U.S. contract killed 17 civilians and injured 20 on 16 September 2007.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Nisour_Square_massacre",
+              "https://icoca.ch/case-studies/the-nisour-square-massacre/"
+            ]
+          }
+        ],
+        "notes": "IBC's official 2003-2011 assessment gives 15,164 civilians directly caused by the U.S.-led coalition; the Guardian summary of the IBC audit gives 14,705. PLOS/IBC found 11,516 coalition-caused civilian deaths in 2003-2008.",
+        "sources": [
+          "https://www.iraqbodycount.org/analysis/numbers/2011/",
+          "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data",
+          "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "infrastructure_collapse_health_system_displacement",
+          "victims_group": "Iraqi civilians",
+          "low": null,
+          "high": 250000,
+          "point": null,
+          "notes": "Indirect deaths are not cleanly attributable to one actor. PLOS estimated 405,000 excess Iraqi deaths through June 2011, with more than 60% directly attributable to violence and the rest associated with infrastructure and system collapse; Brown/Costs of War later estimated 250,000 indirect Iraqi civilian deaths from war-related loss of access to food and health care since 2003.",
+          "sources": [
+            "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1001533",
+            "https://archive2.news.brown.edu/2007-2015/articles/2014/06/costsofwar.html",
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-Civilian-Death-and-Injury-Iraq-War-2003-2013.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Former Ba'athist Iraqi state forces and anti-coalition / anti-government insurgents",
+      "members": [
+        "2003 Iraqi armed forces",
+        "Ba'athist remnants",
+        "Sunni nationalist insurgents",
+        "al-Qaeda in Iraq",
+        "Islamic State of Iraq",
+        "other anti-coalition and anti-government armed groups",
+        "Shia militias when fighting coalition or Iraqi government forces"
+      ],
+      "military_killed": {
+        "low": 31594,
+        "high": 34794,
+        "point": null,
+        "notes": "Approximate range: 7,600-10,800 Iraqi combatants killed in the 2003 invasion per Project on Defense Alternatives, plus 23,994 documented post-invasion insurgent/combatant deaths from IBC/Guardian categories. These figures may omit non-battle deaths and may include some misclassified civilians.",
+        "sources": [
+          "https://www.comw.org/pda/0310rm8exsum.html",
+          "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 9954,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "suicide_bombing",
+            "victims_group": "Iraqi civilians",
+            "low": 12000,
+            "high": null,
+            "notes": "Lancet/IBC study reported at least 12,000 Iraqi civilians killed by suicide bombings in 2003-2010.",
+            "sources": [
+              "https://www.iraqbodycount.org/analysis/numbers/lancet-2011/",
+              "https://www.sciencedirect.com/science/article/pii/S0140673611610234"
+            ]
+          },
+          {
+            "cause": "suicide_bombing",
+            "victims_group": "Yazidi civilians in Qahtaniyah/Til Ezer and Siba Sheikh Khidir",
+            "low": 796,
+            "high": 796,
+            "notes": "Four coordinated suicide vehicle bombs on 14 August 2007 killed 796 people and wounded at least 1,500.",
+            "sources": [
+              "https://en.wikipedia-on-ipfs.org/wiki/2007_Yazidi_communities_bombings",
+              "https://www.justice.gov/sites/default/files/eoir/legacy/2014/08/21/iraq2009.pdf"
+            ]
+          },
+          {
+            "cause": "suicide_bombing",
+            "victims_group": "Iraqi civilians in anti-coalition attacks, short-duration-event subset",
+            "low": 3333,
+            "high": 3333,
+            "notes": "PLOS/IBC found 3,333 civilian deaths from anti-coalition suicide bombers in the 2003-2008 short-duration-event subset.",
+            "sources": [
+              "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+            ]
+          }
+        ],
+        "notes": "PLOS/IBC attributed 9,954 civilian deaths to anti-coalition forces in 2003-2008. The 2003-2011 high is unknown because many insurgent, militia, sectarian, and criminal attacks were coded as unknown perpetrators.",
+        "sources": [
+          "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415",
+          "https://www.iraqbodycount.org/analysis/numbers/2011/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement_ethnic_cleansing_sectarian_intimidation",
+          "victims_group": "Iraqi civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Insurgent and militia campaigns contributed to displacement, sectarian cleansing, service collapse, and indirect mortality, but the literature does not provide a defensible actor-specific indirect-death total for these groups.",
+          "sources": [
+            "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1001533",
+            "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-Civilian-Death-and-Injury-Iraq-War-2003-2013.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unidentified perpetrators, sectarian death squads, criminal armed groups, and unattributed militia violence",
+      "members": [
+        "unknown sectarian militias",
+        "death squads",
+        "criminal armed groups",
+        "unidentified insurgent or state-linked actors"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable public total separates military/combatant deaths inflicted by unknown or unattributed actors.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 68396,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "Iraqi civilians",
+            "low": 19321,
+            "high": 19321,
+            "notes": "In the PLOS/IBC short-duration-event subset for 2003-2008, unknown perpetrators executed 19,321 civilians.",
+            "sources": [
+              "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+            ]
+          },
+          {
+            "cause": "torture_before_execution",
+            "victims_group": "Iraqi civilians",
+            "low": 5697,
+            "high": 5697,
+            "notes": "Of the execution victims in the PLOS/IBC short-duration-event subset, 5,697 showed signs of torture before execution.",
+            "sources": [
+              "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+            ]
+          },
+          {
+            "cause": "execution_and_torture",
+            "victims_group": "Baghdad civilians",
+            "low": 11728,
+            "high": 11728,
+            "notes": "Baghdad had 27,050 civilian deaths in the short-duration-event subset; 11,728 were executions by unknown perpetrators, including 3,863 tortured before execution.",
+            "sources": [
+              "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+            ]
+          }
+        ],
+        "notes": "PLOS/IBC attributed 68,396 of 92,614 documented civilian violent deaths in 2003-2008 to unknown perpetrators, or 74% of the five-year dataset. The full 2003-2011 high is unknown.",
+        "sources": [
+          "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415",
+          "https://www.iraqbodycount.org/analysis/numbers/2011/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "sectarian_terror_displacement",
+          "victims_group": "Iraqi civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Unattributed sectarian and criminal violence contributed to indirect mortality through displacement and insecurity, but no defensible actor-specific estimate exists.",
+          "sources": [
+            "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1001533"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 46521,
+    "military_high": 49721,
+    "civilian_low": 127962,
+    "civilian_high": null,
+    "grand_low": 162333,
+    "grand_high": 751000,
+    "notes": "Grand low is the IBC/Guardian documented direct-violent-death roll-up for 2003-2011. Grand high uses the upper bound of the PLOS Medicine 95% uncertainty interval for excess Iraqi deaths through June 2011; it is not a clean sum of side-specific buckets and includes both direct and indirect mortality."
+  },
+  "key_atrocities": [
+    {
+      "name": "2003 invasion / Shock and Awe and ground campaign",
+      "year": 2003,
+      "perpetrator": "U.S.-led coalition",
+      "victims_group": "Iraqi civilians",
+      "low": 7286,
+      "high": 7286,
+      "notes": "IBC/Guardian reported civilian deaths reaching 7,286 by 1 May 2003, nearly all attributable to coalition forces.",
+      "sources": [
+        "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data"
+      ]
+    },
+    {
+      "name": "Haditha killings",
+      "year": 2005,
+      "perpetrator": "U.S. Marines",
+      "victims_group": "Iraqi civilians",
+      "low": 24,
+      "high": 24,
+      "notes": "U.S. Marines killed 24 Iraqi civilians on 19 November 2005.",
+      "sources": [
+        "https://amp.cnn.com/cnn/2013/10/30/middleeast/haditha-killings-fast-facts",
+        "https://www.pbs.org/wgbh/frontline/article/newly-discovered-documents-recount-killing-of-iraqi-citizens-in-haditha/"
+      ]
+    },
+    {
+      "name": "Sectarian executions and torture killings",
+      "year": null,
+      "perpetrator": "Unknown perpetrators / sectarian death squads",
+      "victims_group": "Iraqi civilians",
+      "low": 19321,
+      "high": 19321,
+      "notes": "PLOS/IBC found 19,321 civilian executions by unknown perpetrators in the 2003-2008 short-duration-event subset, including 5,697 with signs of torture.",
+      "sources": [
+        "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415"
+      ]
+    },
+    {
+      "name": "Qahtaniyah / Yazidi bombings",
+      "year": 2007,
+      "perpetrator": "Insurgent suicide bombers, generally attributed to al-Qaeda in Iraq-linked networks",
+      "victims_group": "Yazidi civilians",
+      "low": 796,
+      "high": 796,
+      "notes": "Four coordinated suicide vehicle bombs on 14 August 2007 killed 796 people and wounded at least 1,500.",
+      "sources": [
+        "https://en.wikipedia-on-ipfs.org/wiki/2007_Yazidi_communities_bombings",
+        "https://www.justice.gov/sites/default/files/eoir/legacy/2014/08/21/iraq2009.pdf"
+      ]
+    },
+    {
+      "name": "Nisour Square massacre",
+      "year": 2007,
+      "perpetrator": "Blackwater security contractors under U.S. contract",
+      "victims_group": "Iraqi civilians",
+      "low": 17,
+      "high": 17,
+      "notes": "Blackwater guards killed 17 civilians and injured 20 in Baghdad on 16 September 2007.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nisour_Square_massacre",
+        "https://icoca.ch/case-studies/the-nisour-square-massacre/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The Iraq War casualty record is highly contested. Documentary counts such as Iraq Body Count provide transparent floors but miss unreported deaths; household surveys estimate excess mortality but have wide uncertainty intervals and methodological controversy. Perpetrator attribution is especially uncertain because most documented civilian deaths in the 2003-2008 PLOS/IBC dataset were attributed to unknown perpetrators. Indirect deaths from infrastructure collapse, displacement, health-system degradation, and insecurity cannot be cleanly assigned to individual belligerents.",
+  "sources": [
+    {
+      "url": "https://www.iraqbodycount.org/analysis/numbers/2011/",
+      "title": "Civilian deaths from violence in 2003-2011",
+      "publisher": "Iraq Body Count"
+    },
+    {
+      "url": "https://www.iraqbodycount.org/analysis/numbers/warlogs/",
+      "title": "Iraq War Logs: What the numbers reveal",
+      "publisher": "Iraq Body Count"
+    },
+    {
+      "url": "https://www.theguardian.com/news/datablog/2012/jan/03/iraq-body-count-report-data",
+      "title": "Iraq Body Count report: how many died and who was responsible?",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000415",
+      "title": "Violent Deaths of Iraqi Civilians, 2003-2008: Analysis by Perpetrator, Weapon, Time, and Location",
+      "publisher": "PLOS Medicine"
+    },
+    {
+      "url": "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1001533",
+      "title": "Mortality in Iraq Associated with the 2003-2011 War and Occupation",
+      "publisher": "PLOS Medicine"
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/R40824.html",
+      "title": "Iraq Casualties: U.S. Military Forces and Iraqi Civilians, Police, and Security Forces",
+      "publisher": "Congressional Research Service"
+    },
+    {
+      "url": "https://archive2.news.brown.edu/2007-2015/articles/2013/03/warcosts.html",
+      "title": "Iraq War: 190,000 lives, $2.2 trillion",
+      "publisher": "Brown University / Costs of War"
+    },
+    {
+      "url": "https://archive2.news.brown.edu/2007-2015/articles/2014/06/costsofwar.html",
+      "title": "Costs of War: $4.4 trillion, 350,000 lives",
+      "publisher": "Brown University / Costs of War"
+    },
+    {
+      "url": "https://costsofwar.watson.brown.edu/sites/default/files/papers/Crawford-Civilian-Death-and-Injury-Iraq-War-2003-2013.pdf",
+      "title": "Civilian Death and Injury in the Iraq War, 2003-2013",
+      "publisher": "Brown University / Costs of War"
+    },
+    {
+      "url": "https://www.comw.org/pda/0310rm8exsum.html",
+      "title": "The Wages of War: Iraqi Combatant and Noncombatant Fatalities in the 2003 Conflict",
+      "publisher": "Project on Defense Alternatives"
+    },
+    {
+      "url": "https://www.hrw.org/report/2003/10/20/hearts-and-minds/post-war-civilian-casualties-baghdad-us-forces",
+      "title": "Hearts and Minds: Post-War Civilian Casualties in Baghdad by U.S. Forces",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/report/2003/12/11/target/conduct-war-and-civilian-casualties-iraq",
+      "title": "Off Target: The Conduct of the War and Civilian Casualties in Iraq",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.iraqbodycount.org/analysis/numbers/lancet-2011/",
+      "title": "Casualties of suicide bombings in Iraq, 2003-2010",
+      "publisher": "Iraq Body Count / The Lancet summary"
+    }
+  ]
+}

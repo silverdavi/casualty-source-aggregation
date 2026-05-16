@@ -1,0 +1,325 @@
+{
+  "war_id": "herero_namaqua_genocide",
+  "name": "Herero and Namaqua Genocide",
+  "start_year": 1904,
+  "end_year": 1908,
+  "ongoing": false,
+  "regions": [
+    "German South-West Africa",
+    "Namibia",
+    "Omaheke/Sandveld",
+    "Waterberg/Ohamakari",
+    "Shark Island/L\u00fcderitz"
+  ],
+  "summary": "The Herero and Namaqua Genocide was the German Empire's genocidal counterinsurgency against the Herero/Ovaherero and Nama peoples in German South-West Africa, present-day Namibia, from 1904 to 1908. The best-supported central estimate is about 75,000 Herero and Nama deaths, commonly broken down as about 65,000 Herero and 10,000 Nama, though responsible ranges for Herero losses are wider. Deaths resulted from direct killing, expulsion into the Omaheke desert, blocked return to water and land, concentration camps, forced labour, starvation, disease, and exposure.",
+  "sides": [
+    {
+      "name": "German Empire / German South-West Africa",
+      "members": [
+        "German Empire",
+        "Schutztruppe",
+        "German colonial administration in South-West Africa",
+        "German settlers and colonial auxiliaries"
+      ],
+      "military_killed": {
+        "low": 1441,
+        "high": 1649,
+        "point": 1441,
+        "notes": "Explicit breakdown found: 676 killed in action, 76 missing, and 689 died of disease, totaling 1,441 military dead or missing. A separate aggregate says 1,749 Germans died in the conflict; subtracting the separately listed 100 civilians gives an implied upper military figure of 1,649, but the 1,441 breakdown is the cleaner point estimate.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Herero_uprising",
+          "https://en.wikipedia.org/wiki/German_South_West_Africa"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shooting and pursuit killings",
+            "victims_group": "Herero civilians and noncombatants, including women and children",
+            "low": null,
+            "high": null,
+            "notes": "German troops killed civilians during the Waterberg/Omaheke pursuit and under von Trotha's extermination order, but no reliable separate count distinguishes direct shootings from combatant deaths, desert deaths, and later camp deaths.",
+            "sources": [
+              "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+              "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll2/id/2869/download"
+            ]
+          },
+          {
+            "cause": "execution and extermination-order enforcement",
+            "victims_group": "Herero found within German-controlled territory",
+            "low": null,
+            "high": null,
+            "notes": "Von Trotha's 2 October 1904 order threatened to shoot Herero within German borders, armed or unarmed. The policy is documented, but a separate numerical execution toll was not found.",
+            "sources": [
+              "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf"
+            ]
+          }
+        ],
+        "notes": "Direct civilian deaths caused by German forces are certainly part of the genocide, but the literature generally reports aggregate Herero/Nama population losses rather than a clean direct-killing civilian subtotal.",
+        "sources": [
+          "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+          "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/rivers-of-blood-and-rivers-of-money/FD80F4320201914194A68C6A59FA4593"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "genocidal_campaign_aggregate",
+          "victims_group": "Herero/Ovaherero",
+          "low": 40000,
+          "high": 80000,
+          "point": 65000,
+          "notes": "Aggregate Herero deaths from the German campaign, including direct killing, desert expulsion, blocked return to water and land, disease, starvation, camps, and forced labour. Madley gives 40,000-70,000 Herero killed; other summaries give 40,000-80,000 or a point estimate around 65,000.",
+          "sources": [
+            "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+            "https://digitallibrary.un.org/record/108352?ln=en",
+            "https://www.tandfonline.com/doi/pdf/10.1080/14623528.2024.2388413",
+            "https://www.memorialdelashoah.org/archives-et-documentation/genocides-xx-siecle/genocide-herero-nama.html"
+          ]
+        },
+        {
+          "type": "genocidal_campaign_aggregate",
+          "victims_group": "Nama",
+          "low": 10000,
+          "high": 10000,
+          "point": 10000,
+          "notes": "Aggregate Nama deaths from the German campaign, usually presented as about half of a prewar population of about 20,000. This includes direct killing and indirect deaths from camps, forced labour, starvation, disease, and displacement.",
+          "sources": [
+            "https://digitallibrary.un.org/record/108352?ln=en",
+            "https://www.memorialdelashoah.org/archives-et-documentation/genocides-xx-siecle/genocide-herero-nama.html",
+            "https://apnews.com/article/abe931fbab90756a8717f1e235871e47"
+          ]
+        },
+        {
+          "type": "desert_expulsion",
+          "victims_group": "Herero/Ovaherero driven into the Omaheke/Sandveld",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "A major killing mechanism after Waterberg/Ohamakari. Madley reports that about 1,000 Herero reached British Bechuanaland while the vast majority died of thirst and hunger en route, but no precise standalone desert-death total is available.",
+          "sources": [
+            "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Herero and Nama internees in concentration and forced-labour camps",
+          "low": 7700,
+          "high": 9682,
+          "point": 7700,
+          "notes": "Madley cites official German figures of about 7,700 deaths among 17,200 Herero and Nama internees, about 45%. A secondary military study citing Sarkin reports 7,682 of 15,000 Herero and 2,000 Nama died from 1904 to 1908; because the wording is ambiguous, this is treated as a possible high rather than a firm additive subtotal.",
+          "sources": [
+            "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+            "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll2/id/2869/download"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Herero and Nama prisoners at Shark Island",
+          "low": 1032,
+          "high": 3307,
+          "point": null,
+          "notes": "An official report recorded 1,032 deaths among 1,795 prisoners in eight months. Another account says about 3,500 Herero and Nama were sent to Shark Island and only 193 returned; this implies up to 3,307 deaths or non-returns, but the figures are not strictly equivalent.",
+          "sources": [
+            "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+            "https://www.namibweb.com/ccamp.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Herero and Nama resistance",
+      "members": [
+        "Herero/Ovaherero forces under Samuel Maharero",
+        "Nama forces including Witbooi, Bondelswarts, and other Nama groups",
+        "Other local anti-colonial fighters"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Herero and Nama combatant deaths cannot be separated reliably from civilian deaths. Sources describe about 8,000-10,000 Herero warriors early in the war and about 3,000-5,000 Herero combatants defeated at Waterberg/Ohamakari, but do not provide a reliable killed-in-action subtotal distinct from the aggregate genocide death toll.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Herero_uprising",
+          "https://guerracolonial.oa.urjc.es/index.php/gc/article/view/52/65"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 100,
+        "high": 160,
+        "point": 123,
+        "breakdown": [
+          {
+            "cause": "raids during initial uprising",
+            "victims_group": "German settlers, mostly farmers and traders",
+            "low": 100,
+            "high": 160,
+            "notes": "The January 1904 uprising killed more than 100 Germans; common estimates are 123 to 160, mostly male settlers. Sources note that women, children, missionaries, and non-German Europeans were generally spared.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Herero_uprising",
+              "https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu37.pdf"
+            ]
+          }
+        ],
+        "notes": "German civilian deaths caused by Herero/Nama forces were concentrated in the initial uprising. They are counted separately from German military deaths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Herero_uprising",
+          "https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu37.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 1441,
+    "military_high": 1649,
+    "civilian_low": 50100,
+    "civilian_high": 90160,
+    "grand_low": 51541,
+    "grand_high": 91749,
+    "notes": "Military totals include only known German military dead/missing because Herero/Nama combatant deaths cannot be separated from aggregate population losses. Civilian/noncombatant totals combine 50,000-90,000 Herero/Nama deaths from the German genocidal campaign with 100-160 German civilians killed by Herero forces; the Herero/Nama figure is not purely civilian because combatants and civilians are not separable in available sources. Grand totals add German military deaths to that civilian/nonseparable range. A broader outer high could approach about 102,000 if using the German Federal Government's rounded 100,000 Herero/Nama death estimate plus German deaths, but the main roll-up uses the more traceable 50,000-90,000 Herero/Nama scholarly range."
+  },
+  "key_atrocities": [
+    {
+      "name": "Initial Herero uprising killings",
+      "year": 1904,
+      "perpetrator": "Herero resistance",
+      "victims_group": "German settlers",
+      "low": 100,
+      "high": 160,
+      "notes": "Herero fighters killed more than 100 German settlers in January 1904; common estimates range from 123 to 160.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Herero_uprising",
+        "https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu37.pdf"
+      ]
+    },
+    {
+      "name": "Battle of Waterberg / Ohamakari and pursuit",
+      "year": 1904,
+      "perpetrator": "German Empire / Schutztruppe",
+      "victims_group": "Herero combatants and civilians",
+      "low": null,
+      "high": null,
+      "notes": "German forces defeated the main Herero concentration on 11 August 1904 and then drove survivors toward the Omaheke. The battle and pursuit were decisive, but the dead cannot be cleanly separated from later desert deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Herero_uprising",
+        "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll2/id/2869/download"
+      ]
+    },
+    {
+      "name": "Omaheke/Sandveld desert expulsion and cordon",
+      "year": 1904,
+      "perpetrator": "German Empire / Schutztruppe",
+      "victims_group": "Herero/Ovaherero",
+      "low": null,
+      "high": null,
+      "notes": "A central killing mechanism of the genocide. About 1,000 Herero reached British Bechuanaland while the vast majority died of thirst and hunger en route, but no precise standalone toll exists.",
+      "sources": [
+        "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf"
+      ]
+    },
+    {
+      "name": "Von Trotha extermination order",
+      "year": 1904,
+      "perpetrator": "German Empire / Schutztruppe",
+      "victims_group": "Herero/Ovaherero",
+      "low": null,
+      "high": null,
+      "notes": "The 2 October 1904 order threatened to shoot Herero found within German borders, armed or unarmed, and refused shelter to women and children. It is central documentary evidence for genocidal intent.",
+      "sources": [
+        "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf"
+      ]
+    },
+    {
+      "name": "Concentration and forced-labour camp system",
+      "year": 1904,
+      "perpetrator": "German Empire / colonial administration",
+      "victims_group": "Herero and Nama internees",
+      "low": 7700,
+      "high": 9682,
+      "notes": "Official German figures cited by Madley give about 7,700 deaths among 17,200 Herero and Nama camp internees. A secondary military-study passage citing Sarkin gives a possible figure of 7,682 Herero and 2,000 Nama deaths, but the wording is ambiguous.",
+      "sources": [
+        "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+        "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll2/id/2869/download"
+      ]
+    },
+    {
+      "name": "Shark Island concentration camp",
+      "year": 1905,
+      "perpetrator": "German Empire / colonial administration",
+      "victims_group": "Herero and Nama prisoners",
+      "low": 1032,
+      "high": 3307,
+      "notes": "An official report recorded 1,032 deaths among 1,795 prisoners in eight months. Another account states that about 3,500 Herero and Nama were sent to Shark Island and only 193 returned.",
+      "sources": [
+        "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+        "https://www.namibweb.com/ccamp.htm"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainty is category separation, not overall responsibility. Most Herero/Nama losses are reconstructed from population estimates and survivor counts rather than death registers, and German policy deliberately collapsed distinctions between combatant and civilian, armed and unarmed, prisoner and forced labourer. Direct killings, desert deaths, disease, starvation, exposure, and camp deaths are all present, but only the camp system has partial numerical subcounts. The German casualty figures are better enumerated, but even there a detailed 1,441 military-dead/missing figure coexists with a 1,749 all-German aggregate.",
+  "sources": [
+    {
+      "url": "https://digitallibrary.un.org/record/108352?ln=en",
+      "title": "Revised and updated report on the question of the prevention and punishment of the crime of genocide / prepared by B. Whitaker",
+      "publisher": "United Nations Digital Library"
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/rivers-of-blood-and-rivers-of-money/FD80F4320201914194A68C6A59FA4593",
+      "title": "\u2018Rivers of Blood and Rivers of Money\u2019",
+      "publisher": "Cambridge University Press"
+    },
+    {
+      "url": "https://gsp.yale.edu/sites/default/files/patterns_of_frontier_genocide.pdf",
+      "title": "Patterns of frontier genocide 1803\u20131910: the aboriginal Tasmanians, the Yuki of California, and the Herero of Namibia",
+      "publisher": "Journal of Genocide Research / Yale Genocide Studies Program mirror"
+    },
+    {
+      "url": "https://www.bundesregierung.de/breg-en/service/commemoration-herero-and-nama-2350762",
+      "title": "Commemoration of the genocide of the Herero and Nama",
+      "publisher": "Federal Government of Germany"
+    },
+    {
+      "url": "https://www.britannica.com/topic/German-Herero-conflict-of-1904-1907",
+      "title": "German-Herero conflict of 1904\u201307",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.memorialdelashoah.org/archives-et-documentation/genocides-xx-siecle/genocide-herero-nama.html",
+      "title": "Le g\u00e9nocide des Herero et Nama",
+      "publisher": "M\u00e9morial de la Shoah"
+    },
+    {
+      "url": "https://apnews.com/article/abe931fbab90756a8717f1e235871e47",
+      "title": "Namibia holds its first genocide remembrance day to mark mass killings by colonial ruler Germany",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://cgsc.contentdm.oclc.org/digital/api/collection/p4013coll2/id/2869/download",
+      "title": "Did the German Actions in the Herero Rebellion of 1904\u20131908 Constitute Genocide?",
+      "publisher": "U.S. Army Command and General Staff College / CGSC"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Herero_uprising",
+      "title": "Herero uprising",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/German_South_West_Africa",
+      "title": "German South West Africa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu37.pdf",
+      "title": "German Historical Institute Bulletin, No. 37",
+      "publisher": "German Historical Institute Washington"
+    },
+    {
+      "url": "https://www.namibweb.com/ccamp.htm",
+      "title": "Shark Island concentration camp",
+      "publisher": "NamibWeb"
+    }
+  ]
+}

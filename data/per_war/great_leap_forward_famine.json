@@ -1,0 +1,276 @@
+{
+  "war_id": "great_leap_forward_famine",
+  "name": "Great Leap Forward famine (China)",
+  "start_year": 1958,
+  "end_year": 1962,
+  "ongoing": false,
+  "regions": [
+    "China"
+  ],
+  "summary": "The Great Leap Forward famine, also called the Great Chinese Famine, was a state-policy catastrophe in the People's Republic of China during and after Mao Zedong's Great Leap Forward. It was not a conventional war, but it involved mass civilian death caused by coercive state procurement, collectivization, inflated reporting, labor diversion, repression, and delayed relief, compounded by weather and international disruptions. Mainstream scholarly estimates generally place excess deaths at about 15 million to 45 million, with many demographic estimates clustering near 30 million.",
+  "sides": [
+    {
+      "name": "People's Republic of China / Chinese Communist Party state apparatus",
+      "members": [
+        "Chinese Communist Party central leadership",
+        "People's Republic of China government",
+        "provincial and local party cadres",
+        "local militia and security organs",
+        "People's Liberation Army in related suppression incidents"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "Not a conventional armed conflict; no comprehensive famine-specific estimate of PLA or security-force deaths while serving was found. A related Great Leap Forward-era suppression episode, the Xunhua Incident, is reported as killing 17 PLA soldiers, but this is not an aggregate military-casualty figure for the famine.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Xunhua_Incident",
+          "https://humanrightscommission.house.gov/sites/evo-subsites/humanrightscommission.house.gov/files/documents/Panchen%20Lama_Akester_China_Tibet_2049.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2000000,
+        "high": 3000000,
+        "point": 2500000,
+        "breakdown": [
+          {
+            "cause": "torture_execution_beatings_summary_killing",
+            "victims_group": "Chinese civilians, especially rural peasants accused of hiding grain, fleeing famine areas, stealing food, resisting officials, or failing quotas",
+            "low": 2000000,
+            "high": 3000000,
+            "notes": "Based mainly on Frank Dik\u00f6tter's archival interpretation; Britannica summarizes 2-3 million deaths due to torture and execution, while Newsweek reports Dik\u00f6tter's figure as at least 2.5 million tortured to death or summarily killed. This is contested and not separately estimated in most demographic studies.",
+            "sources": [
+              "https://www.britannica.com/facts/Great-Leap-Forward",
+              "https://www.newsweek.com/maos-great-famine-72301"
+            ]
+          }
+        ],
+        "notes": "Direct civilian killing was real and widespread in archival and survivor accounts, but the national number is much less securely established than total excess mortality. The 2-3 million range is primarily associated with Dik\u00f6tter and should be treated as an estimate, not a census count.",
+        "sources": [
+          "https://www.britannica.com/facts/Great-Leap-Forward",
+          "https://www.newsweek.com/maos-great-famine-72301",
+          "https://fsi.stanford.edu/events/maos_great_famine_a_history_of_chinas_most_devastating_catastrophe"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Chinese civilians, overwhelmingly rural peasants",
+          "low": 13000000,
+          "high": 42000000,
+          "point": 33500000,
+          "notes": "Derived non-overlap estimate: mainstream total excess deaths of about 15-45 million minus the direct-killing range of about 2-3 million. Demographic studies usually estimate total excess mortality rather than cleanly separating starvation, disease, exhaustion, overwork, direct violence, and suicide. Mechanisms included grain procurement, communes, inflated output statistics, coercive enforcement, restrictions on flight, and delayed relief.",
+          "sources": [
+            "https://academic.oup.com/reference/62338/reference-article/554184195",
+            "https://academic.oup.com/restud/article/82/4/1568/2607347",
+            "https://pure.johnshopkins.edu/en/publications/famine-in-china-1958-61",
+            "https://ourworldindata.org/the-our-world-in-data-dataset-of-famines",
+            "https://www.kellogg.northwestern.edu/faculty/qian/resources/MPQY_FINAL.pdf",
+            "https://www.nber.org/papers/w16361"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Chinese civilians mobilized for Great Leap industrial, irrigation, agricultural, and infrastructure projects",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Dik\u00f6tter's total includes people 'worked' to death, but accessible summaries do not provide a separate nationwide number for forced-labor or overwork deaths alone.",
+          "sources": [
+            "https://fsi.stanford.edu/events/maos_great_famine_a_history_of_chinas_most_devastating_catastrophe",
+            "https://catalogue.nla.gov.au/catalog/8170496"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": 15000000,
+    "civilian_high": 45000000,
+    "grand_low": 15000000,
+    "grand_high": 45000000,
+    "notes": "The total is a mainstream excess-mortality range for the famine, not a battlefield casualty sum. The internal split used here is approximately 2-3 million direct civilian killings plus about 13-42 million indirect famine/policy deaths, but most demographic estimates do not separate these categories cleanly. Lower revisionist estimates around 4-5 million and broader upper ranges to 50-55 million exist but are not used as the main rollup."
+  },
+  "key_atrocities": [
+    {
+      "name": "Nationwide Great Leap Forward famine",
+      "year": 1959,
+      "perpetrator": "People's Republic of China / Chinese Communist Party state apparatus",
+      "victims_group": "Chinese civilians, overwhelmingly rural peasants",
+      "low": 15000000,
+      "high": 45000000,
+      "notes": "Mainstream scholarly range used for total excess deaths, with many demographic estimates near 30 million.",
+      "sources": [
+        "https://academic.oup.com/reference/62338/reference-article/554184195",
+        "https://academic.oup.com/restud/article/82/4/1568/2607347",
+        "https://pure.johnshopkins.edu/en/publications/famine-in-china-1958-61"
+      ]
+    },
+    {
+      "name": "Direct killings by torture, execution, beatings, and summary punishment during famine enforcement",
+      "year": 1960,
+      "perpetrator": "Local cadres, militia, security organs, and other state agents",
+      "victims_group": "Chinese civilians, especially rural peasants",
+      "low": 2000000,
+      "high": 3000000,
+      "notes": "Dik\u00f6tter/Britannica/Newsweek estimate; contested and not cleanly separated in most demographic mortality studies.",
+      "sources": [
+        "https://www.britannica.com/facts/Great-Leap-Forward",
+        "https://www.newsweek.com/maos-great-famine-72301"
+      ]
+    },
+    {
+      "name": "Xinyang Incident / Xinyang famine",
+      "year": 1960,
+      "perpetrator": "Henan and Xinyang party-state authorities",
+      "victims_group": "Civilians in Xinyang, Henan",
+      "low": 1000000,
+      "high": 1000000,
+      "notes": "Yang Jisheng and secondary summaries report over/about one million deaths in Xinyang; this was one of the most notorious local famine disasters.",
+      "sources": [
+        "https://dsimian.com/2023/08/29/tombstone-the-great-chinese-famine-1958-1962-by-yang-jisheng/",
+        "https://communistcrimes.org/en/incredible-courage-bringing-great-chinese-famine-light"
+      ]
+    },
+    {
+      "name": "Fuyang famine deaths",
+      "year": 1960,
+      "perpetrator": "Anhui and Fuyang party-state authorities",
+      "victims_group": "Civilians in Fuyang, Anhui",
+      "low": 2400000,
+      "high": 2400000,
+      "notes": "Secondary summaries cite Chinese government reports in the Fuyang Party History Research Office for 2.4 million famine deaths between 1959 and 1961; direct primary verification was not available in the accessible sources found.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Great_Leap_Forward"
+      ]
+    },
+    {
+      "name": "Xunhua Incident",
+      "year": 1958,
+      "perpetrator": "People's Liberation Army and state security forces; rebels also killed PLA personnel",
+      "victims_group": "Salar and Tibetan civilians; PLA soldiers",
+      "low": 454,
+      "high": 454,
+      "notes": "Reported fatalities include about 437 civilians and 17 PLA soldiers. This was a related Great Leap Forward-era uprising and suppression episode rather than the central famine mechanism.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Xunhua_Incident",
+        "https://humanrightscommission.house.gov/sites/evo-subsites/humanrightscommission.house.gov/files/documents/Panchen%20Lama_Akester_China_Tibet_2049.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The famine's mortality is estimated from excess deaths, not complete death registration. Estimates depend heavily on baseline mortality, under-registration, census reliability, whether 1958 and 1962 are included, and whether lost or postponed births are excluded. Most studies cannot cleanly separate starvation from disease, exhaustion, overwork, suicide, and direct coercive killing. The main report uses a mainstream 15-45 million excess-death range; lower revisionist estimates around 4-5 million and broader upper ranges to 50-55 million exist but are treated as outliers or broad secondary ranges.",
+  "sources": [
+    {
+      "url": "https://academic.oup.com/reference/62338/reference-article/554184195",
+      "title": "The Great Leap Forward and the Famine",
+      "publisher": "Oxford Bibliographies / Oxford Academic"
+    },
+    {
+      "url": "https://academic.oup.com/restud/article/82/4/1568/2607347",
+      "title": "The Institutional Causes of China's Great Famine, 1959\u20131961",
+      "publisher": "Review of Economic Studies / Oxford Academic"
+    },
+    {
+      "url": "https://www.kellogg.northwestern.edu/faculty/qian/resources/MPQY_FINAL.pdf",
+      "title": "The Institutional Causes of China's Great Famine, 1959\u20131961",
+      "publisher": "Northwestern Kellogg / authors' PDF"
+    },
+    {
+      "url": "https://www.nber.org/papers/w16361",
+      "title": "The Institutional Causes of China's Great Famine, 1959-61",
+      "publisher": "National Bureau of Economic Research"
+    },
+    {
+      "url": "https://pure.johnshopkins.edu/en/publications/famine-in-china-1958-61",
+      "title": "Famine in China, 1958-61",
+      "publisher": "Johns Hopkins University / Population and Development Review record"
+    },
+    {
+      "url": "https://ourworldindata.org/the-our-world-in-data-dataset-of-famines",
+      "title": "The Our World in Data Dataset of Famines",
+      "publisher": "Our World in Data"
+    },
+    {
+      "url": "https://www.britannica.com/event/Great-Leap-Forward",
+      "title": "Great Leap Forward",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/facts/Great-Leap-Forward",
+      "title": "Great Leap Forward Facts",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.newsweek.com/maos-great-famine-72301",
+      "title": "Mao's Great Famine",
+      "publisher": "Newsweek"
+    },
+    {
+      "url": "https://fsi.stanford.edu/events/maos_great_famine_a_history_of_chinas_most_devastating_catastrophe",
+      "title": "Mao's Great Famine: A History of China's Most Devastating Catastrophe",
+      "publisher": "Stanford FSI"
+    },
+    {
+      "url": "https://catalogue.nla.gov.au/catalog/8170496",
+      "title": "Mao's Great Famine: the history of China's most devastating catastrophe, 1958-62",
+      "publisher": "National Library of Australia"
+    },
+    {
+      "url": "https://www.npr.org/2012/11/10/164732497/a-grim-chronicle-of-chinas-great-famine",
+      "title": "A Grim Chronicle Of China's Great Famine",
+      "publisher": "NPR"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=772079",
+      "title": "The Great Leap Forward: Anatomy of a Central Planning Disaster",
+      "publisher": "SSRN"
+    },
+    {
+      "url": "https://www3.nd.edu/~nmark/ChinaCourse/TheWeeks/Li_Yang_GLF_JPE.pdf",
+      "title": "The Great Leap Forward: Anatomy of a Central Planning Disaster",
+      "publisher": "Journal of Political Economy / PDF mirror"
+    },
+    {
+      "url": "https://www.china.org.cn/china/CPC_95_anniversary/2016-06/27/content_38756424.htm",
+      "title": "Resolution on Certain Questions in Our Party's History since the Founding of the PRC",
+      "publisher": "China.org.cn"
+    },
+    {
+      "url": "https://seclusao.org/2023/06/03/resolution-on-certain-questions-in-the-history-of-our-party-since-the-founding-of-the-peoples-republic-of-china-adopted-by-the-60th-plenary-session-of-the-11th-central-committee-of-the-commu/",
+      "title": "Resolution on Certain Questions in the History of Our Party Since the Founding of the People's Republic of China",
+      "publisher": "Seclus\u00e3o Anag\u00f3gica / translation mirror"
+    },
+    {
+      "url": "https://dsimian.com/2023/08/29/tombstone-the-great-chinese-famine-1958-1962-by-yang-jisheng/",
+      "title": "Tombstone: The Great Chinese Famine, 1958-1962 \u2013 by Yang Jisheng",
+      "publisher": "D. Simian review"
+    },
+    {
+      "url": "https://communistcrimes.org/en/incredible-courage-bringing-great-chinese-famine-light",
+      "title": "Incredible courage: bringing the Great Chinese Famine to light",
+      "publisher": "Communist Crimes"
+    },
+    {
+      "url": "https://humanrightscommission.house.gov/sites/evo-subsites/humanrightscommission.house.gov/files/documents/Panchen%20Lama_Akester_China_Tibet_2049.pdf",
+      "title": "Dangerous Truths: China's Broken Promise of Tibetan Autonomy",
+      "publisher": "Tom Lantos Human Rights Commission / U.S. House"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Xunhua_Incident",
+      "title": "Xunhua Incident",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Great_Leap_Forward",
+      "title": "Great Leap Forward",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1521/siso.2018.82.2.171",
+      "title": "A Study of Unnatural Deaths during the Difficult Three Year Period in China, 1959-1961",
+      "publisher": "Science & Society / SAGE"
+    }
+  ]
+}

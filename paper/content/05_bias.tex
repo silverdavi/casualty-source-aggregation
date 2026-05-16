@@ -1,0 +1,22 @@
+\section{Confidence coefficients under political bias}\label{sec:bias}
+
+The bounds in Sections~\ref{sec:bounds}--\ref{sec:contradiction} treat each measured input as honest. We now allow the analyst to dial in distrust of specific sources. Political bias enters the confidence statement through Huber contamination: each source $i$ writes its likelihood as $(1-\varepsilon_i)L_i+\varepsilon_i Q_i$, with $Q_i$ adversarial in some class $\mathcal Q$ \citep{huber1964,huber1981,berger1986,gagnon2023}. The contamination parameter $\varepsilon_i\in[0,1]$ is the analyst's prior probability that source $i$ is producing a politically motivated reading rather than a measurement of the true distribution.
+
+\begin{proposition}[Bias-robust credible interval]\label{prop:robust}
+Let $\theta$ be a scalar estimand with $1-\alpha$ posterior credible interval $I_0=[L_0,U_0]$ under face-value sources. Suppose each source is $\varepsilon_i$-contaminated and removing source $i$ yields an identified set for $\theta$ of diameter $R_i$. Then
+\begin{equation}\label{eq:Iepsilon}
+I_\varepsilon \;=\; \Bigl[L_0-\textstyle\sum_i\varepsilon_i R_i,\; U_0+\textstyle\sum_i\varepsilon_i R_i\Bigr]
+\end{equation}
+contains every $1-\alpha$ credible interval obtainable by adversarial replacement of each $L_i$ in $\mathcal Q$. If the marginal density of $\theta$ exceeds $m>0$ near each quantile, the sharper quantile displacement
+\[
+\bigl|\hat Q_\varepsilon(u)-\hat Q_0(u)\bigr|
+   \;\le\; m^{-1}\bigl(1-\textstyle\prod_i(1-\varepsilon_i)\bigr),
+\qquad u\in\{\alpha/2,\,1-\alpha/2\},
+\]
+also holds.
+\end{proposition}
+\begin{proof}
+Expanding $\prod_i\bigl[(1-\varepsilon_i)L_i+\varepsilon_iQ_i\bigr]$ as a mixture, the total mass on components in which source $i$ is contaminated is at most $\varepsilon_i$; worst-case replacement of source $i$ shifts $\theta$ by no more than $R_i$, and the union bound gives \eqref{eq:Iepsilon}. The contaminated and clean marginal cumulative distribution functions differ in total variation by $1-\prod_i(1-\varepsilon_i)$; inverting under the lower density bound $m$ yields the quantile statement.
+\end{proof}
+
+\paragraph{Practice.} Set $\varepsilon_i\approx 0.05$ for widely-trusted demographic sources (Palestinian Central Bureau of Statistics, OHCHR) and $\varepsilon_i\approx 1$ (i.e., adversarial) for belligerent claims; \eqref{eq:Iepsilon} then absorbs the assumed political bias automatically.

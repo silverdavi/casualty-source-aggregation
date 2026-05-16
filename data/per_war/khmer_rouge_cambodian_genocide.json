@@ -1,0 +1,347 @@
+{
+  "war_id": "khmer_rouge_cambodian_genocide",
+  "name": "Khmer Rouge Cambodian Genocide",
+  "start_year": 1975,
+  "end_year": 1979,
+  "ongoing": false,
+  "regions": [
+    "Cambodia",
+    "Cambodia-Vietnam border"
+  ],
+  "summary": "From April 1975 to January 1979, Democratic Kampuchea under the Khmer Rouge caused mass death through executions, security-center killings, forced labor, starvation, disease, forced displacement, and persecution of ethnic, religious, political, and social groups. Most credible overall estimates fall around 1.5-2.0 million deaths, with a broader demographic range of 1.2-2.8 million. The ECCC legally found genocide against Vietnamese and Cham groups and crimes against humanity against the broader civilian population.",
+  "sides": [
+    {
+      "name": "Democratic Kampuchea / Khmer Rouge / Communist Party of Kampuchea",
+      "members": [
+        "Communist Party of Kampuchea",
+        "Revolutionary Army of Kampuchea",
+        "Khmer Rouge security apparatus including Santebal and S-21"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable estimate found that separates Khmer Rouge soldiers killed in combat from cadres and soldiers executed in internal purges or from post-1979 guerrilla-war losses. ECCC materials show purges of Party, army, and civilians, but do not provide a national military-only death toll.",
+        "sources": [
+          "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+          "https://www.eccc.gov.kh/sites/default/files/Case%20001%20Duch_OCT%202013_EN.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 500000,
+        "high": 1300000,
+        "point": 1100000,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "Cambodian civilians, perceived political enemies, former Khmer Republic officials, intellectuals, ethnic and religious minorities, and detainees at security centers",
+            "low": 500000,
+            "high": 1300000,
+            "notes": "Survey-based estimates put executions at roughly 30-50% of total deaths; DC-Cam/Etcheson mass-grave mapping identified about 1.1 million suspected execution victims by 1999 and later summaries around 1.3 million suspected execution victims.",
+            "sources": [
+              "https://www.mekong.net/cambodia/deaths.htm",
+              "https://d.dccam.org/Projects/Maps/Mass_Graves_Study.htm"
+            ]
+          },
+          {
+            "cause": "security_center_execution",
+            "victims_group": "S-21/Tuol Sleng prisoners and related Choeung Ek victims",
+            "low": 11742,
+            "high": 12273,
+            "notes": "ECCC historical context gives at least 11,742 executions at S-21; the Duch case factsheet says no fewer than 12,273 people were detained for torture and eventual execution.",
+            "sources": [
+              "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+              "https://www.eccc.gov.kh/sites/default/files/Case%20001%20Duch_OCT%202013_EN.pdf"
+            ]
+          },
+          {
+            "cause": "genocidal_killing",
+            "victims_group": "Cham Muslims",
+            "low": 90000,
+            "high": 90000,
+            "notes": "Kiernan estimates 90,000 Cham deaths out of a 250,000 pre-1975 Cham population; ECCC found Cham civilians were killed on a massive scale but did not establish a definite national total.",
+            "sources": [
+              "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979",
+              "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+            ]
+          },
+          {
+            "cause": "genocidal_killing",
+            "victims_group": "Ethnic Vietnamese civilians inside Cambodia",
+            "low": 20000,
+            "high": 20000,
+            "notes": "Kiernan's table estimates 10,000 urban and 10,000 rural Vietnamese deaths inside Cambodia; ECCC found Vietnamese were targeted for expulsion until late 1976 and for destruction from April 1977.",
+            "sources": [
+              "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979",
+              "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+            ]
+          },
+          {
+            "cause": "massacre_and_purge",
+            "victims_group": "Eastern Zone civilians and suspected Khmer Rouge internal enemies",
+            "low": 100000,
+            "high": null,
+            "notes": "Kiernan states that over 100,000 murders in the Eastern Zone in 1978 is a safe minimum and that the real figure was probably higher.",
+            "sources": [
+              "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979"
+            ]
+          },
+          {
+            "cause": "cross_border_massacre",
+            "victims_group": "Vietnamese civilians at Ba Chuc, An Giang Province, Vietnam",
+            "low": 3157,
+            "high": 3157,
+            "notes": "Included as a closely related Khmer Rouge border-war atrocity, but excluded from the standard Cambodian domestic genocide toll.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre",
+              "https://www.lonelyplanet.com/vietnam/mekong-delta/chau-doc/attractions/ba-chuc-tomb/a/poi-sig/1527131/357891"
+            ]
+          }
+        ],
+        "notes": "Direct-killing totals are not a complete census; they synthesize survivor-survey cause shares and mass-grave mapping. Subgroup/event entries overlap with the national direct-killing estimate and should not be summed.",
+        "sources": [
+          "https://www.mekong.net/cambodia/deaths.htm",
+          "https://d.dccam.org/Projects/Maps/Mass_Graves_Study.htm",
+          "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+          "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Cambodian civilians under Khmer Rouge collectivization and rationing policies",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Starvation deaths are not cleanly separable nationally from disease, overwork, displacement, and direct executions. They are included in the combined indirect-deaths estimate below.",
+          "sources": [
+            "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+            "https://newsroom.ucla.edu/releases/ucla-demographer-produces-best-estimate-yet-of-cambodias-death-toll-under-pol-pot"
+          ]
+        },
+        {
+          "type": "forced_labor",
+          "victims_group": "Cambodian civilians in cooperatives, worksites, dams, airfields, and state labor sites",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Forced labor and overwork deaths are documented by ECCC but not quantified nationally as a distinct category.",
+          "sources": [
+            "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+            "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+          ]
+        },
+        {
+          "type": "disease",
+          "victims_group": "Cambodian civilians deprived of adequate food, medicine, sanitation, and rest",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Disease deaths are not cleanly separable nationally from starvation and overwork. Sliwinski's summarized estimates assign 13% of deaths to disease, but the report uses a combined indirect bucket to avoid false precision.",
+          "sources": [
+            "https://www.mekong.net/cambodia/deaths.htm",
+            "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Urban 'new people,' border populations, ethnic minorities, and forced transferees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Forced displacement contributed to death through exhaustion, starvation, disease, family separation, and subsequent execution, but is not separately quantified nationally.",
+          "sources": [
+            "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+            "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+          ]
+        },
+        {
+          "type": "forced_labor_famine_disease_displacement_combined",
+          "victims_group": "All Cambodian civilian victim groups",
+          "low": 700000,
+          "high": 1500000,
+          "point": 700000,
+          "notes": "Coherent residual estimate: total Cambodian genocide deaths of 1.2-2.8 million minus direct executions of about 0.5-1.3 million. This is a derived range, not an independent register.",
+          "sources": [
+            "https://newsroom.ucla.edu/releases/ucla-demographer-produces-best-estimate-yet-of-cambodias-death-toll-under-pol-pot",
+            "https://www.mekong.net/cambodia/deaths.htm",
+            "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vietnam and Kampuchean United Front for National Salvation",
+      "members": [
+        "People's Army of Vietnam",
+        "Kampuchean United Front for National Salvation",
+        "Cambodian anti-Khmer Rouge defectors including Heng Samrin-aligned forces"
+      ],
+      "military_killed": {
+        "low": 28000,
+        "high": 30000,
+        "point": 30000,
+        "notes": "Vietnamese military deaths in the adjacent border war/invasion context, not part of the standard Cambodian genocide civilian toll. A Vietnamese general reported 30,000 Vietnamese soldiers killed from 1977 to 1979; a Clodfelter/OnWar-derived summary gives 28,000 Vietnam fatalities for the broader Cambodian war dataset. Cambodian KNUFNS military deaths are unknown.",
+        "sources": [
+          "https://www.latimes.com/archives/la-xpm-1988-07-01-mn-6370-story.html",
+          "https://www.onwar.com/data/cambodia1978.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [],
+        "notes": "No reliable genocide-period estimate found for Cambodian civilians directly killed by Vietnamese or KNUFNS forces during the overthrow of Democratic Kampuchea. Such deaths, if any, are not a major quantified category in standard Cambodian genocide casualty accounting.",
+        "sources": [
+          "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+          "https://www.britannica.com/event/Cambodian-Genocide"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 28000,
+    "military_high": 30000,
+    "civilian_low": 1200000,
+    "civilian_high": 2800000,
+    "grand_low": 1228000,
+    "grand_high": 2830000,
+    "notes": "The standard Cambodian genocide toll is the civilian/excess-death range of about 1.2-2.8 million under Khmer Rouge rule. Grand totals here add adjacent Vietnam/KNUFNS military deaths of about 28,000-30,000, but those are not usually included in the canonical genocide toll."
+  },
+  "key_atrocities": [
+    {
+      "name": "S-21 / Tuol Sleng and Choeung Ek executions",
+      "year": null,
+      "perpetrator": "Democratic Kampuchea / Khmer Rouge",
+      "victims_group": "S-21 detainees including Cambodian civilians, Khmer Rouge cadres, foreigners, Vietnamese civilians, and Vietnamese POWs",
+      "low": 11742,
+      "high": 12273,
+      "notes": "ECCC historical context gives at least 11,742 executions at S-21; the Duch case factsheet says no fewer than 12,273 were detained for torture and eventual execution.",
+      "sources": [
+        "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+        "https://www.eccc.gov.kh/sites/default/files/Case%20001%20Duch_OCT%202013_EN.pdf"
+      ]
+    },
+    {
+      "name": "Eastern Zone massacres and purges",
+      "year": 1978,
+      "perpetrator": "Democratic Kampuchea / Khmer Rouge",
+      "victims_group": "Eastern Zone civilians and suspected internal enemies",
+      "low": 100000,
+      "high": null,
+      "notes": "Ben Kiernan states that a 1978 murder toll of over 100,000 can safely be regarded as a minimum estimate, with the real figure probably much higher.",
+      "sources": [
+        "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979"
+      ]
+    },
+    {
+      "name": "Cham genocide",
+      "year": null,
+      "perpetrator": "Democratic Kampuchea / Khmer Rouge",
+      "victims_group": "Cham Muslims",
+      "low": 90000,
+      "high": 90000,
+      "notes": "Kiernan estimates 90,000 Cham deaths; ECCC found genocide and crimes against humanity with respect to Cham victims, though without a definite national victim count.",
+      "sources": [
+        "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979",
+        "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+      ]
+    },
+    {
+      "name": "Genocide of ethnic Vietnamese inside Cambodia",
+      "year": null,
+      "perpetrator": "Democratic Kampuchea / Khmer Rouge",
+      "victims_group": "Ethnic Vietnamese civilians in Cambodia",
+      "low": 20000,
+      "high": 20000,
+      "notes": "Kiernan's table gives 10,000 urban and 10,000 rural Vietnamese deaths in Cambodia. ECCC found the Vietnamese were targeted for expulsion until late 1976 and for destruction from April 1977.",
+      "sources": [
+        "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979",
+        "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf"
+      ]
+    },
+    {
+      "name": "Ba Chuc massacre",
+      "year": 1978,
+      "perpetrator": "Democratic Kampuchea / Khmer Rouge",
+      "victims_group": "Vietnamese civilians in Ba Chuc, An Giang Province, Vietnam",
+      "low": 3157,
+      "high": 3157,
+      "notes": "A cross-border atrocity by Khmer Rouge forces closely tied to the Cambodia-Vietnam war, but outside the standard Cambodian domestic genocide toll.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre",
+        "https://www.lonelyplanet.com/vietnam/mekong-delta/chau-doc/attractions/ba-chuc-tomb/a/poi-sig/1527131/357891"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Overall deaths are best treated as a range, not a point estimate. Demographic methods, survivor surveys, mass-grave mapping, and judicial findings answer different questions and do not align perfectly. The direct-versus-indirect split is especially uncertain because some mass graves may contain victims of execution, starvation, disease, earlier war, or 1979 invasion violence, and because many victims died without records. Military deaths, especially Khmer Rouge military deaths, cannot be cleanly separated from purges and post-1979 guerrilla warfare in the sources found.",
+  "sources": [
+    {
+      "url": "https://macmillan.yale.edu/gsp/cambodian-genocide-program",
+      "title": "Cambodian Genocide Program",
+      "publisher": "Yale University MacMillan Center / Genocide Studies Program"
+    },
+    {
+      "url": "https://timeline.eccc.gov.kh/en/section/the-democratic-kampuchea-regime",
+      "title": "Historical Context: The Democratic Kampuchea Regime",
+      "publisher": "Extraordinary Chambers in the Courts of Cambodia"
+    },
+    {
+      "url": "https://www.eccc.gov.kh/sites/default/files/documents/courtdoc/%5Bdate-in-tz%5D/20181119%20Summary%20of%20Judgement%20Case%20002-02%20ENG_checked%20against%20delivery_amended%20a.pdf",
+      "title": "Case 002/02 Summary of Judgement",
+      "publisher": "Extraordinary Chambers in the Courts of Cambodia"
+    },
+    {
+      "url": "https://www.eccc.gov.kh/sites/default/files/Case%20001%20Duch_OCT%202013_EN.pdf",
+      "title": "Case 001: Duch",
+      "publisher": "Extraordinary Chambers in the Courts of Cambodia"
+    },
+    {
+      "url": "https://newsroom.ucla.edu/releases/ucla-demographer-produces-best-estimate-yet-of-cambodias-death-toll-under-pol-pot",
+      "title": "UCLA demographer produces best estimate yet of Cambodia\u2019s death toll under Pol Pot",
+      "publisher": "UCLA Newsroom"
+    },
+    {
+      "url": "https://doczz.net/doc/8452778/the-cambodian-genocide--1975-1979",
+      "title": "The Cambodian Genocide, 1975-1979",
+      "publisher": "Ben Kiernan / reproduced text"
+    },
+    {
+      "url": "https://www.mekong.net/cambodia/deaths.htm",
+      "title": "Counting Hell: The Death Toll of the Khmer Rouge Regime in Cambodia",
+      "publisher": "Mekong Network"
+    },
+    {
+      "url": "https://d.dccam.org/Projects/Maps/Mass_Graves_Study.htm",
+      "title": "Mass Grave Mapping Project",
+      "publisher": "Documentation Center of Cambodia"
+    },
+    {
+      "url": "https://www.britannica.com/event/Cambodian-Genocide",
+      "title": "Cambodian Genocide",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1988-07-01-mn-6370-story.html",
+      "title": "Hanoi Puts Its Cambodia Toll at 55,000 Dead",
+      "publisher": "Los Angeles Times"
+    },
+    {
+      "url": "https://www.onwar.com/data/cambodia1978.html",
+      "title": "Cambodian War 1978-91",
+      "publisher": "OnWar"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre",
+      "title": "Ba Chuc massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.lonelyplanet.com/vietnam/mekong-delta/chau-doc/attractions/ba-chuc-tomb/a/poi-sig/1527131/357891",
+      "title": "Ba Chuc Tomb",
+      "publisher": "Lonely Planet"
+    }
+  ]
+}

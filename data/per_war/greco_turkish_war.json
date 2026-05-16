@@ -1,0 +1,429 @@
+{
+  "war_id": "greco_turkish_war",
+  "name": "Greco-Turkish War and population exchange",
+  "start_year": 1919,
+  "end_year": 1922,
+  "ongoing": false,
+  "regions": [
+    "Anatolia",
+    "Western Anatolia",
+    "Pontus",
+    "Eastern Thrace",
+    "Smyrna/Izmir region",
+    "Greece"
+  ],
+  "summary": "The Greco-Turkish War of 1919\u20131922 was fought between the Kingdom of Greece and the Turkish National Movement during the partition of the Ottoman Empire. It ended with the defeat and evacuation of the Greek army from Anatolia, the destruction of Smyrna, and the 1923 compulsory population exchange between Greece and Turkey. Military deaths were in the tens of thousands; civilian deaths from massacre, deportation, arson, flight, disease, and ethnic cleansing are much more contested.",
+  "sides": [
+    {
+      "name": "Kingdom of Greece / Greek occupation forces",
+      "members": [
+        "Kingdom of Greece",
+        "Hellenic Army",
+        "local Greek irregulars",
+        "some local Armenian and Circassian armed groups in specific areas"
+      ],
+      "military_killed": {
+        "low": 24240,
+        "high": 42335,
+        "point": 24240,
+        "notes": "Low/point adds official Greek categories 19,362 killed plus 4,878 died outside combat. High adds 18,095 missing, but the missing category may overlap with prisoners and presumed captivity deaths. About 7,000 Greek prisoners are often presumed to have died in Turkish captivity, but this is not added separately because of overlap risk.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919%E2%80%931922)",
+          "https://en.wikipedia.org/wiki/Army_of_Asia_Minor",
+          "https://www.onwar.com/data/greekturk1921.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 15000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacres and occupation violence",
+            "victims_group": "Muslim/Turkish civilians in Greek-occupied Anatolia",
+            "low": 15000,
+            "high": null,
+            "notes": "Rummel gives 15,000 as a minimum for Greek army/Greek-villager democide of Muslims. A clean high for direct killing alone is not available.",
+            "sources": [
+              "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM"
+            ]
+          },
+          {
+            "cause": "Greek landing at Smyrna riot",
+            "victims_group": "mostly Turkish civilians, some Greeks",
+            "low": 400,
+            "high": 500,
+            "notes": "The landing of 15\u201316 May 1919 degenerated into riot, looting, beatings, rape, and killings; another phrasing gives 300\u2013400 Turkish killed/wounded and about 100 Greek killed/wounded.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          },
+          {
+            "cause": "Menemen massacre",
+            "victims_group": "Turkish civilians",
+            "low": 100,
+            "high": 200,
+            "notes": "Greek-perpetrated massacre, 16\u201317 June 1919.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          },
+          {
+            "cause": "Yalova-Gemlik / Samanli-Dagh massacres and village destruction",
+            "victims_group": "Muslim/Turkish civilians",
+            "low": null,
+            "high": 9100,
+            "notes": "Some summaries give 5,500\u20139,100 victims, but Ryan Gingeras notes much lower directly documented figures in one family-report sample. ICRC describes systematic terror and extermination, evacuation of 2,935 refugees, and destruction of numerous villages.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+              "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/"
+            ]
+          },
+          {
+            "cause": "Izmit massacre by Greek troops",
+            "victims_group": "Muslim/Turkish civilians",
+            "low": 300,
+            "high": 300,
+            "notes": "Toynbee reported over 300 Muslim civilians missing/dead after Greek troops shot men in batches in June 1921.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          },
+          {
+            "cause": "retreat massacres and burnings",
+            "victims_group": "Muslim/Turkish civilians in Manisa, Turgutlu, Ala\u015fehir, Salihli, U\u015fak and other towns",
+            "low": 1000,
+            "high": null,
+            "notes": "Individual event estimates include at least 1,000 deaths at Turgutlu and 4,355 at Manisa, but figures are contested and not safely additive with broader population-loss estimates.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          }
+        ],
+        "notes": "At least 15,000 direct civilian killings are supported as a minimum by Rummel. Higher direct-only totals cannot be separated reliably from refugee deaths, disease, starvation, and population loss.",
+        "sources": [
+          "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM",
+          "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+          "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Muslim/Turkish civilians in Greek-occupied or retreat zones",
+          "low": null,
+          "high": 640000,
+          "point": null,
+          "notes": "Justin McCarthy estimates 640,000 Muslim deaths in the Greek/British zones in 1919\u20131922, with many deaths among refugees, but Travlos/Erickson describe the apportionment as arbitrary. This is a contested population-loss estimate, not a direct count.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919%E2%80%931922)",
+            "https://books.google.com/books?id=oyhsAgAAQBAJ",
+            "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM"
+          ]
+        },
+        {
+          "type": "scorched_earth",
+          "victims_group": "Muslim/Turkish civilians in burned towns and villages",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Sources report large-scale destruction, including 30,000+ buildings and 250+ villages burned in one summary and 160,739 destroyed buildings in McCarthy's discussion of Lausanne-era Turkish statistics. Mortality attributable to this destruction cannot be separated cleanly.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919%E2%80%931922)",
+            "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Turkish National Movement / Ankara Government",
+      "members": [
+        "Turkish National Movement",
+        "Grand National Assembly government",
+        "Turkish Nationalist Army",
+        "Kuva-yi Milliye irregulars",
+        "local Turkish nationalist irregulars"
+      ],
+      "military_killed": {
+        "low": 11641,
+        "high": 22791,
+        "point": 11641,
+        "notes": "Low/point adds 9,167 killed and 2,474 died of wounds or non-combat causes. High adds 11,150 missing, but this may overcount because missing and prisoner categories are uncertain. OnWar gives 20,000 Turkish fatalities for the narrower 1921\u20131922 interstate-war coding.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919%E2%80%931922)",
+          "https://en.wikipedia.org/wiki/Turkish_War_of_Independence",
+          "https://www.onwar.com/data/greekturk1921.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 10000,
+        "high": 150000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "fire, massacre, looting, execution",
+            "victims_group": "Greek and Armenian civilians in Smyrna/Izmir",
+            "low": 10000,
+            "high": 125000,
+            "notes": "Deaths from the Great Fire of Smyrna and associated massacres are commonly estimated at 10,000\u2013125,000. Norman Naimark is summarized as regarding 10,000\u201315,000 as more realistic, while larger estimates include 50,000 or 100,000+.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Burning_of_Smyrna",
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+              "https://en.wikipedia.org/wiki/Greek_genocide"
+            ]
+          },
+          {
+            "cause": "massacre and village destruction",
+            "victims_group": "Greek civilians in Izmit region",
+            "low": 12000,
+            "high": 12000,
+            "notes": "Allied report summarized 12,000 Greeks massacred and 30 villages destroyed in the Izmit region.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          },
+          {
+            "cause": "deportation/execution",
+            "victims_group": "Greek men of Ayvalik",
+            "low": 2977,
+            "high": 2977,
+            "notes": "About 3,000 Greek men remained; only 23 returned, implying about 2,977 dead.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "Greek civilians in Akhisar",
+            "low": 7000,
+            "high": 7000,
+            "notes": "One cited estimate says 7,000 of 10,000 Greeks in Akhisar were slaughtered.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+            ]
+          }
+        ],
+        "notes": "The direct-killing high is approximate and deliberately not added mechanically event by event because some deaths are included in broader Greek genocide and Smyrna catastrophe estimates.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Burning_of_Smyrna",
+          "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+          "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "deportation",
+          "victims_group": "Ottoman Greek civilians in Anatolia and Pontus",
+          "low": 264000,
+          "high": 750000,
+          "point": 264000,
+          "notes": "Rummel estimates 264,000 Greek civilians killed by Turkish nationalist forces during 1919\u20131922. The 750,000 high belongs to the wider academic range for Ottoman Greek deaths across the 1914\u20131922/23 period and therefore overextends the specific war period.",
+          "sources": [
+            "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM",
+            "https://en.wikipedia.org/wiki/Greek_genocide",
+            "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey"
+          ]
+        },
+        {
+          "type": "death_marches",
+          "victims_group": "Greeks of Samsun/Pontus",
+          "low": 10000,
+          "high": 11000,
+          "point": null,
+          "notes": "Samsun deportations are summarized as 21,000 deported and about 10,000 dead; ICRC article states that violence in Pontus killed an estimated 11,000 people. These may overlap.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+            "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/"
+          ]
+        },
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Greek Orthodox Christians of Turkey and Muslims of Greece",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The 1923 Lausanne Convention made the exchange compulsory from 1 May 1923. ICRC summarizes the exchange as involving roughly 1.5 million people. This is displacement rather than a death toll, but it was the institutional endpoint of wartime ethnic cleansing.",
+          "sources": [
+            "https://en.wikisource.org/wiki/Convention_Concerning_the_Exchange_of_Greek_and_Turkish_Populations",
+            "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 35881,
+    "military_high": 65126,
+    "civilian_low": 279000,
+    "civilian_high": 1390000,
+    "grand_low": 314881,
+    "grand_high": 1455126,
+    "notes": "Military low adds Greek 24,240 and Turkish 11,641. Military high adds missing categories for both sides. Civilian low adds Rummel's 264,000 Greek civilian deaths in 1919\u20131922 and his minimum 15,000 Muslim/Turkish civilians killed by Greek forces. Civilian high adds the wider 750,000 upper estimate for Ottoman Greek deaths in 1914\u20131922/23 and McCarthy's contested 640,000 Muslim/Turkish population-loss estimate for Greek/British zones. The high is an outer bound of claims, not a best estimate."
+  },
+  "key_atrocities": [
+    {
+      "name": "Greek landing at Smyrna",
+      "year": 1919,
+      "perpetrator": "Kingdom of Greece / local Greek actors",
+      "victims_group": "Turkish civilians and some Greeks",
+      "low": 400,
+      "high": 500,
+      "notes": "Landing on 15\u201316 May 1919 degenerated into riot, looting, rape, beating, and killing.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Battle and massacres of Aydin",
+      "year": 1919,
+      "perpetrator": "Both sides",
+      "victims_group": "Greek and Turkish civilians",
+      "low": 2700,
+      "high": 3500,
+      "notes": "Reported 1,500\u20132,000 Greeks and 1,200\u20131,500 Turks killed amid reciprocal violence and destruction.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Yalova-Gemlik massacres",
+      "year": 1921,
+      "perpetrator": "Greek troops and local Christian irregulars",
+      "victims_group": "Muslim/Turkish civilians",
+      "low": 5500,
+      "high": 9100,
+      "notes": "Some estimates give 5,500\u20139,100, but Gingeras notes much lower directly documented figures in one sample. ICRC/Gehri reported systematic terror, massacres, and village burning.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+        "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/"
+      ]
+    },
+    {
+      "name": "Izmit region massacres",
+      "year": 1921,
+      "perpetrator": "Turkish irregulars and nationalist army",
+      "victims_group": "Greek civilians",
+      "low": 12000,
+      "high": 12000,
+      "notes": "Allied report summarized 12,000 Greeks massacred and 30 villages destroyed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Greek-perpetrated Izmit massacre",
+      "year": 1921,
+      "perpetrator": "Greek Army",
+      "victims_group": "Muslim/Turkish civilians",
+      "low": 300,
+      "high": 300,
+      "notes": "Toynbee described over 300 missing/dead Muslim civilians after Greek troops shot men in batches.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Samsun deportations",
+      "year": 1921,
+      "perpetrator": "Turkish nationalist forces and irregulars",
+      "victims_group": "Pontic Greek civilians",
+      "low": 10000,
+      "high": 10000,
+      "notes": "Reported 21,000 deported and about 10,000 dead.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Burning and massacres during Greek retreat in Manisa and Turgutlu",
+      "year": 1922,
+      "perpetrator": "Greek Army",
+      "victims_group": "Muslim/Turkish civilians",
+      "low": 5355,
+      "high": null,
+      "notes": "Manisa is listed with 4,355 deaths and Turgutlu with at least 1,000; Turgutlu's much higher figures are contested.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    },
+    {
+      "name": "Great Fire of Smyrna and associated massacres",
+      "year": 1922,
+      "perpetrator": "Turkish soldiers/irregulars in most non-Turkish scholarly accounts; responsibility disputed by Turkish/pro-Turkish accounts",
+      "victims_group": "Greek and Armenian civilians",
+      "low": 10000,
+      "high": 125000,
+      "notes": "Greek and Armenian deaths from the fire and accompanying massacres are commonly estimated at 10,000\u2013125,000.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Burning_of_Smyrna",
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+        "https://en.wikipedia.org/wiki/Greek_genocide"
+      ]
+    },
+    {
+      "name": "Ayvalik and Cunda Island killings/deportations",
+      "year": 1922,
+      "perpetrator": "Turkish forces",
+      "victims_group": "Greek civilians",
+      "low": 2977,
+      "high": null,
+      "notes": "About 3,000 Greek men of Ayvalik were deported inland and only 23 returned; several hundred civilians were killed on Cunda Island.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Military losses are relatively well bounded but still affected by missing/prisoner overlap. Civilian losses are highly contested and often come from demographic deficits, refugee counts, atrocity reports, and politicized national narratives. The largest Muslim/Turkish figure, 640,000, is from McCarthy and is criticized as arbitrary in its attribution to the Greek/British zones. The largest Greek figures often cover the wider 1914\u20131923 Ottoman Greek genocide rather than only the 1919\u20131922 Greco-Turkish War.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/article/greco-turkish-war-1919-1922/",
+      "title": "Greco-Turkish War 1919-1922",
+      "publisher": "1914-1918 Online / Freie Universit\u00e4t Berlin"
+    },
+    {
+      "url": "https://blogs.icrc.org/cross-files/an-icrc-delegate-alone-at-the-heart-of-the-greco-turkish-war-1919-1923/",
+      "title": "An ICRC delegate alone at the heart of the Greco-Turkish War (1919-1923)",
+      "publisher": "International Committee of the Red Cross Archives"
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Convention_Concerning_the_Exchange_of_Greek_and_Turkish_Populations",
+      "title": "Convention Concerning the Exchange of Greek and Turkish Populations",
+      "publisher": "Wikisource / Lausanne Convention text"
+    },
+    {
+      "url": "https://www.hawaii.edu/powerkills/SOD.CHAP5.HTM",
+      "title": "Statistics of Turkey's Democide",
+      "publisher": "R. J. Rummel, University of Hawaii"
+    },
+    {
+      "url": "https://www.onwar.com/data/greekturk1921.html",
+      "title": "Second Greco-Turkish War 1921-1922",
+      "publisher": "OnWar / Armed Conflict Events Data"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919%E2%80%931922)",
+      "title": "Greco-Turkish War (1919\u20131922)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_massacres_during_the_Greco-Turkish_War_(1919%E2%80%931922)",
+      "title": "List of massacres during the Greco-Turkish War (1919\u20131922)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Burning_of_Smyrna",
+      "title": "Burning of Smyrna",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Greek_genocide",
+      "title": "Greek genocide",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey",
+      "title": "Population exchange between Greece and Turkey",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

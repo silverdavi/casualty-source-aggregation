@@ -1,0 +1,372 @@
+{
+  "war_id": "korean_war",
+  "name": "Korean War",
+  "start_year": 1950,
+  "end_year": 1953,
+  "ongoing": false,
+  "regions": [
+    "Korean Peninsula",
+    "Northeast Asia"
+  ],
+  "summary": "The Korean War was fought from June 25, 1950 to the July 27, 1953 armistice between South Korea and a UN Command led by the United States, and North Korea supported by China and the Soviet Union. It produced roughly 740,000 to 1.15 million military deaths and about 1.6 to 3.0 million civilian deaths. Civilian deaths are especially difficult to attribute cleanly because massacres, bombing, front-line combat, forced displacement, starvation, exposure, and disappearances overlapped.",
+  "sides": [
+    {
+      "name": "UN/ROK coalition",
+      "members": [
+        "Republic of Korea",
+        "United States",
+        "United Kingdom",
+        "Canada",
+        "Australia",
+        "Turkey",
+        "Philippines",
+        "Thailand",
+        "France",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg",
+        "Greece",
+        "Colombia",
+        "Ethiopia",
+        "New Zealand",
+        "South Africa",
+        "Other UN medical and support contributors"
+      ],
+      "military_killed": {
+        "low": 219239,
+        "high": 226413,
+        "point": 219239,
+        "notes": "Low/point uses ROK 178,569 plus UN/U.S.-inclusive coalition accounting of 40,670 from the Korean War Legacy Foundation table. High adds 7,174 KATUSA listed on the U.S. memorial wall as a possible separate category, although this may overlap with ROK accounting. U.S. deaths are cross-checked against CRS/DoD figure of 36,574 in-theater deaths.",
+        "sources": [
+          "https://koreanwarlegacy.org/wp-content/uploads/2022/07/Honoring-Sacrifice_Final_full.pdf",
+          "https://www.congress.gov/crs-product/RL32492",
+          "https://www.nps.gov/kowa/learn/historyculture/korean-war-overview.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 347291,
+        "high": 487291,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution/massacre",
+            "victims_group": "South Korean civilians accused of communism or leftist sympathies, including Bodo League members and political prisoners",
+            "low": 60000,
+            "high": 200000,
+            "notes": "Estimates for the Bodo League and related ROK political massacres range from 60,000 to 200,000; AP reported a TRC-linked estimate of 100,000 as very conservative.",
+            "sources": [
+              "https://apjjf.org/charles-j-hanley/2827/article",
+              "https://www.historynewsnetwork.org/article/charles-j-hanley-jae-soon-chang-summer-of-terror-t",
+              "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+            ]
+          },
+          {
+            "cause": "bombing/strafing/ground fire",
+            "victims_group": "South Korean civilians killed by U.S. forces",
+            "low": 5291,
+            "high": 5291,
+            "notes": "ROK Truth and Reconciliation Commission official tally reported at least 5,291 civilians killed by U.S. forces during the war; this is not necessarily a complete total.",
+            "sources": [
+              "https://www.koreatimes.co.kr/southkorea/20110104/5000-civilians-killed-by-us-during-korean-war",
+              "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+            ]
+          },
+          {
+            "cause": "bombing",
+            "victims_group": "North Korean civilians",
+            "low": 282000,
+            "high": 282000,
+            "notes": "A Soviet-linked report cited by the Wilson Center gives 282,000 North Korean civilians killed in bombing raids. This is a concrete estimate for bombing deaths, not a total for all UN/ROK-caused civilian deaths in North Korea.",
+            "sources": [
+              "https://www.wilsoncenter.org/article/new-evidence-north-korean-war-losses"
+            ]
+          },
+          {
+            "cause": "refugee massacre",
+            "victims_group": "South Korean refugees at No Gun Ri",
+            "low": 150,
+            "high": 300,
+            "notes": "No Gun Ri estimates vary; South Korean memorial/investigative estimates are commonly 250-300 killed, while some U.S. materials used lower casualty language. Treated as an atrocity example likely included within broader U.S. civilian casualty tallies.",
+            "sources": [
+              "https://www.pbs.org/newshour/nation/media-jan-june01-nogunri_01-11",
+              "https://apnews.com/article/1556f680440fa52050c7654bb826b5c0"
+            ]
+          }
+        ],
+        "notes": "The low/high direct-civilian totals add only the large quantified buckets: ROK political massacres, U.S. force killings in South Korea, and the Soviet estimate of bombing deaths in North Korea. This is a floor and does not include every shelling, front-line killing, or unrecorded massacre.",
+        "sources": [
+          "https://apjjf.org/charles-j-hanley/2827/article",
+          "https://www.historynewsnetwork.org/article/charles-j-hanley-jae-soon-chang-summer-of-terror-t",
+          "https://www.koreatimes.co.kr/southkorea/20110104/5000-civilians-killed-by-us-during-korean-war",
+          "https://www.wilsoncenter.org/article/new-evidence-north-korean-war-losses",
+          "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "forced_march",
+          "victims_group": "South Korean National Defense Corps conscripts",
+          "low": 50000,
+          "high": 90000,
+          "point": null,
+          "notes": "South Korean conscripts died from starvation, disease, and exposure after corruption and embezzlement in the National Defense Corps supply system; some sources give an upper figure as high as 120,000, but 50,000-90,000 is the more commonly cited range.",
+          "sources": [
+            "https://en.wikipedia-on-ipfs.org/wiki/National_Defense_Corps_incident",
+            "https://www.dl1.en-us.nina.az/War_crimes_in_the_Korean_War.html"
+          ]
+        },
+        {
+          "type": "infrastructure_destruction",
+          "victims_group": "North Korean civilians affected by bombing, destruction of infrastructure, displacement, starvation, and exposure",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The UN/U.S. bombing campaign destroyed much of North Korea's infrastructure. Available sources provide a bombing-death estimate of 282,000 and larger missing/refugee categories, but no defensible separate subtotal for indirect deaths from infrastructure destruction.",
+          "sources": [
+            "https://www.wilsoncenter.org/article/new-evidence-north-korean-war-losses",
+            "https://www.cambridge.org/core/books/civilianization-of-war/creating-a-cordon-sanitaire-us-strategic-bombing-and-civilian-victimization-in-the-korean-war/FF5B117C50E6521F0115345B139B831C"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DPRK/PRC/Soviet coalition",
+      "members": [
+        "Democratic People's Republic of Korea",
+        "People's Republic of China",
+        "Chinese People's Volunteers",
+        "Soviet Union"
+      ],
+      "military_killed": {
+        "low": 521256,
+        "high": 922299,
+        "point": 719952,
+        "notes": "Low uses DPRK 294,151 dead plus 91,206 missing, China 135,600, and Soviet 299. Point uses DPRK 522,000, China official 197,653, and Soviet 299. High uses DPRK 522,000, Chinese all-cause estimates up to about 400,000, and Soviet 299.",
+        "sources": [
+          "https://koreanwarlegacy.org/wp-content/uploads/2022/07/Honoring-Sacrifice_Final_full.pdf",
+          "https://eng.mod.gov.cn/xb/News_213114/TopStories/4808324.html",
+          "https://en.people.cn/n3/2020/0928/c90000-9765025.html",
+          "https://historyguy.com/korean_war_casualties_and_statistics.htm"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 128000,
+        "high": null,
+        "point": 128000,
+        "breakdown": [
+          {
+            "cause": "massacre/execution/political atrocity",
+            "victims_group": "South Korean civilians under North Korean occupation or killed by KPA, North Korean police/security bodies, local leftists, or communist guerrillas",
+            "low": 128000,
+            "high": 128000,
+            "notes": "A 1953 South Korean government survey reported 128,000 civilians murdered by political atrocities. This is used as a proxy for direct atrocity killings but is not a perfect perpetrator-coded total.",
+            "sources": [
+              "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001314334",
+              "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+            ]
+          },
+          {
+            "cause": "hospital massacre",
+            "victims_group": "Doctors, nurses, patients, civilians, and wounded soldiers at Seoul National University Hospital",
+            "low": 700,
+            "high": 900,
+            "notes": "Commonly reported death toll for the June 28, 1950 Seoul National University Hospital massacre by KPA forces. Treated as an atrocity example likely included within broader direct killing totals.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Seoul_National_University_Hospital_massacre"
+            ]
+          },
+          {
+            "cause": "local massacre",
+            "victims_group": "South Korean civilians in TRC-verified cases such as Yangpyeong, Muan, Geumsan, and Dangjin",
+            "low": 415,
+            "high": 525,
+            "notes": "Illustrative TRC examples include 61 at Yangpyeong, 96 at Muan, at least 118 at Geumsan, and 140-250 at Dangjin. These are examples, not a national subtotal.",
+            "sources": [
+              "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+            ]
+          }
+        ],
+        "notes": "The direct-civilian point estimate is based on the South Korean survey category of civilians murdered by political atrocities. The true high is unknown because many missing and abducted civilians may have died but cannot be counted securely.",
+        "sources": [
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001314334",
+          "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "abduction",
+          "victims_group": "South Korean civilian abductees taken to North Korea during the war",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "South Korean records list tens of thousands of wartime abductees, including a 1952 list of 82,959 names and estimates of at least 120,000 abductees, but the number who died as a result is not securely quantified.",
+          "sources": [
+            "https://www.ohchr.org/sites/default/files/lib-docs/HRBodies/UPR/Documents/Session6/KP/CHRP-KWARI_PRK_UPR-S06_2009.pdf",
+            "https://repo.kinu.or.kr/bitstream/2015.oak/1566/1/0001422281.pdf"
+          ]
+        },
+        {
+          "type": "displacement",
+          "victims_group": "Korean civilians displaced by the initial invasion, occupation, retreat, and renewed offensives",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "North Korea's invasion and later Chinese intervention contributed to mass displacement and indirect mortality, but available sources do not provide a defensible DPRK/PRC-specific indirect-death subtotal separable from the overall civilian death toll.",
+          "sources": [
+            "https://anzacportal.dva.gov.au/wars-and-missions/korean-war-1950-1953/events/ceasefire-panmunjon-27-july-1953/casualties",
+            "https://www.britannica.com/event/Korean-War"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 740495,
+    "military_high": 1148712,
+    "civilian_low": 1600000,
+    "civilian_high": 3000000,
+    "grand_low": 2340495,
+    "grand_high": 4148712,
+    "notes": "Military totals roll up the per-side low/high estimates. Civilian totals use a conservative 1.6 million from Australian DVA's 700,000 South Korean plus 900,000 North Korean estimate, and a high of 3.0 million from broader scholarly summaries. Perpetrator-specific direct and indirect civilian buckets cannot be summed to the total civilian death toll without double counting and large unknowns."
+  },
+  "key_atrocities": [
+    {
+      "name": "Bodo League massacre and related ROK political executions",
+      "year": 1950,
+      "perpetrator": "UN/ROK coalition",
+      "victims_group": "South Korean civilians accused of communism or leftist sympathies",
+      "low": 60000,
+      "high": 200000,
+      "notes": "Large-scale ROK executions of alleged leftists and Bodo League members in the opening months of the war; AP reported a TRC-linked estimate of 100,000 as very conservative.",
+      "sources": [
+        "https://apjjf.org/charles-j-hanley/2827/article",
+        "https://www.historynewsnetwork.org/article/charles-j-hanley-jae-soon-chang-summer-of-terror-t"
+      ]
+    },
+    {
+      "name": "U.S./UN bombing of North Korea",
+      "year": null,
+      "perpetrator": "UN/ROK coalition",
+      "victims_group": "North Korean civilians",
+      "low": 282000,
+      "high": 282000,
+      "notes": "A Soviet-linked report cited by the Wilson Center gives 282,000 civilian deaths from bombing raids; the broader indirect death toll from infrastructure destruction is unknown.",
+      "sources": [
+        "https://www.wilsoncenter.org/article/new-evidence-north-korean-war-losses"
+      ]
+    },
+    {
+      "name": "No Gun Ri massacre",
+      "year": 1950,
+      "perpetrator": "UN/ROK coalition",
+      "victims_group": "South Korean refugees",
+      "low": 150,
+      "high": 300,
+      "notes": "U.S. troops killed South Korean refugees from July 26-29, 1950. South Korean memorial estimates commonly cite 250-300 killed, while U.S. materials use lower or less specific casualty language.",
+      "sources": [
+        "https://www.pbs.org/newshour/nation/media-jan-june01-nogunri_01-11",
+        "https://apnews.com/article/1556f680440fa52050c7654bb826b5c0"
+      ]
+    },
+    {
+      "name": "National Defense Corps Incident",
+      "year": 1951,
+      "perpetrator": "UN/ROK coalition",
+      "victims_group": "South Korean conscripts",
+      "low": 50000,
+      "high": 90000,
+      "notes": "Conscripts died of starvation, disease, and exposure after corruption and embezzlement of food and supply funds.",
+      "sources": [
+        "https://en.wikipedia-on-ipfs.org/wiki/National_Defense_Corps_incident",
+        "https://www.dl1.en-us.nina.az/War_crimes_in_the_Korean_War.html"
+      ]
+    },
+    {
+      "name": "Seoul National University Hospital massacre",
+      "year": 1950,
+      "perpetrator": "DPRK/PRC/Soviet coalition",
+      "victims_group": "Hospital staff, patients, civilians, and wounded soldiers",
+      "low": 700,
+      "high": 900,
+      "notes": "KPA forces killed people at Seoul National University Hospital on June 28, 1950.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seoul_National_University_Hospital_massacre"
+      ]
+    },
+    {
+      "name": "DPRK/leftist occupation massacres in South Korea",
+      "year": 1950,
+      "perpetrator": "DPRK/PRC/Soviet coalition",
+      "victims_group": "South Korean civilians accused of right-wing or ROK loyalties",
+      "low": 415,
+      "high": 525,
+      "notes": "Illustrative TRC-verified cases include Yangpyeong, Muan, Geumsan, and Dangjin. These are examples only, not a national total.",
+      "sources": [
+        "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is the civilian toll and its attribution by perpetrator. Military figures vary by definition, especially for U.S. in-theater versus Korean War-era deaths and for Chinese battle deaths versus all-cause deaths. TRC figures verify particular cases but do not constitute a complete census. North Korean civilian losses are especially hard to divide between direct bombing deaths, combat deaths, missing persons, refugees, starvation, exposure, and deaths from infrastructure destruction.",
+  "sources": [
+    {
+      "url": "https://www.congress.gov/crs-product/RL32492",
+      "title": "American War and Military Operations Casualties: Lists and Statistics",
+      "publisher": "Congressional Research Service / Congress.gov"
+    },
+    {
+      "url": "https://koreanwarlegacy.org/wp-content/uploads/2022/07/Honoring-Sacrifice_Final_full.pdf",
+      "title": "Honoring Sacrifice: A Multidisciplinary Approach to the Korean War",
+      "publisher": "Korean War Legacy Foundation"
+    },
+    {
+      "url": "https://anzacportal.dva.gov.au/wars-and-missions/korean-war-1950-1953/events/ceasefire-panmunjon-27-july-1953/casualties",
+      "title": "Casualties: Korean War, 1950-1953",
+      "publisher": "Australian Department of Veterans' Affairs"
+    },
+    {
+      "url": "https://www.britannica.com/event/Korean-War",
+      "title": "Korean War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.usip.org/sites/default/files/ROL/South_Korea_2005_reportEnglish.pdf",
+      "title": "Truth and Reconciliation Commission, Republic of Korea Report",
+      "publisher": "Truth and Reconciliation Commission / USIP"
+    },
+    {
+      "url": "https://apjjf.org/charles-j-hanley/2827/article",
+      "title": "Summer of Terror: At least 100,000 said executed by Korean ally of US in 1950",
+      "publisher": "Asia-Pacific Journal / Associated Press"
+    },
+    {
+      "url": "https://www.historynewsnetwork.org/article/charles-j-hanley-jae-soon-chang-summer-of-terror-t",
+      "title": "Summer of Terror: The massacre of 100,000 by South Korea",
+      "publisher": "History News Network / Associated Press"
+    },
+    {
+      "url": "https://www.koreatimes.co.kr/southkorea/20110104/5000-civilians-killed-by-us-during-korean-war",
+      "title": "5,000 civilians killed by US during Korean War",
+      "publisher": "The Korea Times"
+    },
+    {
+      "url": "https://www.wilsoncenter.org/article/new-evidence-north-korean-war-losses",
+      "title": "New Evidence on North Korean War Losses",
+      "publisher": "Wilson Center"
+    },
+    {
+      "url": "https://eng.mod.gov.cn/xb/News_213114/TopStories/4808324.html",
+      "title": "Burial ceremony held for remains of Korean War soldiers in NE China",
+      "publisher": "Ministry of National Defense of the People's Republic of China"
+    },
+    {
+      "url": "https://en.people.cn/n3/2020/0928/c90000-9765025.html",
+      "title": "Remains of 117 Chinese soldiers killed in Korean War returned",
+      "publisher": "People's Daily Online / Xinhua"
+    },
+    {
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001314334",
+      "title": "The Characteristics and Pattern of South Korean Civilian Casualties based on Korean Government Survey Reports during the Korean War Period",
+      "publisher": "Korea Citation Index"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "war_id": "cambodian_vietnamese_war",
+  "name": "Cambodian-Vietnamese War",
+  "start_year": 1978,
+  "end_year": 1989,
+  "ongoing": false,
+  "regions": [
+    "Cambodia",
+    "Vietnam",
+    "Thai-Cambodian border"
+  ],
+  "summary": "The Cambodian-Vietnamese War began as escalating Khmer Rouge border attacks and massacres against Vietnam, followed by Vietnam's full invasion of Democratic Kampuchea on 25 December 1978 and the capture of Phnom Penh in January 1979. From 1979 to 1989, Vietnam and the Vietnamese-backed People's Republic of Kampuchea fought a counterinsurgency war against the Khmer Rouge and later the Coalition Government of Democratic Kampuchea. Narrow battle-death estimates are roughly 25,000 to 200,000, but a broader accounting that includes 1978 Khmer Rouge mass killings tied to the Vietnam conflict, the 1979-1980 famine after-effects, and K5 forced-labor deaths rises into the hundreds of thousands.",
+  "sides": [
+    {
+      "name": "Vietnamese-led side",
+      "members": [
+        "Socialist Republic of Vietnam",
+        "People's Army of Vietnam",
+        "Kampuchean United Front for National Salvation",
+        "People's Republic of Kampuchea",
+        "Kampuchean People's Revolutionary Armed Forces"
+      ],
+      "military_killed": {
+        "low": 40300,
+        "high": 85000,
+        "point": 55300,
+        "notes": "Low combines 25,300 Vietnamese state deaths and 15,000 Cambodian state deaths in COW/Clodfelter-style accounting. High combines Vietnam's 1988 claim of 55,000 Vietnamese soldiers killed with a Cambodian government/UCDP note of over 10,000 government troops killed in combat and 20,000 deaths from disease since 1979. Point combines 25,300 Vietnamese and 30,000 PRK/Cambodian government combat/disease deaths.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+          "https://www.latimes.com/archives/la-xpm-1988-07-01-mn-6370-story.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "invasion, shelling, refugee-camp attacks, occupation violence",
+            "victims_group": "Cambodian civilians and refugees",
+            "low": null,
+            "high": null,
+            "notes": "No defensible aggregate found that cleanly attributes direct civilian killings to Vietnamese/PRK forces alone. Eckhardt gives 14,000 civilian war-related deaths for 1978-1979 and SIPRI gives 14,000 civilian deaths for 1979-1987, but these are not perpetrator-specific. Reported camp attacks caused casualties, including about 100 wounded Cambodian civilians at Nong Chan in 1983 and 85 Cambodian civilians killed in an April border-camp attack, but these are incident fragments.",
+            "sources": [
+              "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+              "https://www.upi.com/Archives/1983/01/31/Vietnamese-overrun-cambodian-refugee-camp/2798412837200/",
+              "https://en.wikipedia.org/wiki/Vietnamese_border_raids_in_Thailand"
+            ]
+          }
+        ],
+        "notes": "Civilian deaths caused by Vietnamese/PRK operations are documented, but the literature does not provide a reliable war-wide perpetrator-attributed total.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+          "https://www.upi.com/Archives/1983/01/31/Vietnamese-overrun-cambodian-refugee-camp/2798412837200/",
+          "https://en.wikipedia.org/wiki/Vietnamese_border_raids_in_Thailand"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "forced_labor",
+          "victims_group": "Cambodian civilians conscripted for the K5 border-defense project",
+          "low": 1000,
+          "high": 25000,
+          "point": null,
+          "notes": "HRW reports K5 caused many thousands of deaths from disease and landmines. It also notes that if official figures were accurate, a 5-10% death rate among early workers would suggest about 1,000 malaria deaths. A Cambodia Daily summary of Gottesman reports a conservative calculation of 25,000 deaths if half a million participated and 5% died.",
+          "sources": [
+            "https://www.hrw.org/report/2015/01/12/30-years-hun-sen/violence-repression-and-corruption-cambodia",
+            "https://english.cambodiadaily.com/2009/09/02/remembering-the-vietnamese/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anti-Vietnamese side",
+      "members": [
+        "Democratic Kampuchea",
+        "Khmer Rouge",
+        "Party of Democratic Kampuchea",
+        "Coalition Government of Democratic Kampuchea",
+        "Khmer People's National Liberation Front",
+        "Khmer People's National Liberation Armed Forces",
+        "FUNCINPEC",
+        "Arm\u00e9e Nationale Sihanoukiste"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable killed-only aggregate found for Khmer Rouge/CGDK combatants. PRIO documentation cites Khieu Samphan's claim that Khmer Rouge forces lost 30,000 killed or wounded from December 1978 through May 1979 and 2,000 from June 1979 through February 1980, but these are killed-and-wounded figures, not killed-only deaths.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 125000,
+        "high": 300000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "cross-border massacres and attacks",
+            "victims_group": "Vietnamese civilians in Vietnam",
+            "low": 5000,
+            "high": 30000,
+            "notes": "A neutral source cited by Clodfelter/PRIO estimated 5,000 Vietnamese deaths at Cambodian hands since April 1975; Vietnam claimed 30,000 civilians died in the 1975-1978 border war. The Ba Chuc massacre alone killed 3,157 civilians in April 1978.",
+            "sources": [
+              "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+              "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre"
+            ]
+          },
+          {
+            "cause": "genocide and mass execution",
+            "victims_group": "Ethnic Vietnamese civilians inside Cambodia",
+            "low": 20000,
+            "high": 20000,
+            "notes": "Expert summaries of ECCC-related findings report that while most ethnic Vietnamese were deported, about 20,000 who remained were killed by 1979.",
+            "sources": [
+              "https://www.rfa.org/english/news/cambodia/genocide-11162018160257.html",
+              "https://www.asil.org/ILIB/cambodian-war-crimes-tribunal-convicts-two-cambodian-genocide-crimes-november-16-2018"
+            ]
+          },
+          {
+            "cause": "massacre and purge",
+            "victims_group": "Eastern Zone Cambodians accused of pro-Vietnamese disloyalty",
+            "low": 100000,
+            "high": 250000,
+            "notes": "The Eastern Zone purge in 1978 is estimated at about 100,000 to 250,000 victims. It overlapped the Vietnam conflict but is also part of the broader Cambodian genocide.",
+            "sources": [
+              "https://www.cambodiatribunal.org/sites/default/files/reports/KHMER%20ROUGE%20AND%20THE%20CRIMES%20OF%20GENOCIDE.pdf",
+              "https://en.wikipedia.org/wiki/Eastern_Zone_massacres"
+            ]
+          }
+        ],
+        "notes": "The total sums three categories tied to the Vietnam conflict: Vietnamese border civilians, ethnic Vietnamese civilians in Cambodia, and Eastern Zone purge victims. It excludes the full 1975-1979 Cambodian genocide except for the parts most directly tied to the Vietnam conflict.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+          "https://www.rfa.org/english/news/cambodia/genocide-11162018160257.html",
+          "https://www.cambodiatribunal.org/sites/default/files/reports/KHMER%20ROUGE%20AND%20THE%20CRIMES%20OF%20GENOCIDE.pdf",
+          "https://en.wikipedia.org/wiki/Eastern_Zone_massacres"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Cambodian civilians after the collapse of Democratic Kampuchea",
+          "low": 300000,
+          "high": 300000,
+          "point": 300000,
+          "notes": "An additional estimated 300,000 Cambodians starved in 1979-1980, largely as a result of the after-effects of Khmer Rouge policy. The figure is treated as an indirect-deaths estimate, distinct from narrow battle-death totals.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Khmer_Rouge",
+            "https://en.wikipedia.org/wiki/History_of_Cambodia"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 40300,
+    "military_high": 85000,
+    "civilian_low": 426000,
+    "civilian_high": 625000,
+    "grand_low": 466300,
+    "grand_high": 710000,
+    "notes": "Grand totals are a broad accounting that includes Vietnam/PRK military killed, Khmer Rouge-attributed direct civilian killings tied to the Vietnam conflict, the post-1979 famine after-effects attributed largely to Khmer Rouge policy, and K5 forced-labor deaths. Anti-Vietnamese combatant killed-only deaths are unknown and not included, so the military subtotal is incomplete. A narrow battle/war-death total from PRIO/OnWar is much lower, roughly 25,000-200,000, because it generally excludes famine and most genocide-related deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Eastern Zone massacres",
+      "year": 1978,
+      "perpetrator": "Khmer Rouge / Democratic Kampuchea",
+      "victims_group": "Eastern Zone Cambodians accused of pro-Vietnamese disloyalty",
+      "low": 100000,
+      "high": 250000,
+      "notes": "Mass purge of Cambodia's Eastern Zone in 1978; estimates vary from about 100,000 to 250,000 victims.",
+      "sources": [
+        "https://www.cambodiatribunal.org/sites/default/files/reports/KHMER%20ROUGE%20AND%20THE%20CRIMES%20OF%20GENOCIDE.pdf",
+        "https://en.wikipedia.org/wiki/Eastern_Zone_massacres"
+      ]
+    },
+    {
+      "name": "Ba Chuc massacre",
+      "year": 1978,
+      "perpetrator": "Khmer Rouge / Democratic Kampuchea",
+      "victims_group": "Vietnamese civilians",
+      "low": 3157,
+      "high": 3157,
+      "notes": "Mass killing of civilians in Ba Chuc, An Giang Province, Vietnam, in April 1978.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre"
+      ]
+    },
+    {
+      "name": "Genocide of ethnic Vietnamese in Cambodia",
+      "year": 1979,
+      "perpetrator": "Khmer Rouge / Democratic Kampuchea",
+      "victims_group": "Ethnic Vietnamese civilians",
+      "low": 20000,
+      "high": 20000,
+      "notes": "ECCC-related expert summaries report that about 20,000 ethnic Vietnamese who remained in Cambodia were killed by 1979.",
+      "sources": [
+        "https://www.rfa.org/english/news/cambodia/genocide-11162018160257.html",
+        "https://www.asil.org/ILIB/cambodian-war-crimes-tribunal-convicts-two-cambodian-genocide-crimes-november-16-2018"
+      ]
+    },
+    {
+      "name": "Vietnamese invasion and Khmer Rouge retreat",
+      "year": 1979,
+      "perpetrator": "Multiple / not cleanly attributable",
+      "victims_group": "Cambodian combatants and civilians",
+      "low": null,
+      "high": 100000,
+      "notes": "Clodfelter's fair estimate, cited in PRIO documentation, puts Cambodian deaths from the Vietnamese invasion and Khmer Rouge retreat around 100,000, but the number is not separable into combatant/civilian or perpetrator categories.",
+      "sources": [
+        "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+      ]
+    },
+    {
+      "name": "K5 forced-labor and mine-belt program",
+      "year": 1985,
+      "perpetrator": "People's Republic of Kampuchea / Vietnamese-led side",
+      "victims_group": "Cambodian civilians conscripted for border labor",
+      "low": 1000,
+      "high": 25000,
+      "notes": "Forced labor on Thai-border defenses led to deaths from malaria, disease, exhaustion, and landmines. Estimates range from about 1,000 implied by official-style figures to a conservative calculation of 25,000.",
+      "sources": [
+        "https://www.hrw.org/report/2015/01/12/30-years-hun-sen/violence-repression-and-corruption-cambodia",
+        "https://english.cambodiadaily.com/2009/09/02/remembering-the-vietnamese/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The conflict's casualty accounting is unusually sensitive to definitions. Narrow military-history and battle-death datasets produce roughly 25,000-200,000 deaths for the 1978-1989 war, while broader accounting that includes 1978 Khmer Rouge massacres tied to Vietnam, the 1979-1980 famine after-effects, and K5 deaths rises into the hundreds of thousands. The full 1975-1979 Khmer Rouge genocide, commonly estimated at 1.5-3 million deaths, is contextual and mostly excluded from the roll-up because most of it preceded the war period requested. Perpetrator attribution is strongest for Khmer Rouge massacres and weakest for civilian deaths during the Vietnamese invasion, retreat, border-camp fighting, landmine casualties, and guerrilla war.",
+  "sources": [
+    {
+      "url": "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+      "title": "PRIO Battle Deaths Dataset 3.0 Documentation",
+      "publisher": "Peace Research Institute Oslo / PRIO"
+    },
+    {
+      "url": "https://www.onwar.com/data/cambodia1978.html",
+      "title": "Cambodian War 1978-91",
+      "publisher": "OnWar"
+    },
+    {
+      "url": "https://www.prio.org/data/1",
+      "title": "PRIO Battle Deaths Dataset",
+      "publisher": "Peace Research Institute Oslo"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1988-07-01-mn-6370-story.html",
+      "title": "Hanoi Puts Its Cambodia Toll at 55,000 Dead",
+      "publisher": "Los Angeles Times"
+    },
+    {
+      "url": "https://www.hrw.org/report/2015/01/12/30-years-hun-sen/violence-repression-and-corruption-cambodia",
+      "title": "30 Years of Hun Sen: Violence, Repression, and Corruption in Cambodia",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://english.cambodiadaily.com/2009/09/02/remembering-the-vietnamese/",
+      "title": "Remembering the Vietnamese",
+      "publisher": "The Cambodia Daily"
+    },
+    {
+      "url": "https://www.rfa.org/english/news/cambodia/genocide-11162018160257.html",
+      "title": "UN War Tribunal Jails Cambodia Khmer Rouge Leaders For Life on Genocide Charges",
+      "publisher": "Radio Free Asia"
+    },
+    {
+      "url": "https://www.asil.org/ILIB/cambodian-war-crimes-tribunal-convicts-two-cambodian-genocide-crimes-november-16-2018",
+      "title": "Cambodian War Crimes Tribunal Convicts Two for Cambodian Genocide Crimes",
+      "publisher": "American Society of International Law"
+    },
+    {
+      "url": "https://www.cambodiatribunal.org/sites/default/files/reports/KHMER%20ROUGE%20AND%20THE%20CRIMES%20OF%20GENOCIDE.pdf",
+      "title": "The Khmer Rouge and the Crime of Genocide",
+      "publisher": "Cambodia Tribunal Monitor"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Eastern_Zone_massacres",
+      "title": "Eastern Zone massacres",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ba_Ch%C3%BAc_massacre",
+      "title": "Ba Chuc massacre",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.britannica.com/event/Cambodian-Genocide",
+      "title": "Cambodian genocide",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://apnews.com/article/b666fd9376a8ab49d708d7a163385579",
+      "title": "Cambodia's 'Day of Remembrance' marks the 50th anniversary of the Khmer Rouge genocide",
+      "publisher": "Associated Press"
+    },
+    {
+      "url": "https://archives2.the-monitor.org/en-gb/reports/2019/cambodia/casualties.aspx",
+      "title": "Cambodia: Casualties",
+      "publisher": "Landmine and Cluster Munition Monitor"
+    },
+    {
+      "url": "https://www.upi.com/Archives/1983/01/31/Vietnamese-overrun-cambodian-refugee-camp/2798412837200/",
+      "title": "Vietnamese overrun Cambodian refugee camp",
+      "publisher": "UPI Archives"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Vietnamese_border_raids_in_Thailand",
+      "title": "Vietnamese border raids in Thailand",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

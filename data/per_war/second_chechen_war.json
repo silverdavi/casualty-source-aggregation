@@ -1,0 +1,417 @@
+{
+  "war_id": "second_chechen_war",
+  "name": "Second Chechen War",
+  "start_year": 1999,
+  "end_year": 2009,
+  "ongoing": false,
+  "regions": [
+    "Chechnya",
+    "North Caucasus",
+    "Russian Federation"
+  ],
+  "summary": "The Second Chechen War was fought from 1999 to 2009 between the Russian Federation and pro-Moscow Chechen forces on one side and Chechen separatist/Islamist insurgents on the other. It began after incursions into Dagestan and renewed Russian operations in Chechnya, and formally ended when Russia lifted the Chechen counter-terrorist operation regime on April 16, 2009. Casualty figures are highly contested; the best-supported range is roughly 35,000 to 77,000 total deaths, with most civilian deaths attributable to Russian/federal and allied Chechen government operations.",
+  "sides": [
+    {
+      "name": "Russian Federation and pro-Moscow Chechen forces",
+      "members": [
+        "Russian Armed Forces",
+        "Russian Ministry of Internal Affairs troops",
+        "Federal Security Service (FSB)",
+        "pro-Moscow Chechen administration forces",
+        "Kadyrovtsy",
+        "Vostok Battalion",
+        "Zapad Battalion"
+      ],
+      "military_killed": {
+        "low": 6000,
+        "high": 12000,
+        "point": 8000,
+        "notes": "Official Russian army figures were lower and incomplete; independent estimates including police, Interior Ministry, FSB and allied Chechen units were higher. The point estimate follows the Hoover estimate of about 8,000 Russian military and police killed.",
+        "sources": [
+          "https://www.spacewar.com/2006/060116145728.x5evpt5s.html",
+          "https://www.kuna.net.kw/ArticlePrintPage.aspx?id=1320168&language=en",
+          "https://www.aljazeera.com/news/2003/8/8/russia-underplays-chechnya-deaths",
+          "https://www.hoover.org/research/forgotten-war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 20000,
+        "high": 45000,
+        "point": 25000,
+        "breakdown": [
+          {
+            "cause": "bombing_shelling_urban_assault",
+            "victims_group": "Chechen civilians and other civilians in Chechnya",
+            "low": 20000,
+            "high": 45000,
+            "notes": "Amnesty reported estimates of up to 25,000 killed since 1999, many in early aerial bombardment and fighting; Kramer estimated 40,000-45,000 civilians killed by the mid-2000s. Attribution is not perfectly separable, but human rights reporting identifies federal/pro-Moscow operations as the dominant cause.",
+            "sources": [
+              "https://amnesty.no/sites/default/files/51/Tsjetsjenia_rapp_2007.pdf",
+              "https://www.researchgate.net/publication/249564699_The_Perils_of_Counterinsurgency_Russia%27s_War_in_Chechnya",
+              "https://www.hoover.org/research/forgotten-war"
+            ]
+          },
+          {
+            "cause": "storming_of_grozny",
+            "victims_group": "Civilians in Grozny",
+            "low": null,
+            "high": 10500,
+            "notes": "Reporting citing Memorial/HRW gave as many as 10,500 civilian deaths during the winter 1999-2000 storming of Grozny. This is treated as part of the wider direct civilian-death total, not an addition.",
+            "sources": [
+              "https://www.abc.net.au/news/2005-08-16/chechnya-puts-wars--toll-at-160000/2081622",
+              "https://www.hrw.org/legacy/reports/pdfs/r/russia/rusch006.pdf"
+            ]
+          },
+          {
+            "cause": "massacre_summary_execution",
+            "victims_group": "Civilians in Staropromyslovski district, Alkhan-Yurt, Novye Aldi/Chernorechie",
+            "low": 115,
+            "high": null,
+            "notes": "HRW documented at least 38 civilians killed in Staropromyslovski, at least 17 in Alkhan-Yurt, and at least 60 in Novye Aldi/Chernorechie.",
+            "sources": [
+              "https://www.hrw.org/reports/2000/russia_chechnya/",
+              "https://www.hrw.org/reports/2000/russia_chechnya3/chech-summary.htm"
+            ]
+          },
+          {
+            "cause": "attack_on_fleeing_civilians",
+            "victims_group": "Civilians fleeing Grozny toward Ingushetia",
+            "low": 50,
+            "high": 100,
+            "notes": "HRW reported that Russian military aircraft strafed a civilian convoy on October 29, 1999, killing between 50 and 100 people.",
+            "sources": [
+              "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf"
+            ]
+          },
+          {
+            "cause": "market_attack",
+            "victims_group": "Civilians at Grozny central market",
+            "low": 100,
+            "high": null,
+            "notes": "HRW reported over 100 civilians killed in the October 21, 2000 attack on Grozny's central market.",
+            "sources": [
+              "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf"
+            ]
+          }
+        ],
+        "notes": "Direct civilian deaths are dominated by Russian/federal and pro-Moscow Chechen bombardment, artillery, sweep operations, executions, and indiscriminate or disproportionate force. Figures overlap across sources and are not cleanly additive.",
+        "sources": [
+          "https://amnesty.no/sites/default/files/51/Tsjetsjenia_rapp_2007.pdf",
+          "https://www.researchgate.net/publication/249564699_The_Perils_of_Counterinsurgency_Russia%27s_War_in_Chechnya",
+          "https://www.hrw.org/reports/2000/russia_chechnya/",
+          "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "disappearance_detention",
+          "victims_group": "Civilians and suspected insurgent supporters disappeared after abduction, arrest, detention, or sweep operations",
+          "low": 3000,
+          "high": 5000,
+          "point": 4000,
+          "notes": "Memorial, cited by Amnesty, estimated 3,000-5,000 people disappeared in Chechnya since 1999; Amnesty stated that state agents were allegedly responsible in the majority of cases. Some of these deaths likely overlap with broader civilian-death totals.",
+          "sources": [
+            "https://amnesty.no/sites/default/files/51/Tsjetsjenia_rapp_2007.pdf",
+            "https://www.hrw.org/world-report/2009/country-chapters/russia"
+          ]
+        },
+        {
+          "type": "filtration_camp",
+          "victims_group": "Detainees in filtration camps and ad hoc detention sites",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Amnesty reported systematic torture and ill-treatment in filtration camps and cited official Russian figures that 15,000 people had been detained by late summer 2000, but a separate death toll cannot be reliably isolated.",
+          "sources": [
+            "https://amnesty.no/sites/default/files/51/Tsjetsjenia_rapp_2007.pdf",
+            "https://www.hrw.org/sites/default/files/report_pdf/2000-chechnya-welcome-to-hell.pdf"
+          ]
+        },
+        {
+          "type": "displacement_disease_privation",
+          "victims_group": "Displaced Chechen civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Large-scale displacement and infrastructure destruction are documented, but no defensible separate indirect mortality estimate was found.",
+          "sources": [
+            "https://www.researchgate.net/publication/249564699_The_Perils_of_Counterinsurgency_Russia%27s_War_in_Chechnya"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chechen separatist and Islamist insurgent forces",
+      "members": [
+        "Chechen Republic of Ichkeria forces",
+        "Shamil Basayev faction",
+        "Riyadus-Salikhin / Riyad us-Saliheyn",
+        "Caucasus Emirate after 2007",
+        "foreign jihadist fighters including Khattab-linked networks"
+      ],
+      "military_killed": {
+        "low": 5000,
+        "high": 14113,
+        "point": 8000,
+        "notes": "The low reflects rebel-acknowledged losses by 1999-2004; the point follows the Hoover estimate of 8,000 Chechen separatist fighters killed; the high reflects Russian-reported militant deaths for the intense early period.",
+        "sources": [
+          "https://www.hoover.org/research/forgotten-war",
+          "https://www.europeanproceedings.com/article/10.15405/epsbs.2019.12.04.342",
+          "https://dweb3.wtf/ipfs/bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/wiki/Second_Chechen_War.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 900,
+        "high": 1300,
+        "point": 1000,
+        "breakdown": [
+          {
+            "cause": "apartment_bombings",
+            "victims_group": "Russian civilians in Buynaksk, Moscow, and Volgodonsk",
+            "low": 293,
+            "high": 293,
+            "notes": "RAND attributes the September 1999 apartment bombings to Chechen jihadists and gives 293 killed. Attribution is disputed, and Chechen leaders denied involvement.",
+            "sources": [
+              "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf"
+            ]
+          },
+          {
+            "cause": "hostage_taking",
+            "victims_group": "Moscow Dubrovka theater hostages",
+            "low": 129,
+            "high": 130,
+            "notes": "Chechen militants seized the theater; most hostage deaths occurred after Russian forces used gas, so attribution is causally mixed.",
+            "sources": [
+              "https://www.britannica.com/event/Moscow-theatre-hostage-crisis-of-2002",
+              "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf"
+            ]
+          },
+          {
+            "cause": "hostage_taking_massacre",
+            "victims_group": "Beslan school hostages, mostly children and parents",
+            "low": 330,
+            "high": 334,
+            "notes": "Militants linked to the Chechen separatist insurgency seized the school; later reporting gives 334 civilian deaths including 186 children.",
+            "sources": [
+              "https://www.britannica.com/event/Beslan-school-attack",
+              "https://www.lemonde.fr/en/international/article/2024/09/03/twenty-years-later-beslan-mothers-pain-has-not-subsided-while-putin-remains-indifferent_6724658_4.html"
+            ]
+          },
+          {
+            "cause": "civilian_aircraft_bombings",
+            "victims_group": "Passengers and crews of two Russian domestic flights",
+            "low": 89,
+            "high": 90,
+            "notes": "Female suicide bombers linked to Chechen insurgent networks destroyed two airliners in August 2004.",
+            "sources": [
+              "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf",
+              "https://en.wikipedia.org/wiki/2004_Russian_aircraft_bombings"
+            ]
+          },
+          {
+            "cause": "suicide_bombing_metro_train_public_targets",
+            "victims_group": "Civilians and mixed civilian/security targets in Russia and Chechnya",
+            "low": 200,
+            "high": null,
+            "notes": "RAND states that Chechen suicide attacks during 2000-2004 killed over 200 people, and lists individual attacks including 41 killed in a Moscow subway bombing and 44 killed in a Stavropol commuter train bombing.",
+            "sources": [
+              "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf"
+            ]
+          }
+        ],
+        "notes": "This range includes major civilian and mixed-target insurgent attacks associated with the Chechen conflict in Chechnya, the North Caucasus, and Russia proper. Some events have contested attribution or mixed causation.",
+        "sources": [
+          "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf",
+          "https://www.britannica.com/event/Moscow-theatre-hostage-crisis-of-2002",
+          "https://www.britannica.com/event/Beslan-school-attack"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 11000,
+    "military_high": 26113,
+    "civilian_low": 23900,
+    "civilian_high": 51300,
+    "grand_low": 34900,
+    "grand_high": 77413,
+    "notes": "Totals are approximate and not mechanically precise because civilian direct-death estimates overlap with disappearances, and some insurgent attacks outside Chechnya have mixed causation. Rounded headline range: about 35,000-77,000 total deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Storming and bombardment of Grozny",
+      "year": 1999,
+      "perpetrator": "Russian Federation and pro-Moscow Chechen forces",
+      "victims_group": "Civilians in Grozny",
+      "low": null,
+      "high": 10500,
+      "notes": "Reporting citing Memorial/HRW gave as many as 10,500 civilian deaths during the winter 1999-2000 assault on Grozny; HRW described the city center as systematically destroyed.",
+      "sources": [
+        "https://www.abc.net.au/news/2005-08-16/chechnya-puts-wars--toll-at-160000/2081622",
+        "https://www.hrw.org/legacy/reports/pdfs/r/russia/rusch006.pdf"
+      ]
+    },
+    {
+      "name": "Staropromyslovski district killings",
+      "year": 1999,
+      "perpetrator": "Russian Federation forces",
+      "victims_group": "Civilians in Staropromyslovski district of Grozny",
+      "low": 38,
+      "high": null,
+      "notes": "HRW documented at least 38 civilians summarily executed between late December 1999 and mid-January 2000.",
+      "sources": [
+        "https://www.hrw.org/reports/2000/russia_chechnya/"
+      ]
+    },
+    {
+      "name": "Alkhan-Yurt killings",
+      "year": 1999,
+      "perpetrator": "Russian Federation forces",
+      "victims_group": "Civilians in Alkhan-Yurt",
+      "low": 17,
+      "high": null,
+      "notes": "HRW reported at least 17 civilians murdered after Russian forces took control of the village.",
+      "sources": [
+        "https://www.hrw.org/reports/2000/russia_chechnya/"
+      ]
+    },
+    {
+      "name": "Novye Aldi/Chernorechie massacre",
+      "year": 2000,
+      "perpetrator": "Russian Federation forces",
+      "victims_group": "Civilians in Novye Aldi and Chernorechie",
+      "low": 60,
+      "high": null,
+      "notes": "HRW reported at least 60 civilians summarily executed on February 5, 2000.",
+      "sources": [
+        "https://www.hrw.org/reports/2000/russia_chechnya3/chech-summary.htm"
+      ]
+    },
+    {
+      "name": "Fleeing convoy attack on road to Ingushetia",
+      "year": 1999,
+      "perpetrator": "Russian Federation forces",
+      "victims_group": "Civilians fleeing Grozny",
+      "low": 50,
+      "high": 100,
+      "notes": "Russian military aircraft strafed a civilian convoy on October 29, 1999.",
+      "sources": [
+        "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf"
+      ]
+    },
+    {
+      "name": "Grozny central market attack",
+      "year": 2000,
+      "perpetrator": "Russian Federation forces",
+      "victims_group": "Civilians in Grozny",
+      "low": 100,
+      "high": null,
+      "notes": "HRW reported over 100 civilians killed in the October 21, 2000 attack.",
+      "sources": [
+        "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf"
+      ]
+    },
+    {
+      "name": "Russian apartment bombings",
+      "year": 1999,
+      "perpetrator": "Chechen separatist / Islamist insurgent forces, disputed attribution",
+      "victims_group": "Russian apartment residents",
+      "low": 293,
+      "high": 293,
+      "notes": "RAND attributes the bombings to Chechen jihadists; attribution remains disputed.",
+      "sources": [
+        "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf"
+      ]
+    },
+    {
+      "name": "Moscow Dubrovka theater hostage crisis",
+      "year": 2002,
+      "perpetrator": "Chechen separatist / Islamist insurgent forces",
+      "victims_group": "Theater hostages",
+      "low": 129,
+      "high": 130,
+      "notes": "Hostage deaths followed the seizure of the theater by Chechen militants and the Russian rescue operation using gas; causation is mixed.",
+      "sources": [
+        "https://www.britannica.com/event/Moscow-theatre-hostage-crisis-of-2002",
+        "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf"
+      ]
+    },
+    {
+      "name": "Beslan school siege",
+      "year": 2004,
+      "perpetrator": "Chechen-linked separatist / Islamist insurgent forces",
+      "victims_group": "Schoolchildren, parents, teachers, and other hostages",
+      "low": 330,
+      "high": 334,
+      "notes": "More than 330 hostages died; later reporting gives 334 civilian deaths including 186 children.",
+      "sources": [
+        "https://www.britannica.com/event/Beslan-school-attack",
+        "https://www.lemonde.fr/en/international/article/2024/09/03/twenty-years-later-beslan-mothers-pain-has-not-subsided-while-putin-remains-indifferent_6724658_4.html"
+      ]
+    }
+  ],
+  "uncertainty_notes": "Casualty data are fragmentary and politicized. Russian official military counts undercount by excluding some services and allied Chechen units; insurgent deaths rely partly on Russian claims and rebel acknowledgements. Civilian deaths, disappearances, and detention-related deaths overlap. Several major insurgent attacks outside Chechnya are linked to the conflict but have contested attribution or mixed causation, especially the 1999 apartment bombings, Dubrovka, and Beslan.",
+  "sources": [
+    {
+      "url": "https://amnesty.no/sites/default/files/51/Tsjetsjenia_rapp_2007.pdf",
+      "title": "Russian Federation: What justice for Chechnya\u2019s disappeared?",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.hrw.org/reports/2000/russia_chechnya/",
+      "title": "Civilian Killings in Staropromyslovski District of Grozny",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/2000/russia_chechnya3/chech-summary.htm",
+      "title": "February 5: A Day of Slaughter in Novye Aldi",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/legacy/backgrounder/eca/chech-memo-0213.pdf",
+      "title": "Human Rights Watch memorandum on accountability in Chechnya",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/world-report/2009/country-chapters/russia",
+      "title": "World Report 2009: Russia",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.researchgate.net/publication/249564699_The_Perils_of_Counterinsurgency_Russia%27s_War_in_Chechnya",
+      "title": "The Perils of Counterinsurgency: Russia\u2019s War in Chechnya",
+      "publisher": "International Security"
+    },
+    {
+      "url": "https://www.hoover.org/research/forgotten-war",
+      "title": "The Forgotten War",
+      "publisher": "Hoover Institution"
+    },
+    {
+      "url": "https://www.rand.org/content/dam/rand/pubs/monographs/2006/RAND_MG429.pdf",
+      "title": "Beyond al-Qaeda: Part 1, The Global Jihadist Movement",
+      "publisher": "RAND Corporation"
+    },
+    {
+      "url": "https://www.britannica.com/event/Moscow-theatre-hostage-crisis-of-2002",
+      "title": "Moscow theater hostage crisis of 2002",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/event/Beslan-school-attack",
+      "title": "Beslan school attack",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.themoscowtimes.com/archive/kremlin-ends-chechnya-operations",
+      "title": "Kremlin Ends Chechnya Operations",
+      "publisher": "The Moscow Times"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/usdos/2008/en/56869",
+      "title": "2007 Country Reports on Human Rights Practices: Russia",
+      "publisher": "U.S. Department of State / Refworld"
+    }
+  ]
+}

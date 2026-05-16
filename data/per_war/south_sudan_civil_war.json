@@ -1,0 +1,350 @@
+{
+  "war_id": "south_sudan_civil_war",
+  "name": "South Sudanese Civil War",
+  "start_year": 2013,
+  "end_year": 2020,
+  "ongoing": false,
+  "regions": [
+    "South Sudan",
+    "Greater Upper Nile",
+    "Equatoria",
+    "Jonglei",
+    "Unity",
+    "Upper Nile",
+    "Central Equatoria",
+    "Western Equatoria",
+    "Eastern Equatoria",
+    "Warrap",
+    "Lakes"
+  ],
+  "summary": "The South Sudanese Civil War began in December 2013 after a split between President Salva Kiir and former Vice President Riek Machar turned into fighting within the security forces and then into a nationwide, ethnically charged civil war. The best national mortality estimate is LSHTM's 382,900 excess deaths for December 2013-April 2018, including about 190,000 violent deaths, but no credible source cleanly attributes that total by perpetrator side. A unity government was formed in February 2020, although serious subnational and non-signatory armed violence continued.",
+  "sides": [
+    {
+      "name": "Government of South Sudan / SPLA-SSPDF and allied forces",
+      "members": [
+        "Government of South Sudan",
+        "Sudan People's Liberation Army (SPLA)",
+        "South Sudan People's Defence Forces (SSPDF)",
+        "Presidential Guard / Tiger Division",
+        "National Security Service and police elements",
+        "Mathiang Anyoor and other pro-government militias",
+        "Uganda People's Defence Force (early government ally)"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No comprehensive verified government military killed total was found. A Radio Tamazuj report cited a high-level military source claiming 10,659 government soldiers killed and 9,921 seriously wounded from January to October 2014, but this is partial and not a full-war verified total.",
+        "sources": [
+          "https://www.radiotamazuj.org/en/news/article/south-sudan-s-military-casualties-top-20-000",
+          "https://www.lshtm.ac.uk/south-sudan-full-report"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 946,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "ethnic massacre / shootings / house-to-house killings",
+            "victims_group": "Nuer civilians and Nuer soldiers/civilians in Juba",
+            "low": 600,
+            "high": null,
+            "notes": "The AU Commission cited the South Sudan Human Rights Commission estimate of more than 600 killed and 800 injured in Juba and suburbs between 16 and 18 December 2013. This is treated as a documented floor.",
+            "sources": [
+              "https://www.peaceau.org/uploads/auciss.final.report.pdf",
+              "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces"
+            ]
+          },
+          {
+            "cause": "village attacks / shootings / burning alive / sexual violence",
+            "victims_group": "Civilians in southern Unity State",
+            "low": 232,
+            "high": null,
+            "notes": "UN/OHCHR reported at least 232 civilians killed and 120 women and girls raped during the April-May 2018 offensive by government SPLA and associated forces.",
+            "sources": [
+              "https://www.theguardian.com/global-development/2018/jul/10/south-sudan-government-forces-accused-potential-war-crimes-horrific-acts",
+              "https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2019/05/report/indiscriminate-attacks-against-civilians-in-southern-unity-april-may-2018/UNMISSReportApril_May2018.pdf"
+            ]
+          },
+          {
+            "cause": "killings during counterinsurgency operations",
+            "victims_group": "Civilians in Yei area",
+            "low": 114,
+            "high": null,
+            "notes": "UNMISS/OHCHR reporting documented 114 killings by pro-government forces in the Yei area.",
+            "sources": [
+              "https://peacekeeping.un.org/en/node/7905"
+            ]
+          }
+        ],
+        "notes": "The low estimate is a documented floor from selected non-overlapping incidents and should not be treated as the government's total civilian direct-death toll. The full perpetrator-attributed civilian total is unknown.",
+        "sources": [
+          "https://www.peaceau.org/uploads/auciss.final.report.pdf",
+          "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+          "https://www.theguardian.com/global-development/2018/jul/10/south-sudan-government-forces-accused-potential-war-crimes-horrific-acts",
+          "https://peacekeeping.un.org/en/node/7905"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement, food insecurity, health-service disruption, humanitarian-access obstruction",
+          "victims_group": "South Sudanese civilians affected by war conditions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Government actions including attacks on civilians, burning/looting, and obstruction or hampering of humanitarian efforts plausibly contributed to indirect mortality, but no credible source assigns a numeric share of indirect deaths to the government. Conflict-wide implied indirect excess deaths through April 2018 are roughly 175,700-209,200, but this is not attributable by side.",
+          "sources": [
+            "https://www.lshtm.ac.uk/south-sudan-full-report",
+            "https://www.lshtm.ac.uk/south-sudan-report-faqs",
+            "https://www.peaceau.org/uploads/auciss.final.report.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SPLM/A-IO and allied opposition forces",
+      "members": [
+        "Sudan People's Liberation Movement/Army-in-Opposition (SPLM/A-IO)",
+        "Forces loyal to Riek Machar",
+        "Defected SPLA units",
+        "Nuer White Army elements",
+        "Other local allied opposition forces"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate SPLA-IO military killed total was found. LSHTM's violent-death estimate cannot be divided by combatant/civilian status or by party.",
+        "sources": [
+          "https://www.lshtm.ac.uk/south-sudan-full-report",
+          "https://www.lshtm.ac.uk/south-sudan-report-faqs"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 200,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre / killings at mosque, hospital, and other refuge sites",
+            "victims_group": "Civilians in Bentiu, including non-Nuer civilians and people sheltering in places of refuge",
+            "low": 200,
+            "high": null,
+            "notes": "UNMISS reported that armed opposition forces killed 'hundreds' of civilians after retaking Bentiu on 15 April 2014; the low value of 200 is a conservative numeric floor implied by 'hundreds', not a precise count.",
+            "sources": [
+              "https://unmiss.unmissions.org/unmiss-documents-killings-civilians-bentiu-and-bor-april-2014",
+              "https://www.peaceau.org/uploads/auciss.final.report.pdf"
+            ]
+          },
+          {
+            "cause": "killings in Bor and Malakal",
+            "victims_group": "Dinka, Shilluk, and other civilians in Bor and Malakal",
+            "low": null,
+            "high": null,
+            "notes": "HRW and the AU Commission documented opposition and allied White Army killings of civilians in Bor and Malakal, including attacks on hospitals, churches, and remaining civilians, but the sources consulted do not provide a comprehensive incident-total suitable for aggregation.",
+            "sources": [
+              "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+              "https://www.peaceau.org/uploads/auciss.final.report.pdf"
+            ]
+          }
+        ],
+        "notes": "The low estimate is a documented floor based on the Bentiu massacre. The full opposition-attributed civilian direct-death toll is unknown.",
+        "sources": [
+          "https://unmiss.unmissions.org/unmiss-documents-killings-civilians-bentiu-and-bor-april-2014",
+          "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+          "https://www.peaceau.org/uploads/auciss.final.report.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement, destruction of towns, attacks on hospitals and aid infrastructure, looting",
+          "victims_group": "South Sudanese civilians affected by opposition attacks and resulting displacement",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Opposition actions contributed to displacement, livelihood disruption, and destruction of medical and humanitarian infrastructure, but no credible source assigns a numeric indirect-death share to SPLM/A-IO or its allies.",
+          "sources": [
+            "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+            "https://www.lshtm.ac.uk/south-sudan-full-report",
+            "https://www.lshtm.ac.uk/south-sudan-report-faqs"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Other armed groups, community-based militias, and non-signatory forces",
+      "members": [
+        "Community-based militias",
+        "Civil-defense groups",
+        "Local cattle-raiding militias",
+        "National Salvation Front (NAS) and other non-signatory armed actors where applicable",
+        "Politically backed local armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate fighter-fatality total was found for community-based militias or non-signatory armed actors.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "intercommunal and militia attacks",
+            "victims_group": "Civilians in Jonglei, Greater Pibor, Warrap, Lakes, and other affected areas",
+            "low": null,
+            "high": null,
+            "notes": "UNMISS documented 2,421 civilian killings in 2020 overall and reported that community-based militias were responsible for 78% of all victims of killing, injury, abduction, and conflict-related sexual violence combined. Because the 78% applies to all victim categories, it is not converted into a killings-only total.",
+            "sources": [
+              "https://unmiss.unmissions.org/community-based-militias-responsible-78-victims-violence-south-sudan"
+            ]
+          }
+        ],
+        "notes": "These actors were especially important in 2019-2020 violence, but the available UNMISS summary does not permit a precise killings-only attribution by group.",
+        "sources": [
+          "https://unmiss.unmissions.org/community-based-militias-responsible-78-victims-violence-south-sudan"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement, raiding, abduction, looting, destruction of livelihoods",
+          "victims_group": "Civilians in areas affected by subnational violence",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Community-based and local militia violence likely contributed to indirect deaths through displacement, loss of cattle/livelihoods, hunger, and lack of access to services, but no credible numeric indirect-death attribution was found.",
+          "sources": [
+            "https://unmiss.unmissions.org/community-based-militias-responsible-78-victims-violence-south-sudan"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": null,
+    "military_high": null,
+    "civilian_low": null,
+    "civilian_high": null,
+    "grand_low": 376000,
+    "grand_high": null,
+    "notes": "LSHTM estimated 382,900 excess deaths, 95% CI 376,000-389,800, for December 2013-April 2018, excluding South Sudanese refugees abroad. Because the war-related toll continued after April 2018 and no comparable 2019-2020 all-cause excess-mortality estimate was found, the grand_low is the lower bound through April 2018 and grand_high is left null rather than falsely capped. LSHTM estimated 190,000 violent deaths, 95% CI 180,600-200,300, with an alternative empirical estimate of 218,900, 95% CI 209,900-227,200."
+  },
+  "key_atrocities": [
+    {
+      "name": "Juba Nuer killings",
+      "year": 2013,
+      "perpetrator": "Government of South Sudan / SPLA-SSPDF and allied forces",
+      "victims_group": "Nuer civilians and Nuer soldiers/civilians",
+      "low": 600,
+      "high": null,
+      "notes": "The AU Commission cited the South Sudan Human Rights Commission's estimate of more than 600 killed and 800 injured in Juba and suburbs between 16 and 18 December 2013.",
+      "sources": [
+        "https://www.peaceau.org/uploads/auciss.final.report.pdf",
+        "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces"
+      ]
+    },
+    {
+      "name": "Bentiu massacre",
+      "year": 2014,
+      "perpetrator": "SPLM/A-IO and allied opposition forces",
+      "victims_group": "Civilians sheltering in Bentiu, including non-Nuer civilians",
+      "low": 200,
+      "high": null,
+      "notes": "UNMISS reported that armed opposition forces killed hundreds of civilians after retaking Bentiu on 15 April 2014; 200 is a conservative numeric floor for 'hundreds'.",
+      "sources": [
+        "https://unmiss.unmissions.org/unmiss-documents-killings-civilians-bentiu-and-bor-april-2014",
+        "https://www.peaceau.org/uploads/auciss.final.report.pdf"
+      ]
+    },
+    {
+      "name": "Bor UNMISS protection-of-civilians site attack",
+      "year": 2014,
+      "perpetrator": "Armed mob / local attackers",
+      "victims_group": "Nuer civilians sheltering at the Bor PoC site",
+      "low": 50,
+      "high": null,
+      "notes": "HRW reported over 50 people killed in the attack on Nuer sheltering in the UN base in Bor; UNMISS described the killings as dozens.",
+      "sources": [
+        "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+        "https://unmiss.unmissions.org/unmiss-documents-killings-civilians-bentiu-and-bor-april-2014"
+      ]
+    },
+    {
+      "name": "Southern Unity offensive",
+      "year": 2018,
+      "perpetrator": "Government SPLA and associated forces",
+      "victims_group": "Civilians in southern Unity State",
+      "low": 232,
+      "high": null,
+      "notes": "UN/OHCHR reported at least 232 civilians killed and 120 women and girls raped during attacks from 16 April to 24 May 2018.",
+      "sources": [
+        "https://www.theguardian.com/global-development/2018/jul/10/south-sudan-government-forces-accused-potential-war-crimes-horrific-acts",
+        "https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2019/05/report/indiscriminate-attacks-against-civilians-in-southern-unity-april-may-2018/UNMISSReportApril_May2018.pdf"
+      ]
+    },
+    {
+      "name": "2020 subnational violence",
+      "year": 2020,
+      "perpetrator": "Community-based militias and other local armed actors; some cases reportedly supported by local or national elites",
+      "victims_group": "Civilians in Jonglei, Greater Pibor, Warrap, Lakes, and other areas",
+      "low": 2421,
+      "high": null,
+      "notes": "UNMISS documented 2,421 civilians killed in 2020 overall; community-based militias were responsible for 78% of all victims of killing, injury, abduction, and conflict-related sexual violence combined.",
+      "sources": [
+        "https://unmiss.unmissions.org/community-based-militias-responsible-78-victims-violence-south-sudan"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main national mortality estimate is LSHTM's December 2013-April 2018 excess-mortality model. It does not attribute deaths to perpetrators and excludes South Sudanese refugees abroad. No reliable all-cause excess-mortality estimate was found for 2019-2020. Direct civilian atrocity counts are therefore documented floors, while military fatalities and indirect deaths by belligerent side remain unknown.",
+  "sources": [
+    {
+      "url": "https://www.lshtm.ac.uk/south-sudan-full-report",
+      "title": "Estimates of crisis-attributable mortality in South Sudan, December 2013-April 2018: A statistical analysis",
+      "publisher": "London School of Hygiene & Tropical Medicine"
+    },
+    {
+      "url": "https://www.lshtm.ac.uk/south-sudan-report-faqs",
+      "title": "LSHTM \u2013 Crisis-attributable mortality in South Sudan \u2013 Q&A",
+      "publisher": "London School of Hygiene & Tropical Medicine"
+    },
+    {
+      "url": "https://www.peaceau.org/uploads/auciss.final.report.pdf",
+      "title": "Report of the African Union Commission of Inquiry on South Sudan",
+      "publisher": "African Union"
+    },
+    {
+      "url": "https://www.hrw.org/report/2014/08/07/south-sudans-new-war/abuses-government-and-opposition-forces",
+      "title": "South Sudan's New War: Abuses by Government and Opposition Forces",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://unmiss.unmissions.org/unmiss-documents-killings-civilians-bentiu-and-bor-april-2014",
+      "title": "UNMISS documents killings of civilians in Bentiu and Bor in April 2014",
+      "publisher": "UNMISS"
+    },
+    {
+      "url": "https://unmiss.unmissions.org/community-based-militias-responsible-78-victims-violence-south-sudan",
+      "title": "Community-based militias responsible for 78% of victims of violence in South Sudan",
+      "publisher": "UNMISS"
+    },
+    {
+      "url": "https://www.theguardian.com/global-development/2018/jul/10/south-sudan-government-forces-accused-potential-war-crimes-horrific-acts",
+      "title": "Mass rape and killings in South Sudan may constitute war crimes, says UN",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.radiotamazuj.org/en/news/article/south-sudan-s-military-casualties-top-20-000",
+      "title": "South Sudan's military casualties top 20,000",
+      "publisher": "Radio Tamazuj"
+    },
+    {
+      "url": "https://peacekeeping.un.org/en/node/7905",
+      "title": "South Sudan: UN report exposes human rights violations against civilians in Yei",
+      "publisher": "United Nations Peacekeeping / UNMISS"
+    }
+  ]
+}

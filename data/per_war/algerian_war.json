@@ -1,0 +1,469 @@
+{
+  "war_id": "algerian_war",
+  "name": "Algerian War of Independence",
+  "start_year": 1954,
+  "end_year": 1962,
+  "ongoing": false,
+  "regions": [
+    "Algeria",
+    "Metropolitan France"
+  ],
+  "summary": "The Algerian War of Independence was fought from 1954 to 1962 between the French state and the FLN/ALN, with major violence also involving the OAS, the MNA, French police, settler militias, and pro-French Algerian auxiliaries. Casualty accounting is unusually contested because many totals combine combatants, civilians, forced-displacement deaths, intra-nationalist killings, and post-cease-fire reprisals. A defensible source-supported death toll is roughly 340,000 to 680,000, while the official Algerian memorial figure of 1.5 million is politically important but not securely enumerated by most historians.",
+  "sides": [
+    {
+      "name": "French state, armed forces, police, and pro-French auxiliaries",
+      "members": [
+        "French Republic",
+        "French Army",
+        "French Air Force",
+        "French Navy",
+        "Gendarmerie",
+        "French police",
+        "SAS",
+        "harkis and other pro-French Muslim auxiliaries"
+      ],
+      "military_killed": {
+        "low": 25000,
+        "high": 27500,
+        "point": 25600,
+        "notes": "French official and memory sources give about 25,000 to 25,600 military deaths, while some historian summaries give about 27,500. These include deaths by combat, accident, disease, and missing, but do not include the later post-independence massacre of demobilized harkis and families.",
+        "sources": [
+          "https://www.cheminsdememoire.gouv.fr/fr/les-aspects-militaires-de-la-guerre-dalgerie",
+          "https://www.memoiredeshommes.defense.gouv.fr/conflits-operations/guerre-algerie-des-combats-du-maroc-et-de-la-tunisie",
+          "https://www.herodote.net/La_guerre_d_independance-synthese-1774-9.php",
+          "https://www.radiofrance.fr/franceculture/podcasts/du-grain-a-moudre/l-algerie-malade-de-son-passe-3402835"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 55000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "reprisal killings",
+            "victims_group": "Algerian Muslim civilians in Philippeville/Constantinois reprisals",
+            "low": 1273,
+            "high": 12000,
+            "notes": "Official French count gave 1,273 Muslim deaths in reprisals after FLN attacks; FLN and some later accounts claimed up to 12,000.",
+            "sources": [
+              "https://warhistory.org/article/algerian-war-1954-1962?amp=1",
+              "https://en.wikipedia.org/wiki/Battle_of_Philippeville",
+              "https://historyguild.org/independence-in-the-maghreb/"
+            ]
+          },
+          {
+            "cause": "police massacre",
+            "victims_group": "Algerian demonstrators in Paris, 17 October 1961",
+            "low": 50,
+            "high": 200,
+            "notes": "Historians commonly estimate 50-120 deaths; Jean-Luc Einaudi argued about 200 killed that night and 325 across September-October 1961.",
+            "sources": [
+              "https://www.theguardian.com/world/2011/oct/17/france-remembers-algerian-massacre",
+              "https://webdoc.france24.com/october-17-1961-massacre-algerians-paris-france-police-history/chapter-1.html",
+              "https://www.lemonde.fr/en/politics/article/2024/03/28/french-lawmakers-pass-resolution-condemning-1961-paris-massacre-of-algerians_6662886_5.html"
+            ]
+          },
+          {
+            "cause": "shooting of demonstrators",
+            "victims_group": "Pied-noir demonstrators at Rue d'Isly, Algiers",
+            "low": 50,
+            "high": 80,
+            "notes": "French soldiers fired on pied-noir demonstrators on 26 March 1962.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/1962_Isly_massacre"
+            ]
+          },
+          {
+            "cause": "torture, execution, disappearance",
+            "victims_group": "Algerian nationalist detainees and suspected FLN supporters",
+            "low": null,
+            "high": null,
+            "notes": "France has officially acknowledged individual cases such as Maurice Audin and Ali Boumendjel, but no comprehensive death toll for torture-related deaths and disappearances is securely established.",
+            "sources": [
+              "https://www.theguardian.com/world/2018/sep/16/algeria-france-war-macron-apology-murder-michele-audin-interview",
+              "https://www.theguardian.com/world/2021/mar/03/french-soldiers-killed-algerian-lawyer-in-war-of-independence-macron-admits"
+            ]
+          }
+        ],
+        "notes": "A minimum non-harki Algerian civilian death figure of about 55,000-60,000 is cited via Evans/Meynier but is not cleanly attributed by perpetrator. French repression/democide estimates reach at least 100,000, but direct vs indirect attribution remains unresolved.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Algerian_War",
+          "https://en.wikipedia.org/wiki/Torture_during_the_Algerian_War"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Algerian rural civilians in French regroupment camps",
+          "low": null,
+          "high": 200000,
+          "point": 200000,
+          "notes": "Between two and three million Algerians were forcibly displaced; by late 1960 more than 2.1 million were in over 1,150 camps. Camp-related mortality from hunger, disease, exposure, and deprivation is often estimated at about 200,000, though the figure is difficult to verify and may overlap with broader Algerian casualty totals.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Regroupement_camps_in_the_Algerian_War",
+            "https://journals.openedition.org/framespa/3975",
+            "https://books.apple.com/ch/book/une-trag%C3%A9die-occult%C3%A9e-de-la-guerre-dalg%C3%A9rie-les/id6760310391"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FLN / ALN",
+      "members": [
+        "Front de lib\u00e9ration nationale",
+        "Arm\u00e9e de lib\u00e9ration nationale",
+        "F\u00e9d\u00e9ration de France du FLN",
+        "GPRA"
+      ],
+      "military_killed": {
+        "low": 140000,
+        "high": 153000,
+        "point": null,
+        "notes": "French official figures gave about 141,000 presumed rebel combatants killed; French military-history sources give about 153,000 ALN/FLN dead, including roughly 10,000 internal-purge victims and 2,000 killed in clashes involving Moroccan or Tunisian forces. Some civilians may have been counted as rebels.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Algerian_War",
+          "https://www.cheminsdememoire.gouv.fr/fr/les-aspects-militaires-de-la-guerre-dalgerie"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 29000,
+        "high": 75000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "terrorism, assassination, abduction, disappearance",
+            "victims_group": "Algerian civilians, suspected collaborators, political opponents",
+            "low": 29000,
+            "high": 70000,
+            "notes": "One commonly cited figure attributes over 16,000 civilians killed and over 13,000 disappeared to the FLN; French sources estimated 70,000 Muslim civilians killed or abducted and presumed killed.",
+            "sources": [
+              "https://reference.org/facts/FLN_%28Algeria%29/FM3FTgpd",
+              "https://en.wikipedia.org/wiki/Algerian_War",
+              "https://en.wikipedia.org/wiki/History_of_Algeria"
+            ]
+          },
+          {
+            "cause": "massacre",
+            "victims_group": "European/French and Muslim civilians in Philippeville/Constantinois, 20 August 1955",
+            "low": 123,
+            "high": 123,
+            "notes": "French counts give 71 Europeans/French and 52 Muslims killed in the FLN-led attacks.",
+            "sources": [
+              "https://warhistory.org/article/algerian-war-1954-1962?amp=1",
+              "https://en.wikipedia.org/wiki/Battle_of_Philippeville"
+            ]
+          },
+          {
+            "cause": "intra-nationalist violence",
+            "victims_group": "Algerian migrants and activists in France during the FLN-MNA caf\u00e9 wars",
+            "low": 3975,
+            "high": 5000,
+            "notes": "Official French figures give 3,975 dead and 10,223 total victims; other estimates give about 5,000 deaths. Attribution between FLN and MNA is not clean in aggregate.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Caf%C3%A9_Wars",
+              "https://www.tandfonline.com/doi/full/10.1080/1369183X.2023.2269774"
+            ]
+          }
+        ],
+        "notes": "The low includes civilians killed plus disappeared presumed dead; the high is based mainly on French-source estimates for Muslim civilians and approximate additions for European/caf\u00e9-war deaths, with possible overlap.",
+        "sources": [
+          "https://reference.org/facts/FLN_%28Algeria%29/FM3FTgpd",
+          "https://en.wikipedia.org/wiki/Algerian_War",
+          "https://www.tandfonline.com/doi/full/10.1080/1369183X.2023.2269774"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "reprisal",
+          "victims_group": "Harkis and pro-French Muslim auxiliaries and families",
+          "low": 10000,
+          "high": 150000,
+          "point": null,
+          "notes": "Post-cease-fire and post-independence reprisals against harkis are estimated from 10,000 to 150,000 in a peer-reviewed study; other historian ranges include 15,000-30,000 and 60,000-80,000.",
+          "sources": [
+            "https://www.tandfonline.com/doi/abs/10.1080/07075332.2016.1141307",
+            "https://www.perlego.com/book/3481850/the-algerian-war-the-algerian-revolution-pdf",
+            "https://shs.cairn.info/revue-guerres-mondiales-et-conflits-contemporains-2001-2-page-55?lang=fr"
+          ]
+        },
+        {
+          "type": "internal_purge",
+          "victims_group": "FLN/ALN members and Algerian nationalist rivals",
+          "low": 10000,
+          "high": 12000,
+          "point": null,
+          "notes": "Some French military-history sources give about 10,000 internal-purge victims within the ALN/FLN toll; other summaries cite more than 12,000 Algerians dead in internal FLN purges.",
+          "sources": [
+            "https://www.cheminsdememoire.gouv.fr/fr/les-aspects-militaires-de-la-guerre-dalgerie",
+            "https://en.wikipedia.org/wiki/Algerian_War"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Organisation arm\u00e9e secr\u00e8te (OAS) and French-Algeria ultras",
+      "members": [
+        "Organisation arm\u00e9e secr\u00e8te",
+        "Commando Delta",
+        "pro-French-Algeria settler and dissident military networks"
+      ],
+      "military_killed": {
+        "low": 100,
+        "high": 100,
+        "point": 100,
+        "notes": "A commonly cited summary gives about 100 OAS dead; this figure is less central and less robustly documented than French army or ALN losses.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Algerian_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1700,
+        "high": 2200,
+        "point": 2000,
+        "breakdown": [
+          {
+            "cause": "bombing, assassination, terrorism",
+            "victims_group": "Algerian civilians, French officials, anti-OAS Europeans, and others in Algeria and France",
+            "low": 1700,
+            "high": 2200,
+            "notes": "OAS violence in 1961-1962 is commonly estimated at about 2,000 deaths, with another source giving 1,700-2,200, mainly in Algeria.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Organisation_arm%C3%A9e_secr%C3%A8te",
+              "https://usercontent.one/wp/www.afa17.com/wp-content/uploads/2024/08/AFAStories_Sep2024.pdf?media=1726295161"
+            ]
+          },
+          {
+            "cause": "urban terror campaign",
+            "victims_group": "Algerian civilians in Oran",
+            "low": 1100,
+            "high": null,
+            "notes": "Historian Sadek Benkada estimated more than 1,100 Algerian civilian victims of the OAS in Oran between 1961 and 1962.",
+            "sources": [
+              "https://histoirecoloniale.net/l-oas-a-fait-un-millier-de-victimes-civiles-algeriennes-a-oran/"
+            ]
+          }
+        ],
+        "notes": "OAS casualties caused are treated separately from the French state because the OAS also fought the French government and sought to sabotage the peace settlement.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Organisation_arm%C3%A9e_secr%C3%A8te",
+          "https://usercontent.one/wp/www.afa17.com/wp-content/uploads/2024/08/AFAStories_Sep2024.pdf?media=1726295161"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "MNA and other Algerian nationalist rivals",
+      "members": [
+        "Mouvement national alg\u00e9rien",
+        "Messalist networks"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No clean, widely accepted military death toll for the MNA as a separate belligerent was found. Many deaths are folded into FLN-MNA internecine violence or broader Algerian totals.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": 3975,
+        "high": 5000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "assassination, caf\u00e9 bombings, intra-nationalist violence",
+            "victims_group": "Algerian migrants and activists in metropolitan France",
+            "low": 3975,
+            "high": 5000,
+            "notes": "The caf\u00e9 wars between FLN and MNA caused an official French figure of 3,975 dead; other estimates are about 5,000. Aggregate sources do not permit allocation between FLN and MNA perpetrators.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Caf%C3%A9_Wars",
+              "https://www.tandfonline.com/doi/full/10.1080/1369183X.2023.2269774"
+            ]
+          }
+        ],
+        "notes": "These deaths overlap with the FLN-MNA caf\u00e9-war entry above and should not be double-counted in totals.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caf%C3%A9_Wars",
+          "https://www.tandfonline.com/doi/full/10.1080/1369183X.2023.2269774"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 165000,
+    "military_high": 181000,
+    "civilian_low": 170000,
+    "civilian_high": 500000,
+    "grand_low": 340000,
+    "grand_high": 680000,
+    "notes": "Totals are approximate and avoid adding every perpetrator-caused category mechanically, because some categories overlap. Military totals combine FLN/ALN and French military deaths, with OAS/MNA military losses small or poorly known. Civilian/indirect deaths include French-source Algerian casualty ranges, camp deaths, harki reprisals, OAS terror, caf\u00e9-war deaths, and FLN-attributed killings; the broad 340,000-680,000 range is more conservative than the official Algerian memorial claim of 1.5 million."
+  },
+  "key_atrocities": [
+    {
+      "name": "Philippeville / Constantinois massacres and reprisals",
+      "year": 1955,
+      "perpetrator": "FLN/ALN and then French forces/security/settler reprisals",
+      "victims_group": "European/French and Muslim civilians",
+      "low": 1396,
+      "high": 12123,
+      "notes": "FLN-led attacks killed 123 people; French/security/settler reprisals killed officially 1,273 Muslims, with estimates up to 12,000.",
+      "sources": [
+        "https://warhistory.org/article/algerian-war-1954-1962?amp=1",
+        "https://en.wikipedia.org/wiki/Battle_of_Philippeville",
+        "https://historyguild.org/independence-in-the-maghreb/"
+      ]
+    },
+    {
+      "name": "French regroupment camps",
+      "year": null,
+      "perpetrator": "French state and military",
+      "victims_group": "Algerian rural civilians",
+      "low": null,
+      "high": 200000,
+      "notes": "More than 2.1 million civilians were held in over 1,150 camps by late 1960; deaths from malnutrition, disease, and exposure are often estimated at about 200,000.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Regroupement_camps_in_the_Algerian_War",
+        "https://journals.openedition.org/framespa/3975"
+      ]
+    },
+    {
+      "name": "17 October 1961 Paris massacre",
+      "year": 1961,
+      "perpetrator": "French police",
+      "victims_group": "Algerian demonstrators in Paris",
+      "low": 50,
+      "high": 200,
+      "notes": "Historians commonly estimate 50-120 deaths; Einaudi argued about 200 killed that night and 325 over September-October 1961.",
+      "sources": [
+        "https://www.theguardian.com/world/2011/oct/17/france-remembers-algerian-massacre",
+        "https://webdoc.france24.com/october-17-1961-massacre-algerians-paris-france-police-history/chapter-1.html"
+      ]
+    },
+    {
+      "name": "OAS terror campaign",
+      "year": 1961,
+      "perpetrator": "OAS",
+      "victims_group": "Algerian civilians, French officials, anti-OAS Europeans, and others",
+      "low": 1700,
+      "high": 2200,
+      "notes": "OAS bombings and assassinations in Algeria and France from 1961-1962 caused roughly 1,700-2,200 deaths.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Organisation_arm%C3%A9e_secr%C3%A8te",
+        "https://usercontent.one/wp/www.afa17.com/wp-content/uploads/2024/08/AFAStories_Sep2024.pdf?media=1726295161"
+      ]
+    },
+    {
+      "name": "Harki massacres",
+      "year": 1962,
+      "perpetrator": "FLN, local anti-harki forces, and post-independence reprisal actors",
+      "victims_group": "Harkis and pro-French Muslim auxiliaries and families",
+      "low": 10000,
+      "high": 150000,
+      "notes": "A peer-reviewed study gives 10,000-150,000 killed; other historian ranges include 15,000-30,000 and 60,000-80,000.",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/07075332.2016.1141307",
+        "https://www.perlego.com/book/3481850/the-algerian-war-the-algerian-revolution-pdf",
+        "https://shs.cairn.info/revue-guerres-mondiales-et-conflits-contemporains-2001-2-page-55?lang=fr"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is that victim-status and perpetrator categories overlap: Algerian casualty totals may include ALN fighters, civilians killed by French forces, FLN/MNA victims, camp deaths, and harki reprisals. French military reports often classified dead Algerians as rebels, possibly including civilians. Post-cease-fire violence after March-July 1962 is inconsistently included in war totals. The official Algerian figure of 1.5 million martyrs is memorially important but much higher than most demographic and historian estimates.",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/event/Algerian-War",
+      "title": "Algerian War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/place/Algeria/Independent-Algeria",
+      "title": "Algeria - Independent Algeria",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.cheminsdememoire.gouv.fr/fr/les-aspects-militaires-de-la-guerre-dalgerie",
+      "title": "Les aspects militaires de la guerre d'Alg\u00e9rie",
+      "publisher": "Chemins de m\u00e9moire / Minist\u00e8re des Arm\u00e9es"
+    },
+    {
+      "url": "https://www.memoiredeshommes.defense.gouv.fr/conflits-operations/guerre-algerie-des-combats-du-maroc-et-de-la-tunisie",
+      "title": "Guerre d'Alg\u00e9rie, des combats du Maroc et de la Tunisie",
+      "publisher": "M\u00e9moire des hommes / Minist\u00e8re des Arm\u00e9es"
+    },
+    {
+      "url": "https://www.herodote.net/La_guerre_d_independance-synthese-1774-9.php",
+      "title": "Alg\u00e9rie - La guerre d'ind\u00e9pendance",
+      "publisher": "Herodote.net"
+    },
+    {
+      "url": "https://www.perlego.com/book/3481850/the-algerian-war-the-algerian-revolution-pdf",
+      "title": "The Algerian War, The Algerian Revolution",
+      "publisher": "Perlego / Palgrave Macmillan"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/07075332.2016.1141307",
+      "title": "Reprisal Violence and the Harkis in French Algeria, 1962",
+      "publisher": "The International History Review"
+    },
+    {
+      "url": "https://shs.cairn.info/revue-guerres-mondiales-et-conflits-contemporains-2001-2-page-55?lang=fr",
+      "title": "L'histoire des Harkis",
+      "publisher": "Cairn.info"
+    },
+    {
+      "url": "https://journals.openedition.org/framespa/3975",
+      "title": "Le corps, enjeu de la guerre d\u2019ind\u00e9pendance alg\u00e9rienne. La question sanitaire dans les camps de regroupement",
+      "publisher": "OpenEdition Journals / Framespa"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Regroupement_camps_in_the_Algerian_War",
+      "title": "Regroupement camps in the Algerian War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2011/oct/17/france-remembers-algerian-massacre",
+      "title": "France remembers Algerian massacre 50 years on",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://webdoc.france24.com/october-17-1961-massacre-algerians-paris-france-police-history/chapter-1.html",
+      "title": "October 17, 1961: A massacre of Algerians in the heart of Paris",
+      "publisher": "France 24"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Wars",
+      "title": "Caf\u00e9 Wars",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/1369183X.2023.2269774",
+      "title": "Entangled migration states: mobility and state-building in France and Algeria",
+      "publisher": "Journal of Ethnic and Migration Studies / Taylor & Francis"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Organisation_arm%C3%A9e_secr%C3%A8te",
+      "title": "Organisation arm\u00e9e secr\u00e8te",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://histoirecoloniale.net/l-oas-a-fait-un-millier-de-victimes-civiles-algeriennes-a-oran/",
+      "title": "L\u2019OAS a fait un millier de victimes civiles alg\u00e9riennes \u00e0 Oran",
+      "publisher": "Histoire coloniale et postcoloniale"
+    },
+    {
+      "url": "https://warhistory.org/article/algerian-war-1954-1962?amp=1",
+      "title": "Algerian War (1954\u20131962)",
+      "publisher": "WarHistory.org"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2021/mar/03/french-soldiers-killed-algerian-lawyer-in-war-of-independence-macron-admits",
+      "title": "French soldiers killed Algerian lawyer in war of independence, Macron admits",
+      "publisher": "The Guardian"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2018/sep/16/algeria-france-war-macron-apology-murder-michele-audin-interview",
+      "title": "My father was tortured and murdered in Algeria. At last France has admitted it",
+      "publisher": "The Guardian"
+    }
+  ]
+}

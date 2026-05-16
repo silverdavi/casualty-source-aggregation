@@ -1,0 +1,345 @@
+{
+  "war_id": "first_chechen_war",
+  "name": "First Chechen War",
+  "start_year": 1994,
+  "end_year": 1996,
+  "ongoing": false,
+  "regions": [
+    "Chechnya",
+    "North Caucasus",
+    "Russian Federation",
+    "Dagestan",
+    "Stavropol Krai",
+    "Ingushetia"
+  ],
+  "summary": "The First Chechen War was fought from December 1994 to August 1996 between the Russian Federation and the separatist Chechen Republic of Ichkeria. It was marked by Russia's destructive assault on Grozny, large-scale bombardment and 'cleansing' operations, Chechen guerrilla warfare, and Chechen hostage-taking raids outside Chechnya. The most defensible civilian toll is roughly 30,000-50,000 killed, with broader published estimates running higher.",
+  "sides": [
+    {
+      "name": "Russian Federation / federal side",
+      "members": [
+        "Russian Armed Forces",
+        "Russian Ministry of Internal Affairs / Internal Troops",
+        "Russian security services",
+        "pro-Moscow Chechen opposition and auxiliary forces"
+      ],
+      "military_killed": {
+        "low": 5552,
+        "high": 14000,
+        "point": 7500,
+        "notes": "Low uses a federal irrecoverable-loss figure of 5,552, including 3,680 Armed Forces and 1,872 Interior Ministry/other-agency personnel. High uses the Soldiers' Mothers estimate of about 14,000 servicemen killed. John Dunlop/Hoover gives a point estimate of 7,500 Russian military and police killed.",
+        "sources": [
+          "https://www.soldati-russian.ru/index/poteri_storon/0-5",
+          "https://www.hoover.org/research/forgotten-war"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 30000,
+        "high": 50000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "bombing, shelling, urban assault",
+            "victims_group": "civilians in Grozny",
+            "low": 25000,
+            "high": 29000,
+            "notes": "Memorial survey/extrapolation for December 1994-March 1995; Amnesty also cites the Russian Presidential Human Rights Commission estimate of approximately 27,000 war-related deaths in Grozny.",
+            "sources": [
+              "https://ruswars.org/report/Report_Memorial.pdf",
+              "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf"
+            ]
+          },
+          {
+            "cause": "massacre, cleansing operation, indiscriminate fire, extrajudicial execution",
+            "victims_group": "civilians in Samashki",
+            "low": 103,
+            "high": 250,
+            "notes": "Memorial compiled an incomplete list of 103 dead villagers; HRW described a probable massacre of 100-200 civilians; Amnesty reported more than 250 civilians reportedly killed.",
+            "sources": [
+              "https://ruswars.org/report/Report_Memorial.pdf",
+              "https://www.refworld.org/reference/countryrep/hrw/1995/en/37335",
+              "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf"
+            ]
+          },
+          {
+            "cause": "artillery and rocket attacks",
+            "victims_group": "civilians in Gudermes and surrounding area",
+            "low": 267,
+            "high": 267,
+            "notes": "HRW/Helsinki reported at least 267 civilians killed during Russian operations in and around Gudermes in December 1995.",
+            "sources": [
+              "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848"
+            ]
+          },
+          {
+            "cause": "cluster bombing",
+            "victims_group": "civilians in Shali",
+            "low": 20,
+            "high": 55,
+            "notes": "HRW/Memorial witness reporting cited 20 killed and nearly 100 wounded; contemporaneous hospital reporting cited at least 55 killed and 186 wounded.",
+            "sources": [
+              "https://www.hrw.org/reports/1995/Russia.htm",
+              "https://www.latimes.com/archives/la-xpm-1995-01-05-mn-16695-story.html"
+            ]
+          }
+        ],
+        "notes": "The 30,000-50,000 civilian range is treated as overwhelmingly but not perfectly attributable to Russian direct military action: bombardment, shelling, urban assault, checkpoint killings, and cleansing operations. Some small number of civilian deaths were caused by Chechen forces, but the principal civilian-death estimates are driven by Russian operations.",
+        "sources": [
+          "https://ruswars.org/report/Report_Memorial.pdf",
+          "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf",
+          "https://www.refworld.org/reference/annualreport/hrw/1996/23038",
+          "https://www.hoover.org/research/forgotten-war"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "detention_disappearance_filtration",
+          "victims_group": "Chechen civilians and suspected fighters detained by federal forces",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Amnesty reported 1,350 disappearances and widespread torture/ill-treatment in filtration camps, but deaths within this category are not reliably quantified.",
+          "sources": [
+            "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf"
+          ]
+        },
+        {
+          "type": "blockade_medical_humanitarian_access",
+          "victims_group": "wounded civilians and displaced civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Amnesty reported that after Samashki, checkpoints blocked evacuation of wounded and access by doctors/ICRC until 10 April 1995, causing some wounded civilians to die. HRW also documented restrictions on ICRC and MSF access around Gudermes/Pervomayskoye. These deaths are not separately quantified and may overlap with direct-death counts.",
+          "sources": [
+            "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf",
+            "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848"
+          ]
+        },
+        {
+          "type": "mines_explosive_hazards",
+          "victims_group": "civilians in mined areas",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW reported up to 500 civilian mine casualties during the first year of the war; this is casualties rather than deaths, and both sides used mines, so no death estimate is assigned.",
+          "sources": [
+            "https://www.refworld.org/reference/countryrep/hrw/1996/en/22299"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chechen Republic of Ichkeria / separatist side",
+      "members": [
+        "Chechen separatist armed forces",
+        "Dudayev/Yandarbiyev/Maskhadov-aligned field units",
+        "Shamil Basayev's units",
+        "Salman Raduyev's units",
+        "foreign and North Caucasian volunteers"
+      ],
+      "military_killed": {
+        "low": 2800,
+        "high": 10000,
+        "point": 4000,
+        "notes": "Low reflects Chechen-side/Maskhadov-type figures around 2,870 killed; other Chechen sources give about 3,800. Independent estimates commonly range up to about 10,000. John Dunlop/Hoover gives a point estimate of 4,000 Chechen separatist fighters killed. Russian federal 'irrecoverable losses' claims were higher but may include captured and missing, not just killed.",
+        "sources": [
+          "https://www.soldati-russian.ru/index/poteri_storon/0-5",
+          "https://www.hoover.org/research/forgotten-war",
+          "https://en.wikipedia.org/wiki/First_Chechen_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 7,
+        "high": 154,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "hostage execution and hostage-taking",
+            "victims_group": "civilian hostages in Budyonnovsk",
+            "low": 7,
+            "high": 129,
+            "notes": "HRW states Chechen forces killed at least seven civilian hostages. Amnesty reported armed Chechens killed more than 100 civilians in Budyonnovsk. Event totals often cite about 105-129 civilian deaths, but many deaths occurred during Russian storming/crossfire, so high attribution is uncertain.",
+            "sources": [
+              "https://www.refworld.org/reference/annualreport/hrw/1996/23038",
+              "https://www.amnesty.org/en/wp-content/uploads/2021/06/nws210061996en.pdf",
+              "https://en.wikipedia.org/wiki/Budyonnovsk_hospital_hostage_crisis"
+            ]
+          },
+          {
+            "cause": "hostage-taking, summary executions, shoot-outs",
+            "victims_group": "hostages, passersby, and civilians in Kizlyar/Pervomayskoye",
+            "low": null,
+            "high": 25,
+            "notes": "HRW cites a Russian Attorney General estimate of 32 killed in Kizlyar, including hostages, passersby, and seven police officers. Chechen fighters also used about 160 hostages as human shields in Pervomayskoye. Exact civilian-only and perpetrator-specific counts are unclear.",
+            "sources": [
+              "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848"
+            ]
+          }
+        ],
+        "notes": "Chechen forces committed serious civilian-directed violations, especially hostage-taking, use of human shields, and executions. Exact totals are disputed because Russian rescue assaults and bombardments killed some hostages and civilians.",
+        "sources": [
+          "https://www.refworld.org/reference/annualreport/hrw/1996/23038",
+          "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848",
+          "https://www.amnesty.org/en/wp-content/uploads/2021/06/nws210061996en.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 8352,
+    "military_high": 24000,
+    "civilian_low": 30000,
+    "civilian_high": 50000,
+    "grand_low": 38352,
+    "grand_high": 74000,
+    "notes": "Core roll-up: Russian/federal military 5,552-14,000 plus Chechen separatist military 2,800-10,000 plus civilians 30,000-50,000. This avoids adding separately listed atrocity figures that are mostly included in the civilian total. Some secondary/public estimates cite civilian deaths up to 100,000, which would push a broad grand-high scenario to roughly 124,000, but the main JSON total uses the better-supported Memorial/case-literature range."
+  },
+  "key_atrocities": [
+    {
+      "name": "Grozny bombardment and assault",
+      "year": 1994,
+      "perpetrator": "Russian Federation / federal side",
+      "victims_group": "civilians in Grozny",
+      "low": 25000,
+      "high": 29000,
+      "notes": "Memorial estimate for December 1994-March 1995; Amnesty cites the Russian Presidential Human Rights Commission estimate of approximately 27,000 war-related deaths in Grozny.",
+      "sources": [
+        "https://ruswars.org/report/Report_Memorial.pdf",
+        "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf"
+      ]
+    },
+    {
+      "name": "Samashki massacre",
+      "year": 1995,
+      "perpetrator": "Russian Federation / federal side",
+      "victims_group": "civilians in Samashki",
+      "low": 103,
+      "high": 250,
+      "notes": "Memorial list of 103 dead is incomplete; HRW described 100-200 probable civilian deaths; Amnesty reported more than 250 civilians reportedly killed.",
+      "sources": [
+        "https://ruswars.org/report/Report_Memorial.pdf",
+        "https://www.refworld.org/reference/countryrep/hrw/1995/en/37335",
+        "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf"
+      ]
+    },
+    {
+      "name": "Gudermes operation",
+      "year": 1995,
+      "perpetrator": "Russian Federation / federal side",
+      "victims_group": "civilians in Gudermes",
+      "low": 267,
+      "high": 267,
+      "notes": "HRW/Helsinki reported at least 267 civilians killed by Russian operations in December 1995.",
+      "sources": [
+        "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848"
+      ]
+    },
+    {
+      "name": "Budyonnovsk hospital hostage crisis",
+      "year": 1995,
+      "perpetrator": "Chechen Republic of Ichkeria / separatist side",
+      "victims_group": "civilian hostages and civilians in Budyonnovsk",
+      "low": 7,
+      "high": 129,
+      "notes": "HRW states Chechen forces killed at least seven civilian hostages; Amnesty reported more than 100 civilians killed by armed Chechens. Event-level totals are higher but include deaths during Russian storming/crossfire.",
+      "sources": [
+        "https://www.refworld.org/reference/annualreport/hrw/1996/23038",
+        "https://www.amnesty.org/en/wp-content/uploads/2021/06/nws210061996en.pdf",
+        "https://en.wikipedia.org/wiki/Budyonnovsk_hospital_hostage_crisis"
+      ]
+    },
+    {
+      "name": "Kizlyar-Pervomayskoye hostage crisis",
+      "year": 1996,
+      "perpetrator": "Chechen Republic of Ichkeria / separatist side and Russian Federation / federal side",
+      "victims_group": "hostages, civilians, passersby, and police",
+      "low": null,
+      "high": null,
+      "notes": "Chechen forces took about 2,000 hostages in Kizlyar and used about 160 as human shields; HRW cites 32 killed in Kizlyar including hostages, passersby, and seven police. Russian shelling of Pervomayskoye appears to have killed about sixteen hostages. Attribution is divided and uncertain.",
+      "sources": [
+        "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848"
+      ]
+    },
+    {
+      "name": "Shali cluster-bomb attack",
+      "year": 1995,
+      "perpetrator": "Russian Federation / federal side",
+      "victims_group": "civilians in Shali",
+      "low": 20,
+      "high": 55,
+      "notes": "HRW/Memorial witness reporting cited 20 killed and nearly 100 wounded; hospital reporting cited at least 55 killed and 186 wounded.",
+      "sources": [
+        "https://www.hrw.org/reports/1995/Russia.htm",
+        "https://www.latimes.com/archives/la-xpm-1995-01-05-mn-16695-story.html"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is civilian deaths: Memorial/Rosstat-linked work supports about 30,000-50,000 civilian deaths, while Amnesty's April 1996 estimate was 20,000-30,000 and some public/secondary estimates run to 100,000. Russian military deaths range from official/semi-official figures around 5,500 to the Soldiers' Mothers estimate of about 14,000. Chechen combatant deaths are poorly documented, with Chechen-side figures around 2,800-3,800, independent estimates up to about 10,000, and higher Russian 'irrecoverable loss' claims that may include captured and missing. Indirect deaths from detention abuse, disappearances, lack of medical access, displacement, and mines are documented but not reliably quantified.",
+  "sources": [
+    {
+      "url": "https://www.amnesty.org/ar/wp-content/uploads/2021/06/eur460201996en.pdf",
+      "title": "Russian Federation: Brief summary of concerns about human rights violations in the Chechen Republic",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://ruswars.org/report/Report_Memorial.pdf",
+      "title": "A chain of wars, a chain of crimes",
+      "publisher": "Memorial Human Rights Centre"
+    },
+    {
+      "url": "https://www.refworld.org/reference/annualreport/hrw/1996/23038",
+      "title": "Human Rights Watch World Report 1996 - The Russian Federation",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://www.refworld.org/reference/countryrep/hrw/1995/en/37335",
+      "title": "Russia: Partisan War in Chechnya on Eve of WWII Commemoration",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://www.refworld.org/reference/countryrep/hrw/1996/en/96848",
+      "title": "Russian Federation: Caught in the Cross Fire: Civilians in Gudermes and Pervomayskoye",
+      "publisher": "Human Rights Watch / Refworld"
+    },
+    {
+      "url": "https://hrlibrary.umn.edu/commission/country52/1996_13.htm",
+      "title": "The situation of human rights in the Republic of Chechnya of the Russian Federation",
+      "publisher": "UN Commission on Human Rights / University of Minnesota Human Rights Library"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Russia__Chechnya__1994-1996.pdf",
+      "title": "Russia (Chechen Republic of Ichkeria) 1994",
+      "publisher": "Peace Research Institute Frankfurt / UCDP case material"
+    },
+    {
+      "url": "https://www.prio.org/data/1",
+      "title": "PRIO Battledeaths Dataset",
+      "publisher": "Peace Research Institute Oslo"
+    },
+    {
+      "url": "https://www.hoover.org/research/forgotten-war",
+      "title": "The Forgotten War",
+      "publisher": "Hoover Institution"
+    },
+    {
+      "url": "https://www.soldati-russian.ru/index/poteri_storon/0-5",
+      "title": "\u041f\u043e\u0442\u0435\u0440\u0438 \u0432 \u0447\u0435\u0447\u0435\u043d\u0441\u043a\u043e\u0439 \u0432\u043e\u0439\u043d\u0435 (\u043f\u0435\u0440\u0432\u0430\u044f \u0438 \u0432\u0442\u043e\u0440\u0430\u044f \u043a\u0430\u043c\u043f\u0430\u043d\u0438\u0438)",
+      "publisher": "\u0421\u043e\u043b\u0434\u0430\u0442\u044b \u0420\u0424"
+    },
+    {
+      "url": "https://www.hrw.org/reports/1995/Russia.htm",
+      "title": "Russia's War in Chechnya: Victims Speak Out",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1995-01-05-mn-16695-story.html",
+      "title": "Survivors Recall Brutal Assault on Chechen Town",
+      "publisher": "Los Angeles Times"
+    },
+    {
+      "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/nws210061996en.pdf",
+      "title": "AI News: June 1996",
+      "publisher": "Amnesty International"
+    }
+  ]
+}

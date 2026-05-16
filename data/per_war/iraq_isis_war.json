@@ -1,0 +1,408 @@
+{
+  "war_id": "iraq_isis_war",
+  "name": "War against ISIS in Iraq and Syria (incl. Yazidi genocide)",
+  "start_year": 2014,
+  "end_year": 2019,
+  "ongoing": false,
+  "regions": [
+    "Iraq",
+    "Syria"
+  ],
+  "summary": "A multi-sided campaign against ISIS followed the group's 2014 seizure of major territory in Iraq and Syria. Iraq declared victory in December 2017 and the SDF declared ISIS's last territorial enclave at Baghuz defeated in March 2019, but casualty accounting remains fragmented and often not attributable by perpetrator.",
+  "sides": [
+    {
+      "name": "Islamic State / ISIS / ISIL / Daesh",
+      "members": [
+        "Islamic State"
+      ],
+      "military_killed": {
+        "low": 50000,
+        "high": 100000,
+        "point": null,
+        "notes": "Low is a U.S.-reported figure by late 2016; high is a cautious working ceiling based on later U.S./allied claims exceeding 80,000 by end-2017 plus 2018-2019 fighting. These are not identified body counts.",
+        "sources": [
+          "https://english.alarabiya.net/News/middle-east/2016/12/09/-50-000-ISIS-fighters-killed-in-Iraq-Syria-since-2014",
+          "https://www.militarytimes.com/news/your-military/2019/03/27/low-aim-or-intel-failure-isis-last-stand-shows-the-difficulty-in-estimating-enemy-manpower/",
+          "https://www.iraqbodycount.org/analysis/numbers/2014/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 20000,
+        "high": 40000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution, shootings, bombings, shelling, massacre",
+            "victims_group": "Iraqi civilians",
+            "low": 13493,
+            "high": null,
+            "notes": "Iraq Body Count recorded 13,493 IS-involved Iraqi civilian deaths from June 2014 through December 2015; later years not cleanly aggregated here.",
+            "sources": [
+              "https://www.iraqbodycount.org/analysis/numbers/2015/"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Yazidi civilians in Sinjar",
+            "low": 800,
+            "high": 2300,
+            "notes": "PLOS Medicine estimated 1,400 Yazidis executed, 95% CI 800-2,300, during the August 2014 attack.",
+            "sources": [
+              "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297"
+            ]
+          },
+          {
+            "cause": "execution",
+            "victims_group": "Syrian civilians and others under ISIS control",
+            "low": null,
+            "high": null,
+            "notes": "SOHR reported 6,209 total ISIS executions in Syria by late 2018, but the figure mixes civilians and combatants and cannot be converted into a civilian-only number here.",
+            "sources": [
+              "https://www.syriahr.com/en/115014/"
+            ]
+          }
+        ],
+        "notes": "The range is a reconstructed estimate. No source found provides a comprehensive 2014-2019 Iraq+Syria civilian-only ISIS-perpetrated total.",
+        "sources": [
+          "https://www.iraqbodycount.org/analysis/numbers/2015/",
+          "https://www.iraqbodycount.org/analysis/numbers/2014/",
+          "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297",
+          "https://www.syriahr.com/en/115014/"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "siege",
+          "victims_group": "Yazidis trapped on Mount Sinjar",
+          "low": 1000,
+          "high": 2900,
+          "point": 1700,
+          "notes": "Deaths from starvation, dehydration or injuries during the ISIS siege; PLOS Medicine 95% CI 1,000-2,900.",
+          "sources": [
+            "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297"
+          ]
+        },
+        {
+          "type": "captivity",
+          "victims_group": "Kidnapped Yazidis",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "PLOS estimated 6,800 kidnapped and 2,500 still missing at survey time, but deaths in captivity cannot be cleanly quantified.",
+          "sources": [
+            "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iraqi government and aligned Iraqi/Kurdish forces",
+      "members": [
+        "Iraqi Security Forces",
+        "Iraqi Army",
+        "Iraqi Federal Police",
+        "Popular Mobilization Forces",
+        "Kurdistan Regional Government Peshmerga"
+      ],
+      "military_killed": {
+        "low": 10000,
+        "high": 20000,
+        "point": null,
+        "notes": "Known components include over 7,000 PMF killed and over 1,800 Peshmerga killed by late 2017; IBC reported over 4,000 Iraqi soldiers and allied militia killed by end-2015, but categories overlap.",
+        "sources": [
+          "https://www.rudaw.net/english/middleeast/iraq/14122017",
+          "https://www.iraqinews.com/iraq-war/kurdistan-1760-peshmerga-soldiers-killed-anti-war-since-2014/",
+          "https://www.iraqbodycount.org/analysis/numbers/2015/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2002,
+        "high": 8000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrike",
+            "victims_group": "Iraqi civilians",
+            "low": 2002,
+            "high": 2002,
+            "notes": "IBC recorded 1,748 civilians killed by Iraqi military airstrikes in 2014 and 254 in 2015.",
+            "sources": [
+              "https://www.iraqbodycount.org/analysis/numbers/2014/",
+              "https://www.iraqbodycount.org/analysis/numbers/2015/"
+            ]
+          },
+          {
+            "cause": "airstrike, artillery, mortar fire",
+            "victims_group": "Mosul civilians",
+            "low": null,
+            "high": null,
+            "notes": "AP found Iraqi or coalition forces responsible for at least 3,200 Mosul civilian deaths but did not split Iraqi from coalition responsibility.",
+            "sources": [
+              "https://www.aljazeera.com/news/2017/12/9000-killed-battle-mosul-ap-171220075620663.html",
+              "https://www.cbsnews.com/news/ap-mosul-isis-civilian-death-toll-10-times-higher-us-iraq-acknowledge/"
+            ]
+          }
+        ],
+        "notes": "Low is documented Iraqi airstrike deaths in 2014-2015. High is a cautious estimate including later ground fire and Mosul all-party anti-ISIS operations, but attribution is not clean.",
+        "sources": [
+          "https://www.iraqbodycount.org/analysis/numbers/2014/",
+          "https://www.iraqbodycount.org/analysis/numbers/2015/",
+          "https://www.aljazeera.com/news/2017/12/9000-killed-battle-mosul-ap-171220075620663.html"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "U.S.-led Coalition and Syrian Democratic Forces",
+      "members": [
+        "United States",
+        "United Kingdom",
+        "France",
+        "Netherlands",
+        "Australia",
+        "Belgium",
+        "other CJTF-OIR members",
+        "Syrian Democratic Forces",
+        "YPG",
+        "YPJ"
+      ],
+      "military_killed": {
+        "low": 11000,
+        "high": 11500,
+        "point": 11000,
+        "notes": "SDF stated over 11,000 fighters were killed against ISIS. Coalition military deaths were much lower but no consolidated all-nationalities 2014-2019 total was found in the searched sources.",
+        "sources": [
+          "https://www.kurdistan24.net/en/story/379206/SDF-says-over-11%2C000-of-its-forces-killed-in-fight-against-the-Islamic-State",
+          "https://www.aljazeera.com/news/2019/3/23/taste-of-victory-for-sdf-but-isil-threat-remains"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1302,
+        "high": 13135,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrike and artillery",
+            "victims_group": "Iraqi and Syrian civilians",
+            "low": 1302,
+            "high": 1319,
+            "notes": "Official CJTF-OIR admissions through April-May 2019.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/news/2019/05/us-coalition-admission-of-1300-civilian-deaths-in-iraq-and-syria-2/",
+              "https://www.globalsecurity.org/military/library/news/2019/06/mil-190627-sputnik04.htm"
+            ]
+          },
+          {
+            "cause": "airstrike and artillery",
+            "victims_group": "Iraqi and Syrian civilians",
+            "low": 8259,
+            "high": 13135,
+            "notes": "Airwars five-year estimate for U.S.-led coalition civilian deaths in Iraq and Syria.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Operation_Inherent_Resolve"
+            ]
+          },
+          {
+            "cause": "airstrike and artillery",
+            "victims_group": "Raqqa civilians",
+            "low": 1600,
+            "high": null,
+            "notes": "Amnesty/Airwars found more than 1,600 civilians killed by coalition actions in Raqqa in 2017.",
+            "sources": [
+              "https://www.amnesty.org/en/latest/news/2019/04/syria-unprecedented-investigation-reveals-us-led-coalition-killed-more-than-1600-civilians-in-raqqa-death-trap-2/"
+            ]
+          },
+          {
+            "cause": "airstrike",
+            "victims_group": "Mosul civilians",
+            "low": 1066,
+            "high": 1579,
+            "notes": "Airwars estimate of civilians likely killed by coalition strikes in Mosul.",
+            "sources": [
+              "https://airwars.org/research/airwars-annual-assessment-2017/"
+            ]
+          }
+        ],
+        "notes": "Official coalition figures are treated as a low bound. Airwars/Amnesty field investigations provide the higher independent range.",
+        "sources": [
+          "https://www.amnesty.org/en/latest/news/2019/05/us-coalition-admission-of-1300-civilian-deaths-in-iraq-and-syria-2/",
+          "https://www.globalsecurity.org/military/library/news/2019/06/mil-190627-sputnik04.htm",
+          "https://www.amnesty.org/en/latest/news/2019/04/syria-unprecedented-investigation-reveals-us-led-coalition-killed-more-than-1600-civilians-in-raqqa-death-trap-2/",
+          "https://airwars.org/research/airwars-annual-assessment-2017/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Syrian government, Russia, Iran-backed forces and allied militias",
+      "members": [
+        "Syrian Arab Republic",
+        "Russian Federation",
+        "Iran-backed militias",
+        "Hezbollah and allied pro-government militias"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable ISIS-specific 2014-2019 total for Syrian government/Russian/Iran-backed military deaths was found. Wider Syria-war totals would overcount non-ISIS fighting.",
+        "sources": []
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "airstrike, shelling, direct attacks",
+            "victims_group": "Syrian civilians",
+            "low": null,
+            "high": null,
+            "notes": "ACLED reported nearly 10,000 civilian fatalities from direct attacks linked to pro-Assad forces from Jan. 2017 to Feb. 2019 across Syria, but this is not ISIS-specific and is not assigned to this war total.",
+            "sources": [
+              "https://acleddata.com/2019/03/22/press-release-even-as-overall-violence-drops-civilians-face-record-threats-in-syria/"
+            ]
+          }
+        ],
+        "notes": "Syrian/Russian civilian harm in the wider civil war is large but cannot be cleanly separated into anti-ISIS operations using the searched sources.",
+        "sources": [
+          "https://acleddata.com/2019/03/22/press-release-even-as-overall-violence-drops-civilians-face-record-threats-in-syria/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 71000,
+    "military_high": 131500,
+    "civilian_low": 39000,
+    "civilian_high": 68000,
+    "grand_low": 110000,
+    "grand_high": 200000,
+    "notes": "Grand totals are reconstructed, not a database total. They combine ISIS combatant deaths, Iraqi-aligned and SDF deaths, documented/estimated civilian deaths from ISIS, coalition, Iraqi-aligned forces and Yazidi siege deaths, while avoiding wholesale inclusion of non-ISIS-specific Syrian civil-war deaths."
+  },
+  "key_atrocities": [
+    {
+      "name": "Yazidi genocide / Sinjar attack",
+      "year": 2014,
+      "perpetrator": "Islamic State",
+      "victims_group": "Yazidi civilians",
+      "low": 2100,
+      "high": 4400,
+      "notes": "PLOS Medicine estimated 3,100 Yazidis killed, 95% CI 2,100-4,400, plus 6,800 kidnapped.",
+      "sources": [
+        "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297"
+      ]
+    },
+    {
+      "name": "Camp Speicher massacre",
+      "year": 2014,
+      "perpetrator": "Islamic State",
+      "victims_group": "Iraqi Air Force cadets / captured military personnel",
+      "low": null,
+      "high": 1700,
+      "notes": "ISIS executed up to 1,700 Shia Iraqi Air Force cadets near Tikrit.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/War_in_Iraq_%282013%E2%80%932017%29"
+      ]
+    },
+    {
+      "name": "Battle of Mosul",
+      "year": 2017,
+      "perpetrator": "Multiple parties",
+      "victims_group": "Mosul civilians and combatants",
+      "low": 9000,
+      "high": 11000,
+      "notes": "AP investigation found 9,000-11,000 people killed; Iraqi or coalition forces responsible for at least 3,200 civilian deaths from airstrikes, artillery or mortars.",
+      "sources": [
+        "https://www.aljazeera.com/news/2017/12/9000-killed-battle-mosul-ap-171220075620663.html",
+        "https://www.cbsnews.com/news/ap-mosul-isis-civilian-death-toll-10-times-higher-us-iraq-acknowledge/"
+      ]
+    },
+    {
+      "name": "Raqqa offensive",
+      "year": 2017,
+      "perpetrator": "U.S.-led Coalition and SDF against ISIS",
+      "victims_group": "Raqqa civilians",
+      "low": 1600,
+      "high": null,
+      "notes": "Amnesty/Airwars found more than 1,600 civilians killed by coalition air and artillery actions.",
+      "sources": [
+        "https://www.amnesty.org/en/latest/news/2019/04/syria-unprecedented-investigation-reveals-us-led-coalition-killed-more-than-1600-civilians-in-raqqa-death-trap-2/"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The main uncertainties are perpetrator attribution in dense urban battles, double-counting between military and civilian categories, official combatant body-count inflation, and the overlap between the anti-ISIS war and the wider Syrian civil war. Syrian government/Russian civilian-harm totals were not added except as contextual notes because most are not ISIS-specific.",
+  "sources": [
+    {
+      "url": "https://www.iraqbodycount.org/analysis/numbers/2014/",
+      "title": "Iraq 2014: Civilian deaths almost doubling year on year",
+      "publisher": "Iraq Body Count"
+    },
+    {
+      "url": "https://www.iraqbodycount.org/analysis/numbers/2015/",
+      "title": "Iraq 2015: A Catastrophic Normal",
+      "publisher": "Iraq Body Count"
+    },
+    {
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002297",
+      "title": "Mortality and kidnapping estimates for the Yazidi population in the area of Mount Sinjar, Iraq, in August 2014",
+      "publisher": "PLOS Medicine"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2019/04/syria-unprecedented-investigation-reveals-us-led-coalition-killed-more-than-1600-civilians-in-raqqa-death-trap-2/",
+      "title": "Syria: Unprecedented investigation reveals US-led Coalition killed more than 1,600 civilians in Raqqa death trap",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://airwars.org/research/airwars-annual-assessment-2017/",
+      "title": "Airwars annual assessment 2017: civilians paid a high price for major Coalition gains",
+      "publisher": "Airwars"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2017/12/9000-killed-battle-mosul-ap-171220075620663.html",
+      "title": "More than 9,000 killed in battle for Mosul: AP",
+      "publisher": "Al Jazeera"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/ap-mosul-isis-civilian-death-toll-10-times-higher-us-iraq-acknowledge/",
+      "title": "AP: Death toll in Mosul 10 times higher than acknowledged",
+      "publisher": "CBS News / Associated Press"
+    },
+    {
+      "url": "https://www.syriahr.com/en/115014/",
+      "title": "ISIS executed over 6,000 people in Syria since 2014",
+      "publisher": "Syrian Observatory for Human Rights"
+    },
+    {
+      "url": "https://www.kurdistan24.net/en/story/379206/SDF-says-over-11%2C000-of-its-forces-killed-in-fight-against-the-Islamic-State",
+      "title": "SDF says over 11,000 of its forces killed in fight against the Islamic State",
+      "publisher": "Kurdistan24"
+    },
+    {
+      "url": "https://www.rudaw.net/english/middleeast/iraq/14122017",
+      "title": "More than 7k Hashd killed in war on ISIS, militia leader",
+      "publisher": "Rudaw"
+    },
+    {
+      "url": "https://www.iraqinews.com/iraq-war/kurdistan-1760-peshmerga-soldiers-killed-anti-war-since-2014/",
+      "title": "Kurdistan: 1760 Peshmerga soldiers killed in anti-IS war since 2014",
+      "publisher": "Iraqi News"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2019/05/us-coalition-admission-of-1300-civilian-deaths-in-iraq-and-syria-2/",
+      "title": "US coalition admission of 1,300 civilian deaths in Iraq and Syria",
+      "publisher": "Amnesty International"
+    },
+    {
+      "url": "https://www.globalsecurity.org/military/library/news/2019/06/mil-190627-sputnik04.htm",
+      "title": "US-Led Coalition Admits Killing at Least 1,319 Civilians in Syria, Iraq",
+      "publisher": "GlobalSecurity.org"
+    },
+    {
+      "url": "https://acleddata.com/2019/03/22/press-release-even-as-overall-violence-drops-civilians-face-record-threats-in-syria/",
+      "title": "Even as Overall Violence Drops, Civilians Face Record Threats in Syria",
+      "publisher": "ACLED"
+    }
+  ]
+}

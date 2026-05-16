@@ -1,0 +1,50 @@
+\section{Setup}\label{sec:setup}
+
+A conflict produces $D\in\mathbb N$ deaths in $[t_0,t_1]$ in a population of size $N$. Each death is a combatant ($C=1$) or civilian ($C=0$); write $D_M=\sum_i\Ind\{C_i{=}1\}$, $D_C=D-D_M$, and the targets
+\[
+q = D_M / D \in [0, 1], \qquad r = D_C / D_M = (1 - q)/q.
+\]
+Each death has a demographic class $k\in\mathcal K=\{\text{child},\text{adult-female},\text{adult-male}\}$. Write $\omega_k=D_k/D$ for the share among the dead, $p_k$ for the share in the population, and let $\mathrm{AM}$ denote adult male (ages 18--60), with population share $a=p_{\mathrm{AM}}$. Let $w=\sum_{k\ne\mathrm{AM}}p_k$ be the women-and-children population share and $\omega=\sum_{k\ne\mathrm{AM}}\omega_k$ their share of the dead. Let $M$ be the pre-war combatant stock and $f=M/N$. Without loss combatants are in $\mathrm{AM}$; female and minor combatants enter as a small slack $\bar\eta\le 0.03$ (Remark~\ref{rem:female-combatants}).
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Core notation and measurement channels.}}
+\label{tab:notation}
+\begin{small}
+\begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
+\toprule
+Symbol & Meaning & Role & Typical source \\
+\midrule
+$D$              & total deaths in window      & input    & ministry of health, OCHA, UCDP, survey \\
+$D_M, D_C$       & combatant, civilian deaths  & target   & decomposition of $D$ \\
+$q=D_M/D$        & combatant share of dead     & estimand & --- \\
+$w$              & women+children pop.\ share  & input    & census, UN Population Division \\
+$a=p_\mathrm{AM}$ & adult-male pop.\ share     & input    & census / age pyramid \\
+$\omega$         & women+children share of dead & input   & identified-deaths sample (e.g.\ OHCHR) \\
+$M$              & combatant stock at $t_0$    & input    & IISS / RUSI / CSIS / intelligence \\
+$\bar\mu$        & exposure-differential cap   & assumption & sensitivity parameter \\
+$\rho$           & contradiction radius        & output   & distance to feasibility \\
+\bottomrule
+\end{tabularx}
+\end{small}
+\end{table}
+
+\paragraph{Sources.} We use five channels: an independent population census $(p_k,N)$; a demographic survey of the dead returning sample shares $\hat\omega_k$; aggregate death totals $\hat D$; belligerent combatant-death claims $\hat D_M$; and independent manpower estimates $\hat M$. Each source $i$ is allowed to be $\varepsilon_i$-contaminated in Huber's sense \citep{huber1964,berger1986}: it draws from the truth with probability $1-\varepsilon_i$ and from an arbitrary adversary with probability $\varepsilon_i$.
+
+\subsection{Source aggregation}\label{sec:aggregation}
+
+When several independent sources $i=1,\dots,m$ report the same scalar parameter $\theta$ (e.g., the women-and-children share $\omega$ from OHCHR identifications and from MoH death records) with reported point estimates $\hat\theta_i$ and standard errors $\hat\sigma_i$, the natural \emph{precision-weighted} aggregate is
+\begin{equation}\label{eq:agg}
+\hat\theta_{\mathrm{agg}} \;=\; \frac{\sum_i\hat\theta_i/\hat\sigma_i^2}{\sum_i 1/\hat\sigma_i^2},
+\qquad
+\hat\sigma_{\mathrm{agg}}^2 \;=\; \Bigl(\sum_i 1/\hat\sigma_i^2\Bigr)^{-1}.
+\end{equation}
+
+\begin{proposition}[Aggregation under conflicting sources]\label{prop:agg}
+If sources are independent and unbiased, $\hat\theta_{\mathrm{agg}}$ in \eqref{eq:agg} is the minimum-variance unbiased linear estimator of $\theta$. If source $i$ has bias $b_i$, the aggregate has bias $\bigl(\sum_i b_i/\hat\sigma_i^2\bigr)/\bigl(\sum_i 1/\hat\sigma_i^2\bigr)$. Allowing $\varepsilon_i$-contamination (Section~\ref{sec:bias}), the worst-case bias of $\hat\theta_{\mathrm{agg}}$ is at most $\sum_i\varepsilon_i R_i\cdot \hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$, where $R_i$ is the diameter of the support of source $i$'s contaminating distribution.
+\end{proposition}
+\begin{proof}
+Inverse-variance weighting minimises variance over linear unbiased combinations (Gauss--Markov). The bias and contamination statements follow by linearity.
+\end{proof}
+
+In the Gaza application, the OHCHR identification sample ($\hat\omega=0.693$) and the MoH death records ($\hat\omega=0.560$) are aggregated; both have estimated $\hat\sigma\approx 0.01$, giving the geometric blend $\hat\omega_{\mathrm{agg}}\approx 0.620$ used throughout. The corresponding contradiction radius is reported separately for each anchor and for the blend, so the reader can see how aggregation choices propagate.

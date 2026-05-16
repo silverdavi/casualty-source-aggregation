@@ -1,0 +1,463 @@
+{
+  "war_id": "congo_crisis",
+  "name": "Congo Crisis",
+  "start_year": 1960,
+  "end_year": 1965,
+  "ongoing": false,
+  "regions": [
+    "Congo",
+    "Central Africa",
+    "Katanga",
+    "South Kasai",
+    "Kwilu",
+    "Orientale/Stanleyville"
+  ],
+  "summary": "The Congo Crisis was a cluster of overlapping post-independence conflicts in Congo-L\u00e9opoldville/DRC, including the ANC mutiny, Belgian intervention, Katanga and South Kasai secessions, ONUC operations, and the Kwilu/Simba rebellions. The conventional death toll is about 100,000, but some sub-conflict surveys imply a much higher upper bound if their ranges are summed. Most deaths were civilians killed in massacres, repression, hostage executions, and famine/displacement, and many figures cannot be cleanly attributed to one side.",
+  "sides": [
+    {
+      "name": "Congolese central government and pro-government forces",
+      "members": [
+        "Republic of the Congo / Democratic Republic of the Congo government",
+        "Arm\u00e9e Nationale Congolaise (ANC)",
+        "Mobutu-aligned forces",
+        "Tshombe government forces",
+        "foreign mercenaries in government service"
+      ],
+      "military_killed": {
+        "low": 235,
+        "high": null,
+        "point": null,
+        "notes": "Documented minimum from PRIO/Clodfelter for the 1964 anti-Simba campaign: about 200 Congolese soldiers and 35 mercenaries killed. Total government-side losses across all phases are not cleanly reported.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 6000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "massacre / military repression",
+            "victims_group": "Baluba civilians in South Kasai",
+            "low": 3000,
+            "high": 10000,
+            "notes": "About 3,000 Baluba civilians killed is commonly cited for the ANC invasion; Sciences Po gives 5,000-10,000 civilian deaths in South Kasai clashes involving ANC and pro-Kalonji militias. Attribution between ANC, Katangese, and local militias is not fully separable.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Invasion_of_South_Kasai",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html"
+            ]
+          },
+          {
+            "cause": "counterinsurgency massacre",
+            "victims_group": "civilians in Kikwit / Kwilu",
+            "low": 3000,
+            "high": null,
+            "notes": "Kwilu rebellion sources report over 3,000 civilians killed in one day at Kikwit by ANC/mercenary forces; broader ANC pacification totals are highly contested.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Kwilu_rebellion"
+            ]
+          }
+        ],
+        "notes": "The direct-civilian low combines the best documented South Kasai and Kikwit minimums. A much higher figure is possible, but higher Kwilu repression figures conflict with other sub-conflict totals.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Invasion_of_South_Kasai",
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html",
+          "https://en.wikipedia.org/wiki/Kwilu_rebellion"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Baluba refugees in South Kasai",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Displacement after ethnic conflict and the ANC offensive contributed to famine and epidemic malnutrition; sources report at least 200 refugees dying per day in December 1960, but no reliable cumulative total.",
+          "sources": [
+            "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html",
+            "https://pubmed.ncbi.nlm.nih.gov/20604126/"
+          ]
+        },
+        {
+          "type": "scorched_earth",
+          "victims_group": "Kwilu civilians",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "ANC and mercenary counterinsurgency reportedly razed villages and destroyed harvests; indirect deaths from hunger and disease are not separable from direct killings in available sources.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kwilu_rebellion"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Katanga and South Kasai secessionist forces",
+      "members": [
+        "State of Katanga",
+        "Katangese Gendarmerie",
+        "foreign mercenaries and advisers",
+        "Autonomous/Federated State of South Kasai",
+        "pro-Kalonji militias"
+      ],
+      "military_killed": {
+        "low": 252,
+        "high": 583,
+        "point": null,
+        "notes": "Documented Katangese/secessionist losses include 202 killed in Operation Unokat and 50+ in Operation Grandslam. PRIO/Clodfelter gives 503 battle deaths in Katanga in 1961 and 80 in 1962, but those are conflict totals rather than clean Katanga-only losses.",
+        "sources": [
+          "https://www.walterdorn.net/189-un-first-air-force-peacekeepers-in-combat-congo-1960-64",
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+          "https://en.wikipedia.org/wiki/Operation_Grandslam"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 3,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "execution",
+            "victims_group": "Patrice Lumumba, Maurice Mpolo, Joseph Okito",
+            "low": 3,
+            "high": 3,
+            "notes": "The three prisoners were killed after transfer to Katanga on 17 January 1961; Katangese personnel and Belgian-linked officers/mercenaries were involved.",
+            "sources": [
+              "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html",
+              "https://www.rtbf.be/article/il-y-a-60-ans-l-assassinat-de-patrice-lumumba-un-crime-politique-avec-des-responsabilites-belges-10674305"
+            ]
+          },
+          {
+            "cause": "massacre / ethnic violence",
+            "victims_group": "Baluba civilians",
+            "low": null,
+            "high": null,
+            "notes": "Katangese forces participated in violence against Baluba/BALUBAKAT populations, but available figures such as about 3,000 killed or 5,000-10,000 South Kasai civilians killed are not cleanly attributable between ANC, Katangese, and local forces.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/South_Kasai",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html"
+            ]
+          }
+        ],
+        "notes": "Only the Lumumba/Mpolo/Okito execution is a cleanly attributable minimum. Larger Baluba civilian deaths are known but not assignable solely to secessionist forces.",
+        "sources": [
+          "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html",
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Baluba refugees",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Katangese/local violence contributed to Baluba displacement and famine; sources report 35,000 refugees in Elisabethville camps and as many as 100,000 seeking refuge in Bakwanga, but no secessionist-only indirect death total.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/South_Kasai",
+            "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lumumbist / CNL / Simba and Kwilu rebels",
+      "members": [
+        "Free Republic of the Congo at Stanleyville",
+        "Simba rebels",
+        "Kwilu rebels / Mulelists",
+        "CNL-linked Lumumbist insurgents"
+      ],
+      "military_killed": {
+        "low": 4000,
+        "high": null,
+        "point": null,
+        "notes": "PRIO/Clodfelter reports 2,000 or more Simba killed in action and another 2,000 executed. Kwilu and other rebel military deaths are not cleanly tabulated.",
+        "sources": [
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 1209,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "hostage execution",
+            "victims_group": "foreign hostages at Stanleyville and other Simba-held areas",
+            "low": 209,
+            "high": 209,
+            "notes": "24 hostages killed during Operation Dragon Rouge and 185 foreign hostages left behind executed by mid-December 1964.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge"
+            ]
+          },
+          {
+            "cause": "political massacre / executions",
+            "victims_group": "Westernized Congolese and perceived collaborators in Stanleyville",
+            "low": 1000,
+            "high": 2000,
+            "notes": "PRIO/Clodfelter notes about 1,000-2,000 Westernized Congolese murdered in Stanleyville alone.",
+            "sources": [
+              "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+            ]
+          },
+          {
+            "cause": "massacre / battle-area killing",
+            "victims_group": "Black Congolese civilians in eastern rebellion zones",
+            "low": null,
+            "high": null,
+            "notes": "PRIO/Clodfelter reports at least 18,000 Black civilians murdered by the two sides, so these deaths cannot be assigned solely to the rebels.",
+            "sources": [
+              "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+            ]
+          }
+        ],
+        "notes": "Low is a conservative documented minimum from foreign-hostage and Stanleyville political killings. Larger civilian totals are partly two-sided or overlap with government repression.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge",
+          "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "civilians in rebel-held Kwilu and eastern Congo",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "Sources describe hunger, disease, and displacement as rebel-held areas collapsed, but indirect deaths caused by rebel governance cannot be separated from the effects of government counterinsurgency.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kwilu_rebellion"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "United Nations Operation in the Congo (ONUC)",
+      "members": [
+        "United Nations peacekeeping contingents",
+        "India",
+        "Ireland",
+        "Sweden",
+        "Ethiopia",
+        "Ghana",
+        "Tunisia",
+        "Morocco",
+        "Canada",
+        "Nigeria",
+        "other UN contributors"
+      ],
+      "military_killed": {
+        "low": 245,
+        "high": 245,
+        "point": 245,
+        "notes": "Official UN mission page lists 245 military personnel killed/died, plus 5 international civilian staff, for 250 ONUC fatalities.",
+        "sources": [
+          "https://peacekeeping.un.org/fr/mission/past/onucF.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "checkpoint shooting",
+            "victims_group": "Belgian civilian women",
+            "low": 2,
+            "high": 2,
+            "notes": "Reported during Operation Grandslam; broader ONUC-caused civilian casualties are not systematically tabulated in sources found.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Operation_Grandslam"
+            ]
+          }
+        ],
+        "notes": "No reliable aggregate civilian death toll caused directly by ONUC fire was found.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Operation_Grandslam"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Belgian / U.S. direct intervention forces",
+      "members": [
+        "Belgian regular forces",
+        "Belgian paracommandos",
+        "United States airlift/support forces"
+      ],
+      "military_killed": {
+        "low": 2,
+        "high": null,
+        "point": 2,
+        "notes": "Operation Dragon Rouge lists 2 Belgian paratroopers killed and 12 wounded. Total Belgian losses across all regular/covert/adviser categories are not cleanly reported.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "complicity in execution / unlawful transfer",
+            "victims_group": "Patrice Lumumba, Maurice Mpolo, Joseph Okito",
+            "low": null,
+            "high": null,
+            "notes": "Belgian officials/officers/mercenaries were implicated in the transfer, torture context, and execution environment, but direct killing is generally attributed to Katangese separatists/police/gendarmes; counted under Katanga above to avoid double counting.",
+            "sources": [
+              "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html",
+              "https://www.lemonde.fr/afrique/article/2025/06/18/assassinat-de-patrice-lumumba-un-ancien-diplomate-belge-pourrait-etre-bientot-devant-les-assises_6614220_3212.html"
+            ]
+          }
+        ],
+        "notes": "No quantified civilian deaths directly caused by Belgian/U.S. intervention forces as distinct from allied Congolese/Katangese forces were found.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge",
+          "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 4734,
+    "military_high": null,
+    "civilian_low": 95000,
+    "civilian_high": 260000,
+    "grand_low": 100000,
+    "grand_high": 265000,
+    "notes": "Grand low is the conventional about-100,000 war-related deaths estimate. Grand high is a broad, non-audited upper bound derived from summing Kisangani's 1960-65/overlapping sub-conflict ranges; it may double count and partly extends into 1966. Military low sums only documented minimums: 235 government/mercenary, 252 secessionist, 4,000 Simba, 245 ONUC, and 2 Belgian; real military deaths were higher but not cleanly known."
+  },
+  "key_atrocities": [
+    {
+      "name": "South Kasai / Baluba massacres and famine",
+      "year": 1960,
+      "perpetrator": "Congolese central government / ANC, with local and Katangese violence also implicated",
+      "victims_group": "Baluba civilians and refugees",
+      "low": 3000,
+      "high": 10000,
+      "notes": "About 3,000 civilians killed is common for ANC atrocities; Sciences Po gives 5,000-10,000 civilian deaths in clashes. Famine among refugees caused at least 200 deaths per day in December 1960 but no cumulative total is known.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Invasion_of_South_Kasai",
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html",
+        "https://pubmed.ncbi.nlm.nih.gov/20604126/"
+      ]
+    },
+    {
+      "name": "Execution of Lumumba, Mpolo, and Okito",
+      "year": 1961,
+      "perpetrator": "Katanga secessionist authorities with Belgian-linked involvement",
+      "victims_group": "Lumumba and two political associates",
+      "low": 3,
+      "high": 3,
+      "notes": "The three were killed after transfer to Katanga on 17 January 1961.",
+      "sources": [
+        "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html",
+        "https://www.rtbf.be/article/il-y-a-60-ans-l-assassinat-de-patrice-lumumba-un-crime-politique-avec-des-responsabilites-belges-10674305"
+      ]
+    },
+    {
+      "name": "Kindu massacre",
+      "year": 1961,
+      "perpetrator": "ANC soldiers",
+      "victims_group": "Italian ONUC airmen",
+      "low": 13,
+      "high": 13,
+      "notes": "Thirteen Italian UN airmen were killed by Congolese soldiers at Kindu.",
+      "sources": [
+        "https://peacekeeping.un.org/fr/mission/past/onucF.html"
+      ]
+    },
+    {
+      "name": "Stanleyville hostage killings / Operation Dragon Rouge",
+      "year": 1964,
+      "perpetrator": "Simba rebels",
+      "victims_group": "foreign hostages and Congolese civilians",
+      "low": 209,
+      "high": null,
+      "notes": "24 hostages were killed during the rescue operation; by mid-December 185 foreign hostages left behind, plus several thousand Congolese civilians, had reportedly been executed.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge"
+      ]
+    },
+    {
+      "name": "Kikwit / Kwilu counterinsurgency massacre",
+      "year": 1964,
+      "perpetrator": "ANC and foreign mercenary forces",
+      "victims_group": "Kwilu civilians",
+      "low": 3000,
+      "high": null,
+      "notes": "Sources describe over 3,000 civilians killed in one day at Kikwit during government counterinsurgency.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kwilu_rebellion"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The Congo Crisis casualty literature is unusually fragmented. Many figures are by episode or province rather than perpetrator; several large figures are explicitly two-sided; and battle-death, massacre, displacement, and famine deaths are often mixed. The conventional total of about 100,000 is best treated as a conservative war-related estimate, while the higher range reflects sub-conflict surveys that may overlap and are not a clean rollup.",
+  "sources": [
+    {
+      "url": "https://peacekeeping.un.org/fr/mission/past/onucF.html",
+      "title": "ONUC - United Nations Operation in the Congo",
+      "publisher": "United Nations Peacekeeping"
+    },
+    {
+      "url": "https://peacekeeping.un.org/sites/default/files/past/onucB.htm",
+      "title": "United Nations Operation in the Congo - Background",
+      "publisher": "United Nations Peacekeeping"
+    },
+    {
+      "url": "https://fr.prepareforchange.net/files/2017/12/PRIO20Battle20Deaths20Dataset203.020Documentation.pdf",
+      "title": "PRIO Battle Deaths Dataset 3.0 Documentation",
+      "publisher": "Peace Research Institute Oslo / UCDP-PRIO"
+    },
+    {
+      "url": "https://www.rienner.com/uploads/4f904bca890d1.pdf",
+      "title": "Civil Wars in the Democratic Republic of Congo, 1960-2010 (excerpt)",
+      "publisher": "Lynne Rienner Publishers"
+    },
+    {
+      "url": "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/chronology-democratic-republic-congozaire-1960-1997.html",
+      "title": "Chronology of the Democratic Republic of Congo/Zaire (1960-1997)",
+      "publisher": "Sciences Po Mass Violence and Resistance Research Network"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20604126/",
+      "title": "An epidemic of kwashiorkor in the South Kasai, Congo",
+      "publisher": "Bulletin of the World Health Organization / PubMed"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Operation_Dragon_Rouge",
+      "title": "Operation Dragon Rouge",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kwilu_rebellion",
+      "title": "Kwilu rebellion",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Invasion_of_South_Kasai",
+      "title": "Invasion of South Kasai",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/past-operations/africa/operation-des-nations-unies-congo.html",
+      "title": "Op\u00e9ration des Nations unies au Congo (ONUC)",
+      "publisher": "Government of Canada"
+    },
+    {
+      "url": "https://www.rtbf.be/article/il-y-a-60-ans-l-assassinat-de-patrice-lumumba-un-crime-politique-avec-des-responsabilites-belges-10674305",
+      "title": "Il y a 60 ans, l\u2019assassinat de Patrice Lumumba",
+      "publisher": "RTBF"
+    },
+    {
+      "url": "https://www.blackpast.org/global-african-history/congo-civil-war-1960-1964/",
+      "title": "Congo Civil War (1960-1964)",
+      "publisher": "BlackPast.org"
+    }
+  ]
+}

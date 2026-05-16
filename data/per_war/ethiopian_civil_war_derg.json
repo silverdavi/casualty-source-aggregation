@@ -1,0 +1,472 @@
+{
+  "war_id": "ethiopian_civil_war_derg",
+  "name": "Ethiopian Civil War / Derg / 1983-85 famine",
+  "start_year": 1974,
+  "end_year": 1991,
+  "ongoing": false,
+  "regions": [
+    "Ethiopia",
+    "Eritrea",
+    "Tigray",
+    "Wollo",
+    "Oromia",
+    "Ogaden",
+    "Gonder",
+    "Gojjam",
+    "Shewa"
+  ],
+  "summary": "The Ethiopian Civil War during the Derg/PDRE period was a multi-front war involving the Ethiopian state against Eritrean, Tigrayan/EPRDF, Oromo, and other insurgencies, alongside severe urban repression and counterinsurgency campaigns. The 1983-85 famine was not simply a drought disaster: Human Rights Watch/Africa attributed a large share of famine mortality to government counterinsurgency, food restrictions, forced relocation, and misuse of relief. Conservative documented roll-up suggests roughly 700,000-940,000 deaths, while broader secondary estimates reach 1-2 million but are not cleanly decomposed.",
+  "sides": [
+    {
+      "name": "Derg / PDRE government",
+      "members": [
+        "Derg / Provisional Military Administrative Committee",
+        "People's Democratic Republic of Ethiopia",
+        "Workers' Party of Ethiopia",
+        "Ethiopian Army",
+        "Ethiopian Air Force",
+        "security services",
+        "kebele cadres",
+        "government militias",
+        "Cuban forces",
+        "Soviet advisers",
+        "South Yemeni advisers"
+      ],
+      "military_killed": {
+        "low": 100000,
+        "high": null,
+        "point": null,
+        "notes": "HRW/Africa states that at least 100,000 soldiers were killed in the wars, but does not fully split those deaths by side. Most large battlefield losses described in the sources were Ethiopian government soldiers/conscripts; the figure is used as a conservative all-sides military floor, not a precise Derg-only total.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+          "https://onwar.com/data/ethiopia1974.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 150000,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "Red Terror executions, disappearances, torture deaths",
+            "victims_group": "students, academics, EPRP/MEISON members, suspected opponents, urban civilians",
+            "low": 10000,
+            "high": 150000,
+            "notes": "HRW/Africa gives at least 10,000 killed in Addis Ababa alone during the Red Terror; a later HRW dispatch says over 150,000 students, academics, and political opponents were killed during the Red Terror.",
+            "sources": [
+              "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf",
+              "https://www.hrw.org/news/2017/12/21/rare-victory-ethiopias-victims"
+            ]
+          },
+          {
+            "cause": "bombing, shelling, massacres, shootings, summary execution",
+            "victims_group": "rural civilians in Eritrea, Tigray, Ogaden, Wollo, Gojjam, Gonder, Shewa and other war zones",
+            "low": 150000,
+            "high": null,
+            "notes": "HRW/Africa states that direct killing and wounding of civilians by the Ethiopian army and air force undoubtedly exceeded 150,000, excluding famine and resettlement.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "southeast/Ogaden counterinsurgency",
+            "victims_group": "Ogadeni and other southeastern civilians",
+            "low": 25000,
+            "high": 25000,
+            "notes": "Civilian casualties in the Ogaden alone during the year following the Somali defeat were estimated at 25,000.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "aerial bombardment",
+            "victims_group": "civilians at Hawzen/Hausien market town, Tigray",
+            "low": 1800,
+            "high": 2500,
+            "notes": "HRW sources give 1,800 in Evil Days and about 2,500 in Reckoning Under the Law for the June 1988 bombing.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+              "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf"
+            ]
+          },
+          {
+            "cause": "massacre and shootings",
+            "victims_group": "civilians at Sheib and nearby Eritrean villages",
+            "low": 500,
+            "high": null,
+            "notes": "At Sheib about 80 civilians were crushed by tanks and 320 killed by gunfire; at least 100 more civilians were killed in nearby villages.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          }
+        ],
+        "notes": "The 150,000 figure is the best conservative floor for direct civilian killing by the Derg state. Named incidents do not sum to the total because many massacres and bombings were never fully documented.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+          "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf",
+          "https://www.hrw.org/news/2017/12/21/rare-victory-ethiopias-victims"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "famine-affected civilians, especially in Tigray, Wollo, Eritrea, northern Shewa and other war-affected regions",
+          "low": 225000,
+          "high": 317000,
+          "point": null,
+          "notes": "HRW/Africa estimated total famine deaths in 1983-85 at 400,000-590,000 and attributed 225,000-317,000 to government human-rights violations and counterinsurgency policies.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c9amc.pdf",
+            "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+          ]
+        },
+        {
+          "type": "forced_resettlement",
+          "victims_group": "forcibly relocated peasants and famine victims",
+          "low": 50000,
+          "high": 100000,
+          "point": null,
+          "notes": "Evil Days gives at least 50,000 deaths from resettlement; Reckoning Under the Law says about 600,000 were forcibly relocated and perhaps 100,000 died.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+            "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf"
+          ]
+        },
+        {
+          "type": "blockade",
+          "victims_group": "civilians in and around besieged Asmara",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "HRW identified military requisitioning and blockade as creating severe hunger in Asmara in 1990-91, but no defensible separate mortality estimate was found.",
+          "sources": [
+            "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EPLF / Eritrean insurgent side",
+      "members": [
+        "Eritrean People's Liberation Front",
+        "Eritrean rebel forces in the EPLF-led dyad"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "PRIF/UCDP gives 98,927 fatalities from fighting between Eritrean rebels and the Ethiopian government, and cites another estimate of 200,000 for the Eritrean secession war, but these are all-sides/all-persons dyad totals and cannot be converted into EPLF combatant deaths.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__EPLF__1964-1991.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "relief convoy attack",
+            "victims_group": "convoy drivers and relief personnel",
+            "low": 1,
+            "high": 1,
+            "notes": "One driver was killed in the EPLF attack on a 34-truck convoy south of Asmara in October 1987.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "assassination",
+            "victims_group": "alleged collaborators, WPE members, informers, prison officials",
+            "low": null,
+            "high": null,
+            "notes": "HRW reports EPLF assassinations of alleged collaborators, about one announced assassination every two weeks in late 1990 and early 1991, but no total death count is provided.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "conscription clash",
+            "victims_group": "Afar men resisting EPLF conscription at Asela/Danakil",
+            "low": null,
+            "high": null,
+            "notes": "Reports include about 20 casualties and an official Afar claim of 300 fatalities; HRW judged total dead and wounded unlikely to exceed 250, but does not provide a deaths-only figure.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          }
+        ],
+        "notes": "EPLF abuses were documented, but available sources do not support a responsible aggregate civilian-death total.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "TPLF / EPDM / EPRDF",
+      "members": [
+        "Tigray People's Liberation Front",
+        "Ethiopian People's Democratic Movement",
+        "Ethiopian People's Revolutionary Democratic Front",
+        "allied EPRDF organizations"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "PRIF/UCDP gives 53,483 deaths for the TPLF/EPDM/EPRDF vs government dyad, including 484 one-sided government-violence victims, but does not split deaths by side or combatant/civilian status.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__EPRDF_et_al__1976-1991.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 2,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "attack on relief workers",
+            "victims_group": "World Vision employees at Alamata",
+            "low": 2,
+            "high": 2,
+            "notes": "Two World Vision employees were killed and four wounded in the TPLF/EPDM attack on Alamata in March 1986; HRW cites witnesses saying the killings were deliberate.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "kidnapping/attacks on relief centers and routes",
+            "victims_group": "relief workers and civilians dependent on relief",
+            "low": null,
+            "high": null,
+            "notes": "TPLF captured relief workers in 1983 and 1988 and attacked relief-related sites/routes, but HRW reports casualties from TPLF mines/attacks were infrequent and no aggregate death toll is given.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          }
+        ],
+        "notes": "HRW documents abuses but states that TPLF/EPRDF abuses were on a much smaller scale than government abuses. No comprehensive direct-civilian-death total was found.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "OLF and other non-EPLF / non-EPRDF insurgents",
+      "members": [
+        "Oromo Liberation Front",
+        "Ethiopian People's Revolutionary Party rural insurgents",
+        "Western Somali Liberation Front",
+        "Somali-aligned forces",
+        "other regional armed groups"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "PRIF/UCDP gives 1,484 deaths for the OLF-government war, including 364 one-sided government-violence victims, but does not provide OLF combatant deaths. Other groups are even less well quantified.",
+        "sources": [
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__OLF__1983-1992.pdf",
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "killing, looting, rape",
+            "victims_group": "border-area civilians affected by WSLF and Somali-aligned forces",
+            "low": null,
+            "high": null,
+            "notes": "HRW reports killing, looting and rape by WSLF from 1978 onward but gives no consolidated death count in the consulted material.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "raids, kidnapping, attacks on settlements or projects",
+            "victims_group": "settlers, construction workers, local civilians",
+            "low": null,
+            "high": null,
+            "notes": "EPRP actions in Metekel included harassment of settlements, stealing food, kidnapping three Italian workers, destroying vehicles and a water point; no civilian death total was found.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          },
+          {
+            "cause": "attack on refugee camp",
+            "victims_group": "Sudanese refugees",
+            "low": null,
+            "high": null,
+            "notes": "HRW notes that the OLF attacked a Sudanese refugee camp in 1990, but no death total was found in the consulted sources.",
+            "sources": [
+              "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+            ]
+          }
+        ],
+        "notes": "Real abuses are documented, but the available sources do not permit a responsible aggregate death toll.",
+        "sources": [
+          "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+          "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__OLF__1983-1992.pdf"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 100000,
+    "military_high": null,
+    "civilian_low": 600000,
+    "civilian_high": 840000,
+    "grand_low": 700000,
+    "grand_high": 2000000,
+    "notes": "Conservative component roll-up: at least 100,000 soldiers; at least 150,000 direct civilian killings; 400,000-590,000 famine deaths; 50,000-100,000 resettlement deaths, producing roughly 700,000-940,000. The JSON grand_high uses 2,000,000 to reflect PRIF-cited broader secondary estimates of 1-2 million, but those figures are not decomposed by side or death category."
+  },
+  "key_atrocities": [
+    {
+      "name": "1983-85 Ethiopian famine",
+      "year": 1984,
+      "perpetrator": "Derg / PDRE government, through counterinsurgency and food-control policies; drought and structural poverty also contributed",
+      "victims_group": "famine-affected civilians",
+      "low": 400000,
+      "high": 590000,
+      "notes": "HRW/Africa estimated total famine deaths at 400,000-590,000 and attributed 225,000-317,000 to government violations.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c9amc.pdf",
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+      ]
+    },
+    {
+      "name": "Forced resettlement program",
+      "year": 1985,
+      "perpetrator": "Derg / PDRE government",
+      "victims_group": "forcibly relocated peasants and famine victims",
+      "low": 50000,
+      "high": 100000,
+      "notes": "About 600,000 people were forcibly relocated; death estimates range from at least 50,000 to perhaps 100,000.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+        "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf"
+      ]
+    },
+    {
+      "name": "Red Terror",
+      "year": 1977,
+      "perpetrator": "Derg / kebele and security apparatus",
+      "victims_group": "suspected EPRP/MEISON members, students, academics, political opponents",
+      "low": 10000,
+      "high": 150000,
+      "notes": "At least 10,000 killed in Addis Ababa alone; HRW later described over 150,000 killed during the Red Terror campaign.",
+      "sources": [
+        "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf",
+        "https://www.hrw.org/news/2017/12/21/rare-victory-ethiopias-victims"
+      ]
+    },
+    {
+      "name": "Ogaden counterinsurgency civilian killings",
+      "year": 1979,
+      "perpetrator": "Derg / Ethiopian army and air force",
+      "victims_group": "Ogadeni and southeastern civilians",
+      "low": 25000,
+      "high": 25000,
+      "notes": "Civilian casualties in the Ogaden alone during the year after the Somali defeat were estimated at 25,000.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+      ]
+    },
+    {
+      "name": "Hawzen/Hausien bombing",
+      "year": 1988,
+      "perpetrator": "Derg / Ethiopian air force",
+      "victims_group": "Tigrayan market-town civilians",
+      "low": 1800,
+      "high": 2500,
+      "notes": "HRW sources give 1,800 to about 2,500 civilian deaths.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+        "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf"
+      ]
+    },
+    {
+      "name": "Sheib massacre and nearby killings",
+      "year": 1988,
+      "perpetrator": "Derg / Ethiopian army",
+      "victims_group": "Eritrean civilians",
+      "low": 500,
+      "high": null,
+      "notes": "About 80 civilians were crushed by tanks and 320 killed by gunfire at Sheib; at least 100 more were killed in nearby villages.",
+      "sources": [
+        "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf"
+      ]
+    },
+    {
+      "name": "Afabet battle",
+      "year": 1988,
+      "perpetrator": "EPLF against Ethiopian government forces",
+      "victims_group": "Ethiopian government soldiers",
+      "low": 18000,
+      "high": null,
+      "notes": "Military event: at least 18,000 government troops killed or captured in two days according to OnWar/country-study summary.",
+      "sources": [
+        "https://onwar.com/data/ethiopia1974.html"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainties are side-specific combatant deaths, the famine counterfactual, and aggregate rebel-caused civilian deaths. UCDP/PRIF dyad totals are useful but do not split deaths by side or combatant/civilian status. HRW/Africa provides the best decomposed estimates for government direct killing, famine attribution, and resettlement, but broader 1-2 million total estimates are not decomposed enough to assign to JSON buckets without caution.",
+  "sources": [
+    {
+      "url": "https://www.hrw.org/report/1991/09/01/evil-days/30-years-war-and-famine-ethiopia",
+      "title": "Evil Days: 30 Years of War and Famine in Ethiopia",
+      "publisher": "Human Rights Watch / Africa Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/ethiop991.pdf",
+      "title": "Evil Days: 30 Years of War and Famine in Ethiopia (PDF)",
+      "publisher": "Human Rights Watch / Africa Watch"
+    },
+    {
+      "url": "https://www.hrw.org/reports/pdfs/e/ethiopia/ethiopia.919/c9amc.pdf",
+      "title": "Evil Days, Chapter 9: Economic War on the Peasants and Famine",
+      "publisher": "Human Rights Watch / Africa Watch"
+    },
+    {
+      "url": "https://www.hrw.org/report/1994/12/01/ethiopia-reckoning-under-law",
+      "title": "Ethiopia: Reckoning Under the Law",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/sites/default/files/reports/ethiopia94d.pdf",
+      "title": "Ethiopia: Reckoning Under the Law (PDF)",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.hrw.org/news/2017/12/21/rare-victory-ethiopias-victims",
+      "title": "A Rare Victory for Ethiopia's Victims",
+      "publisher": "Human Rights Watch"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__EPLF__1964-1991.pdf",
+      "title": "WARID: Ethiopia (ELF, ELF-PLF, EPLF) 1964-1991",
+      "publisher": "Peace Research Institute Frankfurt (PRIF)"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__EPRDF_et_al__1976-1991.pdf",
+      "title": "WARID: Ethiopia (TPLF, EPDM, EPRDF) 1976-1991",
+      "publisher": "Peace Research Institute Frankfurt (PRIF)"
+    },
+    {
+      "url": "https://www.prif.org/fileadmin/Daten/Publikationen/Prif_Working_Papers/Anh%C3%A4nge/Ethiopia__OLF__1983-1992.pdf",
+      "title": "WARID: Ethiopia (OLF) 1983-1992",
+      "publisher": "Peace Research Institute Frankfurt (PRIF)"
+    },
+    {
+      "url": "https://onwar.com/data/ethiopia1974.html",
+      "title": "Ethiopian Civil War 1974-1991",
+      "publisher": "OnWar.com"
+    }
+  ]
+}

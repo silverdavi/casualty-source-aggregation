@@ -1,0 +1,247 @@
+{
+  "war_id": "russo_japanese_war",
+  "name": "Russo-Japanese War",
+  "start_year": 1904,
+  "end_year": 1905,
+  "ongoing": false,
+  "regions": [
+    "Manchuria",
+    "Korea",
+    "Liaodong Peninsula",
+    "Yellow Sea",
+    "Sea of Japan",
+    "Sakhalin"
+  ],
+  "summary": "The Russo-Japanese War was fought from 8 February 1904 to 5 September 1905 between the Russian Empire and the Empire of Japan over imperial influence in Manchuria, Korea, Port Arthur/L\u00fcshun, and nearby seas. Japan won, forcing Russia to evacuate southern Manchuria, recognize Japan's predominance in Korea, and cede key lease and railway rights. Military deaths were roughly 124,000 to 170,000, and about 20,000 Chinese civilians also died, but civilian attribution by belligerent is poorly documented.",
+  "sides": [
+    {
+      "name": "Russian Empire",
+      "members": [
+        "Russian Empire"
+      ],
+      "military_killed": {
+        "low": 43300,
+        "high": 71453,
+        "point": 71453,
+        "notes": "Common summaries give 34,000-52,623 Russian combatants killed or died of wounds and 9,300-18,830 died of disease, for 43,300-71,453 total dead. OnWar gives 71,453 Russian fatalities, citing Clodfelter, COW85, Encyclopaedia Britannica, and Kohn. NLM cross-checks with 40,000-70,000 Russian deaths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+          "https://onwar.com/data/russojapanese1904.html",
+          "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+          "https://www.prlib.ru/item/372235"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": 20002,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "looting, burning of villages, shootings, reprisals, and combat violence",
+            "victims_group": "Chinese civilians in Manchuria",
+            "low": null,
+            "high": 20000,
+            "notes": "About/at least 20,000 Chinese civilians died in the war overall. Sources specifically describe Russian troops looting and burning villages and killing civilians who resisted or did not understand orders, but no reliable source gives a Russian-only civilian death count.",
+            "sources": [
+              "https://www.britannica.com/facts/Russo-Japanese-War",
+              "https://www.history.com/topics/asian-history/russo-japanese-war",
+              "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+              "https://en.wikipedia.org/wiki/Russo-Japanese_War"
+            ]
+          },
+          {
+            "cause": "mistaken naval gunfire",
+            "victims_group": "British civilian fishermen at Dogger Bank",
+            "low": 2,
+            "high": 2,
+            "notes": "Russian Baltic Fleet fire killed two British fishermen directly; memorial accounts sometimes include a third skipper who died later from shock.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/Dogger_Bank_incident",
+              "https://military-history.fandom.com/wiki/Dogger_Bank_incident"
+            ]
+          }
+        ],
+        "notes": "The only specific non-Chinese direct civilian deaths found were the two British fishermen killed at Dogger Bank. The much larger Chinese civilian toll is not cleanly attributable by belligerent, although Russian violence against Chinese civilians is specifically reported.",
+        "sources": [
+          "https://www.britannica.com/facts/Russo-Japanese-War",
+          "https://www.history.com/topics/asian-history/russo-japanese-war",
+          "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+          "https://en.wikipedia.org/wiki/Dogger_Bank_incident"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Empire of Japan",
+      "members": [
+        "Empire of Japan"
+      ],
+      "military_killed": {
+        "low": 80378,
+        "high": 99000,
+        "point": 85600,
+        "notes": "Common summaries give 47,152-47,400 killed, 11,424-11,500 died of wounds, and 21,802-27,200 died of disease, for 80,378-99,000 Japanese dead. NLM gives a cross-check point estimate of 85,600 Japanese deaths. The 1908 British War Office report reproduces Japanese medical tables with 43,219 killed in action, 8,304 wound deaths in field hospitals, 965 wound deaths after evacuation to Japan, 12,811 disease deaths in the field, and 2,636 disease deaths in Japan, but notes incompleteness.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+          "https://onwar.com/data/russojapanese1904.html",
+          "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+          "https://archive.org/stream/russojapanesewar00grea/russojapanesewar00grea_djvu.txt"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": 20000,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "shelling, siege operations, and battle violence",
+            "victims_group": "Chinese civilians in Manchuria and the Liaodong Peninsula",
+            "low": null,
+            "high": 20000,
+            "notes": "About/at least 20,000 Chinese civilians died in the war overall. Japanese military operations certainly contributed to civilian deaths in the battle zones, but no reliable source found gives a Japanese-only civilian death count.",
+            "sources": [
+              "https://www.britannica.com/facts/Russo-Japanese-War",
+              "https://www.history.com/topics/asian-history/russo-japanese-war",
+              "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/"
+            ]
+          }
+        ],
+        "notes": "No responsible source found separates Chinese civilian deaths into Japanese-caused versus Russian-caused categories. The high value is an attribution upper bound only, not a point estimate.",
+        "sources": [
+          "https://www.britannica.com/facts/Russo-Japanese-War",
+          "https://www.history.com/topics/asian-history/russo-japanese-war",
+          "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/"
+        ]
+      },
+      "deaths_from_actions": []
+    }
+  ],
+  "totals": {
+    "military_low": 123678,
+    "military_high": 170453,
+    "civilian_low": 20002,
+    "civilian_high": 20003,
+    "grand_low": 143680,
+    "grand_high": 190456,
+    "notes": "Military total sums Japan 80,378-99,000 and Russia 43,300-71,453. Civilian total uses about 20,000 Chinese civilian deaths plus 2 direct British civilian deaths at Dogger Bank, with an upper civilian figure of 20,003 if the trawler skipper who died later from shock is included. Per-side civilian attribution is not additive because the Chinese civilian toll is not reliably divided between Russian and Japanese responsibility."
+  },
+  "key_atrocities": [
+    {
+      "name": "Chinese civilian deaths in Manchuria",
+      "year": 1904,
+      "perpetrator": "Both belligerents; Russian forces specifically reported in village looting/burnings and killings",
+      "victims_group": "Chinese civilians",
+      "low": 20000,
+      "high": 20000,
+      "notes": "Modern summaries commonly state that around or at least 20,000 Chinese civilians died in the war. Attribution to one side is not reliably separable; Russian looting, burning of villages, and killings of civilians are specifically reported.",
+      "sources": [
+        "https://www.britannica.com/facts/Russo-Japanese-War",
+        "https://www.history.com/topics/asian-history/russo-japanese-war",
+        "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+        "https://en.wikipedia.org/wiki/Russo-Japanese_War"
+      ]
+    },
+    {
+      "name": "Siege of Port Arthur",
+      "year": 1904,
+      "perpetrator": "Empire of Japan against Russian garrison; civilian harm not separately quantified",
+      "victims_group": "Russian defenders and Japanese attackers; civilians not separately counted",
+      "low": 31000,
+      "high": null,
+      "notes": "Japanese army casualties were officially listed as 57,780 killed, wounded, and missing, including 14,000 killed. British medical reporting estimated Russian defenders had 12,000 killed in the field and 5,000 died in hospital, while warning these were rough estimates.",
+      "sources": [
+        "https://www.naval-military-press.com/product/the-official-history-of-the-russo-japanese-warpart-3-the-siege-of-port-arthur/",
+        "https://archive.org/stream/russojapanesewar00grea/russojapanesewar00grea_djvu.txt"
+      ]
+    },
+    {
+      "name": "Battle of Mukden",
+      "year": 1905,
+      "perpetrator": "Both belligerents in conventional battle",
+      "victims_group": "Russian and Japanese combatants",
+      "low": null,
+      "high": null,
+      "notes": "Britannica reports Russian casualties approaching 90,000 and Japanese casualties exceeding 70,000 killed and wounded. Encyclopedia.com summarizes Japanese losses as nearly 16,000 killed and 60,000 wounded, and Russian casualties as 70,000 including 20,000 killed or missing.",
+      "sources": [
+        "https://www.britannica.com/place/Empire-of-Japan/The-Russo-Japanese-War",
+        "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/russo-japanese-war"
+      ]
+    },
+    {
+      "name": "Dogger Bank incident",
+      "year": 1904,
+      "perpetrator": "Russian Empire",
+      "victims_group": "British civilian fishermen",
+      "low": 2,
+      "high": 3,
+      "notes": "Russian Baltic Fleet gunfire killed two British fishermen directly and injured six; memorial accounts include a third skipper who died later from shock.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dogger_Bank_incident",
+        "https://military-history.fandom.com/wiki/Dogger_Bank_incident"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The principal uncertainty is definitional: military sources differ on whether they include killed in action only, died of wounds, disease deaths, missing later presumed dead, naval losses, and POW deaths. Japanese medical statistics are more detailed than Russian ones but were not complete in the 1908 British War Office report. Civilian deaths are much less well documented: about 20,000 Chinese civilians are commonly cited, but reliable attribution between Russian and Japanese actions is not available. No quantified indirect civilian death toll from famine, blockade, camps, deportation, or forced labor was found for either side.",
+  "sources": [
+    {
+      "url": "https://archive.org/details/russojapanesewar00grea",
+      "title": "The Russo-Japanese War: Medical and Sanitary Reports from Officers Attached to the Japanese and Russian Forces in the Field",
+      "publisher": "Great Britain War Office / Internet Archive"
+    },
+    {
+      "url": "https://archive.org/stream/russojapanesewar00grea/russojapanesewar00grea_djvu.txt",
+      "title": "Full text: The Russo-Japanese War: Medical and Sanitary Reports",
+      "publisher": "Internet Archive"
+    },
+    {
+      "url": "https://onwar.com/data/russojapanese1904.html",
+      "title": "Russo-Japanese War 1904-05",
+      "publisher": "OnWar"
+    },
+    {
+      "url": "https://circulatingnow.nlm.nih.gov/2022/01/13/human-bullets-a-russo-japanese-war-photo-album/",
+      "title": "Human Bullets: A Russo-Japanese War Photo Album",
+      "publisher": "National Library of Medicine, Circulating Now"
+    },
+    {
+      "url": "https://www.britannica.com/facts/Russo-Japanese-War",
+      "title": "Russo-Japanese War Facts",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/place/Empire-of-Japan/The-Russo-Japanese-War",
+      "title": "Empire of Japan: The Russo-Japanese War",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.history.com/topics/asian-history/russo-japanese-war",
+      "title": "Russo-Japanese War: Dates & Treaty of Portsmouth",
+      "publisher": "HISTORY"
+    },
+    {
+      "url": "https://www.prlib.ru/item/372235",
+      "title": "Statistical data on losses of the Russian army from disease and wounds in the war with Japan, 1904-1905",
+      "publisher": "Boris Yeltsin Presidential Library"
+    },
+    {
+      "url": "https://www.naval-military-press.com/product/the-official-history-of-the-russo-japanese-warpart-3-the-siege-of-port-arthur/",
+      "title": "The Official History of the Russo-Japanese War Part 3: The Siege of Port Arthur",
+      "publisher": "Naval & Military Press"
+    },
+    {
+      "url": "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/russo-japanese-war",
+      "title": "Russo-Japanese War",
+      "publisher": "Encyclopedia.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dogger_Bank_incident",
+      "title": "Dogger Bank incident",
+      "publisher": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+      "title": "Russo-Japanese War",
+      "publisher": "Wikipedia"
+    }
+  ]
+}

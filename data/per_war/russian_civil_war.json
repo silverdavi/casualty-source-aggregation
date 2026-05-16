@@ -1,0 +1,468 @@
+{
+  "war_id": "russian_civil_war",
+  "name": "Russian Civil War (including Red/White Terror, famines, and anti-Jewish pogroms)",
+  "start_year": 1917,
+  "end_year": 1923,
+  "ongoing": false,
+  "regions": [
+    "Former Russian Empire",
+    "Russia",
+    "Ukraine",
+    "Belarus",
+    "Volga region",
+    "Urals",
+    "Siberia",
+    "North Caucasus",
+    "Central Asia"
+  ],
+  "summary": "The Russian Civil War was a multi-sided conflict after the 1917 revolutions involving Bolshevik forces, White armies, Ukrainian and other nationalist forces, peasant insurgents, foreign interventionists, and local warlords. Total deaths are usually placed around 7\u201312 million, overwhelmingly from famine, disease, and civilian mass violence rather than battlefield deaths alone. Attribution is strongest for military losses, Red/White terror episodes, and anti-Jewish pogroms, but the millions of famine and epidemic deaths cannot be cleanly assigned to a single belligerent.",
+  "sides": [
+    {
+      "name": "Bolshevik / Soviet side",
+      "members": [
+        "Red Army",
+        "Cheka",
+        "Russian Soviet Federative Socialist Republic",
+        "Bolshevik Party",
+        "Soviet local authorities"
+      ],
+      "military_killed": {
+        "low": 225000,
+        "high": 939755,
+        "point": null,
+        "notes": "Low combines Urlanis's 125,000 Red Army KIA with Patterson's cited Soviet-demographic estimate of about 100,000 Red Army typhus deaths in 1918\u20131920. High is the broader Red Army dead-or-missing figure reported in military-loss summaries and is not directly comparable to KIA-only estimates.",
+        "sources": [
+          "https://courses.lumenlearning.com/atd-herkimer-worldhistory2/chapter/the-russian-civil-war/",
+          "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0AF993E555D30A9F8DCD864F4DDD4344/S0025727300058725a.pdf/div-class-title-typhus-and-its-control-in-russia-1870-1940-div.pdf",
+          "https://en.wikipedia.org/wiki/Russian_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 52975,
+        "high": 152750,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "Red Terror executions, Cheka killings, revolutionary tribunals, hostage/prison shootings",
+            "victims_group": "Suspected counterrevolutionaries, hostages, bourgeois civilians, political opponents, prisoners",
+            "low": 50000,
+            "high": 140000,
+            "notes": "Conservative structured range based on documented Cheka/tribunal execution estimates and Ronald Suny's summarized Red Terror range. Broader estimates up to 1.2\u20132 million exist but mix executions, custody deaths, pacification, and wider repression.",
+            "sources": [
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+              "https://en.wikipedia.org/wiki/Russian_Civil_War"
+            ]
+          },
+          {
+            "cause": "pogrom",
+            "victims_group": "Jewish civilians",
+            "low": 2975,
+            "high": 12750,
+            "notes": "Derived from Ronald Suny's summarized attribution of 8.5% of 35,000\u2013150,000 Jewish pogrom deaths to Bolshevik forces; recorded incident counts list 106 Red Army pogroms/excesses out of 1,236.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+            ]
+          }
+        ],
+        "notes": "The total adds conservative Red Terror estimates to the Suny-derived Red pogrom estimate. This avoids using very high broad 'Red Terror' estimates that may include indirect deaths or overlap with famine and pacification campaigns.",
+        "sources": [
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+          "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+          "https://en.wikipedia.org/wiki/Russian_Civil_War"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "famine",
+          "victims_group": "Civilian population in famine regions, especially Volga, Ukraine, Urals, and surrounding areas",
+          "low": 1000000,
+          "high": 10000000,
+          "point": 5000000,
+          "notes": "Total 1921\u20131922 famine mortality, not a Bolshevik-only toll. Soviet requisitioning and War Communism are identified as contributing factors alongside drought, prior war destruction, transport collapse, livestock loss, epidemics, and Allied blockade.",
+          "sources": [
+            "https://warwick.ac.uk/services/library/mrc/collections/digital/russia/famine/",
+            "https://www.britannica.com/topic/American-Relief-Administration",
+            "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/famine"
+          ]
+        },
+        {
+          "type": "camp",
+          "victims_group": "Tambov peasants, insurgents, hostages, families of rebels",
+          "low": 15000,
+          "high": 240000,
+          "point": null,
+          "notes": "Estimates vary by definition. Some summaries cite about 15,000 killed during suppression; Sennikov's broader estimate gives about 240,000 total Tambov regional losses from war, executions, and imprisonment in concentration camps in 1920\u20131922. Not added mechanically to Red Terror or famine totals because of likely overlap.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tambov_Rebellion",
+            "https://www.clementscenter.org/press/johnson-tambov/",
+            "https://en.wikipedia.org/wiki/Russian_Civil_War"
+          ]
+        },
+        {
+          "type": "ethnic_cleansing",
+          "victims_group": "Cossacks, especially Don and Kuban Cossacks",
+          "low": 10000,
+          "high": 500000,
+          "point": null,
+          "notes": "Decossackization estimates are highly contentious and often mix deaths with deportations; this range should be read as killed-or-deported rather than confirmed deaths alone.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/De-Cossackization",
+            "https://en.wikipedia.org/wiki/Don_Cossacks",
+            "https://en.wikipedia.org/wiki/Russian_Civil_War"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "White / anti-Bolshevik Russian side",
+      "members": [
+        "White Army",
+        "Volunteer Army",
+        "Armed Forces of South Russia",
+        "Kolchak government",
+        "Denikin forces",
+        "Wrangel forces",
+        "White-aligned Cossack hosts"
+      ],
+      "military_killed": {
+        "low": 175500,
+        "high": 650000,
+        "point": null,
+        "notes": "Low is Urlanis's KIA estimate for White armies and Poles combined, so it is not cleanly White-only. High is the broad 650,000 White Army killed figure reported in secondary military-loss summaries.",
+        "sources": [
+          "https://courses.lumenlearning.com/atd-herkimer-worldhistory2/chapter/the-russian-civil-war/",
+          "https://en.wikipedia.org/wiki/Russian_Civil_War"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 25950,
+        "high": 525500,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "White Terror executions, punitive actions, imprisonment killings",
+            "victims_group": "Bolsheviks, socialists, suspected sympathizers, prisoners, civilians in White-controlled territories",
+            "low": 20000,
+            "high": 500000,
+            "notes": "Beyrau estimates 20,000\u2013100,000 victims excluding pogroms; Erlikhman gives 300,000; Ratkovsky argues the number may exceed 500,000 excluding pogroms. The high is therefore a rounded upper estimate rather than a consensus.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)"
+            ]
+          },
+          {
+            "cause": "pogrom",
+            "victims_group": "Jewish civilians",
+            "low": 5950,
+            "high": 25500,
+            "notes": "Derived from Ronald Suny's summarized attribution of 17% of 35,000\u2013150,000 Jewish pogrom deaths to White armies; recorded incident counts list 213 Denikin-army pogroms/excesses out of 1,236.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+            ]
+          }
+        ],
+        "notes": "The structured range combines White Terror estimates excluding pogroms with the Suny-derived White pogrom share. White Terror figures are among the most contested numbers in the conflict.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "displacement",
+          "victims_group": "Civilians in White-held or contested regions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "White armies and White-controlled regimes contributed to displacement, transport disruption, requisitions, imprisonment, and epidemic conditions, but no reliable White-only indirect-death toll was found. Direct terror and pogrom deaths are counted above.",
+          "sources": [
+            "https://warwick.ac.uk/services/library/mrc/collections/digital/russia/famine/",
+            "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0AF993E555D30A9F8DCD864F4DDD4344/S0025727300058725a.pdf/div-class-title-typhus-and-its-control-in-russia-1870-1940-div.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ukrainian nationalist, Green, peasant-insurgent, and local warlord forces",
+      "members": [
+        "Ukrainian People's Republic forces",
+        "Petliura-aligned forces",
+        "Ataman detachments",
+        "Green armies",
+        "Hryhoriyiv detachments",
+        "Zelenyi detachments",
+        "local peasant bands and deserter formations"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate military-death estimate separated these heterogeneous forces from Red, White, Polish, and civilian losses.",
+        "sources": [
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": 22750,
+        "high": 97500,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "pogrom",
+            "victims_group": "Jewish civilians",
+            "low": 14000,
+            "high": 60000,
+            "notes": "Derived from Ronald Suny's summarized attribution of 40% of 35,000\u2013150,000 Jewish pogrom deaths to Ukrainians under Symon Petliura; recorded incident counts list 493 UPR/Petliura pogroms/excesses.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+              "https://www.loc.gov/resource/gdcebookspublic.2019452966/"
+            ]
+          },
+          {
+            "cause": "pogrom",
+            "victims_group": "Jewish civilians",
+            "low": 8750,
+            "high": 37500,
+            "notes": "Derived from Ronald Suny's summarized attribution of 25% of 35,000\u2013150,000 Jewish pogrom deaths to other Ukrainian forces; recorded incident counts list 307 pogroms/excesses by independent Ukrainian warlords.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+              "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+            ]
+          }
+        ],
+        "notes": "This side's most clearly attributable mass-casualty category is anti-Jewish pogrom killing. It excludes non-Jewish civilian killings for which no aggregate separated estimate was found.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+          "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+          "https://www.loc.gov/resource/gdcebookspublic.2019452966/"
+        ]
+      },
+      "deaths_from_actions": []
+    },
+    {
+      "name": "Foreign interventionist and border-state forces",
+      "members": [
+        "Allied intervention forces",
+        "Central Powers occupation forces",
+        "Polish forces",
+        "Japanese intervention forces",
+        "Czechoslovak Legion",
+        "other foreign contingents"
+      ],
+      "military_killed": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "notes": "No reliable aggregate military-death estimate was found for all foreign and border-state intervention forces. Urlanis's 175,500 KIA estimate combines White armies and Poles and cannot be used as a separate foreign total.",
+        "sources": [
+          "https://courses.lumenlearning.com/atd-herkimer-worldhistory2/chapter/the-russian-civil-war/"
+        ]
+      },
+      "civilians_killed_directly": {
+        "low": null,
+        "high": null,
+        "point": null,
+        "breakdown": [
+          {
+            "cause": "pogrom",
+            "victims_group": "Jewish civilians",
+            "low": null,
+            "high": null,
+            "notes": "Recorded incident counts list 32 Polish Army pogroms/excesses out of 1,236, but no reliable separate fatality count was found.",
+            "sources": [
+              "https://en.wikipedia.org/wiki/White_Terror_(Russia)"
+            ]
+          }
+        ],
+        "notes": "Foreign and border-state forces committed local violence, but I found no responsible aggregate direct-civilian death estimate separated from other belligerents.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/White_Terror_(Russia)"
+        ]
+      },
+      "deaths_from_actions": [
+        {
+          "type": "blockade",
+          "victims_group": "Civilian population in famine regions",
+          "low": null,
+          "high": null,
+          "point": null,
+          "notes": "The Allied economic blockade is identified as a contributing factor to the 1921\u20131922 famine, whose total mortality is commonly cited around 5 million and ranged in estimates from 1\u201310 million. No blockade-only death toll was found.",
+          "sources": [
+            "https://warwick.ac.uk/services/library/mrc/collections/digital/russia/famine/",
+            "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/famine"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "military_low": 750000,
+    "military_high": 1589755,
+    "civilian_low": 5410245,
+    "civilian_high": 11250000,
+    "grand_low": 7000000,
+    "grand_high": 12000000,
+    "notes": "Military_low uses Urlanis's 300,000 KIA plus 450,000 military disease deaths for both sides. Military_high combines broad Red dead/missing and White killed figures and excludes unseparated nationalist and foreign forces. Civilian_low and civilian_high are residuals from the 7\u201312 million overall range and should not be treated as independently measured civilian totals. Some summaries allow a high-end total up to 14 million."
+  },
+  "key_atrocities": [
+    {
+      "name": "Russian famine of 1921\u20131922",
+      "year": 1921,
+      "perpetrator": "Multi-causal; Soviet requisitioning/War Communism and Allied blockade contributed alongside drought and war destruction",
+      "victims_group": "Civilian population in Volga, Ukraine, Urals, and other famine regions",
+      "low": 1000000,
+      "high": 10000000,
+      "notes": "Most frequently quoted point estimate is about 5 million deaths; not cleanly attributable to one belligerent.",
+      "sources": [
+        "https://warwick.ac.uk/services/library/mrc/collections/digital/russia/famine/",
+        "https://www.britannica.com/topic/American-Relief-Administration",
+        "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/famine"
+      ]
+    },
+    {
+      "name": "Anti-Jewish pogroms in Ukraine and Belarus",
+      "year": 1919,
+      "perpetrator": "Multiple: Ukrainian nationalist forces, White armies, Green/local warlords, Red Army units, Polish forces",
+      "victims_group": "Jewish civilians",
+      "low": 35000,
+      "high": 150000,
+      "notes": "Werth gives about 150,000 victims, including 125,000 in Ukraine and 25,000 in Belarus; Suny's summarized range is 35,000\u2013150,000 deaths.",
+      "sources": [
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+        "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+        "https://www.loc.gov/resource/gdcebookspublic.2019452966/"
+      ]
+    },
+    {
+      "name": "Proskurov pogrom",
+      "year": 1919,
+      "perpetrator": "Ukrainian People's Republic forces",
+      "victims_group": "Jewish civilians",
+      "low": 1500,
+      "high": 1500,
+      "notes": "Werth lists around 1,500 victims on 15\u201317 February 1919.",
+      "sources": [
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+      ]
+    },
+    {
+      "name": "Fastov pogrom",
+      "year": 1919,
+      "perpetrator": "White Army / Denikin detachments",
+      "victims_group": "Jewish civilians",
+      "low": 1000,
+      "high": 1500,
+      "notes": "Werth lists 1,000\u20131,500 victims in September 1919; another summary says over 1,500 Jews were murdered in Fastov by Denikin's Volunteer Army.",
+      "sources": [
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+        "https://en.wikipedia.org/wiki/White_Terror_(Russia)"
+      ]
+    },
+    {
+      "name": "Early Red Terror",
+      "year": 1918,
+      "perpetrator": "Cheka / Bolshevik authorities",
+      "victims_group": "Hostages, suspected counterrevolutionaries, bourgeois civilians, political opponents",
+      "low": 10000,
+      "high": 15000,
+      "notes": "Werth estimates 10,000\u201315,000 victims in September\u2013October 1918 alone.",
+      "sources": [
+        "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html"
+      ]
+    },
+    {
+      "name": "Tambov suppression",
+      "year": 1921,
+      "perpetrator": "Red Army, Cheka, Soviet authorities",
+      "victims_group": "Tambov peasants, insurgents, hostages, families of rebels",
+      "low": 15000,
+      "high": 240000,
+      "notes": "Lower figure reflects killed during suppression in some summaries; higher figure reflects Sennikov's broader total losses from war, executions, and imprisonment in camps.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tambov_Rebellion",
+        "https://www.clementscenter.org/press/johnson-tambov/",
+        "https://en.wikipedia.org/wiki/Russian_Civil_War"
+      ]
+    }
+  ],
+  "uncertainty_notes": "The largest uncertainty is attribution rather than the existence of mass death. Battlefield and military disease estimates are not directly comparable across sources; Red and White Terror estimates depend heavily on whether only documented executions or broader repression/custody deaths are counted; pogrom attribution is relatively better documented but still imperfect; famine and epidemic deaths cannot be cleanly apportioned among natural causes, Bolshevik requisitioning and War Communism, White and other military disruption, transport collapse, displacement, and Allied blockade. Per-side figures therefore should not be summed mechanically to produce the grand total.",
+  "sources": [
+    {
+      "url": "https://encyclopedia.1914-1918-online.net/article/russian-civil-war/",
+      "title": "Russian Civil War",
+      "publisher": "1914-1918 Online: International Encyclopedia of the First World War"
+    },
+    {
+      "url": "https://www.britannica.com/event/Russian-Civil-War/Foreign-intervention",
+      "title": "Russian Civil War - Foreign intervention",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.britannica.com/topic/American-Relief-Administration",
+      "title": "American Relief Administration",
+      "publisher": "Encyclopaedia Britannica"
+    },
+    {
+      "url": "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/crimes-and-mass-violence-russian-civil-wars-1918-1921.html",
+      "title": "Crimes and Mass Violence of the Russian Civil Wars (1918-1921)",
+      "publisher": "Sciences Po Mass Violence & Resistance Research Network"
+    },
+    {
+      "url": "https://warwick.ac.uk/services/library/mrc/collections/digital/russia/famine/",
+      "title": "Famine in Russia, 1921-1922",
+      "publisher": "University of Warwick Modern Records Centre"
+    },
+    {
+      "url": "https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/famine",
+      "title": "Famine of 1921\u20131922",
+      "publisher": "Encyclopedia of Russian History / Encyclopedia.com"
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0AF993E555D30A9F8DCD864F4DDD4344/S0025727300058725a.pdf/div-class-title-typhus-and-its-control-in-russia-1870-1940-div.pdf",
+      "title": "Typhus and its control in Russia, 1870-1940",
+      "publisher": "Medical History / Cambridge University Press"
+    },
+    {
+      "url": "https://www.loc.gov/resource/gdcebookspublic.2019452966/",
+      "title": "The Pogroms in Ukraine, 1918-19: Prelude to the Holocaust",
+      "publisher": "Library of Congress"
+    },
+    {
+      "url": "https://courses.lumenlearning.com/atd-herkimer-worldhistory2/chapter/the-russian-civil-war/",
+      "title": "The Russian Civil War",
+      "publisher": "Lumen Learning"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Terror_(Russia)",
+      "title": "White Terror (Russia)",
+      "publisher": "Wikipedia summary citing Beyrau, Smele, Suny, Erlikhman, Ratkovsky, and Whitaker Report"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+      "title": "Russian Civil War",
+      "publisher": "Wikipedia summary with cited military-loss and casualty estimates"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Tambov_Rebellion",
+      "title": "Tambov Rebellion",
+      "publisher": "Wikipedia summary citing Sennikov and other sources"
+    },
+    {
+      "url": "https://www.clementscenter.org/press/johnson-tambov/",
+      "title": "Lenin's Forgotten War in Tambov",
+      "publisher": "Clements Center for National Security"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/De-Cossackization",
+      "title": "De-Cossackization",
+      "publisher": "Wikipedia summary"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Don_Cossacks",
+      "title": "Don Cossacks",
+      "publisher": "Wikipedia summary citing Michael Kort and Peter Holquist"
+    }
+  ]
+}
