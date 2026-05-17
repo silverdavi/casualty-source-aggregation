@@ -7,8 +7,8 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 ## Aggregate (sum of mid-point estimates)
 
 - Sum of low estimates: **158,452,470**
-- Sum of high estimates: **278,612,454**
-- Sum of midpoints: **219,367,995**
+- Sum of high estimates: **278,476,440**
+- Sum of midpoints: **219,299,988**
 
 (These sums double-count overlapping conflicts — e.g. WWII theaters vs the Holocaust, Iraq War vs anti-ISIS war — and should not be read as 'total deaths from all 20th–21st century war'.)
 
@@ -62,7 +62,6 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 | [Darfur conflict / genocide](per_war/darfur_genocide.json) | 2003–2020 | 170,000–300,000 | —–— | 170,000–300,000 |
 | [Congo Crisis](per_war/congo_crisis.json) | 1960–1965 | 100,000–265,000 | 4,734–— | 95,000–260,000 |
 | [Philippine-American War](per_war/philippine_american_war.json) | 1899–1902 | 163,626–258,300 | 20,165–24,300 | 143,461–234,000 |
-| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 70,487–252,148 | 2,451–4,741 | 68,036–247,407 |
 | [Indonesian National Revolution](per_war/indonesian_national_revolution.json) | 1945–1949 | 79,742–247,943 | 51,242–117,943 | 28,500–130,000 |
 | [Guatemalan Civil War (incl. Maya genocide)](per_war/guatemalan_civil_war.json) | 1960–1996 | 190,000–200,000 | —–— | 190,000–200,000 |
 | [North Yemen Civil War](per_war/north_yemen_civil_war.json) | 1962–1970 | 100,000–200,000 | 66,000–— | 204–— |
@@ -72,6 +71,7 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 | [Boxer Rebellion](per_war/boxer_rebellion.json) | 1899–1901 | 100,000–150,000 | 3,000–20,526 | 35,200–— |
 | [Yugoslav Wars - Bosnia/Croatia (incl. Srebrenica)](per_war/yugoslav_wars_bosnia.json) | 1991–1995 | 118,151–126,943 | 68,700–75,500 | 45,500–49,100 |
 | [Salvadoran Civil War](per_war/salvadoran_civil_war.json) | 1979–1992 | 82,960–117,975 | 22,634–34,200 | 60,326–83,775 |
+| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 70,487–116,134 | 2,451–4,741 | 68,036–111,393 |
 | [Chaco War](per_war/chaco_war.json) | 1932–1935 | 80,000–105,000 | 80,000–105,000 | —–— |
 | [Sri Lankan Civil War](per_war/sri_lankan_civil_war.json) | 1983–2009 | 80,000–100,000 | 47,345–57,208 | 22,792–52,655 |
 | [Herero and Namaqua Genocide](per_war/herero_namaqua_genocide.json) | 1904–1908 | 51,541–91,749 | 1,441–1,649 | 50,100–90,160 |
@@ -182,4 +182,4 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 | [Myanmar civil war (post-2021 coup)](per_war/myanmar_civil_war_2021.json) | 2021–now | 93,000–— |
 | [Russian invasion of Ukraine (2022-)](per_war/russia_ukraine_war_2022.json) | 2022–now | 300,793–— |
 | [Sudan war (RSF vs SAF, 2023-)](per_war/sudan_war_2023.json) | 2023–now | 59,000–400,000 |
-| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 70,487–252,148 |
+| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 70,487–116,134 |

@@ -90,9 +90,9 @@
           "type": "blockade_siege_healthcare_collapse_famine_displacement",
           "victims_group": "Palestinian civilians in Gaza",
           "low": 4500,
-          "high": 148604,
+          "high": 12500,
           "point": 8450,
-          "notes": "Low/high-confidence measured excess non-violent deaths from the 2026 Lancet Global Health household survey are 4,500-12,500 with point 8,450 by 5 January 2025. The broad high subtracts 37,396 direct reported deaths from the 2024 Lancet correspondence's scenario of 186,000 or more total attributable deaths; this is a projection, not a confirmed count.",
+          "notes": "Headline range now uses only the 2026 Lancet Global Health household survey's measured excess non-violent deaths in Gaza by 5 January 2025: low 4,500, high 12,500, point 8,450. The earlier Lancet 2024 correspondence scenario of 186,000+ total attributable deaths (which after subtracting 37,396 direct reported deaths would imply ~148,604 indirect) is a projection rather than a measured count; it is retained as a sensitivity scenario only and is no longer used as the headline upper bound. This avoids mixing measured direct deaths with a projected excess-mortality scenario in cross-conflict comparisons.",
           "sources": [
             "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html",
             "https://doi.org/10.1016/S0140-6736(24)01169-3",
@@ -221,10 +221,11 @@
     "military_low": 2451,
     "military_high": 4741,
     "civilian_low": 68036,
-    "civilian_high": 247407,
+    "civilian_high": 111393,
     "grand_low": 70487,
-    "grand_high": 252148,
-    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. See `bayesian_combatant_share`."
+    "grand_high": 116134,
+    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. Indirect (blockade/famine/healthcare-collapse) deaths are bounded by the 2026 Lancet Global Health household-survey measured range (4,500-12,500), not by the 2024 Lancet 186k+ scenario; that projected scenario is treated as a sensitivity case only and is documented in the corresponding deaths_from_actions note. See `bayesian_combatant_share`.",
+    "sensitivity_grand_high_with_lancet_186k_scenario": 252148
   },
   "key_atrocities": [
     {

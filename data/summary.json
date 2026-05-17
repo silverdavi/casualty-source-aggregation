@@ -1,7 +1,7 @@
 {
   "total_wars": 81,
   "estimated_grand_total_low": 158452470,
-  "estimated_grand_total_high": 278612454,
+  "estimated_grand_total_high": 278476440,
   "wars": [
     {
       "war_id": "boxer_rebellion",
@@ -1370,15 +1370,15 @@
       "end_year": null,
       "ongoing": true,
       "total_low": 70487,
-      "total_high": 252148,
+      "total_high": 116134,
       "military_low": 2451,
       "military_high": 4741,
       "civilian_low": 68036,
-      "civilian_high": 247407,
+      "civilian_high": 111393,
       "n_sides": 3,
       "n_key_atrocities": 6,
       "n_sources": 15,
-      "midpoint": 161317.5
+      "midpoint": 93310.5
     }
   ]
 }

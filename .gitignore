@@ -49,3 +49,6 @@ dist/
 # Coverage
 .coverage
 htmlcov/
+
+# Per-journal submission packages (kept locally, not published)
+paper/submissions/
