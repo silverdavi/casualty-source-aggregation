@@ -16,8 +16,8 @@ analyst trusts more. This repository provides:
    joint posterior over the militant share, civilian adult-male deaths, and
    women-and-children deaths from independently measured demographic and
    manpower facts.
-3. The **paper LaTeX source** plus five journal-specific submission packages
-   (PNAS, JCR, AOAS, JPR, *Population Health Metrics*).
+3. The **paper LaTeX source** (master manuscript, modular section files,
+   bibliography, publication figures, and supplement).
 
 ## Directory layout
 
@@ -49,7 +49,7 @@ analyst trusts more. This repository provides:
 │   ├── posterior.npz          200,000 importance-sampled draws
 │   ├── posterior_figure.{pdf,png}
 │   └── report.md              human-readable posterior summary
-└── paper/                     paper master + 5 journal submission packages
+└── paper/                     paper LaTeX source
     ├── paper.tex              master manuscript
     ├── paper.pdf              built master PDF
     ├── content/               modular section files (\input{...} from main)
@@ -60,11 +60,7 @@ analyst trusts more. This repository provides:
     ├── build_figures.py       regenerate publication figures
     ├── build_supplement.py    regenerate supplement.tex
     ├── pval.py                Gaza uniformity p-value calculation
-    ├── supplement.tex         per-conflict diagnostics
-    └── submissions/           one folder per target journal
-        ├── pnas/  jcr/  aoas/  jpr/  pophm/
-        ├── README.md          architecture overview
-        └── (each has main.tex, cover_letter.tex, README.md, plus PDFs)
+    └── supplement.tex         per-conflict diagnostics
 ```
 
 ## Per-war JSON schema
