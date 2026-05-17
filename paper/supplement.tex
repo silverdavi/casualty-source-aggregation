@@ -25,7 +25,7 @@ The \emph{civilian share} interval is computed conservatively as $[D_C^{lo}/(D_C
 \paragraph{Confidence grade.} A: total-death range ratio $<2$ and civilian-share width $<15$ percentage points. B: either ratio $<4$ or width $<30$pp. C: either ratio $<8$ or width $<45$pp. D: wider than that. These grades score internal numerical precision, not moral seriousness or historical importance.
 
 \section{Dataset summary}
-The dataset contains 81 conflicts. Confidence grades: A=30, B=31, C=14, D=6. Structural classes: combat-heavy=13, mixed=24, civilian-targeting=16, indirect=28.
+The dataset contains 81 conflicts. Confidence grades: A=31, B=30, C=14, D=6. Structural classes: combat-heavy=13, mixed=24, civilian-targeting=16, indirect=28.
 
 \subsection{All 81 conflicts, ordered by midpoint total deaths}\label{tab:all}
 This is the master table used by the main paper's empirical overview figures.
@@ -88,7 +88,6 @@ Congo Crisis & 1960--1965 & 182.5k & 59\%--60\% & 40\%--41\% & 0\% & demographic
 First Congo War & 1996--1997 & 173.1k & 100\%--100\% & 0\%--0\% & 2\% & identified-deaths sample & C \\
 Russo-Japanese War & 1904--1905 & 167.1k & 19\%--24\% & 76\%--81\% & 0\% & manpower budget & A \\
 Indonesian National Revolution & 1945--1949 & 163.8k & 19\%--72\% & 28\%--81\% & 0\% & source harmonisation & D \\
-Israel-Hamas / Gaza war (and Hezbollah/\ldots{} & 2023--2026 & 161.3k & 93\%--99\% & 1\%--7\% & 49\% & identified-deaths sample & B \\
 War against ISIS in Iraq and Syria (inc\ldots{} & 2014--2019 & 155.0k & 16\%--47\% & 53\%--84\% & 4\% & source harmonisation & C \\
 Indonesian occupation of East Timor & 1975--1999 & 150.3k & 96\%--98\% & 2\%--4\% & 87\% & excess-mortality survey & B \\
 North Yemen Civil War & 1962--1970 & 150.0k & 0\%--0\% & 100\%--100\% & 0\% & manpower budget & B \\
@@ -96,6 +95,7 @@ Boxer Rebellion & 1899--1901 & 125.0k & 63\%--92\% & 8\%--37\% & 0\% & demograph
 Yugoslav Wars - Bosnia/Croatia (incl. S\ldots{} & 1991--1995 & 122.5k & 0\%--1\% & 99\%--100\% & 100\% & excess-mortality survey & A \\
 Lebanese Civil War & 1975--1990 & 114.8k & 88\%--97\% & 3\%--12\% & 0\% & identified-deaths sample & B \\
 Salvadoran Civil War & 1979--1992 & 100.5k & 61\%--77\% & 23\%--39\% & 0\% & demographic subsample & B \\
+Israel-Hamas / Gaza war (and Hezbollah/\ldots{} & 2023--2026 & 93.3k & 93\%--98\% & 2\%--7\% & 10\% & identified-deaths sample & A \\
 Myanmar civil war (post-2021 coup) & 2021--2026 & 93.0k & 71\%--71\% & 29\%--29\% & 18\% & demographic subsample & A \\
 Chaco War & 1932--1935 & 92.5k & 1\%--4\% & 96\%--99\% & 100\% & excess-mortality survey & A \\
 Sri Lankan Civil War & 1983--2009 & 90.0k & 42\%--48\% & 52\%--58\% & 0\% & demographic subsample & A \\
@@ -208,10 +208,10 @@ Sudan war (RSF vs SAF, 2023-) & 2023--2026 & 229.5k & 100\%--100\% & 0\%--0\% & 
 Gulf War (1990-91) & 1990--1991 & 208.0k & 41\%--90\% & 10\%--59\% & 93\% & excess-mortality survey & D \\
 Guatemalan Civil War (incl. Maya genocide) & 1960--1996 & 195.0k & 100\%--100\% & 0\%--0\% & 0\% & identified-deaths sample & A \\
 First Congo War & 1996--1997 & 173.1k & 100\%--100\% & 0\%--0\% & 2\% & identified-deaths sample & C \\
-Israel-Hamas / Gaza war (and Hezbollah/\ldots{} & 2023--2026 & 161.3k & 93\%--99\% & 1\%--7\% & 49\% & identified-deaths sample & B \\
 War against ISIS in Iraq and Syria (inc\ldots{} & 2014--2019 & 155.0k & 16\%--47\% & 53\%--84\% & 4\% & source harmonisation & C \\
 Indonesian occupation of East Timor & 1975--1999 & 150.3k & 96\%--98\% & 2\%--4\% & 87\% & excess-mortality survey & B \\
 Yugoslav Wars - Bosnia/Croatia (incl. S\ldots{} & 1991--1995 & 122.5k & 0\%--1\% & 99\%--100\% & 100\% & excess-mortality survey & A \\
+Lebanese Civil War & 1975--1990 & 114.8k & 88\%--97\% & 3\%--12\% & 0\% & identified-deaths sample & B \\
 \bottomrule
 \end{longtable}
 \end{scriptsize}
@@ -430,10 +430,6 @@ The next useful check is an independently sourced combatant-stock upper bound, b
 Class: \textbf{mixed}; confidence grade: \textbf{D}; civilian-share range 19\%--72\%; combatant-share range 28\%--81\%; indirect/civilian share 0\%. The binding relation is \emph{source harmonisation}. 
 The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
 
-\paragraph{Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)}
-Class: \textbf{civilian-targeting}; confidence grade: \textbf{B}; civilian-share range 93\%--99\%; combatant-share range 1\%--7\%; indirect/civilian share 49\%. The binding relation is \emph{identified-deaths sample}. 
-The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
-
 \paragraph{War against ISIS in Iraq and Syria (incl. Yazidi genocide)}
 Class: \textbf{mixed}; confidence grade: \textbf{C}; civilian-share range 16\%--47\%; combatant-share range 53\%--84\%; indirect/civilian share 4\%. The binding relation is \emph{source harmonisation}. 
 The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
@@ -461,6 +457,10 @@ The next useful check is a sex-age identified-deaths sample; if the population b
 \paragraph{Salvadoran Civil War}
 Class: \textbf{mixed}; confidence grade: \textbf{B}; civilian-share range 61\%--77\%; combatant-share range 23\%--39\%; indirect/civilian share 0\%. The binding relation is \emph{demographic subsample}. 
 The next useful check is source harmonisation: definitions, overlap between direct and indirect categories, and missing upper bounds dominate the uncertainty interval.
+
+\paragraph{Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)}
+Class: \textbf{civilian-targeting}; confidence grade: \textbf{A}; civilian-share range 93\%--98\%; combatant-share range 2\%--7\%; indirect/civilian share 10\%. The binding relation is \emph{identified-deaths sample}. 
+The next useful check is a sex-age identified-deaths sample; if the population baseline is known, that sample sharply constrains $q$ through Theorem 3.1 of the main paper.
 
 \paragraph{Myanmar civil war (post-2021 coup)}
 Class: \textbf{mixed}; confidence grade: \textbf{A}; civilian-share range 71\%--71\%; combatant-share range 29\%--29\%; indirect/civilian share 18\%. The binding relation is \emph{demographic subsample}. 
