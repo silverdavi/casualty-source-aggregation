@@ -4,21 +4,26 @@ We instantiate the framework using only inputs whose measurement is not controll
 
 \begin{table}[ht]
 \centering
-\caption{\textbf{Diagnostic inputs for Gaza.} The disputed quantity $D_M$ is tested against the other rows. $\mathrm{AM}$ is males 18 and over, so $a=1-w$ exactly.}
+\caption{\textbf{Diagnostic inputs for Gaza.} The disputed quantity $D_M$ is tested against the other rows. The adult-male class is males 18 and over, so $a=1-w$ exactly.}
 \label{tab:gaza-inputs}
 \begin{small}
-\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
 Input & Value & Channel \\
 \midrule
 $w$ (women$+$children \emph{of population}) & $0.733$       & PCBS population structure \\
 $a$ (males 18$+$ \emph{of population})      & $0.267$       & $=1-w$ \\
-$\omega$ (women$+$children \emph{of the dead}) & $0.560$ (MoH record; primary anchor); $0.693$ (OHCHR verified sample) & identified deaths, corroborated by GMS; OHCHR $=$ residential-strike stratum \\
-$f$       & $0.0157$--$0.0269$ ($0.020$ central)           & Hamas/PIJ pre-war manpower $/$ population \\
-$D$       & $70$k (MoH) $/$ $94$k (GMS-corrected) $/$ $106$k ($+$missing) & direct deaths, late 2025 \\
-$\mu$     & grid $\{1,1.5,2,2.5,3.5,5\}$; calibrated $[2,3.5]$ & \citet{frost2026,cockerill2024} \\
-$M$       & $\le 45{,}000$                                 & IISS / RUSI / CSIS \\
-claim     & $17$--$25$k combatants killed                  & IDF public statements \\
+\addlinespace
+$\omega$ (women$+$children \emph{of the dead}) & $0.560$ (MoH record; primary anchor) & identified deaths, corroborated by GMS \\
+          & $0.693$ (OHCHR verified sample)  & residential-strike stratum \\
+\addlinespace
+$D$ (direct deaths, late 2025) & $70$k (MoH) $/$ $94$k (GMS-corrected) $/$ $106$k ($+$missing) & MoH, GMS, missing-persons registry \\
+$f$ (combatant share of population) & $0.0157$--$0.0269$ ($0.020$ central) & Hamas/PIJ pre-war manpower $/$ population \\
+$\mu$ (exposure ratio) & grid $\{1,1.5,2,2.5,3.5,5\}$; calibrated $[2,3.5]$ & \citet{frost2026,cockerill2024} \\
+$M$ (combatant strength) & $\le 45{,}000$ & IISS / RUSI / CSIS \\
+\midrule
+claim (tested, not an input) & $17$--$25$k combatants killed & IDF public statements \\
 \bottomrule
 \end{tabularx}
 \end{small}
