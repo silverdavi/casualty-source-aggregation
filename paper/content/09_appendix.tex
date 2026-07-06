@@ -1,0 +1,74 @@
+\appendix
+
+\section{Proofs}\label{app:proofs}
+
+The algebraic core of the framework---the benchmark identity \eqref{eq:ident}, the inversion and monotonicity of $q(\mu)$ in Theorem~\ref{thm:bounds}, the $\eta$-slack bias identities of Remark~\ref{rem:female-combatants}, the manpower bound of Corollary~\ref{cor:popbudget}, the one-sided monotonicity of feasibility in $M$ underlying Theorem~\ref{thm:contradiction}, and the Section~\ref{sec:gaza} grid arithmetic (over exact rationals)---has been formalised and machine-checked in Lean~4 with mathlib; the development, which compiles with no unproven statements, is in the \texttt{formal/} directory of the companion repository. The statistical results (Propositions~\ref{prop:agg} and~\ref{prop:robust}) are additionally verified symbolically and by Monte-Carlo stress tests in the repository's verification scripts. The human-readable proofs follow.
+
+\begin{proof}[Proof of Theorem~\ref{thm:bounds}]
+Let $\lambda$ be the civilian per-capita death hazard in the women-and-children class $W$, so class $\mathrm{AM}$ civilians have hazard $\mu\lambda$. Expected civilian deaths are proportional to $\lambda w N + \lambda\mu(a-f)N$, so the civilian share landing in $W$ is $w/(w+\mu(a-f))$. Since only the civilian fraction $1-q$ of deaths reaches $W$,
+\[
+\omega=(1-q)\,\frac{w}{w+\mu(a-f)},
+\]
+which solves to \eqref{eq:qmu}; moreover $\partial_\mu q=-\omega(a-f)/w\le 0$, so $q(\mu)$ is monotone decreasing. Sharpness: every $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ corresponds to a feasible hazard pair $(\lambda,\mu\lambda)$ that attains $q(\mu)$ exactly, so no sub-interval can be excluded. The benchmark identity \eqref{eq:ident} is the case $\mu=1$, using $w+a=1$. Corollary~\ref{cor:popbudget} follows since $D_M\le M$ implies $q=D_M/D\le M/D$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:agg}]
+Among linear unbiased combinations $\sum_i c_i\hat\theta_i$ with $\sum_i c_i=1$, the variance $\sum_i c_i^2\hat\sigma_i^2$ is minimised by $c_i\propto 1/\hat\sigma_i^2$ (Gauss--Markov / Lagrange). The bias expression follows by linearity of expectation. For the contamination statement, source $i$ contributes weight $\hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$ to the aggregate; with probability $\varepsilon_i$ its report is replaced by a draw from a distribution supported on a set of diameter $R_i$, displacing the aggregate by at most $\varepsilon_i R_i\,\hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$ in expectation, and summing over sources gives the bound.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:contradiction}]
+($\Leftarrow$) If $q^{(i)}\in\mathcal F(\hat x)$, the point $(\hat\omega,\hat w,\hat M)$ attains objective zero. ($\Rightarrow$) Suppose $\rho^{(i)}=0$ and take feasible $(\omega'_n,w'_n,M'_n)$ with objective $\to 0$. Because the $M$-penalty is one-sided, this yields $\omega'_n\to\hat\omega$, $w'_n\to\hat w$, and $(M'_n-\hat M)_+\to 0$ only (not $M'_n\to\hat M$). Each feasible point has some $\mu_n\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ with $q^{(i)}=1-\omega'_n(w'_n+\mu_n(a-f))/w'_n$; passing to a convergent subsequence $\mu_n\to\mu^\ast$ in the compact interval and using continuity gives $q^{(i)}=1-\hat\omega(\hat w+\mu^\ast(a-f))/\hat w$. For the manpower constraint, $q^{(i)}D\le M'_n\le\hat M+(M'_n-\hat M)_+\to\hat M$, so $q^{(i)}D\le\hat M$. Hence $q^{(i)}\in\mathcal F(\hat x)$. For the second statement, any rationalisation $(\omega',w',M')$ satisfies, by definition of the infimum, $\max\{|\omega'-\hat\omega|/\sigma_\omega,\ |w'-\hat w|/\sigma_w,\ (M'-\hat M)_+/\sigma_M\}\ge\rho^{(i)}$, so at least one penalised displacement is $\ge\rho^{(i)}$ standardised units.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:robust}]
+\emph{(i)} Condition on the realised pattern $T$. The sources outside $T$ are honest, so any posterior formed from them plus arbitrary reports from the sources in $T$ is supported on the identified set with the $T$-sources removed, which has diameter $R_T$ and contains the face-value estimand; hence each endpoint of any attainable credible interval lies within $R_T$ of the corresponding endpoint of $I_0$.
+
+\emph{(ii)} The pattern is $T$ with probability $P(T)=\prod_{i\in T}\varepsilon_i\prod_{i\notin T}(1-\varepsilon_i)$, so the expected endpoint displacement is at most $\sum_T P(T)R_T$. Splitting off the singleton patterns, $\sum_T P(T)R_T\le\sum_i\varepsilon_i R_i+\sum_{|T|\ge 2}P(T)R_T$, and $P(T)=O(\varepsilon^{|T|})$ makes the second sum higher-order; it vanishes when at most one source can be contaminated. Note that $R_T$ for $|T|\ge 2$ is \emph{not} bounded by $\sum_{i\in T}R_i$ in general (two mutually corroborating sources can each have a small removal diameter while their joint removal is much larger), which is why \eqref{eq:Iepsilon} is stated as a first-order band rather than a uniform envelope.
+
+\emph{(iii)} By assumption the posterior places weight at most $\tau$ on contaminated components, so the contaminated and face-value posterior CDFs differ by at most $\tau$ uniformly. With density $\ge m$ on the segment between $\hat Q_0(u)$ and $\hat Q_\varepsilon(u)$, the mean value theorem converts the CDF gap into the quantile gap $\tau/m$. The weight condition is substantive: posterior mixture weights are proportional to $P(T)$ times the component marginal likelihoods, so an adversarial component that fits the observed data \emph{better} than the clean model can carry posterior weight exceeding its prior probability $\tau$.
+\end{proof}
+
+\section{The spatial Bayesian model}\label{app:spatial}
+
+This appendix documents the forward model, priors, likelihood, and inference behind the posterior reported in Section~\ref{sec:gaza}, Step~5. Code and inputs are in the \texttt{gaza\_sim/} directory of the companion repository, and the posterior is reproducible from a fixed random seed. We emphasise its role: it is \emph{one} model-based point within the assumption-free identified set, and its low posterior $q$ reflects its priors and structural choices as much as the data. Readers who reject those choices should fall back to the bounds, which do not depend on them.
+
+\paragraph{Geometry and population.} Gaza's five governorates are split into $C=400$ equal-population cells (80 per governorate), with cell populations $N_c$ from the PCBS 2023 total. Demographic fractions (women-and-children share $w$, adult-male share $a$) are held constant across cells at the Gaza-wide values.
+
+\paragraph{Latent parameters and priors.} Each posterior draw samples, independently and uniformly on the stated ranges:
+
+\begin{center}
+\begin{small}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Parameter & Range & Meaning \\
+\midrule
+$M$        & $[35\mathrm{k},60\mathrm{k}]$ & total militant stock \\
+$\gamma$   & $[0,1.5]$   & spatial clustering amplification of militants \\
+$\sigma$   & $[0.3,1.2]$ & SD of the cell-level latent log-density \\
+$\alpha$   & $[0,8]$     & strike-targeting concentration on militant density \\
+$\beta$    & $[0.6,1.6]$ & targeting non-linearity exponent \\
+$\mu_M$    & $[1,2.5]$   & civilian adult-male exposure multiplier \\
+$\epsilon_C$ & $[0.7,1]$ & child exposure down-weight \\
+$\bar d$   & $[1.2,2.8]$ & expected kills per strike \\
+$K$        & $[29\mathrm{k},40\mathrm{k}]$ & total air-to-ground strikes \\
+$u$        & $[1/1.7,1]$ & recovery factor (MoH observed $/$ true direct) \\
+\bottomrule
+\end{tabular}
+\end{small}
+\end{center}
+
+Militants are allocated across cells proportionally to $N_c\exp(\gamma u_c)$ with $u_c\sim\mathcal N(0,\sigma^2)$, capped at $30\%$ of each cell's adult-male population and rescaled to the total $M$.
+
+\paragraph{Strike-kill model.} Strikes are allocated across cells with weight $N_c(1+\alpha m_c/N_c)^{\beta}$, where $m_c$ is the militant count in cell $c$. Within a cell, a death is a militant, a civilian adult man, or a woman/child with probabilities proportional to $m_c$, $(N_c a - m_c)\mu_M$, and $N_c w\,\epsilon_C$ respectively. Expected class-specific deaths are summed over cells; observed deaths are true direct deaths times the recovery factor $u$.
+
+\paragraph{Likelihood.} Three observables: (i) the MoH cumulative total (log-Gaussian, $7\%$ scale); (ii) the adult-male share among the dead against the OHCHR verified sample (Beta likelihood at its sample size, $n=8{,}119$); and (iii) the same share against the MoH full record, down-weighted to an effective sample size of $n/5$ to reflect cruder demographic categorisation. The two demographic likelihoods enter with weight $1/2$ each.
+
+\paragraph{Inference.} Importance sampling with $2\times 10^5$ prior draws; the effective sample size and all posterior quantiles are computed under the normalised weights. The reported posterior is $q=2.5\%$ (95\% credible interval $[1.6\%,3.8\%]$).
+
+\paragraph{Sensitivities and limitations.} The posterior concentrates at low $q$ for two structural reasons that a critic can legitimately contest: the exposure multiplier prior is capped at $\mu_M\le 2.5$ (values above the cap would push $q$ lower still, but a mass of prior near $\mu_M=1$ pulls the posterior up much less than the OHCHR-weighted demographic likelihood pulls it down), and the OHCHR sample---which over-represents residential-strike deaths where women and children predominate \citep{spagatcockerill2024}---enters the likelihood at full sample weight. Re-anchoring the demographic likelihood entirely on the MoH record moves the posterior median up but keeps it far inside the identified set. Because these choices are contestable, the paper's claims do not rest on this posterior; it appears as one row of Table~\ref{tab:convergence}.
+
+\section{The 81-conflict dataset}\label{app:conflicts}
+
+Table~\ref{tab:all-conflicts} lists every conflict in the dataset behind the overview of Section~\ref{sec:empirical}, with midpoint death totals and the implied civilian-share intervals. The table is generated by the same script that draws Figures~\ref{fig:range-frame} and~\ref{fig:uncertainty-ladder}; per-conflict source notes, the indirect-death decomposition, and the accounting rules are documented in the supplement.
+
+\input{\contentroot/tab_all_conflicts.tex}

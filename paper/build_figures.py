@@ -10,6 +10,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
+import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 import numpy as np
@@ -204,14 +205,15 @@ def wars_frame(wars: list[War]) -> pd.DataFrame:
 
 
 def fmt_humans(x: float, _pos=None) -> str:
+    """Human-readable counts capped at 3 significant figures (93.3k, 14.1M)."""
     if not np.isfinite(x) or x <= 0:
         return ""
     if x >= 1e9:
-        return f"{x/1e9:g}B"
+        return f"{x/1e9:.3g}B"
     if x >= 1e6:
-        return f"{x/1e6:g}M"
+        return f"{x/1e6:.3g}M"
     if x >= 1e3:
-        return f"{x/1e3:g}k"
+        return f"{x/1e3:.3g}k"
     return f"{int(x)}"
 
 
@@ -307,36 +309,46 @@ def fig_range_frame_civshare():
     df = wars_frame(wars)
     df["deaths_for_plot"] = df["mil_mid"] + df["civ_mid"]
     df["marker_area"] = area_size(df["total_mid"].to_numpy(), floor=8, ceil=650)
+    df["start_year"] = df["start"].fillna(1900).astype(int)
 
-    fig, ax = plt.subplots(figsize=(7.2, 4.7))
-    sns.scatterplot(
-        data=df, x="deaths_for_plot", y="civ_share_mid",
-        size="total_mid", sizes=(8, 600),
-        color=INK, alpha=0.22,
-        edgecolor="white", linewidth=0.45,
-        legend=False, ax=ax,
+    # Diverging colour scale over onset year: blue = early 20th century,
+    # neutral = 1990 (end of the Cold War), red = recent conflicts.
+    year_norm = mcolors.TwoSlopeNorm(vmin=1900, vcenter=1990, vmax=2026)
+    year_cmap = plt.get_cmap("coolwarm")
+    point_colors = year_cmap(year_norm(df["start_year"].to_numpy()))
+
+    fig, ax = plt.subplots(figsize=(7.8, 4.7))
+    ax.scatter(
+        df["deaths_for_plot"], df["civ_share_mid"],
+        s=df["marker_area"], c=point_colors, alpha=0.45,
+        edgecolor="white", linewidth=0.45, zorder=2,
     )
-    sns.scatterplot(
-        data=df, x="deaths_for_plot", y="civ_share_mid",
-        s=5, color=INK, alpha=0.95,
-        legend=False, ax=ax, zorder=3,
+    ax.scatter(
+        df["deaths_for_plot"], df["civ_share_mid"],
+        s=5, c=point_colors, alpha=0.95, zorder=3,
     )
+    sm = plt.cm.ScalarMappable(norm=year_norm, cmap=year_cmap)
+    cbar = fig.colorbar(sm, ax=ax, orientation="vertical",
+                        fraction=0.035, pad=0.015, ticks=[1900, 1945, 1990, 2026])
+    cbar.set_label("conflict onset year", fontsize=7.6)
+    cbar.ax.tick_params(labelsize=7.0, length=2.0)
+    cbar.outline.set_visible(False)
     ax.axhline(50, color=FAINT, lw=0.6, ls=":", zorder=1)
     ax.text(1.05e3, 51.5, "50% civilian share", fontsize=7.2, color=FAINT, va="bottom")
 
     # (xmult, yoff) tuned so labels don't collide; label format: (text override, xmult, yoff)
     label_specs = {
-        "wwii_european_theater":     ("WWII (Europe/Africa)", 0.45, -10),
+        "wwii_european_theater":     ("WWII (Europe/Africa)", 0.16, -12),
         "wwii_pacific_theater":      ("WWII (Pacific)",       0.40,  -2),
-        "great_leap_forward_famine": ("Great Leap Forward",   0.50,  -7),
-        "the_holocaust":             ("Holocaust",            1.40,  -2),
-        "second_congo_war":          ("Second Congo",         1.30,  -8),
+        "great_leap_forward_famine": ("Great Leap Forward",   0.30,   4),
+        "the_holocaust":             ("Holocaust",            1.30,  -3),
+        "second_congo_war":          ("Second Congo",         0.30, -10),
         "rwandan_genocide":          ("Rwandan genocide",     0.40,   4),
         "vietnam_war":               ("Vietnam",              1.30,   9),
         "korean_war":                ("Korean",               1.30,  -8),
         "syrian_civil_war":          ("Syrian civil war",     0.45,  10),
-        "russia_ukraine_war_2022":   ("Russia--Ukraine",      0.45, -10),
-        "israel_gaza_war_2023":      ("Israel--Gaza 2023",    1.45,   3),
+        "russia_ukraine_war_2022":   ("Russia\u2013Ukraine",      0.45, -10),
+        "israel_gaza_war_2023":      ("Israel\u2013Gaza 2023",    1.45,   3),
         "wwi":                       ("WWI",                  1.30,  -8),
         "iraq_war_2003":             ("Iraq 2003",            0.40,   6),
         "war_in_afghanistan_2001":   ("Afghanistan 2001",     0.40,  -7),
@@ -424,11 +436,11 @@ fig_sparkline_timeline()
 # ---------------------------------------------------------------------------
 
 
-def q_bound(mu: np.ndarray | float, omega: float, w: float = 0.733, p_am: float = 0.255, f: float = 0.02):
+def q_bound(mu: np.ndarray | float, omega: float, w: float = 0.733, p_am: float = 0.267, f: float = 0.02):
     return 1.0 - omega * (w + mu * (p_am - f)) / w
 
 
-def omega_required(q: np.ndarray | float, mu: float = 2.5, w: float = 0.733, p_am: float = 0.255, f: float = 0.02):
+def omega_required(q: np.ndarray | float, mu: float = 2.5, w: float = 0.733, p_am: float = 0.267, f: float = 0.02):
     return (1.0 - q) * w / (w + mu * (p_am - f))
 
 
@@ -457,14 +469,15 @@ def fig_gaza_diagnostic():
     cm_lo, cm_med, cm_hi = weighted_quantile(civ_milt, weights)
     dmilt_lo, dmilt_med, dmilt_hi = weighted_quantile(D_milt, weights)
 
-    # IDF claim
+    # IDF claim over the D scenarios used in the paper:
+    # 70k (MoH confirmed) .. 106.2k (GMS-corrected + missing)
     IDF_LO_K, IDF_HI_K = 17_000, 25_000
-    D_LO, D_HI = 60_000, 90_000
+    D_LO, D_HI = 70_000, 106_200
     idf_q_lo = IDF_LO_K / D_HI * 100
     idf_q_hi = IDF_HI_K / D_LO * 100
 
-    # Diagnostic constants
-    A_SHARE = 0.255    # adult-male population share
+    # Diagnostic constants (AM = males 18+, so a = 1 - w)
+    A_SHARE = 0.267    # adult-male population share
     F_SHARE = 0.020    # combatant pop share
     MU_BAR  = 2.5
 
@@ -557,7 +570,8 @@ def fig_gaza_diagnostic():
                 ha="left", va="center",
                 arrowprops=dict(arrowstyle="-", color=BLUE, lw=0.5))
     ax.text((idf_q_lo + idf_q_hi)/2, 0.55 * ymax,
-            f"IDF claim\n{idf_q_lo:.0f}–{idf_q_hi:.0f}%\n($\\rho\\gtrsim 20$)",
+            f"IDF claim\n{idf_q_lo:.0f}–{idf_q_hi:.0f}%\n"
+            r"($\rho_\omega\approx$8–31 SE)",
             ha="center", va="center", fontsize=7.6, color=RUST,
             fontweight="bold")
     ax.set_xlim(0, 45)
@@ -770,5 +784,66 @@ def fig_gaza_sparklines():
 
 
 fig_gaza_sparklines()
+
+
+# ---------------------------------------------------------------------------
+# Appendix table: all conflicts behind Figures 3-4, as a longtable.
+# ---------------------------------------------------------------------------
+
+
+def latex_escape(s: str) -> str:
+    return s.replace("&", r"\&").replace("%", r"\%").replace("#", r"\#")
+
+
+def fmt_count(x: float) -> str:
+    if x >= 1e6:
+        return f"{x/1e6:.3g}M"
+    if x >= 1e3:
+        return f"{x/1e3:.3g}k"
+    return f"{int(round(x))}"
+
+
+def write_all_conflicts_table():
+    wars = sorted(
+        [w for w in WARS if (w.mil_mid + w.civ_mid) >= 1_000],
+        key=lambda w: (w.start or 1900, w.name),
+    )
+    lines = [
+        "% Auto-generated by paper/build_figures.py -- do not edit by hand.",
+        r"\begin{footnotesize}",
+        r"\begin{longtable}{@{}lccrc@{}}",
+        r"\caption{\textbf{The 81-conflict dataset behind Figures~\ref{fig:range-frame} "
+        r"and~\ref{fig:uncertainty-ladder}} (conflicts with at least 1{,}000 attributed "
+        r"deaths shown). Deaths are midpoints of the source ranges (direct military $+$ "
+        r"civilian, including indirect where sources attribute it); the civilian-share "
+        r"interval spans the most and least civilian-heavy readings of the source ranges. "
+        r"Per-conflict sources are in the supplement.}\label{tab:all-conflicts}\\",
+        r"\toprule",
+        r"Conflict & Period & Deaths (mid) & Civilian share & lo--hi \\",
+        r"\midrule",
+        r"\endfirsthead",
+        r"\multicolumn{5}{@{}l}{\footnotesize\emph{Table~\ref{tab:all-conflicts} continued}}\\",
+        r"\toprule",
+        r"Conflict & Period & Deaths (mid) & Civilian share & lo--hi \\",
+        r"\midrule",
+        r"\endhead",
+        r"\bottomrule",
+        r"\endfoot",
+    ]
+    for w in wars:
+        period = f"{w.start or '?'}--{'' if w.ongoing else w.end}"
+        share = f"{100*w.civ_share_mid:.0f}\\%"
+        rng = f"{100*w.civ_share_lo:.0f}--{100*w.civ_share_hi:.0f}\\%"
+        deaths = fmt_count(w.mil_mid + w.civ_mid)
+        lines.append(
+            f"{latex_escape(short_name(w.name, 44))} & {period} & {deaths} & {share} & {rng} \\\\"
+        )
+    lines += [r"\end{longtable}", r"\end{footnotesize}", ""]
+    out = ROOT / "content" / "tab_all_conflicts.tex"
+    out.write_text("\n".join(lines))
+    print(f"  wrote {out.name} ({len(wars)} conflicts)")
+
+
+write_all_conflicts_table()
 
 print(f"\nAll figures in {FIGS}")

@@ -39,7 +39,13 @@ analyst trusts more. This repository provides:
 ├── analysis/
 │   ├── figure.py              5×3 grid headline figure (writes to figures/)
 │   ├── gaza_bayesian.py       first-pass demographic Bayes for Gaza
-│   └── summarize.py           rebuild data/SUMMARY.md, summary.json, totals.csv
+│   ├── summarize.py           rebuild data/SUMMARY.md, summary.json, totals.csv
+│   ├── validate_bounds.py     recompute every number in the paper (fails on drift)
+│   └── verify_proofs.py       sympy + Monte-Carlo checks of every theorem
+├── formal/
+│   └── casualty_proofs/       Lean 4 / mathlib machine-checked proofs (no sorrys)
+├── docs/
+│   └── proof_verification.tex human-readable proof dossier (builds to PDF)
 ├── figures/                   pre-built top-level figures (PDF + PNG)
 ├── gaza_sim/                  spatial Bayesian Gaza simulator
 │   ├── 01_simulator.py        importance-sampling spatial model
@@ -148,15 +154,46 @@ python build_supplement.py
 
 ## Reproducing the paper's headline numbers
 
-* Identified set for the Gaza combatant share at $\bar\mu = 2.5$:
-  $q \in [0.005, 0.083]$ (Section 6 of the paper, Theorem 3.4 + Corollary 3.5).
-* Spatial Bayesian posterior on the same independent inputs:
-  $q = 2.5\%$, 95% credible interval $[1.6\%, 3.8\%]$ (gaza_sim/report.md,
-  gaza_sim/posterior.npz).
-* Implied civilian-to-combatant ratio: $\sim 43{:}1$ (95% CI $[30, 64]$).
-* Contradiction radius of the IDF claim of 17--25k combatants killed against
-  the demographic feasibility region: $\rho \gtrsim 20$ standardised SE units
-  (paper, Section 4 + 6).
+Every bound, contradiction radius, and table in the paper is generated and
+cross-checked by
+
+```bash
+python3 analysis/validate_bounds.py   # exits non-zero if any check fails
+```
+
+which writes `analysis/validation_report.json` plus the two LaTeX tables
+(`paper/content/tab_sensitivity.tex`, `paper/content/tab_convergence.tex`).
+The mathematical claims are verified at three levels:
+
+```bash
+python3 analysis/verify_proofs.py         # sympy + Monte-Carlo checks of every theorem
+cd formal/casualty_proofs && lake build   # Lean 4 / mathlib machine-checked proofs
+```
+
+The Lean development (`formal/casualty_proofs/CasualtyProofs.lean`, no
+`sorry`s) kernel-checks the core algebra: the identification inversions
+(eq. 2 and Theorem 3.3), monotonicity of $q(\mu)$, all three closed forms
+of the $\eta$-slack bias and its sign (Remark 3), the manpower bound, the
+monotonicity of feasibility in $M$ behind Theorem 4.3's one-sided penalty,
+and the Section 6 arithmetic in exact rational form (including a formal
+refutation of a misprinted table value). `docs/proof_verification.pdf` is
+the human-readable dossier with full proofs and an error log of everything
+caught by the verification pipeline and by external review.
+Key outputs (Ministry of Health demographic anchor, males 18+ convention):
+
+* Identified set for the Gaza combatant share: $q \in [0, 25.1\%]$ with no
+  exposure assumption ($\mu \ge 1$), $q \in [0, 6.3\%]$ under the
+  historically calibrated exposure range $\mu \in [2, 3.5]$.
+* IDF claim of 17--25k combatants killed ($q \approx 24$--$36\%$ over 70k):
+  the 25k endpoint is infeasible for any $\mu \ge 1$; contradiction radii
+  range from $\rho \approx 8$ SE (agnostic exposure, MoH anchor) to
+  $\rho \approx 31$ SE (calibrated exposure, OHCHR anchor). The rejection
+  survives undercount-corrected death tolls (94k--106k) and a 5% Huber
+  contamination allowance on every input.
+* Spatial Bayesian posterior (one prior-dependent point *within* the set;
+  fully documented in the paper's Appendix B): $q = 2.5\%$, 95% credible
+  interval $[1.6\%, 3.8\%]$, implied civilian-to-combatant ratio
+  $\sim 43{:}1$ $[30, 64]$ (gaza_sim/report.md, gaza_sim/posterior.npz).
 
 ## Citation
 
