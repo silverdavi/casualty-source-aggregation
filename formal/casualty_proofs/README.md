@@ -24,14 +24,18 @@ pipeline:
 | `claim2_monotone` | Theorem 3.3(b): `q(μ)` is antitone in `μ` |
 | `claim3_qtrue` | Remark 3: `q_true = (S−ω)/(S−η)` under η-slack |
 | `claim3_bias_form1/2/3` | Remark 3: the three equal closed forms of the slack bias |
-| `claim3_bias_nonneg` | Remark 3: ignoring the slack *understates* q (bias ≥ 0) |
-| `claim3_old_chain_wrong` | Formal refutation of an erroneous bias chain from an earlier draft |
+| `claim3_bias_nonneg_of_qtrue` | Remark 3: bias ≥ 0 exactly under `S > 0`, `η ≥ 0`, `q_true ≥ 0` — ignoring the slack *understates* q |
+| `claim3_bias_nonneg` | Remark 3: the same under the stronger hypotheses `η < S`, `ω ≤ S` |
+| `claim3_spurious_chain_refuted` | Formal refutation of a superficially plausible bias chain that double-counts the `(S−η)⁻¹` correction |
 | `claim4_manpower_bound` | Corollary 3.4: `D_M ≤ M ⇒ q ≤ M/D` |
 | `claim7_feasibility_monotone_in_M` | Theorem 4.3 ingredient: lowering the manpower ceiling never helps a claim (soundness of the one-sided penalty) |
 | `partition_exact` | Section 6: the demographic classes partition the population (`w + a = 1` exactly) |
 | `q_at_1`, `q_at_1_bounds` | Section 6: `q(1) = 921/3665` exactly; rounds to 25.13% |
 | `q_at_15_bounds`, `q_at_2_bounds` | Section 6: `q(1.5) ∈ (15.69%, 15.70%)`, `q(2) ∈ (6.25%, 6.26%)` |
 | `q_grid_ordered`, `q_crossing` | Section 6: grid ordering and the `q = 0` crossing below `μ = 2.34` |
+| `S_exceeds_eta` | Remark 3 condition: `S(μ) > η` throughout the reported grid |
+| `bias_at_1_bounds`, `bias_at_15_bounds`, `bias_at_2_bounds` | Remark 3: exact η-slack bias at `μ = 1, 1.5, 2` (1.05, 0.74, 0.33 percentage points) |
+| `bias_loose_uniform_bound`, `bias_grid_ordered` | Remark 3: the 1.4-pp uniform bound is loose and dominates every exact per-μ bias, which decreases in μ |
 
 The application arithmetic is proved over `ℚ` (exact rationals), so there
 is no floating-point in the verified statements.

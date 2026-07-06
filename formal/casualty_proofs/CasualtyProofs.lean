@@ -90,20 +90,30 @@ theorem claim3_bias_form3
   field_simp
   ring
 
-/-- The bias is nonnegative when 0 ≤ eta < S and om ≤ S:
-ignoring the slack UNDERSTATES q. -/
+/-- The bias is nonnegative exactly under S > 0, eta ≥ 0, q_true ≥ 0
+(via form 2: bias = eta * q_true / S): ignoring the slack UNDERSTATES q.
+No hypothesis om ≤ S is needed -- that route would additionally require
+S ≥ eta, since om = S - q(S-eta) gives om ≥ S when eta > S and q ≥ 0. -/
+theorem claim3_bias_nonneg_of_qtrue
+    (S eta om : ℝ) (hS : 0 < S) (heta : 0 ≤ eta) (hSeta : S - eta ≠ 0)
+    (hq : 0 ≤ (S - om) / (S - eta)) :
+    (0 : ℝ) ≤ (S - om) / (S - eta) - (S - om) / S := by
+  rw [claim3_bias_form2 S eta om (ne_of_gt hS) hSeta]
+  exact div_nonneg (mul_nonneg heta hq) hS.le
+
+/-- Under the stronger hypotheses 0 ≤ eta < S and om ≤ S the bias is
+likewise nonnegative (special case of the above). -/
 theorem claim3_bias_nonneg
     (S eta om : ℝ) (hS : 0 < S) (heta : 0 ≤ eta) (hetaS : eta < S)
     (homS : om ≤ S) :
     (0 : ℝ) ≤ (S - om) / (S - eta) - (S - om) / S := by
-  rw [claim3_bias_form1 S eta om (ne_of_gt hS) (by linarith)]
-  apply div_nonneg
-  · nlinarith
-  · nlinarith
+  refine claim3_bias_nonneg_of_qtrue S eta om hS heta (by linarith) ?_
+  exact div_nonneg (by linarith) (by linarith)
 
-/-- The OLD dossier chain eta*q_true/S * S/(S-eta) is NOT the bias:
-concrete refutation at S = 1, eta = 1/2, om = 0 (chain gives 2, bias is 1). -/
-theorem claim3_old_chain_wrong :
+/-- The superficially plausible chain eta*q_true/S * S/(S-eta) is NOT the
+bias (it double-counts the (S-eta)⁻¹ correction): concrete refutation at
+S = 1, eta = 1/2, om = 0 (chain gives 2, bias is 1). -/
+theorem claim3_spurious_chain_refuted :
     ∃ S eta om : ℝ, S ≠ 0 ∧ S - eta ≠ 0 ∧
       eta * ((S - om) / (S - eta)) / S * (S / (S - eta)) ≠
         (S - om) / (S - eta) - (S - om) / S := by
@@ -149,8 +159,8 @@ theorem q_at_1 : qmu 1 = 921 / 3665 := by
 theorem q_at_1_bounds : 2512 / 10000 < qmu 1 ∧ qmu 1 < 2513 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(3/2) < 0.157 and q(3/2) > 0.1569: the dossier's misprinted 15.72%
-is refuted, the correct rounding is 15.69%. -/
+/-- q(3/2) rounds to 15.69%: 0.1569 < q(3/2) < 0.1570
+(in particular q(3/2) < 0.1572, refuting any 15.72% reading). -/
 theorem q_at_15_bounds :
     1569 / 10000 < qmu (3 / 2) ∧ qmu (3 / 2) < 1570 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
@@ -166,6 +176,43 @@ theorem q_grid_ordered : qmu 2 < qmu (3 / 2) ∧ qmu (3 / 2) < qmu 1 := by
 /-- q(mu) ≤ 0 at mu = 2.34 (the q = 0 crossing is below 2.34). -/
 theorem q_crossing : qmu (234 / 100) < 0 := by
   norm_num [qmu, w0, a0, f0, om0]
+
+/-! ### Remark 3 eta-slack bias, exact per-mu values
+bias(mu) = eta * q_{eta=0}(mu) / (S(mu) - eta) with eta = 0.03 and
+S(mu) = w/(w + mu*(a-f)); note qmu mu = (S - om)/S at S = S0 mu. -/
+
+def eta0 : ℚ := 3 / 100
+def S0 (mu : ℚ) : ℚ := w0 / (w0 + mu * (a0 - f0))
+def bias0 (mu : ℚ) : ℚ := eta0 * qmu mu / (S0 mu - eta0)
+
+/-- S > eta throughout the reported grid (the condition under which the
+slack bound is stated). -/
+theorem S_exceeds_eta : eta0 < S0 2 ∧ S0 2 < S0 (3 / 2) ∧ S0 (3 / 2) < S0 1 := by
+  refine ⟨?_, ?_, ?_⟩ <;> norm_num [S0, eta0, w0, a0, f0]
+
+/-- Exact bias at mu = 1 rounds to 1.05 percentage points. -/
+theorem bias_at_1_bounds : 105 / 10000 < bias0 1 ∧ bias0 1 < 106 / 10000 := by
+  constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
+
+/-- Exact bias at mu = 3/2 rounds to 0.74 percentage points. -/
+theorem bias_at_15_bounds :
+    74 / 10000 < bias0 (3 / 2) ∧ bias0 (3 / 2) < 75 / 10000 := by
+  constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
+
+/-- Exact bias at mu = 2 rounds to 0.33 percentage points. -/
+theorem bias_at_2_bounds : 33 / 10000 < bias0 2 ∧ bias0 2 < 34 / 10000 := by
+  constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
+
+/-- The loose uniform bound 1.4 pp dominates every exact per-mu bias:
+each bias is below eta * 0.26 / (S(2) - eta) < 0.014. -/
+theorem bias_loose_uniform_bound :
+    bias0 1 < 14 / 1000 ∧ bias0 (3 / 2) < 14 / 1000 ∧ bias0 2 < 14 / 1000 := by
+  refine ⟨?_, ?_, ?_⟩ <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
+
+/-- The exact bias decreases along the grid (q_{eta=0} falls faster
+than S). -/
+theorem bias_grid_ordered : bias0 2 < bias0 (3 / 2) ∧ bias0 (3 / 2) < bias0 1 := by
+  constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
 
 end Arithmetic
 

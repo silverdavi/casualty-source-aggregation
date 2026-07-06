@@ -13,7 +13,12 @@ q = 1 - \frac{\omega(1 - f)}{w}.
 The intuition is direct: $\omega$ falls short of the population share $w$ only to the extent that deaths are diverted to the (all-male) combatant pool.
 
 \begin{remark}\label{rem:female-combatants}
-If a fraction $\eta\le\bar\eta=0.03$ of combatant deaths falls outside $\mathrm{AM}$, the identity becomes $\omega=(1-q)S+\eta q$ with $S=w/(w+\mu(a-f))$, and the true share is $q_{\mathrm{true}}=(S-\omega)/(S-\eta)$, so ignoring the slack \emph{understates} $q$ by exactly $\eta\,q_{\eta=0}/(S-\eta)$, where $q_{\eta=0}=(S-\omega)/S$ is the no-slack value---at most $1.1$ percentage points at the values in Section~\ref{sec:gaza} with $\mu=1$ ($q_{\eta=0}\le 0.26$, $S=0.748$), and at most $1.4$ points at $\mu=2$ ($S=0.597$). Readers who want this slack should widen the \emph{upper} endpoints below by $\bar\eta\, q_{\eta=0}/(S-\bar\eta)$; we otherwise suppress it.
+Suppose a fraction $\eta\le\bar\eta=0.03$ of combatant \emph{deaths} is recorded in class $W$. This is a classification slack: the combatant stock itself stays in $\mathrm{AM}$, so the civilian split $S=w/(w+\mu(a-f))$ is unchanged. The identity becomes $\omega=(1-q)S+\eta q$, the true share is $q_{\mathrm{true}}=(S-\omega)/(S-\eta)$, and the no-slack value $q_{\eta=0}=(S-\omega)/S$ understates it by exactly
+\[
+q_{\mathrm{true}}-q_{\eta=0}\;=\;\frac{\eta\,q_{\mathrm{true}}}{S}\;=\;\frac{\eta\,q_{\eta=0}}{S-\eta}\;\ge\;0
+\qquad(S>\eta,\ q_{\mathrm{true}}\ge 0).
+\]
+At the values in Section~\ref{sec:gaza}, where $S>\bar\eta$ throughout ($S\ge 0.597$ for $\mu\le 2$) and $q_{\eta=0}\le 0.26$, a loose uniform bound over $\mu\in[1,2]$ is $\bar\eta\cdot 0.26/(0.597-\bar\eta)\approx 1.4$ percentage points; the exact understatement is smaller and falls with $\mu$ ($1.05$ points at $\mu=1$, $0.33$ at $\mu=2$), since $q_{\eta=0}$ shrinks faster than $S$. Readers who want this slack should widen the \emph{upper} endpoints below by $\bar\eta\, q_{\eta=0}/(S-\bar\eta)$; we otherwise suppress it.
 \end{remark}
 
 Assumption~\ref{ass:ec} is strong: civilian adult men typically face higher per-capita exposure than women and children due to outside work, food queues, rescue activity, and circumstantial proximity to combat. We weaken it to a one-parameter family.
