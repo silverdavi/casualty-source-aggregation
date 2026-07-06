@@ -340,6 +340,7 @@ lines = [
     r" \citep{frost2026,cockerill2024}.}",
     r"\label{tab:sensitivity}",
     r"\begin{small}",
+    r"\renewcommand{\arraystretch}{1.3}",
     r"\begin{tabular}{@{}lcccccc@{}}",
     r"\toprule",
     r"Anchor $\omega$ (share of dead) & $\mu{=}1$ & $\mu{=}1.5$ & $\mu{=}2$ &"
@@ -395,16 +396,19 @@ lines = [
     r" $3{:}1$ to $40{:}1$ or more on direct deaths).}",
     r"\label{tab:convergence}",
     r"\begin{footnotesize}",
+    r"\renewcommand{\arraystretch}{1.3}",
     r"\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xll"
     r">{\raggedright\arraybackslash}X@{}}",
     r"\toprule",
     r"Method & Source & Implied $q$ & Note \\",
     r"\midrule",
 ]
-for method, src, qlo, qhi, note in conv_rows:
+for i, (method, src, qlo, qhi, note) in enumerate(conv_rows):
     qs = f"{100*qlo:.1f}\\%" if abs(qhi - qlo) < 5e-4 else \
          f"{100*qlo:.1f}--{100*qhi:.1f}\\%"
     lines.append(f"{method} & {src} & {qs} & {note} \\\\")
+    if i == 0:  # rule below the tested claim, separating it from the methods
+        lines.append(r"\midrule")
 lines += [r"\bottomrule", r"\end{tabularx}", r"\end{footnotesize}", r"\end{table}"]
 (CONTENT / "tab_convergence.tex").write_text("\n".join(lines) + "\n")
 print(f"  wrote {CONTENT / 'tab_convergence.tex'}")
