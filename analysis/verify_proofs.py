@@ -80,39 +80,55 @@ share_civAM = (1 - q) * mu * (a - f) / (w + mu * (a - f))
 share_comb = q
 check("death shares sum to 1", sp.simplify(share_W + share_civAM + share_comb - 1) == 0)
 
-# Remark 3 (REVISED after this script found the original wrong): if a
-# fraction eta of combatant deaths lands in W, omega = (1-q)S + eta*q with
-# S = w/(w+mu(a-f)).  Then q_true = (S-omega)/(S-eta) and the bias of the
-# eta=0 estimator is exactly eta*q_true/S... verify the paper's bound
-# |q_true - q_hat| = eta*q_true/(S-eta) <= eta*q/(S-eta), and that it is
-# ~1pp at Gaza values.
+# Remark 3 (eta-slack): if a fraction eta of combatant deaths lands in W
+# while the combatant stock stays in AM (death-classification slack, S
+# unchanged), omega = (1-q)S + eta*q with S = w/(w+mu(a-f)).  Then
+# q_true = (S-omega)/(S-eta) and the eta=0 estimator understates it by
+# eta*q_true/S = eta*q_hat/(S-eta).
 eta_ = sp.symbols("eta_", positive=True)
 S_ = sp.symbols("S_", positive=True)
 q_true_expr = (S_ - om) / (S_ - eta_)
 q_hat_expr = (S_ - om) / S_
 bias_expr = sp.simplify(q_true_expr - q_hat_expr)
-# All three displayed forms must agree (2nd-round review caught a spurious
-# factor eta*q_true/S * S/(S-eta) in the previous dossier chain):
+# All three displayed forms must agree:
 form1 = eta_ * (S_ - om) / (S_ * (S_ - eta_))
 form2 = eta_ * q_true_expr / S_
 form3 = eta_ * q_hat_expr / (S_ - eta_)
 check("Remark 3 bias = eta(S-om)/(S(S-eta))", sp.simplify(bias_expr - form1) == 0)
 check("Remark 3 bias = eta*q_true/S", sp.simplify(bias_expr - form2) == 0)
 check("Remark 3 bias = eta*q_hat/(S-eta)", sp.simplify(bias_expr - form3) == 0)
-check("old dossier chain eta*q_true/S * S/(S-eta) is NOT the bias (spurious factor)",
+check("chain eta*q_true/S * S/(S-eta) is NOT the bias (double-counts (S-eta)^-1)",
       sp.simplify(bias_expr - form2 * S_ / (S_ - eta_)) != 0)
-# Gaza S values per mu (2nd-round review: "S>=0.70" fails for mu>1.15):
+# Sign: bias >= 0 exactly when S > 0 and q_true >= 0 (form 2).  The route
+# via "omega <= S" needs S >= eta: with eta > S and q >= 0,
+# omega = S - q(S-eta) >= S, so that route's premise fails.
+Sv_, ev_, qv_ = 0.02, 0.05, 0.5              # eta > S example
+om_flip = Sv_ - qv_ * (Sv_ - ev_)
+check("with eta > S and q >= 0, omega >= S (so 'omega<=S' route needs S>eta)",
+      om_flip >= Sv_, f"omega={om_flip:.4f} vs S={Sv_}")
+# Gaza S values per mu; the claim's stated condition is S > eta-bar:
 W_g, A_g, F_g = 0.733, 0.267, 0.020
 S_of = lambda m: W_g / (W_g + m * (A_g - F_g))
 check("S(1)=0.748", abs(S_of(1) - 0.748) < 1e-3, f"{S_of(1):.4f}")
-check("S(1.5)=0.664 (< 0.70: old support claim false)", S_of(1.5) < 0.70,
-      f"{S_of(1.5):.4f}")
+check("S(1.5)=0.664", abs(S_of(1.5) - 0.664) < 1e-3, f"{S_of(1.5):.4f}")
 check("S(2)=0.597", abs(S_of(2) - 0.597) < 1e-3, f"{S_of(2):.4f}")
-# Per-mu bias bounds with q_hat<=0.26, eta=0.03:
-check("Remark 3 bias <= 1.1pp at mu=1", 0.03 * 0.26 / (S_of(1) - 0.03) < 0.0115,
-      f"{0.03*0.26/(S_of(1)-0.03):.4f}")
-check("Remark 3 bias <= 1.4pp at mu=2", 0.03 * 0.26 / (S_of(2) - 0.03) < 0.014,
-      f"{0.03*0.26/(S_of(2)-0.03):.4f}")
+check("S > eta-bar on the whole grid", min(S_of(1), S_of(1.5), S_of(2)) > 0.03)
+# Exact per-mu bias at eta = 0.03 with q_hat = q(mu) at Gaza values, and
+# the loose uniform bound that pairs min S with max q_hat:
+OM_g = 0.560
+q_of = lambda m: 1 - OM_g * (W_g + m * (A_g - F_g)) / W_g
+bias_of = lambda m, e=0.03: e * q_of(m) / (S_of(m) - e)
+check("Remark 3 exact bias at mu=1 is 1.05pp", abs(bias_of(1) - 0.0105) < 5e-5,
+      f"{bias_of(1):.5f}")
+check("Remark 3 exact bias at mu=1.5 is 0.74pp", abs(bias_of(1.5) - 0.0074) < 5e-5,
+      f"{bias_of(1.5):.5f}")
+check("Remark 3 exact bias at mu=2 is 0.33pp", abs(bias_of(2) - 0.0033) < 5e-5,
+      f"{bias_of(2):.5f}")
+loose = 0.03 * 0.26 / (S_of(2) - 0.03)
+check("loose uniform bound ~1.4pp dominates every exact per-mu bias",
+      loose < 0.014 and all(bias_of(m) < loose for m in (1, 1.5, 2)),
+      f"loose={loose:.4f}")
+check("exact bias decreases in mu", bias_of(2) < bias_of(1.5) < bias_of(1))
 # Direction: q_true > q_hat (understating), for omega < S:
 for _ in range(500):
     Sv = rng.uniform(0.5, 0.9); omv = rng.uniform(0.1, Sv - 1e-3)
@@ -220,9 +236,9 @@ for _ in range(1000):
         ok = False
         break
 check("feasibility monotone in M: lowering M never helps a claim (1000 draws)", ok)
-# Repaired limit step of Thm 4.3(i,=>): objective->0 along a feasible
-# sequence forces q*D <= M_hat in the limit even when M'_n stays far BELOW
-# M_hat (one-sided penalty).  Simulate such sequences:
+# Limit step of Thm 4.3(i,=>): objective->0 along a feasible sequence
+# forces q*D <= M_hat in the limit even when M'_n stays far BELOW M_hat
+# (one-sided penalty).  Simulate such sequences:
 ok = True
 for _ in range(500):
     wv = rng.uniform(0.6, 0.85); fv = rng.uniform(0.005, 0.04)
@@ -243,7 +259,7 @@ for _ in range(500):
     if qc * Dv <= Mhat:
         ok = False
         break
-check("Thm 4.3 repaired limit step: q*D <= M_hat survives one-sided penalty "
+check("Thm 4.3 limit step: q*D <= M_hat survives one-sided penalty "
       "(500 draws)", ok)
 
 # rho_omega closed form used in validate_bounds.py: distance from omega_hat
@@ -255,21 +271,20 @@ check("omega_needed decreasing in mu",
       sp.simplify(-(1 - q) * w * (a - f) / (w + mu * (a - f))**2))
 
 # ===========================================================================
-# Proposition 5.1 (Bias-robust sensitivity band -- RESTATED after 2nd-round
-# external review showed the old "contains every adversarial credible
-# interval" claim is false for tail quantiles)
+# Proposition 5.1 (Bias-robust sensitivity band)
 # ===========================================================================
 print("\n== Proposition 5.1: Huber contamination ==")
-# Counterexample to the OLD statement (must hold, i.e. old claim is false):
+# Why (ii) is a statement about the MEAN and not a uniform envelope:
 # one source, eps=0.04, R=100; clean posterior N(0,0.1^2), contaminated
-# component N(100,0.1^2).  Pooled 97.5% quantile jumps ~100 >> eps*R=4.
+# component N(100,0.1^2).  Pooled 97.5% quantile jumps ~100 >> eps*R=4,
+# so no first-order band can contain realised tail quantiles.
 from scipy import stats as st
 xs = np.linspace(-5, 105, 400_001)
 cdf_pool = 0.96 * st.norm.cdf(xs, 0, 0.1) + 0.04 * st.norm.cdf(xs, 100, 0.1)
 q975_pool = float(np.interp(0.975, cdf_pool, xs))
-check("counterexample: pooled 97.5% quantile jumps far beyond eps*R",
+check("realised tail quantile can jump far beyond eps*R (band is first-order only)",
       q975_pool > 90 and 0.04 * 100 == 4.0, f"quantile={q975_pool:.2f}, eps*R=4")
-# (ii of restated prop) EXPECTED displacement identity: over contamination
+# (ii) EXPECTED displacement identity: over contamination
 # patterns T with P(T) = prod eps_i prod (1-eps_i), if patternwise shift is
 # bounded by sum_{i in T} R_i, the expectation equals sum_i eps_i R_i.
 # Verify the exchange-of-sums identity exactly by enumeration:
@@ -289,8 +304,8 @@ for _ in range(100):
 check("union bound identity: sum_T P(T) shift(T) = sum_i eps_i R_i "
       "(exact enumeration, 100 configs)", ok)
 
-# (iii of restated prop) Quantile displacement UNDER the posterior-weight
-# condition: if the posterior mixture weight on contaminated components is
+# (iii) Quantile displacement UNDER the posterior-weight condition:
+# if the posterior mixture weight on contaminated components is
 # <= tau = 1 - prod(1-eps_i) (assumed, not automatic: posterior weights are
 # proportional to P(T) * component marginal likelihood Z_T) and the clean
 # density >= m on the segment between the quantiles, |Q_eps - Q_0| <= tau/m.
@@ -334,7 +349,7 @@ check("mu needed for 17k/70k = 1.04", abs(mu_need(17/70) - 1.045) < 0.01,
       f"{mu_need(17/70):.4f}")
 check("mu needed for 25k/70k = 0.44 (<1: infeasible)", mu_need(25/70) < 1,
       f"{mu_need(25/70):.4f}")
-check("q(1.5)=15.69% (2nd-round review: dossier table had misprinted 15.72%)",
+check("q(1.5)=15.69% (exact to 6 decimals: 0.156944)",
       abs(qf(1.5) - 0.156944) < 1e-4, f"{qf(1.5):.6f}")
 
 print()

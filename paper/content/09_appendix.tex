@@ -9,7 +9,7 @@ Let $\lambda$ be the civilian per-capita death hazard in the women-and-children 
 \[
 \omega=(1-q)\,\frac{w}{w+\mu(a-f)},
 \]
-which solves to \eqref{eq:qmu}; moreover $\partial_\mu q=-\omega(a-f)/w\le 0$, so $q(\mu)$ is monotone decreasing. Sharpness: every $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ corresponds to a feasible hazard pair $(\lambda,\mu\lambda)$ that attains $q(\mu)$ exactly, so no sub-interval can be excluded. The benchmark identity \eqref{eq:ident} is the case $\mu=1$, using $w+a=1$. Corollary~\ref{cor:popbudget} follows since $D_M\le M$ implies $q=D_M/D\le M/D$.
+which solves to \eqref{eq:qmu}; moreover $\partial_\mu q=-\omega(a-f)/w\le 0$, so $q(\mu)$ is monotone decreasing. Sharpness: every $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ with $q(\mu)\in(0,1)$ corresponds to a feasible hazard pair $(\lambda,\mu\lambda)$, $\lambda>0$, that attains $q(\mu)$ exactly; the boundary values $q(\mu)\in\{0,1\}$ are attained in the closure (e.g.\ $q=1$ means $\omega=0$, no civilian deaths, the limit $\lambda\downarrow 0$). Hence no sub-interval can be excluded. The benchmark identity \eqref{eq:ident} is the case $\mu=1$, using $w+a=1$. Corollary~\ref{cor:popbudget} follows since $D_M\le M$ implies $q=D_M/D\le M/D$.
 \end{proof}
 
 \begin{proof}[Proof of Proposition~\ref{prop:agg}]
@@ -21,7 +21,7 @@ Among linear unbiased combinations $\sum_i c_i\hat\theta_i$ with $\sum_i c_i=1$,
 \end{proof}
 
 \begin{proof}[Proof of Proposition~\ref{prop:robust}]
-\emph{(i)} Condition on the realised pattern $T$. The sources outside $T$ are honest, so any posterior formed from them plus arbitrary reports from the sources in $T$ is supported on the identified set with the $T$-sources removed, which has diameter $R_T$ and contains the face-value estimand; hence each endpoint of any attainable credible interval lies within $R_T$ of the corresponding endpoint of $I_0$.
+\emph{(i)} Condition on the realised pattern $T$. The sources outside $T$ are honest, so any posterior formed from them plus arbitrary reports from the sources in $T$ is supported on the identified set with the $T$-sources removed, which has diameter $R_T$ and contains the face-value posterior support (in particular both $L_0$ and $U_0$); hence each endpoint of any support-respecting credible interval lies within $R_T$ of the corresponding endpoint of $I_0$.
 
 \emph{(ii)} The pattern is $T$ with probability $P(T)=\prod_{i\in T}\varepsilon_i\prod_{i\notin T}(1-\varepsilon_i)$, so the expected endpoint displacement is at most $\sum_T P(T)R_T$. Splitting off the singleton patterns, $\sum_T P(T)R_T\le\sum_i\varepsilon_i R_i+\sum_{|T|\ge 2}P(T)R_T$, and $P(T)=O(\varepsilon^{|T|})$ makes the second sum higher-order; it vanishes when at most one source can be contaminated. Note that $R_T$ for $|T|\ge 2$ is \emph{not} bounded by $\sum_{i\in T}R_i$ in general (two mutually corroborating sources can each have a small removal diameter while their joint removal is much larger), which is why \eqref{eq:Iepsilon} is stated as a first-order band rather than a uniform envelope.
 

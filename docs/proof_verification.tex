@@ -2,7 +2,8 @@
 % =====================================================================
 % Internal document: full statements and detailed proofs of every
 % mathematical claim in the manuscript, with verification notes.
-% Machine companion: analysis/verify_proofs.py (sympy + Monte Carlo).
+% Machine companions: analysis/verify_proofs.py (sympy + Monte Carlo)
+% and formal/casualty_proofs (Lean 4 + mathlib).
 % Not part of any submission.
 % =====================================================================
 \documentclass[11pt,a4paper]{article}
@@ -24,7 +25,6 @@
 
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\PASS}{\textcolor{green!50!black}{\textbf{VERIFIED}}}
-\newcommand{\FIXED}{\textcolor{orange!80!black}{\textbf{ERROR FOUND \& FIXED}}}
 
 \title{\textbf{Proof Verification Dossier}\\[4pt]
 \large Bounds and Estimators for the Civilian-to-Combatant Death Ratio\\[2pt]
@@ -37,18 +37,18 @@ and \texttt{formal/casualty\_proofs} (Lean~4 $+$ mathlib, kernel-checked, no \te
 \begin{document}
 \maketitle
 
-\noindent\textbf{How to read this document.} Each claim is stated exactly as in the manuscript, followed by a proof written in more detail than the paper's appendix, an explicit list of the assumptions used at each step, and a verification note describing the symbolic (sympy) or Monte-Carlo check performed. The algebraic claims (1--4, the $M$-monotonicity step of Claim~7, and the Section~6 arithmetic over exact rationals) are additionally machine-checked in Lean~4 with mathlib (\texttt{formal/casualty\_proofs}); the Lean development compiles with no unproven statements. Three errors were found in the first verification round and corrected in the manuscript; a second round of independent external review of this dossier surfaced further defects (most materially in the former Proposition~5.1), also now corrected in both dossier and manuscript. All are flagged inline and catalogued in the final two sections.
+\noindent\textbf{How to read this document.} Each claim is stated exactly as in the manuscript, followed by a proof written in more detail than the paper's appendix, an explicit list of the assumptions used at each step, and a verification note describing the symbolic (sympy) or Monte-Carlo check performed. The algebraic claims (1--4, the $M$-monotonicity step of Claim~7, and the Section~6 arithmetic over exact rationals) are additionally machine-checked in Lean~4 with mathlib (\texttt{formal/casualty\_proofs}); the Lean development compiles with no unproven statements.
 
 \tableofcontents
 
 %======================================================================
 \section{Setup and standing conventions}
 
-Population of size $N$; deaths $D$ in the window $[t_0,t_1]$. Classes: $W$ (women of all ages $+$ males under 18) with population share $w$, and $\mathrm{AM}$ (males 18$+$) with population share $a$. \emph{Convention (revised in this version):} $\mathrm{AM}$ is \emph{all} males 18$+$, so
+Population of size $N$; deaths $D$ in the window $[t_0,t_1]$. Classes: $W$ (women of all ages $+$ males under 18) with population share $w$, and $\mathrm{AM}$ (\emph{all} males 18$+$) with population share $a$, so
 \[
 w + a = 1 \quad\text{exactly.}
 \]
-(The prior draft used $a=$ males 18--60 $=0.255$, leaving men over 60 unassigned; this left $w+a=0.988$ and made $a=1-w$ substitutions silently wrong. Now $a=0.267$.)
+The exact partition matters: the identification formulas substitute $a=1-w$, so any convention in which $\mathrm{AM}$ excludes part of the male population (e.g.\ men over 60) silently breaks them.
 
 Combatant stock $M$, $f = M/N$, all combatants in $\mathrm{AM}$ (slack for exceptions handled in Claim~\ref{cl:remark}). Estimand $q = D_M/D$, the combatant share of the dead; $\omega$ = share of the \emph{dead} in class $W$.
 
@@ -77,7 +77,7 @@ and solving for $q$ gives the display. Note this is exact in expectation (a firs
 \end{proof}
 
 \begin{verification}
-\PASS. Sympy: solving $\omega=(1-q)w\lambda/(w\lambda+(a-f)\mu\lambda)$ for $q$ and substituting $\mu=1$, $a=1-w$ reproduces the display exactly ($\lambda$ cancels symbolically). Degenerate cases: $\omega=w$, $f=0$ $\Rightarrow$ $q=0$; $\omega=0$ $\Rightarrow$ $q=1$. \emph{Note the subtlety}: the formula requires $a=1-w$; with the old convention $a=0.255\neq 1-w$ the two displayed forms of the theorem disagreed by $\sim$1\%. This motivated the convention change above.
+\PASS. Sympy: solving $\omega=(1-q)w\lambda/(w\lambda+(a-f)\mu\lambda)$ for $q$ and substituting $\mu=1$, $a=1-w$ reproduces the display exactly ($\lambda$ cancels symbolically). Lean: \texttt{claim1\_benchmark\_identification}. Degenerate cases: $\omega=w$, $f=0$ $\Rightarrow$ $q=0$; $\omega=0$ $\Rightarrow$ $q=1$. \emph{Subtlety for manual checking:} the last step of the proof needs $w+a=1$ exactly (see the convention note in Section~1); with $a<1-w$ the two displayed forms of the identity disagree.
 \end{verification}
 
 %======================================================================
@@ -101,28 +101,28 @@ Solving \eqref{eq:core} for $q$ gives $q(\mu)$.
 
 \emph{Step 2 (monotonicity).} $\partial q/\partial\mu = -\omega(a-f)/w \le 0$, with equality iff $a=f$ (no civilian adult men) or $\omega=0$.
 
-\emph{Step 3 (validity: every point of the interval with $q(\mu^\ast)\in[0,1]$ is attainable).} Fix any $\mu^\ast\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ such that $q(\mu^\ast)\in[0,1]$ (values outside $[0,1]$ are not shares and are excluded by the final intersection), and any $\lambda>0$ small enough that all implied class death counts are below class populations. The pair $(\lambda,\mu^\ast\lambda)$ is an admissible hazard configuration whose implied $\omega$ satisfies \eqref{eq:core} with $q=q(\mu^\ast)$. Hence $q(\mu^\ast)$ is consistent with the data $(\omega,w,a,f)$: the identified set contains $\{q(\mu):\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]\}\cap[0,1]$, which by continuity and monotonicity is $[q(\mu_{\mathrm{hi}}),q(\mu_{\mathrm{lo}})]\cap[0,1]$.
+\emph{Step 3 (validity: every point of the interval with $q(\mu^\ast)\in[0,1]$ is attainable).} Fix any $\mu^\ast\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ such that $q(\mu^\ast)\in(0,1)$ (values outside $[0,1]$ are not shares and are excluded by the final intersection), and any $\lambda>0$ small enough that all implied class death counts are below class populations. The pair $(\lambda,\mu^\ast\lambda)$ is an admissible hazard configuration whose implied $\omega$ satisfies \eqref{eq:core} with $q=q(\mu^\ast)$. Boundary points are obtained in the closure: $q(\mu^\ast)=1$ corresponds to $\omega=0$ (no civilian deaths), attained by $\lambda=0$ or as the limit $\lambda\downarrow 0$; $q(\mu^\ast)=0$ is attained directly with $\lambda>0$ and no combatant deaths. Hence $q(\mu^\ast)$ is consistent with the data $(\omega,w,a,f)$: the identified set contains $\{q(\mu):\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]\}\cap[0,1]$, which by continuity and monotonicity is $[q(\mu_{\mathrm{hi}}),q(\mu_{\mathrm{lo}})]\cap[0,1]$.
 
 \emph{Step 4 (sharpness: nothing outside is attainable).} Conversely, any admissible configuration has some $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, and \eqref{eq:core} then forces $q=q(\mu)$, which lies in the interval. The intersection with $[0,1]$ imposes the logical range of a share.
 \end{proof}
 
 \begin{verification}
-\PASS. Sympy confirms the inversion and the derivative. 2{,}000 random parameter draws confirm endpoint ordering. The forward model's three death-shares (combatant, civilian-$\mathrm{AM}$, $W$) sum to 1 symbolically. \emph{Caveat worth knowing when checking manually:} the theorem treats $\omega$ as an exact population quantity; the ``identified set'' is a set for the estimand given error-free inputs. Sampling error enters separately via Claim~\ref{cl:delta} and systematic error via the anchor sensitivity analysis. This is stated in the paper's Discussion (limitation 3).
+\PASS. Sympy confirms the inversion and the derivative; Lean: \texttt{claim2\_inversion}, \texttt{claim2\_monotone}. 2{,}000 random parameter draws confirm endpoint ordering. The forward model's three death-shares (combatant, civilian-$\mathrm{AM}$, $W$) sum to 1 symbolically. \emph{Caveat worth knowing when checking manually:} the theorem treats $\omega$ as an exact population quantity; the ``identified set'' is a set for the estimand given error-free inputs. Sampling error enters separately via Claim~\ref{cl:delta} and systematic error via the anchor sensitivity analysis. This is stated in the paper's Discussion (limitation 3).
 \end{verification}
 
 %======================================================================
 \section{Claim 3: combatants outside AM (paper Remark 3)}
 
 \begin{claim}[$\eta$-slack]\label{cl:remark}
-If a fraction $\eta\in[0,\bar\eta]$, $\bar\eta=0.03$, of combatant deaths falls in class $W$, then with $S:=w/(w+\mu(a-f))$ the observable identity becomes $\omega=(1-q)S+\eta q$, so
+Suppose a fraction $\eta\in[0,\bar\eta]$, $\bar\eta=0.03$, of combatant \emph{deaths} is recorded in class $W$, while the combatant stock stays in $\mathrm{AM}$ (a death-classification slack, so $S:=w/(w+\mu(a-f))$ is unchanged). The observable identity becomes $\omega=(1-q)S+\eta q$, so
 \[
 q_{\mathrm{true}} = \frac{S-\omega}{S-\eta},
 \qquad
 q_{\mathrm{true}}-q_{\eta=0} \;=\; \frac{\eta(S-\omega)}{S(S-\eta)}
 \;=\; \frac{\eta\,q_{\mathrm{true}}}{S}
-\;=\; \frac{\eta\,q_{\eta=0}}{S-\eta} \;\ge\; 0 .
+\;=\; \frac{\eta\,q_{\eta=0}}{S-\eta},
 \]
-Ignoring the slack \emph{understates} $q$, by at most $\bar\eta q_{\eta=0}/(S-\bar\eta)\le 1.4$ percentage points at the Gaza values ($q_{\eta=0}\le 0.26$ and $S\ge 0.597$ for $\mu\le 2$; at $\mu=1$, $S=0.748$ and the bias is $\le 1.1$ points).
+and the bias is $\ge 0$ whenever $S>0$ and $q_{\mathrm{true}}\ge 0$: ignoring the slack \emph{understates} $q$. Provided $S>\bar\eta$ (which holds at the Gaza values, where $S\ge 0.597$ for $\mu\le 2$), a loose uniform bound over $\mu\in[1,2]$ with $q_{\eta=0}\le 0.26$ is $\bar\eta\cdot 0.26/(0.597-\bar\eta)\approx 1.4$ percentage points; the exact per-$\mu$ bias is smaller and decreasing in $\mu$ ($1.05$ points at $\mu=1$, $0.74$ at $\mu=1.5$, $0.33$ at $\mu=2$), because $q_{\eta=0}$ falls with $\mu$ faster than $S$ does.
 \end{claim}
 
 \begin{proof}
@@ -130,13 +130,19 @@ Deaths in $W$ now come from two sources: civilian deaths landing in $W$, which i
 \[
 q_{\mathrm{true}}-q_{\eta=0}
 =(S-\omega)\Bigl(\frac{1}{S-\eta}-\frac{1}{S}\Bigr)
-=\frac{\eta(S-\omega)}{S(S-\eta)},
+=\frac{\eta(S-\omega)}{S(S-\eta)}.
 \]
-which is nonnegative because $\omega\le S$ whenever $q\ge 0$. Substituting $S-\omega=q_{\mathrm{true}}(S-\eta)$ gives the second form $\eta q_{\mathrm{true}}/S$; substituting $S-\omega=q_{\eta=0}S$ gives the third form $\eta q_{\eta=0}/(S-\eta)$. Note the distinction: the bias equals $\eta q/( S-\eta)$ with $q$ the \emph{no-slack} estimate, and $\eta q/S$ with $q$ the \emph{true} share --- the two coincide only to first order in $\eta$.
+Substituting $S-\omega=q_{\mathrm{true}}(S-\eta)$ gives the second form $\eta q_{\mathrm{true}}/S$; substituting $S-\omega=q_{\eta=0}S$ gives the third form $\eta q_{\eta=0}/(S-\eta)$.
+
+\emph{Nonnegativity.} From the second form, $q_{\mathrm{true}}-q_{\eta=0}=\eta q_{\mathrm{true}}/S\ge 0$ for $S>0$, $\eta\ge 0$, $q_{\mathrm{true}}\ge 0$. (This is the right route: arguing instead from ``$\omega\le S$'' requires $S\ge\eta$, since $\omega=S-q(S-\eta)$ gives $\omega\ge S$ when $\eta>S$ and $q\ge 0$.)
+
+\emph{Bound.} For the uniform bound the third form is used with the worst admissible values: it is increasing in $\eta$ (for $S>\eta$) and in $q_{\eta=0}$, and decreasing in $S$, so on $\eta\le\bar\eta$, $q_{\eta=0}\le 0.26$, $S\ge 0.597$ (the $\mu=2$ value; $S$ decreases in $\mu$) it is at most $\bar\eta\cdot 0.26/(0.597-\bar\eta)\approx 0.0138$. This is loose because it pairs the smallest $S$ (attained at $\mu=2$) with the largest $q_{\eta=0}$ (attained at $\mu=1$): the exact per-$\mu$ bias $\bar\eta\,q_{\eta=0}(\mu)/(S(\mu)-\bar\eta)$ evaluates to $0.0105$, $0.0074$, $0.0033$ at $\mu=1,1.5,2$.
+
+Note the distinction between the second and third forms: the bias equals $\eta q/(S-\eta)$ with $q$ the \emph{no-slack} estimate, and $\eta q/S$ with $q$ the \emph{true} share --- the two coincide only to first order in $\eta$.
 \end{proof}
 
 \begin{verification}
-\FIXED\ (twice). The manuscript originally asserted the shift is ``$-\bar\eta$'' (i.e.\ subtract $\eta$ from $q$). Symbolic verification shows this is wrong in \emph{both} magnitude and sign: the true bias is $+\eta q_{\eta=0}/(S-\eta)$ (understatement, not overstatement, of $q$), and its magnitude is ${\approx}0.011$ at Gaza values ($\mu=1$), not $\eta=0.03$. A second error was caught by external review of a previous version of \emph{this dossier}: the bias chain contained a spurious factor ($\eta q_{\mathrm{true}}/S\cdot S/(S-\eta)$, which double-counts the $(S-\eta)^{-1}$ correction), and the claimed support ``$S\ge 0.70$'' fails for $\mu>1.15$ at Gaza demographics ($S(1.5)=0.664$, $S(2)=0.597$). Both are corrected above; the bias bound is now stated per-$\mu$. Sympy check: all three displayed forms are now symbolically equal to $q_{\mathrm{true}}-q_{\eta=0}$. Direction note unchanged: the slack makes the paper's \emph{upper} bounds conservative in the claim-favourable direction, so no downstream conclusion changes.
+\PASS. Sympy: all three displayed forms are symbolically equal to $q_{\mathrm{true}}-q_{\eta=0}$; the superficially plausible chain $\eta q_{\mathrm{true}}/S\cdot S/(S-\eta)$ (which double-counts the $(S-\eta)^{-1}$ correction) is confirmed \emph{not} to equal the bias. Lean: the identity \texttt{claim3\_qtrue}, the three bias forms, nonnegativity exactly under $S>0$, $\eta\ge0$, $q_{\mathrm{true}}\ge0$ (theorem \texttt{claim3\_bias\_nonneg\_of\_qtrue}), the spurious-chain refutation, and exact rational bounds on the per-$\mu$ biases. Numeric: $S(1)=0.748$, $S(1.5)=0.664$, $S(2)=0.597$ at Gaza demographics --- so any blanket support claim like ``$S\ge0.70$'' would fail for $\mu\gtrsim 1.15$, which is why the claim states the condition as $S>\bar\eta$ and reports per-$\mu$ biases. Direction note: the slack makes the paper's \emph{upper} bounds conservative in the claim-favourable direction, so no downstream conclusion depends on suppressing it.
 \end{verification}
 
 %======================================================================
@@ -151,7 +157,7 @@ Combatants killed cannot exceed combatants existing: $D_M\le M$. Divide by $D>0$
 \end{proof}
 
 \begin{verification}
-\PASS\ (algebraic identity). One caveat for manual review: $M$ here is the stock at $t_0$; if recruitment during the war is material, $M$ should be the stock-plus-inflow, which \emph{raises} the bound. In the Gaza application the bound is slack by a factor $>2$ ($M/D=0.64$ vs.\ $q\le 0.26$), so recruitment cannot change any conclusion.
+\PASS\ (algebraic identity; Lean: \texttt{claim4\_manpower\_bound}). One caveat for manual review: $M$ here is the stock at $t_0$; if recruitment during the war is material, $M$ should be the stock-plus-inflow, which \emph{raises} the bound. In the Gaza application the bound is slack by a factor $>2$ ($M/D=0.64$ vs.\ $q\le 0.26$), so recruitment cannot change any conclusion.
 \end{verification}
 
 %======================================================================
@@ -201,7 +207,7 @@ is minimum-variance among linear unbiased combinations with weights fixed given 
 \end{proof}
 
 \begin{verification}
-\PASS. Optimality confirmed on 300 random configurations against random competitor weights; bias formula confirmed symbolically. Nuance for manual review: in (iii) ``diameter of the support'' means the contaminated value cannot leave a set of diameter $R_i$ around truth; if the adversary is unbounded, so is the worst case --- this is why the paper pairs the proposition with the identified-set diameters $R_i$ (removal diameters), which are finite by construction.
+\PASS. Optimality confirmed on 300 random configurations against random competitor weights; bias formula confirmed symbolically. Nuance for manual review: in (iii) ``diameter of the support'' means the contaminated value cannot leave a set of diameter $R_i$ around truth; if the adversary is unbounded, so is the worst case --- this is why the paper pairs the proposition with the identified-set diameters $R_i$ (removal diameters), which are finite by construction. The bound is on \emph{expected} bias, not worst-case realised displacement.
 \end{verification}
 
 %======================================================================
@@ -226,20 +232,20 @@ Then (i) $\rho^{(i)}=0$ iff $q^{(i)}\in\mathcal F(\hat x)$, and (ii) if $\rho^{(
 \[
 \omega'_n\to\hat\omega,\qquad w'_n\to\hat w,\qquad (M'_n-\hat M)_+\to 0,
 \]
-i.e.\ $\limsup_n M'_n\le\hat M$ (with $M'_n$ possibly far below $\hat M$). We therefore argue via the constraint rather than via convergence of $M'_n$. Each feasible point satisfies (a) $q^{(i)}=1-\omega'_n(w'_n+\mu_n(a-f))/w'_n$ for some $\mu_n\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, and (b) $q^{(i)}D\le M'_n$. For (a): pass to a subsequence with $\mu_n\to\mu^\ast$ in the compact interval; continuity of $(\omega',w',\mu)\mapsto 1-\omega'(w'+\mu(a-f))/w'$ (on $w'>0$) gives $q^{(i)}=1-\hat\omega(\hat w+\mu^\ast(a-f))/\hat w$, so the exposure constraint holds at the observed $(\hat\omega,\hat w)$. For (b): $q^{(i)}D\le M'_n\le \hat M+(M'_n-\hat M)_+\to\hat M$, so $q^{(i)}D\le\hat M$. Hence $q^{(i)}\in\mathcal F(\hat x)$. (Note the repaired step: the naive claim ``objective $\to0$ implies the full vector converges to $(\hat\omega,\hat w,\hat M)$'' is false under the one-sided penalty; only the inequality $q^{(i)}D\le\hat M$ survives the limit, and that is all the theorem needs.)
+i.e.\ $\limsup_n M'_n\le\hat M$ (with $M'_n$ possibly far below $\hat M$). We therefore argue via the constraint rather than via convergence of $M'_n$. Each feasible point satisfies (a) $q^{(i)}=1-\omega'_n(w'_n+\mu_n(a-f))/w'_n$ for some $\mu_n\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, and (b) $q^{(i)}D\le M'_n$. For (a): pass to a subsequence with $\mu_n\to\mu^\ast$ in the compact interval; continuity of $(\omega',w',\mu)\mapsto 1-\omega'(w'+\mu(a-f))/w'$ (on $w'>0$) gives $q^{(i)}=1-\hat\omega(\hat w+\mu^\ast(a-f))/\hat w$, so the exposure constraint holds at the observed $(\hat\omega,\hat w)$. For (b): $q^{(i)}D\le M'_n\le \hat M+(M'_n-\hat M)_+\to\hat M$, so $q^{(i)}D\le\hat M$. Hence $q^{(i)}\in\mathcal F(\hat x)$. (The one-sided penalty is why the argument must run through the constraint: ``objective $\to0$ implies the full vector converges to $(\hat\omega,\hat w,\hat M)$'' is false when downward moves of $M$ are free; only the inequality $q^{(i)}D\le\hat M$ survives the limit, and that is all the theorem needs.)
 
 \emph{(ii)} Let $(\omega',w',M')$ be any point of $C$ (``rationalisation''). By definition of the infimum, $\max\{|\omega'-\hat\omega|/\sigma_\omega,\,|w'-\hat w|/\sigma_w,\,(M'-\hat M)_+/\sigma_M\}\ge\rho^{(i)}$, so at least one of the three \emph{penalised} displacements is $\ge\rho^{(i)}$ SEs. This does not assert ``$M$ moved'' generically: lowering $M'$ costs nothing under the objective (and only shrinks the feasible set), so a positive radius can only ever be certified by an upward move of $M$, or a move of $\omega$ or $w$ in either direction.
 \end{proof}
 
 \begin{verification}
-\FIXED\ (proof only; statement repaired in wording). External review of a previous version of this dossier correctly observed that the original proof of (i,$\Rightarrow$) claimed $(\omega'_n,w'_n,M'_n)\to(\hat\omega,\hat w,\hat M)$, which is false under the one-sided $M$-penalty (downward moves of $M'$ are free). The repaired proof above passes to the limit through the constraint $q^{(i)}D\le M'_n\le\hat M+o(1)$ instead, and part (ii) now states explicitly which displacements are penalised. The theorem's \emph{conclusion} is unchanged. Numerically, 2{,}000 random infeasible claims all fail to become feasible under $10^{-9}$-perturbations (no boundary pathologies found). The reduction used in the code (radius on the $\omega$-axis $=$ distance from $\hat\omega$ to the interval $[\omega_{\mathrm{needed}}(\mu_{\mathrm{hi}}),\omega_{\mathrm{needed}}(\mu_{\mathrm{lo}})]$) is justified by $\omega_{\mathrm{needed}}$ decreasing in $\mu$ (verified symbolically). \emph{Related error found and fixed elsewhere}: the original \emph{application} of this definition in Section 6 evaluated the radius at the least favourable $\mu$ instead of minimising over the admissible range, overstating $\rho$ ($\gtrsim 20$ claimed; correct values 8--31 depending on anchor and exposure regime, and $\rho=0$ for the 17k endpoint under agnostic exposure on the MoH anchor). The definition and theorem themselves were always correct.
+\PASS. The $M$-monotonicity that makes the one-sided penalty sound is machine-checked (Lean: \texttt{claim7\_feasibility\_monotone\_in\_M}); the limit step is verified numerically: 2{,}000 random infeasible claims all fail to become feasible under $10^{-9}$-perturbations (no boundary pathologies found), and 500 simulated feasible sequences with $M'_n$ far below $\hat M$ confirm that only $q^{(i)}D\le\hat M$ survives the limit. The reduction used in the code (radius on the $\omega$-axis $=$ distance from $\hat\omega$ to the interval $[\omega_{\mathrm{needed}}(\mu_{\mathrm{hi}}),\omega_{\mathrm{needed}}(\mu_{\mathrm{lo}})]$) is justified by $\omega_{\mathrm{needed}}$ decreasing in $\mu$ (verified symbolically). Note for manual checking: Definition 4.2 grants the claim the most favourable $\mu$ in the admissible range, so the radius must be evaluated at that $\mu$, not at the analyst's preferred value; \texttt{analysis/validate\_bounds.py} enforces this.
 \end{verification}
 
 %======================================================================
-\section{Claim 8: bias-robust sensitivity band (paper Proposition 5.1, restated)}
+\section{Claim 8: bias-robust sensitivity band (paper Proposition 5.1)}
 
 \begin{claim}
-Let $I_0=[L_0,U_0]$ be the $1-\alpha$ credible interval under face-value sources, posterior supported on the identified set implied by the sources used. Each source $i$ is independently contaminated with probability $\varepsilon_i$; removing the sources in $T$ leaves an identified set of diameter $R_T$ ($R_i:=R_{\{i\}}$). Then: (i) conditional on realised pattern $T$, every attainable $1-\alpha$ credible interval lies within $[L_0-R_T,\,U_0+R_T]$; (ii) the \emph{expected} endpoint displacement is at most $\sum_i\varepsilon_iR_i$ plus $O(\varepsilon^2)$ terms involving multi-removal diameters, so $I_\varepsilon=[L_0-\sum_i\varepsilon_iR_i,\ U_0+\sum_i\varepsilon_iR_i]$ is a first-order sensitivity band, \emph{not} a uniform envelope over realised intervals; (iii) if the posterior mixture weight on contaminated components is at most $\tau:=1-\prod_i(1-\varepsilon_i)$ and the face-value posterior density exceeds $m>0$ on the segment between the clean and contaminated quantiles,
+Let $I_0=[L_0,U_0]$ be the $1-\alpha$ credible interval under face-value sources, posterior supported on the identified set implied by the sources used. Each source $i$ is independently contaminated with probability $\varepsilon_i$; removing the sources in $T$ leaves an identified set of diameter $R_T$ ($R_i:=R_{\{i\}}$). Then: (i) conditional on realised pattern $T$, every \emph{support-respecting} $1-\alpha$ credible interval --- one whose endpoints lie in the posterior support, e.g.\ equal-tailed or HPD --- lies within $[L_0-R_T,\,U_0+R_T]$; (ii) the \emph{expected} endpoint displacement is at most $\sum_i\varepsilon_iR_i$ plus $O(\varepsilon^2)$ terms involving multi-removal diameters, so $I_\varepsilon=[L_0-\sum_i\varepsilon_iR_i,\ U_0+\sum_i\varepsilon_iR_i]$ is a first-order sensitivity band, \emph{not} a uniform envelope over realised intervals; (iii) if the posterior mixture weight on contaminated components is at most $\tau:=1-\prod_i(1-\varepsilon_i)$ and the face-value posterior density exceeds $m>0$ on the segment between the clean and contaminated quantiles,
 \[
 |\hat Q_\varepsilon(u)-\hat Q_0(u)|\;\le\; m^{-1}\tau,
 \qquad u\in\{\alpha/2,\,1-\alpha/2\}.
@@ -247,56 +253,38 @@ Let $I_0=[L_0,U_0]$ be the $1-\alpha$ credible interval under face-value sources
 \end{claim}
 
 \begin{proof}
-\emph{(i)} Condition on $T$: honest sources outside $T$ confine $\theta$ to the removal identified set of diameter $R_T$, which contains the face-value value; any posterior formed under adversarial reports from $T$ is supported there, so each credible-interval endpoint is within $R_T$ of the corresponding face-value endpoint.
+\emph{(i)} Condition on $T$: honest sources outside $T$ confine $\theta$ to the removal identified set of diameter $R_T$, which contains the face-value posterior support --- in particular both $L_0$ and $U_0$. Any posterior formed under adversarial reports from $T$ is supported there, so each endpoint of a support-respecting credible interval is within $R_T$ of the corresponding face-value endpoint. The support restriction is necessary: a mathematically arbitrary $1-\alpha$ credible interval can be widened without limit while retaining $1-\alpha$ coverage, so no finite envelope can contain \emph{every} credible interval.
 
-\emph{(ii)} The pattern probability is $P(T)=\prod_{i\in T}\varepsilon_i\prod_{i\notin T}(1-\varepsilon_i)$, so the expected displacement is at most $\sum_T P(T)R_T = \sum_i\varepsilon_iR_i\prod_{j\ne i}(1-\varepsilon_j) + \sum_{|T|\ge2}P(T)R_T \le \sum_i\varepsilon_iR_i + O(\varepsilon^2)$. This is a statement about the \emph{mean} over the contamination pattern. A quantile (interval endpoint) of the realised posterior can move by up to $R_T$ on a contamination event of probability $\varepsilon_i$: with one source, $\varepsilon=0.04$, $R=100$, a contaminated component at distance $\approx R$ carrying $4\%$ posterior mass moves the $97.5\%$ quantile by $\approx R$, far beyond $\varepsilon R=4$. Hence the band is first-order in $\varepsilon$, exact when at most one source can be contaminated \emph{and} displacement is measured in expectation.
+\emph{(ii)} The pattern probability is $P(T)=\prod_{i\in T}\varepsilon_i\prod_{i\notin T}(1-\varepsilon_i)$, so the expected displacement is at most $\sum_T P(T)R_T = \sum_i\varepsilon_iR_i\prod_{j\ne i}(1-\varepsilon_j) + \sum_{|T|\ge2}P(T)R_T \le \sum_i\varepsilon_iR_i + O(\varepsilon^2)$. This is a statement about the \emph{mean} over the contamination pattern. A quantile (interval endpoint) of the realised posterior can move by up to $R_T$ on a contamination event of probability $\varepsilon_i$: with one source, $\varepsilon=0.04$, $R=100$, a contaminated component at distance $\approx R$ carrying $4\%$ posterior mass moves the $97.5\%$ quantile by $\approx R$, far beyond $\varepsilon R=4$. Hence the band is first-order in $\varepsilon$, exact when at most one source can be contaminated \emph{and} displacement is measured in expectation. Note also that $R_T$ for $|T|\ge2$ is not bounded by $\sum_{i\in T}R_i$ in general: two mutually corroborating sources can each have a small removal diameter while their joint removal is much larger.
 
 \emph{(iii)} If the posterior mixture weight on contaminated components is $\le\tau$, the contaminated and face-value posterior CDFs differ by at most $\tau$ uniformly; the mean value theorem under the density floor $m$ (on the whole segment between the two quantiles) gives the display. The weight condition does \emph{not} follow from the prior probabilities alone: posterior component weights are $\propto P(T)\,Z_T$ where $Z_T$ is the component marginal likelihood, so an adversarial component that fits the data better than the clean model carries posterior weight exceeding $\tau$.
 \end{proof}
 
 \begin{verification}
-\FIXED\ (statement was materially over-claimed). External review of a previous version of this dossier exhibited the counterexample reproduced in (ii): the original statement asserted that $I_\varepsilon$ \emph{contains every} attainable credible interval, which is false for tail quantiles --- the mixture argument controls an expectation, not an envelope. Numerically confirmed: with $\varepsilon=0.04$, $R=100$, clean posterior $\mathcal N(0,0.1^2)$ and contaminated component $\mathcal N(100,0.1^2)$, the pooled $97.5\%$ quantile is $99.97$ while $\varepsilon R=4$. The same review identified the posterior-weight gap in the old part (ii): mixture weights after conditioning are $P(T)Z_T$-proportional, not $P(T)$. The proposition has been restated in the manuscript as a \emph{patternwise envelope} $+$ \emph{first-order sensitivity band} $+$ \emph{quantile bound under an explicit posterior-weight condition}, and all prose referring to it as a ``credible interval that contains every adversarial interval'' has been reworded. Downstream use in Section 6 is unaffected in substance: the quoted $25.1\%\to 28.7\%$ inflation is the first-order band $I_\varepsilon$, now labelled as such; the paper's headline rejections rest on the bounds and the contradiction radius, not on this proposition.
+\PASS\ (as stated; the statement is deliberately \emph{not} a uniform credible-interval envelope, and the proof of (ii) exhibits why no such envelope exists for tail quantiles). Numerics: the one-source configuration $\varepsilon=0.04$, $R=100$, clean posterior $\mathcal N(0,0.1^2)$, contaminated component $\mathcal N(100,0.1^2)$ moves the pooled $97.5\%$ quantile to $99.97$ while $\varepsilon R=4$, confirming that only the expectation --- not the realised quantile --- obeys the first-order band. The exchange-of-sums identity behind (ii) is verified by exact enumeration over contamination patterns (100 random configurations), and the quantile bound in (iii) is confirmed on 200 Gaussian-mixture configurations where the weight condition holds by construction. Downstream use in Section 6: the quoted $25.1\%\to 28.7\%$ inflation is the first-order band $I_\varepsilon$ and is labelled as such; the paper's headline rejections rest on the bounds and the contradiction radius, not on this proposition.
 \end{verification}
 
 %======================================================================
 \section{Section 6 arithmetic (spot summary)}
 
-All application numbers are generated by \texttt{analysis/validate\_bounds.py}. Key identities re-verified here at $(w,a,f,\omega)=(0.733,0.267,0.020,0.560)$:
+All application numbers are generated by \texttt{analysis/validate\_bounds.py}. Key identities re-verified here at $(w,a,f,\omega)=(0.733,0.267,0.020,0.560)$; the starred rows are also proved over exact rationals in Lean.
 \begin{center}
+\begin{small}
 \begin{tabular}{@{}lll@{}}
 \toprule
 Quantity & Value & Check \\
 \midrule
-$q(1)$ & $25.13\%$ & symbolic $+$ numeric \\
-$q(1.5)$ & $15.69\%$ & numeric (prior table misprinted $15.72\%$) \\
-$q(2)$ & $6.26\%$ & numeric \\
+$q(1)$ & $25.13\%$ & symbolic $+$ numeric $+$ Lean$^\ast$ (exact: $921/3665$) \\
+$q(1.5)$ & $15.69\%$ & numeric $+$ Lean$^\ast$ \\
+$q(2)$ & $6.26\%$ & numeric $+$ Lean$^\ast$ \\
 root of $q(\mu)=0$ & $\mu^\ast=2.33$ & numeric; matches the $q{=}0$ symmetry discussion \\
 $\mu$ needed for $q=17/70$ & $1.04$ & inversion; $\ge 1$ so arithmetically feasible \\
 $\mu$ needed for $q=25/70$ & $0.44$ & inversion; $<1$ so infeasible for any admissible $\mu$ \\
 $M/D$ & $0.643$ & non-binding vs.\ all bounds above \\
+$\eta$-slack bias, $\mu{=}1,1.5,2$ & $1.05$, $0.74$, $0.33$ pp & numeric $+$ Lean$^\ast$; uniform bound $1.38$ pp \\
 \bottomrule
 \end{tabular}
+\end{small}
 \end{center}
-
-%======================================================================
-\section{Errors found by this verification (all fixed in the manuscript)}
-
-\begin{enumerate}[leftmargin=*]
-\item \textbf{Remark 3 ($\eta$-slack) was wrong in sign and magnitude.} Claimed shift ``$-\bar\eta$''; correct bias is $+\eta q/(S-\eta)\approx 1$ percentage point at Gaza values (ignoring the slack \emph{understates} $q$). Rewritten with the exact expression. Downstream conclusions unaffected (direction is claim-favourable).
-\item \textbf{The contradiction radius was originally computed at the wrong $\mu$.} Definition 4.2 grants the claim the most favourable $\mu$ in the admissible range; the original Section 6 evaluated at the least favourable, producing ``$\rho\gtrsim 20$''. Corrected values: $\rho_\omega\approx 7.9$--$31$ depending on anchor and exposure regime, and $\rho=0$ for the 17k endpoint under agnostic exposure on the MoH anchor (it is rejected by exposure calibration, not arithmetic). Disclosed in the response letter.
-\item \textbf{Demographic classes did not partition the population.} $a=0.255$ (males 18--60) left men over 60 unassigned while proofs used $a=1-w$. Convention changed to $\mathrm{AM}=$ males $18+$, $a=0.267$; all numbers regenerated.
-\end{enumerate}
-
-\section{Errors found by external review of this dossier (second round, all fixed)}
-
-A previous version of this dossier was independently reviewed; the following defects in the \emph{dossier and manuscript statements} (as distinct from the application numbers) were confirmed and corrected:
-
-\begin{enumerate}[leftmargin=*]
-\item \textbf{Claim 3's displayed bias chain contained a spurious factor.} The chain $\eta q_{\mathrm{true}}/S\cdot S/(S-\eta)$ double-counts the $(S-\eta)^{-1}$ correction; the correct equalities are $\eta(S-\omega)/(S(S-\eta))=\eta q_{\mathrm{true}}/S=\eta q_{\eta=0}/(S-\eta)$. Verified symbolically; fixed here and in manuscript Remark~3, which now names which $q$ appears in which form.
-\item \textbf{Claim 3's numerical support ``$S\ge 0.70$'' was false for $\mu>1.15$.} At Gaza demographics $S(1.5)=0.664$, $S(2)=0.597$. The bias bound is now stated per-$\mu$ (max $1.4$ points at $\mu=2$).
-\item \textbf{Claim 7's proof mishandled the one-sided $M$-penalty.} ``Objective $\to0$ implies the full vector converges'' is false when downward moves of $M$ are free. Repaired by passing to the limit through the constraint $q^{(i)}D\le M'_n\le\hat M+o(1)$; theorem conclusion unchanged. Part (ii) now names the penalised displacements explicitly. Manuscript Theorem~4.3 statement and appendix proof updated.
-\item \textbf{Claim 8 (Proposition 5.1) was materially over-claimed as a credible-interval envelope.} A one-source counterexample ($\varepsilon=0.04$, $R=100$) moves the $97.5\%$ quantile by ${\approx}100\gg\varepsilon R=4$. The mixture argument controls an \emph{expectation}; additionally, posterior mixture weights are $P(T)Z_T$-proportional, not $P(T)$. Restated in the manuscript as patternwise envelope $+$ first-order sensitivity band $+$ quantile bound under an explicit posterior-weight condition; all ``contains every adversarial interval'' prose removed. The quoted Gaza inflation $25.1\%\to28.7\%$ is unchanged as a first-order band; no headline conclusion rests on this proposition.
-\item \textbf{Smaller repairs.} Claim 2 Step 3 now restricts attainability to $q(\mu)\in[0,1]$; Claim 4 states the nonempty-intersection condition explicitly; Claim 6 now says variances are treated as known and that $R_i$ bounds displacement \emph{from the truth}; the arithmetic table's $q(1.5)$ was misprinted as $15.72\%$ (correct: $15.69\%$; the manuscript's rounded $15.7\%$ was already correct).
-\end{enumerate}
 
 \end{document}

@@ -173,12 +173,12 @@ cd formal/casualty_proofs && lake build   # Lean 4 / mathlib machine-checked pro
 The Lean development (`formal/casualty_proofs/CasualtyProofs.lean`, no
 `sorry`s) kernel-checks the core algebra: the identification inversions
 (eq. 2 and Theorem 3.3), monotonicity of $q(\mu)$, all three closed forms
-of the $\eta$-slack bias and its sign (Remark 3), the manpower bound, the
-monotonicity of feasibility in $M$ behind Theorem 4.3's one-sided penalty,
-and the Section 6 arithmetic in exact rational form (including a formal
-refutation of a misprinted table value). `docs/proof_verification.pdf` is
-the human-readable dossier with full proofs and an error log of everything
-caught by the verification pipeline and by external review.
+of the $\eta$-slack bias, its sign, and its exact per-$\mu$ values
+(Remark 3), the manpower bound, the monotonicity of feasibility in $M$
+behind Theorem 4.3's one-sided penalty, and the Section 6 arithmetic in
+exact rational form. `docs/proof_verification.pdf` is the human-readable
+dossier with full statements, detailed proofs, and per-claim verification
+notes.
 Key outputs (Ministry of Health demographic anchor, males 18+ convention):
 
 * Identified set for the Gaza combatant share: $q \in [0, 25.1\%]$ with no
