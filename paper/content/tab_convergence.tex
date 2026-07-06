@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Convergence of independent methods on the Gaza combatant share.} Every method that uses independently measured inputs rejects the public IDF figure; they disagree with one another only \emph{within} $q\in[{\sim}2\%,{\sim}25\%]$ (civilian-to-combatant ratios of roughly $3{:}1$ to $40{:}1$ or more on direct deaths).}
+\label{tab:convergence}
+\begin{footnotesize}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xll>{\raggedright\arraybackslash}X@{}}
+\toprule
+Method & Source & Implied $q$ & Note \\
+\midrule
+IDF public claim (17--25k of 70k) & \citep{idfclaim} & 24.3--35.7\% & object of the test \\
+Identified set, MoH anchor, $\mu\ge 1$ & this paper & 0.0--25.1\% & exposure-agnostic \\
+Identified set, MoH anchor, $\mu\in[2,3.5]$ & this paper & 0.0--6.3\% & Frost-calibrated exposure \\
+Aman named-militant database & \citep{guardian972db2025} & 16.8\% & 8,900 named dead of 53,000 (May 2025) \\
+Male-bias model, MoH record & \citep{frost2026} & 11.1--16.9\% & B'tselem-calibrated \\
+Demographic decomposition & \citep{cockerill2024} & 9.4--26.3\% & range of male-bias assumptions \\
+Spatial Bayesian posterior & this paper, App.~\ref{app:spatial} & 1.6--3.8\% & prior-dependent; one point in the set \\
+\bottomrule
+\end{tabularx}
+\end{footnotesize}
+\end{table}

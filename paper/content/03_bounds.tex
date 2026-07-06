@@ -1,48 +1,44 @@
 \section{Bounds: partial identification of \texorpdfstring{$q$}{q}}\label{sec:bounds}
 
-This section delivers a sharp identified set for $q$ that any source-aggregation rule must respect. We begin with a benchmark assumption, then weaken it.
+This section delivers a sharp identified set for $q$ that any source-aggregation rule must respect. We begin with a benchmark assumption, then weaken it. Proofs are in Appendix~\ref{app:proofs}.
 
 \begin{assumption}[Exchangeable collateral]\label{ass:ec}
 Civilians of all demographic classes face equal per-capita death hazard.
 \end{assumption}
 
-\begin{theorem}[Demographic identification]\label{thm:identification}
-Under Assumption~\ref{ass:ec},
+Under Assumption~\ref{ass:ec} the combatant share is point-identified by a single rearrangement: civilian deaths split between the women-and-children class and the adult-male class in proportion to their civilian population shares, so
 \begin{equation}\label{eq:ident}
 q = 1 - \frac{\omega(1 - f)}{w}.
 \end{equation}
-\end{theorem}
-\begin{proof}
-Civilian deaths split between $W=\{k\ne\mathrm{AM}\}$ and $\mathrm{AM}$ in proportion to their civilian-population shares, $w/(1-f)$ and $(a-f)/(1-f)$. Combatant deaths fall entirely in $\mathrm{AM}$. Hence $\omega=(1-q)w/(1-f)$, which inverts to \eqref{eq:ident}.
-\end{proof}
+The intuition is direct: $\omega$ falls short of the population share $w$ only to the extent that deaths are diverted to the (all-male) combatant pool.
 
 \begin{remark}\label{rem:female-combatants}
-A small slack $\bar\eta\le 0.03$ for combatants outside $\mathrm{AM}$ shifts \eqref{eq:ident} by $-\bar\eta$ and propagates mechanically through what follows; we suppress it.
+If a fraction $\eta\le\bar\eta=0.03$ of combatant deaths falls outside $\mathrm{AM}$, the identity becomes $\omega=(1-q)S+\eta q$ with $S=w/(w+\mu(a-f))$, and the true share is $q_{\mathrm{true}}=(S-\omega)/(S-\eta)$, so ignoring the slack \emph{understates} $q$ by exactly $\eta\,q_{\eta=0}/(S-\eta)$, where $q_{\eta=0}=(S-\omega)/S$ is the no-slack value---at most $1.1$ percentage points at the values in Section~\ref{sec:gaza} with $\mu=1$ ($q_{\eta=0}\le 0.26$, $S=0.748$), and at most $1.4$ points at $\mu=2$ ($S=0.597$). Readers who want this slack should widen the \emph{upper} endpoints below by $\bar\eta\, q_{\eta=0}/(S-\bar\eta)$; we otherwise suppress it.
 \end{remark}
 
 Assumption~\ref{ass:ec} is strong: civilian adult men typically face higher per-capita exposure than women and children due to outside work, food queues, rescue activity, and circumstantial proximity to combat. We weaken it to a one-parameter family.
 
 \begin{assumption}[$\mu$-bounded differential exposure]\label{ass:mu}
-There exists $\mu\in[1,\bar\mu]$ such that, conditional on being civilian, class $\mathrm{AM}$ has per-capita death rate $\mu$ times that of class $W$.
+There exists $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ such that, conditional on being civilian, class $\mathrm{AM}$ has per-capita death rate $\mu$ times that of class $W$.
 \end{assumption}
 
 \begin{theorem}[Sharp identified set]\label{thm:bounds}
-Suppose $f\le a$ and Assumption~\ref{ass:mu} holds. Given $(\omega,w,a,f,\bar\mu)$, the identified set for $q$ is the image of the monotone-decreasing curve
+Suppose $f\le a$ and Assumption~\ref{ass:mu} holds. Given $(\omega,w,a,f)$ and the exposure range $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, the identified set for $q$ is the image of the monotone-decreasing curve
 \begin{equation}\label{eq:qmu}
-q(\mu) = 1 - \omega\,\frac{w+\mu(a-f)}{w}, \qquad \mu\in[1,\bar\mu],
+q(\mu) = 1 - \omega\,\frac{w+\mu(a-f)}{w}, \qquad \mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}],
 \end{equation}
-giving the sharp interval $[q(\bar\mu),\,q(1)]\cap[0,1]$.
+giving the sharp interval $[q(\mu_{\mathrm{hi}}),\,q(\mu_{\mathrm{lo}})]\cap[0,1]$.
 \end{theorem}
-\begin{proof}
-Let $\lambda$ be the civilian per-capita death hazard in $W$. Expected civilian deaths are proportional to $\lambda w N + \lambda\mu(a-f)N$, so the civilian share landing in $W$ is $w/(w+\mu(a-f))$. Since only the civilian fraction $1-q$ of deaths reaches $W$, $\omega=(1-q)w/(w+\mu(a-f))$. Solving gives \eqref{eq:qmu}; $\partial_\mu q=-\omega(a-f)/w\le 0$. Sharpness: every $\mu\in[1,\bar\mu]$ corresponds to a feasible hazard pair $(\lambda,\mu\lambda)$ that attains $q(\mu)$.
-\end{proof}
 
 \begin{corollary}[Manpower bound]\label{cor:popbudget}
-$q\le M/D$, so the joint feasible interval is
+$q\le M/D$, so whenever the endpoints below are ordered, the joint feasible interval is
 \[
-q \in \bigl[\max\{0,\,q(\bar\mu)\},\; \min\{1,\,q(1),\,M/D\}\bigr].
+q \in \bigl[\max\{0,\,q(\mu_{\mathrm{hi}})\},\; \min\{1,\,q(\mu_{\mathrm{lo}}),\,M/D\}\bigr];
 \]
+if the lower endpoint exceeds the upper the set is empty and the inputs are jointly infeasible---the event detected by a positive contradiction radius in Section~\ref{sec:contradiction}.
 \end{corollary}
+
+\paragraph{Calibrating the exposure range.} The exposure ratio $\mu$ is the framework's only behavioural parameter, and it can be disciplined empirically rather than stipulated. \citet{frost2026} identifies the civilian male exposure differential from the male-to-female death ratio just \emph{above} the combatant age range---where the combatant share is mechanically near zero---and validates the procedure on historical Gaza conflicts recorded by B'tselem, where combatant status is known: there, the observed male-to-female ratio at the top of the combatant age band is $3.4{:}1$ while the effective differential through the combatant ages is $5{:}1$, so the observable ratio is itself a conservative lower bound. Airstrike-specific data suggest smaller differentials ($\approx 1.3$; \citealp{cockerill2024}), consistent with indiscriminate mechanisms; ground operations push the differential up. We therefore report the identified set on a grid $\mu\in\{1, 1.5, 2, 2.5, 3.5, 5\}$ throughout, treating $[2,3.5]$ as the empirically best-supported range for a mixed air-and-ground campaign and the extreme values as stress tests. Larger $\mu$ \emph{lowers} the implied combatant share; the reader who disputes a high-$\mu$ calibration is pushed toward \emph{higher} $q$, and the sensitivity grid (Table~\ref{tab:sensitivity}) makes the entire mapping explicit.
 
 \paragraph{Plug-in estimator and standard error.} The sample analogue of the upper endpoint is $\hat q=1-\hat\omega(1-\hat f)/\hat w$, with delta-method variance
 \[
@@ -51,5 +47,3 @@ q \in \bigl[\max\{0,\,q(\bar\mu)\},\; \min\{1,\,q(1),\,M/D\}\bigr].
 +\frac{(1-\hat f)^2}{\hat w^2}\widehat{\mathrm{Var}}(\hat\omega)
 +\frac{\hat\omega^2(1-\hat f)^2}{\hat w^4}\widehat{\mathrm{Var}}(\hat w).
 \]
-
-\paragraph{Gaza-implied range.} With $w=0.733$, $\hat\omega=0.620$ (geometric mean of OHCHR $0.693$ and MoH-record $0.560$), $a=0.255$, $\hat f=0.020$, $\hat M=45{,}000$, $\hat D=70{,}000$, and $\bar\mu=2.5$, Corollary~\ref{cor:popbudget} gives $q\in[0\%,\,17\%]$; the manpower bound is non-binding. The spatial Bayesian model of Section~\ref{sec:gaza} concentrates inside this interval at $q\approx 2.5\%$.

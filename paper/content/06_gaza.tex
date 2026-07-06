@@ -1,47 +1,66 @@
 \section{Application: Gaza 2023--2026}\label{sec:gaza}
 
-We instantiate the framework using only inputs whose measurement is not controlled by either belligerent: PCBS population structure \citep{pcbs}; OCHA and Gaza MoH total deaths \citep{ochaopt}; OHCHR and MoH demographic death records \citep{ohchr2024}; Lancet excess-mortality information \citep{khatib2024,khatib2025,spagatlgh2026}; and IISS / RUSI / CSIS combatant-strength estimates \citep{iiss2024,rusi2024}. The IDF claim itself \citep{idfclaim} is the object of the test, not an input.
+We instantiate the framework using only inputs whose measurement is not controlled by either belligerent: PCBS population structure \citep{pcbs}; OCHA and Gaza MoH total deaths \citep{ochaopt}; OHCHR and MoH demographic death records \citep{ohchr2024}; the Gaza Mortality Survey household study \citep{spagatlgh2026}; excess-mortality information \citep{khatib2024,khatib2025}; and IISS / RUSI / CSIS combatant-strength estimates \citep{iiss2024,rusi2024}. The IDF claim itself \citep{idfclaim} is the object of the test, not an input. All numbers in this section are produced by a validation script in the companion repository that recomputes every bound, radius, and table entry from the raw inputs and fails if any quoted figure disagrees.
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
-\caption{\textbf{Diagnostic inputs for Gaza.} The disputed quantity $D_M$ is tested against the other rows.}
+\caption{\textbf{Diagnostic inputs for Gaza.} The disputed quantity $D_M$ is tested against the other rows. $\mathrm{AM}$ is males 18 and over, so $a=1-w$ exactly.}
 \label{tab:gaza-inputs}
 \begin{small}
-\begin{tabular}{@{}lll@{}}
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
 \toprule
 Input & Value & Channel \\
 \midrule
-$w$       & $0.733$                                        & PCBS population structure \\
-$a$       & $0.255$                                        & PCBS age pyramid \\
-$\omega$  & $0.693$ (OHCHR), $0.560$ (MoH), $0.620$ blend  & identified deaths \\
-$f$       & $0.0157$--$0.0269$                             & Hamas/PIJ pre-war manpower $/$ population \\
-$D$       & $\approx 70{,}000$ direct deaths               & OCHA/MoH, late 2025 \\
-$\bar\mu$ & $2.5$                                          & exposure-cap sensitivity parameter \\
-claim     & $17$--$25$k combatants                         & IDF public statements \\
+$w$ (women$+$children \emph{of population}) & $0.733$       & PCBS population structure \\
+$a$ (males 18$+$ \emph{of population})      & $0.267$       & $=1-w$ \\
+$\omega$ (women$+$children \emph{of the dead}) & $0.560$ (MoH record; primary anchor); $0.693$ (OHCHR verified sample) & identified deaths, corroborated by GMS; OHCHR $=$ residential-strike stratum \\
+$f$       & $0.0157$--$0.0269$ ($0.020$ central)           & Hamas/PIJ pre-war manpower $/$ population \\
+$D$       & $70$k (MoH) $/$ $94$k (GMS-corrected) $/$ $106$k ($+$missing) & direct deaths, late 2025 \\
+$\mu$     & grid $\{1,1.5,2,2.5,3.5,5\}$; calibrated $[2,3.5]$ & \citet{frost2026,cockerill2024} \\
+$M$       & $\le 45{,}000$                                 & IISS / RUSI / CSIS \\
+claim     & $17$--$25$k combatants killed                  & IDF public statements \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{small}
 \end{table}
 
-\paragraph{Step 1: rejecting uniform random violence.} The naive null ``violence is uniform across the population'' predicts $\E\omega=w=73.3\%$. The OHCHR sample ($n=8{,}119$, $\hat\omega=69.3\%$) gives $z=-8.16$, $p\approx 1.7\times 10^{-16}$, decisively rejecting uniformity. Adult males are overrepresented---necessarily, since the universe contains both combatants and structurally-exposed civilian men. Rejecting uniformity is necessary but not sufficient to rationalise any \emph{specific} combatant share.
+\paragraph{Anchor choice.} The two demographic records of the dead measure different things. The OHCHR sample ($n=8{,}119$) applies a strict three-source verification rule that over-represents deaths in residential strikes, where women and children predominate \citep{spagatcockerill2024}; it is best read as a stratum-specific measurement, not an estimate of the overall $\omega$. The MoH full record ($n\approx 70{,}000$) covers all recorded deaths, and its demographic composition is independently corroborated by the Gaza Mortality Survey, a household probability survey that also quantifies the MoH undercount at roughly $35\%$ \citep{spagatlgh2026}; the Israeli military has itself since accepted the MoH cumulative toll \citep{haaretzidf2026}. We therefore anchor on the MoH record ($\omega=0.560$, conservative $\sigma_\omega=0.01$) and report the OHCHR anchor---and a geometric blend of the two---as sensitivities rather than blending them into a single aggregate. Because $\omega_{\mathrm{MoH}}<\omega_{\mathrm{OHCHR}}$, this choice is \emph{favourable} to high-combatant claims: every rejection below survives, a fortiori, under the alternative anchors.
 
-\paragraph{Step 2: identified set.} On the blended anchor $\hat\omega=0.620$,
+The survey's representativeness has been contested: \citet{dellapergola2026} identify interviewer-level heterogeneity and protocol deviations and argue the population-level extrapolation is unreliable; \citet{spagatreply2026} respond that the conclusions survive excluding the contested teams (the violent-death estimate falls from $75{,}200$ to $59{,}200$ under maximal exclusion, with the demographic composition intact). For present purposes the dispute is instructive precisely because it does not touch the bounds. It concerns the \emph{level} of the death toll, an input our identified set does not use: $q(\mu)$ depends on $(\omega,w,a,f)$ only, and the demographic composition---the one quantity the framework takes from the survey---is stable across every specification in the exchange, including the critics' own exclusions and the extreme all-missing-dead scenario (the survey's women-children-elderly share of violent deaths moves from $56.2\%$ only to $52.2\%$; note this classification includes people over 64 and so is not identical to our $\omega$ class, but it is the composition measure the exchange contests). The undercount factor enters solely through the $D$-sensitivity dimension of Step~3 ($D=70$--$106$k), and only its upward corrections matter there. Downward revisions of the toll require no new scenario, because the direction of the challenge is self-defeating for the claim it might appear to assist: if the critics were right and the true toll were \emph{lower}, the claimed combatant counts would convert to \emph{higher} shares $q^{(i)}=\hat D_M^{(i)}/D$, moving the disputed claim further outside the feasible set while leaving the set itself unchanged. This is the under-fudgible structure at work: contesting one measurement re-routes, but does not relieve, the burden of the contradiction.
+
+\paragraph{Step 1: rejecting uniform random violence.} The naive null ``violence is uniform across the population'' predicts $\E\,\omega=w=73.3\%$. Even the OHCHR sample ($\hat\omega=69.3\%$) rejects this at $z=-8.1$ ($p\approx 1.9\times 10^{-16}$); the MoH record ($\hat\omega=56.0\%$) rejects it overwhelmingly. Adult males are overrepresented among the dead---necessarily, since the universe contains both combatants and structurally more-exposed civilian men. Rejecting uniformity is necessary but not sufficient to rationalise any \emph{specific} combatant share; the question is how the adult-male excess splits between the two explanations, and that is precisely what $\mu$ indexes.
+
+\paragraph{Step 2: the identified set.} On the MoH anchor, Theorem~\ref{thm:bounds} gives
 \[
-\hat q_{\mu=1}=1-\tfrac{0.620\cdot(1-0.02)}{0.733}\approx 0.17,\qquad
-q\in[0,\,0.17]\;\;\text{at}\;\bar\mu=2.5.
+q(1)=25.1\%,\qquad q(1.5)=15.7\%,\qquad q(2)=6.3\%,\qquad q(\mu)\le 0\ \text{for}\ \mu\ge 2.3.
 \]
-On the OHCHR anchor the upper endpoint is about $7\%$ even at $\mu=1$.
+The exposure-agnostic set (any $\mu\ge 1$; the upper endpoint is $q(1)$ and the lower is clipped at zero) is $q\in[0,\,25.1\%]$; the empirically calibrated set ($\mu\in[2,3.5]$, \citealp{frost2026}) is $q\in[0,\,6.3\%]$. The manpower bound $M/D=0.64$ never binds. Table~\ref{tab:sensitivity} reports the full anchor$\times\mu$ grid; the OHCHR anchor caps $q$ at $7.3\%$ already at $\mu=1$.
 
-\paragraph{Step 3: claim test.} The IDF range of $17$--$25$k combatants over a $70$k denominator gives $q^{\mathrm{IDF}}\approx 24$--$36\%$, far above $q(1)$. At $\bar\mu=2.5$, rationalising it requires $\omega\in[0.39,0.49]$, i.e., $13$--$23$ points below the blended anchor. With $\sigma_\omega\approx 0.01$, this is roughly $20$--$23\sigma$, dominating both other axes:
-\[
-\rho_{\mathrm{IDF}}\;\gtrsim\;20.
-\]
+\input{\contentroot/tab_sensitivity.tex}
 
-\paragraph{Step 4: spatial Bayesian posterior.} Discretising Gaza into governorate cells, placing militants under a clustering prior, modelling strike intensity as a function of militant density, and estimating civilian adult-male exposure jointly with total deaths and the demographic records yields
-\[
-q=2.5\%, \qquad 95\%\;\mathrm{CrI}=[1.6\%,\,3.8\%],\qquad
-\widehat{D_M}=1{,}779\;[1{,}112,\,2{,}720].
-\]
-The implied civilian-to-combatant ratio is $43{:}1$ with a 95\% credible interval $[30,64]$. Figure~\ref{fig:gaza-diagnostic} shows the full picture: panel A places the posterior anchors in the low-$q$ region of the $(\omega,w)$ heatmap; panel B compares the posterior on $q$ to the IDF claim band; panel C compares implied combatant counts on a log scale; panel D decomposes the $\sim$70k reported dead; panel E shows the civilian-to-combatant ratio. The point estimates align with the demographic Bayesian estimate of \citet{gomez2025} once their reporting prior is set to ignore underreporting, and with the field-survey violent-death estimates of \citet{spagatlgh2026}.
+\paragraph{Step 3: testing the IDF claim.} Over the MoH-confirmed denominator $D=70$k, the claimed $17$--$25$k combatants convert to $q^{\mathrm{IDF}}=24.3\%$--$35.7\%$, i.e.\ a civilian-to-combatant ratio of roughly $2{:}1$--$3{:}1$. The contradiction radius of Definition~\ref{def:radius}---which grants the claim the most favourable $\mu$ in the admissible range---splits cleanly across the two endpoints:
+\begin{itemize}[leftmargin=*]
+\item \emph{The $25$k endpoint is infeasible outright.} Rationalising $q=35.7\%$ on the MoH anchor requires $\mu=0.44$: civilian adult men would have to die at less than half the per-capita rate of women and children, which no mechanism in this conflict supports. On the demographic axis the radius is $\rho_\omega\approx 7.9$ standard errors with agnostic exposure and $\approx 17.6$ with calibrated exposure (and $\approx 21$--$31$ on the OHCHR anchor).
+\item \emph{The $17$k endpoint survives arithmetic but not calibration.} At $q=24.3\%$ the required exposure ratio is $\mu=1.04$---inside the mathematically admissible range, so $\rho=0$ under agnostic exposure on the MoH anchor. But $\mu\approx 1$ asserts that civilian men in Gaza were no more exposed than women and children, contradicting the calibrated range $\mu\in[2,3.5]$ obtained from historical Gaza conflicts where combatant status is recorded \citep{frost2026}. Under calibrated exposure the radius is $\rho_\omega\approx 10.8$ standard errors.
+\end{itemize}
+The rejection is robust to the denominator: correcting the MoH undercount ($D=94$k) and adding the missing ($D=106$k) lowers $q^{\mathrm{IDF}}$ to $16$--$24\%$, but the required exposure ratios ($\mu\le 1.5$ for $17$k, $\mu\le 1.1$ for $25$k) remain below the calibrated range. (Applying the recorded $\omega$ to the corrected totals assumes the unrecorded dead share the recorded demographic mix, which the survey's demographic breakdown supports.) The first-order sensitivity band of Proposition~\ref{prop:robust}, with $\varepsilon=0.05$ on the census and demographic records, inflates the exposure-agnostic upper endpoint from $25.1\%$ to $28.7\%$---still below the claim's upper endpoint. (The patternwise worst case is starker but works in the same direction: if the demographic record itself is the contaminated source, the analysis collapses to the manpower bound $q\le 0.64$, which is exactly why the record's corroboration by an independent household survey carries the weight it does.)
 
-\paragraph{Symmetry.} The test rejects the polar narrative $q=0$ for the same reason: that value is also outside the feasible set $\mathcal F$ given the observed overrepresentation of adult males.
+\paragraph{Step 4: the named-combatant cross-check.} A joint investigation by \emph{The Guardian}, +972 Magazine, and Local Call \citep{guardian972db2025} reported that the Israeli Military Intelligence directorate's internal database listed $8{,}900$ named Hamas and PIJ operatives dead or probably dead as of May 2025, against a contemporaneous recorded toll of ${\sim}53{,}000$: $q\approx 16.8\%$, inside the exposure-agnostic identified set and far below the public claim of the same period. We treat this as corroborating, not primary, evidence---the database's coverage and classification rules are not public---but it is notable that the belligerent's own accounting apparatus lands inside the bound its public statements violate.
+
+\paragraph{Step 5: convergence of independent methods.} Table~\ref{tab:convergence} is the central empirical exhibit. Methods with different data, assumptions, and failure modes---the identified set of this paper, demographic decompositions \citep{cockerill2024,frost2026}, the military's internal database, and a fully specified spatial Bayesian model (Appendix~\ref{app:spatial})---disagree with one another only \emph{within} $q\in[{\sim}2\%,{\sim}25\%]$, that is, civilian-to-combatant ratios from roughly $3{:}1$ to $40{:}1$ or more on direct deaths. Every one of them rejects the public claim of $q\ge 24\%$ ($\le 2$--$3{:}1$). The spatial model, whose priors and structure are documented in Appendix~\ref{app:spatial}, posterior-concentrates at $q=2.5\%$ ($95\%$ credible interval $[1.6\%,3.8\%]$, civilian-to-combatant ratio $43{:}1$ $[30,64]$); we report it as one model-based point within the identified set, not as the headline, because its position within the set is prior-sensitive in ways the bounds are not.
+
+\input{\contentroot/tab_convergence.tex}
+
+\begin{figure}[!tp]
+\centering
+\includegraphics[width=\textwidth]{fig_gaza_diagnostic}
+\caption{\textbf{The diagnostic for Gaza (2023--2026).}
+\textbf{(A)} Identified $q$ on the $(\omega,w)$ plane at $\mu=2.5$. Iso-$q$ contours are black; the OHCHR, blended, and Gaza Ministry of Health (MoH) anchors all sit in the low-$q$ (blue) region; the IDF claim requires $\omega$ in the red band on the far left, far from any observed anchor.
+\textbf{(B)} Histogram of the spatial posterior on $q$ (median, 95\% credible interval as solid$+$dashed lines) vs.\ the IDF claim band converted to $q$.
+\textbf{(C)} Implied combatants killed (log axis) vs.\ the IDF claim of $17$--$25$k.
+\textbf{(D)} Posterior decomposition of the $\sim$70k reported dead under the spatial model: $\sim$1--3k combatants, $\sim$25k civilian adult men, $\sim$45--50k women and children.
+\textbf{(E)} Civilian-to-combatant ratio: spatial-model posterior median $43{:}1$ vs.\ the IDF-implied $\sim 2{:}1$. Panels B--E display the spatial model of Appendix~\ref{app:spatial}; the paper's headline claims rest on panels A and Table~\ref{tab:convergence}, not on the posterior.}
+\label{fig:gaza-diagnostic}
+\end{figure}
+
+\paragraph{Symmetry.} The same machinery tests the polar narrative $q=0$ (``all the dead are civilians''). On the MoH anchor, $q=0$ requires $\mu=2.33$---inside the calibrated range---so the demographic axis alone cannot reject it; the arithmetic is compatible with a purely civilian death toll if civilian men were about $2.3$ times as exposed. What rejects $q=0$ is the named-combatant evidence: thousands of individually named militant dead are documented in the military's own database \citep{guardian972db2025}. The diagnostic thus does exactly what it should: it rejects the high claim on demographic grounds, rejects the zero claim on documentary grounds, and reports which axis does the work in each case.

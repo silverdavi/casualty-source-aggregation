@@ -3,17 +3,17 @@
 Theorem~\ref{thm:bounds} returns an interval; a public claim returns a point. The diagnostic measures their distance after standardising each input by its measurement uncertainty.
 
 \begin{definition}[Feasible set]\label{def:feasible}
-For inputs $x=(\omega,w,a,f,M,D)$ and exposure cap $\bar\mu$,
+For inputs $x=(\omega,w,a,f,M,D)$ and exposure range $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$,
 \begin{equation}\label{eq:feasible}
-\mathcal F(x;\bar\mu)=
+\mathcal F(x)=
 \Bigl\{q\in[0,1]:\;
-\exists\,\mu\in[1,\bar\mu]\;\text{with}\;
+\exists\,\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]\;\text{with}\;
 q=1-\omega\tfrac{w+\mu(a-f)}{w}
 \;\text{and}\; qD\le M\Bigr\}.
 \end{equation}
 \end{definition}
 
-A claim $\hat D_M^{(i)}$ converts to $q^{(i)}=\hat D_M^{(i)}/\hat D$ and is feasible iff $q^{(i)}\in\mathcal F(\hat x;\bar\mu)$.
+A claim $\hat D_M^{(i)}$ converts to $q^{(i)}=\hat D_M^{(i)}/\hat D$ and is feasible iff $q^{(i)}\in\mathcal F(\hat x)$.
 
 \begin{definition}[Contradiction radius]\label{def:radius}
 Let $\hat x=(\hat\omega,\hat w,\hat a,\hat f,\hat M,\hat D)$ with measured standard errors $\sigma_\omega,\sigma_w,\sigma_M$. The contradiction radius of claim $q^{(i)}$ is
@@ -26,16 +26,15 @@ Let $\hat x=(\hat\omega,\hat w,\hat a,\hat f,\hat M,\hat D)$ with measured stand
 \tfrac{(M'-\hat M)_+}{\sigma_M}
 \right\}
 \quad\text{s.t.}\quad
-q^{(i)}\in \mathcal F((\omega',w',\hat a,\hat f,M',\hat D);\bar\mu).
+q^{(i)}\in \mathcal F((\omega',w',\hat a,\hat f,M',\hat D)).
 \end{equation}
 \end{definition}
 
 \begin{theorem}[Feasibility and contradiction]\label{thm:contradiction}
-With $(\hat a,\hat f,\hat D,\bar\mu)$ fixed, a claim is consistent with the independent inputs iff $\rho^{(i)}=0$. If $\rho^{(i)}>0$, every rationalisation moves at least one of $\omega,w,M$ by $\rho^{(i)}$ standard-error units.
+With $(\hat a,\hat f,\hat D)$ and the exposure range fixed, a claim is consistent with the independent inputs iff $\rho^{(i)}=0$. If $\rho^{(i)}>0$, every rationalisation $(\omega',w',M')$ makes at least one \emph{penalised} displacement---$|\omega'-\hat\omega|/\sigma_\omega$, $|w'-\hat w|/\sigma_w$, or $(M'-\hat M)_+/\sigma_M$---of at least $\rho^{(i)}$ standard-error units. (Lowering $M$ is unpenalised because it can only shrink the feasible set.)
 \end{theorem}
-\begin{proof}
-$\mathcal F$ is the intersection of the identified set from Theorem~\ref{thm:bounds} with $qD\le M$, and is closed in $(\omega,w,M)$. The infimum in \eqref{eq:rho} is zero iff the observed inputs themselves are feasible, by closedness. Otherwise, the $\ell_\infty$ objective bounds every coordinate move from below.
-\end{proof}
+
+\paragraph{Interpretation.} The contradiction radius answers the question a motivated critic must eventually face: \emph{which measurement, exactly, do you say is wrong, and by how much?} A claim with $\rho=0$ is compatible with all independent inputs; nothing more can be said against it on this evidence. A claim with $\rho=2$ requires some input to be off by two standard errors---uncomfortable but conceivable. A claim with $\rho=20$ requires an independently measured quantity to be wrong by twenty standard errors, an error that measurement noise cannot produce; defending such a claim requires asserting institutional fabrication, and the radius names the institutions and the magnitudes. Because $\rho$ standardises by \emph{measured} uncertainty, it is unit-free and comparable across conflicts and across claims. It is also symmetric: an implausibly \emph{low} combatant claim generates a positive radius the same way an implausibly high one does. What the radius is not: it is not a posterior probability, it does not weigh how \emph{many} inputs must move (only the largest single standardised move), and it inherits any systematic---as opposed to sampling---error in the inputs, which is why Section~\ref{sec:gaza} reports it under every anchor choice.
 
 \begin{figure}[t]
 \centering
@@ -51,10 +50,10 @@ $\mathcal F$ is the intersection of the identified set from Theorem~\ref{thm:bou
 \coordinate (BR) at ( 3.0 ,-0.9);
 
 \draw[feas] (T) -- (BL) -- (BR) -- cycle;
-\node[lab,align=center] at (0,0.55) {feasible set\\$\mathcal F(\hat x;\bar\mu)$};
+\node[lab,align=center] at (0,0.55) {feasible set\\$\mathcal F(\hat x)$};
 
 \node[vert,fill=blue!55] (P) at (0.4, 0.0) {};
-\node[lab,below=1pt of P] {posterior $\hat q$};
+\node[lab,below=1pt of P] {feasible $\hat q$};
 
 \node[vert,fill=red!70] (Q) at (4.7,0.95) {};
 \node[lab,right=1pt of Q] {disputed $q^{(\mathrm{IDF})}$};
@@ -67,7 +66,7 @@ $\mathcal F$ is the intersection of the identified set from Theorem~\ref{thm:bou
 \node[lab] at (BL) [below left=1pt,align=center]  {$\hat w$ axis\\(population)};
 \node[lab] at (BR) [below right=1pt,align=center] {$\hat M/D$ axis\\(manpower)};
 \end{tikzpicture}
-\caption{\textbf{Contradiction triangle.} The feasible set $\mathcal F$ is bounded by three independently measured ``axes''; the contradiction radius $\rho=\min(\rho_\omega,\rho_w,\rho_M)$ is the shortest standardised perturbation from a disputed claim into $\mathcal F$.}
+\caption{\textbf{Contradiction triangle (conceptual schematic).} The feasible set $\mathcal F$ is bounded by three independently measured ``axes''; the contradiction radius $\rho=\min(\rho_\omega,\rho_w,\rho_M)$ is the shortest standardised perturbation from a disputed claim into $\mathcal F$. Each axis is owned by a different institution, which is what makes the relation under-fudgible: rescuing a claim on one axis leaves fingerprints on that axis's measurement.}
 \label{fig:contradiction-triangle}
 \end{figure}
 
@@ -75,10 +74,10 @@ $\mathcal F$ is the intersection of the identified set from Theorem~\ref{thm:bou
 
 \paragraph{Diagnostic procedure.}
 \begin{enumerate}[label=\textbf{D\arabic*.},leftmargin=*]
-\item Fix the analysis window and total deaths $D$.
-\item Estimate $(w,a)$ from the population baseline and $\omega$ from an identified-deaths sample.
-\item Choose $\bar\mu$ and an independent upper bound on $M$.
-\item Compute $\mathcal F(\hat x;\bar\mu)$ from \eqref{eq:feasible}.
-\item For every disputed $\hat D_M^{(i)}$, report $q^{(i)}=\hat D_M^{(i)}/D$, the membership $q^{(i)}\in\mathcal F$, and $\rho^{(i)}$.
+\item Fix the analysis window and total deaths $D$; carry the uncertainty in $D$ as a sensitivity dimension, not a constant.
+\item Estimate $(w,a)$ from the population baseline and $\omega$ from identified-deaths records, checking each candidate $\omega$ source for selection mechanisms before use.
+\item Calibrate the exposure range $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ from historical conflicts with known combatant status, and take an independent upper bound on $M$.
+\item Compute $\mathcal F(\hat x)$ from \eqref{eq:feasible}.
+\item For every disputed $\hat D_M^{(i)}$, report $q^{(i)}=\hat D_M^{(i)}/D$, the membership $q^{(i)}\in\mathcal F$, and $\rho^{(i)}$, under each anchor and each $D$ scenario.
 \end{enumerate}
 The test is symmetric: it rejects ``too many combatants'' and ``zero combatants'' against the same set.

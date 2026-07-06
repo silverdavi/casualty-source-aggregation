@@ -4,11 +4,16 @@ A conflict produces $D\in\mathbb N$ deaths in $[t_0,t_1]$ in a population of siz
 \[
 q = D_M / D \in [0, 1], \qquad r = D_C / D_M = (1 - q)/q.
 \]
-Each death has a demographic class $k\in\mathcal K=\{\text{child},\text{adult-female},\text{adult-male}\}$. Write $\omega_k=D_k/D$ for the share among the dead, $p_k$ for the share in the population, and let $\mathrm{AM}$ denote adult male (ages 18--60), with population share $a=p_{\mathrm{AM}}$. Let $w=\sum_{k\ne\mathrm{AM}}p_k$ be the women-and-children population share and $\omega=\sum_{k\ne\mathrm{AM}}\omega_k$ their share of the dead. Let $M$ be the pre-war combatant stock and $f=M/N$. Without loss combatants are in $\mathrm{AM}$; female and minor combatants enter as a small slack $\bar\eta\le 0.03$ (Remark~\ref{rem:female-combatants}).
+Each death has a demographic class $k\in\mathcal K=\{\text{child},\text{adult-female},\text{adult-male}\}$. To keep the two central quantities visually distinct we reserve the \emph{Latin} letter $w$ for the population and the \emph{Greek} letter $\omega$ for the dead:
+\begin{align*}
+w \;&=\; \text{women-and-children share of the \underline{population}},\\
+\omega \;&=\; \text{women-and-children share of the \underline{dead}}.
+\end{align*}
+Formally, $\omega_k=D_k/D$ is the share of class $k$ among the dead and $p_k$ its share in the population; $\mathrm{AM}$ denotes adult males (18 and over), with population share $a=p_{\mathrm{AM}}=1-w$; $\omega=\sum_{k\ne\mathrm{AM}}\omega_k$. Let $M$ be the pre-war combatant stock and $f=M/N$. We take combatants to be in $\mathrm{AM}$; female and minor combatants enter as a small slack $\bar\eta\le 0.03$ (Remark~\ref{rem:female-combatants}).
 
 \begin{table}[ht]
 \centering
-\caption{\textbf{Core notation and measurement channels.}}
+\caption{\textbf{Core notation and measurement channels.} The distinction between $w$ (population) and $\omega$ (dead) is load-bearing throughout: $w$ comes from a census taken before or independently of the fighting, $\omega$ from records of the dead.}
 \label{tab:notation}
 \begin{small}
 \begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
@@ -18,22 +23,24 @@ Symbol & Meaning & Role & Typical source \\
 $D$              & total deaths in window      & input    & ministry of health, OCHA, UCDP, survey \\
 $D_M, D_C$       & combatant, civilian deaths  & target   & decomposition of $D$ \\
 $q=D_M/D$        & combatant share of dead     & estimand & --- \\
-$w$              & women+children pop.\ share  & input    & census, UN Population Division \\
-$a=p_\mathrm{AM}$ & adult-male pop.\ share     & input    & census / age pyramid \\
-$\omega$         & women+children share of dead & input   & identified-deaths sample (e.g.\ OHCHR) \\
+$w$              & women+children share \emph{of population} & input & census, UN Population Division \\
+$a=1-w$          & adult-male (18$+$) share \emph{of population} & input & census / age pyramid \\
+$\omega$         & women+children share \emph{of the dead} & input   & identified-deaths records (e.g.\ MoH) \\
 $M$              & combatant stock at $t_0$    & input    & IISS / RUSI / CSIS / intelligence \\
-$\bar\mu$        & exposure-differential cap   & assumption & sensitivity parameter \\
-$\rho$           & contradiction radius        & output   & distance to feasibility \\
+$[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ & admissible exposure-ratio range & assumption & calibrated from historical conflicts \\
+$\rho$           & contradiction radius of a claim  & output   & SE-units to feasibility; see \S\ref{sec:contradiction} \\
 \bottomrule
 \end{tabularx}
 \end{small}
 \end{table}
 
-\paragraph{Sources.} We use five channels: an independent population census $(p_k,N)$; a demographic survey of the dead returning sample shares $\hat\omega_k$; aggregate death totals $\hat D$; belligerent combatant-death claims $\hat D_M$; and independent manpower estimates $\hat M$. Each source $i$ is allowed to be $\varepsilon_i$-contaminated in Huber's sense \citep{huber1964,berger1986}: it draws from the truth with probability $1-\varepsilon_i$ and from an arbitrary adversary with probability $\varepsilon_i$.
+The last row anticipates the paper's diagnostic. The \emph{contradiction radius} $\rho$ of a disputed claim is the smallest number of measured standard errors by which at least one independent input ($\omega$, $w$, or $M$) would have to move for the claim to become consistent with all the others; $\rho=0$ means consistent, $\rho=3$ means some independently measured quantity must be wrong by three standard errors, and values in the double digits mean the claim requires an input to be wrong by an amount that measurement error cannot plausibly produce. Section~\ref{sec:contradiction} makes this precise.
+
+\paragraph{Sources.} We use five channels: an independent population census $(p_k,N)$; demographic records of the dead returning sample shares $\hat\omega_k$; aggregate death totals $\hat D$; belligerent combatant-death claims $\hat D_M$; and independent manpower estimates $\hat M$. Each source $i$ is allowed to be $\varepsilon_i$-contaminated in Huber's sense \citep{huber1964,berger1986}: it draws from the truth with probability $1-\varepsilon_i$ and from an arbitrary adversary with probability $\varepsilon_i$.
 
 \subsection{Source aggregation}\label{sec:aggregation}
 
-When several independent sources $i=1,\dots,m$ report the same scalar parameter $\theta$ (e.g., the women-and-children share $\omega$ from OHCHR identifications and from MoH death records) with reported point estimates $\hat\theta_i$ and standard errors $\hat\sigma_i$, the natural \emph{precision-weighted} aggregate is
+When several independent sources $i=1,\dots,m$ report the same scalar parameter $\theta$ with reported point estimates $\hat\theta_i$ and standard errors $\hat\sigma_i$, the natural \emph{precision-weighted} aggregate is
 \begin{equation}\label{eq:agg}
 \hat\theta_{\mathrm{agg}} \;=\; \frac{\sum_i\hat\theta_i/\hat\sigma_i^2}{\sum_i 1/\hat\sigma_i^2},
 \qquad
@@ -41,10 +48,8 @@ When several independent sources $i=1,\dots,m$ report the same scalar parameter 
 \end{equation}
 
 \begin{proposition}[Aggregation under conflicting sources]\label{prop:agg}
-If sources are independent and unbiased, $\hat\theta_{\mathrm{agg}}$ in \eqref{eq:agg} is the minimum-variance unbiased linear estimator of $\theta$. If source $i$ has bias $b_i$, the aggregate has bias $\bigl(\sum_i b_i/\hat\sigma_i^2\bigr)/\bigl(\sum_i 1/\hat\sigma_i^2\bigr)$. Allowing $\varepsilon_i$-contamination (Section~\ref{sec:bias}), the worst-case bias of $\hat\theta_{\mathrm{agg}}$ is at most $\sum_i\varepsilon_i R_i\cdot \hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$, where $R_i$ is the diameter of the support of source $i$'s contaminating distribution.
+If sources are independent and unbiased, with variances treated as known (with estimated $\hat\sigma_i^2$ the statement holds conditionally on the variance estimates and asymptotically), $\hat\theta_{\mathrm{agg}}$ in \eqref{eq:agg} is the minimum-variance unbiased linear estimator of $\theta$. If source $i$ has bias $b_i$, the aggregate has bias $\bigl(\sum_i b_i/\hat\sigma_i^2\bigr)/\bigl(\sum_i 1/\hat\sigma_i^2\bigr)$. Allowing $\varepsilon_i$-contamination (Section~\ref{sec:bias}) in which the contaminated report is displaced from the truth by at most $R_i$, the worst-case bias of $\hat\theta_{\mathrm{agg}}$ is at most $\sum_i\varepsilon_i R_i\cdot \hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$.
 \end{proposition}
-\begin{proof}
-Inverse-variance weighting minimises variance over linear unbiased combinations (Gauss--Markov). The bias and contamination statements follow by linearity.
-\end{proof}
+Proof in Appendix~\ref{app:proofs}.
 
-In the Gaza application, the OHCHR identification sample ($\hat\omega=0.693$) and the MoH death records ($\hat\omega=0.560$) are aggregated; both have estimated $\hat\sigma\approx 0.01$, giving the geometric blend $\hat\omega_{\mathrm{agg}}\approx 0.620$ used throughout. The corresponding contradiction radius is reported separately for each anchor and for the blend, so the reader can see how aggregation choices propagate.
+Precision weighting presupposes that the sources measure the \emph{same} estimand. When one source is subject to a known selection mechanism---as with the OHCHR verification sample in the Gaza application, which is heavily weighted toward residential-strike deaths \citep{spagatcockerill2024}---the honest treatment is not to blend it into the aggregate but to use it as a stratum-specific measurement and anchor the analysis on the source whose selection is best understood. Section~\ref{sec:gaza} applies this rule: the Ministry of Health record, whose demographic composition is corroborated by an independent household survey \citep{spagatlgh2026}, is the primary anchor, and results are reported for the alternative anchors so the reader can see exactly how anchor choice propagates.

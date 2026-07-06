@@ -2,21 +2,23 @@
 
 The bounds in Sections~\ref{sec:bounds}--\ref{sec:contradiction} treat each measured input as honest. We now allow the analyst to dial in distrust of specific sources. Political bias enters the confidence statement through Huber contamination: each source $i$ writes its likelihood as $(1-\varepsilon_i)L_i+\varepsilon_i Q_i$, with $Q_i$ adversarial in some class $\mathcal Q$ \citep{huber1964,huber1981,berger1986,gagnon2023}. The contamination parameter $\varepsilon_i\in[0,1]$ is the analyst's prior probability that source $i$ is producing a politically motivated reading rather than a measurement of the true distribution.
 
-\begin{proposition}[Bias-robust credible interval]\label{prop:robust}
-Let $\theta$ be a scalar estimand with $1-\alpha$ posterior credible interval $I_0=[L_0,U_0]$ under face-value sources. Suppose each source is $\varepsilon_i$-contaminated and removing source $i$ yields an identified set for $\theta$ of diameter $R_i$. Then
+\begin{proposition}[Bias-robust sensitivity band]\label{prop:robust}
+Let $\theta$ be a scalar estimand with $1-\alpha$ posterior credible interval $I_0=[L_0,U_0]$ under face-value sources, with the posterior supported on the identified set implied by the sources used. Suppose each source $i$ is independently contaminated with probability $\varepsilon_i$, and removing the sources in a set $T$ leaves an identified set of diameter $R_T$ (write $R_i:=R_{\{i\}}$).
+\begin{enumerate}[label=(\roman*),leftmargin=*]
+\item \emph{(Patternwise envelope.)} If the realised contamination pattern is $T$, every $1-\alpha$ credible interval obtainable by adversarial replacement of the sources in $T$ lies within $[L_0-R_T,\ U_0+R_T]$.
+\item \emph{(Expected displacement.)} Averaging over the contamination pattern, the expected endpoint displacement is at most $\sum_i\varepsilon_i R_i$ plus higher-order terms in $\varepsilon$ involving the multi-removal diameters $R_T$, $|T|\ge 2$; when at most one source can be contaminated, the bound $\sum_i\varepsilon_i R_i$ is exact. The band
 \begin{equation}\label{eq:Iepsilon}
 I_\varepsilon \;=\; \Bigl[L_0-\textstyle\sum_i\varepsilon_i R_i,\; U_0+\textstyle\sum_i\varepsilon_i R_i\Bigr]
 \end{equation}
-contains every $1-\alpha$ credible interval obtainable by adversarial replacement of each $L_i$ in $\mathcal Q$. If the marginal density of $\theta$ exceeds $m>0$ near each quantile, the sharper quantile displacement
+is therefore a first-order sensitivity band for the interval endpoints---not a uniform envelope over realised contaminated intervals, whose endpoints can move by up to $R_T$ on the (probability $\le\varepsilon_i$) contamination events.
+\item \emph{(Quantile displacement.)} If additionally the posterior mixture weight on contaminated components is at most $\tau:=1-\prod_i(1-\varepsilon_i)$---which holds when the component marginal likelihoods are comparable, and must otherwise be checked, since posterior weights are proportional to prior pattern probabilities \emph{times} component marginal likelihoods---and the face-value posterior density exceeds $m>0$ on the segment between the clean and contaminated $u$-quantiles, then
 \[
 \bigl|\hat Q_\varepsilon(u)-\hat Q_0(u)\bigr|
-   \;\le\; m^{-1}\bigl(1-\textstyle\prod_i(1-\varepsilon_i)\bigr),
-\qquad u\in\{\alpha/2,\,1-\alpha/2\},
+   \;\le\; m^{-1}\tau,
+\qquad u\in\{\alpha/2,\,1-\alpha/2\}.
 \]
-also holds.
+\end{enumerate}
 \end{proposition}
-\begin{proof}
-Expanding $\prod_i\bigl[(1-\varepsilon_i)L_i+\varepsilon_iQ_i\bigr]$ as a mixture, the total mass on components in which source $i$ is contaminated is at most $\varepsilon_i$; worst-case replacement of source $i$ shifts $\theta$ by no more than $R_i$, and the union bound gives \eqref{eq:Iepsilon}. The contaminated and clean marginal cumulative distribution functions differ in total variation by $1-\prod_i(1-\varepsilon_i)$; inverting under the lower density bound $m$ yields the quantile statement.
-\end{proof}
+Proof in Appendix~\ref{app:proofs}.
 
-\paragraph{Practice.} Set $\varepsilon_i\approx 0.05$ for widely-trusted demographic sources (Palestinian Central Bureau of Statistics, OHCHR) and $\varepsilon_i\approx 1$ (i.e., adversarial) for belligerent claims; \eqref{eq:Iepsilon} then absorbs the assumed political bias automatically.
+\paragraph{Practice.} Set $\varepsilon_i\approx 0.05$ for widely-trusted demographic sources (Palestinian Central Bureau of Statistics, health-ministry demographic records corroborated by independent surveys) and $\varepsilon_i\approx 1$ (i.e., adversarial) for belligerent claims; \eqref{eq:Iepsilon} then absorbs the assumed political bias automatically. In the Gaza application the removal diameters are $R_{\mathrm{demo}}=0.64$ (dropping the demographic records leaves only the manpower bound $q\le M/D$), $R_{\mathrm{census}}=0.06$ (letting $w$ range over a generous global envelope $[0.70,0.76]$), and $R_M=0$ (the manpower bound never binds), so $\varepsilon=0.05$ inflates the exposure-agnostic upper bound by $3.5$ percentage points---from $25.1\%$ to $28.7\%$---which still rejects the upper end of the disputed claim.
