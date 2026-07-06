@@ -16,19 +16,22 @@ Formally, $\omega_k=D_k/D$ is the share of class $k$ among the dead and $p_k$ it
 \caption{\textbf{Core notation and measurement channels.} The distinction between $w$ (population) and $\omega$ (dead) is load-bearing throughout: $w$ comes from a census taken before or independently of the fighting, $\omega$ from records of the dead.}
 \label{tab:notation}
 \begin{small}
+\renewcommand{\arraystretch}{1.3}
 \begin{tabularx}{\textwidth}{@{}lll>{\raggedright\arraybackslash}X@{}}
 \toprule
 Symbol & Meaning & Role & Typical source \\
 \midrule
-$D$              & total deaths in window      & input    & ministry of health, OCHA, UCDP, survey \\
 $D_M, D_C$       & combatant, civilian deaths  & target   & decomposition of $D$ \\
 $q=D_M/D$        & combatant share of dead     & estimand & --- \\
+\addlinespace
+$D$              & total deaths in window      & input    & ministry of health, OCHA, UCDP, survey \\
 $w$              & women+children share \emph{of population} & input & census, UN Population Division \\
 $a=1-w$          & adult-male (18$+$) share \emph{of population} & input & census / age pyramid \\
-$\omega$         & women+children share \emph{of the dead} & input   & identified-deaths records (e.g.\ MoH) \\
+$\omega$         & women+children share \emph{of the dead} & input   & identified-deaths records (e.g.\ a health ministry's) \\
 $M$              & combatant stock at $t_0$    & input    & IISS / RUSI / CSIS / intelligence \\
+\addlinespace
 $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ & admissible exposure-ratio range & assumption & calibrated from historical conflicts \\
-$\rho$           & contradiction radius of a claim  & output   & SE-units to feasibility; see \S\ref{sec:contradiction} \\
+$\rho$           & contradiction radius of a claim  & output   & standard-error units to feasibility; see \S\ref{sec:contradiction} \\
 \bottomrule
 \end{tabularx}
 \end{small}
