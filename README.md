@@ -171,12 +171,16 @@ cd formal/casualty_proofs && lake build   # Lean 4 / mathlib machine-checked pro
 ```
 
 The Lean development (`formal/casualty_proofs/CasualtyProofs.lean`, no
-`sorry`s) kernel-checks the core algebra: the identification inversions
-(eq. 2 and Theorem 3.3), monotonicity of $q(\mu)$, all three closed forms
-of the $\eta$-slack bias, its sign, and its exact per-$\mu$ values
-(Remark 3), the manpower bound, the monotonicity of feasibility in $M$
-behind Theorem 4.3's one-sided penalty, and the Section 6 arithmetic in
-exact rational form. `docs/proof_verification.pdf` is the human-readable
+`sorry`s) kernel-checks the mathematical core: the identification
+inversions (eq. 2 and Theorem 3.3), monotonicity and derivative of
+$q(\mu)$, all three closed forms of the $\eta$-slack bias, its sign, and
+its exact per-$\mu$ values (Remark 3), the manpower bound, the
+delta-method gradients, Gauss–Markov optimality of precision weighting
+(Prop. 2.1, via Cauchy–Schwarz), the monotonicity and infimum facts
+behind the contradiction radius (Theorem 4.3), the two-point
+contamination kernel of Prop. 5.1 (mean displacement $\varepsilon R$ vs
+full-$R$ quantile movement), and the Section 6 arithmetic in exact
+rational form. `docs/proof_verification.pdf` is the human-readable
 dossier with full statements, detailed proofs, and per-claim verification
 notes.
 Key outputs (Ministry of Health demographic anchor, males 18+ convention):
