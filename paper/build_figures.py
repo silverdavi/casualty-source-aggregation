@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import matplotlib.colors as mcolors
+import matplotlib.patheffects as pe
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
 import numpy as np
@@ -336,37 +337,39 @@ def fig_range_frame_civshare():
     ax.axhline(50, color=FAINT, lw=0.6, ls=":", zorder=1)
     ax.text(1.05e3, 51.5, "50% civilian share", fontsize=7.2, color=FAINT, va="bottom")
 
-    # (xmult, yoff) tuned so labels don't collide; label format: (text override, xmult, yoff)
+    # (xmult, yoff, ha) tuned so labels don't collide and each leader line
+    # unambiguously reaches its marker; label format: (text, xmult, yoff, ha)
     label_specs = {
-        "wwii_european_theater":     ("WWII (Europe/Africa)", 0.16, -12),
-        "wwii_pacific_theater":      ("WWII (Pacific)",       0.40,  -2),
-        "great_leap_forward_famine": ("Great Leap Forward",   0.30,   4),
-        "the_holocaust":             ("Holocaust",            1.30,  -3),
-        "second_congo_war":          ("Second Congo",         0.30, -10),
-        "rwandan_genocide":          ("Rwandan genocide",     0.40,   4),
-        "vietnam_war":               ("Vietnam",              1.30,   9),
-        "korean_war":                ("Korean",               1.30,  -8),
-        "syrian_civil_war":          ("Syrian civil war",     0.45,  10),
-        "russia_ukraine_war_2022":   ("Russia\u2013Ukraine",      0.45, -10),
-        "israel_gaza_war_2023":      ("Israel\u2013Gaza 2023",    1.45,   3),
-        "wwi":                       ("WWI",                  1.30,  -8),
-        "iraq_war_2003":             ("Iraq 2003",            0.40,   6),
-        "war_in_afghanistan_2001":   ("Afghanistan 2001",     0.40,  -7),
+        "wwii_european_theater":     ("WWII (Europe/Africa)", 0.13, -14, "center"),
+        "wwii_pacific_theater":      ("WWII (Pacific)",       0.40,  -2, "center"),
+        "great_leap_forward_famine": ("Great Leap Forward",   0.60,   4.5, "center"),
+        "the_holocaust":             ("Holocaust",            1.30,  -3, "left"),
+        "second_congo_war":          ("Second Congo",         1.00,  -9, "center"),
+        "rwandan_genocide":          ("Rwandan genocide",     0.85,   5.5, "right"),
+        "vietnam_war":               ("Vietnam",              0.40,   6, "right"),
+        "korean_war":                ("Korean",               1.35,  -7, "left"),
+        "syrian_civil_war":          ("Syrian civil war",     0.45,  10, "center"),
+        "russia_ukraine_war_2022":   ("Russia\u2013Ukraine",      0.45, -10, "center"),
+        "israel_gaza_war_2023":      ("Israel\u2013Gaza 2023",    0.30,   5.5, "right"),
+        "wwi":                       ("WWI",                  1.30,  -8, "left"),
+        "iraq_war_2003":             ("Iraq 2003",            0.28,  -3, "right"),
+        "war_in_afghanistan_2001":   ("Afghanistan 2001",     0.40,  -7, "center"),
     }
     by_id = {row.id: row for row in df.itertuples()}
-    for ident, (text, xmult, yoff) in label_specs.items():
+    for ident, (text, xmult, yoff, ha) in label_specs.items():
         if ident not in by_id:
             continue
         w = by_id[ident]
         x, y = w.deaths_for_plot, w.civ_share_mid
-        ax.annotate(
+        txt = ax.annotate(
             text, (x, y),
             xytext=(x * xmult, y + yoff),
-            textcoords="data",
-            arrowprops={"arrowstyle": "-", "lw": 0.45, "color": FAINT,
-                        "shrinkA": 2, "shrinkB": 2},
-            fontsize=7.6, color=INK,
+            textcoords="data", ha=ha,
+            arrowprops={"arrowstyle": "-", "lw": 0.55, "color": "#8a8a8a",
+                        "shrinkA": 1.5, "shrinkB": 1.0},
+            fontsize=7.6, color=INK, zorder=5,
         )
+        txt.set_path_effects([pe.withStroke(linewidth=1.8, foreground="white")])
 
     ax.set_xscale("log")
     ax.xaxis.set_major_formatter(mtick.FuncFormatter(fmt_humans))
