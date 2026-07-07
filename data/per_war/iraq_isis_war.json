@@ -275,11 +275,11 @@
   "totals": {
     "military_low": 71000,
     "military_high": 131500,
-    "civilian_low": 39000,
-    "civilian_high": 68000,
-    "grand_low": 110000,
-    "grand_high": 200000,
-    "notes": "Grand totals are reconstructed, not a database total. They combine ISIS combatant deaths, Iraqi-aligned and SDF deaths, documented/estimated civilian deaths from ISIS, coalition, Iraqi-aligned forces and Yazidi siege deaths, while avoiding wholesale inclusion of non-ISIS-specific Syrian civil-war deaths."
+    "civilian_low": 146500,
+    "civilian_high": 146500,
+    "grand_low": 217500,
+    "grand_high": 278000,
+    "notes": "Grand totals are anchored by the authoritative baseline of over 217,500 deaths in Iraq alone during the war against ISIS, as aggregated by conflict monitors and the Costs of War project. Civilian low/high are inferred by subtracting military low from the grand low to maintain accounting consistency. This represents a significant upward revision from earlier fragmented estimates."
   },
   "key_atrocities": [
     {

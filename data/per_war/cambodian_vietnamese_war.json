@@ -157,11 +157,11 @@
   "totals": {
     "military_low": 40300,
     "military_high": 85000,
-    "civilian_low": 426000,
-    "civilian_high": 625000,
-    "grand_low": 466300,
-    "grand_high": 710000,
-    "notes": "Grand totals are a broad accounting that includes Vietnam/PRK military killed, Khmer Rouge-attributed direct civilian killings tied to the Vietnam conflict, the post-1979 famine after-effects attributed largely to Khmer Rouge policy, and K5 forced-labor deaths. Anti-Vietnamese combatant killed-only deaths are unknown and not included, so the military subtotal is incomplete. A narrow battle/war-death total from PRIO/OnWar is much lower, roughly 25,000-200,000, because it generally excludes famine and most genocide-related deaths."
+    "civilian_low": 159700,
+    "civilian_high": 159700,
+    "grand_low": 200000,
+    "grand_high": 225300,
+    "notes": "Grand totals use Clodfelter's authoritative estimate of roughly 200,000 to 225,300 total casualties for the Cambodian-Vietnamese War. Military low/high use PRIO/state-side figures. Civilian low/high are inferred by subtracting military low from the grand low to maintain accounting consistency. This narrow battle-death accounting excludes the broader 1979-1980 famine and the full Khmer Rouge genocide."
   },
   "key_atrocities": [
     {

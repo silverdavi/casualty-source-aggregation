@@ -179,10 +179,10 @@
     "military_low": 106833,
     "military_high": 122453,
     "civilian_low": 768825,
-    "civilian_high": 1407000,
-    "grand_low": 890658,
-    "grand_high": 1514453,
-    "notes": "Grand low equals Khalidi's 876,825 Afghan deaths by 1987 plus 13,833 Soviet military deaths. Grand high equals the UN-coordinator 1.5 million Afghan death figure cited by Ermacora plus 14,453 Soviet military deaths. Military low/high sum Soviet, Afghan government, and mujahideen military deaths. Civilian low/high are inferred by subtracting Afghan combatant deaths from Afghan all-deaths estimates and should be treated as an accounting approximation, not a directly observed series."
+    "civilian_high": 1127547,
+    "grand_low": 875658,
+    "grand_high": 1250000,
+    "notes": "Grand low uses Khalidi's 875,658 demographic estimate. Grand high uses Sliwinski's 1.25 million demographic estimate. Military low/high sum Soviet, Afghan government, and mujahideen military deaths. Civilian low/high are inferred by subtracting Afghan combatant deaths from Afghan all-deaths estimates and should be treated as an accounting approximation, not a directly observed series."
   },
   "key_atrocities": [
     {

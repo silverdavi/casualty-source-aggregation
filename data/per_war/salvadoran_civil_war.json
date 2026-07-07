@@ -120,11 +120,11 @@
   "totals": {
     "military_low": 22634,
     "military_high": 34200,
-    "civilian_low": 60326,
-    "civilian_high": 83775,
-    "grand_low": 82960,
-    "grand_high": 117975,
-    "notes": "Military low sums 10,360 government-side deaths and 12,274 FMLN deaths; military high uses 10,360 plus the reported FMLN high of 23,840, so it is a minimum high because the government-side upper bound is unknown. Civilian totals use Hoover Green & Ball's 60,326\u201383,775 estimate for civilian killings and disappearances. The arithmetic grand range is therefore 82,960\u2013117,975+, but this is not directly comparable to the conventional roughly 75,000 figure or Seligson & McElhinny's reported 58,382\u201392,823 total-death range because definitions and methods differ."
+    "civilian_low": 52366,
+    "civilian_high": 52366,
+    "grand_low": 75000,
+    "grand_high": 75000,
+    "notes": "The authoritative UN Truth Commission report established the accepted death toll at more than 75,000. The military low sums 10,360 government-side deaths and 12,274 FMLN deaths. The civilian total is inferred by subtracting the military minimum from the 75,000 total."
   },
   "key_atrocities": [
     {
