@@ -347,7 +347,7 @@ def fig_range_frame_civshare():
         x_gaza = gaza_row["deaths_for_plot"].iloc[0]
         c_gaza = year_cmap(year_norm(gaza_row["start_year"].iloc[0]))
         # Exposure-agnostic bound: q in [0, 25.1%] -> civ share [74.9, 100]
-        ax.plot([x_gaza, x_gaza], [74.9, 100], color=c_gaza, lw=1.5, alpha=0.6, zorder=2)
+        ax.plot([x_gaza, x_gaza], [74.9, 100], color=c_gaza, lw=0.5, alpha=0.5, zorder=2)
         # Calibrated bound: q in [0, 6.3%] -> civ share [93.7, 100]
         ax.plot([x_gaza, x_gaza], [93.7, 100], color=c_gaza, lw=3.5, alpha=0.9, zorder=3)
 
