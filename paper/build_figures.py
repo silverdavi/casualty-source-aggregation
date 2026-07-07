@@ -319,14 +319,19 @@ def fig_range_frame_civshare():
     point_colors = year_cmap(year_norm(df["start_year"].to_numpy()))
 
     fig, ax = plt.subplots(figsize=(7.8, 4.7))
+    
+    # Plot all except Gaza as points
+    df_no_gaza = df[df["id"] != "israel_gaza_war_2023"]
+    point_colors_no_gaza = year_cmap(year_norm(df_no_gaza["start_year"].to_numpy()))
+    
     ax.scatter(
-        df["deaths_for_plot"], df["civ_share_mid"],
-        s=df["marker_area"], c=point_colors, alpha=0.45,
+        df_no_gaza["deaths_for_plot"], df_no_gaza["civ_share_mid"],
+        s=df_no_gaza["marker_area"], c=point_colors_no_gaza, alpha=0.45,
         edgecolor="white", linewidth=0.45, zorder=2,
     )
     ax.scatter(
-        df["deaths_for_plot"], df["civ_share_mid"],
-        s=5, c=point_colors, alpha=0.95, zorder=3,
+        df_no_gaza["deaths_for_plot"], df_no_gaza["civ_share_mid"],
+        s=5, c=point_colors_no_gaza, alpha=0.95, zorder=3,
     )
     sm = plt.cm.ScalarMappable(norm=year_norm, cmap=year_cmap)
     cbar = fig.colorbar(sm, ax=ax, orientation="vertical",
@@ -336,6 +341,15 @@ def fig_range_frame_civshare():
     cbar.outline.set_visible(False)
     ax.axhline(50, color=FAINT, lw=0.6, ls=":", zorder=1)
     ax.text(1.05e3, 51.5, "50% civilian share", fontsize=7.2, color=FAINT, va="bottom")
+
+    gaza_row = df[df["id"] == "israel_gaza_war_2023"]
+    if not gaza_row.empty:
+        x_gaza = gaza_row["deaths_for_plot"].iloc[0]
+        c_gaza = year_cmap(year_norm(gaza_row["start_year"].iloc[0]))
+        # Exposure-agnostic bound: q in [0, 25.1%] -> civ share [74.9, 100]
+        ax.plot([x_gaza, x_gaza], [74.9, 100], color=c_gaza, lw=1.5, alpha=0.6, zorder=2)
+        # Calibrated bound: q in [0, 6.3%] -> civ share [93.7, 100]
+        ax.plot([x_gaza, x_gaza], [93.7, 100], color=c_gaza, lw=3.5, alpha=0.9, zorder=3)
 
     # (xmult, yoff, ha) tuned so labels don't collide and each leader line
     # unambiguously reaches its marker; label format: (text, xmult, yoff, ha)
