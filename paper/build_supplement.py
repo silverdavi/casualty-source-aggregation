@@ -59,6 +59,7 @@ class War:
     ind_hi: float
     total_lo: float
     total_hi: float
+    sources: list[dict]
 
     @property
     def total_mid(self) -> float:
@@ -216,6 +217,7 @@ def load_wars() -> list[War]:
             ind_hi=ind_hi,
             total_lo=total_lo,
             total_hi=total_hi,
+            sources=raw.get("sources") or [],
         ))
     return sorted(wars, key=lambda w: -w.total_mid)
 
@@ -318,69 +320,49 @@ def main() -> None:
         "This is the master table used by the main paper's empirical overview figures.",
     )
 
-    uncertain = sorted(wars, key=lambda w: (w.civ_width, math.log10(max(w.total_range_ratio, 1))), reverse=True)[:15]
-    write_table(
-        lines,
-        "Largest civilian-share uncertainty widths",
-        "tab:uncertain",
-        uncertain,
-        "These are the conflicts where additional demographic samples or source harmonisation would most improve inference.",
-    )
-
-    indirect = sorted(wars, key=lambda w: w.indirect_share, reverse=True)[:15]
-    write_table(
-        lines,
-        "Indirect-deaths dominated conflicts",
-        "tab:indirect",
-        indirect,
-        "Here direct body counts alone are structurally misleading; excess-mortality methods are the binding relation.",
-    )
-
-    recent = [w for w in wars if "--" in w.period and int(w.period.split("--")[1]) >= 1975 and w.total_mid >= 1_000]
-    recent = sorted(recent, key=lambda w: -w.total_mid)[:30]
-    write_table(
-        lines,
-        "Recent conflicts since 1975 with at least 1,000 deaths",
-        "tab:recent",
-        recent,
-        "This table is the supplement counterpart to the recent-war filtered plots.",
-    )
+    lines += [
+        r"\section{Sources}",
+        r"The table below lists the primary sources used to construct the casualty bounds for each conflict. "
+        r"Full JSON files containing detailed side-by-side accounting, indirect-death breakdowns, and specific "
+        r"atrocity figures are available in the companion repository.",
+        r"\begin{scriptsize}",
+        r"\begin{longtable}{p{3.5cm} p{12.5cm}}",
+        r"\toprule",
+        r"Conflict & Sources \\",
+        r"\midrule",
+        r"\endhead",
+    ]
+    
+    for w in wars:
+        if not w.sources:
+            continue
+        # Format sources compactly
+        src_texts = []
+        for s in w.sources:
+            title = s.get("title", "").strip()
+            pub = s.get("publisher", "").strip()
+            if title and pub:
+                src_texts.append(f"\\emph{{{latex_escape(title)}}} ({latex_escape(pub)})")
+            elif title:
+                src_texts.append(f"\\emph{{{latex_escape(title)}}}")
+            elif pub:
+                src_texts.append(latex_escape(pub))
+            else:
+                url = s.get("url", "")
+                if url:
+                    # just extract domain
+                    domain = url.split("://")[-1].split("/")[0]
+                    src_texts.append(latex_escape(domain))
+        
+        if src_texts:
+            lines.append(f"{latex_escape(w.name)} & {'; '.join(src_texts)} \\\\")
+            lines.append(r"\addlinespace")
 
     lines += [
-        r"\section{Per-conflict framework notes}",
-        r"The notes below do not re-litigate every source. They state which relation would likely bind a rigorous "
-        r"contradiction-radius analysis and what kind of additional data would most reduce the identified set.",
+        r"\bottomrule",
+        r"\end{longtable}",
+        r"\end{scriptsize}",
     ]
-    for w in wars:
-        lines += [
-            rf"\paragraph{{{latex_escape(w.name)}}}",
-            rf"Class: \textbf{{{latex_escape(class_label(w))}}}; confidence grade: \textbf{{{confidence_grade(w)}}}; "
-            rf"civilian-share range {pct_range(w.civ_share_lo, w.civ_share_hi)}; "
-            rf"combatant-share range {pct_range(w.q_lo, w.q_hi)}; "
-            rf"indirect/civilian share {pct(w.indirect_share)}. "
-            rf"The binding relation is \emph{{{latex_escape(diagnostic(w))}}}. ",
-        ]
-        if diagnostic(w) == "manpower budget":
-            lines.append(
-                r"The next useful check is an independently sourced combatant-stock upper bound, because demographic "
-                r"samples of the dead add relatively little when most casualties are already military-classified."
-            )
-        elif diagnostic(w) == "identified-deaths sample":
-            lines.append(
-                r"The next useful check is a sex-age identified-deaths sample; if the population baseline is known, "
-                r"that sample sharply constrains $q$ through Theorem 3.1 of the main paper."
-            )
-        elif diagnostic(w) == "excess-mortality survey":
-            lines.append(
-                r"The next useful check is a survey or capture--recapture excess-mortality estimate, because the "
-                r"main uncertainty is not combatant classification but indirect attribution."
-            )
-        else:
-            lines.append(
-                r"The next useful check is source harmonisation: definitions, overlap between direct and indirect "
-                r"categories, and missing upper bounds dominate the uncertainty interval."
-            )
-        lines.append("")
 
     lines += [
         r"\section{Reproducibility}",
