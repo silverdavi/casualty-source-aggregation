@@ -292,6 +292,20 @@ check("Aman DB q ~ 16.8%", q_aman, 0.168, 0.002)
 check_true("Aman q inside [0, q(1)] on MoH anchor", 0 <= q_aman <= q1_moh,
            f"{q_aman:.3f} <= {q1_moh:.3f}")
 
+# Manpower ledger: the IDF's own stock figures (paper, Section 6).
+# Pre-war official estimate 30,000 (Jerusalem Post, first official figure);
+# post-ceasefire assessment: >22,000 killed AND ~20,000 fielded today (ITIC,
+# citing Times of Israel Oct 21, 2025).  Jointly consistent only with
+# killed + remaining - pre_war >= 12,000 recruited during the war.
+IDF_PREWAR_STOCK = 30_000
+IDF_CLAIM_KILLED = 22_000
+IDF_REMAINING = 20_000
+recruits_implied = IDF_CLAIM_KILLED + IDF_REMAINING - IDF_PREWAR_STOCK
+check("ledger: implied recruits = 12,000", recruits_implied, 12_000, 0)
+check_true("ledger consistent only via recruitment concession",
+           recruits_implied > 0,
+           f"killed+remaining exceeds pre-war stock by {recruits_implied:,}")
+
 # GMS D-sensitivity: what the IDF claim implies as D grows.
 # Caveat carried into the paper: applying the MoH omega to corrected D
 # assumes the unrecorded dead share the recorded demographic mix, which
@@ -374,7 +388,7 @@ conv_rows = [
     ("IDF public claim (17--25k of 70k)", r"\citep{idfclaim}",
      q_idf_lo, q_idf_hi, "object of the test"),
     ("Identified set, MoH anchor, $\\mu\\ge 1$", "this paper",
-     set_moh_1_25[0], set_moh_1_25[1], "exposure-agnostic"),
+     set_moh_1_25[0], set_moh_1_25[1], "weakest assumption ($\\mu\\ge 1$)"),
     ("Identified set, MoH anchor, $\\mu\\in[2,3.5]$", "this paper",
      set_moh_2_35[0], set_moh_2_35[1], "Frost-calibrated exposure"),
     ("Aman named-militant database", r"\citep{guardian972db2025}",
@@ -390,10 +404,12 @@ lines = [
     r"\begin{table}[ht]",
     r"\centering",
     r"\caption{\textbf{Convergence of independent methods on the Gaza combatant"
-    r" share.} Every method that uses independently measured inputs rejects the"
-    r" public IDF figure; they disagree with one another only \emph{within}"
-    r" $q\in[{\sim}2\%,{\sim}25\%]$ (civilian-to-combatant ratios of roughly"
-    r" $3{:}1$ to $40{:}1$ or more on direct deaths).}",
+    r" share.} Every method concentrates in $q\in[{\sim}2\%,{\sim}25\%]$"
+    r" (civilian-to-combatant ratios of roughly $3{:}1$ to $40{:}1$ or more on"
+    r" direct deaths). The upper end of the IDF claim ($35.7\%$) lies above all"
+    r" of them; its lower end ($24.3\%$) only touches the mathematical edge of the"
+    r" widest ($\mu\ge 1$) bound and lies above every method that admits any"
+    r" exposure differential.}",
     r"\label{tab:convergence}",
     r"\begin{footnotesize}",
     r"\renewcommand{\arraystretch}{1.3}",
