@@ -117,7 +117,8 @@ def rho_omega(q_claim, omega_hat, sigma_omega, w, a, f, mu_lo, mu_hi):
 
 
 def z_uniformity(omega_hat, w, n):
-    """z-test of 'uniform random violence': omega_hat vs w with binomial SE."""
+    """Discrepancy of omega_hat from w in binomial-SE units (descriptive:
+    the OHCHR sample is verified/selected, not a probability sample)."""
     se = math.sqrt(w * (1 - w) / n)
     return (omega_hat - w) / se
 
@@ -718,7 +719,7 @@ MACRO_GROUPS = [
         ("nBlend", f"{OMEGA_BLEND:.3f}"),                 # 0.623 (geometric blend)
         ("nCcrAtQOne", fmt_int(ccr_of_q(q1_moh))),        # 3 (CCR at set's upper end)
     ]),
-    ("Uniformity test (OHCHR sample vs population)", [
+    ("Uniformity discrepancy (OHCHR sample vs population, descriptive)", [
         ("nZUnif", f"{z:.1f}"),                                     # -8.1
         ("nPUnif", f"{p_mant}\\times 10^{{{int(p_exp)}}}"),         # 1.9e-16
     ]),
