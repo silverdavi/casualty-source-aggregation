@@ -230,13 +230,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
+    "military_low": 0,
+    "military_high": 0,
     "civilian_low": 1203000,
     "civilian_high": 2550000,
     "grand_low": 1203000,
     "grand_high": 2550000,
-    "notes": "Grand totals roll up the targeted Christian-population genocide deaths only: Armenians 664000-1500000, Assyrians 250000-300000, and Ottoman Greeks 289000-750000. Military deaths and Muslim/Turkish civilian deaths in the wider wars are not included because reliable comparable aggregates specific to the named genocide conflict are unavailable."
+    "notes": "Military deaths set to zero for this entry's accounting: the genocide deaths counted here are civilian deportation, massacre, and famine victims. Ottoman-Armenian soldiers disarmed into labour battalions and killed are conventionally counted among the genocide's civilian victims; WWI battle deaths are accounted in the separate WWI entry. Grand totals roll up the targeted Christian-population genocide deaths only: Armenians 664000-1500000, Assyrians 250000-300000, and Ottoman Greeks 289000-750000. Military deaths and Muslim/Turkish civilian deaths in the wider wars are not included because reliable comparable aggregates specific to the named genocide conflict are unavailable."
   },
   "key_atrocities": [
     {
@@ -292,7 +292,7 @@
       ]
     },
     {
-      "name": "Burning of Smyrna / \u0130zmir",
+      "name": "Burning of Smyrna / İzmir",
       "year": 1922,
       "perpetrator": "Turkish Nationalist forces, responsibility disputed in some sources",
       "victims_group": "Greek and Armenian civilians",
@@ -337,7 +337,7 @@
     },
     {
       "url": "https://agmipublications.am/index.php/jgs/article/view/136",
-      "title": "Calculations of the Armenian Death Toll during the Main Phase of the Armenian Genocide (1915\u20131916): Sources, Data, and Methods, 1915\u20131923",
+      "title": "Calculations of the Armenian Death Toll during the Main Phase of the Armenian Genocide (1915–1916): Sources, Data, and Methods, 1915–1923",
       "publisher": "Journal of Genocide Studies / Armenian Genocide Museum-Institute Foundation"
     },
     {

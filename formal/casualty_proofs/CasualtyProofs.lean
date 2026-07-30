@@ -239,9 +239,10 @@ theorem claim6_optimality {ι : Type*}
   rw [div_le_iff₀ hne]
   nlinarith [key]
 
-/-! ## Claim 7 ingredient: feasibility is monotone in M
-(lowering the manpower ceiling never helps a claim), the fact that makes
-the one-sided M-penalty in the contradiction radius sound. -/
+/-! ## Claim 7 ingredient: the stock constraint q·D ≤ M is monotone in M
+(raising the manpower ceiling never hurts a claim). Under the paper's
+per-axis radius (Definition 4.2) this documents the direction in which
+an M-axis rescue of a high-combatant claim must move. -/
 
 theorem claim7_feasibility_monotone_in_M
     (q D M M' : ℝ) (hMM' : M ≤ M') (h : q * D ≤ M) :
@@ -258,9 +259,10 @@ theorem claim7_omega_needed_antitone
   have hd1 : 0 < w + mu1 * (a - f) := by nlinarith
   gcongr
 
-/-- Contradiction radius, part (ii), abstract form: the radius
-ρ = inf of the penalty over the rationalisation set C is a lower bound,
-so every rationalisation has penalty ≥ ρ. -/
+/-- Contradiction radius, part (ii), abstract form: an axis radius
+ρ_A = inf of the standardised displacement over the axis rationalisation
+set C is a lower bound, so every rescue on that axis has displacement
+≥ ρ_A (≥ ρ, the min over axes). -/
 theorem claim7_radius_lower
     {α : Type*} (g : α → ℝ) (C : Set α)
     (hbdd : ∀ p ∈ C, 0 ≤ g p) :

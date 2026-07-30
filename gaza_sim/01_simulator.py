@@ -18,34 +18,40 @@ Latent quantities (sampled per posterior draw):
   μ_M         civilian-male exposure multiplier (≥1; civilian men die
                 at higher per-capita rate than women+children because
                 they're outside more)
-  ε_C         child exposure multiplier (≤1; children less exposed than
-                adult civilian women)
+  ε_C         women-and-children class exposure multiplier (≤1; applied to
+                the entire W+C bucket, down-weighting it relative to adults)
   d_bar       expected kills per air strike
   K_total     total air-to-ground strikes
   uc          recovery factor: observed MoH ÷ true direct deaths
 
 Strike-kill model (closed-form per cell, no Monte Carlo over strikes):
 
-  weighted_pop_in_cell  Z_c = m_c·η_milt + N_c·f_M_c_civ·μ_M
-                            + N_c·(f_W·1 + f_C·ε_C)
-       where m_c = militant cell population (assumed all male/young-male)
-             f_W = women fraction (~0.49)
-             f_C = children-fraction (~0.47), of which boys are partly
-                   in f_M_c_civ but we lump kids together.
-  P(strike kills a militant       in cell c) = m_c·η_milt        / Z_c
+  weighted_pop_in_cell  Z_c = m_c·1 + (N_c·f_AM - m_c)·μ_M + N_WC_c·ε_C
+       where m_c    = militant cell population (assumed all adult-male)
+             f_AM   = adult-male population fraction
+             N_WC_c = women-and-children cell population, treated as one
+                      bucket with a single class multiplier ε_C
+  P(strike kills a militant        in cell c) = m_c·1               / Z_c
   P(strike kills an adult-male civ in cell c) = (N_c·f_AM - m_c)·μ_M / Z_c
-  P(strike kills a women+child civ in cell c) = N_c·(f_W + f_C·ε_C·something)/Z_c
+  P(strike kills a women+child civ in cell c) = N_WC_c·ε_C           / Z_c
 
   Expected total deaths in cell c = K_c · d_bar  where K_c ∝ targeting weight.
   Expected per-class deaths in cell c = (K_c · d_bar) · P(class | cell c).
 
 We then sum over cells.  Likelihood:
 
-  D_total      ≈ MoH_late2025 × uc       (Gaussian, σ ~ 5%)
-  ω = (D_WC) / (D_total)  ≈ MoH_full_record OR OHCHR_sample
-  ω_AM = D_AM / D_total                  (Beta(...|MoH n=70k))
+  D_obs        ≈ MoH_late2025            (Gaussian on log scale, σ ~ 7%),
+                 where D_obs = uc × D_total
+  ω_AM = (D_civAM + D_milt) / D_total    vs MoH_full_record and OHCHR_sample
+                 (recording is class-neutral, so the recorded adult-male
+                  share estimates the TRUE share: the recovery factor uc
+                  cancels in the ratio)
 
-Posterior over (q = D_militant / D_total).
+Posterior over q = D_militant / D_total, the combatant share of true
+direct deaths; under class-neutral recording this equals the combatant
+share among recorded deaths, so it is the same estimand as the paper's
+q = D_M/D.  The civilian:militant ratio is (D_civAM + D_WC)/D_milt =
+(1-q)/q, consistent with q by construction.
 """
 from __future__ import annotations
 
@@ -86,18 +92,18 @@ G = np.asarray(cells_gov)
 C = len(N)
 print(f"Cells: {C}  (pop sum = {N.sum():,.0f})")
 
-# Demographics (Gaza-wide, applied uniformly per cell)
+# Demographics (Gaza-wide, applied uniformly per cell).
+# Convention matches the paper: AM = males 18+ and W+C = everyone else,
+# so the two classes partition the population exactly (a = 1 - w = 0.267).
+# Do NOT use facts.json's share_adult_males_18_60 = 0.255 here: that class
+# leaves men over 60 unassigned and breaks the partition.
 W_PLUS_C = F["population"]["share_women_plus_children"]["point"]   # 0.733
-F_AM     = F["population"]["share_adult_males_18_60"]["point"]     # 0.255
-F_W      = F["population"]["share_female_all_ages"]["low"]         # 0.49
-F_U18    = F["population"]["share_under_18"]["low"]                # 0.465
-# By definition: women+children = females + males<18 = F_W + (F_U18 * (1-F_W/0.5))
-# but we just use the structural quantities below.
+F_AM     = 1.0 - W_PLUS_C                                          # 0.267, males 18+
 
 # Adult-male population per cell (fixed)
 N_AM = N * F_AM
 N_WC = N * W_PLUS_C                     # women + children pop per cell
-assert np.allclose(N_AM + N_WC, N, rtol=2e-2), "demographic shares inconsistent"
+assert np.allclose(N_AM + N_WC, N, rtol=1e-9), "demographic shares must partition"
 
 
 # ----------------------------------------------------------------------------
@@ -151,13 +157,16 @@ def simulate_batch(M, gamma, sigma, alpha, beta, mu_M, eps_C,
     w_milt /= w_milt.sum(axis=1, keepdims=True)
     # m_c: militants per cell, scaled to M.
     m = M[:, None] * w_milt
-    # Cap militants at adult-male population per cell (no cell can have
-    # more militants than working-age men):
-    m = np.minimum(m, N_AM[None, :] * 0.30)            # max 30% of AM are militants
-    # Re-scale residual M back to total budget
-    m_sum = m.sum(axis=1, keepdims=True)
-    scale = (M[:, None] / np.maximum(m_sum, 1))
-    m = m * scale
+    # Cap militants at 30% of the adult-male population per cell, then
+    # rescale to restore the total M.  A single cap-and-rescale can push
+    # capped cells back above the cap, so iterate to a fixed point (the
+    # aggregate cap far exceeds any M, so this converges quickly).
+    cap = N_AM[None, :] * 0.30
+    for _ in range(25):
+        m = np.minimum(m, cap)
+        m_sum = m.sum(axis=1, keepdims=True)
+        m = m * (M[:, None] / np.maximum(m_sum, 1))
+    m = np.minimum(m, cap)
 
     # 2. Strike targeting weight per cell.
     rho_milt = m / N[None, :]                          # militant density
@@ -169,13 +178,9 @@ def simulate_batch(M, gamma, sigma, alpha, beta, mu_M, eps_C,
     # 3. Per-strike kill class probabilities, per cell.
     # "Kill weight" per person:
     #   militant: 1.0 (counts only adult males who *are* militants)
-    #   civilian adult male: μ_M
-    #   civilian women+child: 1.0 (children are still substantial; we
-    #     allow eps_C to slightly down-weight)
-    # We approximate "women+children" as one bucket with mean exposure 1.
-    # More precisely: w (women) + c (children) and we let kids be slightly
-    # less exposed by eps_C, but kids are a big share so we keep eps_C in
-    # [0.7, 1.0].
+    #   civilian adult male: μ_M ∈ [1, 2.5]
+    #   women+children: ε_C ∈ [0.7, 1.0], a single multiplier applied to the
+    #     entire W+C bucket (women and children are not modelled separately)
     civ_AM = np.maximum(N_AM[None, :] - m, 0.0)
     weight_milt = m * 1.0                              # shape (B, C)
     weight_civAM = civ_AM * mu_M[:, None]
@@ -232,13 +237,16 @@ def log_likelihood(D_obs, D_milt, D_civAM, D_WC):
     log_lk_total = stats.norm.logpdf(np.log(D_obs),
                                      loc=np.log(MOH_LATE2025), scale=0.07)
 
-    # 2. Adult-male share of dead
-    sim_AM = D_civAM / np.maximum(D_obs, 1)
-    sim_milt_AM = (D_civAM + D_milt) / np.maximum(D_obs, 1)
+    # 2. Adult-male share of dead.
     # The data records adult-MALES (combatant or civilian) jointly;
     # OHCHR reports 30.7% men 18+, MoH full-record 44%.  These mix
     # combatants (all assumed adult-male) with adult-male civilians.
-    # So compare sim_milt_AM to those observations.
+    # Recording is class-neutral in this model (the recovery factor uc
+    # multiplies the total uniformly), so the recorded adult-male SHARE
+    # estimates the true share (D_civAM + D_milt) / D_total: uc cancels
+    # in the ratio, so the denominator is D_total (true deaths).
+    D_total = D_milt + D_civAM + D_WC
+    sim_milt_AM = (D_civAM + D_milt) / np.maximum(D_total, 1)
     log_lk_ohchr = stats.beta.logpdf(np.clip(sim_milt_AM, 1e-3, 1-1e-3),
                                      OHCHR["share_men_18_plus"] * N_OHCHR + 1,
                                      (1 - OHCHR["share_men_18_plus"]) * N_OHCHR + 1)
@@ -288,9 +296,17 @@ def post_summary(arr, name):
     return {"name": name, "median": float(med), "lo": float(lo), "hi": float(hi)}
 
 
-q_arr = sim["D_milt"] / np.maximum(sim["D_obs"], 1)
-ratio = sim["D_civAM"] / np.maximum(sim["D_milt"], 1)
-ratio_total = (sim["D_civAM"] + sim["D_WC"]) / np.maximum(sim["D_milt"], 1)
+# q = combatant share of TRUE direct deaths (= share of recorded deaths
+# under class-neutral recording; same estimand as the paper's q = D_M/D),
+# hence the D_total denominator.
+q_arr = sim["D_milt"] / np.maximum(sim["D_total"], 1)
+# The guard protects against division by ~0 without capping small counts.
+# (The consistency assertion below verifies D_milt >= 1 on every draw in
+# practice, so this is inert for the reported run.)
+ratio = sim["D_civAM"] / np.maximum(sim["D_milt"], 1e-9)
+ratio_total = (sim["D_civAM"] + sim["D_WC"]) / np.maximum(sim["D_milt"], 1e-9)
+# Consistency: ratio_total == (1-q)/q per draw, by construction.
+assert np.allclose(ratio_total, (1 - q_arr) / np.maximum(q_arr, 1e-12), rtol=1e-6)
 
 print()
 print("=== Posterior summaries ===")
@@ -309,7 +325,7 @@ for name, arr in [
     ("D_women+children killed",               sim["D_WC"]),
     ("q = militant share of dead",            q_arr),
     ("civilian:militant ratio (total)",       ratio_total),
-    ("civilian:militant ratio (excl. kids)",  ratio),
+    ("civ. adult-male : militant ratio",      ratio),
 ]:
     s = post_summary(arr, name)
     if "share" in name or "factor" in name:

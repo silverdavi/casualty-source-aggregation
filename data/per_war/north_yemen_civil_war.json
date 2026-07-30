@@ -174,12 +174,12 @@
   ],
   "totals": {
     "military_low": 66000,
-    "military_high": null,
+    "military_high": 150000,
     "civilian_low": 204,
     "civilian_high": null,
     "grand_low": 100000,
     "grand_high": 200000,
-    "notes": "Military_low adds the best-cited side-specific floor of 26,000 Egyptian military deaths and 40,000 royalist deaths, excluding unquantified Yemeni republican deaths, possible Saudi deaths, and later/final royalist losses. Civilian_low is only a floor from named Egyptian gas/air attacks. Grand_low and grand_high use broad historical all-deaths estimates of 100,000-200,000; PRIO-style battle-death coding cited by RAND gives a much lower 1,200-11,000 and should not be treated as equivalent to total war deaths."
+    "notes": "Military low adds the best-cited side-specific floor of 26,000 Egyptian military deaths and 40,000 royalist deaths, excluding unquantified Yemeni republican deaths, possible Saudi deaths, and later/final royalist losses; the high of 150,000 is a curated ceiling consistent with the broad all-deaths estimates of 100,000-200,000, which historians describe as mostly combatant and tribal-fighter deaths. Civilian_low is only a floor from named Egyptian gas/air attacks; the civilian remainder is bounded by the grand-total residual. PRIO-style battle-death coding cited by RAND gives a much lower 1,200-11,000 and should not be treated as equivalent to total war deaths."
   },
   "key_atrocities": [
     {

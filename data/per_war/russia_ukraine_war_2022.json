@@ -175,11 +175,11 @@
   "totals": {
     "military_low": 285000,
     "military_high": 640000,
-    "civilian_low": 15793,
-    "civilian_high": null,
-    "grand_low": 300793,
-    "grand_high": null,
-    "notes": "Military low sums 230,000 Russian/allied and 55,000 Ukrainian military deaths. Military high sums 500,000 Russian/allied and 140,000 Ukrainian military deaths. Civilian low uses 15,172 OHCHR-verified civilian deaths in Ukraine through 31 January 2026 plus 621 Russian Investigative Committee-reported civilian deaths in Russian regions; this is not a fully deduplicated or independently verified global civilian total. Civilian high and grand high are null because civilian deaths in occupied Ukraine and Russian official claims cannot be independently bounded."
+    "civilian_low": 16747,
+    "civilian_high": 100000,
+    "grand_low": 301747,
+    "grand_high": 740000,
+    "notes": "Military low sums 230,000 Russian/allied and 55,000 Ukrainian military deaths; military high sums 500,000 Russian/allied and 140,000 Ukrainian military deaths (CSIS and open-source monitor ranges). Civilian low uses 16,126 OHCHR-verified civilian deaths in Ukraine through May 2026 plus 621 Russian Investigative Committee-reported civilian deaths in Russian regions; OHCHR states the real figure is higher because verification requires two independent sources, impossible in occupied territory. Civilian high of 100,000 is a deliberate ceiling spanning researcher estimates of 20,000-40,000+ and the upper claims for occupied areas (Mariupol alone 8,000 per Human Rights Watch to 25,000-75,000 per city officials). Grand range sums the class ranges."
   },
   "key_atrocities": [
     {
@@ -226,7 +226,7 @@
       "victims_group": "civilians at a funeral reception",
       "low": 59,
       "high": 59,
-      "notes": "OHCHR found reasonable grounds to believe a Russian Iskander missile struck the caf\u00e9 and killed 59 civilians.",
+      "notes": "OHCHR found reasonable grounds to believe a Russian Iskander missile struck the café and killed 59 civilians.",
       "sources": [
         "https://ukraine.ohchr.org/en/un-report-links-russia-deadly-attack-ukrainian-village-EN",
         "https://ukraine.ohchr.org/en/attack-funeral-reception-hroza-EN"

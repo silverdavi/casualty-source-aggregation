@@ -60,6 +60,8 @@ class War:
     total_lo: float
     total_hi: float
     sources: list[dict]
+    mil_incomplete: bool = False
+    civ_incomplete: bool = False
 
     @property
     def total_mid(self) -> float:
@@ -95,15 +97,30 @@ class War:
 
     @property
     def indirect_share(self) -> float:
-        return (self.ind_lo + self.ind_hi) / max(self.civ_lo + self.civ_hi, 1)
+        # Indirect deaths are a subset of civilian deaths (civ = direct + indirect),
+        # so this share cannot exceed 1. When a curated civilian total in the
+        # totals block undercounts the summed indirect component, the raw ratio
+        # can spuriously exceed 100%; clamp it to keep the displayed share sane.
+        ratio = (self.ind_lo + self.ind_hi) / max(self.civ_lo + self.civ_hi, 1)
+        return min(1.0, ratio)
 
     @property
     def total_range_ratio(self) -> float:
         return self.total_hi / max(self.total_lo, 1)
 
     @property
+    def id_share_lo(self) -> float:
+        """Lower end of the identified civilian-share interval: an
+        incompletely attributed military class only bounds the share above."""
+        return 0.0 if self.mil_incomplete else self.civ_share_lo
+
+    @property
+    def id_share_hi(self) -> float:
+        return 1.0 if self.civ_incomplete else self.civ_share_hi
+
+    @property
     def civ_width(self) -> float:
-        return self.civ_share_hi - self.civ_share_lo
+        return self.id_share_hi - self.id_share_lo
 
 
 def latex_escape(s: str) -> str:
@@ -164,6 +181,12 @@ def confidence_grade(w: War) -> str:
     return "A"
 
 
+def effective_grade(w: War) -> str:
+    if w.mil_incomplete and w.civ_incomplete:
+        return "n.a."
+    return confidence_grade(w)
+
+
 def class_label(w: War) -> str:
     if w.indirect_share >= 0.70:
         return "indirect"
@@ -188,9 +211,58 @@ def load_wars() -> list[War]:
         ind_items = [x for s in sides for x in (s.get("deaths_from_actions") or [])]
         ind_lo, ind_hi = _sum_ranges(ind_items)
         civ_lo, civ_hi = civ_dir_lo + ind_lo, civ_dir_hi + ind_hi
+
+        def _has_num(d: dict | None) -> bool:
+            return bool(d) and any(d.get(k) is not None for k in ("low", "high", "point"))
+
+        def _open_above(d: dict | None) -> bool:
+            if not _has_num(d):
+                return True
+            return d.get("high") is None and d.get("point") is None
+
+        # A class is incompletely attributed when its ceiling is unstated for
+        # some side; a curated *_high in the totals block cures this, while a
+        # floor-only totals entry does not.
+        mil_open = any(_open_above(s.get("military_killed")) for s in sides)
+        civ_open = any(
+            _open_above(s.get("civilians_killed_directly"))
+            and not any(_has_num(a) and not _open_above(a) for a in (s.get("deaths_from_actions") or []))
+            for s in sides
+        )
         totals = raw.get("totals") or {}
+        # Prefer the curated military/civilian split in totals when present:
+        # side-level fields are often null for wars where sources do not
+        # attribute deaths per side, which would otherwise zero out one class.
+        t_ml, t_mh = totals.get("military_low"), totals.get("military_high")
+        if t_ml is not None or t_mh is not None:
+            mil_lo = float(t_ml if t_ml is not None else t_mh)
+            # A floor-only totals entry keeps the side-derived ceiling if larger.
+            mil_hi = float(t_mh) if t_mh is not None else max(mil_hi, mil_lo)
+        t_cl, t_ch = totals.get("civilian_low"), totals.get("civilian_high")
+        if t_cl is not None or t_ch is not None:
+            civ_lo = float(t_cl if t_cl is not None else t_ch)
+            civ_hi = float(t_ch) if t_ch is not None else max(civ_hi, civ_lo)
+        mil_no_ceiling = t_mh is None and (mil_open or t_ml is not None)
+        civ_no_ceiling = t_ch is None and (civ_open or t_cl is not None)
         total_lo = totals.get("grand_low")
         total_hi = totals.get("grand_high")
+
+        # Residual closure: a missing class ceiling is closed mechanically by
+        # the grand-total residual.  It requires a grand ceiling and a real
+        # ceiling on the other class; otherwise the closure would be vacuous
+        # and the war stays flagged incomplete.
+        grand_hi = float(total_hi) if total_hi is not None else None
+        mil_incomplete = civ_incomplete = False
+        if mil_no_ceiling:
+            if grand_hi is not None and not civ_no_ceiling:
+                mil_hi = max(mil_lo, grand_hi - civ_lo)
+            else:
+                mil_incomplete = True
+        if civ_no_ceiling:
+            if grand_hi is not None and not mil_no_ceiling:
+                civ_hi = max(civ_lo, grand_hi - mil_lo)
+            else:
+                civ_incomplete = True
         if total_lo is None:
             total_lo = mil_lo + civ_lo
         if total_hi is None:
@@ -218,6 +290,8 @@ def load_wars() -> list[War]:
             total_lo=total_lo,
             total_hi=total_hi,
             sources=raw.get("sources") or [],
+            mil_incomplete=mil_incomplete,
+            civ_incomplete=civ_incomplete,
         ))
     return sorted(wars, key=lambda w: -w.total_mid)
 
@@ -226,13 +300,26 @@ def row(w: War, long_name: bool = False) -> str:
     name = latex_escape(w.name)
     if not long_name and len(name) > 42:
         name = name[:39] + r"\ldots{}"
+    grade = effective_grade(w)
+    diag = "source harmonisation" if (w.mil_incomplete and w.civ_incomplete) else diagnostic(w)
+    if w.mil_incomplete and w.civ_incomplete:
+        civ_share = q_range = "n.a."
+    elif w.mil_incomplete:
+        civ_share = f"$\\le${pct(w.civ_share_hi)}"
+        q_range = f"$\\ge${pct(w.q_lo)}"
+    elif w.civ_incomplete:
+        civ_share = f"$\\ge${pct(w.civ_share_lo)}"
+        q_range = f"$\\le${pct(w.q_hi)}"
+    else:
+        civ_share = pct_range(w.civ_share_lo, w.civ_share_hi)
+        q_range = pct_range(w.q_lo, w.q_hi)
     return (
         f"{name} & {w.period} & {count_fmt(w.total_mid)} "
-        f"& {pct_range(w.civ_share_lo, w.civ_share_hi)} "
-        f"& {pct_range(w.q_lo, w.q_hi)} "
+        f"& {civ_share} "
+        f"& {q_range} "
         f"& {pct(w.indirect_share)} "
-        f"& {latex_escape(diagnostic(w))} "
-        f"& {confidence_grade(w)} \\\\"
+        f"& {latex_escape(diag)} "
+        f"& {grade} \\\\"
     )
 
 
@@ -262,7 +349,8 @@ def write_table(lines: list[str], title: str, label: str, wars: list[War], note:
 def main() -> None:
     wars = load_wars()
     print(f"loaded {len(wars)} wars")
-    grades = {g: sum(1 for w in wars if confidence_grade(w) == g) for g in "ABCD"}
+    grades = {g: sum(1 for w in wars if effective_grade(w) == g) for g in "ABCD"}
+    n_na = sum(1 for w in wars if effective_grade(w) == "n.a.")
     classes = {c: sum(1 for w in wars if class_label(w) == c) for c in ["combat-heavy", "mixed", "civilian-targeting", "indirect"]}
 
     lines: list[str] = [
@@ -294,7 +382,16 @@ def main() -> None:
         r"\section{How to read the tables}",
         r"The \emph{civilian share} interval is computed conservatively as "
         r"$[D_C^{lo}/(D_C^{lo}+D_M^{hi}),\;D_C^{hi}/(D_C^{hi}+D_M^{lo})]$. "
-        r"The $q$ interval is the corresponding combatant share. The \emph{binding relation} column is a triage label: "
+        r"The $q$ interval is the corresponding combatant share. "
+        r"\emph{Missing figures are treated explicitly rather than as zeros}: when the sources "
+        r"state no ceiling for one casualty class, the ceiling is either taken from the curated "
+        r"per-conflict totals (with the reasoning recorded in the data file's notes) or closed "
+        r"mechanically by the grand-total residual---the total-death ceiling minus the other "
+        r"class's floor. Should a conflict identify only a one-sided bound, it is marked "
+        r"$\le x\%$ (combatant deaths incompletely attributed) or $\ge x\%$ (civilian deaths "
+        r"incompletely attributed), or \emph{n.a.} if neither class is attributable; after "
+        r"curation no conflict in the current dataset requires these marks. "
+        r"The \emph{binding relation} column is a triage label: "
         r"\texttt{manpower budget} means the population/combatant-stock bound is the first place to look; "
         r"\texttt{identified-deaths sample} means sex-age microdata would likely dominate; "
         r"\texttt{excess-mortality survey} means direct attribution is less informative than survey-based excess deaths; "
@@ -302,11 +399,14 @@ def main() -> None:
         "",
         r"\paragraph{Confidence grade.} A: total-death range ratio $<2$ and civilian-share width $<15$ percentage points. "
         r"B: either ratio $<4$ or width $<30$pp. C: either ratio $<8$ or width $<45$pp. D: wider than that. "
+        r"Conflicts with a one-sided share bound are graded on the widened (identified) interval, "
+        r"so an incompletely attributed class demotes the grade rather than flattering it. "
         r"These grades score internal numerical precision, not moral seriousness or historical importance.",
         "",
         r"\section{Dataset summary}",
         rf"The dataset contains {len(wars)} conflicts. Confidence grades: "
-        rf"A={grades['A']}, B={grades['B']}, C={grades['C']}, D={grades['D']}. "
+        rf"A={grades['A']}, B={grades['B']}, C={grades['C']}, D={grades['D']}, "
+        rf"not attributable={n_na}. "
         rf"Structural classes: combat-heavy={classes['combat-heavy']}, mixed={classes['mixed']}, "
         rf"civilian-targeting={classes['civilian-targeting']}, indirect={classes['indirect']}.",
         "",
@@ -322,41 +422,63 @@ def main() -> None:
 
     lines += [
         r"\section{Sources}",
-        r"The table below lists the primary sources used to construct the casualty bounds for each conflict. "
-        r"Full JSON files containing detailed side-by-side accounting, indirect-death breakdowns, and specific "
-        r"atrocity figures are available in the companion repository.",
+        r"The table below lists the primary sources used to construct the casualty bounds for each "
+        r"conflict: official records, court and truth-commission documents, UN and NGO reports, "
+        r"scholarly monographs, and press of record. Tertiary reference works consulted only for "
+        r"orientation are omitted here; the full source list for every conflict, with URLs, is in "
+        r"the per-conflict JSON files in the companion repository, which also contain detailed "
+        r"side-by-side accounting, indirect-death breakdowns, and specific atrocity figures.",
         r"\begin{scriptsize}",
         r"\begin{longtable}{p{3.5cm} p{12.5cm}}",
         r"\toprule",
-        r"Conflict & Sources \\",
+        r"Conflict & Primary sources \\",
         r"\midrule",
         r"\endhead",
     ]
-    
+
+    # Tertiary aggregators are dropped whenever the conflict has at least two
+    # primary sources left; long lists are capped with an explicit pointer to
+    # the repository rather than truncated silently.
+    tertiary = {
+        "wikipedia", "new world encyclopedia", "history.com", "onwar",
+        "grokipedia", "thoughtco", "britannica.com",
+    }
+    max_listed = 8
+
+    def is_tertiary(pub: str) -> bool:
+        p = pub.lower()
+        return any(t in p for t in tertiary)
+
     for w in wars:
         if not w.sources:
             continue
-        # Format sources compactly
-        src_texts = []
+        seen: set[tuple[str, str]] = set()
+        primary, rest = [], []
         for s in w.sources:
-            title = s.get("title", "").strip()
-            pub = s.get("publisher", "").strip()
+            title = (s.get("title") or "").strip()
+            pub = (s.get("publisher") or "").strip()
+            key = (title.lower(), pub.lower())
+            if not (title or pub) or key in seen:
+                continue
+            seen.add(key)
+            (rest if is_tertiary(pub) else primary).append((title, pub))
+        kept = primary if len(primary) >= 2 else primary + rest
+        n_omitted = len(seen) - min(len(kept), max_listed)
+        kept = kept[:max_listed]
+
+        src_texts = []
+        for title, pub in kept:
             if title and pub:
                 src_texts.append(f"\\emph{{{latex_escape(title)}}} ({latex_escape(pub)})")
             elif title:
                 src_texts.append(f"\\emph{{{latex_escape(title)}}}")
-            elif pub:
-                src_texts.append(latex_escape(pub))
             else:
-                url = s.get("url", "")
-                if url:
-                    # just extract domain
-                    domain = url.split("://")[-1].split("/")[0]
-                    src_texts.append(latex_escape(domain))
-        
-        if src_texts:
-            lines.append(f"{latex_escape(w.name)} & {'; '.join(src_texts)} \\\\")
-            lines.append(r"\addlinespace")
+                src_texts.append(latex_escape(pub))
+        if not src_texts:
+            continue
+        tail = f"; and {n_omitted} further sources in the repository" if n_omitted > 0 else ""
+        lines.append(f"{latex_escape(w.name)} & {'; '.join(src_texts)}{tail} \\\\")
+        lines.append(r"\addlinespace")
 
     lines += [
         r"\bottomrule",

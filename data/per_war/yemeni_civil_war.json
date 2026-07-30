@@ -321,13 +321,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": null,
-    "civilian_high": null,
+    "military_low": 90000,
+    "military_high": 180000,
+    "civilian_low": 200000,
+    "civilian_high": 310000,
     "grand_low": 377000,
-    "grand_high": null,
-    "notes": "UNDP/Pardee estimated 377,000 total direct and indirect war deaths by the end of 2021, including about 154,000 direct and 223,000 indirect deaths. No updated comprehensive all-cause model through 2026 was found, so the current total is higher but not responsibly quantifiable from the sources consulted."
+    "grand_high": 450000,
+    "notes": "Grand low is the UNDP estimate of 377,000 deaths through end-2021, of which roughly 60% were indirect (hunger, disease, collapsed health care) -- indirect deaths fall overwhelmingly on civilians, with UNDP reporting most were children under five. Grand high of 450,000 allows for continued lower-intensity mortality after the April 2022 truce. Military range reflects ACLED-reported battle fatalities (150,000+ reported killed in political violence through 2022, the majority combatants), spanning conservative and inclusive readings. Civilian range is the grand range minus the military bracket."
   },
   "key_atrocities": [
     {

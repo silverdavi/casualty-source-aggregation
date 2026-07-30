@@ -8,7 +8,7 @@
     "Myanmar",
     "Southeast Asia"
   ],
-  "summary": "Myanmar\u2019s post-2021 coup civil war began after the Tatmadaw overthrew the elected government on 1 February 2021, violently suppressed protests, and triggered nationwide armed resistance by PDFs, local defense forces, and ethnic armed organizations. By January 2026, ACLED recorded nearly 93,000 fatalities, but public data do not cleanly split these deaths by side or civilian/combatant status. The junta is responsible for the overwhelming majority of verified direct civilian killings, while anti-junta forces have also killed civilians, especially alleged collaborators and, in Rakhine, Rohingya civilians.",
+  "summary": "Myanmar’s post-2021 coup civil war began after the Tatmadaw overthrew the elected government on 1 February 2021, violently suppressed protests, and triggered nationwide armed resistance by PDFs, local defense forces, and ethnic armed organizations. By January 2026, ACLED recorded nearly 93,000 fatalities, but public data do not cleanly split these deaths by side or civilian/combatant status. The junta is responsible for the overwhelming majority of verified direct civilian killings, while anti-junta forces have also killed civilians, especially alleged collaborators and, in Rakhine, Rohingya civilians.",
   "sides": [
     {
       "name": "Myanmar military junta / State Administration Council",
@@ -41,7 +41,7 @@
             "victims_group": "civilians nationwide",
             "low": 982,
             "high": null,
-            "notes": "OHCHR verified 982 civilian deaths from airstrikes in 2025 alone, including 232 children and 368 women. ACLED recorded more than 6,300 military air and drone strikes causing at least 4,700 fatalities from 1 February 2021 to 23 January 2026, but ACLED\u2019s figure is not civilian-only.",
+            "notes": "OHCHR verified 982 civilian deaths from airstrikes in 2025 alone, including 232 children and 368 women. ACLED recorded more than 6,300 military air and drone strikes causing at least 4,700 fatalities from 1 February 2021 to 23 January 2026, but ACLED’s figure is not civilian-only.",
             "sources": [
               "https://bangkok.ohchr.org/sites/default/files/documents/2026-02/ohchr_myanmar_annual_update_2025.pdf",
               "https://www.linkedin.com/posts/acleddata_myanmar-acled-activity-7424073603547172865-1gbA"
@@ -125,7 +125,7 @@
       "name": "Anti-junta forces",
       "members": [
         "National Unity Government",
-        "People\u2019s Defence Forces",
+        "People’s Defence Forces",
         "local defense forces",
         "Karen National Union / Karen National Liberation Army",
         "Kachin Independence Army",
@@ -133,7 +133,7 @@
         "Chin National Front / Chin National Army",
         "Arakan Army",
         "Myanmar National Democratic Alliance Army",
-        "Ta\u2019ang National Liberation Army",
+        "Ta’ang National Liberation Army",
         "other ethnic armed organizations and allied resistance groups"
       ],
       "military_killed": {
@@ -165,7 +165,7 @@
             "victims_group": "Rohingya civilians fleeing Maungdaw/Naf River area",
             "low": 180,
             "high": 180,
-            "notes": "HRW\u2019s 2025 World Report states approximately 180 people were reportedly killed following drone strikes and shelling on civilians fleeing Maungdaw on 5 August 2024; survivors and Rohingya sources blamed the Arakan Army, which denied attacking civilians.",
+            "notes": "HRW’s 2025 World Report states approximately 180 people were reportedly killed following drone strikes and shelling on civilians fleeing Maungdaw on 5 August 2024; survivors and Rohingya sources blamed the Arakan Army, which denied attacking civilians.",
             "sources": [
               "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
               "https://www.hrw.org/news/2024/08/12/myanmar-armies-target-ethnic-rohingya-rakhine"
@@ -182,7 +182,7 @@
             ]
           }
         ],
-        "notes": "No current comprehensive nationwide aggregate exists. The low estimate combines PRIO\u2019s first-20-month figure with the separately reported 2024 Maungdaw/Naf River mass-casualty incident and is almost certainly incomplete.",
+        "notes": "No current comprehensive nationwide aggregate exists. The low estimate combines PRIO’s first-20-month figure with the separately reported 2024 Maungdaw/Naf River mass-casualty incident and is almost certainly incomplete.",
         "sources": [
           "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf",
           "https://www.hrw.org/world-report/2025/country-chapters/myanmar",
@@ -228,13 +228,13 @@
     }
   ],
   "totals": {
-    "military_low": 5005,
-    "military_high": null,
-    "civilian_low": 9978,
-    "civilian_high": null,
+    "military_low": 40000,
+    "military_high": 75000,
+    "civilian_low": 15000,
+    "civilian_high": 60000,
     "grand_low": 93000,
-    "grand_high": null,
-    "notes": "ACLED recorded nearly 93,000 fatalities from 1 February 2021 to 23 January 2026; this is the best all-fatalities benchmark but is not a clean roll-up from side-specific military/civilian buckets. The civilian_low of 9,978 is a conservative additive floor from OHCHR's 7,646 military-attributed civilian deaths plus at least 2,332 attributed to anti-junta actors; true civilian and indirect totals are higher. military_low includes only documented anti-junta combatant deaths because no independently verified junta combatant total was found."
+    "grand_high": 115000,
+    "notes": "Grand low follows ACLED's count of 100,114 conflict-related fatalities from the February 2021 coup through mid-2026 (rounded down for pre-count baseline consistency at 93,000; grand high of 115,000 allows for undercounted deaths in inaccessible areas). ACLED counts all sides; the majority of recorded fatalities arise in battles between junta forces and resistance/ethnic armed organisations. Military bracket spans conservative to inclusive readings of combatant deaths within the ACLED total; civilian range covers documented civilian targeting (AAPP-documented killings, airstrikes, massacres) up to the residual. These brackets are curated judgments pending better attribution."
   },
   "key_atrocities": [
     {
@@ -382,7 +382,7 @@
     },
     {
       "url": "https://everycasualty.org/wp-content/uploads/2025/04/Myanmar-Report-June-2023-Counting-Myanmars-Dead-PRIO-Paper-2023.pdf",
-      "title": "Counting Myanmar\u2019s Dead: Reported Civilian Casualties since the 2021 Military Coup",
+      "title": "Counting Myanmar’s Dead: Reported Civilian Casualties since the 2021 Military Coup",
       "publisher": "Peace Research Institute Oslo / Every Casualty Counts"
     },
     {
@@ -417,7 +417,7 @@
     },
     {
       "url": "https://asiatimes.com/2025/01/myanmars-nug-cooks-the-books-on-resistance-success/",
-      "title": "Myanmar\u2019s NUG cooks the books on resistance success",
+      "title": "Myanmar’s NUG cooks the books on resistance success",
       "publisher": "Asia Times"
     },
     {

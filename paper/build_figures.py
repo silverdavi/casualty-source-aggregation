@@ -68,6 +68,10 @@ class War:
     ind_hi: float
     tot_lo: float
     tot_hi: float
+    # True when some side leaves the class unquantified and no curated total
+    # covers the gap; the class sum is then only a lower bound.
+    mil_incomplete: bool = False
+    civ_incomplete: bool = False
 
     @property
     def total_mid(self) -> float:
@@ -94,8 +98,27 @@ class War:
         return self.civ_hi / max(self.civ_hi + self.mil_lo, 1)
 
     @property
+    def id_share_lo(self) -> float:
+        """Lower end of the identified civilian-share interval.
+
+        An incompletely attributed military class means the true share could
+        be anywhere down to 0: the recorded interval is only an upper bound.
+        """
+        return 0.0 if self.mil_incomplete else self.civ_share_lo
+
+    @property
+    def id_share_hi(self) -> float:
+        """Upper end of the identified civilian-share interval (see id_share_lo)."""
+        return 1.0 if self.civ_incomplete else self.civ_share_hi
+
+    @property
     def indirect_share(self) -> float:
-        return (self.ind_lo + self.ind_hi) / max(self.civ_lo + self.civ_hi, 1)
+        # Indirect deaths are a subset of civilian deaths (civ = direct + indirect),
+        # so this share cannot exceed 1. When a curated civilian total in the
+        # totals block undercounts the summed indirect component, the raw ratio
+        # can spuriously exceed 100%; clamp it to keep the displayed share sane.
+        ratio = (self.ind_lo + self.ind_hi) / max(self.civ_lo + self.civ_hi, 1)
+        return min(1.0, ratio)
 
     @property
     def uncertainty_width(self) -> float:
@@ -138,9 +161,63 @@ def load_war(path: Path) -> War | None:
     ind_lo, ind_hi = _sum_ranges(indirect)
     civ_lo, civ_hi = civ_dir_lo + ind_lo, civ_dir_hi + ind_hi
 
+    def _has_num(d: dict | None) -> bool:
+        return bool(d) and any(d.get(k) is not None for k in ("low", "high", "point"))
+
+    def _open_above(d: dict | None) -> bool:
+        """Entry gives no usable ceiling: fully null, or a floor with no
+        high/point (sources state a minimum and leave the rest unquantified)."""
+        if not _has_num(d):
+            return True
+        return d.get("high") is None and d.get("point") is None
+
+    # A class is incompletely attributed when its ceiling is unstated for some
+    # side -- e.g. the Six-Day War records Israeli civilian deaths but leaves
+    # Arab civilian deaths null, and North Yemen gives only a royalist
+    # military floor.  A curated *_high in the totals block cures this;
+    # a floor-only totals entry does not.
+    mil_open = any(_open_above(s.get("military_killed")) for s in sides)
+    civ_open = any(
+        _open_above(s.get("civilians_killed_directly"))
+        and not any(_has_num(a) and not _open_above(a) for a in (s.get("deaths_from_actions") or []))
+        for s in sides
+    )
+
     totals = raw.get("totals") or {}
+    # Prefer the curated military/civilian split in totals when present:
+    # side-level fields are often null for wars where sources do not
+    # attribute deaths per side, which would otherwise zero out one class.
+    t_ml, t_mh = totals.get("military_low"), totals.get("military_high")
+    if t_ml is not None or t_mh is not None:
+        mil_lo = float(t_ml if t_ml is not None else t_mh)
+        # A floor-only totals entry keeps the side-derived ceiling if larger.
+        mil_hi = float(t_mh) if t_mh is not None else max(mil_hi, mil_lo)
+    t_cl, t_ch = totals.get("civilian_low"), totals.get("civilian_high")
+    if t_cl is not None or t_ch is not None:
+        civ_lo = float(t_cl if t_cl is not None else t_ch)
+        civ_hi = float(t_ch) if t_ch is not None else max(civ_hi, civ_lo)
+    mil_no_ceiling = t_mh is None and (mil_open or t_ml is not None)
+    civ_no_ceiling = t_ch is None and (civ_open or t_cl is not None)
     tot_lo = totals.get("grand_low")
     tot_hi = totals.get("grand_high")
+
+    # Residual closure: a missing class ceiling is closed mechanically by the
+    # grand-total residual (grand high minus the other class's floor).  This
+    # keeps the interval two-sided without inventing figures.  It requires a
+    # grand ceiling and a real ceiling on the other class; otherwise the
+    # closure would be vacuous and the war stays flagged incomplete.
+    grand_hi = float(tot_hi) if tot_hi is not None else None
+    mil_incomplete = civ_incomplete = False
+    if mil_no_ceiling:
+        if grand_hi is not None and not civ_no_ceiling:
+            mil_hi = max(mil_lo, grand_hi - civ_lo)
+        else:
+            mil_incomplete = True
+    if civ_no_ceiling:
+        if grand_hi is not None and not mil_no_ceiling:
+            civ_hi = max(civ_lo, grand_hi - mil_lo)
+        else:
+            civ_incomplete = True
     if tot_lo is None:
         tot_lo = mil_lo + civ_lo
     if tot_hi is None:
@@ -153,8 +230,8 @@ def load_war(path: Path) -> War | None:
         regions = ", ".join(regions[:2])
 
     return War(
-        ident=raw.get("war_id", path.parent.name),
-        name=raw.get("name", path.parent.name),
+        ident=raw.get("war_id", path.stem),
+        name=raw.get("name", path.stem),
         start=raw.get("start_year"),
         end=raw.get("end_year") or 2026,
         ongoing=bool(raw.get("ongoing")),
@@ -167,6 +244,8 @@ def load_war(path: Path) -> War | None:
         ind_hi=ind_hi,
         tot_lo=float(tot_lo or 0),
         tot_hi=float(tot_hi or 0),
+        mil_incomplete=mil_incomplete,
+        civ_incomplete=civ_incomplete,
     )
 
 
@@ -201,6 +280,10 @@ def wars_frame(wars: list[War]) -> pd.DataFrame:
             "civ_share_hi": [100 * w.civ_share_hi for w in wars],
             "uncertainty_width": [100 * w.uncertainty_width for w in wars],
             "indirect_share": [100 * w.indirect_share for w in wars],
+            "mil_incomplete": [w.mil_incomplete for w in wars],
+            "civ_incomplete": [w.civ_incomplete for w in wars],
+            "id_share_lo": [100 * w.id_share_lo for w in wars],
+            "id_share_hi": [100 * w.id_share_hi for w in wars],
         }
     )
 
@@ -224,7 +307,7 @@ def short_name(name: str, max_chars: int = 38) -> str:
 
 
 def area_size(values: np.ndarray, floor: float = 10, ceil: float = 720) -> np.ndarray:
-    """Marker area proportional to deaths, with visual floor."""
+    """Marker area increasing in deaths: min-max affine scaling with a floor."""
     values = np.maximum(values, 1)
     scaled = (values - values.min()) / max(values.max() - values.min(), 1)
     return floor + scaled * (ceil - floor)
@@ -261,16 +344,31 @@ def fig_uncertainty_ladder():
         "partition_of_india",
         "korean_war",
     }
-    selected = [w for w in WARS if w.ident in interesting_ids]
-    selected.sort(key=lambda w: (w.civ_share_mid, w.total_mid))
+    # Wars where neither casualty class is attributable identify nothing on
+    # this axis and are excluded; one-sided wars show the widened interval.
+    selected = [
+        w for w in WARS
+        if w.ident in interesting_ids and not (w.mil_incomplete and w.civ_incomplete)
+    ]
+    selected.sort(key=lambda w: ((w.id_share_lo + w.id_share_hi) / 2, w.total_mid))
     df = wars_frame(selected)
     df["y"] = np.arange(len(df))
+    df["onesided"] = df["mil_incomplete"] | df["civ_incomplete"]
 
     fig, ax = plt.subplots(figsize=(7.2, 5.2))
-    ax.hlines(df["y"], df["civ_share_lo"], df["civ_share_hi"], color=FAINT, lw=4, zorder=2)
-    ax.hlines(df["y"], df["civ_share_lo"], df["civ_share_hi"], color=INK, lw=0.6, zorder=3)
-    ax.scatter(df["civ_share_mid"], df["y"], s=32, color=BLUE,
+    ax.hlines(df["y"], df["id_share_lo"], df["id_share_hi"], color=FAINT, lw=4, zorder=2)
+    ax.hlines(df["y"], df["id_share_lo"], df["id_share_hi"], color=INK, lw=0.6, zorder=3)
+    df_pt = df[~df["onesided"]]
+    ax.scatter(df_pt["civ_share_mid"], df_pt["y"], s=32, color=BLUE,
                edgecolor="white", linewidth=0.4, zorder=4)
+    for row in df[df["onesided"]].itertuples():
+        # Open triangle at the identified bound, pointing into the interval.
+        if row.mil_incomplete:
+            x, marker = row.civ_share_hi, "<"
+        else:
+            x, marker = row.civ_share_lo, ">"
+        ax.scatter([x], [row.y], s=36, marker=marker, facecolors="none",
+                   edgecolors=BLUE, linewidths=0.9, zorder=4)
     for row in df.itertuples():
         ax.text(-2.0, row.y, row.short, ha="right", va="center", fontsize=8.5, color=INK)
         ax.text(103, row.y, fmt_humans(row.total_mid), ha="left", va="center",
@@ -282,7 +380,7 @@ def fig_uncertainty_ladder():
     ax.set_yticks([])
     ax.set_xticks([0, 25, 50, 75, 100])
     ax.xaxis.set_major_formatter(mtick.PercentFormatter(100, decimals=0))
-    ax.set_xlabel("civilian share of deaths (low-mid-high range)")
+    ax.set_xlabel("civilian share of deaths (identified interval and midpoint)")
     ax.set_title("Civilian-share uncertainty ladder", loc="left", fontsize=10.5, pad=6)
     ax.text(103, len(selected) - 0.35, "total deaths", ha="left", va="bottom",
             fontsize=8.0, color=INK, fontweight="bold")
@@ -306,11 +404,21 @@ fig_uncertainty_ladder()
 
 
 def fig_range_frame_civshare():
-    wars = [w for w in WARS if (w.mil_mid + w.civ_mid) >= 1_000]
+    wars = [w for w in WARS if w.total_mid >= 1_000]
     df = wars_frame(wars)
-    df["deaths_for_plot"] = df["mil_mid"] + df["civ_mid"]
+    df["deaths_for_plot"] = df["total_mid"]
     df["marker_area"] = area_size(df["total_mid"].to_numpy(), floor=8, ceil=650)
     df["start_year"] = df["start"].fillna(1900).astype(int)
+
+    # Wars with an incompletely attributed class only identify a one-sided
+    # bound on the civilian share: plot them at that bound with an open
+    # triangle pointing into the feasible region. Wars where neither class
+    # is attributable are dropped from this share-based view.
+    df = df[~(df["mil_incomplete"] & df["civ_incomplete"])].copy()
+    df["plot_y"] = np.where(
+        df["mil_incomplete"], df["civ_share_hi"],
+        np.where(df["civ_incomplete"], df["civ_share_lo"], df["civ_share_mid"]),
+    )
 
     # Diverging colour scale over onset year: blue = early 20th century,
     # neutral = 1990 (end of the Cold War), red = recent conflicts.
@@ -320,19 +428,30 @@ def fig_range_frame_civshare():
 
     fig, ax = plt.subplots(figsize=(7.8, 4.7))
     
-    # Plot all except Gaza as points
+    # Plot all except Gaza as points; one-sided wars get open triangles.
     df_no_gaza = df[df["id"] != "israel_gaza_war_2023"]
-    point_colors_no_gaza = year_cmap(year_norm(df_no_gaza["start_year"].to_numpy()))
-    
+    complete = df_no_gaza[~(df_no_gaza["mil_incomplete"] | df_no_gaza["civ_incomplete"])]
+    onesided = df_no_gaza[df_no_gaza["mil_incomplete"] | df_no_gaza["civ_incomplete"]]
+    colors_complete = year_cmap(year_norm(complete["start_year"].to_numpy()))
+
     ax.scatter(
-        df_no_gaza["deaths_for_plot"], df_no_gaza["civ_share_mid"],
-        s=df_no_gaza["marker_area"], c=point_colors_no_gaza, alpha=0.45,
+        complete["deaths_for_plot"], complete["plot_y"],
+        s=complete["marker_area"], c=colors_complete, alpha=0.45,
         edgecolor="white", linewidth=0.45, zorder=2,
     )
     ax.scatter(
-        df_no_gaza["deaths_for_plot"], df_no_gaza["civ_share_mid"],
-        s=5, c=point_colors_no_gaza, alpha=0.95, zorder=3,
+        complete["deaths_for_plot"], complete["plot_y"],
+        s=5, c=colors_complete, alpha=0.95, zorder=3,
     )
+    for row in onesided.itertuples():
+        marker = "v" if row.mil_incomplete else "^"
+        color = year_cmap(year_norm(row.start_year))
+        ax.scatter(
+            [row.deaths_for_plot], [row.plot_y],
+            s=max(row.marker_area * 0.55, 16), marker=marker,
+            facecolors="none", edgecolors=[color], linewidths=0.9,
+            alpha=0.85, zorder=3,
+        )
     sm = plt.cm.ScalarMappable(norm=year_norm, cmap=year_cmap)
     cbar = fig.colorbar(sm, ax=ax, orientation="vertical",
                         fraction=0.035, pad=0.015, ticks=[1900, 1945, 1990, 2026])
@@ -346,10 +465,14 @@ def fig_range_frame_civshare():
     if not gaza_row.empty:
         x_gaza = gaza_row["deaths_for_plot"].iloc[0]
         c_gaza = year_cmap(year_norm(gaza_row["start_year"].iloc[0]))
-        # Exposure-agnostic bound: q in [0, 25.1%] -> civ share [74.9, 100]
-        ax.plot([x_gaza, x_gaza], [74.9, 100], color=c_gaza, lw=0.5, alpha=0.5, zorder=2)
-        # Calibrated bound: q in [0, 6.3%] -> civ share [93.7, 100]
-        ax.plot([x_gaza, x_gaza], [93.7, 100], color=c_gaza, lw=3.5, alpha=0.9, zorder=3)
+        # Gaza civilian-share bounds derived from the validation report
+        # (civ share = 100*(1 - q) at the identified-set upper endpoints).
+        headline = json.loads(
+            (ROOT.parent / "analysis" / "validation_report.json").read_text())["headline"]
+        civ_lo_agnostic = 100 * (1 - headline["q1_moh"])
+        civ_lo_calibrated = 100 * (1 - headline["q2_moh"])
+        ax.plot([x_gaza, x_gaza], [civ_lo_agnostic, 100], color=c_gaza, lw=0.5, alpha=0.5, zorder=2)
+        ax.plot([x_gaza, x_gaza], [civ_lo_calibrated, 100], color=c_gaza, lw=3.5, alpha=0.9, zorder=3)
 
     # (xmult, yoff, ha) tuned so labels don't collide and each leader line
     # unambiguously reaches its marker; label format: (text, xmult, yoff, ha)
@@ -363,18 +486,18 @@ def fig_range_frame_civshare():
         "vietnam_war":               ("Vietnam",              0.40,   6, "right"),
         "korean_war":                ("Korean",               1.35,  -7, "left"),
         "syrian_civil_war":          ("Syrian civil war",     0.45,  10, "center"),
-        "russia_ukraine_war_2022":   ("Russia\u2013Ukraine",      0.45, -10, "center"),
+        "russia_ukraine_war_2022":   ("Russia\u2013Ukraine",      0.45,   9, "center"),
         "israel_gaza_war_2023":      ("Israel\u2013Gaza 2023",    0.30,   5.5, "right"),
         "wwi":                       ("WWI",                  1.30,  -8, "left"),
-        "iraq_war_2003":             ("Iraq 2003",            0.28,  -3, "right"),
-        "war_in_afghanistan_2001":   ("Afghanistan 2001",     0.40,  -7, "center"),
+        "iraq_war_2003":             ("Iraq 2003",            0.22,  -8, "right"),
+        "war_in_afghanistan_2001":   ("Afghanistan 2001",     0.40, -14, "center"),
     }
     by_id = {row.id: row for row in df.itertuples()}
     for ident, (text, xmult, yoff, ha) in label_specs.items():
         if ident not in by_id:
             continue
         w = by_id[ident]
-        x, y = w.deaths_for_plot, w.civ_share_mid
+        x, y = w.deaths_for_plot, w.plot_y
         txt = ax.annotate(
             text, (x, y),
             xytext=(x * xmult, y + yoff),
@@ -392,7 +515,7 @@ def fig_range_frame_civshare():
     ax.set_xlabel("total deaths (log scale)")
     ax.set_ylabel("civilian share of deaths")
     ax.yaxis.set_major_formatter(mtick.PercentFormatter(100, decimals=0))
-    ax.set_title("Civilian share vs. total deaths, 81 conflicts (1900–2026)",
+    ax.set_title("Civilian share vs. total deaths, 81 conflicts (1899–2026)",
                  loc="left", fontsize=10.5, pad=6)
     draw_clean_axis(ax, (1e3, df["deaths_for_plot"].max() * 2.0), (0, 100))
     out = FIGS / "fig_range_frame_civshare.pdf"
@@ -486,15 +609,20 @@ def fig_gaza_diagnostic():
     cm_lo, cm_med, cm_hi = weighted_quantile(civ_milt, weights)
     dmilt_lo, dmilt_med, dmilt_hi = weighted_quantile(D_milt, weights)
 
-    # IDF claim over the D scenarios used in the paper:
-    # 70k (MoH confirmed) .. 106.2k (GMS-corrected + missing)
+    # IDF claim converted to q over the D scenarios used in the paper:
+    # 70k (MoH confirmed) .. 119.2k (GMS-corrected + missing).  The
+    # posterior q is a share of TRUE direct deaths, so the claim band
+    # spans the denominator scenarios: the envelope [17k/119.2k,
+    # 25k/70k] gives the claim its most favourable conversion at the
+    # low end.
     IDF_LO_K, IDF_HI_K = 17_000, 25_000
-    D_LO, D_HI = 70_000, 106_200
+    D_LO, D_HI = 70_000, 119_200
     idf_q_lo = IDF_LO_K / D_HI * 100
     idf_q_hi = IDF_HI_K / D_LO * 100
 
     # Diagnostic constants (AM = males 18+, so a = 1 - w)
-    A_SHARE = 0.267    # adult-male population share
+    # Adult-male share is 1 - w by the paper's class partition, so it
+    # tracks w wherever w varies.
     F_SHARE = 0.020    # combatant pop share
     MU_BAR  = 2.5
 
@@ -507,7 +635,9 @@ def fig_gaza_diagnostic():
     w_grid = np.linspace(0.66, 0.80, 160)
     omega_grid = np.linspace(0.30, 0.78, 200)
     W, O = np.meshgrid(w_grid, omega_grid, indexing="ij")
-    Q = 1.0 - O * (W + MU_BAR * (A_SHARE - F_SHARE)) / W
+    # a = 1 - w exactly (the paper's class partition, Table 1), so the
+    # adult-male share varies with w across the grid.
+    Q = 1.0 - O * (W + MU_BAR * ((1.0 - W) - F_SHARE)) / W
     Q = np.clip(Q, 0, 1) * 100
 
     im = ax.pcolormesh(omega_grid * 100, w_grid * 100, Q,
@@ -520,14 +650,14 @@ def fig_gaza_diagnostic():
     # Compute ω at top of axis (w = 78.5%) for each level so labels go on
     # the actual contour line, in clear sky.
     w_top = 0.785
-    coef_top = (w_top + MU_BAR * (A_SHARE - F_SHARE)) / w_top
+    coef_top = (w_top + MU_BAR * ((1.0 - w_top) - F_SHARE)) / w_top
     label_pts = [(((1 - q/100) / coef_top) * 100, 78.3) for q in levels]
     ax.clabel(cs, inline=True, fontsize=6.3, fmt="%d%%",
               manual=label_pts, inline_spacing=1)
 
     # IDF-required omega band: at w=73.5%, the required omega for q in claim band.
     w_ref = 0.735
-    coef = (w_ref + MU_BAR * (A_SHARE - F_SHARE)) / w_ref
+    coef = (w_ref + MU_BAR * ((1.0 - w_ref) - F_SHARE)) / w_ref
     omega_req_lo = (1 - idf_q_hi/100) / coef * 100
     omega_req_hi = (1 - idf_q_lo/100) / coef * 100
     ax.axvspan(omega_req_lo, omega_req_hi, color=RUST, alpha=0.20, zorder=2)
@@ -541,7 +671,7 @@ def fig_gaza_diagnostic():
     # Anchor markers (place along w=73.5% horizontal line)
     anchors = [
         ("MoH",   56.0, 73.5, "#5a5a5a", (-32, 16)),
-        ("blend", 62.0, 73.5, BLUE,      (8, 16)),
+        ("blend", 62.3, 73.5, BLUE,      (8, 16)),
         ("OHCHR", 69.3, 73.5, "#222222", (10, -22)),
     ]
     for label, omega_pct, w_pct, color, (dx, dy) in anchors:
@@ -582,13 +712,13 @@ def fig_gaza_diagnostic():
     ymax = ax.get_ylim()[1]
     ax.annotate(f"posterior:\n{q_med:.1f}% [{q_lo:.1f}, {q_hi:.1f}]",
                 xy=(q_med, 0.55 * ymax),
-                xytext=(10.5, 0.85 * ymax),
+                xytext=(5.5, 0.85 * ymax),
                 fontsize=7.6, color=BLUE, fontweight="bold",
                 ha="left", va="center",
                 arrowprops=dict(arrowstyle="-", color=BLUE, lw=0.5))
     ax.text((idf_q_lo + idf_q_hi)/2, 0.55 * ymax,
             f"IDF claim\n{idf_q_lo:.0f}–{idf_q_hi:.0f}%\n"
-            r"($\rho_\omega\approx$8–31 SE)",
+            r"($\rho_\omega\approx$8–31$\,\sigma_\omega$)",
             ha="center", va="center", fontsize=7.6, color=RUST,
             fontweight="bold")
     ax.set_xlim(0, 45)
@@ -616,9 +746,9 @@ def fig_gaza_diagnostic():
             f"posterior\n{int(dmilt_med):,}\n[{int(dmilt_lo):,}–{int(dmilt_hi):,}]",
             ha="center", va="top", fontsize=7.4, color=BLUE,
             fontweight="bold")
-    ax.text((IDF_LO_K + IDF_HI_K)/2, 0.55 * ymax,
+    ax.text(IDF_LO_K * 0.93, 0.55 * ymax,
             f"IDF claim\n{IDF_LO_K//1000}–{IDF_HI_K//1000}k",
-            ha="center", va="center", fontsize=7.6, color=RUST,
+            ha="right", va="center", fontsize=7.6, color=RUST,
             fontweight="bold")
     ax.set_xscale("log")
     ax.set_xlim(300, 40_000)
@@ -648,9 +778,12 @@ def fig_gaza_diagnostic():
            edgecolor=INK, linewidth=0.5, width=0.62)
     ax.errorbar(xs, medians, yerr=[medians - los, his - medians],
                 fmt="none", color=INK, lw=1.0, capsize=3, capthick=0.8)
-    for x, m in zip(xs, medians):
-        ax.text(x, m + 0.04 * his.max(),
-                f"{int(m/1000)}k" if m >= 1000 else f"{int(m)}",
+    for x, m, hi in zip(xs, medians, his):
+        # Labels go above the upper CI whisker, one decimal below 10k so
+        # small medians (e.g. 1,775) are not truncated to "1k".
+        lab = (f"{m/1000:.1f}k" if 1000 <= m < 10_000
+               else f"{int(round(m/1000))}k" if m >= 1000 else f"{int(m)}")
+        ax.text(x, hi + 0.03 * his.max(), lab,
                 ha="center", va="bottom", fontsize=8.5, fontweight="bold")
     ax.set_xticks(xs)
     ax.set_xticklabels(cats, fontsize=8.0)
@@ -658,7 +791,7 @@ def fig_gaza_diagnostic():
     ax.yaxis.set_major_formatter(mtick.FuncFormatter(
         lambda x, _: f"{int(x/1000)}k" if x >= 1000 else f"{int(x)}"))
     ax.set_ylim(0, his.max() * 1.20)
-    ax.set_title("D. Decomposition of $\\sim$70k reported dead",
+    ax.set_title("D. Decomposition of true direct deaths",
                  loc="left", fontsize=9.5, pad=4, fontweight="bold")
     sns.despine(ax=ax, trim=False, offset=3)
     ax.tick_params(axis="x", length=0)
@@ -685,7 +818,7 @@ def fig_gaza_diagnostic():
             ha="center", va="top", fontsize=7.6, color=BLUE,
             fontweight="bold")
     ax.text((idf_ratio_lo + idf_ratio_hi)/2 + 4, 0.55 * ymax,
-            "IDF claim\n($\\sim$2:1)",
+            f"IDF-implied\n{idf_ratio_lo:.0f}\u2013{idf_ratio_hi:.0f}:1",
             ha="left", va="center", fontsize=7.6, color=RUST,
             fontweight="bold")
     ax.set_xlabel("civilian : combatant ratio")
@@ -707,7 +840,7 @@ fig_gaza_diagnostic()
 def fig_q_identified_set():
     anchors = [
         ("OHCHR identified sample", 0.693, "women+children = 69.3%"),
-        ("Blended anchor", 0.620, "geometric consensus = 62.0%"),
+        ("Blended anchor", 0.623, "geometric consensus = 62.3%"),
         ("MoH full record", 0.560, "women+children = 56.0%"),
     ]
     mus = np.linspace(1.0, 3.0, 160)
@@ -804,12 +937,211 @@ fig_gaza_sparklines()
 
 
 # ---------------------------------------------------------------------------
+# 6. The adult-male death budget: three-component decomposition of the toll
+#    under six hypotheses.  All numbers come from the validation report so
+#    the figure and the prose cannot drift apart.
+# ---------------------------------------------------------------------------
+
+
+def fig_gaza_budget():
+    report_path = ROOT.parent / "analysis" / "validation_report.json"
+    if not report_path.exists():
+        print("  (skipping fig_gaza_budget: validation_report.json not found;"
+              " run analysis/validate_bounds.py first)")
+        return
+    b = json.loads(report_path.read_text())["budget"]
+    rows = b["rows"]
+    D = b["D"]
+    D_MEN = b["D_men"]
+    RATE_WC = b["rate_wc"]
+    N_POP = b["N_pop"]
+    pop_shares = [(b["M_stock"] / N_POP, "combatants"),
+                  (b["N_amciv"] / N_POP, "civilian men"),
+                  (b["N_wc"] / N_POP, "women + children")]
+
+    GOLD = "#d4a017"          # civilian adult men (matches fig_gaza_diagnostic D)
+    C_WC, C_AMCIV, C_COMB = BLUE, GOLD, RUST
+    SEG_COLORS = [C_COMB, C_AMCIV, C_WC]
+
+    display = [
+        # (row index, label, short label, is_claim, is_reference)
+        (0, "random violence, no targeting\n(rejected by the record, $z=-8.1$)",
+         "random violence, no targeting", False, True),
+        (1, "calibrated exposure, upper end ($\\mu=2$)",
+         "calibrated exposure ($\\mu=2$)", False, False),
+        (2, "equal exposure ($\\mu=1$),\nthe mathematical cap",
+         "equal exposure ($\\mu=1$)", False, False),
+        (3, "IDF claim, 17k", "IDF claim, 17k", True, False),
+        (4, "IDF claim, 25k", "IDF claim, 25k", True, False),
+        (5, "all adult men counted\nas combatants",
+         "all adult men combatants", False, False),
+    ]
+    n = len(display)
+    ys = np.arange(n)[::-1]   # first hypothesis row on top
+    bar_h = 0.62
+    GAP = 1.05                # gap between population row and hypotheses
+    y_pop = ys[0] + GAP + 1.0
+
+    fig, (ax_a, ax_b) = plt.subplots(
+        2, 1, figsize=(7.2, 6.6), sharey=False,
+        gridspec_kw={"height_ratios": [1.22, 0.88], "hspace": 0.44})
+
+    # ---------------- Panel A: allocation of the 70,000 dead ----------------
+    # Reference row: population composition, drawn as shares of the bar width.
+    left = 0.0
+    for (share, _), color in zip(pop_shares, SEG_COLORS, strict=True):
+        ax_a.barh(y_pop, share * D, left=left, height=bar_h, color=color,
+                  alpha=0.55, edgecolor="white", linewidth=0.6, zorder=3)
+        left += share * D
+    ax_a.text(pop_shares[0][0] * D + 900, y_pop + bar_h / 2 + 0.08, "2.0%",
+              ha="left", va="bottom", fontsize=7.0, color=C_COMB,
+              fontweight="bold")
+    ax_a.text((pop_shares[0][0] + pop_shares[1][0] / 2) * D, y_pop, "24.7%",
+              ha="center", va="center", fontsize=7.4, color="white",
+              fontweight="bold")
+    ax_a.text((1 - pop_shares[2][0] / 2) * D, y_pop, "73.3%",
+              ha="center", va="center", fontsize=7.4, color="white",
+              fontweight="bold")
+    ax_a.text(D + 1_500, y_pop, "population\nshares,\n$N=2.25$M", ha="left",
+              va="center", fontsize=7.0, color="#6a6a6a")
+
+    for (idx, label, _, is_claim, is_ref), y in zip(display, ys, strict=True):
+        r = rows[idx]
+        segs = [(r["d_combatant"], C_COMB), (r["d_amciv"], C_AMCIV),
+                (r["d_wc"], C_WC)]
+        left = 0.0
+        alpha = 0.55 if is_ref else 0.88
+        for val, color in segs:
+            if val <= 0:
+                continue
+            ax_a.barh(y, val, left=left, height=bar_h, color=color,
+                      alpha=alpha, edgecolor="white", linewidth=0.6, zorder=3)
+            left += val
+        # combatant count at the segment it measures
+        dc = r["d_combatant"]
+        txt = f"{round(dc/100)/10:g}k"
+        if dc > 5_500:
+            ax_a.text(dc / 2, y, txt, ha="center", va="center",
+                      fontsize=7.4, color="white", fontweight="bold", zorder=4)
+        else:
+            ax_a.text(dc + 900, y + bar_h / 2 + 0.08, txt, ha="left",
+                      va="bottom", fontsize=7.0, color=C_COMB,
+                      fontweight="bold", zorder=4)
+        # implied exposure ratio at the right margin
+        mu = r["mu_implied"]
+        note = f"$\\mu={mu:.2f}$" if np.isfinite(mu) else "no civilian\nmen left"
+        ax_a.text(D + 1_500, y, note, ha="left", va="center", fontsize=7.4,
+                  color=RUST if (is_claim or not np.isfinite(mu)) else INK)
+
+    # the men's budget line: fixed by the demographic record for rows 2-6
+    y_span_lo = ys[-1] - bar_h / 2 - 0.12
+    y_span_hi = ys[1] + bar_h / 2 + 0.12
+    ax_a.plot([D_MEN, D_MEN], [y_span_lo, y_span_hi],
+              color=INK, lw=0.9, ls=(0, (4, 2)), zorder=5)
+    ax_a.text(D_MEN, ys[0] + (GAP + 1.0) / 2,
+              "adult-male dead: 30,800 (fixed by the demographic record)",
+              ha="center", va="center", fontsize=7.4, color=INK)
+
+    ax_a.set_yticks(np.concatenate([[y_pop], ys]))
+    ax_a.set_yticklabels(["who lives in Gaza\n(population, for reference)"]
+                         + [lbl for _, lbl, _, _, _ in display], fontsize=7.8)
+    ax_a.set_xlim(0, D * 1.24)
+    ax_a.set_ylim(ys[-1] - 0.75, y_pop + 0.85)
+    ax_a.set_xticks(np.arange(0, 70_001, 10_000))
+    ax_a.xaxis.set_major_formatter(
+        mtick.FuncFormatter(lambda x, _: f"{int(x/1000)}k"))
+    ax_a.set_xlabel("deaths (MoH-confirmed toll, $D=70{,}000$)")
+    ax_a.set_title("A. Who the 70,000 dead were, under each hypothesis",
+                   loc="left", fontsize=9.5, pad=4, fontweight="bold")
+    sns.despine(ax=ax_a, trim=False, offset=2)
+    ax_a.tick_params(axis="y", length=0)
+
+    # ---------------- Panel B: share of each group killed --------------------
+    # Calibrated exposure band for civilian men: mu in [2, 3.5] times the
+    # women+children rate.
+    cal_lo, cal_hi = 2.0 * RATE_WC * 100, 3.5 * RATE_WC * 100
+    ax_b.axvspan(cal_lo, cal_hi, color=GOLD, alpha=0.14, zorder=1)
+    ax_b.text(np.sqrt(cal_lo * cal_hi), ys[0] + 0.98,
+              "civilian men in past\nGaza conflicts ($\\mu\\in[2,3.5]$)",
+              ha="center", va="bottom", fontsize=7.0, color="#8a6a0a")
+    ax_b.axvline(RATE_WC * 100, color=C_WC, lw=0.8, ls=(0, (4, 2)), zorder=2)
+    ax_b.text(RATE_WC * 100 * 0.93, ys[0] + 0.98,
+              "women + children:\n2.4% killed, fixed",
+              ha="right", va="bottom", fontsize=7.0, color=C_WC)
+
+    for (idx, _, _, is_claim, is_ref), y in zip(display, ys, strict=True):
+        r = rows[idx]
+        alpha = 0.60 if is_ref else 1.0
+        pts = [(r["rate_wc"] * 100, C_WC),
+               (r["rate_amciv"] * 100 if np.isfinite(r["rate_amciv"]) else None,
+                C_AMCIV),
+               (r["rate_combatant"] * 100, C_COMB)]
+        xs = [p for p, _ in pts if p is not None and p > 0]
+        ax_b.plot([min(xs), max(xs)], [y, y], color=FAINT, lw=0.7, zorder=2)
+        for p, color in pts:
+            if p is None or p <= 0:
+                continue
+            ax_b.scatter([p], [y], s=30, color=color, edgecolor="white",
+                         linewidth=0.6, zorder=4, alpha=alpha)
+        # print the combatant share killed above its dot
+        rc = r["rate_combatant"] * 100
+        rc_txt = f"{rc:.0f}%" if rc >= 10 else f"{rc:.1f}%"
+        ax_b.text(rc, y + 0.30, rc_txt, ha="center", va="bottom",
+                  fontsize=6.8, color=C_COMB, fontweight="bold")
+        sel = r["selectivity"]
+        if is_claim and np.isfinite(sel):
+            ax_b.text(rc * 1.30, y, f"{sel:.0f}$\\times$ the civilian-men rate",
+                      ha="left", va="center", fontsize=7.2, color=C_COMB)
+        if idx == 0:
+            ax_b.text(rc * 1.30, y, "every group dies at 3.1%",
+                      ha="left", va="center", fontsize=7.2, color="#6a6a6a")
+
+    ax_b.set_xscale("log")
+    ax_b.set_xlim(0.7, 300)
+    ax_b.set_xticks([1, 2, 5, 10, 20, 50, 100])
+    ax_b.xaxis.set_major_formatter(
+        mtick.FuncFormatter(lambda x, _: f"{x:g}%"))
+    ax_b.xaxis.set_minor_locator(mtick.NullLocator())
+    ax_b.set_yticks(ys)
+    ax_b.set_yticklabels([short for _, _, short, _, _ in display], fontsize=7.8)
+    ax_b.set_ylim(ys[-1] - 0.75, ys[0] + 2.55)
+    ax_b.set_xlabel("share of the group killed (log scale)")
+    ax_b.set_title("B. What share of each group was killed, under the same"
+                   " hypotheses", loc="left", fontsize=9.5, pad=4,
+                   fontweight="bold")
+    sns.despine(ax=ax_b, trim=False, offset=2)
+    ax_b.tick_params(axis="y", length=0)
+
+    # shared legend below the figure
+    handles = [
+        plt.Rectangle((0, 0), 1, 1, fc=C_COMB, alpha=0.88, ec="none"),
+        plt.Rectangle((0, 0), 1, 1, fc=C_AMCIV, alpha=0.88, ec="none"),
+        plt.Rectangle((0, 0), 1, 1, fc=C_WC, alpha=0.88, ec="none"),
+    ]
+    fig.legend(handles, ["combatants", "civilian adult men", "women + children"],
+               loc="lower center", bbox_to_anchor=(0.5, -0.02), ncol=3,
+               frameon=False, fontsize=7.6, handlelength=1.2,
+               handleheight=0.9, columnspacing=1.4)
+
+    fig.tight_layout()
+    out = FIGS / "fig_gaza_budget.pdf"
+    fig.savefig(out)
+    fig.savefig(FIGS / "fig_gaza_budget.png", dpi=300)
+    print(f"  wrote {out.name}")
+
+
+fig_gaza_budget()
+
+
+# ---------------------------------------------------------------------------
 # Appendix table: all conflicts behind Figures 3-4, as a longtable.
 # ---------------------------------------------------------------------------
 
 
 def latex_escape(s: str) -> str:
-    return s.replace("&", r"\&").replace("%", r"\%").replace("#", r"\#")
+    return (s.replace("&", r"\&").replace("%", r"\%")
+             .replace("#", r"\#").replace("_", r"\_")
+             .replace("\u2026", r"\dots{}"))
 
 
 def fmt_count(x: float) -> str:
@@ -822,7 +1154,7 @@ def fmt_count(x: float) -> str:
 
 def write_all_conflicts_table():
     wars = sorted(
-        [w for w in WARS if (w.mil_mid + w.civ_mid) >= 1_000],
+        [w for w in WARS if w.total_mid >= 1_000],
         key=lambda w: (w.start or 1900, w.name),
     )
     lines = [
@@ -832,10 +1164,14 @@ def write_all_conflicts_table():
         r"\begin{longtable}{@{}lccrc@{}}",
         r"\caption{\textbf{The 81-conflict dataset behind Figures~\ref{fig:range-frame} "
         r"and~\ref{fig:uncertainty-ladder}} (conflicts with at least 1{,}000 attributed "
-        r"deaths shown). Deaths are midpoints of the source ranges (direct military $+$ "
-        r"civilian, including indirect where sources attribute it); the civilian-share "
-        r"interval spans the most and least civilian-heavy readings of the source ranges. "
-        r"Per-conflict sources are in the supplement.}\label{tab:all-conflicts}\\",
+        r"deaths shown). Deaths are midpoints of the curated total-death ranges "
+        r"(military $+$ civilian, including indirect where sources attribute it); the "
+        r"civilian-share interval spans the most and least civilian-heavy readings of the "
+        r"source ranges. Where sources state no ceiling for one casualty class, the ceiling "
+        r"is closed mechanically by the grand-total residual (total high minus the other "
+        r"class's floor) rather than treated as zero. Per-conflict sources are in the "
+        r"supplement.}"
+        r"\label{tab:all-conflicts}\\",
         r"\toprule",
         r"Conflict & Period & Deaths (mid) & Civilian share & lo--hi \\",
         r"\midrule",
@@ -850,9 +1186,18 @@ def write_all_conflicts_table():
     ]
     for w in wars:
         period = f"{w.start or '?'}--{'' if w.ongoing else w.end}"
-        share = f"{100*w.civ_share_mid:.0f}\\%"
-        rng = f"{100*w.civ_share_lo:.0f}--{100*w.civ_share_hi:.0f}\\%"
-        deaths = fmt_count(w.mil_mid + w.civ_mid)
+        if w.mil_incomplete and w.civ_incomplete:
+            share, rng = "--", "n.a."
+        elif w.mil_incomplete:
+            share = "--"
+            rng = f"$\\le${100*w.civ_share_hi:.0f}\\%"
+        elif w.civ_incomplete:
+            share = "--"
+            rng = f"$\\ge${100*w.civ_share_lo:.0f}\\%"
+        else:
+            share = f"{100*w.civ_share_mid:.0f}\\%"
+            rng = f"{100*w.civ_share_lo:.0f}--{100*w.civ_share_hi:.0f}\\%"
+        deaths = fmt_count(w.total_mid)
         lines.append(
             f"{latex_escape(short_name(w.name, 44))} & {period} & {deaths} & {share} & {rng} \\\\"
         )

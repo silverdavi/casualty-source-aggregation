@@ -251,13 +251,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": 2000000,
-    "civilian_high": 2127337,
+    "military_low": 40000,
+    "military_high": 55000,
+    "civilian_low": 1945000,
+    "civilian_high": 2087000,
     "grand_low": 2000000,
     "grand_high": 2127337,
-    "notes": "Core narrow north-south Second Sudanese Civil War total. CFR gives about 2,000,000 deaths. A mortality reconstruction summarized in Global Burden of Armed Violence gives 1,700,000 deaths for 1983-1998 plus 427,337 excess deaths for 1999-2005, totaling 2,127,337. Military deaths cannot be separated and are embedded in the total. Darfur 2003-2005 is excluded from this core rollup; including it would add roughly 142,000-200,000 additional deaths but would mix in a distinct overlapping conflict."
+    "notes": "Military range: UCDP records ~40,181 battle-related deaths for the government-SPLM/A conflict, rising to ~54,000 including related non-state and one-sided violence; these event-based counts are treated as the combatant bracket. The widely cited ~2 million total (US Committee for Refugees; Sudan Peace Act 2002) is overwhelmingly indirect civilian mortality from war-caused famine and disease. Civilian range is the grand range minus the military bracket."
   },
   "key_atrocities": [
     {

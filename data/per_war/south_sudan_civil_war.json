@@ -225,13 +225,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": null,
-    "civilian_high": null,
+    "military_low": 20000,
+    "military_high": 95000,
+    "civilian_low": 288000,
+    "civilian_high": 363000,
     "grand_low": 376000,
-    "grand_high": null,
-    "notes": "LSHTM estimated 382,900 excess deaths, 95% CI 376,000-389,800, for December 2013-April 2018, excluding South Sudanese refugees abroad. Because the war-related toll continued after April 2018 and no comparable 2019-2020 all-cause excess-mortality estimate was found, the grand_low is the lower bound through April 2018 and grand_high is left null rather than falsely capped. LSHTM estimated 190,000 violent deaths, 95% CI 180,600-200,300, with an alternative empirical estimate of 218,900, 95% CI 209,900-227,200."
+    "grand_high": 383000,
+    "notes": "Grand total: LSHTM/USIP statistical estimate of ~383,000 excess deaths, Dec 2013-Apr 2018, of which ~190,000 were violent; the authors note the true toll may be higher. Combatant deaths are not separately estimated by any source: the low reflects event-based battle fatality counts (UCDP/ACLED order of magnitude), the high caps combatants at half of the estimated violent deaths, consistent with LSHTM's finding that those killed were mostly adult males but included many civilians. Civilian range is the grand estimate minus the military bracket."
   },
   "key_atrocities": [
     {
@@ -308,7 +308,7 @@
     },
     {
       "url": "https://www.lshtm.ac.uk/south-sudan-report-faqs",
-      "title": "LSHTM \u2013 Crisis-attributable mortality in South Sudan \u2013 Q&A",
+      "title": "LSHTM – Crisis-attributable mortality in South Sudan – Q&A",
       "publisher": "London School of Hygiene & Tropical Medicine"
     },
     {

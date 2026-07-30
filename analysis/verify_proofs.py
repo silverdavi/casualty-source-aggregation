@@ -327,6 +327,10 @@ for _ in range(200):
             hi = mid
     qe = (lo + hi) / 2
     # density lower bound near the two quantiles:
+    # (1-eps)*f0 is a valid LOWER bound on the mixture density
+    # f_eps = (1-eps) f0 + eps g >= (1-eps) f0, and Prop 5.1(iii) holds for
+    # any valid m; using it makes the tested bound m^{-1} tau conservative
+    # (never anti-conservative).
     mval = min((1 - epsv) * st.norm.pdf(q0), (1 - epsv) * st.norm.pdf(qe))
     if abs(qe - q0) > epsv / mval + 1e-6:
         check("quantile displacement <= TV/m", False,

@@ -14,7 +14,7 @@
     "Western Siberia",
     "Gulag and special-settlement zones"
   ],
-  "summary": "This was an internal Soviet state-repression complex rather than a conventional war. The largest lethal component was the Soviet famine of 1932\u20131933, including the Holodomor in Ukraine and famine in Kazakhstan, followed by the Great Terror of 1937\u20131938, Gulag deaths, and deaths in special settlements and deportation schemes. Because categories overlap, the overall death toll is best treated as an approximate range rather than a single exact total.",
+  "summary": "This was an internal Soviet state-repression complex rather than a conventional war. The largest lethal component was the Soviet famine of 1932–1933, including the Holodomor in Ukraine and famine in Kazakhstan, followed by the Great Terror of 1937–1938, Gulag deaths, and deaths in special settlements and deportation schemes. Because categories overlap, the overall death toll is best treated as an approximate range rather than a single exact total.",
   "sides": [
     {
       "name": "Soviet party-state / OGPU-NKVD / Stalinist security apparatus",
@@ -30,7 +30,7 @@
         "low": 780,
         "high": null,
         "point": null,
-        "notes": "At least 780 general-grade Red Army officers were executed during the 1937\u20131938 military purge; total military personnel killed is unknown. The figure overlaps with Great Terror execution totals and should not be added separately in a grand total without deduplication.",
+        "notes": "At least 780 general-grade Red Army officers were executed during the 1937–1938 military purge; total military personnel killed is unknown. The figure overlaps with Great Terror execution totals and should not be added separately in a grand total without deduplication.",
         "sources": [
           "https://bfi.uchicago.edu/working-papers/the-anatomy-of-the-great-terror-a-quantitative-analysis-of-the-1937-38-purges-in-the-red-army/",
           "https://newleftreview.org/issues/i214/articles/r-w-davies-forced-labour-under-stalin-the-archive-revelations"
@@ -46,7 +46,7 @@
             "victims_group": "Great Terror victims, all categories including mostly civilians and some military/state personnel",
             "low": 681692,
             "high": 681692,
-            "notes": "Official archival figure for executions in 1937\u20131938; not purely civilian because it includes some military and state personnel.",
+            "notes": "Official archival figure for executions in 1937–1938; not purely civilian because it includes some military and state personnel.",
             "sources": [
               "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
               "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges"
@@ -94,7 +94,7 @@
             ]
           }
         ],
-        "notes": "The best documented direct killing figure is 681,692 executions in 1937\u20131938. A civilian-only total cannot be precisely separated because the execution total includes some military and state personnel; older or broader estimates put people 'put to death' around one million.",
+        "notes": "The best documented direct killing figure is 681,692 executions in 1937–1938. A civilian-only total cannot be precisely separated because the execution total includes some military and state personnel; older or broader estimates put people 'put to death' around one million.",
         "sources": [
           "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
           "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges",
@@ -108,7 +108,7 @@
           "low": 5500000,
           "high": 8700000,
           "point": 6500000,
-          "notes": "Includes Holodomor and Kazakh famine within the broader Soviet famine complex. Davies and Wheatcroft are often summarized at 5.5\u20136.5 million; wider summaries reach 8.7 million.",
+          "notes": "Includes Holodomor and Kazakh famine within the broader Soviet famine complex. Davies and Wheatcroft are often summarized at 5.5–6.5 million; wider summaries reach 8.7 million.",
           "sources": [
             "https://en.wikipedia.org/wiki/Soviet_famine_of_1930%E2%80%931933",
             "https://www.britannica.com/event/Holodomor"
@@ -134,7 +134,7 @@
           "low": 1300000,
           "high": 2300000,
           "point": 1500000,
-          "notes": "Common scholarly shorthand is about 1.5 million deaths; wider summaries give 1.3\u20132.3 million, most victims being ethnic Kazakhs.",
+          "notes": "Common scholarly shorthand is about 1.5 million deaths; wider summaries give 1.3–2.3 million, most victims being ethnic Kazakhs.",
           "sources": [
             "https://ewjus.com/index.php/ewjus/article/view/220",
             "https://www.cornellpress.cornell.edu/the-hidden-history-of-the-kazakh-famine/",
@@ -148,7 +148,7 @@
           "low": 346770,
           "high": 346770,
           "point": 346770,
-          "notes": "Sum of reported annual Gulag camp deaths for 1932\u20131939: 13,197 + 67,297 + 25,187 + 31,636 + 24,993 + 31,056 + 108,654 + 44,750. Archival coverage is incomplete and does not include all post-release deaths.",
+          "notes": "Sum of reported annual Gulag camp deaths for 1932–1939: 13,197 + 67,297 + 25,187 + 31,636 + 24,993 + 31,056 + 108,654 + 44,750. Archival coverage is incomplete and does not include all post-release deaths.",
           "sources": [
             "https://everything.explained.today/Soviet_gulag/",
             "https://paperzz.com/doc/8177982/victims-of-the-soviet-penal-system-in-the-pre"
@@ -160,7 +160,7 @@
           "low": 241355,
           "high": 389521,
           "point": null,
-          "notes": "Documented special-settlement deaths include 89,754 in 1932 and 151,601 in 1933, totaling 241,355 for the two peak years. A broader 1932\u20131940 kulak-exile figure gives 389,521 deaths.",
+          "notes": "Documented special-settlement deaths include 89,754 in 1932 and 151,601 in 1933, totaling 241,355 for the two peak years. A broader 1932–1940 kulak-exile figure gives 389,521 deaths.",
           "sources": [
             "https://istmat.org/node/52095",
             "https://blogs.helsinki.fi/gulagechoes/2022/03/24/escapes-concealing-death-the-importance-of-regional-archives-for-clarification-of-gulag-death-toll/",
@@ -173,7 +173,7 @@
           "low": 1500,
           "high": 4000,
           "point": null,
-          "notes": "About 6,000\u20136,700 deportees were abandoned on Nazino Island in 1933; estimates range from 1,500\u20132,000 deaths in thirteen weeks to around 4,000 dead or disappeared in memorial accounts.",
+          "notes": "About 6,000–6,700 deportees were abandoned on Nazino Island in 1933; estimates range from 1,500–2,000 deaths in thirteen weeks to around 4,000 dead or disappeared in memorial accounts.",
           "sources": [
             "https://en.wikipedia.org/wiki/Nazino_tragedy",
             "https://www.cipdh.gob.ar/memorias-situadas/en/lugar-de-memoria/memorial-de-la-isla-nazino/"
@@ -215,13 +215,13 @@
     }
   ],
   "totals": {
-    "military_low": 780,
-    "military_high": null,
+    "military_low": 0,
+    "military_high": 0,
     "civilian_low": 6769817,
     "civilian_high": 10117983,
     "grand_low": 6769817,
     "grand_high": 10117983,
-    "notes": "Working roll-up: low = 5,500,000 famine + 681,692 Great Terror executions + 346,770 Gulag camp deaths for 1932\u20131939 + 241,355 special-settlement deaths in 1932\u20131933. High = 8,700,000 famine + 681,692 executions + 346,770 Gulag camp deaths + 389,521 broader 1932\u20131940 kulak-exile deaths. Military purge deaths overlap with Great Terror executions and are not added separately. The total is approximate because famine, camp, deportation, and special-settlement categories may overlap."
+    "notes": "Military deaths set to zero for this entry's accounting: Holodomor famine deaths and Great Purge executions were state violence against civilians. Purged Red Army officers (roughly 20,000-35,000 arrested, a fraction executed) are counted within the execution totals and were not combat deaths; no separate combatant class exists. Working roll-up: low = 5,500,000 famine + 681,692 Great Terror executions + 346,770 Gulag camp deaths for 1932–1939 + 241,355 special-settlement deaths in 1932–1933. High = 8,700,000 famine + 681,692 executions + 346,770 Gulag camp deaths + 389,521 broader 1932–1940 kulak-exile deaths. Military purge deaths overlap with Great Terror executions and are not added separately. The total is approximate because famine, camp, deportation, and special-settlement categories may overlap."
   },
   "key_atrocities": [
     {
@@ -260,7 +260,7 @@
       "victims_group": "Alleged enemies of the people, former kulaks, clergy, minorities, party cadres, state officials, and military personnel",
       "low": 681692,
       "high": 681692,
-      "notes": "Official archival execution total for 1937\u20131938: 353,074 in 1937 and 328,618 in 1938.",
+      "notes": "Official archival execution total for 1937–1938: 353,074 in 1937 and 328,618 in 1938.",
       "sources": [
         "https://dokumen.pub/master-of-the-house-stalin-and-his-inner-circle-9780300161281.html",
         "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/purges"
@@ -310,7 +310,7 @@
       "victims_group": "Urban deportees and special settlers sent to Nazino Island",
       "low": 1500,
       "high": 4000,
-      "notes": "Approximately 6,000\u20136,700 deportees were abandoned; estimates range from 1,500\u20132,000 deaths to about 4,000 dead or disappeared.",
+      "notes": "Approximately 6,000–6,700 deportees were abandoned; estimates range from 1,500–2,000 deaths to about 4,000 dead or disappeared.",
       "sources": [
         "https://en.wikipedia.org/wiki/Nazino_tragedy",
         "https://www.cipdh.gob.ar/memorias-situadas/en/lugar-de-memoria/memorial-de-la-isla-nazino/"
@@ -321,12 +321,12 @@
   "sources": [
     {
       "url": "https://www.gis.huri.harvard.edu/publications/demography-man-made-human-catastrophe-case-massive-famine-ukraine-1932%E2%80%931933",
-      "title": "Demography of a Man-Made Human Catastrophe: the Case of Massive Famine in Ukraine 1932\u20131933",
+      "title": "Demography of a Man-Made Human Catastrophe: the Case of Massive Famine in Ukraine 1932–1933",
       "publisher": "Harvard Ukrainian Research Institute / MAPA"
     },
     {
       "url": "https://www.nber.org/papers/w29089",
-      "title": "The Causes of Ukrainian Famine Mortality, 1932\u201333",
+      "title": "The Causes of Ukrainian Famine Mortality, 1932–33",
       "publisher": "National Bureau of Economic Research"
     },
     {
@@ -336,12 +336,12 @@
     },
     {
       "url": "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CA%5CFamine6Genocideof1932hD73.htm",
-      "title": "Famine-Genocide of 1932\u20133",
+      "title": "Famine-Genocide of 1932–3",
       "publisher": "Encyclopedia of Ukraine"
     },
     {
       "url": "https://ewjus.com/index.php/ewjus/article/view/220",
-      "title": "The Kazakh Famine of 1930\u201333: Current Research and New Directions",
+      "title": "The Kazakh Famine of 1930–33: Current Research and New Directions",
       "publisher": "East/West: Journal of Ukrainian Studies"
     },
     {
@@ -351,7 +351,7 @@
     },
     {
       "url": "https://www.wilsoncenter.org/publication/the-kazakh-famine-1930-33-and-the-politics-history-the-post-soviet-space",
-      "title": "The Kazakh Famine of 1930\u201333 and the Politics of History in the Post-Soviet Space",
+      "title": "The Kazakh Famine of 1930–33 and the Politics of History in the Post-Soviet Space",
       "publisher": "Wilson Center"
     },
     {
@@ -371,7 +371,7 @@
     },
     {
       "url": "https://bfi.uchicago.edu/working-papers/the-anatomy-of-the-great-terror-a-quantitative-analysis-of-the-1937-38-purges-in-the-red-army/",
-      "title": "The Anatomy of the Great Terror: A Quantitative Analysis of the 1937\u201338 Purges in the Red Army",
+      "title": "The Anatomy of the Great Terror: A Quantitative Analysis of the 1937–38 Purges in the Red Army",
       "publisher": "Becker Friedman Institute, University of Chicago"
     },
     {

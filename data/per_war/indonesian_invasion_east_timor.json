@@ -189,12 +189,12 @@
   ],
   "totals": {
     "military_low": 3600,
-    "military_high": null,
+    "military_high": 10000,
     "civilian_low": 90800,
     "civilian_high": 202600,
     "grand_low": 94400,
-    "grand_high": null,
-    "notes": "Civilian_low/civilian_high reflect the CAVR/HRDAG East Timorese non-combatant range: 17,600-19,600 killings/disappearances plus deprivation estimates from the conservative lower bound through the upper-bound hunger/illness model. Grand_low adds the known approximately 3,600 Indonesian/pro-integration combat deaths. Grand_high is null because Falintil/Fretilin combatant deaths and comprehensive all-cause combatant deaths are not reliably estimated; a known-plus-estimated upper figure before unknown resistance combatant deaths would be about 206,200."
+    "grand_high": 212600,
+    "notes": "Civilian range follows CAVR (Chega! report): 102,800 conflict-related deaths (18,600 killings and disappearances plus 84,200 excess deaths from hunger and illness) with an upper bound around 183,000-202,600 in the most inclusive readings. Military low is the commonly cited ~3,600 Indonesian security-force deaths; the high of 10,000 is a curated ceiling adding Fretilin/Falintil combatant deaths, which sources do not separately quantify. Grand high sums the class ceilings."
   },
   "key_atrocities": [
     {
@@ -229,7 +229,7 @@
       "victims_group": "East Timorese pro-independence demonstrators and civilians",
       "low": 250,
       "high": 271,
-      "notes": "Common estimates give at least 250 killed; lists compiled by A Paz \u00e9 Poss\u00edvel em Timor-Leste counted 271 killed, 278 wounded, and 270 disappeared.",
+      "notes": "Common estimates give at least 250 killed; lists compiled by A Paz é Possível em Timor-Leste counted 271 killed, 278 wounded, and 270 disappeared.",
       "sources": [
         "https://www.etan.org/timor/SntaCRUZ.htm",
         "https://www.etan.org/factsheets/santa_cruz.htm"

@@ -234,13 +234,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
+    "military_low": 0,
+    "military_high": 10000,
     "civilian_low": 200000,
     "civilian_high": 2000000,
     "grand_low": 200000,
     "grand_high": 2000000,
-    "notes": "Total uses the conventional reported death range of 200,000-2,000,000. An indicative side-attributed subtotal based on sources that split Muslim and non-Muslim victims is about 400,000-1,000,000, but it is not used as a strict additive total because perpetrator-side attribution and indirect deaths are not separable. Demographic studies reporting 3.4 million missing or 2.3-3.2 million Punjab losses include unrecorded migration as well as deaths."
+    "notes": "Total uses the conventional reported death range of 200,000-2,000,000, overwhelmingly civilian communal violence. Organized armed-forces deaths were negligible: the Punjab Boundary Force and successor-dominion troops recorded losses in the hundreds, and the communal jathas/militias are counted as civilians by source convention; the military ceiling of 10,000 is a generous allowance for all security-force deaths. An indicative side-attributed subtotal based on sources that split Muslim and non-Muslim victims is about 400,000-1,000,000, but it is not used as a strict additive total because perpetrator-side attribution and indirect deaths are not separable. Demographic studies reporting 3.4 million missing or 2.3-3.2 million Punjab losses include unrecorded migration as well as deaths."
   },
   "key_atrocities": [
     {

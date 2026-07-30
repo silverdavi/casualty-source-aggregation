@@ -34,8 +34,8 @@
         ]
       },
       "civilians_killed_directly": {
-        "low": 62634,
-        "high": 97907,
+        "low": 64961,
+        "high": 101787,
         "point": null,
         "breakdown": [
           {
@@ -77,7 +77,7 @@
             ]
           }
         ],
-        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 62,634-97,907 (median 76,198); see `bayesian_combatant_share` for the simulator details.",
+        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 62,634-97,907 (median 76,198); see `bayesian_combatant_share` for the simulator details.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 64,961-101,787 (median 80,139); see `bayesian_combatant_share` for the simulator details.",
         "sources": [
           "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
           "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
@@ -123,10 +123,10 @@
         "other Gaza-based armed factions"
       ],
       "military_killed": {
-        "low": 1112,
-        "high": 2720,
-        "point": 1779,
-        "notes": "Spatial Bayesian importance sampler (n=200k, ESS=2277). Posterior on militant share of all Gaza dead: 2.5% (95% CI 1.6%\u20133.8%). IDF/Israeli-intel claim of 17\u201325k Hamas+PIJ killed is incompatible with the demographic profile of identified deaths and is recorded as a belligerent_claim only.",
+        "low": 1125,
+        "high": 2684,
+        "point": 1775,
+        "notes": "Spatial Bayesian importance sampler (n=200k, ESS=3475). Posterior on militant share of all Gaza dead: 2.2% (95% CI 1.5%\u20133.0%). IDF/Israeli-intel claim of 17\u201325k Hamas+PIJ killed is incompatible with the demographic profile of identified deaths and is recorded as a belligerent_claim only.",
         "sources": [
           "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
           "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
@@ -218,14 +218,13 @@
     }
   ],
   "totals": {
-    "military_low": 2451,
-    "military_high": 4741,
-    "civilian_low": 68036,
-    "civilian_high": 111393,
-    "grand_low": 70487,
-    "grand_high": 116134,
-    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. Indirect (blockade/famine/healthcare-collapse) deaths are bounded by the 2026 Lancet Global Health household-survey measured range (4,500-12,500), not by the 2024 Lancet 186k+ scenario; that projected scenario is treated as a sensitivity case only and is documented in the corresponding deaths_from_actions note. See `bayesian_combatant_share`.",
-    "sensitivity_grand_high_with_lancet_186k_scenario": 252148
+    "military_low": 2464,
+    "military_high": 4705,
+    "civilian_low": 70363,
+    "civilian_high": 115183,
+    "grand_low": 72827,
+    "grand_high": 119888,
+    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. See `bayesian_combatant_share`."
   },
   "key_atrocities": [
     {
@@ -385,49 +384,49 @@
   ],
   "bayesian_combatant_share": {
     "method": "spatial_importance_sampler (5 govs \u00d7 80 cells)",
-    "ess": 2277,
+    "ess": 3475,
     "n_draws": 200000,
     "posterior": {
       "militant_share_q": {
-        "median": 0.0254,
+        "median": 0.0215,
         "ci_95": [
-          0.0163,
-          0.0384
+          0.0148,
+          0.0304
         ]
       },
       "militants_killed": {
-        "median": 1779,
+        "median": 1775,
         "ci_95": [
-          1112,
-          2720
+          1125,
+          2684
         ]
       },
       "civilian_adult_males_killed": {
-        "median": 25563,
+        "median": 30249,
         "ci_95": [
-          22100,
-          29385
+          24496,
+          38437
         ]
       },
       "women_plus_children_killed": {
-        "median": 50635,
+        "median": 49889,
         "ci_95": [
-          40534,
-          68522
+          40465,
+          63350
         ]
       },
       "total_direct_deaths_true": {
-        "median": 78298,
+        "median": 81890,
         "ci_95": [
-          65384,
-          97441
+          66412,
+          103974
         ]
       },
       "civ_to_mil_ratio": {
-        "median": 43.2,
+        "median": 45.5,
         "ci_95": [
-          30.1,
-          64.1
+          31.9,
+          66.5
         ]
       }
     },

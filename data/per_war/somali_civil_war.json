@@ -334,13 +334,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": null,
-    "civilian_high": null,
+    "military_low": 30000,
+    "military_high": 100000,
+    "civilian_low": 250000,
+    "civilian_high": 970000,
     "grand_low": 350000,
     "grand_high": 1000000,
-    "notes": "Grand total uses the common post-1991 overall range of roughly 350,000-1,000,000 deaths. The low/high cannot be rolled up cleanly from per-side buckets because famine and excess-mortality deaths are not attributable to single sides and because direct violent deaths are often reported as aggregate fatalities rather than civilian/combatant or perpetrator-specific deaths."
+    "notes": "Grand range 350,000-1,000,000 spans the commonly cited totals including the 1991-92 and 2010-12 famines (the 2010-12 famine alone killed ~258,000 per FEWS NET/FSNAU). Military bracket: UCDP records ~24,700 battle deaths for 1982-1999 and ~30,000 for 2006-2022 (lows 11,000/26,700, highs 44,000/41,400), summing to roughly 30,000-85,000; the ceiling of 100,000 allows for unrecorded combatant deaths in the 2000-2005 gap and militia losses. Civilian range is the grand range minus the military bracket; civilian mortality is overwhelmingly indirect (famine and disease)."
   },
   "key_atrocities": [
     {

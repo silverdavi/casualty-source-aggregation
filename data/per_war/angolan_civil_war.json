@@ -251,13 +251,13 @@
     }
   ],
   "totals": {
-    "military_low": 40000,
-    "military_high": null,
-    "civilian_low": 100000,
-    "civilian_high": null,
+    "military_low": 43620,
+    "military_high": 160000,
+    "civilian_low": 340000,
+    "civilian_high": 756000,
     "grand_low": 500000,
     "grand_high": 800000,
-    "notes": "The military_low is the SIPRI/PRIO-cited figure of more than 40,000 military deaths by 1975-1995, not side-attributed. The civilian_low is HRW's estimate of 100,000 civilian deaths since the 1992 restart by late 1994 alone, not an all-war civilian total. The grand range uses the common 500,000-800,000 war-related range, with the World Bank point estimate of 750,000."
+    "notes": "Grand range 500,000-800,000 follows the commonly cited totals including famine and disease mortality. Military bracket follows PRIO/UCDP battle-related deaths for the government-UNITA conflict (43,620-146,897), extended to 160,000 to allow for unrecorded combatant deaths; battle-death coding includes some civilians, so the bracket is generous. Civilian range is the grand range minus the military bracket; the great majority of civilian deaths were indirect (famine, disease, displacement)."
   },
   "key_atrocities": [
     {
@@ -357,7 +357,7 @@
     {
       "url": "https://www.msf.fr/sites/default/files/2002-10-01-MSF.pdf",
       "title": "Angola: Sacrifice of a People",
-      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+      "publisher": "Médecins Sans Frontières"
     },
     {
       "url": "https://ucdp.uu.se/downloads/",

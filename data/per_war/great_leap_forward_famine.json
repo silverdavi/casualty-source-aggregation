@@ -38,14 +38,14 @@
             "victims_group": "Chinese civilians, especially rural peasants accused of hiding grain, fleeing famine areas, stealing food, resisting officials, or failing quotas",
             "low": 2000000,
             "high": 3000000,
-            "notes": "Based mainly on Frank Dik\u00f6tter's archival interpretation; Britannica summarizes 2-3 million deaths due to torture and execution, while Newsweek reports Dik\u00f6tter's figure as at least 2.5 million tortured to death or summarily killed. This is contested and not separately estimated in most demographic studies.",
+            "notes": "Based mainly on Frank Dikötter's archival interpretation; Britannica summarizes 2-3 million deaths due to torture and execution, while Newsweek reports Dikötter's figure as at least 2.5 million tortured to death or summarily killed. This is contested and not separately estimated in most demographic studies.",
             "sources": [
               "https://www.britannica.com/facts/Great-Leap-Forward",
               "https://www.newsweek.com/maos-great-famine-72301"
             ]
           }
         ],
-        "notes": "Direct civilian killing was real and widespread in archival and survivor accounts, but the national number is much less securely established than total excess mortality. The 2-3 million range is primarily associated with Dik\u00f6tter and should be treated as an estimate, not a census count.",
+        "notes": "Direct civilian killing was real and widespread in archival and survivor accounts, but the national number is much less securely established than total excess mortality. The 2-3 million range is primarily associated with Dikötter and should be treated as an estimate, not a census count.",
         "sources": [
           "https://www.britannica.com/facts/Great-Leap-Forward",
           "https://www.newsweek.com/maos-great-famine-72301",
@@ -75,7 +75,7 @@
           "low": null,
           "high": null,
           "point": null,
-          "notes": "Dik\u00f6tter's total includes people 'worked' to death, but accessible summaries do not provide a separate nationwide number for forced-labor or overwork deaths alone.",
+          "notes": "Dikötter's total includes people 'worked' to death, but accessible summaries do not provide a separate nationwide number for forced-labor or overwork deaths alone.",
           "sources": [
             "https://fsi.stanford.edu/events/maos_great_famine_a_history_of_chinas_most_devastating_catastrophe",
             "https://catalogue.nla.gov.au/catalog/8170496"
@@ -85,13 +85,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
+    "military_low": 0,
+    "military_high": 0,
     "civilian_low": 15000000,
     "civilian_high": 45000000,
     "grand_low": 15000000,
     "grand_high": 45000000,
-    "notes": "The total is a mainstream excess-mortality range for the famine, not a battlefield casualty sum. The internal split used here is approximately 2-3 million direct civilian killings plus about 13-42 million indirect famine/policy deaths, but most demographic estimates do not separate these categories cleanly. Lower revisionist estimates around 4-5 million and broader upper ranges to 50-55 million exist but are not used as the main rollup."
+    "notes": "Military deaths set to zero: the Great Leap Forward famine was not an armed conflict and has no combatant death class; all deaths are civilian famine mortality. The total is a mainstream excess-mortality range for the famine, not a battlefield casualty sum. The internal split used here is approximately 2-3 million direct civilian killings plus about 13-42 million indirect famine/policy deaths, but most demographic estimates do not separate these categories cleanly. Lower revisionist estimates around 4-5 million and broader upper ranges to 50-55 million exist but are not used as the main rollup."
   },
   "key_atrocities": [
     {
@@ -115,7 +115,7 @@
       "victims_group": "Chinese civilians, especially rural peasants",
       "low": 2000000,
       "high": 3000000,
-      "notes": "Dik\u00f6tter/Britannica/Newsweek estimate; contested and not cleanly separated in most demographic mortality studies.",
+      "notes": "Dikötter/Britannica/Newsweek estimate; contested and not cleanly separated in most demographic mortality studies.",
       "sources": [
         "https://www.britannica.com/facts/Great-Leap-Forward",
         "https://www.newsweek.com/maos-great-famine-72301"
@@ -169,12 +169,12 @@
     },
     {
       "url": "https://academic.oup.com/restud/article/82/4/1568/2607347",
-      "title": "The Institutional Causes of China's Great Famine, 1959\u20131961",
+      "title": "The Institutional Causes of China's Great Famine, 1959–1961",
       "publisher": "Review of Economic Studies / Oxford Academic"
     },
     {
       "url": "https://www.kellogg.northwestern.edu/faculty/qian/resources/MPQY_FINAL.pdf",
-      "title": "The Institutional Causes of China's Great Famine, 1959\u20131961",
+      "title": "The Institutional Causes of China's Great Famine, 1959–1961",
       "publisher": "Northwestern Kellogg / authors' PDF"
     },
     {
@@ -240,11 +240,11 @@
     {
       "url": "https://seclusao.org/2023/06/03/resolution-on-certain-questions-in-the-history-of-our-party-since-the-founding-of-the-peoples-republic-of-china-adopted-by-the-60th-plenary-session-of-the-11th-central-committee-of-the-commu/",
       "title": "Resolution on Certain Questions in the History of Our Party Since the Founding of the People's Republic of China",
-      "publisher": "Seclus\u00e3o Anag\u00f3gica / translation mirror"
+      "publisher": "Seclusão Anagógica / translation mirror"
     },
     {
       "url": "https://dsimian.com/2023/08/29/tombstone-the-great-chinese-famine-1958-1962-by-yang-jisheng/",
-      "title": "Tombstone: The Great Chinese Famine, 1958-1962 \u2013 by Yang Jisheng",
+      "title": "Tombstone: The Great Chinese Famine, 1958-1962 – by Yang Jisheng",
       "publisher": "D. Simian review"
     },
     {

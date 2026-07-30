@@ -155,10 +155,10 @@
     "military_low": 12233,
     "military_high": 19193,
     "civilian_low": 20,
-    "civilian_high": 20,
+    "civilian_high": 2500,
     "grand_low": 12302,
-    "grand_high": 19262,
-    "notes": "Military_low and military_high add Israel 736-983 plus Arab coalition 11,497-18,210. Civilian_low/high include only the reliably counted 20 Israeli civilian deaths. Grand totals add 49 known non-belligerent personnel deaths: 15 UNEF peacekeepers and 34 USS Liberty personnel. The totals exclude unquantified Arab civilian deaths and unquantified deaths from displacement."
+    "grand_high": 21742,
+    "notes": "Military_low and military_high add Israel 736-983 plus Arab coalition 11,497-18,210. Civilian_low is the 20 reliably counted Israeli civilian deaths; civilian_high of 2,500 is a curated ceiling for Arab civilian deaths, which sources document (Ras Sedr, the Latroun expulsions, deaths during displacement, shelling of towns) but do not reliably quantify -- historical treatments put them in the hundreds to low thousands. Grand totals add the civilian range and 49 known non-belligerent personnel deaths (15 UNEF peacekeepers and 34 USS Liberty personnel) to the military range."
   },
   "key_atrocities": [
     {

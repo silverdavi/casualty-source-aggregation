@@ -233,13 +233,13 @@
     }
   ],
   "totals": {
-    "military_low": 6276,
-    "military_high": null,
-    "civilian_low": 156,
-    "civilian_high": null,
+    "military_low": 60000,
+    "military_high": 250000,
+    "civilian_low": 100000,
+    "civilian_high": 400000,
     "grand_low": 200000,
     "grand_high": 490000,
-    "notes": "The military_low is a minimum for security/public officials killed. The civilian_low combines documented emblematic state-abuse cases and UCDP's narrow 2024 one-sided cartel civilian killings, so it is not a real all-period civilian toll. The grand_low is an analytic lower-bound estimate for organized-crime/drug-war-related deaths based on official early drug-war counts, organized-crime homicide shares, and later annual organized-crime homicide levels. The grand_high is the approximate all-homicide envelope since 2006 through early 2026, not all of which is drug-war-related."
+    "notes": "Grand range covers drug-war-attributed homicides plus the 100,000+ disappeared presumed dead. The combatant/civilian split is structurally blurred: cartel members are civilians in law but combatants in this accounting. Military bracket treats documented security-force deaths (~6,300 floor) plus cartel-member deaths -- UCDP non-state coding gives 18,300-31,000 for 2004-2017 in inter-cartel battles alone, and analyses of official 2007-2011 data attribute a large share of victims to cartel-affiliated persons -- spanning readings where cartel affiliates are a quarter to half of all victims. Civilian range is the residual. These brackets are curated judgments; the identification problem here is definitional as much as evidentiary."
   },
   "key_atrocities": [
     {
@@ -378,7 +378,7 @@
     },
     {
       "url": "https://www.excelsior.com.mx/2012/12/30/nacional/877111",
-      "title": "Violencia mat\u00f3 a 3 mil funcionarios; balance sexenal de la PGR",
+      "title": "Violencia mató a 3 mil funcionarios; balance sexenal de la PGR",
       "publisher": "Excelsior"
     },
     {

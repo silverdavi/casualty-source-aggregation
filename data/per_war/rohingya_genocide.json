@@ -285,8 +285,8 @@
     "civilian_low": 10475,
     "civilian_high": null,
     "grand_low": 10874,
-    "grand_high": null,
-    "notes": "The low total adds the conservative lower-bound military deaths and civilian direct/indirect deaths: Myanmar direct 7,800; Myanmar indirect 2,300; ARSA direct 105; AA direct 268; and combatants 399. A rough research-supported civilian range using high OIDA and MSF-derived indirect estimates is about 10,500 to 33,000+ civilians, but JSON high values are null because ARSA, AA and 2024-2026 indirect deaths lack reliable upper bounds."
+    "grand_high": 43700,
+    "notes": "Grand low sums the documented classes. Grand high of 43,700 reflects the ISCI/Ontario International Development Agency upper estimate of Rohingya killed or missing presumed dead in the 2016-2017 clearance operations; MSF survey-based estimates for August-September 2017 alone are 9,400+ deaths including 6,700 from violence. Military deaths (insurgent and security-force) are the small documented bracket; the remainder of the toll is civilian."
   },
   "key_atrocities": [
     {
@@ -421,7 +421,7 @@
     {
       "url": "https://www.msf.org/myanmarbangladesh-msf-surveys-estimate-least-6700-rohingya-were-killed-during-attacks-myanmar",
       "title": "MSF surveys estimate that at least 6,700 Rohingya were killed during attacks in Myanmar",
-      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+      "publisher": "Médecins Sans Frontières"
     },
     {
       "url": "https://www.doctorswithoutborders.org/latest/msf-least-6700-rohingya-killed-during-attacks-myanmar",

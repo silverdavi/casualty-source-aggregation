@@ -431,12 +431,12 @@
   ],
   "totals": {
     "military_low": 9400,
-    "military_high": null,
-    "civilian_low": 1166,
-    "civilian_high": null,
+    "military_high": 22000,
+    "civilian_low": 3400,
+    "civilian_high": 28000,
     "grand_low": 25412,
     "grand_high": 37502,
-    "notes": "Military_low sums the two 2011 side-specific combatant estimates only: 4,700 anti-Gaddafi plus about 4,700 loyalist dead. Civilian_low uses Airwars' 2011 all-belligerents civilian-harm minimum as a documented floor, not a full civilian total. Grand_low combines the 2013 Libyan reassessment for 2011, about 9,400 dead, with about 16,012 ACLED-reported fatalities for 2014-2020. Grand_high combines the 21,490 public-health estimate for February 2011-February 2012 with the same 16,012 ACLED 2014-2020 total. Per-side civilian numbers should not be summed because incident datasets overlap and use different definitions."
+    "notes": "Grand range 25,412-37,502 sums reported deaths across the 2011 uprising (survey-based estimate ~21,500 killed Feb 2011-Feb 2012; UCDP battle deaths 4,505-7,263), the 2014-2020 second civil war, and interim violence. Military bracket: side-reported combatant deaths give the floor; the 22,000 ceiling reflects that most reported battle deaths in both wars were fighters. Civilian range is the grand range minus the military bracket."
   },
   "key_atrocities": [
     {
@@ -563,7 +563,7 @@
     },
     {
       "url": "https://www.hrw.org/report/2012/05/13/unacknowledged-deaths/civilian-casualties-natos-air-campaign-libya",
-      "title": "Unacknowledged Deaths: Civilian Casualties in NATO\u2019s Air Campaign in Libya",
+      "title": "Unacknowledged Deaths: Civilian Casualties in NATO’s Air Campaign in Libya",
       "publisher": "Human Rights Watch"
     },
     {

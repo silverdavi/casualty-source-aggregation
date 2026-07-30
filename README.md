@@ -41,6 +41,7 @@ analyst trusts more. This repository provides:
 │   ├── gaza_bayesian.py       first-pass demographic Bayes for Gaza
 │   ├── summarize.py           rebuild data/SUMMARY.md, summary.json, totals.csv
 │   ├── validate_bounds.py     recompute every number in the paper (fails on drift)
+│   ├── check_sim_claims.py    re-derive Appendix B's simulator claims (fails on drift)
 │   └── verify_proofs.py       sympy + Monte-Carlo checks of every theorem
 ├── formal/
 │   └── casualty_proofs/       Lean 4 / mathlib machine-checked proofs (no sorrys)
@@ -172,6 +173,12 @@ python3 analysis/verify_proofs.py         # sympy + Monte-Carlo checks of every 
 cd formal/casualty_proofs && lake build   # Lean 4 / mathlib machine-checked proofs
 ```
 
+`analysis/check_sim_claims.py` re-derives every behavioral statement the
+paper's Appendix B makes about the spatial simulator (prior-alone vs
+posterior quantiles, MoH/OHCHR re-anchoring, likelihood weighting, ESS,
+implied ratios) directly from `gaza_sim/01_simulator.py` and exits non-zero
+on any drift between the code and the appendix text.
+
 The Lean development (`formal/casualty_proofs/CasualtyProofs.lean`, no
 `sorry`s) kernel-checks the mathematical core: the identification
 inversions (eq. 2 and Theorem 3.3), monotonicity and derivative of
@@ -192,14 +199,15 @@ Key outputs (Ministry of Health demographic anchor, males 18+ convention):
   historically calibrated exposure range $\mu \in [2, 3.5]$.
 * IDF claim of 17--25k combatants killed ($q \approx 24$--$36\%$ over 70k):
   the 25k endpoint is infeasible for any $\mu \ge 1$; contradiction radii
-  range from $\rho \approx 8$ SE (agnostic exposure, MoH anchor) to
-  $\rho \approx 31$ SE (calibrated exposure, OHCHR anchor). The rejection
-  survives undercount-corrected death tolls (94k--106k) and a 5% Huber
+  range from $\rho \approx 8$ (agnostic exposure, MoH anchor) to
+  $\rho \approx 31$ (calibrated exposure, OHCHR anchor), in units of each
+  anchor's stated uncertainty scale. The rejection survives
+  undercount-corrected death tolls (107k--119k) and a 5% Huber
   contamination allowance on every input.
 * Spatial Bayesian posterior (one prior-dependent point *within* the set;
-  fully documented in the paper's Appendix B): $q = 2.5\%$, 95% credible
-  interval $[1.6\%, 3.8\%]$, implied civilian-to-combatant ratio
-  $\sim 43{:}1$ $[30, 64]$ (gaza_sim/report.md, gaza_sim/posterior.npz).
+  fully documented in the paper's Appendix B): $q = 2.2\%$, 95% credible
+  interval $[1.5\%, 3.0\%]$, implied civilian-to-combatant ratio
+  $45{:}1$ $[32, 66]$ (gaza_sim/report.md, gaza_sim/posterior.npz).
 
 ## Citation
 

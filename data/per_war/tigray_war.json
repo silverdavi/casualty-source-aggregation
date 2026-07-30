@@ -221,13 +221,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": 102000,
-    "civilian_high": 600000,
-    "grand_low": 102000,
+    "military_low": 100000,
+    "military_high": 300000,
+    "civilian_low": 162000,
+    "civilian_high": 378000,
+    "grand_low": 262000,
     "grand_high": 600000,
-    "notes": "The low figure uses the peer-reviewed estimate of more than 102,000 excess deaths among people aged 15+ inside Tigray; it is not a full all-age, all-region death toll. The high figure reflects Ghent/Nyssen-style famine and medical-deprivation modeling and Obasanjo's AU-mediator estimate of about 600,000 deaths. Military deaths by side are unknown and should not be added to these ranges without avoiding double-counting."
+    "notes": "Military range: UCDP recorded over 100,000 battle-related deaths in 2022 alone, primarily military (low); scholarly assessments put battle-related deaths for the full war conservatively at 300,000 (high), with combatant estimates reported from 250,000 upward. Civilian range: Ghent University estimate of 162,000-378,000 deaths from wartime violence, famine, and denial of healthcare. Grand high uses the widely cited ~600,000 total (African Union mediator Obasanjo); grand low sums the class lows."
   },
   "key_atrocities": [
     {

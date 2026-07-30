@@ -252,13 +252,13 @@
     }
   ],
   "totals": {
-    "military_low": null,
-    "military_high": null,
-    "civilian_low": 8194,
-    "civilian_high": null,
+    "military_low": 10000,
+    "military_high": 21200,
+    "civilian_low": 20083,
+    "civilian_high": 378800,
     "grand_low": 59000,
     "grand_high": 400000,
-    "notes": "Military deaths by side are unknown. The civilian_low of 8,194 is ACLED's reported civilian-targeting fatality total through 31 December 2024 and is not a full civilian death toll. The grand_low of 59,000 is ACLED's reported-fatality floor by April 2026. The grand_high of 400,000 reflects the high end of published all-cause estimates summarized by CSIS; 150,000 is a commonly cited lower all-cause estimate."
+    "notes": "Military range: ACLED records ~28,700 reported fatalities through November 2024, of which 7,500+ were civilians killed in direct targeting; the ~21,200 battle-event fatalities are predominantly SAF/RSF combatants (high), with the low allowing that battle events also include civilians. Civilian low is the documented direct count; civilian high is the grand high minus the military high. Grand range spans reported counts (assumed severe undercounts) to indirect-inclusive estimates of up to 400,000."
   },
   "key_atrocities": [
     {

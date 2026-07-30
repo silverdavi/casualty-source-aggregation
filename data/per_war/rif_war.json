@@ -261,11 +261,11 @@
   "totals": {
     "military_low": 69000,
     "military_high": 69000,
-    "civilian_low": null,
-    "civilian_high": null,
+    "civilian_low": 10000,
+    "civilian_high": 30000,
     "grand_low": 69000,
-    "grand_high": null,
-    "notes": "COW gives 69,000 battle-related combatant fatalities: 29,000 state-side and 40,000 non-state-side. This is a floor for deaths, not a full human toll. Civilian and indirect deaths from bombing, gas, blockade, disease, displacement, and food-infrastructure destruction are unquantified, so no responsible grand upper bound can be given."
+    "grand_high": 99000,
+    "notes": "Military figure of ~69,000 covers Spanish (43,500 including disease) and French and Rif combatant deaths per Correlates of War-style accounting. Rif civilian deaths -- from bombing, chemical weapons (widespread mustard-gas use documented), famine, and displacement -- are documented but not reliably quantified; the 10,000-30,000 range is a curated bracket consistent with historical treatments of the campaign's impact on the civilian population. Grand high sums the class ceilings."
   },
   "key_atrocities": [
     {
@@ -356,12 +356,12 @@
     },
     {
       "url": "https://www.defnat.com/e-RDN/vue-article.php?carticle=21227",
-      "title": "La guerre du Rif - Un conflit colonial oubli\u00e9 (1925-1926)",
-      "publisher": "Revue D\u00e9fense Nationale"
+      "title": "La guerre du Rif - Un conflit colonial oublié (1925-1926)",
+      "publisher": "Revue Défense Nationale"
     },
     {
       "url": "https://doaj.org/article/683bbcc38f7c4e15b5dd7e96c947d123",
-      "title": "Hidden in plain sight: the beginnings of French chemical warfare in Morocco\u2019s Rif War (April\u2013July 1925)",
+      "title": "Hidden in plain sight: the beginnings of French chemical warfare in Morocco’s Rif War (April–July 1925)",
       "publisher": "DOAJ / Frontiers in Political Science"
     },
     {

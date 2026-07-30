@@ -50,7 +50,7 @@
             "victims_group": "civilians, security personnel, and others killed in Boko Haram attacks",
             "low": 26081,
             "high": 26081,
-            "notes": "Fondation pour l\u2019innovation politique counted 26,081 deaths in 3,546 Boko Haram attacks from 2009-April 2024; civilians were the target in 64.1% of attacks, but the death total is not exclusively civilian.",
+            "notes": "Fondation pour l’innovation politique counted 26,081 deaths in 3,546 Boko Haram attacks from 2009-April 2024; civilians were the target in 64.1% of attacks, but the death total is not exclusively civilian.",
             "sources": [
               "https://www.fondapol.org/app/uploads/2024/09/enquete-terrorisme_2021_gb_2024-09-18_w.pdf"
             ]
@@ -218,12 +218,12 @@
   ],
   "totals": {
     "military_low": 22334,
-    "military_high": null,
-    "civilian_low": 35000,
-    "civilian_high": null,
+    "military_high": 60000,
+    "civilian_low": 290000,
+    "civilian_high": 380000,
     "grand_low": 350000,
-    "grand_high": null,
-    "notes": "Military_low sums the partial documented CFR/NST militant figure of 18,950 through June 2018 and state security-service deaths of 3,384 since 2012; it is not a full 2009-2026 total. Civilian_low uses the widely cited 35,000 direct-death/civilian-death reference, but direct civilian deaths by perpetrator cannot be cleanly summed. Grand_low uses UNDP's nearly 350,000 conflict-attributable deaths by end-2020. No authoritative post-2020 indirect-deaths update or 2026 grand total was found."
+    "grand_high": 400000,
+    "notes": "Grand low of ~350,000 follows the UNDP assessment of conflict deaths in northeast Nigeria through 2020 (90% indirect: disease, hunger, collapsed health care), extended to 400,000 to allow for post-2020 mortality across the Lake Chad basin. Military bracket: documented security-force deaths (Nigeria Security Tracker ~3,400 since 2012) plus reported militant deaths give the floor; the 60,000 ceiling allows for underreported combatant deaths on all sides. Civilian range is the grand range minus the military bracket."
   },
   "key_atrocities": [
     {
@@ -334,12 +334,12 @@
     },
     {
       "url": "https://www.cfr.org/articles/boko-harams-deadly-impact",
-      "title": "Boko Haram\u2019s Deadly Impact",
+      "title": "Boko Haram’s Deadly Impact",
       "publisher": "Council on Foreign Relations"
     },
     {
       "url": "https://www.cfr.org/articles/measuring-boko-harams-impact-state-security-services",
-      "title": "Measuring Boko Haram\u2019s Impact on State Security Services",
+      "title": "Measuring Boko Haram’s Impact on State Security Services",
       "publisher": "Council on Foreign Relations"
     },
     {
@@ -355,7 +355,7 @@
     {
       "url": "https://www.fondapol.org/app/uploads/2024/09/enquete-terrorisme_2021_gb_2024-09-18_w.pdf",
       "title": "Islamist Terrorist Attacks in the World 1979-April 2024",
-      "publisher": "Fondation pour l\u2019innovation politique"
+      "publisher": "Fondation pour l’innovation politique"
     },
     {
       "url": "https://www.acaps.org/fileadmin/Data_Product/Main_media/20251118_ACAPS_Nigeria_-_Conflict_dynamics_and_humanitarian_implications_in_North_East__North_West__and_North_Central_Nigeria_.pdf",

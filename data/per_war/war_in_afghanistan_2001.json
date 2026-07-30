@@ -227,12 +227,12 @@
   ],
   "totals": {
     "military_low": 126284,
-    "military_high": null,
+    "military_high": 190000,
     "civilian_low": 46839,
-    "civilian_high": 406839,
+    "civilian_high": 170000,
     "grand_low": 176206,
-    "grand_high": 536206,
-    "notes": "Grand_low is the Costs of War direct-deaths total through August 2021. Civilian_low includes 46,319 Afghan civilians plus 74 journalists/media workers and 446 humanitarian/NGO workers from Costs of War. Civilian_high and grand_high add up to 360,000 possible additional indirect deaths suggested by Costs of War using a rough contemporary-war ratio; this indirect estimate is not side-attributable and should be treated as highly uncertain. Military_high is null because opposition-fighter deaths have no defensible public upper bound."
+    "grand_high": 360000,
+    "notes": "Grand_low is the Costs of War direct-deaths total through August 2021. Civilian_low includes 46,319 Afghan civilians plus 74 journalists/media workers and 446 humanitarian/NGO workers documented by Costs of War; civilian_high is the upper end of the IPPNW/PSR Body Count estimate of 106,000-170,000 civilians killed as a result of the fighting by all parties. Military_low sums the Costs of War side counts (~69,100 Afghan national military/police, ~52,900 opposition fighters, 2,461 US military, allied troops and contractors); military_high of 190,000 is a curated ceiling allowing opposition-fighter deaths, the least well counted class, to run up to roughly half again the recorded figure. Grand_high sums the class ceilings. Indirect deaths from disease and loss of access to food, water, and health care are real but have no Afghanistan-specific estimate; blanket contemporary-war multipliers (e.g. the Geneva Declaration 4:1 ratio) are deliberately not applied."
   },
   "key_atrocities": [
     {
@@ -358,12 +358,12 @@
     {
       "url": "https://www.msf.org/kunduz-hospital-attack-depth",
       "title": "Kunduz hospital attack in depth",
-      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+      "publisher": "Médecins Sans Frontières"
     },
     {
       "url": "https://www.msf.org/uk/node/48259",
       "title": "Dasht-e-Barchi: an attack on Hazara mothers",
-      "publisher": "M\u00e9decins Sans Fronti\u00e8res"
+      "publisher": "Médecins Sans Frontières"
     },
     {
       "url": "https://www.hrw.org/news/2021/05/10/killing-schoolgirls-afghanistan",
