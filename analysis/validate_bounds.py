@@ -266,6 +266,8 @@ print(f"  MoH anchor, mu in [2, 3.5]: q in [{set_moh_2_35[0]:.3f}, {set_moh_2_35
 check("q(1) MoH ~ 25.1%", q1_moh, 0.2513, 0.002)
 q2_moh = q_of_mu(OMEGA_MOH, W_POP, A_POP, F_STOCK, 2.0)
 check("q(2) MoH ~ 6.3%", q2_moh, 0.063, 0.002)
+check("calibrated ceiling CCR ~ 14.9 (quoted as 15)",
+      ccr_of_q(q2_moh), 14.9, 0.3)
 
 # mu required to rationalise each IDF endpoint on the MoH anchor
 mu_req_lo = mu_needed(q_idf_lo, OMEGA_MOH, W_POP, A_POP, F_STOCK)
@@ -608,9 +610,10 @@ lines = [
     r"\caption{\textbf{Convergence of methods on the Gaza combatant"
     r" share.} Every method's range lies within $q\in[0,{\sim}26\%]$, with"
     r" point estimates and calibrated bounds concentrated at the low end"
-    r" (the point estimates and calibrated bounds correspond to"
-    r" civilian-to-combatant ratios of roughly $3{:}1$ to $45{:}1$ on"
-    r" direct deaths). The upper end of the IDF claim ($35.7\%$) lies above"
+    r" (in civilian-to-combatant terms, even the loosest bound concedes"
+    rf" ${{\sim}}{ccr_of_q(q1_moh):.0f}{{:}}1$; calibrated bounds and"
+    rf" model-based estimates imply ${ccr_of_q(q2_moh):.0f}{{:}}1$--${SPATIAL_CCR:d}{{:}}1$"
+    r" on direct deaths). The upper end of the IDF claim ($35.7\%$) lies above"
     r" every range; its lower end ($24.3\%$) is reached only at endpoints"
     r" that grant civilian men no or minimal excess exposure (the $\mu\ge 1$"
     r" edge of the identified set, the top of the decomposition range) and"
@@ -718,6 +721,7 @@ MACRO_GROUPS = [
         ("nMOverD", f"{M_STOCK / D_MOH:.2f}"),            # 0.64 (manpower bound)
         ("nBlend", f"{OMEGA_BLEND:.3f}"),                 # 0.623 (geometric blend)
         ("nCcrAtQOne", fmt_int(ccr_of_q(q1_moh))),        # 3 (CCR at set's upper end)
+        ("nCcrCalibratedFloor", fmt_int(ccr_of_q(q2_moh))),  # 15 (CCR at calibrated ceiling)
     ]),
     ("Uniformity discrepancy (OHCHR sample vs population, descriptive)", [
         ("nZUnif", f"{z:.1f}"),                                     # -8.1
