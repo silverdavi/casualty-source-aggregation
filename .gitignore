@@ -52,7 +52,7 @@ htmlcov/
 
 # Per-journal submission packages and review correspondence (kept locally, not published)
 paper/submissions/
-paper/reviewer_response.md
+paper/reviewer_*
 
 tmp_scripts/
 tmp_script/

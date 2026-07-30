@@ -77,7 +77,7 @@
             ]
           }
         ],
-        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 62,634-97,907 (median 76,198); see `bayesian_combatant_share` for the simulator details.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 64,961-101,787 (median 80,139); see `bayesian_combatant_share` for the simulator details.",
+        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 64,961-101,787 (median 80,139); see `bayesian_combatant_share` for the simulator details.",
         "sources": [
           "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
           "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
@@ -92,7 +92,7 @@
           "low": 4500,
           "high": 12500,
           "point": 8450,
-          "notes": "Headline range now uses only the 2026 Lancet Global Health household survey's measured excess non-violent deaths in Gaza by 5 January 2025: low 4,500, high 12,500, point 8,450. The earlier Lancet 2024 correspondence scenario of 186,000+ total attributable deaths (which after subtracting 37,396 direct reported deaths would imply ~148,604 indirect) is a projection rather than a measured count; it is retained as a sensitivity scenario only and is no longer used as the headline upper bound. This avoids mixing measured direct deaths with a projected excess-mortality scenario in cross-conflict comparisons.",
+          "notes": "Headline range is the 2026 Lancet Global Health household survey's measured excess non-violent deaths in Gaza by 5 January 2025: low 4,500, high 12,500, point 8,450. The Lancet 2024 correspondence scenario of 186,000+ total attributable deaths (which after subtracting 37,396 direct reported deaths would imply ~148,604 indirect) is a projection rather than a measured count and is treated as a sensitivity scenario only, to avoid mixing measured direct deaths with a projected excess-mortality scenario in cross-conflict comparisons.",
           "sources": [
             "https://www.lemonde.fr/en/international/article/2026/02/19/gaza-s-local-authorities-massively-underreported-deaths-says-international-research-team_6750649_4.html",
             "https://doi.org/10.1016/S0140-6736(24)01169-3",

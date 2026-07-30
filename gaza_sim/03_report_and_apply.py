@@ -101,8 +101,12 @@ for s in data.get("sides", []):
         # civilians-killed-directly bucket from the simulator.
         cd["low"]  = gaza_civ_total_lo
         cd["high"] = gaza_civ_total_hi
+        # The re-allocation sentence is replaced, not appended, so reruns
+        # are idempotent and the note carries only the current posterior.
+        base_note = (cd.get("notes") or "").split(
+            "  +Spatial Bayesian re-allocation:")[0]
         cd["notes"] = (
-            (cd.get("notes") or "") +
+            base_note +
             f"  +Spatial Bayesian re-allocation: civilian deaths in Gaza = "
             f"{gaza_civ_total_lo:,}-{gaza_civ_total_hi:,} (median "
             f"{int(med(P['D_civAM']) + med(P['D_WC'])):,}); "
@@ -164,7 +168,7 @@ For comparison:
 
 | Source | Implied militant share q | Implied # militants killed |
 |---|---:|---:|
-| Israeli intel / IDF press claim | ~19–42 % | 17,000–25,000 |
+| Israeli intel / IDF press claim | ~24–36 % (17–25k over the ~70k recorded toll) | 17,000–25,000 |
 | Naïve OHCHR-only Bayesian (`gaza_bayesian.py`) | ~6 % | ~4,400 |
 | **This spatial simulator** | **{fmtp(med(P['q']))}** | **{fmt(med(P['D_milt']))}** |
 
@@ -209,7 +213,7 @@ parameter vector θ and compute expected deaths in closed form.
 | α | Targeting concentration: strikes ∝ N · (1 + α · ρ_milt)^β | Uniform(0, 8) |
 | β | Targeting non-linearity exponent | Uniform(0.6, 1.6) |
 | μ_M | Civilian adult-male exposure multiplier (≥1) | Uniform(1.0, 2.5) |
-| ε_C | Child exposure multiplier (≤1) | Uniform(0.7, 1.0) |
+| ε_C | Women+children class exposure multiplier (≤1, applied to the whole W+C bucket) | Uniform(0.7, 1.0) |
 | d̄ | Expected kills per air strike | Uniform(1.2, 2.8) — derived from MoH/strike ratio |
 | K_total | Total air-to-ground strikes | Uniform(29 k, 40 k) — CNN/AOAV/Airwars |
 | uc | MoH recovery factor (D_obs / D_true) | Uniform(1/1.7, 1/1.0) — Lancet capture–recapture |
@@ -275,7 +279,8 @@ exposure multiplier).  See panel (4) of `posterior_figure.png`:
 Even at the *no-differential* extreme (which is implausibly favourable
 to the IDF claim, because at minimum civilian men have been documented
 to attempt rescue, queue at aid points, and pray together), q does not
-get above **~3.5 %**.  The IDF claim of q ≈ 19–42 % requires either
+get above **~3.5 %**.  The IDF claim of q ≈ 24–36 % (17–25k over the
+~70k recorded toll) requires either
 (a) the MoH full-record demographics being inflated by ~10–25 pp on
 adult-male share — which would require a vast under-counting of women
 and children deaths — or (b) Hamas+PIJ pre-war manpower being many
@@ -308,8 +313,8 @@ is independently supported.
    of female/minor combatants would shift things slightly — but
    well within the existing 95 % CI.
 3. Indirect deaths (Khatib/Lancet excess-mortality scenarios up to
-   186 k) are *not* modelled here.  They are added separately in the
-   master `data.json` `deaths_from_actions` field for Israel's side.
+   186 k) are *not* modelled here.  They are recorded separately in the
+   `deaths_from_actions` field of `data/per_war/israel_gaza_war_2023.json`.
 4. We use closed-form expected deaths per cell instead of stochastic
    strikes.  Replacing with Poisson strikes wouldn't change posteriors
    meaningfully at 200 k draws.

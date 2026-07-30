@@ -1,5 +1,10 @@
 """Bayesian / demographic estimate of the combatant share of Gaza deaths.
 
+This is the demographic-only baseline; the spatial simulator in
+``gaza_sim/`` supersedes it for the paper's quoted posterior, and the
+manuscript's input conventions (combatant strength, f) differ from the
+sweep defaults below.
+
 Setup
 -----
 Let

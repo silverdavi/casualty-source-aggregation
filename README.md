@@ -40,7 +40,7 @@ analyst trusts more. This repository provides:
 │   ├── figure.py              5×3 grid headline figure (writes to figures/)
 │   ├── gaza_bayesian.py       first-pass demographic Bayes for Gaza
 │   ├── summarize.py           rebuild data/SUMMARY.md, summary.json, totals.csv
-│   ├── validate_bounds.py     recompute every number in the paper (fails on drift)
+│   ├── validate_bounds.py     recompute every derived bound, radius, and table entry (fails on drift)
 │   ├── check_sim_claims.py    re-derive Appendix B's simulator claims (fails on drift)
 │   └── verify_proofs.py       sympy + Monte-Carlo checks of every theorem
 ├── formal/
@@ -68,7 +68,6 @@ analyst trusts more. This repository provides:
     ├── figures/               vector publication figures
     ├── build_figures.py       regenerate publication figures
     ├── build_supplement.py    regenerate supplement.tex
-    ├── pval.py                Gaza uniformity p-value calculation
     └── supplement.tex         per-conflict diagnostics
 ```
 
@@ -194,8 +193,8 @@ dossier with full statements, detailed proofs, and per-claim verification
 notes.
 Key outputs (Ministry of Health demographic anchor, males 18+ convention):
 
-* Identified set for the Gaza combatant share: $q \in [0, 25.1\%]$ with no
-  exposure assumption ($\mu \ge 1$), $q \in [0, 6.3\%]$ under the
+* Identified set for the Gaza combatant share: $q \in [0, 25.1\%]$ under
+  only the weak assumption $\mu \ge 1$, $q \in [0, 6.3\%]$ under the
   historically calibrated exposure range $\mu \in [2, 3.5]$.
 * IDF claim of 17--25k combatants killed ($q \approx 24$--$36\%$ over 70k):
   the 25k endpoint is infeasible for any $\mu \ge 1$; contradiction radii
