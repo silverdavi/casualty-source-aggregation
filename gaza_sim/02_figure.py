@@ -199,14 +199,16 @@ ax.grid(True, axis="y", alpha=0.25)
 # ---------------------------------------------------------------- (8)
 # Demographic check: simulated vs observed adult-male share among dead
 ax = axes[2, 1]
-sim_AM_share = (P["D_civAM"] + P["D_milt"]) / np.maximum(P["D_obs"], 1)
+D_total_all = P["D_milt"] + P["D_civAM"] + P["D_WC"]
+sim_AM_share = (P["D_civAM"] + P["D_milt"]) / np.maximum(D_total_all, 1)
 ax.hist(sim_AM_share, bins=80, weights=w, density=True, color="#888",
         alpha=0.7, edgecolor="black", lw=0.3, label="simulated")
 ax.axvline(F["deaths_observed"]["ohchr_identification_sample"]["share_men_18_plus"],
            color="#3b6fb6", lw=2, label="OHCHR (n≈8k)")
-ax.axvline(F["deaths_observed"]["moh_demographic_breakdown_full_record"]["share_men_18_plus"],
-           color="#b8313a", lw=2, label="MoH full record (n≈70k)")
-ax.axvline(F["population"]["share_adult_males_18_60"]["point"],
+MOH_D = F["deaths_observed"]["moh_demographic_breakdown_identified"]["dec_2025"]
+ax.axvline(MOH_D["men_18_59"] / MOH_D["n_identified"],
+           color="#b8313a", lw=2, label="MoH identified record (n≈71k)")
+ax.axvline(F["population"]["share_working_age_men_18_59"]["point"],
            color="grey", ls="--", lw=1, label="pop baseline (PCBS)")
 ax.set_xlabel("Adult-male share of dead (combatant + civilian)")
 ax.set_ylabel("density")

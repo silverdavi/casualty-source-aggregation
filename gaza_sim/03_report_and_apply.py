@@ -28,6 +28,14 @@ def lo(arr):   return wq(arr, 0.025)
 def hi(arr):   return wq(arr, 0.975)
 
 
+def wq_cond(arr, mask, q):
+    """Weighted quantile of arr restricted to mask."""
+    a, ww = arr[mask], w[mask] / w[mask].sum()
+    s = np.argsort(a)
+    cw = np.cumsum(ww[s])
+    return float(a[s[np.searchsorted(cw, q)]])
+
+
 # ----------------------------------------------------------------------------
 # Patch data.json
 # ----------------------------------------------------------------------------
@@ -64,7 +72,7 @@ bayes_block = {
     "facts_used": F,
     "notes": ("Posterior over (M, γ, σ, α, β, μ_M, ε_C, d_bar, K_total, uc) "
               "with priors anchored to PCBS demographics, OCHA/UNOSAT bombing "
-              "stats, IISS/CSIS Hamas+PIJ strength estimates.  Likelihood "
+              "stats, IISS/RUSI/press-reported Hamas+PIJ strength estimates.  Likelihood "
               "from MoH late-2025 total deaths + OHCHR & MoH demographic "
               "share of dead.  No belligerent (IDF or Hamas) casualty claims "
               "used as priors."),
@@ -97,10 +105,17 @@ for s in data.get("sides", []):
         cd = s.get("civilians_killed_directly") or {}
         gaza_civ_total_lo = D_civAM_lo + D_WC_lo
         gaza_civ_total_hi = D_civAM_hi + D_WC_hi
-        # Keep Lebanon + West Bank components in side-notes; just set Gaza
-        # civilians-killed-directly bucket from the simulator.
-        cd["low"]  = gaza_civ_total_lo
-        cd["high"] = gaza_civ_total_hi
+        # The bucket is ALL THEATERS (matching the military side, which
+        # counts Lebanon-front fighters): Gaza from the simulator, plus the
+        # non-Gaza breakdown rows (Lebanon, West Bank).  A row with no
+        # published upper value carries its low into the high as a floor.
+        non_gaza_lo = sum((b.get("low") or 0) for b in cd.get("breakdown", [])
+                          if "Gaza" not in (b.get("victims_group") or ""))
+        non_gaza_hi = sum((b.get("high") or b.get("low") or 0)
+                          for b in cd.get("breakdown", [])
+                          if "Gaza" not in (b.get("victims_group") or ""))
+        cd["low"]  = gaza_civ_total_lo + non_gaza_lo
+        cd["high"] = gaza_civ_total_hi + non_gaza_hi
         # The re-allocation sentence is replaced, not appended, so reruns
         # are idempotent and the note carries only the current posterior.
         base_note = (cd.get("notes") or "").split(
@@ -111,6 +126,11 @@ for s in data.get("sides", []):
             f"{gaza_civ_total_lo:,}-{gaza_civ_total_hi:,} (median "
             f"{int(med(P['D_civAM']) + med(P['D_WC'])):,}); "
             "see `bayesian_combatant_share` for the simulator details."
+            "  Scope: ALL THEATERS, matching the military side (which counts"
+            " Lebanon-front fighters) -- low/high = Gaza (re-allocated) +"
+            f" the non-Gaza breakdown rows ({non_gaza_lo:,}-{non_gaza_hi:,};"
+            " the West Bank row has no upper figure, so its low is carried"
+            " into the high as a floor)."
         )
         s["civilians_killed_directly"] = cd
 
@@ -128,8 +148,14 @@ data["totals"] = {
     "civilian_low":  cd_lo + ind_lo, "civilian_high": cd_hi + ind_hi,
     "grand_low":  mil_lo + cd_lo + ind_lo,
     "grand_high": mil_hi + cd_hi + ind_hi,
-    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. "
-             "See `bayesian_combatant_share`.",
+    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead; see "
+             "`bayesian_combatant_share`. Scope is ALL THEATERS on both "
+             "sides: civilian totals include Lebanese and West Bank "
+             "civilians (matching the military totals, which include "
+             "Lebanon-front fighters). Civilian totals = direct civilian "
+             "deaths (all theaters) + deaths_from_actions (indirect; the "
+             "custody figure has no published upper value and enters the "
+             "low only).",
 }
 
 GAZA_DATA.write_text(json.dumps(data, indent=2))
@@ -180,10 +206,10 @@ population share of women+children (~73.5 %) and concludes that the
 civilian collateral pattern is *almost demographically representative*,
 forcing a militant share q ≈ 6 %.  But it ignores two large facts:
 
-1. The **MoH full-record** demographics (n ≈ 70 k) show **44 %
-   adult-male** among the dead, vs only **25.5 %** in the population.
-   That's a ~18-pp male over-representation, far larger than what
-   OHCHR's identified subsample shows.
+1. The **MoH identified-record** demographics (n = 71,444, Dec 2025)
+   show **47.7 % working-age men (18–59)** among the dead, vs only
+   **24.5 %** in the population.  That's a ~23-pp male over-representation,
+   far larger than what OHCHR's identified subsample shows.
 2. **Civilian adult males are not demographically average.**  They're
    outside more (work, mosques, fighting positions as civilians, food
    queues, picking up the wounded), so their per-capita risk under
@@ -207,7 +233,7 @@ parameter vector θ and compute expected deaths in closed form.
 
 | Param | Meaning | Prior |
 |---|---|---|
-| M | Total Hamas+PIJ militants in Gaza pop | Uniform(35 k, 60 k) — IISS / CSIS / Axios analyst range |
+| M | Total Hamas+PIJ militants in Gaza pop | Uniform(35 k, 60 k) — IISS / RUSI / press-reported analyst range |
 | γ | Log-clustering of militants across cells | Uniform(0, 1.5) |
 | σ | SD of cell-level latent log-density | Uniform(0.3, 1.2) |
 | α | Targeting concentration: strikes ∝ N · (1 + α · ρ_milt)^β | Uniform(0, 8) |
@@ -229,17 +255,20 @@ parameter vector θ and compute expected deaths in closed form.
 **Likelihood.**
 
 - Total observed: log-Normal(MoH late-2025 ≈ {fmt(F["deaths_observed"]["gaza_moh_total_through_late_2025"]["point"])}, σ=7 %).
-- Adult-male share among dead: weighted geometric mean of
-  - Beta posterior from OHCHR (n=8,119, observed 30.7 % adult-male),
-  - down-weighted Beta from MoH full record (n_eff ≈ 70 k / 5, observed 44 % adult-male).
+- Working-age-male share among dead: weighted geometric mean of
+  - Beta posterior from OHCHR (n=8,119, observed 30.7 % men 18+ — approximate
+    for the 18–59 class, no elderly split published),
+  - down-weighted Beta from the MoH identified record (n_eff = 71,444 / 5,
+    observed 47.7 % men 18–59).
 - No likelihood term uses any belligerent's combatant-killed claim.
 
 ## Inputs (all sourced; see `gaza_sim/facts.json`)
 
 - **Geography:** Gaza Strip 365 km², 5 governorates with PCBS 2023 populations
   totaling 2,226,544. (PCBS, OCHA, UNOSAT.)
-- **Demographics:** 47 % under 18, 49 % female, women+children share
-  73.3 %, adult-male 18–60 share 25.5 %.  (PCBS press releases.)
+- **Demographics:** 47 % under 18, 49 % female, working-age-male (18–59)
+  share 24.5 %; the complementary class (everyone else, incl. men 60+) is
+  75.5 %.  (PCBS press releases.)
 - **Militant strength:** Hamas + PIJ effective fighters pre-Oct-7 ≈
   35–60 k (point 45 k; ~2 % of Gaza pop).  (RUSI, Axios/Bloomberg, AJ.)
 - **Strikes / munitions:** ≈ 29–40 k air-to-ground strikes through
@@ -248,8 +277,9 @@ parameter vector θ and compute expected deaths in closed form.
 - **Deaths:** MoH ~46 k through Jan 2025, ~70 k through late 2025;
   Lancet/Khatib excess-mortality range 83–186 k including indirect.
 - **Demographic split of dead:** OHCHR Nov-2024 identified-sample
-  (n=8,119): 44.2 % children + 25.1 % women + 30.7 % men; MoH full
-  record (n≈70 k): 32 % children + 24 % women + 44 % men.  These two
+  (n=8,119): 44.2 % children + 25.1 % women + 30.7 % men 18+; MoH
+  identified record (n=71,444, Dec 2025, four categories): 29.8 % children
+  + 15.4 % women + 47.7 % men 18–59 + 7.1 % elderly 60+.  These two
   figures *jointly* anchor the model.
 - **MoH undercount factor:** 1.35–1.7 (Lancet capture–recapture, BMJ).
 
@@ -268,32 +298,33 @@ After importance sampling:
 
 ## Sensitivity to the civilian-male exposure assumption
 
-The single most influential parameter is μ_M (the civilian-male
-exposure multiplier).  See panel (4) of `posterior_figure.png`:
+See panel (4) of `posterior_figure.png` for q against μ_M (the
+civilian-male exposure multiplier).  Conditional medians (weighted):
 
-- μ_M = 1.0 (no exposure differential, men die proportionally to
-  population) ⇒ q ≈ **3.4 %**.
-- μ_M = 2.5 (strong exposure differential, civilian men die at 2.5×
-  per-capita rate of women+kids) ⇒ q ≈ **2.0 %**.
+- μ_M near 1.0 (no exposure differential) ⇒ q ≈ **{fmtp(wq_cond(P['q'], (P['mu_M'] >= 1.0) & (P['mu_M'] < 1.15), 0.5))}** (97.5th pct ≈ {fmtp(wq_cond(P['q'], (P['mu_M'] >= 1.0) & (P['mu_M'] < 1.15), 0.975))}).
+- μ_M near 2.5 (strong differential) ⇒ q ≈ **{fmtp(wq_cond(P['q'], P['mu_M'] > 2.35, 0.5))}**.
 
-Even at the *no-differential* extreme (which is implausibly favourable
-to the IDF claim, because at minimum civilian men have been documented
-to attempt rescue, queue at aid points, and pray together), q does not
-get above **~3.5 %**.  The IDF claim of q ≈ 24–36 % (17–25k over the
-~70k recorded toll) requires either
-(a) the MoH full-record demographics being inflated by ~10–25 pp on
-adult-male share — which would require a vast under-counting of women
-and children deaths — or (b) Hamas+PIJ pre-war manpower being many
-times larger than even the most generous IISS estimate (60 k).  Neither
-is independently supported.
+The posterior on q is nearly flat in μ_M: the militant-share ceiling is
+set primarily by the stock prior (M ≤ 60 k against ~82 k true direct
+dead) rather than by the exposure split, and q stays near 2 % across
+the whole μ_M range, never exceeding ~3 % even at the no-differential
+extreme (which is implausibly favourable to the IDF claim, because at
+minimum civilian men have been documented to attempt rescue, queue at
+aid points, and pray together).  The IDF claim of q ≈ 24–36 % (17–25k
+over the ~70k recorded toll) requires either (a) the identified
+record's composition overstating the non-male share by several
+percentage points to over ten (agnostic vs calibrated exposure) — far
+beyond its sampling error — or (b) Hamas+PIJ pre-war manpower being
+several times larger than even the most generous IISS estimate (60 k).
+Neither is independently supported.
 
 ## What would change my mind
 
 - A **demographically rigorous, randomised survey** of Gazan
   households mapping each death to age/sex/combatant-status from
   family interviews (currently the closest thing is OHCHR's identified
-  subsample).  If such a survey returned *adult-male share* well above
-  44 %, q would rise.
+  subsample).  If such a survey returned a *working-age-male share* well
+  above 48 %, q would rise.
 - A **publicly verifiable Hamas/PIJ KIA roll** with names, brigades,
   and dates, audited by an independent third party (no such roll
   currently exists).

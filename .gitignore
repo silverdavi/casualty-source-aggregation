@@ -50,9 +50,8 @@ dist/
 .coverage
 htmlcov/
 
-# Per-journal submission packages and review correspondence (kept locally, not published)
-paper/submissions/
-paper/reviewer_*
-
+# Authoring / process artefacts (kept locally, not published)
+paper/
+audit_cycles/
 tmp_scripts/
 tmp_script/

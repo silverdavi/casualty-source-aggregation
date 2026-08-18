@@ -107,26 +107,26 @@ om_flip = Sv_ - qv_ * (Sv_ - ev_)
 check("with eta > S and q >= 0, omega >= S (so 'omega<=S' route needs S>eta)",
       om_flip >= Sv_, f"omega={om_flip:.4f} vs S={Sv_}")
 # Gaza S values per mu; the claim's stated condition is S > eta-bar:
-W_g, A_g, F_g = 0.733, 0.267, 0.020
+W_g, A_g, F_g = 0.755, 0.245, 0.020
 S_of = lambda m: W_g / (W_g + m * (A_g - F_g))
-check("S(1)=0.748", abs(S_of(1) - 0.748) < 1e-3, f"{S_of(1):.4f}")
-check("S(1.5)=0.664", abs(S_of(1.5) - 0.664) < 1e-3, f"{S_of(1.5):.4f}")
-check("S(2)=0.597", abs(S_of(2) - 0.597) < 1e-3, f"{S_of(2):.4f}")
+check("S(1)=0.770", abs(S_of(1) - 0.770) < 1e-3, f"{S_of(1):.4f}")
+check("S(1.5)=0.691", abs(S_of(1.5) - 0.691) < 1e-3, f"{S_of(1.5):.4f}")
+check("S(2)>=0.626", S_of(2) >= 0.626 and abs(S_of(2) - 0.6266) < 1e-3, f"{S_of(2):.4f}")
 check("S > eta-bar on the whole grid", min(S_of(1), S_of(1.5), S_of(2)) > 0.03)
 # Exact per-mu bias at eta = 0.03 with q_hat = q(mu) at Gaza values, and
 # the loose uniform bound that pairs min S with max q_hat:
-OM_g = 0.560
+OM_g = 0.523
 q_of = lambda m: 1 - OM_g * (W_g + m * (A_g - F_g)) / W_g
 bias_of = lambda m, e=0.03: e * q_of(m) / (S_of(m) - e)
-check("Remark 3 exact bias at mu=1 is 1.05pp", abs(bias_of(1) - 0.0105) < 5e-5,
+check("Remark 3 exact bias at mu=1 is 1.30pp", abs(bias_of(1) - 0.0130) < 5e-5,
       f"{bias_of(1):.5f}")
-check("Remark 3 exact bias at mu=1.5 is 0.74pp", abs(bias_of(1.5) - 0.0074) < 5e-5,
+check("Remark 3 exact bias at mu=1.5 is 1.10pp", abs(bias_of(1.5) - 0.0110) < 5e-5,
       f"{bias_of(1.5):.5f}")
-check("Remark 3 exact bias at mu=2 is 0.33pp", abs(bias_of(2) - 0.0033) < 5e-5,
+check("Remark 3 exact bias at mu=2 is 0.83pp", abs(bias_of(2) - 0.0083) < 5e-5,
       f"{bias_of(2):.5f}")
-loose = 0.03 * 0.26 / (S_of(2) - 0.03)
-check("loose uniform bound ~1.4pp dominates every exact per-mu bias",
-      loose < 0.014 and all(bias_of(m) < loose for m in (1, 1.5, 2)),
+loose = 0.03 * 0.33 / (S_of(2) - 0.03)
+check("loose uniform bound ~1.7pp dominates every exact per-mu bias",
+      loose < 0.017 and all(bias_of(m) < loose for m in (1, 1.5, 2)),
       f"loose={loose:.4f}")
 check("exact bias decreases in mu", bias_of(2) < bias_of(1.5) < bias_of(1))
 # Direction: q_true > q_hat (understating), for omega < S:
@@ -143,9 +143,16 @@ else:
 # Corollary 3.4 (Manpower bound)
 # ===========================================================================
 print("\n== Corollary 3.4: manpower bound ==")
-# D_M <= M implies q = D_M/D <= M/D.  Trivially true; verify the joint
-# interval is exactly intersection:
-check("q <= M/D from D_M <= M (algebraic identity)", True, "D_M/D <= M/D iff D_M <= M, D>0")
+# D_M <= M implies q = D_M/D <= M/D (division by D > 0 preserves order).
+for _ in range(500):
+    Dv = rng.uniform(1.0, 100.0)
+    Mv = rng.uniform(0.0, 2.0 * Dv)
+    DMv = rng.uniform(0.0, Mv)
+    if DMv / Dv > Mv / Dv + 1e-12:
+        check("q <= M/D from D_M <= M", False, f"D_M={DMv}, M={Mv}, D={Dv}")
+        break
+else:
+    check("q <= M/D from D_M <= M (500 draws)", True)
 
 # ===========================================================================
 # Delta-method variance (Section 3)
@@ -177,18 +184,26 @@ for _ in range(300):
     sig2 = rng.uniform(0.1, 5.0, m)
     c_star = (1 / sig2) / (1 / sig2).sum()
     v_star = (c_star**2 * sig2).sum()
-    # random competitor weights summing to 1
-    c = rng.normal(size=m); c /= c.sum()
+    # random competitor weights summing to 1 (redraw near-degenerate sums,
+    # which would otherwise blow the weights up)
+    c = rng.normal(size=m)
+    while abs(c.sum()) < 0.1:
+        c = rng.normal(size=m)
+    c /= c.sum()
     if (c**2 * sig2).sum() < v_star - 1e-12:
         check("inverse-variance optimality", False)
         break
 else:
     check("inverse-variance weights optimal (300 random configs)", True)
-# Bias linearity:
+# Bias linearity: if each source reports theta + b_i, the precision-weighted
+# aggregate's bias is the precision-weighted mean of the b_i.
 b = sp.symbols("b1:4"); s = sp.symbols("s1:4", positive=True)
-agg_bias = sum(bi / si**2 for bi, si in zip(b, s)) / sum(1 / si**2 for si in s)
-check("bias formula is the precision-weighted mean of biases", True,
-      str(sp.simplify(agg_bias)))
+theta = sp.symbols("theta")
+prec_sum = sum(1 / si**2 for si in s)
+agg_est = sum((theta + bi) / si**2 for bi, si in zip(b, s)) / prec_sum
+agg_bias = sum(bi / si**2 for bi, si in zip(b, s)) / prec_sum
+check("bias formula is the precision-weighted mean of biases",
+      sp.simplify(agg_est - theta - agg_bias) == 0)
 
 # ===========================================================================
 # Theorem 4.3 (Feasibility and contradiction)
@@ -343,18 +358,18 @@ else:
 # Section 6 arithmetic spot checks (already in validate_bounds; re-assert core)
 # ===========================================================================
 print("\n== Section 6 arithmetic ==")
-W_, A_, F_, OM_ = 0.733, 0.267, 0.020, 0.560
+W_, A_, F_, OM_ = 0.755, 0.245, 0.020, 0.523
 qf = lambda m: 1 - OM_ * (W_ + m * (A_ - F_)) / W_
-check("q(1)=25.1%", abs(qf(1) - 0.2513) < 2e-3, f"{qf(1):.4f}")
-check("q(2)=6.3%", abs(qf(2) - 0.0626) < 2e-3, f"{qf(2):.4f}")
-check("q(mu)<=0 for mu>=2.34", qf(2.34) <= 0, f"q(2.34)={qf(2.34):.4f}")
+check("q(1)=32.1%", abs(qf(1) - 0.3211) < 2e-3, f"{qf(1):.4f}")
+check("q(2)=16.5%", abs(qf(2) - 0.1653) < 2e-3, f"{qf(2):.4f}")
+check("q(mu)<=0 for mu>=3.07", qf(3.07) <= 0, f"q(3.07)={qf(3.07):.4f}")
 mu_need = lambda qc: W_ * ((1 - qc) / OM_ - 1) / (A_ - F_)
-check("mu needed for 17k/70k = 1.04", abs(mu_need(17/70) - 1.045) < 0.01,
-      f"{mu_need(17/70):.4f}")
-check("mu needed for 25k/70k = 0.44 (<1: infeasible)", mu_need(25/70) < 1,
-      f"{mu_need(25/70):.4f}")
-check("q(1.5)=15.69% (exact to 6 decimals: 0.156944)",
-      abs(qf(1.5) - 0.156944) < 1e-4, f"{qf(1.5):.6f}")
+check("mu needed for 17k/71,444 = 1.53", abs(mu_need(17_000/71_444) - 1.534) < 0.01,
+      f"{mu_need(17_000/71_444):.4f}")
+check("mu needed for 25k/71,444 = 0.82 (<1: infeasible)",
+      mu_need(25_000/71_444) < 1, f"{mu_need(25_000/71_444):.4f}")
+check("q(1.5)=24.32% (exact to 6 decimals: 0.243208)",
+      abs(qf(1.5) - 0.243208) < 1e-4, f"{qf(1.5):.6f}")
 
 print()
 if FAIL:

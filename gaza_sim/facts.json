@@ -130,6 +130,17 @@
         "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
         "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
       ]
+    },
+    "share_working_age_men_18_59": {
+      "point": 0.245,
+      "sigma": 0.005,
+      "definition": "males 18-59, matching the MoH record's own category boundary (elderly = 60+)",
+      "notes": "PCBS males 18+ (0.267) minus males 60+ (~0.022: elderly ~5% of population with an even-to-slightly-female sex split); equals the low end of share_adult_males_18_60, whose 0.255 point would require the elderly to be ~76% female.",
+      "sources": [
+        "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+        "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
+        "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
+      ]
     }
   },
   "militant_strength": {
@@ -235,6 +246,7 @@
       "share_children_under_18": 0.442,
       "share_women_18_plus": 0.251,
       "share_men_18_plus": 0.307,
+      "notes": "OHCHR publishes no elderly split, so under the working-age (18-59) class convention share_men_18_plus slightly overstates the working-age-male share; rejections anchored on this sample hold a fortiori.",
       "sources": [
         "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
         "https://www.un.org/unispal/document/update-report-08nov24/",
@@ -242,15 +254,37 @@
         "https://www.reuters.com/world/middle-east/nearly-70-gaza-war-dead-women-children-un-rights-office-says-2024-11-08/"
       ]
     },
-    "moh_demographic_breakdown_full_record": {
-      "share_children_under_18": 0.32,
-      "share_women_18_plus": 0.24,
-      "share_men_18_plus": 0.44,
+    "moh_identified_named_list": {
+      "n": 50020,
+      "notes": "Named, fully identified individuals on the MoH list as of March 2025 (TfP/IBC killed-in-gaza microdata); one vintage of the identified record whose four-category breakdown appears below."
+    },
+    "moh_demographic_breakdown_identified": {
+      "definition": "MoH four-category breakdown of identified fatalities as republished by OCHA: children (<18), women (18-59), men (18-59), elderly (60+, both sexes). The 'men' category excludes elderly men, who sit in the sex-mixed elderly bucket (~60% male on named-list microdata).",
+      "dec_2025": {
+        "as_of": "2025-12-31",
+        "n_identified": 71444,
+        "men_18_59": 34078,
+        "children_under_18": 21283,
+        "women_18_59": 10983,
+        "elderly_60_plus": 5100,
+        "share_men_18_59": 0.477,
+        "source_note": "OCHA Reported Impact Snapshot, 20 May 2026"
+      },
+      "mar_2025": {
+        "as_of": "2025-03-22",
+        "n_identified": 50021,
+        "men_18_59": 22265,
+        "children_under_18": 15613,
+        "women_18_59": 8304,
+        "elderly_60_plus": 3839,
+        "share_men_18_59": 0.445,
+        "source_note": "OCHA Humanitarian Situation Update #275, 25 March 2025"
+      },
       "sources": [
-        "https://apnews.com/article/65e18f3362674245356c539e4bc0b67a",
-        "https://apnews.com/article/360c6aabc03421c718d4a8452cec2c67",
-        "https://www.amnesty.org/en/wp-content/uploads/2024/12/MDE1586682024ENGLISH.pdf",
-        "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf"
+        "https://www.ochaopt.org/data/casualties",
+        "https://www.ochaopt.org/content/humanitarian-situation-update-275-gaza-strip",
+        "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf",
+        "https://data.techforpalestine.org/docs/killed-in-gaza/"
       ]
     },
     "estimated_undercount_factor": {

@@ -34,8 +34,8 @@
         ]
       },
       "civilians_killed_directly": {
-        "low": 64961,
-        "high": 101787,
+        "low": 71360,
+        "high": 109765,
         "point": null,
         "breakdown": [
           {
@@ -77,7 +77,7 @@
             ]
           }
         ],
-        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 64,961-101,787 (median 80,139); see `bayesian_combatant_share` for the simulator details.",
+        "notes": "This category deliberately counts unverified Gaza deaths as civilian/unverified rather than accepting belligerent claims of combatant status. The high is a working range, not a final forensic count.  +Bayesian shift: 15,231\u201317,705 'combatant' deaths claimed by Israel are reclassified to civilians-killed-directly under the demographic model.  +Spatial Bayesian re-allocation: civilian deaths in Gaza = 64,788-102,587 (median 80,176); see `bayesian_combatant_share` for the simulator details.  Scope: ALL THEATERS, matching the military side (which counts Lebanon-front fighters) -- low/high = Gaza (re-allocated) + the non-Gaza breakdown rows (6,572-7,178; the West Bank row has no upper figure, so its low is carried into the high as a floor).",
         "sources": [
           "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_18_Mar_2026.pdf",
           "https://www.theguardian.com/world/ng-interactive/2025/aug/21/revealed-israeli-militarys-own-data-indicates-civilian-death-rate-of-83-in-gaza-war",
@@ -123,10 +123,10 @@
         "other Gaza-based armed factions"
       ],
       "military_killed": {
-        "low": 1125,
-        "high": 2684,
-        "point": 1775,
-        "notes": "Spatial Bayesian importance sampler (n=200k, ESS=3475). Posterior on militant share of all Gaza dead: 2.2% (95% CI 1.5%\u20133.0%). IDF/Israeli-intel claim of 17\u201325k Hamas+PIJ killed is incompatible with the demographic profile of identified deaths and is recorded as a belligerent_claim only.",
+        "low": 1061,
+        "high": 2509,
+        "point": 1626,
+        "notes": "Spatial Bayesian importance sampler (n=200k, ESS=4260). Posterior on militant share of all Gaza dead: 2.0% (95% CI 1.4%\u20132.8%). IDF/Israeli-intel claim of 17\u201325k Hamas+PIJ killed is incompatible with the demographic profile of identified deaths and is recorded as a belligerent_claim only.",
         "sources": [
           "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
           "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
@@ -218,13 +218,13 @@
     }
   ],
   "totals": {
-    "military_low": 2464,
-    "military_high": 4705,
-    "civilian_low": 70363,
-    "civilian_high": 115183,
-    "grand_low": 72827,
-    "grand_high": 119888,
-    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead. See `bayesian_combatant_share`."
+    "military_low": 2400,
+    "military_high": 4530,
+    "civilian_low": 76762,
+    "civilian_high": 123161,
+    "grand_low": 79162,
+    "grand_high": 127691,
+    "notes": "Totals after spatial Bayesian re-allocation of Gaza dead; see `bayesian_combatant_share`. Scope is ALL THEATERS on both sides: civilian totals include Lebanese and West Bank civilians (matching the military totals, which include Lebanon-front fighters). Civilian totals = direct civilian deaths (all theaters) + deaths_from_actions (indirect; the custody figure has no published upper value and enters the low only)."
   },
   "key_atrocities": [
     {
@@ -384,49 +384,49 @@
   ],
   "bayesian_combatant_share": {
     "method": "spatial_importance_sampler (5 govs \u00d7 80 cells)",
-    "ess": 3475,
+    "ess": 4260,
     "n_draws": 200000,
     "posterior": {
       "militant_share_q": {
-        "median": 0.0215,
+        "median": 0.0198,
         "ci_95": [
-          0.0148,
-          0.0304
+          0.0136,
+          0.0279
         ]
       },
       "militants_killed": {
-        "median": 1775,
+        "median": 1626,
         "ci_95": [
-          1125,
-          2684
+          1061,
+          2509
         ]
       },
       "civilian_adult_males_killed": {
-        "median": 30249,
+        "median": 32342,
         "ci_95": [
-          24496,
-          38437
+          26114,
+          41375
         ]
       },
       "women_plus_children_killed": {
-        "median": 49889,
+        "median": 47833,
         "ci_95": [
-          40465,
-          63350
+          38674,
+          61212
         ]
       },
       "total_direct_deaths_true": {
-        "median": 81890,
+        "median": 81849,
         "ci_95": [
-          66412,
-          103974
+          66226,
+          104564
         ]
       },
       "civ_to_mil_ratio": {
-        "median": 45.5,
+        "median": 49.4,
         "ci_95": [
-          31.9,
-          66.5
+          34.9,
+          72.3
         ]
       }
     },
@@ -562,6 +562,17 @@
             "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
             "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
           ]
+        },
+        "share_working_age_men_18_59": {
+          "point": 0.245,
+          "sigma": 0.005,
+          "definition": "males 18-59, matching the MoH record's own category boundary (elderly = 60+)",
+          "notes": "PCBS males 18+ (0.267) minus males 60+ (~0.022: elderly ~5% of population with an even-to-slightly-female sex split); equals the low end of share_adult_males_18_60, whose 0.255 point would require the elderly to be ~76% female.",
+          "sources": [
+            "https://www.pcbs.gov.ps/Downloads/book2684.pdf",
+            "https://www.pcbs.gov.ps/portals/_pcbs/PressRelease/Press_En_GazaWar17DayE.pdf",
+            "https://pcbs.gov.ps/post.aspx?ItemID=5791&lang=en"
+          ]
         }
       },
       "militant_strength": {
@@ -667,6 +678,7 @@
           "share_children_under_18": 0.442,
           "share_women_18_plus": 0.251,
           "share_men_18_plus": 0.307,
+          "notes": "OHCHR publishes no elderly split, so under the working-age (18-59) class convention share_men_18_plus slightly overstates the working-age-male share; rejections anchored on this sample hold a fortiori.",
           "sources": [
             "https://www.un.org/unispal/wp-content/uploads/2024/11/20241106-Gaza-Update-Report-OPT.pdf",
             "https://www.un.org/unispal/document/update-report-08nov24/",
@@ -674,15 +686,37 @@
             "https://www.reuters.com/world/middle-east/nearly-70-gaza-war-dead-women-children-un-rights-office-says-2024-11-08/"
           ]
         },
-        "moh_demographic_breakdown_full_record": {
-          "share_children_under_18": 0.32,
-          "share_women_18_plus": 0.24,
-          "share_men_18_plus": 0.44,
+        "moh_identified_named_list": {
+          "n": 50020,
+          "notes": "Named, fully identified individuals on the MoH list as of March 2025 (TfP/IBC killed-in-gaza microdata); one vintage of the identified record whose four-category breakdown appears below."
+        },
+        "moh_demographic_breakdown_identified": {
+          "definition": "MoH four-category breakdown of identified fatalities as republished by OCHA: children (<18), women (18-59), men (18-59), elderly (60+, both sexes). The 'men' category excludes elderly men, who sit in the sex-mixed elderly bucket (~60% male on named-list microdata).",
+          "dec_2025": {
+            "as_of": "2025-12-31",
+            "n_identified": 71444,
+            "men_18_59": 34078,
+            "children_under_18": 21283,
+            "women_18_59": 10983,
+            "elderly_60_plus": 5100,
+            "share_men_18_59": 0.477,
+            "source_note": "OCHA Reported Impact Snapshot, 20 May 2026"
+          },
+          "mar_2025": {
+            "as_of": "2025-03-22",
+            "n_identified": 50021,
+            "men_18_59": 22265,
+            "children_under_18": 15613,
+            "women_18_59": 8304,
+            "elderly_60_plus": 3839,
+            "share_men_18_59": 0.445,
+            "source_note": "OCHA Humanitarian Situation Update #275, 25 March 2025"
+          },
           "sources": [
-            "https://apnews.com/article/65e18f3362674245356c539e4bc0b67a",
-            "https://apnews.com/article/360c6aabc03421c718d4a8452cec2c67",
-            "https://www.amnesty.org/en/wp-content/uploads/2024/12/MDE1586682024ENGLISH.pdf",
-            "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf"
+            "https://www.ochaopt.org/data/casualties",
+            "https://www.ochaopt.org/content/humanitarian-situation-update-275-gaza-strip",
+            "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_14_January_2025.pdf",
+            "https://data.techforpalestine.org/docs/killed-in-gaza/"
           ]
         },
         "estimated_undercount_factor": {
@@ -733,6 +767,6 @@
       },
       "notes_on_uncertainty": "Governorate-level 2024 displacement is the weakest geography field: PCBS gives firm pre-war populations and several combined 2023-2024 residency totals, but not a clean public five-governorate IDP matrix, so North/Gaza and Rafah are net-change estimates while Deir al-Balah and Khan Younis are left null. Strike and tonnage estimates are also uncertain because public sources mix 'airstrikes,' 'targets,' and 'air-to-ground munitions,' and official Israeli military totals are not used as priors except where independently echoed or used only as bounds. MoH death totals are reported direct deaths and do not distinguish civilian/combatant status; peer-reviewed capture-recapture and household-survey work indicates contemporaneous undercounting rather than inflation. The Lancet 186,000 figure is a scenario for direct plus indirect deaths, not an observed count, so it is treated as a high-end excess-mortality scenario rather than the central estimate."
     },
-    "notes": "Posterior over (M, \u03b3, \u03c3, \u03b1, \u03b2, \u03bc_M, \u03b5_C, d_bar, K_total, uc) with priors anchored to PCBS demographics, OCHA/UNOSAT bombing stats, IISS/CSIS Hamas+PIJ strength estimates.  Likelihood from MoH late-2025 total deaths + OHCHR & MoH demographic share of dead.  No belligerent (IDF or Hamas) casualty claims used as priors."
+    "notes": "Posterior over (M, \u03b3, \u03c3, \u03b1, \u03b2, \u03bc_M, \u03b5_C, d_bar, K_total, uc) with priors anchored to PCBS demographics, OCHA/UNOSAT bombing stats, IISS/RUSI/press-reported Hamas+PIJ strength estimates.  Likelihood from MoH late-2025 total deaths + OHCHR & MoH demographic share of dead.  No belligerent (IDF or Hamas) casualty claims used as priors."
   }
 }

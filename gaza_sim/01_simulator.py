@@ -4,7 +4,9 @@ Forward model
 -------------
 Cells: each Gaza governorate is split into K cells; cell c lives in
 governorate g(c) and has a fixed population N_c (from PCBS).  Demographic
-fractions (women+children w_c, adult-male share f_M_c) are taken to be
+fractions (W-class share w_c, working-age-male share f_M_c; "adult-male"
+below means working-age males 18-59, the MoH record's own "men" category,
+and the W class is everyone else including men 60+) are taken to be
 constant across cells = Gaza-wide values.
 
 Latent quantities (sampled per posterior draw):
@@ -42,7 +44,7 @@ We then sum over cells.  Likelihood:
 
   D_obs        ≈ MoH_late2025            (Gaussian on log scale, σ ~ 7%),
                  where D_obs = uc × D_total
-  ω_AM = (D_civAM + D_milt) / D_total    vs MoH_full_record and OHCHR_sample
+  ω_AM = (D_civAM + D_milt) / D_total    vs MoH identified record and OHCHR sample
                  (recording is class-neutral, so the recorded adult-male
                   share estimates the TRUE share: the recovery factor uc
                   cancels in the ratio)
@@ -93,12 +95,12 @@ C = len(N)
 print(f"Cells: {C}  (pop sum = {N.sum():,.0f})")
 
 # Demographics (Gaza-wide, applied uniformly per cell).
-# Convention matches the paper: AM = males 18+ and W+C = everyone else,
-# so the two classes partition the population exactly (a = 1 - w = 0.267).
-# Do NOT use facts.json's share_adult_males_18_60 = 0.255 here: that class
-# leaves men over 60 unassigned and breaks the partition.
-W_PLUS_C = F["population"]["share_women_plus_children"]["point"]   # 0.733
-F_AM     = 1.0 - W_PLUS_C                                          # 0.267, males 18+
+# Convention matches the paper: AM = working-age males 18-59 (the MoH
+# record's own "men" category boundary; elderly = 60+) and W+C = everyone
+# else (females of all ages + boys under 18 + men 60+), so the two classes
+# partition the population exactly (a = 0.245, w = 1 - a = 0.755).
+F_AM     = F["population"]["share_working_age_men_18_59"]["point"]  # 0.245
+W_PLUS_C = 1.0 - F_AM                                               # 0.755
 
 # Adult-male population per cell (fixed)
 N_AM = N * F_AM
@@ -116,17 +118,25 @@ LANCET_HI    = F["deaths_observed"]["lancet_excess_total_estimate"]["high"]
 
 # Demographic shares of dead.  Two sources, with sample weights:
 OHCHR = F["deaths_observed"]["ohchr_identification_sample"]
-MOH_DEMO = F["deaths_observed"]["moh_demographic_breakdown_full_record"]
+MOH_DEMO = F["deaths_observed"]["moh_demographic_breakdown_identified"]["dec_2025"]
 
-# Adult-male share among dead, observed:
+# Working-age-male share among dead, observed.  The MoH value is the
+# natively published four-category "men" share (men 18-59; elderly is a
+# separate 60+ bucket), measured on the 71,444 identified fatalities as of
+# 31 Dec 2025.  The OHCHR sample publishes no elderly split, so its men-18+
+# share slightly overstates the working-age-male share (equivalently,
+# understates that sample's W-class share), which is favourable to
+# high-combatant readings; rejections on the OHCHR anchor hold a fortiori.
 omega_AM_ohchr = OHCHR["share_men_18_plus"]                # 0.307
-omega_AM_moh   = MOH_DEMO["share_men_18_plus"]             # 0.44
+omega_AM_moh   = MOH_DEMO["men_18_59"] / MOH_DEMO["n_identified"]  # 0.477
 
-# Use a likelihood that combines them: MoH (n≈70k) is the bigger sample,
-# OHCHR (n=8.1k) is more identification-rigorous but biased toward
-# easier-to-identify (more kids/women).  We use Beta posteriors.
+# Use a likelihood that combines them: MoH (n≈71k identified list) is the
+# bigger sample, OHCHR (n=8.1k) is more identification-rigorous but biased
+# toward easier-to-identify (more kids/women).  We use Beta posteriors.
 N_OHCHR = OHCHR["n"]
-N_MOH   = MOH_LATE2025                                     # treat MoH-record n ≈ all reported
+# The MoH demographic composition is measured on the identified list, whose
+# size sets the sample size.
+N_MOH   = MOH_DEMO["n_identified"]
 print(f"\nObserved adult-male share among dead:")
 print(f"  OHCHR (n={N_OHCHR}):       {omega_AM_ohchr:.3%}")
 print(f"  MoH full record (n={N_MOH}): {omega_AM_moh:.3%}")
@@ -237,25 +247,27 @@ def log_likelihood(D_obs, D_milt, D_civAM, D_WC):
     log_lk_total = stats.norm.logpdf(np.log(D_obs),
                                      loc=np.log(MOH_LATE2025), scale=0.07)
 
-    # 2. Adult-male share of dead.
-    # The data records adult-MALES (combatant or civilian) jointly;
-    # OHCHR reports 30.7% men 18+, MoH full-record 44%.  These mix
-    # combatants (all assumed adult-male) with adult-male civilians.
-    # Recording is class-neutral in this model (the recovery factor uc
-    # multiplies the total uniformly), so the recorded adult-male SHARE
-    # estimates the true share (D_civAM + D_milt) / D_total: uc cancels
-    # in the ratio, so the denominator is D_total (true deaths).
+    # 2. Working-age-male share of dead.
+    # The data records working-age males (combatant or civilian) jointly;
+    # OHCHR reports 30.7% men 18+ (approximate for the 18-59 class, see
+    # above), the MoH identified record 47.7% men 18-59.  These mix
+    # combatants (all assumed working-age-male) with civilian working-age
+    # men.  Recording is class-neutral in this model (the recovery factor
+    # uc multiplies the total uniformly), so the recorded share estimates
+    # the true share (D_civAM + D_milt) / D_total: uc cancels in the
+    # ratio, so the denominator is D_total (true deaths).
     D_total = D_milt + D_civAM + D_WC
     sim_milt_AM = (D_civAM + D_milt) / np.maximum(D_total, 1)
     log_lk_ohchr = stats.beta.logpdf(np.clip(sim_milt_AM, 1e-3, 1-1e-3),
-                                     OHCHR["share_men_18_plus"] * N_OHCHR + 1,
-                                     (1 - OHCHR["share_men_18_plus"]) * N_OHCHR + 1)
-    # MoH full-record carries more weight but with fatter-tail likelihood
-    # because demographic categorization is cruder.  Down-weight n by 5x.
+                                     omega_AM_ohchr * N_OHCHR + 1,
+                                     (1 - omega_AM_ohchr) * N_OHCHR + 1)
+    # The MoH identified record carries more weight but with fatter-tail
+    # likelihood because demographic categorization is cruder.  Down-weight
+    # n by 5x.
     n_eff_moh = N_MOH / 5.0
     log_lk_moh = stats.beta.logpdf(np.clip(sim_milt_AM, 1e-3, 1-1e-3),
-                                   MOH_DEMO["share_men_18_plus"] * n_eff_moh + 1,
-                                   (1 - MOH_DEMO["share_men_18_plus"]) * n_eff_moh + 1)
+                                   omega_AM_moh * n_eff_moh + 1,
+                                   (1 - omega_AM_moh) * n_eff_moh + 1)
     # Geometric mean of the two demographic likelihoods (pretend they're
     # two independent observations of the same parameter, no correlation)
     log_lk_demo = 0.5 * (log_lk_ohchr + log_lk_moh)

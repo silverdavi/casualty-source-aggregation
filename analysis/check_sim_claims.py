@@ -96,13 +96,13 @@ lk_total = stats.norm.logpdf(np.log(sim["D_obs"]),
                              loc=np.log(mod.MOH_LATE2025), scale=0.07)
 lk_ohchr = stats.beta.logpdf(
     share_AM_c,
-    mod.OHCHR["share_men_18_plus"] * mod.N_OHCHR + 1,
-    (1 - mod.OHCHR["share_men_18_plus"]) * mod.N_OHCHR + 1)
+    mod.omega_AM_ohchr * mod.N_OHCHR + 1,
+    (1 - mod.omega_AM_ohchr) * mod.N_OHCHR + 1)
 n_eff_moh = mod.N_MOH / 5.0
 lk_moh = stats.beta.logpdf(
     share_AM_c,
-    mod.MOH_DEMO["share_men_18_plus"] * n_eff_moh + 1,
-    (1 - mod.MOH_DEMO["share_men_18_plus"]) * n_eff_moh + 1)
+    mod.omega_AM_moh * n_eff_moh + 1,
+    (1 - mod.omega_AM_moh) * n_eff_moh + 1)
 
 
 def weights_from(log_w):
@@ -143,21 +143,21 @@ check_range("prior-alone lo in (1.2%, 1.6%)", lo, 0.012, 0.016)
 check_range("prior-alone hi in (2.8%, 3.2%)", hi, 0.028, 0.032)
 
 # ===========================================================================
-# Claim 2: full-likelihood posterior.  Appendix B quotes "2.2% [1.5%, 3.0%]".
+# Claim 2: full-likelihood posterior.  Appendix B quotes "2.0% [1.4%, 2.8%]".
 # ===========================================================================
 
 print("\n== Claim 2: full-likelihood posterior q ==")
 med_full, lo_full, hi_full = summary(q_arr, w_full)
 print(f"  full posterior q: median {med_full:.4%}, 95% [{lo_full:.4%}, {hi_full:.4%}]")
-check_range("full median in (2.05%, 2.25%)", med_full, 0.0205, 0.0225)
-check_range("full lo consistent with quoted 1.5% (±0.1pp)",
-            lo_full, 0.014, 0.016)
-check_range("full hi consistent with quoted 3.0% (±0.1pp)",
-            hi_full, 0.029, 0.031)
+check_range("full median in (1.9%, 2.05%)", med_full, 0.019, 0.0205)
+check_range("full lo consistent with quoted 1.4% (±0.1pp)",
+            lo_full, 0.013, 0.015)
+check_range("full hi consistent with quoted 2.8% (±0.1pp)",
+            hi_full, 0.027, 0.029)
 
 # ===========================================================================
 # Claim 3: MoH-only re-anchoring.  Appendix B states this moves the
-# posterior DOWN, to "2.0% [1.4%, 2.8%]".
+# posterior slightly DOWN, to "2.0% [1.4%, 2.7%]".
 # ===========================================================================
 
 print("\n== Claim 3: MoH-only re-anchored posterior ==")
@@ -165,13 +165,13 @@ med_moh, lo_moh, hi_moh = summary(q_arr, w_moh_only)
 print(f"  MoH-only q: median {med_moh:.4%}, 95% [{lo_moh:.4%}, {hi_moh:.4%}]")
 check_true("MoH-only median below full-likelihood median",
            med_moh < med_full, f"{med_moh:.4%} < {med_full:.4%}")
-check_range("MoH-only median in (1.85%, 2.1%)", med_moh, 0.0185, 0.021)
+check_range("MoH-only median in (1.9%, 2.05%)", med_moh, 0.019, 0.0205)
 check_range("MoH-only lo within ±0.15pp of quoted 1.4%", lo_moh, 0.0125, 0.0155)
-check_range("MoH-only hi within ±0.15pp of quoted 2.8%", hi_moh, 0.0265, 0.0295)
+check_range("MoH-only hi within ±0.15pp of quoted 2.7%", hi_moh, 0.0255, 0.0285)
 
 # ===========================================================================
 # Claim 4: OHCHR-only re-anchoring.  Appendix B states this moves the
-# posterior UP, to "2.3% [1.6%, 3.1%]".
+# posterior UP, to "2.3% [1.6%, 3.2%]".
 # ===========================================================================
 
 print("\n== Claim 4: OHCHR-only re-anchored posterior ==")
@@ -181,20 +181,20 @@ check_true("OHCHR-only median above full-likelihood median",
            med_oh > med_full, f"{med_oh:.4%} > {med_full:.4%}")
 check_range("OHCHR-only median in (2.2%, 2.45%)", med_oh, 0.022, 0.0245)
 check_range("OHCHR-only lo within ±0.15pp of quoted 1.6%", lo_oh, 0.0145, 0.0175)
-check_range("OHCHR-only hi within ±0.15pp of quoted 3.1%", hi_oh, 0.0295, 0.0325)
+check_range("OHCHR-only hi within ±0.15pp of quoted 3.2%", hi_oh, 0.0305, 0.0335)
 
 # ===========================================================================
-# Claim 6: Appendix B states ESS ≈ 3,500 under the normalized full weights.
+# Claim 6: Appendix B states ESS ≈ 4,300 under the normalized full weights.
 # ===========================================================================
 
 print("\n== Claim 6: effective sample size ==")
 ess = (w_full.sum() ** 2) / (w_full ** 2).sum()
-check_range("ESS in (3,000, 4,000)", ess, 3_000, 4_000)
+check_range("ESS in (3,800, 4,700)", ess, 3_800, 4_700)
 check_true("recomputed ESS matches the module's own",
            abs(ess - mod.ess) < 1.0, f"{ess:.1f} vs {mod.ess:.1f}")
 
 # ===========================================================================
-# Claim 7: Appendix B quotes a civilian-to-combatant ratio of 45:1 [32, 66];
+# Claim 7: Appendix B quotes a civilian-to-combatant ratio of 49:1 [35, 72];
 # the ratio is (1-q)/q draw-by-draw under the full weights.
 # ===========================================================================
 
@@ -202,9 +202,9 @@ print("\n== Claim 7: civilian-to-combatant ratio ==")
 ratio = (1 - q_arr) / q_arr
 med_r, lo_r, hi_r = summary(ratio, w_full)
 print(f"  ratio: median {med_r:.2f}, 95% [{lo_r:.2f}, {hi_r:.2f}]")
-check_range("ratio median in (43, 47)", med_r, 43, 47)
-check_range("ratio lo in (30, 34)", lo_r, 30, 34)
-check_range("ratio hi in (62, 70)", hi_r, 62, 70)
+check_range("ratio median in (47, 51)", med_r, 47, 51)
+check_range("ratio lo in (33, 37)", lo_r, 33, 37)
+check_range("ratio hi in (68, 76)", hi_r, 68, 76)
 
 # ===========================================================================
 # Claim 8: Appendix B states the effective male-to-W/C exposure ratio can

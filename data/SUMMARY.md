@@ -6,9 +6,9 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 
 ## Aggregate (sum of mid-point estimates)
 
-- Sum of low estimates: **158,434,004**
-- Sum of high estimates: **280,035,640**
-- Sum of midpoints: **219,234,822**
+- Sum of low estimates: **158,434,005**
+- Sum of high estimates: **280,036,483**
+- Sum of midpoints: **219,235,244**
 
 (These sums double-count overlapping conflicts — e.g. WWII theaters vs the Holocaust, Iraq War vs anti-ISIS war — and should not be read as 'total deaths from all 20th–21st century war'.)
 
@@ -75,7 +75,7 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 | [Lebanese Civil War](per_war/lebanese_civil_war.json) | 1975–1990 | 71,328–158,208 | 7,133–— | 64,195–100,000 |
 | [Boxer Rebellion](per_war/boxer_rebellion.json) | 1899–1901 | 100,000–150,000 | 3,000–20,526 | 35,200–— |
 | [Yugoslav Wars - Bosnia/Croatia (incl. Srebrenica)](per_war/yugoslav_wars_bosnia.json) | 1991–1995 | 118,151–126,943 | 68,700–75,500 | 45,500–49,100 |
-| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 72,827–119,888 | 2,464–4,705 | 70,363–115,183 |
+| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 72,828–120,731 | 2,484–4,802 | 70,344–115,929 |
 | [Myanmar civil war (post-2021 coup)](per_war/myanmar_civil_war_2021.json) | 2021–now | 93,000–115,000 | 40,000–75,000 | 15,000–60,000 |
 | [Chaco War](per_war/chaco_war.json) | 1932–1935 | 80,000–105,000 | 80,000–105,000 | —–— |
 | [Sri Lankan Civil War](per_war/sri_lankan_civil_war.json) | 1983–2009 | 80,000–100,000 | 47,345–57,208 | 22,792–52,655 |
@@ -182,4 +182,4 @@ Numbers are *low--high* ranges from the most credible sources available. See `pe
 | [Myanmar civil war (post-2021 coup)](per_war/myanmar_civil_war_2021.json) | 2021–now | 93,000–115,000 |
 | [Russian invasion of Ukraine (2022-)](per_war/russia_ukraine_war_2022.json) | 2022–now | 301,747–740,000 |
 | [Sudan war (RSF vs SAF, 2023-)](per_war/sudan_war_2023.json) | 2023–now | 59,000–400,000 |
-| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 72,827–119,888 |
+| [Israel-Hamas / Gaza war (and Hezbollah/Lebanon front)](per_war/israel_gaza_war_2023.json) | 2023–now | 72,828–120,731 |

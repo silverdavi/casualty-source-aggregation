@@ -8,10 +8,10 @@ Every theorem here is checked by the Lean 4 kernel; there are no
 `sorry`s.  Build with `lake build` in this directory.
 
 Notation (matching the paper):
-  w  : population share of class W (women + male minors)
-  a  : population share of class AM (males 18+), with w + a = 1
+  w  : population share of class W (women, children, and the elderly)
+  a  : population share of class AM (working-age men, 18-59), with w + a = 1
   f  : combatant stock / population
-  mu : civilian adult-male exposure multiplier
+  mu : civilian working-age-male exposure multiplier
   om : share of the dead in class W (omega)
   q  : combatant share of the dead
   S  : civilian share of deaths landing in W, S = w / (w + mu*(a-f))
@@ -323,44 +323,43 @@ theorem claim8_band_not_envelope : (0.04 : ℝ) * 100 < 100 := by norm_num
 
 /-! ## Section 6 arithmetic, exactly over ℚ
 q(mu) = 1 - om*(w + mu*(a-f))/w at
-(w, a, f, om) = (0.733, 0.267, 0.020, 0.560). -/
+(w, a, f, om) = (0.755, 0.245, 0.020, 0.523). -/
 
 section Arithmetic
 
-def w0 : ℚ := 733 / 1000
-def a0 : ℚ := 267 / 1000
+def w0 : ℚ := 755 / 1000
+def a0 : ℚ := 245 / 1000
 def f0 : ℚ := 20 / 1000
-def om0 : ℚ := 560 / 1000
+def om0 : ℚ := 523 / 1000
 
 def qmu (mu : ℚ) : ℚ := 1 - om0 * (w0 + mu * (a0 - f0)) / w0
 
 /-- Classes partition the population exactly. -/
 theorem partition_exact : w0 + a0 = 1 := by norm_num [w0, a0]
 
-/-- q(1) = 25.1296...%: exact value 921/3665. -/
-theorem q_at_1 : qmu 1 = 921 / 3665 := by
+/-- q(1) = 32.1139...%: exact value 12123/37750. -/
+theorem q_at_1 : qmu 1 = 12123 / 37750 := by
   norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(1) rounds to 25.13%: 0.2512 < q(1) < 0.2513. -/
-theorem q_at_1_bounds : 2512 / 10000 < qmu 1 ∧ qmu 1 < 2513 / 10000 := by
+/-- q(1) rounds to 32.11%: 0.3211 < q(1) < 0.3212. -/
+theorem q_at_1_bounds : 3211 / 10000 < qmu 1 ∧ qmu 1 < 3212 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(3/2) rounds to 15.69%: 0.1569 < q(3/2) < 0.1570
-(in particular q(3/2) < 0.1572, refuting any 15.72% reading). -/
+/-- q(3/2) rounds to 24.32%: 0.2432 < q(3/2) < 0.2433. -/
 theorem q_at_15_bounds :
-    1569 / 10000 < qmu (3 / 2) ∧ qmu (3 / 2) < 1570 / 10000 := by
+    2432 / 10000 < qmu (3 / 2) ∧ qmu (3 / 2) < 2433 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(2) rounds to 6.26%. -/
-theorem q_at_2_bounds : 625 / 10000 < qmu 2 ∧ qmu 2 < 626 / 10000 := by
+/-- q(2) rounds to 16.53%. -/
+theorem q_at_2_bounds : 1652 / 10000 < qmu 2 ∧ qmu 2 < 1653 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
 /-- The identified-set upper endpoint is decreasing on the grid. -/
 theorem q_grid_ordered : qmu 2 < qmu (3 / 2) ∧ qmu (3 / 2) < qmu 1 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(mu) ≤ 0 at mu = 2.34 (the q = 0 crossing is below 2.34). -/
-theorem q_crossing : qmu (234 / 100) < 0 := by
+/-- q(mu) ≤ 0 at mu = 3.07 (the q = 0 crossing is below 3.07). -/
+theorem q_crossing : qmu (307 / 100) < 0 := by
   norm_num [qmu, w0, a0, f0, om0]
 
 /-- The exact root of q(mu) = 0. -/
@@ -369,8 +368,8 @@ def muStar : ℚ := w0 * (1 - om0) / (om0 * (a0 - f0))
 theorem q_root_exact : qmu muStar = 0 := by
   norm_num [qmu, muStar, w0, a0, f0, om0]
 
-/-- The root rounds to 2.33. -/
-theorem q_root_bounds : 233 / 100 < muStar ∧ muStar < 234 / 100 := by
+/-- The root rounds to 3.06. -/
+theorem q_root_bounds : 306 / 100 < muStar ∧ muStar < 307 / 100 := by
   constructor <;> norm_num [muStar, w0, a0, f0, om0]
 
 /-- Exposure needed to rationalise a target combatant share q. -/
@@ -381,20 +380,23 @@ theorem muNeeded_inverts (q : ℚ) : qmu (muNeeded q) = q := by
   norm_num [qmu, muNeeded, w0, a0, f0, om0]
   ring
 
-/-- The 17k/70k claim endpoint needs mu ≈ 1.04 ≥ 1: arithmetically
+/-- The 17,000/71,444 claim endpoint needs mu ≈ 1.53 ≥ 1: arithmetically
 feasible under agnostic exposure. -/
-theorem mu_needed_17k : 1 ≤ muNeeded (17 / 70) ∧
-    104 / 100 < muNeeded (17 / 70) ∧ muNeeded (17 / 70) < 105 / 100 := by
+theorem mu_needed_17k : 1 ≤ muNeeded (17000 / 71444) ∧
+    153 / 100 < muNeeded (17000 / 71444) ∧
+    muNeeded (17000 / 71444) < 154 / 100 := by
   refine ⟨?_, ?_, ?_⟩ <;> norm_num [muNeeded, w0, a0, f0, om0]
 
-/-- The 25k/70k claim endpoint needs mu ≈ 0.44 < 1: infeasible for every
-admissible mu ≥ 1. -/
-theorem mu_needed_25k : muNeeded (25 / 70) < 1 ∧
-    43 / 100 < muNeeded (25 / 70) ∧ muNeeded (25 / 70) < 44 / 100 := by
+/-- The 25,000/71,444 claim endpoint needs mu ≈ 0.82 < 1: infeasible for
+every admissible mu ≥ 1. -/
+theorem mu_needed_25k : muNeeded (25000 / 71444) < 1 ∧
+    81 / 100 < muNeeded (25000 / 71444) ∧
+    muNeeded (25000 / 71444) < 82 / 100 := by
   refine ⟨?_, ?_, ?_⟩ <;> norm_num [muNeeded, w0, a0, f0, om0]
 
-/-- The manpower bound M/D = 0.643 is non-binding: it exceeds q(1). -/
-theorem manpower_nonbinding : qmu 1 < 643 / 1000 := by
+/-- The manpower bound M/D = 45000/71444 ≈ 0.630 is non-binding: it
+exceeds q(1). -/
+theorem manpower_nonbinding : qmu 1 < 45000 / 71444 := by
   norm_num [qmu, w0, a0, f0, om0]
 
 /-! ### Remark 3 eta-slack bias, exact per-mu values
@@ -410,23 +412,23 @@ slack bound is stated). -/
 theorem S_exceeds_eta : eta0 < S0 2 ∧ S0 2 < S0 (3 / 2) ∧ S0 (3 / 2) < S0 1 := by
   refine ⟨?_, ?_, ?_⟩ <;> norm_num [S0, eta0, w0, a0, f0]
 
-/-- Exact bias at mu = 1 rounds to 1.05 percentage points. -/
-theorem bias_at_1_bounds : 105 / 10000 < bias0 1 ∧ bias0 1 < 106 / 10000 := by
+/-- Exact bias at mu = 1 rounds to 1.30 percentage points. -/
+theorem bias_at_1_bounds : 130 / 10000 < bias0 1 ∧ bias0 1 < 131 / 10000 := by
   constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
 
-/-- Exact bias at mu = 3/2 rounds to 0.74 percentage points. -/
+/-- Exact bias at mu = 3/2 rounds to 1.10 percentage points. -/
 theorem bias_at_15_bounds :
-    74 / 10000 < bias0 (3 / 2) ∧ bias0 (3 / 2) < 75 / 10000 := by
+    110 / 10000 < bias0 (3 / 2) ∧ bias0 (3 / 2) < 111 / 10000 := by
   constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
 
-/-- Exact bias at mu = 2 rounds to 0.33 percentage points. -/
-theorem bias_at_2_bounds : 33 / 10000 < bias0 2 ∧ bias0 2 < 34 / 10000 := by
+/-- Exact bias at mu = 2 rounds to 0.83 percentage points. -/
+theorem bias_at_2_bounds : 83 / 10000 < bias0 2 ∧ bias0 2 < 84 / 10000 := by
   constructor <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
 
-/-- The loose uniform bound 1.4 pp dominates every exact per-mu bias:
-each bias is below eta * 0.26 / (S(2) - eta) < 0.014. -/
+/-- The loose uniform bound 1.7 pp dominates every exact per-mu bias:
+each bias is below eta * 0.33 / (S(2) - eta) < 0.017. -/
 theorem bias_loose_uniform_bound :
-    bias0 1 < 14 / 1000 ∧ bias0 (3 / 2) < 14 / 1000 ∧ bias0 2 < 14 / 1000 := by
+    bias0 1 < 17 / 1000 ∧ bias0 (3 / 2) < 17 / 1000 ∧ bias0 2 < 17 / 1000 := by
   refine ⟨?_, ?_, ?_⟩ <;> norm_num [bias0, qmu, S0, eta0, w0, a0, f0, om0]
 
 /-- The exact bias decreases along the grid (q_{eta=0} falls faster
