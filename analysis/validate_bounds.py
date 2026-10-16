@@ -629,8 +629,8 @@ lines = [
     r" $q(\mu)=1-\omega\,(w+\mu(a-f))/w$ evaluated at $w=0.755$, $a=0.245$,"
     r" $f=0.020$ (all rows except the last):"
     r" the largest combatant share consistent with anchor $\omega$ if civilian"
-    r" working-age men die at exactly $\mu$ times the per-capita rate of the rest of"
-    r" the population. The last row is the same Dec-2025 record under the men-18$+$"
+    r" working-age men die at exactly $\mu$ times the per-capita rate of the $W$"
+    r" class (women, children, and the elderly). The last row is the same Dec-2025 record under the men-18$+$"
     r" class convention ($w=0.733$, $a=0.267$; the record's sex-mixed elderly"
     r" category re-split at the 61.7\%-male share documented on the May-2025"
     r" identified list \citep{epstein2025}, an earlier vintage, so the row is"
@@ -694,7 +694,7 @@ conv_rows = [
     ("IDF public claim (17--25k of 71,444)",
      r"\citep{apclaim2024,jpostclaim2026}",
      q_idf_lo, q_idf_hi, "object of the test"),
-    # Exposure-agnostic set: any mu >= 1; q(mu) <= 0 beyond mu* ~ 3.06,
+    # Baseline set: any mu >= 1; q(mu) <= 0 beyond mu* ~ 3.06,
     # so the set is [0, q(1)] (lower endpoint clipped at zero), matching
     # Step 2's statement -- not the display-grid range [q(2.5), q(1)].
     ("Identified set, MoH anchor, $\\mu\\ge 1$", "this paper",
@@ -702,7 +702,7 @@ conv_rows = [
     ("Identified set, MoH anchor, $\\mu\\in[2,3.5]$", "this paper",
      set_moh_2_35[0], set_moh_2_35[1],
      "benchmark sensitivity range informed by historical male-to-female ratios"),
-    ("Aman named-militant database", r"\citep{guardian972db2025}",
+    ("Aman named-combatant database", r"\citep{guardian972db2025}",
      q_aman, q_aman, "named fraction: 8,900 of 53,000 (May 2025); coverage unknown"),
     ("Male-bias model, MoH record", r"\citep{frost2026}",
      q_of_ccr(8.0), q_of_ccr(4.9), "benchmark informed by B'tselem records"),
@@ -718,9 +718,10 @@ lines = [
     rf"\caption{{\textbf{{Convergence of methods on the Gaza combatant"
     rf" share.}} Every method's range lies within $q\in[0,{{\sim}}{math.ceil(100*q1_moh):d}\%]$, with"
     r" documentary cross-checks and benchmark-range bounds concentrated at the low end"
-    r" (in civilian-to-combatant terms, the loosest bound concedes"
-    rf" ${{\sim}}{ccr_of_q(q1_moh):.0f}{{:}}1$ or more, the benchmark-range bounds"
-    rf" at least ${{\sim}}{ccr_of_q(q2_moh):.0f}{{:}}1$). The upper end of the IDF claim (${100*q_idf_hi:.1f}\%$) lies above"
+    r" (in civilian-to-combatant terms, the baseline bound requires at least"
+    rf" ${ccr_of_q(q1_moh):.1f}{{:}}1$, the benchmark-range bound"
+    rf" at least ${ccr_of_q(q2_moh):.1f}{{:}}1$, and the IDF claim implies"
+    rf" ${ccr_of_q(q_idf_lo):.1f}{{:}}1$--${ccr_of_q(q_idf_hi):.1f}{{:}}1$). The upper end of the IDF claim (${100*q_idf_hi:.1f}\%$) lies above"
     rf" every range; its lower end (${100*q_idf_lo:.1f}\%$) is admitted only at exposure"
     rf" ratios below the benchmark range ($\mu\le{mu_needed(q_idf_lo, OMEGA_MOH, W_POP, A_POP, F_STOCK):.2f}$) and lies above every"
     r" benchmark-range bound and point estimate, the one exception being the extreme"
@@ -802,6 +803,28 @@ check_true("robust benchmark q(2) essentially coincides with IDF 17k"
            abs(q2_moh_robust - q_idf_lo) < 0.001,
            f"|{q2_moh_robust:.4f} - {q_idf_lo:.4f}| < 0.001")
 
+# Civilian-to-combatant ratios quoted in the plain-language statements
+# (abstract, Section 6 Step 5, Discussion). The prose says the mu >= 1 bound
+# requires "more than" the integer printed by nCcrAtQOne while the 25k
+# endpoint implies "fewer than" the integer printed by nIdfCcrAtHi, and that
+# the benchmark bound requires "at least" nCcrCalibratedFloor; guard each.
+ccr_q1, ccr_q2 = ccr_of_q(q1_moh), ccr_of_q(q2_moh)
+ccr_idf_lo, ccr_idf_hi = ccr_of_q(q_idf_lo), ccr_of_q(q_idf_hi)
+ccr_aman = ccr_of_q(q_aman)
+check_true("mu>=1 CCR floor exceeds its printed integer ('more than')",
+           ccr_q1 > round(ccr_q1), f"{ccr_q1:.3f} > {round(ccr_q1)}")
+check_true("25k-endpoint CCR is below its printed integer ('fewer than')",
+           ccr_idf_hi < round(ccr_idf_hi), f"{ccr_idf_hi:.3f} < {round(ccr_idf_hi)}")
+check_true("benchmark CCR floor is at least its printed integer ('at least')",
+           ccr_q2 >= round(ccr_q2), f"{ccr_q2:.3f} >= {round(ccr_q2)}")
+check_true("one-decimal CCR floors are 'at least' their printed values",
+           ccr_q1 >= float(f"{ccr_q1:.1f}") and ccr_q2 >= float(f"{ccr_q2:.1f}"),
+           f"{ccr_q1:.3f} >= {ccr_q1:.1f}, {ccr_q2:.3f} >= {ccr_q2:.1f}")
+check_true("mu>=1 CCR floor exceeds the 25k-endpoint CCR",
+           ccr_q1 > ccr_idf_hi, f"{ccr_q1:.3f} > {ccr_idf_hi:.3f}")
+check_true("benchmark CCR floor exceeds the 17k-endpoint CCR",
+           ccr_q2 > ccr_idf_lo, f"{ccr_q2:.3f} > {ccr_idf_lo:.3f}")
+
 # ===========================================================================
 # 6b. Prose macros -> paper/content/numbers.tex
 #     Every derived value quoted in the prose is emitted as a LaTeX macro,
@@ -862,7 +885,9 @@ MACRO_GROUPS = [
         ("nQTwoAConv", fmt_pct(q2_a_conv)),               # 19.8 (men-18+, benchmark)
         ("nMuIdfHiAConv", f"{mu_req_hi_a:.2f}"),          # 1.06 (25k under men-18+)
         ("nCcrAtQOne", fmt_int(ccr_of_q(q1_moh))),        # 2 (CCR at set's upper end)
+        ("nCcrAtQOneOneDp", f"{ccr_of_q(q1_moh):.1f}"),   # 2.1
         ("nCcrCalibratedFloor", fmt_int(ccr_of_q(q2_moh))),  # 5 (CCR at benchmark ceiling)
+        ("nCcrCalibratedFloorOneDp", f"{ccr_of_q(q2_moh):.1f}"),  # 5.0
     ]),
     ("Uniformity discrepancy (OHCHR sample vs population, descriptive;"
      " matched men-18+ convention)", [
@@ -878,6 +903,8 @@ MACRO_GROUPS = [
         ("nMuIdfHi", f"{mu_req_hi:.2f}"),                 # 0.82 (rationalises 25k)
         ("nIdfCcrAtHi", fmt_int(ccr_of_q(q_idf_hi))),     # 2 (CCR at 25k endpoint)
         ("nIdfCcrAtLo", fmt_int(ccr_of_q(q_idf_lo))),     # 3 (CCR at 17k endpoint)
+        ("nIdfCcrAtHiOneDp", f"{ccr_of_q(q_idf_hi):.1f}"),  # 1.9
+        ("nIdfCcrAtLoOneDp", f"{ccr_of_q(q_idf_lo):.1f}"),  # 3.2
     ]),
     ("Contradiction radii (units of the stated sigma scales)", [
         ("nRhoOmegaAg", f"{rho_ag['MoH'][1]:.1f}"),       # 2.2 (25k, agnostic)
@@ -961,6 +988,7 @@ MACRO_GROUPS = [
     ]),
     ("Named-combatant cross-check and manpower ledger", [
         ("nAmanQ", fmt_pct(q_aman)),                      # 16.8
+        ("nAmanCcr", f"{ccr_of_q(q_aman):.1f}"),          # 5.0 (named-dead CCR)
         ("nLedgerRecruits", fmt_grp(recruits_implied)),   # 12{,}000
     ]),
     ("Spatial Bayesian posterior (gaza_sim, seed 42)", [
@@ -1010,6 +1038,10 @@ report = {
         "rho_agnostic_mu_1_25": rho_ag, "rho_benchmark_mu_2_35": rho_cal,
         "mu_star_q0": mu_star_q0,
         "q_aman": q_aman,
+        "civilian_to_combatant": {
+            "floor_mu_ge_1": ccr_q1, "floor_benchmark": ccr_q2,
+            "idf_17k": ccr_idf_lo, "idf_25k": ccr_idf_hi, "aman": ccr_aman,
+        },
         "q_frost": [q_of_ccr(8.0), q_of_ccr(4.9)],
         "q_cockerill": [q_of_ccr(9.6), q_of_ccr(2.8)],
         "uniformity_z": z, "uniformity_p_one_sided": p_one,
