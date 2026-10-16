@@ -627,7 +627,7 @@ lines = [
     r"\centering",
     r"\caption{\textbf{Sensitivity of the identified-set upper endpoint.} Each cell is"
     r" $q(\mu)=1-\omega\,(w+\mu(a-f))/w$ evaluated at $w=0.755$, $a=0.245$,"
-    r" $f=0.020$ (all rows except the last):"
+    rf" $f={F_STOCK:.4f}$ (all rows except the last):"
     r" the largest combatant share consistent with anchor $\omega$ if civilian"
     r" working-age men die at exactly $\mu$ times the per-capita rate of the $W$"
     r" class (women, children, and the elderly). The last row is the same Dec-2025 record under the men-18$+$"
