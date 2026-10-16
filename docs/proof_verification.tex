@@ -37,7 +37,7 @@ and \texttt{formal/casualty\_proofs} (Lean~4 $+$ mathlib, kernel-checked, no \te
 \begin{document}
 \maketitle
 
-\noindent\textbf{How to read this document.} Each claim is stated exactly as in the manuscript, followed by a proof written in more detail than the paper's appendix, an explicit list of the assumptions used at each step, and a verification note describing the symbolic (sympy) or Monte-Carlo check performed. Most content is additionally machine-checked in Lean~4 with mathlib (\texttt{formal/casualty\_proofs}): Claims 1--6 in full (identification algebra, monotonicity and derivative, $\eta$-slack, manpower bound, delta-method gradients, Gauss--Markov optimality), the infimum and monotonicity ingredients of Claim~7, the two-point contamination kernel of Claim~8, and the Section~6 arithmetic over exact rationals. The Lean development compiles with no unproven statements; only the fully measure-theoretic parts (posterior quantiles, the topological limit step) rest on the symbolic and Monte-Carlo checks alone.
+\noindent\textbf{How to read this document.} Each claim is stated exactly as in the manuscript, followed by a proof written in more detail than the paper's appendix, an explicit list of the assumptions used at each step, and a verification note describing the symbolic (sympy) or Monte-Carlo check performed. Most content is additionally machine-checked in Lean~4 with mathlib (\texttt{formal/casualty\_proofs}): Claims 1--6 in full (identification algebra, monotonicity and derivative, $\eta$-slack, manpower bound, delta-method gradients, Gauss--Markov optimality), the infimum and monotonicity ingredients of Claim~7, and the Section~6 arithmetic over exact rationals. The Lean development compiles with no unproven statements; the deterministic set-containment and multilinear-expansion statements of Claim~8 and the topological limit step rest on the symbolic and Monte-Carlo checks.
 
 \tableofcontents
 
@@ -101,7 +101,7 @@ Solving \eqref{eq:core} for $q$ gives $q(\mu)$.
 
 \emph{Step 2 (monotonicity).} $\partial q/\partial\mu = -\omega(a-f)/w \le 0$, with equality iff $a=f$ (no civilian adult men) or $\omega=0$.
 
-\emph{Step 3 (validity: every point of the interval with $q(\mu^\ast)\in[0,1]$ is attainable).} Fix any $\mu^\ast\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ such that $q(\mu^\ast)\in(0,1)$ (values outside $[0,1]$ are not shares and are excluded by the final intersection), and any $\lambda>0$ small enough that all implied class death counts are below class populations. The pair $(\lambda,\mu^\ast\lambda)$ is an admissible hazard configuration whose implied $\omega$ satisfies \eqref{eq:core} with $q=q(\mu^\ast)$. Boundary points are obtained in the closure: $q(\mu^\ast)=1$ corresponds to $\omega=0$ (no civilian deaths), attained by $\lambda=0$ or as the limit $\lambda\downarrow 0$; $q(\mu^\ast)=0$ is attained directly with $\lambda>0$ and no combatant deaths. Hence $q(\mu^\ast)$ is consistent with the data $(\omega,w,a,f)$: the identified set contains $\{q(\mu):\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]\}\cap[0,1]$, which by continuity and monotonicity is $[q(\mu_{\mathrm{hi}}),q(\mu_{\mathrm{lo}})]\cap[0,1]$.
+\emph{Step 3 (validity: every point of the demographic interval with $q(\mu^\ast)\in[0,1]$ is attainable).} Fix any $\mu^\ast\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$ such that $q(\mu^\ast)\in(0,1)$. With $(D,N)$ fixed, the observed $W$-class deaths pin $\lambda=\omega D/(wN)$. The theorem's feasibility conditions imply $\lambda\le1$ and $\mu^\ast\lambda\le1$, so the civilian class death counts do not exceed their populations. The resulting demographic allocation satisfies \eqref{eq:core} with $q=q(\mu^\ast)$. Boundary points are attained directly: $q(\mu^\ast)=1$ forces $\omega=0$ and hence $\lambda=0$; $q(\mu^\ast)=0$ is attained with no combatant deaths. Hence $q(\mu^\ast)$ is consistent with the demographic data. The separate stock restriction $D_M\le M$ is imposed in Claim~\ref{cl:manpower}; before that intersection, continuity and monotonicity give $[q(\mu_{\mathrm{hi}}),q(\mu_{\mathrm{lo}})]\cap[0,1]$.
 
 \emph{Step 4 (sharpness: nothing outside is attainable).} Conversely, any admissible configuration has some $\mu\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, and \eqref{eq:core} then forces $q=q(\mu)$, which lies in the interval. The intersection with $[0,1]$ imposes the logical range of a share.
 \end{proof}
@@ -122,7 +122,7 @@ q_{\mathrm{true}}-q_{\eta=0} \;=\; \frac{\eta(S-\omega)}{S(S-\eta)}
 \;=\; \frac{\eta\,q_{\mathrm{true}}}{S}
 \;=\; \frac{\eta\,q_{\eta=0}}{S-\eta},
 \]
-and the bias is $\ge 0$ whenever $S>0$ and $q_{\mathrm{true}}\ge 0$: ignoring the slack \emph{understates} $q$. Provided $S>\bar\eta$ (which holds at the Gaza values, where $S\ge 0.597$ for $\mu\le 2$), a loose uniform bound over $\mu\in[1,2]$ with $q_{\eta=0}\le 0.26$ is $\bar\eta\cdot 0.26/(0.597-\bar\eta)\approx 1.4$ percentage points; the exact per-$\mu$ bias is smaller and decreasing in $\mu$ ($1.05$ points at $\mu=1$, $0.74$ at $\mu=1.5$, $0.33$ at $\mu=2$), because $q_{\eta=0}$ falls with $\mu$ faster than $S$ does.
+and the bias is $\ge 0$ whenever $S>0$ and $q_{\mathrm{true}}\ge 0$: ignoring the slack \emph{understates} $q$. Provided $S>\bar\eta$ (which holds at the Gaza values, where $S\ge 0.626$ for $\mu\le 2$), a loose uniform bound over $\mu\in[1,2]$ with $q_{\eta=0}\le 0.33$ is $\bar\eta\cdot 0.33/(0.626-\bar\eta)\approx 1.7$ percentage points; the exact per-$\mu$ bias is smaller and decreasing in $\mu$ ($1.30$ points at $\mu=1$, $1.10$ at $\mu=1.5$, $0.83$ at $\mu=2$), because $q_{\eta=0}$ falls with $\mu$ faster than $S$ does.
 \end{claim}
 
 \begin{proof}
@@ -136,19 +136,19 @@ Substituting $S-\omega=q_{\mathrm{true}}(S-\eta)$ gives the second form $\eta q_
 
 \emph{Nonnegativity.} From the second form, $q_{\mathrm{true}}-q_{\eta=0}=\eta q_{\mathrm{true}}/S\ge 0$ for $S>0$, $\eta\ge 0$, $q_{\mathrm{true}}\ge 0$. (This is the right route: arguing instead from ``$\omega\le S$'' requires $S\ge\eta$, since $\omega=S-q(S-\eta)$ gives $\omega\ge S$ when $\eta>S$ and $q\ge 0$.)
 
-\emph{Bound.} For the uniform bound the third form is used with the worst admissible values: it is increasing in $\eta$ (for $S>\eta$) and in $q_{\eta=0}$, and decreasing in $S$, so on $\eta\le\bar\eta$, $q_{\eta=0}\le 0.26$, $S\ge 0.597$ (the $\mu=2$ value; $S$ decreases in $\mu$) it is at most $\bar\eta\cdot 0.26/(0.597-\bar\eta)\approx 0.0138$. This is loose because it pairs the smallest $S$ (attained at $\mu=2$) with the largest $q_{\eta=0}$ (attained at $\mu=1$): the exact per-$\mu$ bias $\bar\eta\,q_{\eta=0}(\mu)/(S(\mu)-\bar\eta)$ evaluates to $0.0105$, $0.0074$, $0.0033$ at $\mu=1,1.5,2$.
+\emph{Bound.} For the uniform bound the third form is used with the worst admissible values: it is increasing in $\eta$ (for $S>\eta$) and in $q_{\eta=0}$, and decreasing in $S$, so on $\eta\le\bar\eta$, $q_{\eta=0}\le 0.33$, $S\ge 0.626$ (the $\mu=2$ value; $S$ decreases in $\mu$) it is at most $\bar\eta\cdot 0.33/(0.626-\bar\eta)<0.017$. This is loose because it pairs the smallest $S$ (attained at $\mu=2$) with the largest $q_{\eta=0}$ (attained at $\mu=1$): the exact per-$\mu$ bias $\bar\eta\,q_{\eta=0}(\mu)/(S(\mu)-\bar\eta)$ evaluates to $0.0130$, $0.0110$, $0.0083$ at $\mu=1,1.5,2$.
 
 Note the distinction between the second and third forms: the bias equals $\eta q/(S-\eta)$ with $q$ the \emph{no-slack} estimate, and $\eta q/S$ with $q$ the \emph{true} share --- the two coincide only to first order in $\eta$.
 \end{proof}
 
 \begin{verification}
-\PASS. Sympy: all three displayed forms are symbolically equal to $q_{\mathrm{true}}-q_{\eta=0}$; the superficially plausible chain $\eta q_{\mathrm{true}}/S\cdot S/(S-\eta)$ (which double-counts the $(S-\eta)^{-1}$ correction) is confirmed \emph{not} to equal the bias. Lean: the identity \texttt{claim3\_qtrue}, the three bias forms, nonnegativity exactly under $S>0$, $\eta\ge0$, $q_{\mathrm{true}}\ge0$ (theorem \texttt{claim3\_bias\_nonneg\_of\_qtrue}), the spurious-chain refutation, and exact rational bounds on the per-$\mu$ biases. Numeric: $S(1)=0.748$, $S(1.5)=0.664$, $S(2)=0.597$ at Gaza demographics --- so any blanket support claim like ``$S\ge0.70$'' would fail for $\mu\gtrsim 1.15$, which is why the claim states the condition as $S>\bar\eta$ and reports per-$\mu$ biases. Direction note: the slack makes the paper's \emph{upper} bounds conservative in the claim-favourable direction, so no downstream conclusion depends on suppressing it.
+\PASS. Sympy: all three displayed forms are symbolically equal to $q_{\mathrm{true}}-q_{\eta=0}$; the superficially plausible chain $\eta q_{\mathrm{true}}/S\cdot S/(S-\eta)$ (which double-counts the $(S-\eta)^{-1}$ correction) is confirmed \emph{not} to equal the bias. Lean: the identity \texttt{claim3\_qtrue}, the three bias forms, nonnegativity exactly under $S>0$, $\eta\ge0$, $q_{\mathrm{true}}\ge0$ (theorem \texttt{claim3\_bias\_nonneg\_of\_qtrue}), the spurious-chain refutation, and exact rational bounds on the per-$\mu$ biases. Numeric: $S(1)=0.770$, $S(1.5)=0.691$, $S(2)=0.627$ at Gaza demographics. Direction note: the slack makes the paper's \emph{upper} bounds conservative in the claim-favourable direction, so no downstream conclusion depends on suppressing it.
 \end{verification}
 
 %======================================================================
 \section{Claim 4: manpower bound (paper Corollary 3.4)}
 
-\begin{claim}
+\begin{claim}\label{cl:manpower}
 $q \le M/D$; whenever $\max\{0,q(\mu_{\mathrm{hi}})\}\le\min\{1,\,q(\mu_{\mathrm{lo}}),\,M/D\}$, the joint identified set is $\bigl[\max\{0,q(\mu_{\mathrm{hi}})\},\ \min\{1,\,q(\mu_{\mathrm{lo}}),\,M/D\}\bigr]$; otherwise it is empty and the inputs are jointly infeasible.
 \end{claim}
 
@@ -157,7 +157,7 @@ Combatants killed cannot exceed combatants existing: $D_M\le M$. Divide by $D>0$
 \end{proof}
 
 \begin{verification}
-\PASS\ (algebraic identity; Lean: \texttt{claim4\_manpower\_bound}). One caveat for manual review: $M$ here is the stock at $t_0$; if recruitment during the war is material, $M$ should be the stock-plus-inflow, which \emph{raises} the bound. In the Gaza application the bound is slack by a factor $>2$ ($M/D=0.64$ vs.\ $q\le 0.26$), so recruitment cannot change any conclusion.
+\PASS\ (algebraic identity; Lean: \texttt{claim4\_manpower\_bound}). One caveat for manual review: $M$ here is the stock at $t_0$; if recruitment during the war is material, $M$ should be the stock-plus-inflow, which \emph{raises} the bound. In the Gaza application the bound is non-binding ($M/D=0.630$ vs.\ the demographic cap $q(1)=0.321$).
 \end{verification}
 
 %======================================================================
@@ -195,90 +195,84 @@ For independent unbiased sources with known variances $\sigma_i^2$ (with estimat
 \[
 \hat\theta_{\mathrm{agg}}=\frac{\sum_i\hat\theta_i/\hat\sigma_i^2}{\sum_i 1/\hat\sigma_i^2}
 \]
-is minimum-variance among linear unbiased combinations with weights fixed given the variances. With per-source biases $b_i$, the aggregate bias is the precision-weighted mean of the $b_i$. Under $\varepsilon_i$-contamination in which the contaminated report is displaced from the truth by at most $R_i$ (equivalently, the contaminating support is contained in a set of diameter $R_i$ containing the truth), the worst-case aggregate bias is at most $\sum_i \varepsilon_i R_i\,\hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$.
+is minimum-variance among linear unbiased combinations with weights fixed given the variances. With per-source biases $b_i$, the aggregate bias is the precision-weighted mean of the $b_i$.
 \end{claim}
 
 \begin{proof}
 \emph{(i)} Minimise $\sum c_i^2\hat\sigma_i^2$ subject to $\sum c_i=1$. The Lagrangian condition gives $2c_i\hat\sigma_i^2=\kappa$, i.e.\ $c_i\propto 1/\hat\sigma_i^2$; the constraint fixes the normalisation. The objective is strictly convex, so this is the unique minimum (Gauss--Markov in one dimension).
 
 \emph{(ii)} $\E\hat\theta_{\mathrm{agg}}-\theta=\sum_i c_i b_i$ with $c_i=\hat\sigma_{\mathrm{agg}}^2/\hat\sigma_i^2$; direct substitution.
-
-\emph{(iii)} Contamination replaces source $i$'s report with probability $\varepsilon_i$ by a value displaced by at most $R_i$ (diameter of the contaminating support). The expected displacement of source $i$'s contribution is at most $\varepsilon_iR_i$, weighted into the aggregate by $c_i$; summing over $i$ gives the bound.
 \end{proof}
 
 \begin{verification}
-\PASS. Optimality confirmed on 300 random configurations against random competitor weights; bias formula confirmed symbolically. In Lean, the precision weights are proved to sum to one and the minimum-variance inequality $\sum c_i^2\sigma_i^2\ge 1/\sum\sigma_i^{-2}$ is proved for every unbiased combination via Cauchy--Schwarz (\texttt{claim6\_optimality}). Nuance for manual review: in (iii) ``diameter of the support'' means the contaminated value cannot leave a set of diameter $R_i$ around truth; if the adversary is unbounded, so is the worst case --- this is why the paper pairs the proposition with the identified-set diameters $R_i$ (removal diameters), which are finite by construction. The bound is on \emph{expected} bias, not worst-case realised displacement.
+\PASS. Optimality confirmed on 300 random configurations against random competitor weights; bias formula confirmed symbolically. In Lean, the precision weights are proved to sum to one and the minimum-variance inequality $\sum c_i^2\sigma_i^2\ge 1/\sum\sigma_i^{-2}$ is proved for every unbiased combination via Cauchy--Schwarz (\texttt{claim6\_optimality}).
 \end{verification}
 
 %======================================================================
 \section{Claim 7: feasibility and contradiction (paper Theorem 4.3)}
 
 \begin{claim}
-Fix $(\hat a,\hat f,\hat D)$ and $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$. Define $\mathcal F(x)$ as in the paper (eq.~4) and
+Fix $(\hat D,\hat N)$ and $[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$. For each independent input $A\in\{\omega,w,M\}$, revise that input alone, re-impose $a'=1-w'$ when $w$ moves and $f'=M'/\hat N$ when $M$ moves, and define
 \[
-\rho^{(i)}=\inf_{\omega',w',M'}\max\!\Bigl\{
-\tfrac{|\omega'-\hat\omega|}{\sigma_\omega},
-\tfrac{|w'-\hat w|}{\sigma_w},
-\tfrac{(M'-\hat M)_+}{\sigma_M}\Bigr\}
-\ \text{s.t.}\ q^{(i)}\in\mathcal F((\omega',w',\hat a,\hat f,M',\hat D)).
+\rho_A^{(i)}
+:=\inf\left\{\frac{|A'-\hat A|}{\sigma_A}:
+q^{(i)}\in\mathcal F\bigl(\hat x[A\mapsto A']\bigr)\right\},
+\qquad
+\rho^{(i)}:=\min_A\rho_A^{(i)}.
 \]
-Then (i) $\rho^{(i)}=0$ iff $q^{(i)}\in\mathcal F(\hat x)$, and (ii) if $\rho^{(i)}>0$, every rationalisation $(\omega',w',M')$ has at least one of $|\omega'-\hat\omega|/\sigma_\omega$, $|w'-\hat w|/\sigma_w$, $(M'-\hat M)_+/\sigma_M$ at least $\rho^{(i)}$; that is, at least one input must move by $\rho^{(i)}$ standard errors \emph{in a penalised direction} (downward moves of $M$ are free by construction, since lowering the manpower ceiling can only hurt the claim).
+Then (i) $\rho^{(i)}=0$ iff $q^{(i)}\in\mathcal F(\hat x)$, and (ii) every one-axis rescue on axis $A$ moves that input by at least $\rho_A^{(i)}\ge\rho^{(i)}$ standardised units.
 \end{claim}
 
 \begin{proof}
-\emph{(i, $\Leftarrow$)} If $q^{(i)}\in\mathcal F(\hat x)$, take $(\omega',w',M')=(\hat\omega,\hat w,\hat M)$: objective $0$.
+\emph{(i, $\Leftarrow$)} If $q^{(i)}\in\mathcal F(\hat x)$, the unmoved value $A'=\hat A$ is feasible on every axis, so every axis radius and hence $\rho^{(i)}$ is zero.
 
-\emph{(i, $\Rightarrow$)} Suppose $\rho^{(i)}=0$. Take a sequence $(\omega'_n,w'_n,M'_n)$ of feasible points with objective $\to 0$. Because the $M$-penalty is \emph{one-sided}, this does \emph{not} imply $M'_n\to\hat M$; it implies only
-\[
-\omega'_n\to\hat\omega,\qquad w'_n\to\hat w,\qquad (M'_n-\hat M)_+\to 0,
-\]
-i.e.\ $\limsup_n M'_n\le\hat M$ (with $M'_n$ possibly far below $\hat M$). We therefore argue via the constraint rather than via convergence of $M'_n$. Each feasible point satisfies (a) $q^{(i)}=1-\omega'_n(w'_n+\mu_n(a-f))/w'_n$ for some $\mu_n\in[\mu_{\mathrm{lo}},\mu_{\mathrm{hi}}]$, and (b) $q^{(i)}D\le M'_n$. For (a): pass to a subsequence with $\mu_n\to\mu^\ast$ in the compact interval; continuity of $(\omega',w',\mu)\mapsto 1-\omega'(w'+\mu(a-f))/w'$ (on $w'>0$) gives $q^{(i)}=1-\hat\omega(\hat w+\mu^\ast(a-f))/\hat w$, so the exposure constraint holds at the observed $(\hat\omega,\hat w)$. For (b): $q^{(i)}D\le M'_n\le \hat M+(M'_n-\hat M)_+\to\hat M$, so $q^{(i)}D\le\hat M$. Hence $q^{(i)}\in\mathcal F(\hat x)$. (The one-sided penalty is why the argument must run through the constraint: ``objective $\to0$ implies the full vector converges to $(\hat\omega,\hat w,\hat M)$'' is false when downward moves of $M$ are free; only the inequality $q^{(i)}D\le\hat M$ survives the limit, and that is all the theorem needs.)
+\emph{(i, $\Rightarrow$)} If $\rho^{(i)}=0$, some axis $A$ has $\rho_A^{(i)}=0$. Take feasible revisions $A'_n\to\hat A$. The re-imposed accounting identities converge with that axis. Each revision carries some $\mu_n$ in the compact exposure interval; pass to a subsequence with $\mu_n\to\mu^\ast$. Continuity of the demographic equation (with $w>0$) and of the manpower inequality gives both membership conditions of $\mathcal F(\hat x)$ in the limit. Thus $q^{(i)}\in\mathcal F(\hat x)$.
 
-\emph{(ii)} Let $(\omega',w',M')$ be any point of $C$ (``rationalisation''). By definition of the infimum, $\max\{|\omega'-\hat\omega|/\sigma_\omega,\,|w'-\hat w|/\sigma_w,\,(M'-\hat M)_+/\sigma_M\}\ge\rho^{(i)}$, so at least one of the three \emph{penalised} displacements is $\ge\rho^{(i)}$ SEs. This does not assert ``$M$ moved'' generically: lowering $M'$ costs nothing under the objective (and only shrinks the feasible set), so a positive radius can only ever be certified by an upward move of $M$, or a move of $\omega$ or $w$ in either direction.
+\emph{(ii)} Any feasible one-axis revision is an element of the set over which $\rho_A^{(i)}$ takes its infimum, so its standardised displacement is at least $\rho_A^{(i)}$, which is in turn at least $\min_B\rho_B^{(i)}=\rho^{(i)}$.
 \end{proof}
 
 \begin{verification}
-\PASS. Kernel-checked ingredients (Lean): the $M$-monotonicity that makes the one-sided penalty sound (\texttt{claim7\_feasibility\_monotone\_in\_M}), the antitonicity of $\omega_{\mathrm{needed}}$ in $\mu$ behind the code's radius reduction, and the abstract infimum facts for parts (i,$\Leftarrow$) and (ii) --- the radius lower-bounds every rationalisation's penalty and vanishes at a feasible face-value point. The limit step of (i,$\Rightarrow$) is verified numerically: 2{,}000 random infeasible claims all fail to become feasible under $10^{-9}$-perturbations (no boundary pathologies found), and 500 simulated feasible sequences with $M'_n$ far below $\hat M$ confirm that only $q^{(i)}D\le\hat M$ survives the limit. The reduction used in the code (radius on the $\omega$-axis $=$ distance from $\hat\omega$ to the interval $[\omega_{\mathrm{needed}}(\mu_{\mathrm{hi}}),\omega_{\mathrm{needed}}(\mu_{\mathrm{lo}})]$) is justified by $\omega_{\mathrm{needed}}$ decreasing in $\mu$ (verified symbolically). Note for manual checking: Definition 4.2 grants the claim the most favourable $\mu$ in the admissible range, so the radius must be evaluated at that $\mu$, not at the analyst's preferred value; \texttt{analysis/validate\_bounds.py} enforces this.
+\PASS. Kernel-checked ingredients (Lean): feasibility is monotone in $M$; $\omega_{\mathrm{needed}}$ is antitone in $\mu$; the radius lower-bounds every rationalisation's penalty and vanishes at a feasible face-value point. The compactness/continuity limit step is proved in the manuscript appendix. The code computes the $\omega$-axis radius as the distance from $\hat\omega$ to $[\omega_{\mathrm{needed}}(\mu_{\mathrm{hi}}),\omega_{\mathrm{needed}}(\mu_{\mathrm{lo}})]$, thereby granting the claim its most favourable admissible $\mu$.
 \end{verification}
 
 %======================================================================
-\section{Claim 8: bias-robust sensitivity band (paper Proposition 5.1)}
+\section{Claim 8: deterministic source-deletion sensitivity (paper Proposition 5.1)}
 
 \begin{claim}
-Let $I_0=[L_0,U_0]$ be the $1-\alpha$ credible interval under face-value sources, posterior supported on the identified set implied by the sources used. Each source $i$ is independently contaminated with probability $\varepsilon_i$; removing the sources in $T$ leaves an identified set of diameter $R_T$ ($R_i:=R_{\{i\}}$). Then: (i) conditional on realised pattern $T$, every \emph{support-respecting} $1-\alpha$ credible interval --- one whose endpoints lie in the posterior support, e.g.\ equal-tailed or HPD --- lies within $[L_0-R_T,\,U_0+R_T]$; (ii) the \emph{expected} endpoint displacement is at most $\sum_i\varepsilon_iR_i$ plus $O(\varepsilon^2)$ terms involving multi-removal diameters, so $I_\varepsilon=[L_0-\sum_i\varepsilon_iR_i,\ U_0+\sum_i\varepsilon_iR_i]$ is a first-order sensitivity band, \emph{not} a uniform envelope over realised intervals; (iii) if the posterior mixture weight on contaminated components is at most $\tau:=1-\prod_i(1-\varepsilon_i)$ and the face-value posterior density exceeds $m>0$ on the segment between the clean and contaminated quantiles,
+Let $\Theta_\varnothing=[L_0,U_0]$ be the compact face-value identified set. Deleting sources in $T$ gives a compact set $\Theta_T\supseteq\Theta_\varnothing$ of diameter $R_T$; every nonempty identified set $\widetilde\Theta_T$ obtained by replacing those sources while retaining all others satisfies $\widetilde\Theta_T\subseteq\Theta_T$. Then (i) $\widetilde\Theta_T\subseteq[L_0-R_T,U_0+R_T]$. (ii) If $d_T^-$ and $d_T^+$ are the worst downward and upward endpoint displacements over replacements, their deterministic multilinear extensions
 \[
-|\hat Q_\varepsilon(u)-\hat Q_0(u)|\;\le\; m^{-1}\tau,
-\qquad u\in\{\alpha/2,\,1-\alpha/2\}.
+\Delta_s(\varepsilon)=\sum_{T\subseteq\mathcal I}
+\prod_{i\in T}\varepsilon_i\prod_{j\notin T}(1-\varepsilon_j)d_T^s
+\quad(s\in\{-,+\})
 \]
+satisfy $\Delta_s(\varepsilon)=\sum_i\varepsilon_i d_{\{i\}}^s+O(\|\varepsilon\|_\infty^2)\le\sum_i\varepsilon_iR_i+C\|\varepsilon\|_\infty^2$ for a finite constant $C$ determined by the deletion sets. Hence $[L_0-\sum_i\varepsilon_iR_i,U_0+\sum_i\varepsilon_iR_i]$ is a conservative deterministic first-order sensitivity band, while part (i) governs a specified finite deletion pattern.
 \end{claim}
 
 \begin{proof}
-\emph{(i)} Condition on $T$: honest sources outside $T$ confine $\theta$ to the removal identified set of diameter $R_T$, which contains the face-value posterior support --- in particular both $L_0$ and $U_0$. Any posterior formed under adversarial reports from $T$ is supported there, so each endpoint of a support-respecting credible interval is within $R_T$ of the corresponding face-value endpoint. The support restriction is necessary: a mathematically arbitrary $1-\alpha$ credible interval can be widened without limit while retaining $1-\alpha$ coverage, so no finite envelope can contain \emph{every} credible interval.
+\emph{(i)} Since $L_0,U_0\in\Theta_T$ and every $x\in\widetilde\Theta_T$ also lies in $\Theta_T$, both $|x-L_0|$ and $|x-U_0|$ are at most $\operatorname{diam}(\Theta_T)=R_T$. This gives the stated containment and, after taking endpoint and replacement suprema, $0\le d_T^s\le R_T$.
 
-\emph{(ii)} The pattern probability is $P(T)=\prod_{i\in T}\varepsilon_i\prod_{i\notin T}(1-\varepsilon_i)$, so the expected displacement is at most $\sum_T P(T)R_T = \sum_i\varepsilon_iR_i\prod_{j\ne i}(1-\varepsilon_j) + \sum_{|T|\ge2}P(T)R_T \le \sum_i\varepsilon_iR_i + O(\varepsilon^2)$. This is a statement about the \emph{mean} over the contamination pattern. A quantile (interval endpoint) of the realised posterior can move by up to $R_T$ on a contamination event of probability $\varepsilon_i$: with one source, $\varepsilon=0.04$, $R=100$, a contaminated component at distance $\approx R$ carrying $4\%$ posterior mass moves the $97.5\%$ quantile by $\approx R$, far beyond $\varepsilon R=4$. Hence the band is first-order in $\varepsilon$, exact when at most one source can be contaminated \emph{and} displacement is measured in expectation. Note also that $R_T$ for $|T|\ge2$ is not bounded by $\sum_{i\in T}R_i$ in general: two mutually corroborating sources can each have a small removal diameter while their joint removal is much larger.
-
-\emph{(iii)} Write $\hat F_\varepsilon=(1-\pi)\hat F_0+\pi G$ with $\pi\le\tau$; since CDFs are $[0,1]$-valued, $\sup_x|\hat F_\varepsilon(x)-\hat F_0(x)|\le\pi\le\tau$, also at left limits. With quantiles as generalised inverses, $\hat F_\varepsilon(Q_\varepsilon^-)\le u\le\hat F_\varepsilon(Q_\varepsilon)$ and $\hat F_0(Q_0)=u$ ($\hat F_0$ is continuous where its density is positive), so $\hat F_0(Q_\varepsilon)\in[u-\tau,u+\tau]$, i.e.\ $|\hat F_0(Q_\varepsilon)-\hat F_0(Q_0)|\le\tau$; the density floor $m$ on the segment between the two quantiles lower-bounds the left side by $m|Q_\varepsilon-Q_0|$, giving the display. The weight condition does \emph{not} follow from the prior probabilities alone: posterior component weights are $\propto P(T)\,Z_T$ where $Z_T$ is the component marginal likelihood, so an adversarial component that fits the data better than the clean model carries posterior weight exceeding $\tau$.
+\emph{(ii)} Separate the singleton terms in the defining polynomial. For $T=\{i\}$, the coefficient is $\varepsilon_i\prod_{j\ne i}(1-\varepsilon_j)=\varepsilon_i+O(\|\varepsilon\|_\infty^2)$. Every term with $|T|\ge2$ is $O(\|\varepsilon\|_\infty^2)$; there are finitely many and $d_T^s\le R_T<\infty$. With $n=|\mathcal I|$, $\delta=\|\varepsilon\|_\infty$, and $R_{\max}=\max_{T\ne\varnothing}R_T$, the remainder is bounded in absolute value by $[n(n-1)+2^n]R_{\max}\delta^2$. Thus $\Delta_s=\sum_i\varepsilon_i d_{\{i\}}^s+O(\delta^2)$, and $d_{\{i\}}^s\le R_i$ gives the conservative linear bound. Joint-removal diameters need not be bounded by sums of singleton diameters, so the finite-pattern claim remains part (i), not the first-order band.
 \end{proof}
 
 \begin{verification}
-\PASS\ (as stated; the statement is deliberately \emph{not} a uniform credible-interval envelope, and the proof of (ii) exhibits why no such envelope exists for tail quantiles). The kernel of that distinction is machine-checked in Lean on a two-point contamination distribution (mass $\varepsilon$ at $R$): the mean displacement equals $\varepsilon R$ exactly while the CDF stays $\le 1-\varepsilon$ below $R$, so any quantile above level $1-\varepsilon$ moves by the full $R$ (\texttt{claim8\_mean\_displacement}, \texttt{claim8\_quantile\_stuck\_below}). Numerics: the one-source configuration $\varepsilon=0.04$, $R=100$, clean posterior $\mathcal N(0,0.1^2)$, contaminated component $\mathcal N(100,0.1^2)$ moves the pooled $97.5\%$ quantile to $99.97$ while $\varepsilon R=4$, confirming that only the expectation --- not the realised quantile --- obeys the first-order band. The exchange-of-sums identity behind (ii) is verified by exact enumeration over contamination patterns (100 random configurations), and the quantile bound in (iii) is confirmed on 200 Gaussian-mixture configurations where the weight condition holds by construction. Downstream use in Section 6: the quoted $32.1\%\to 39.4\%$ inflation is the first-order band $I_\varepsilon$ and is labelled as such; the paper's headline rejections rest on the bounds and the contradiction radius, not on this proposition.
+\PASS. The containment is exercised on 1{,}000 randomly generated nested intervals and replacement subsets. The directional derivative of the multilinear deletion functional at the origin is checked in 100 random configurations, together with its singleton-diameter bound. Downstream use in Section 6 labels the quoted $32.1\%\to39.4\%$ inflation as deterministic first-order source-deletion sensitivity.
 \end{verification}
 
 %======================================================================
 \section{Section 6 arithmetic (spot summary)}
 
-All application numbers are generated by \texttt{analysis/validate\_bounds.py}. Key identities re-verified here at $(w,a,f,\omega)=(0.755,0.245,0.020,0.523)$; the starred rows are also proved over exact rationals in Lean.
+All application numbers are generated by \texttt{analysis/validate\_bounds.py}. Key identities are re-verified here at $(w,a,f,\omega)=(0.755,0.245,45000/2226544,0.523)$; the starred rows are also proved over exact rationals in Lean.
 \begin{center}
 \begin{small}
 \begin{tabular}{@{}lll@{}}
 \toprule
 Quantity & Value & Check \\
 \midrule
-$q(1)$ & $32.11\%$ & symbolic $+$ numeric $+$ Lean$^\ast$ (exact: $12123/37750$) \\
-$q(1.5)$ & $24.32\%$ & numeric $+$ Lean$^\ast$ \\
-$q(2)$ & $16.53\%$ & numeric $+$ Lean$^\ast$ \\
+$q(1)$ & $32.13\%$ & symbolic $+$ numeric $+$ Lean$^\ast$ (exact: $67511651/210130090$) \\
+$q(1.5)$ & $24.34\%$ & numeric $+$ Lean$^\ast$ \\
+$q(2)$ & $16.56\%$ & numeric $+$ Lean$^\ast$ \\
 root of $q(\mu)=0$ & $\mu^\ast=3.06$ & numeric; matches the $q{=}0$ symmetry discussion \\
-$\mu$ needed for $q=17{,}000/71{,}444$ & $1.53$ & inversion; $\ge 1$ so arithmetically feasible \\
+$\mu$ needed for $q=17{,}000/71{,}444$ & $1.54$ & inversion; $\ge 1$ so arithmetically feasible \\
 $\mu$ needed for $q=25{,}000/71{,}444$ & $0.82$ & inversion; $<1$ so infeasible for any admissible $\mu$ \\
 $M/D$ & $0.630$ & non-binding vs.\ all bounds above \\
 $\eta$-slack bias, $\mu{=}1,1.5,2$ & $1.30$, $1.10$, $0.83$ pp & numeric $+$ Lean$^\ast$; uniform bound $1.66$ pp \\

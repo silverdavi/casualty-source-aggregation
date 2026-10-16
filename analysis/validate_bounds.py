@@ -28,8 +28,21 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTENT = ROOT / "paper" / "content"
+OUTPUT_DIRS = (
+    ROOT / "paper" / "content",
+    ROOT / "paper" / "submissions" / "pophm"
+    / "resubmission_2026-08-25" / "manuscript",
+)
 FAILURES: list[str] = []
+
+
+def write_generated(filename: str, text: str) -> None:
+    """Write a generated artifact to every maintained manuscript tree."""
+    for output_dir in OUTPUT_DIRS:
+        if output_dir.is_dir():
+            path = output_dir / filename
+            path.write_text(text)
+            print(f"  wrote {path}")
 
 
 def check(name: str, got, expected, tol=1e-9):
@@ -160,7 +173,9 @@ print("\n== Normalization and input consistency ==")
 # w = 1 - a = 0.755.
 W_POP = 0.755            # everyone outside the working-age-male class
 A_POP = 1.0 - W_POP      # males 18-59 (0.245)
-F_STOCK = 0.020          # combatant stock / population (IISS/RUSI mid)
+N_POP = 2_226_544        # exact PCBS 2023 baseline
+M_STOCK = 45_000         # IISS/RUSI/press-reported pre-war Hamas+PIJ mid
+F_STOCK = M_STOCK / N_POP
 A_MINUS_F = A_POP - F_STOCK
 
 check("classes sum to 1", W_POP + A_POP, 1.0, 1e-12)
@@ -206,7 +221,7 @@ N_MOH = N_IDENTIFIED
 #   omega_A = (children + women + 0.383*elderly) / identified = 0.479.
 # The class boundary is NOT immaterial: q(1) moves 32.1% -> 36.0% and the
 # 25k endpoint's required mu moves from 0.77 to ~1.06 (arithmetic edge).
-# The calibrated rejection holds under either convention (q(2) = 19.8%
+# The benchmark-range rejection holds under either convention (q(2) = 19.8%
 # under men-18+, still below the claim's lower endpoint).
 ELDERLY_MALE_SHARE = 0.617
 OMEGA_A_CONV = round((OCHA_CHILDREN + OCHA_WOMEN
@@ -245,7 +260,6 @@ MISSING = 12_200         # missing persons, presumed under rubble
 # assumes the survey estimate does not already include them, which is why
 # both corrected scenarios (D_CORRECTED and D_MAX) are reported.
 D_MAX = D_CORRECTED + MISSING                               # ~121k
-M_STOCK = 45_000         # IISS/RUSI/press-reported pre-war Hamas+PIJ mid
 IDF_LO, IDF_HI = 17_000, 25_000
 
 # Named-combatant evidence (Aman internal database, Guardian/+972 Aug 2025)
@@ -303,16 +317,16 @@ set_moh_2_35 = identified_set(OMEGA_MOH, W_POP, A_POP, F_STOCK, 2.0, 3.5,
 q1_moh = q_of_mu(OMEGA_MOH, W_POP, A_POP, F_STOCK, 1.0)
 print(f"  MoH anchor, mu in [1, 2.5]: q in [{set_moh_1_25[0]:.3f}, {set_moh_1_25[1]:.3f}]")
 print(f"  MoH anchor, mu in [2, 3.5]: q in [{set_moh_2_35[0]:.3f}, {set_moh_2_35[1]:.3f}]")
-check("q(1) MoH ~ 32.1%", q1_moh, 0.3211, 0.002)
+check("q(1) MoH ~ 32.1%", q1_moh, 0.3213, 0.0001)
 q2_moh = q_of_mu(OMEGA_MOH, W_POP, A_POP, F_STOCK, 2.0)
-check("q(2) MoH ~ 16.5%", q2_moh, 0.1653, 0.002)
-check("calibrated ceiling CCR ~ 5.05 (quoted as 5)",
+check("q(2) MoH ~ 16.6%", q2_moh, 0.1656, 0.0001)
+check("benchmark ceiling CCR ~ 5.05 (quoted as 5)",
       ccr_of_q(q2_moh), 5.05, 0.1)
 
 # Convention dependence (vintage-matched, Dec-2025 record): the men-18+
 # convention moves the mu=1 upper endpoint moderately (32.1% -> 36.0%) and
 # puts the 25k endpoint's required mu at the arithmetic edge (~1.06);
-# the calibrated rejection holds under either convention.
+# the benchmark-range rejection holds under either convention.
 q1_a_conv = q_of_mu(OMEGA_A_CONV, W_A_CONV, 1 - W_A_CONV, F_STOCK, 1.0)
 q2_a_conv = q_of_mu(OMEGA_A_CONV, W_A_CONV, 1 - W_A_CONV, F_STOCK, 2.0)
 check("q(1) under the men-18+ convention ~ 36.0%", q1_a_conv, 0.360, 0.005)
@@ -321,7 +335,7 @@ check("q(2) under the men-18+ convention ~ 19.8%", q2_a_conv, 0.198, 0.005)
 # mu required to rationalise each IDF endpoint on the MoH anchor
 mu_req_lo = mu_needed(q_idf_lo, OMEGA_MOH, W_POP, A_POP, F_STOCK)
 mu_req_hi = mu_needed(q_idf_hi, OMEGA_MOH, W_POP, A_POP, F_STOCK)
-check("mu required for IDF 17k ~ 1.53", mu_req_lo, 1.534, 0.01)
+check("mu required for IDF 17k ~ 1.54", mu_req_lo, 1.535, 0.001)
 check_true("IDF 25k infeasible for any mu >= 1 (working-age convention)",
            mu_req_hi < 1.0, f"mu_needed={mu_req_hi:.3f} < 1")
 # The same endpoint under the men-18+ convention: at the arithmetic edge.
@@ -329,15 +343,15 @@ mu_req_hi_a = mu_needed(q_idf_hi, OMEGA_A_CONV, W_A_CONV, 1 - W_A_CONV,
                         F_STOCK)
 check("IDF 25k under men-18+ convention needs mu ~ 1.06 (arithmetic edge)",
       mu_req_hi_a, 1.06, 0.01)
-check_true("calibrated rejection is convention-robust (q2 < claim lower"
+check_true("benchmark-range rejection is convention-robust (q2 < claim lower"
            " endpoint under both conventions)",
            max(q2_moh, q2_a_conv) < q_idf_lo,
            f"max({q2_moh:.3f}, {q2_a_conv:.3f}) < {q_idf_lo:.3f}")
 
 # Contradiction radii per the paper's Definition (claim picks the most
 # favourable mu in the range).  Two exposure regimes:
-#   agnostic   mu in [1, 2.5]  (no calibration assumed)
-#   calibrated mu in [2, 3.5]  (Frost/B'tselem historical calibration)
+#   agnostic  mu in [1, 2.5]
+#   benchmark mu in [2, 3.5]  (informed by Frost/B'tselem history)
 # The agnostic regime is quoted in prose as "any mu >= 1"; the 2.5 upper
 # grid endpoint is non-binding for every claim scored here, because both
 # tested claims sit above the set and the most favourable mu is mu_lo = 1
@@ -349,7 +363,7 @@ for lbl, om in [("MoH", OMEGA_MOH), ("blend", OMEGA_BLEND), ("OHCHR", OMEGA_OHCH
     r25 = rho_omega(q_idf_hi, om, SIGMA_OMEGA, W_POP, A_POP, F_STOCK, 1.0, 2.5)
     rho_ag[lbl] = (r17, r25)
     print(f"    {lbl:6s} anchor: IDF 17k -> {r17:5.1f} SE, IDF 25k -> {r25:5.1f} SE")
-print("  rho_omega, calibrated exposure mu in [2,3.5]:")
+print("  rho_omega, benchmark exposure range mu in [2,3.5]:")
 rho_cal = {}
 for lbl, om in [("MoH", OMEGA_MOH), ("blend", OMEGA_BLEND), ("OHCHR", OMEGA_OHCHR)]:
     r17 = rho_omega(q_idf_lo, om, SIGMA_OMEGA, W_POP, A_POP, F_STOCK, 2.0, 3.5)
@@ -360,13 +374,13 @@ for lbl, om in [("MoH", OMEGA_MOH), ("blend", OMEGA_BLEND), ("OHCHR", OMEGA_OHCH
 # Regression checks on the numbers quoted in Section 6
 check("rho MoH/17k agnostic = 0 (feasible at mu~1.53)", rho_ag["MoH"][0], 0.0)
 check("rho MoH/25k agnostic ~ 2.2 SE", rho_ag["MoH"][1], 2.22, 0.1)
-check("rho MoH/17k calibrated ~ 4.6 SE", rho_cal["MoH"][0], 4.55, 0.1)
-check("rho MoH/25k calibrated ~ 11.6 SE", rho_cal["MoH"][1], 11.57, 0.15)
+check("rho MoH/17k benchmark range ~ 4.6 SE", rho_cal["MoH"][0], 4.55, 0.1)
+check("rho MoH/25k benchmark range ~ 11.6 SE", rho_cal["MoH"][1], 11.57, 0.15)
 check("rho OHCHR/25k agnostic ~ 19 SE", rho_ag["OHCHR"][1], 19.2, 0.2)
 
 # --- The other two axes of Definition 4.2 (single-input rescues, mu = 1
 # granted, accounting identities a' = 1 - w' and f' = M'/N respected) ---
-N_POP_FOR_AXES = 2_250_000
+N_POP_FOR_AXES = N_POP
 # Census axis: q = 1 - omega*(1-f)/w'  =>  w' = omega*(1-f)/(1-q).
 w_rescue = OMEGA_MOH * (1 - F_STOCK) / (1 - q_idf_hi)
 check("w-axis rescue of 25k endpoint needs w' ~ 0.788", w_rescue, 0.7884, 0.002)
@@ -414,7 +428,7 @@ check("17k claim kills 28% of the 60k top-of-range stock",
       17_000 / 60_000, 0.2833, 0.001)
 
 # --- identified_set empty-set semantics (unit test) ---
-check_true("OHCHR anchor at calibrated exposure -> empty set (None)",
+check_true("OHCHR anchor over benchmark range -> empty set (None)",
            identified_set(OMEGA_OHCHR, W_POP, A_POP, F_STOCK, 2.0, 3.5) is None,
            "empty intersection correctly reported")
 
@@ -442,6 +456,8 @@ IDF_PREWAR_STOCK = 30_000
 IDF_CLAIM_KILLED = 22_000
 IDF_REMAINING = 20_000
 recruits_implied = IDF_CLAIM_KILLED + IDF_REMAINING - IDF_PREWAR_STOCK
+check("ledger: 17k killed + 20k remaining - 30k pre-war = 7k recruits",
+      IDF_LO + IDF_REMAINING - IDF_PREWAR_STOCK, 7_000, 0)
 check("ledger: implied recruits = 12,000", recruits_implied, 12_000, 0)
 check_true("ledger consistent only via recruitment concession",
            recruits_implied > 0,
@@ -454,20 +470,17 @@ check_true("ledger consistent only via recruitment concession",
 # Every hypothesis about combatant deaths D_C allocates the men's budget:
 # D_C combatants, D_men - D_C civilian men.  Per-capita rates then follow
 # from the population decomposition N = N_WC + N_AMciv + M.
-# Stock convention: M = 45,000 (IISS/RUSI central, f = M/N = 0.020 exactly,
-# N = 2.25M), the choice most favourable to the claim (a larger stock lowers
+# Stock convention: M = 45,000 (central institutional estimate) and the exact PCBS
+# baseline N = 2,226,544, so f = M/N = 0.02021069.  The stock choice is
+# favourable to the claim (a larger stock lowers
 # the implied killed fraction and selectivity).  The IDF's own 30,000 stock
 # is reported alongside for the claim rows (the manpower ledger).
 
 print("\n== Adult-male death budget ==")
-# N is rounded to 2.25M so that f = M/N = 45k/2.25M = 0.020 holds exactly;
-# the sourced PCBS total is 2,226,544 (gaza_sim/facts.json), a <1.1%
-# difference that moves no derived figure by more than 1%.
-N_POP = 2_250_000
-check("f consistency: M/N = 0.020", M_STOCK / N_POP, F_STOCK, 1e-12)
-N_WC = W_POP * N_POP                   # 1,698,750 outside the AM class
-N_AM = A_POP * N_POP                   # 551,250 working-age men (18-59)
-N_AMCIV = N_AM - M_STOCK               # 506,250 civilian working-age men
+check("f consistency: M/N uses exact PCBS baseline", M_STOCK / N_POP, F_STOCK, 1e-12)
+N_WC = W_POP * N_POP
+N_AM = A_POP * N_POP
+N_AMCIV = N_AM - M_STOCK
 
 # The budget uses the record's own published category counts (native,
 # not omega-rounded): men 34,078; everyone else 37,366.
@@ -506,7 +519,7 @@ row_random = budget_row("random violence", F_STOCK * D_MOH,
                         split_wc=W_POP * D_MOH)
 rows_budget = [
     row_random,
-    budget_row("calibrated upper end (mu=2)", q_cal_hi * D_MOH),
+    budget_row("benchmark upper end (mu=2)", q_cal_hi * D_MOH),
     budget_row("equal exposure (mu=1)", q1_moh * D_MOH),
     budget_row("IDF claim, 17k", IDF_LO),
     budget_row("IDF claim, 25k", IDF_HI),
@@ -518,8 +531,9 @@ for r in rows_budget:
           f"mu={r['mu_implied']:.2f}  sel={r['selectivity']:.1f}x")
 
 # Checks: the derived rates reproduce the paper's mu-required numbers.
-check("budget: random q = 2.0%", row_random["d_combatant"] / D_MOH, 0.020, 1e-9)
-check_true("random q inside calibrated set",
+check("budget: random q equals exact stock fraction",
+      row_random["d_combatant"] / D_MOH, F_STOCK, 1e-12)
+check_true("random q inside benchmark-range set",
            row_random["d_combatant"] / D_MOH <= q_cal_hi,
            f"2.0% <= {q_cal_hi:.1%}")
 check("budget: mu=1 row implies mu = 1.00 (native counts vs rounded omega)",
@@ -558,14 +572,14 @@ for label, D in D_GRID:
     d_rows.append((label, D, ql, qh, mul_, muh_))
     print(f"  D={D:>7,d} ({label:25s}): q_IDF {ql:.1%}-{qh:.1%}; "
           f"mu needed {mul_:.2f} / {muh_:.2f}")
-# The 25k endpoint stays below the calibrated range mu in [2, 3.5] at every
-# supported denominator; the 17k endpoint's required mu enters the calibrated
+# The 25k endpoint stays below the benchmark range mu in [2, 3.5] at every
+# supported denominator; the 17k endpoint's required mu enters the benchmark
 # range once the GMS correction is applied (mu ~ 2.06 at D~109k), so the
 # demographic axis alone no longer rejects 17k at corrected denominators --
 # at the price of 84-104k implied civilian deaths on the claim's own ledger.
-check_true("IDF 25k needs mu < 2 (below calibrated) even at D~121k",
+check_true("IDF 25k needs mu < 2 (below benchmark) even at D~121k",
            d_rows[-1][5] < 2.0, f"mu={d_rows[-1][5]:.3f}")
-check("IDF 17k at D~109k needs mu ~ 2.06 (enters calibrated range)",
+check("IDF 17k at D~109k needs mu ~ 2.06 (enters benchmark range)",
       d_rows[1][4], 2.06, 0.01)
 check("IDF 17k at D~121k needs mu ~ 2.16", d_rows[-1][4], 2.16, 0.01)
 
@@ -622,7 +636,7 @@ lines = [
     r" identified list \citep{epstein2025}, an earlier vintage, so the row is"
     r" approximate): the class boundary"
     rf" is not innocuous---the upper endpoint at $\mu=1$ moves from {100*q1_moh:.1f}\% to"
-    rf" {100*q1_a_conv:.1f}\%---but the calibrated bound stays below the disputed"
+    rf" {100*q1_a_conv:.1f}\%---but the benchmark-range bound stays below the disputed"
     r" claim's lower endpoint under either convention."
     r" The OHCHR anchor is approximate under the working-age convention (no elderly"
     r" split is published; the true $\omega'$ is slightly higher, so rejections on"
@@ -634,8 +648,9 @@ lines = [
     r" has its lower endpoint clipped at zero (zero combatants remains consistent),"
     r" while a range lying entirely in the dashed region yields an empty set: that"
     r" anchor and that exposure range are jointly inconsistent."
-    r" Exposure ratios calibrated on conflicts with recorded combatant status are"
-    r" $\mu\gtrsim 2$ \citep{frost2026}; airstrike-specific data suggest a smaller"
+    r" The benchmark sensitivity range is informed by conflicts with recorded"
+    r" combatant status, where exposure ratios are $\mu\gtrsim 2$"
+    r" \citep{frost2026}; airstrike-specific data suggest a smaller"
     r" differential \citep{cockerill2024}.}",
     r"\label{tab:sensitivity}",
     r"\begin{small}",
@@ -662,11 +677,7 @@ lines += [
     r"\end{small}",
     r"\end{table}",
 ]
-if CONTENT.is_dir():
-    (CONTENT / "tab_sensitivity.tex").write_text("\n".join(lines) + "\n")
-    print(f"  wrote {CONTENT / 'tab_sensitivity.tex'}")
-else:
-    print("  skipped tab_sensitivity.tex (no paper/content/)")
+write_generated("tab_sensitivity.tex", "\n".join(lines) + "\n")
 
 # ===========================================================================
 # 5. Convergence-of-methods table -> LaTeX
@@ -680,43 +691,45 @@ SPATIAL_CCR, SPATIAL_CCR_LO, SPATIAL_CCR_HI = 49, 35, 72
 
 conv_rows = [
     # (method, source, q_lo, q_hi, note)
-    ("IDF public claim (17--25k of 71,444)", r"\citep{idfclaim}",
+    ("IDF public claim (17--25k of 71,444)",
+     r"\citep{apclaim2024,jpostclaim2026}",
      q_idf_lo, q_idf_hi, "object of the test"),
     # Exposure-agnostic set: any mu >= 1; q(mu) <= 0 beyond mu* ~ 3.06,
     # so the set is [0, q(1)] (lower endpoint clipped at zero), matching
     # Step 2's statement -- not the display-grid range [q(2.5), q(1)].
     ("Identified set, MoH anchor, $\\mu\\ge 1$", "this paper",
-     0.0, q1_moh, "weakest assumption ($\\mu\\ge 1$)"),
+     0.0, q1_moh, "baseline monotonicity condition ($\\mu\\ge 1$)"),
     ("Identified set, MoH anchor, $\\mu\\in[2,3.5]$", "this paper",
-     set_moh_2_35[0], set_moh_2_35[1], "Frost-calibrated exposure"),
+     set_moh_2_35[0], set_moh_2_35[1],
+     "benchmark sensitivity range informed by historical male-to-female ratios"),
     ("Aman named-militant database", r"\citep{guardian972db2025}",
      q_aman, q_aman, "named fraction: 8,900 of 53,000 (May 2025); coverage unknown"),
     ("Male-bias model, MoH record", r"\citep{frost2026}",
-     q_of_ccr(8.0), q_of_ccr(4.9), "B'tselem-calibrated"),
+     q_of_ccr(8.0), q_of_ccr(4.9), "benchmark informed by B'tselem records"),
     ("Demographic decomposition", r"\citep{cockerill2024}",
      q_of_ccr(9.6), q_of_ccr(2.8), "range of male-bias assumptions"),
-    ("Spatial Bayesian posterior", r"this paper, App.~\ref{app:spatial}",
-     SPATIAL_Q_LO, SPATIAL_Q_HI, "prior-dependent; one point in the set"),
+    ("Structural prior-predictive simulation", r"this paper, App.~\ref{app:spatial}",
+     SPATIAL_Q_LO, SPATIAL_Q_HI,
+     "prior-determined illustration; not independent evidence"),
 ]
 lines = [
     r"\begin{table}[ht]",
     r"\centering",
     rf"\caption{{\textbf{{Convergence of methods on the Gaza combatant"
     rf" share.}} Every method's range lies within $q\in[0,{{\sim}}{math.ceil(100*q1_moh):d}\%]$, with"
-    r" point estimates and calibrated bounds concentrated at the low end"
+    r" documentary cross-checks and benchmark-range bounds concentrated at the low end"
     r" (in civilian-to-combatant terms, the loosest bound concedes"
-    rf" ${{\sim}}{ccr_of_q(q1_moh):.0f}{{:}}1$ or more, the calibrated bounds"
-    rf" at least ${{\sim}}{ccr_of_q(q2_moh):.0f}{{:}}1$, and the model-based"
-    rf" estimate centres at ${SPATIAL_CCR:d}{{:}}1$, on direct deaths). The upper end of the IDF claim (${100*q_idf_hi:.1f}\%$) lies above"
+    rf" ${{\sim}}{ccr_of_q(q1_moh):.0f}{{:}}1$ or more, the benchmark-range bounds"
+    rf" at least ${{\sim}}{ccr_of_q(q2_moh):.0f}{{:}}1$). The upper end of the IDF claim (${100*q_idf_hi:.1f}\%$) lies above"
     rf" every range; its lower end (${100*q_idf_lo:.1f}\%$) is admitted only at exposure"
-    rf" ratios below the calibrated range ($\mu\le{mu_needed(q_idf_lo, OMEGA_MOH, W_POP, A_POP, F_STOCK):.2f}$) and lies above every"
-    r" calibrated bound and point estimate, the one exception being the extreme"
+    rf" ratios below the benchmark range ($\mu\le{mu_needed(q_idf_lo, OMEGA_MOH, W_POP, A_POP, F_STOCK):.2f}$) and lies above every"
+    r" benchmark-range bound and point estimate, the one exception being the extreme"
     rf" low-male-bias end of the decomposition range (${100*q_of_ccr(2.8):.1f}\%$). The methods"
     r" share some inputs (MoH record, PCBS census) and are convergent"
     r" cross-checks, not statistically independent replicates; in particular,"
-    r" the calibrated identified-set row imports its exposure range from the"
-    r" male-bias calibration underlying the \citet{frost2026} row, so those two"
-    r" rows share the calibration itself, not just the data.}",
+    r" the benchmark identified-set row imports its exposure range from the"
+    r" male-bias evidence underlying the \citet{frost2026} row, so those two"
+    r" rows share that evidence, not just the data.}",
     r"\label{tab:convergence}",
     r"\begin{footnotesize}",
     r"\renewcommand{\arraystretch}{1.3}",
@@ -733,17 +746,13 @@ for i, (method, src, qlo, qhi, note) in enumerate(conv_rows):
     if i == 0:  # rule below the tested claim, separating it from the methods
         lines.append(r"\midrule")
 lines += [r"\bottomrule", r"\end{tabularx}", r"\end{footnotesize}", r"\end{table}"]
-if CONTENT.is_dir():
-    (CONTENT / "tab_convergence.tex").write_text("\n".join(lines) + "\n")
-    print(f"  wrote {CONTENT / 'tab_convergence.tex'}")
-else:
-    print("  skipped tab_convergence.tex (no paper/content/)")
+write_generated("tab_convergence.tex", "\n".join(lines) + "\n")
 
 # ===========================================================================
-# 6. Huber bias-robust inflation of the primary bound (Prop 'robust')
+# 6. First-order source-deletion sensitivity (Prop 'robust')
 # ===========================================================================
 
-print("\n== Huber inflation ==")
+print("\n== First-order source-deletion sensitivity ==")
 # R_i = diameter of the identified set for q with source i removed
 # (Prop 'robust'): the set is [0, q_max], so R_i = q_max after removal.
 # Convention: the removed source's information is replaced by a background
@@ -764,31 +773,31 @@ R_census = max(q_of_mu(OMEGA_MOH, wv, 1 - wv, F_STOCK, 1.0)
 R_M = 1.0 - OMEGA_MOH
 EPS = 0.05
 # The removal diameters are computed on the EXPOSURE-AGNOSTIC set and then
-# applied to both exposure regimes.  For the calibrated endpoint this
+# applied to both exposure regimes.  For the benchmark endpoint this
 # reuses the larger agnostic census diameter -- a deliberately conservative
 # (wider) inflation: recomputing R_census within mu in [2,3.5] would give
-# ~0.209 and a calibrated cap of 23.1% instead of 23.8%.  Stated in the
+# ~0.209 and a benchmark cap of 23.1% instead of 23.8%.  Stated in the
 # prose (Section 5).
 inflation = EPS * (R_demo + R_census + R_M)
 q1_moh_robust = min(1.0, q1_moh + inflation)
 q2_moh_robust = min(1.0, q2_moh + inflation)
 print(f"  R_demo={R_demo:.3f}, R_census={R_census:.3f}, R_M={R_M:.3f}; "
       f"eps={EPS} -> inflation {inflation:.3f}")
-print(f"  bias-robust upper bounds: q(1) {q1_moh:.3f} -> {q1_moh_robust:.3f}; "
+print(f"  source-deletion-sensitive upper bounds: q(1) {q1_moh:.3f} -> {q1_moh_robust:.3f}; "
       f"q(2) {q2_moh:.3f} -> {q2_moh_robust:.3f}")
-# Under the contamination allowance the exposure-agnostic cap (39.4%) no
-# longer sits below the 25k endpoint (35.0%); the calibrated inflated cap
+# Under the 5% source-deletion stress test the exposure-agnostic cap (39.4%) no
+# longer sits below the 25k endpoint (35.0%); the benchmark inflated cap
 # still rejects the 25k endpoint, while at the 17k endpoint the inflated
 # cap and the claim's lower endpoint essentially coincide (23.777% vs
 # 23.795%) -- a 0.018 pp margin on which no rejection claim is made in
 # either direction (the band is a first-order statement in any case).
 check_true("robust agnostic q(1) exceeds IDF 25k (agnostic rejection does"
-           " not survive contamination)", q1_moh_robust > q_idf_hi,
+           " not survive the source-deletion stress test)", q1_moh_robust > q_idf_hi,
            f"{q1_moh_robust:.3f} > {q_idf_hi:.3f}")
-check_true("robust calibrated q(2) still rejects IDF 25k",
+check_true("robust benchmark q(2) still rejects IDF 25k",
            q2_moh_robust < q_idf_hi,
            f"{q2_moh_robust:.3f} < {q_idf_hi:.3f}")
-check_true("robust calibrated q(2) essentially coincides with IDF 17k"
+check_true("robust benchmark q(2) essentially coincides with IDF 17k"
            " (knife edge; no rejection claimed either way)",
            abs(q2_moh_robust - q_idf_lo) < 0.001,
            f"|{q2_moh_robust:.4f} - {q_idf_lo:.4f}| < 0.001")
@@ -821,8 +830,8 @@ q_onefive_moh = q_of_mu(OMEGA_MOH, W_POP, A_POP, F_STOCK, 1.5)
 q1_ohchr = q_of_mu(OMEGA_OHCHR, W_POP, A_POP, F_STOCK, 1.0)
 mu_star_ceil = math.ceil(mu_star_q0 * 100) / 100      # q(mu) <= 0 for mu >= this
 q1_count_k = q1_moh * D_MOH / 1000                    # mu=1 cap in thousands of dead
-d_need_cal_k = round(IDF_LO / q2_moh / 10_000) * 10   # D making 17k calibrated-feasible
-d_need_cal_hi_k = round(IDF_HI / q2_moh / 10_000) * 10  # D making 25k calibrated-feasible
+d_need_cal_k = round(IDF_LO / q2_moh / 10_000) * 10   # D making 17k benchmark-feasible
+d_need_cal_hi_k = round(IDF_HI / q2_moh / 10_000) * 10  # D making 25k benchmark-feasible
 corr_add = D_CORRECTED - D_MOH                        # deaths the GMS correction adds
 corr_add_missing = round((D_MAX - D_MOH) / 1000) * 1000
 absorb_needed_k = round((IDF_HI + corr_add) / 1000)   # combatant side absorbing it all
@@ -837,6 +846,8 @@ MACRO_GROUPS = [
         ("nQOnePointFive", fmt_pct(q_onefive_moh)),       # 24.3
         ("nQTwo", fmt_pct(q2_moh)),                       # 16.5
         ("nQTwoRound", fmt_int(100 * q2_moh)),            # 17
+        ("nCivShareFloor", fmt_pct(1 - q1_moh)),          # 67.9 (civilian share, mu >= 1)
+        ("nCivShareFloorCal", fmt_pct(1 - q2_moh)),       # 83.4 (civilian share, mu in [2, 3.5])
         ("nQOneOhchr", fmt_pct(q1_ohchr)),                # 10.0
         ("nQOneFLo", fmt_pct(q1_f_lo)),                   # 31.8 (f = 0.0157)
         ("nQOneFHi", fmt_pct(q1_f_hi)),                   # 32.6 (f = 0.0269)
@@ -848,10 +859,10 @@ MACRO_GROUPS = [
         ("nBlend", f"{OMEGA_BLEND:.3f}"),                 # 0.602 (geometric blend)
         ("nOmegaAConv", f"{OMEGA_A_CONV:.3f}"),           # 0.479 (men-18+, Dec 2025)
         ("nQOneAConv", fmt_pct(q1_a_conv)),               # 36.0 (men-18+ convention)
-        ("nQTwoAConv", fmt_pct(q2_a_conv)),               # 19.8 (men-18+, calibrated)
+        ("nQTwoAConv", fmt_pct(q2_a_conv)),               # 19.8 (men-18+, benchmark)
         ("nMuIdfHiAConv", f"{mu_req_hi_a:.2f}"),          # 1.06 (25k under men-18+)
         ("nCcrAtQOne", fmt_int(ccr_of_q(q1_moh))),        # 2 (CCR at set's upper end)
-        ("nCcrCalibratedFloor", fmt_int(ccr_of_q(q2_moh))),  # 5 (CCR at calibrated ceiling)
+        ("nCcrCalibratedFloor", fmt_int(ccr_of_q(q2_moh))),  # 5 (CCR at benchmark ceiling)
     ]),
     ("Uniformity discrepancy (OHCHR sample vs population, descriptive;"
      " matched men-18+ convention)", [
@@ -871,8 +882,8 @@ MACRO_GROUPS = [
     ("Contradiction radii (units of the stated sigma scales)", [
         ("nRhoOmegaAg", f"{rho_ag['MoH'][1]:.1f}"),       # 2.2 (25k, agnostic)
         ("nRhoOmegaAgRound", fmt_int(rho_ag["MoH"][1])),  # 2
-        ("nRhoOmegaCal", f"{rho_cal['MoH'][1]:.1f}"),     # 11.6 (25k, calibrated)
-        ("nRhoIdfLoCal", f"{rho_cal['MoH'][0]:.1f}"),     # 4.6 (17k, calibrated)
+        ("nRhoOmegaCal", f"{rho_cal['MoH'][1]:.1f}"),     # 11.6 (25k, benchmark)
+        ("nRhoIdfLoCal", f"{rho_cal['MoH'][0]:.1f}"),     # 4.6 (17k, benchmark)
         ("nRhoIdfLoCalRound", fmt_int(rho_cal["MoH"][0])),  # 5
         ("nRhoOhchrAgRound", fmt_int(rho_ag["OHCHR"][1])),  # 19 (25k, OHCHR anchor)
         ("nRhoOhchrCalRound", fmt_int(rho_cal["OHCHR"][1])),  # 29 (empty-set config)
@@ -891,7 +902,7 @@ MACRO_GROUPS = [
         ("nRM", f"{R_M:.2f}"),                            # 0.48
         ("nHuberPP", fmt_pct(inflation)),                 # 7.2 (percentage points)
         ("nHuberInflated", fmt_pct(q1_moh_robust)),       # 39.4
-        ("nHuberInflatedCal", fmt_pct(q2_moh_robust)),    # 23.8 (calibrated cap)
+        ("nHuberInflatedCal", fmt_pct(q2_moh_robust)),    # 23.8 (benchmark cap)
     ]),
     ("D-sensitivity: corrected denominators and the civilian ledger", [
         ("nGmsRatio", f"{GMS_UNDERCOUNT:.2f}"),           # 1.53 (survey/recorded)
@@ -977,12 +988,8 @@ for group_label, entries in MACRO_GROUPS:
     ntex_lines.append(f"% --- {group_label} ---")
     for name, val in entries:
         ntex_lines.append(f"\\newcommand{{\\{name}}}{{{val}}}")
-if CONTENT.is_dir():
-    (CONTENT / "numbers.tex").write_text("\n".join(ntex_lines) + "\n")
-    print(f"\nWrote {CONTENT / 'numbers.tex'} "
-      f"({sum(len(e) for _, e in MACRO_GROUPS)} macros)")
-else:
-    print("skipped numbers.tex (no paper/content/)")
+write_generated("numbers.tex", "\n".join(ntex_lines) + "\n")
+print(f"  generated {sum(len(e) for _, e in MACRO_GROUPS)} numeric macros")
 
 # ===========================================================================
 # 7. Report
@@ -1000,7 +1007,7 @@ report = {
         "q1_moh": q1_moh, "q2_moh": q2_moh,
         "set_moh_mu_1_25": set_moh_1_25, "set_moh_mu_2_35": set_moh_2_35,
         "mu_needed_idf17k": mu_req_lo, "mu_needed_idf25k": mu_req_hi,
-        "rho_agnostic_mu_1_25": rho_ag, "rho_calibrated_mu_2_35": rho_cal,
+        "rho_agnostic_mu_1_25": rho_ag, "rho_benchmark_mu_2_35": rho_cal,
         "mu_star_q0": mu_star_q0,
         "q_aman": q_aman,
         "q_frost": [q_of_ccr(8.0), q_of_ccr(4.9)],

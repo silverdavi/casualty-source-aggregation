@@ -1,0 +1,122 @@
+{
+  "build_id": "f76bd2fb",
+  "note": "Documentation intensity within one archive; events are footage clusters and counts are upper bounds on distinct incidents. Not a legal finding.",
+  "n_events_total": 92588,
+  "n_events_with_struck_facility": 13924,
+  "facility_strikes": {
+    "hospital_medical": {
+      "n_events": 4607,
+      "by_verification_tier": {
+        "A": 516,
+        "B": 523,
+        "C": 152,
+        "D": 3416,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 2356,
+        "2": 236,
+        "3-4": 141,
+        "5+": 281
+      }
+    },
+    "school_university": {
+      "n_events": 1879,
+      "by_verification_tier": {
+        "A": 74,
+        "B": 185,
+        "C": 54,
+        "D": 1566,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 1128,
+        "2": 55,
+        "3-4": 32,
+        "5+": 43
+      }
+    },
+    "shelter_camp": {
+      "n_events": 2379,
+      "by_verification_tier": {
+        "A": 212,
+        "B": 271,
+        "C": 121,
+        "D": 1775,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 1211,
+        "2": 125,
+        "3-4": 71,
+        "5+": 89
+      }
+    },
+    "mosque_church": {
+      "n_events": 1173,
+      "by_verification_tier": {
+        "A": 71,
+        "B": 104,
+        "C": 36,
+        "D": 962,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 639,
+        "2": 50,
+        "3-4": 23,
+        "5+": 21
+      }
+    }
+  },
+  "victim_groups": {
+    "journalists_mentioned": {
+      "n_events": 5182,
+      "by_verification_tier": {
+        "A": 396,
+        "B": 334,
+        "C": 107,
+        "D": 4345,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 2646,
+        "2": 110,
+        "3-4": 86,
+        "5+": 294
+      }
+    },
+    "children_mentioned": {
+      "n_events": 9275,
+      "by_verification_tier": {
+        "A": 641,
+        "B": 1399,
+        "C": 169,
+        "D": 7066,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 5705,
+        "2": 234,
+        "3-4": 163,
+        "5+": 378
+      }
+    },
+    "medics_mentioned": {
+      "n_events": 4102,
+      "by_verification_tier": {
+        "A": 437,
+        "B": 388,
+        "C": 78,
+        "D": 3199,
+        "E": 0
+      },
+      "by_n_distinct_footage": {
+        "1": 2251,
+        "2": 137,
+        "3-4": 96,
+        "5+": 306
+      }
+    }
+  }
+}

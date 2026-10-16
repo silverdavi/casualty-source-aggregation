@@ -1,0 +1,38 @@
+{
+  "build_id": "f76bd2fb",
+  "dataset": "Archive Genocide event graph (Gaza Node Map / lab)",
+  "credit": "Archive Genocide",
+  "licence": "CC BY 4.0",
+  "homepage": "https://archivegenocide.com/lab/",
+  "data_url": "https://archivegenocide.com/lab/data/",
+  "key_url": "https://archivegenocide.com/key.asc",
+  "gpg_key_id": "9B4D575499AFA53C",
+  "gpg_fingerprint": "C24EC92B12D6670A2516065F9B4D575499AFA53C",
+  "gpg_fingerprint_spaced": "C24E C92B 12D6 670A 2516 065F 9B4D 5754 99AF A53C",
+  "sha256_sha256sums": "ab0f9dc4b2530a35d83d243981a8817f0522b8114add1290e7aa234b67f1922b",
+  "sha256_sha256sums_asc": "b06afc783b5e7ada209b80eb8e2fb25b6e0446050128dfc97dbd974c9c444f24",
+  "sha256_readme": "ba7be0dbdea58166875ee18e98df2588ec7ccffcb0b9f631ba11ad6c6ea5497e",
+  "files": [
+    "README.txt",
+    "actors.csv.gz",
+    "event_clips.csv.gz",
+    "event_entities.csv.gz",
+    "event_relations.csv.gz",
+    "events.csv.gz",
+    "events.geojson.gz",
+    "facilities.csv.gz",
+    "graph.graphml.gz",
+    "people.csv.gz",
+    "places.csv.gz"
+  ],
+  "do_not_download": [
+    "media torrents",
+    "archivegenocide-media.torrent",
+    "archivegenocide-media-torrent2.torrent"
+  ],
+  "never_publish": [
+    "sum of killed_min",
+    "named victim lists",
+    "clip captions"
+  ]
+}

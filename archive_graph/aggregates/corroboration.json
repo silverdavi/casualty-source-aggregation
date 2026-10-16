@@ -1,0 +1,74 @@
+{
+  "build_id": "f76bd2fb",
+  "note": "verification_tier is corroboration inside this archive, not truth; tier D means single-source here, not false. Event counts are footage clusters (upper bounds on incidents).",
+  "n_events_total": 92588,
+  "verification_tier_counts": {
+    "A": 1502,
+    "B": 5279,
+    "C": 2053,
+    "D": 83754,
+    "E": 0
+  },
+  "verification_tier_shares": {
+    "A": 0.016222,
+    "B": 0.057016,
+    "C": 0.022173,
+    "D": 0.904588,
+    "E": 0.0
+  },
+  "n_archives_x_n_distinct_footage": {
+    "n_archives=0": {
+      "n_distinct_footage=0": 0,
+      "n_distinct_footage=1": 0,
+      "n_distinct_footage=2": 0,
+      "n_distinct_footage=3-4": 0,
+      "n_distinct_footage=5+": 0
+    },
+    "n_archives=1": {
+      "n_distinct_footage=0": 34277,
+      "n_distinct_footage=1": 51530,
+      "n_distinct_footage=2": 822,
+      "n_distinct_footage=3-4": 242,
+      "n_distinct_footage=5+": 49
+    },
+    "n_archives=2": {
+      "n_distinct_footage=0": 362,
+      "n_distinct_footage=1": 3325,
+      "n_distinct_footage=2": 451,
+      "n_distinct_footage=3-4": 207,
+      "n_distinct_footage=5+": 75
+    },
+    "n_archives=3-4": {
+      "n_distinct_footage=0": 45,
+      "n_distinct_footage=1": 427,
+      "n_distinct_footage=2": 159,
+      "n_distinct_footage=3-4": 162,
+      "n_distinct_footage=5+": 177
+    },
+    "n_archives=5+": {
+      "n_distinct_footage=0": 0,
+      "n_distinct_footage=1": 7,
+      "n_distinct_footage=2": 4,
+      "n_distinct_footage=3-4": 12,
+      "n_distinct_footage=5+": 255
+    }
+  },
+  "share_with_2plus_distinct_footage": 0.028243,
+  "share_with_2plus_archives": 0.061217,
+  "figures_disputed": {
+    "n_disputed": 696,
+    "rate": 0.007517
+  },
+  "event_relation_kinds": {
+    "counts": {
+      "shared_entity": 22911,
+      "same_day": 13185,
+      "repeat_target": 10484,
+      "possible_same_event": 10262,
+      "shared_person": 2450
+    },
+    "n_established_structural_links": 49030,
+    "n_possible_same_event_links": 10262,
+    "note": "kind=possible_same_event flags candidate duplicate incidents; other kinds are established structural signals (shared entity/person, same day, repeat target)."
+  }
+}

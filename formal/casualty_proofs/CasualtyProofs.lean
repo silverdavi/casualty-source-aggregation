@@ -286,50 +286,15 @@ theorem claim7_radius_zero_of_feasible
   · apply le_csInf ⟨g p0, hmem⟩
     rintro _ ⟨x, hx, rfl⟩; exact hbdd x hx
 
-/-! ## Claim 8 kernel: why Proposition 5.1(ii) is a first-order band
-in expectation and NOT a uniform quantile envelope.
-A single source contaminated with probability ε by a value displaced by R:
-the displacement is 0 with probability 1-ε and R with probability ε. -/
-
-/-- CDF of the two-point displacement distribution. -/
-noncomputable def contamCDF (eps R x : ℝ) : ℝ :=
-    (if (0 : ℝ) ≤ x then 1 - eps else 0) + (if R ≤ x then eps else 0)
-
-/-- The MEAN displacement equals ε·R: the first-order sensitivity band is
-exact in expectation. -/
-theorem claim8_mean_displacement (eps R : ℝ) :
-    (1 - eps) * 0 + eps * R = eps * R := by ring
-
-/-- Below R the CDF stays ≤ 1-ε, so for any level u > 1-ε (e.g. u = 0.975
-with ε = 0.04) the u-quantile is ≥ R: the realised tail quantile moves by
-the full R, not by ε·R. -/
-theorem claim8_quantile_stuck_below
-    (eps R : ℝ) (heps : eps ≤ 1) (x : ℝ) (hx : x < R) :
-    contamCDF eps R x ≤ 1 - eps := by
-  unfold contamCDF
-  rw [if_neg (not_le.mpr hx), add_zero]
-  split <;> linarith
-
-/-- At x = R the CDF reaches 1, so the quantile equals R exactly. -/
-theorem claim8_quantile_at_R (eps R : ℝ) (hR : 0 ≤ R) :
-    contamCDF eps R R = 1 := by
-  unfold contamCDF
-  rw [if_pos hR, if_pos le_rfl]
-  ring
-
-/-- Quantitatively at the dossier's numbers: the quantile shift R = 100 far
-exceeds the first-order band ε·R = 4. -/
-theorem claim8_band_not_envelope : (0.04 : ℝ) * 100 < 100 := by norm_num
-
 /-! ## Section 6 arithmetic, exactly over ℚ
 q(mu) = 1 - om*(w + mu*(a-f))/w at
-(w, a, f, om) = (0.755, 0.245, 0.020, 0.523). -/
+(w, a, f, om) = (0.755, 0.245, 45000/2226544, 0.523). -/
 
 section Arithmetic
 
 def w0 : ℚ := 755 / 1000
 def a0 : ℚ := 245 / 1000
-def f0 : ℚ := 20 / 1000
+def f0 : ℚ := 45000 / 2226544
 def om0 : ℚ := 523 / 1000
 
 def qmu (mu : ℚ) : ℚ := 1 - om0 * (w0 + mu * (a0 - f0)) / w0
@@ -337,21 +302,21 @@ def qmu (mu : ℚ) : ℚ := 1 - om0 * (w0 + mu * (a0 - f0)) / w0
 /-- Classes partition the population exactly. -/
 theorem partition_exact : w0 + a0 = 1 := by norm_num [w0, a0]
 
-/-- q(1) = 32.1139...%: exact value 12123/37750. -/
-theorem q_at_1 : qmu 1 = 12123 / 37750 := by
+/-- q(1) = 32.1285...% at the manuscript's exact population denominator. -/
+theorem q_at_1 : qmu 1 = 67511651 / 210130090 := by
   norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(1) rounds to 32.11%: 0.3211 < q(1) < 0.3212. -/
-theorem q_at_1_bounds : 3211 / 10000 < qmu 1 ∧ qmu 1 < 3212 / 10000 := by
+/-- q(1) rounds to 32.13%: 0.3212 < q(1) < 0.3213. -/
+theorem q_at_1_bounds : 3212 / 10000 < qmu 1 ∧ qmu 1 < 3213 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(3/2) rounds to 24.32%: 0.2432 < q(3/2) < 0.2433. -/
+/-- q(3/2) rounds to 24.34%: 0.2434 < q(3/2) < 0.2435. -/
 theorem q_at_15_bounds :
-    2432 / 10000 < qmu (3 / 2) ∧ qmu (3 / 2) < 2433 / 10000 := by
+    2434 / 10000 < qmu (3 / 2) ∧ qmu (3 / 2) < 2435 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
-/-- q(2) rounds to 16.53%. -/
-theorem q_at_2_bounds : 1652 / 10000 < qmu 2 ∧ qmu 2 < 1653 / 10000 := by
+/-- q(2) rounds to 16.56%. -/
+theorem q_at_2_bounds : 1655 / 10000 < qmu 2 ∧ qmu 2 < 1656 / 10000 := by
   constructor <;> norm_num [qmu, w0, a0, f0, om0]
 
 /-- The identified-set upper endpoint is decreasing on the grid. -/
@@ -380,7 +345,7 @@ theorem muNeeded_inverts (q : ℚ) : qmu (muNeeded q) = q := by
   norm_num [qmu, muNeeded, w0, a0, f0, om0]
   ring
 
-/-- The 17,000/71,444 claim endpoint needs mu ≈ 1.53 ≥ 1: arithmetically
+/-- The 17,000/71,444 claim endpoint needs mu ≈ 1.54 ≥ 1: arithmetically
 feasible under agnostic exposure. -/
 theorem mu_needed_17k : 1 ≤ muNeeded (17000 / 71444) ∧
     153 / 100 < muNeeded (17000 / 71444) ∧

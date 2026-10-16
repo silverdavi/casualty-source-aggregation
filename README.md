@@ -58,6 +58,19 @@ analyst trusts more. This repository provides:
     └── report.md              human-readable posterior summary
 ```
 
+## Companion module: archive_graph/
+
+`archive_graph/` is a frozen-POPHM companion module that ingests the
+[Archive Genocide](https://archivegenocide.com/lab/) event graph (CC BY 4.0,
+build pinned to `f76bd2fb`, GPG + SHA256 verified) and produces count-only
+spatial, protected-site, MoH name-overlap, corroboration, and incident-size
+aggregates, with an implications memo (`archive_graph/report.md`) mapping
+each result onto the paper's Gaza claims. It changes **no number** in the
+manuscript, the `gaza_sim/` posterior, or `data/per_war/`; raw data (names,
+captions) stays local and gitignored, and no statistic sums caption casualty
+figures into a toll. See `archive_graph/README.md` for ethics, licence, and
+reproduction steps.
+
 ## Per-war JSON schema
 
 Each file in `data/per_war/` is a single dictionary. The full schema is
@@ -165,9 +178,9 @@ $q(\mu)$, all three closed forms of the $\eta$-slack bias, its sign, and
 its exact per-$\mu$ values (Remark 3), the manpower bound, the
 delta-method gradients, Gauss–Markov optimality of precision weighting
 (Prop. 2.1, via Cauchy–Schwarz), the monotonicity and infimum facts
-behind the contradiction radius (Theorem 4.3), the two-point
-contamination kernel of Prop. 5.1 (mean displacement $\varepsilon R$ vs
-full-$R$ quantile movement), and the Section 6 arithmetic in exact
+behind the contradiction radius (Theorem 4.3), a two-point
+contamination example illustrating why a first-order source-deletion
+term is not a finite-pattern envelope, and the Section 6 arithmetic in exact
 rational form. `docs/proof_verification.pdf` is the human-readable
 dossier with full statements, detailed proofs, and per-claim verification
 notes.
@@ -175,19 +188,19 @@ Key outputs (Ministry of Health demographic anchor, working-age-men 18--59
 convention):
 
 * Identified set for the Gaza combatant share: $q \in [0, 32.1\%]$ under
-  only the weak assumption $\mu \ge 1$, $q \in [0, 16.5\%]$ under the
-  historically calibrated exposure range $\mu \in [2, 3.5]$.
+  only the weak assumption $\mu \ge 1$, $q \in [0, 16.6\%]$ under the
+  historically informed benchmark range $\mu \in [2, 3.5]$.
 * IDF claim of 17--25k combatants killed ($q \approx 24$--$35\%$ over the
   71,444 identified dead): the 25k endpoint is infeasible for any
   $\mu \ge 1$ under the working-age convention (at the arithmetic edge,
   $\mu \approx 1.06$, under the men-18+ convention); contradiction radii
   range from $\rho \approx 2.2$ (agnostic exposure, MoH anchor) to
-  $\rho \approx 29$ (calibrated exposure, OHCHR anchor), in units of each
-  anchor's stated uncertainty scale. The calibrated rejection of the 25k
+  $\rho \approx 29$ (benchmark range, OHCHR anchor), in units of each
+  anchor's stated uncertainty scale. The benchmark-range rejection of the 25k
   endpoint survives undercount-corrected death tolls (109k--121k) and a
   5% Huber contamination allowance on every input (the agnostic rejection
-  survives neither); the 17k endpoint is feasible for $\mu \le 1.53$,
-  below the calibrated range.
+  survives neither); the 17k endpoint is feasible for $\mu \le 1.54$,
+  below the benchmark range.
 * Spatial Bayesian posterior (one prior-dependent point *within* the set;
   fully documented in the paper's Appendix B): $q = 2.0\%$, 95% credible
   interval $[1.4\%, 2.8\%]$, implied civilian-to-combatant ratio

@@ -107,7 +107,7 @@ om_flip = Sv_ - qv_ * (Sv_ - ev_)
 check("with eta > S and q >= 0, omega >= S (so 'omega<=S' route needs S>eta)",
       om_flip >= Sv_, f"omega={om_flip:.4f} vs S={Sv_}")
 # Gaza S values per mu; the claim's stated condition is S > eta-bar:
-W_g, A_g, F_g = 0.755, 0.245, 0.020
+W_g, A_g, F_g = 0.755, 0.245, 45_000 / 2_226_544
 S_of = lambda m: W_g / (W_g + m * (A_g - F_g))
 check("S(1)=0.770", abs(S_of(1) - 0.770) < 1e-3, f"{S_of(1):.4f}")
 check("S(1.5)=0.691", abs(S_of(1.5) - 0.691) < 1e-3, f"{S_of(1.5):.4f}")
@@ -286,90 +286,82 @@ check("omega_needed decreasing in mu",
       sp.simplify(-(1 - q) * w * (a - f) / (w + mu * (a - f))**2))
 
 # ===========================================================================
-# Proposition 5.1 (Bias-robust sensitivity band)
+# Proposition 5.1 (deterministic source-deletion sensitivity)
 # ===========================================================================
-print("\n== Proposition 5.1: Huber contamination ==")
-# Why (ii) is a statement about the MEAN and not a uniform envelope:
-# one source, eps=0.04, R=100; clean posterior N(0,0.1^2), contaminated
-# component N(100,0.1^2).  Pooled 97.5% quantile jumps ~100 >> eps*R=4,
-# so no first-order band can contain realised tail quantiles.
-from scipy import stats as st
-xs = np.linspace(-5, 105, 400_001)
-cdf_pool = 0.96 * st.norm.cdf(xs, 0, 0.1) + 0.04 * st.norm.cdf(xs, 100, 0.1)
-q975_pool = float(np.interp(0.975, cdf_pool, xs))
-check("realised tail quantile can jump far beyond eps*R (band is first-order only)",
-      q975_pool > 90 and 0.04 * 100 == 4.0, f"quantile={q975_pool:.2f}, eps*R=4")
-# (ii) EXPECTED displacement identity: over contamination
-# patterns T with P(T) = prod eps_i prod (1-eps_i), if patternwise shift is
-# bounded by sum_{i in T} R_i, the expectation equals sum_i eps_i R_i.
-# Verify the exchange-of-sums identity exactly by enumeration:
+print("\n== Proposition 5.1: deterministic source deletion ==")
+
+# Patternwise geometry: if the clean interval and every replacement set are
+# contained in the deletion set Theta_T, whose diameter is R_T, then every
+# replacement point lies in [L0-R_T, U0+R_T].
 ok = True
-for _ in range(100):
-    k = int(rng.integers(1, 5))
-    eps = rng.uniform(0, 0.4, k)
-    R = rng.uniform(0, 2.0, k)
-    total = 0.0
-    for mask in range(2**k):
-        T = [(mask >> i) & 1 for i in range(k)]
-        pT = np.prod([eps[i] if T[i] else 1 - eps[i] for i in range(k)])
-        total += pT * sum(R[i] for i in range(k) if T[i])
-    if abs(total - (eps * R).sum()) > 1e-10:
+for _ in range(1000):
+    theta_lo = rng.uniform(-3, 0)
+    theta_hi = rng.uniform(0, 3)
+    L0 = rng.uniform(theta_lo, theta_hi)
+    U0 = rng.uniform(L0, theta_hi)
+    R_T = theta_hi - theta_lo
+    repl_lo = rng.uniform(theta_lo, theta_hi)
+    repl_hi = rng.uniform(repl_lo, theta_hi)
+    if repl_lo < L0 - R_T - 1e-12 or repl_hi > U0 + R_T + 1e-12:
         ok = False
         break
-check("union bound identity: sum_T P(T) shift(T) = sum_i eps_i R_i "
-      "(exact enumeration, 100 configs)", ok)
+check("patternwise deletion envelope contains every replacement set "
+      "(1000 intervals)", ok)
 
-# (iii) Quantile displacement UNDER the posterior-weight condition:
-# if the posterior mixture weight on contaminated components is
-# <= tau = 1 - prod(1-eps_i) (assumed, not automatic: posterior weights are
-# proportional to P(T) * component marginal likelihood Z_T) and the clean
-# density >= m on the segment between the quantiles, |Q_eps - Q_0| <= tau/m.
-# Verify with Gaussian mixtures where the weight condition holds by
-# construction (mixture formed with weights exactly (1-eps, eps)):
-for _ in range(200):
-    epsv = rng.uniform(0, 0.2)
-    shift = rng.uniform(0, 3)
-    # contaminated cdf: (1-eps)*Phi(x) + eps*Phi(x-shift)
-    u_test = rng.uniform(0.05, 0.95)
-    q0 = st.norm.ppf(u_test)
-    # solve contaminated quantile by bisection
-    lo, hi = -10, 10
-    for _ in range(60):
-        mid = (lo + hi) / 2
-        if (1 - epsv) * st.norm.cdf(mid) + epsv * st.norm.cdf(mid - shift) < u_test:
-            lo = mid
-        else:
-            hi = mid
-    qe = (lo + hi) / 2
-    # density lower bound near the two quantiles:
-    # (1-eps)*f0 is a valid LOWER bound on the mixture density
-    # f_eps = (1-eps) f0 + eps g >= (1-eps) f0, and Prop 5.1(iii) holds for
-    # any valid m; using it makes the tested bound m^{-1} tau conservative
-    # (never anti-conservative).
-    mval = min((1 - epsv) * st.norm.pdf(q0), (1 - epsv) * st.norm.pdf(qe))
-    if abs(qe - q0) > epsv / mval + 1e-6:
-        check("quantile displacement <= TV/m", False,
-              f"|dq|={abs(qe-q0):.4f} bound={epsv/mval:.4f}")
+# The deterministic multilinear extension has directional derivative
+# sum_i v_i d_{i} at epsilon=0; singleton endpoint displacements are bounded
+# by singleton removal diameters, yielding sum_i epsilon_i R_i at first order.
+ok = True
+for _ in range(100):
+    k = int(rng.integers(1, 6))
+    R_by_mask = np.zeros(2**k)
+    d_by_mask = np.zeros(2**k)
+    for mask in range(1, 2**k):
+        R_by_mask[mask] = rng.uniform(0.1, 3.0)
+        d_by_mask[mask] = rng.uniform(0, R_by_mask[mask])
+    direction = rng.uniform(0, 1, k)
+
+    def multilinear_delta(eps):
+        total = 0.0
+        for mask in range(1, 2**k):
+            weight = np.prod([
+                eps[i] if (mask >> i) & 1 else 1 - eps[i]
+                for i in range(k)
+            ])
+            total += weight * d_by_mask[mask]
+        return total
+
+    singleton_derivative = sum(
+        direction[i] * d_by_mask[1 << i] for i in range(k)
+    )
+    singleton_R_bound = sum(
+        direction[i] * R_by_mask[1 << i] for i in range(k)
+    )
+    t = 1e-7
+    finite_difference = multilinear_delta(t * direction) / t
+    if (abs(finite_difference - singleton_derivative) > 2e-5 or
+            singleton_derivative > singleton_R_bound + 1e-12):
+        ok = False
         break
-else:
-    check("quantile displacement <= TV/m (200 Gaussian configs)", True)
+check("multilinear deletion functional has bounded singleton first derivative "
+      "(100 configs)", ok)
 
 # ===========================================================================
 # Section 6 arithmetic spot checks (already in validate_bounds; re-assert core)
 # ===========================================================================
 print("\n== Section 6 arithmetic ==")
-W_, A_, F_, OM_ = 0.755, 0.245, 0.020, 0.523
+W_, A_, F_, OM_ = 0.755, 0.245, 45_000 / 2_226_544, 0.523
 qf = lambda m: 1 - OM_ * (W_ + m * (A_ - F_)) / W_
-check("q(1)=32.1%", abs(qf(1) - 0.3211) < 2e-3, f"{qf(1):.4f}")
-check("q(2)=16.5%", abs(qf(2) - 0.1653) < 2e-3, f"{qf(2):.4f}")
+check("q(1)=32.1%", abs(qf(1) - 0.3213) < 1e-4, f"{qf(1):.4f}")
+check("q(2)=16.6%", abs(qf(2) - 0.1656) < 1e-4, f"{qf(2):.4f}")
 check("q(mu)<=0 for mu>=3.07", qf(3.07) <= 0, f"q(3.07)={qf(3.07):.4f}")
 mu_need = lambda qc: W_ * ((1 - qc) / OM_ - 1) / (A_ - F_)
-check("mu needed for 17k/71,444 = 1.53", abs(mu_need(17_000/71_444) - 1.534) < 0.01,
+check("mu needed for 17k/71,444 = 1.54", abs(mu_need(17_000/71_444) - 1.535) < 0.001,
       f"{mu_need(17_000/71_444):.4f}")
 check("mu needed for 25k/71,444 = 0.82 (<1: infeasible)",
       mu_need(25_000/71_444) < 1, f"{mu_need(25_000/71_444):.4f}")
-check("q(1.5)=24.32% (exact to 6 decimals: 0.243208)",
-      abs(qf(1.5) - 0.243208) < 1e-4, f"{qf(1.5):.6f}")
+check("q(1.5)=24.34% (exact to 6 decimals: 0.243428)",
+      abs(qf(1.5) - 0.243428) < 1e-4, f"{qf(1.5):.6f}")
 
 print()
 if FAIL:

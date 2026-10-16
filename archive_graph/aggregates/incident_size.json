@@ -1,0 +1,79 @@
+{
+  "build_id": "f76bd2fb",
+  "note": "Caption-stated cluster sizes among stated-date, mapped, non-cumulative rows. NEVER a death toll: duplicates and over-split footage make any sum meaningless; a sum-guard test is enforced on this file.",
+  "filters": {
+    "stated_dates": true,
+    "mapped": true,
+    "non_cumulative_killed": true,
+    "n_rows": 1264
+  },
+  "outliers": {
+    "threshold_killed_min_gt": 1000,
+    "n_flagged_as_misfiled_totals": 2,
+    "max_flagged_value": 2000.0,
+    "note": "Values above threshold are mis-filed war-to-date totals, not single-incident figures; excluded from the cleaned distribution below."
+  },
+  "all_non_cumulative_rows_any_date_source": {
+    "n_rows": 12736,
+    "n_flagged_as_misfiled_totals": 24,
+    "max_flagged_value": 514000.0,
+    "n_with_killed_min": 12712,
+    "unit": "caption-stated cluster size, not a death toll",
+    "not_a_death_toll": true,
+    "min": 0.0,
+    "p50": 3.0,
+    "p90": 30.0,
+    "p99": 230.68,
+    "max": 1000.0,
+    "share_ge_10": 0.244179
+  },
+  "killed_min_distribution_all": {
+    "n_with_killed_min": 1264,
+    "unit": "caption-stated cluster size, not a death toll",
+    "not_a_death_toll": true,
+    "min": 1.0,
+    "p50": 2.0,
+    "p90": 34.4,
+    "p99": 400.0,
+    "max": 2000.0,
+    "share_ge_10": 0.25
+  },
+  "killed_min_distribution_excl_outliers": {
+    "n_with_killed_min": 1262,
+    "unit": "caption-stated cluster size, not a death toll",
+    "not_a_death_toll": true,
+    "min": 1.0,
+    "p50": 2.0,
+    "p90": 32.9,
+    "p99": 329.87,
+    "max": 756.0,
+    "share_ge_10": 0.248811
+  },
+  "by_report_day_presence": {
+    "with_report_day": {
+      "n_rows": 931,
+      "n_with_killed_min": 931,
+      "unit": "caption-stated cluster size, not a death toll",
+      "not_a_death_toll": true,
+      "min": 1.0,
+      "p50": 3.0,
+      "p90": 30.0,
+      "p99": 269.7,
+      "max": 600.0,
+      "share_ge_10": 0.241676
+    },
+    "without_report_day": {
+      "n_rows": 333,
+      "n_with_killed_min": 331,
+      "unit": "caption-stated cluster size, not a death toll",
+      "not_a_death_toll": true,
+      "min": 1.0,
+      "p50": 2.0,
+      "p90": 54.0,
+      "p99": 471.0,
+      "max": 756.0,
+      "share_ge_10": 0.268882
+    },
+    "note": "report_day means a daily MoH report exists for the date, not event-level confirmation."
+  }
+}

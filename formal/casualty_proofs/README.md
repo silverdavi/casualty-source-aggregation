@@ -34,34 +34,30 @@ pipeline:
 | `claim7_feasibility_monotone_in_M` | Theorem 4.3 ingredient: lowering the manpower ceiling never helps a claim (soundness of the one-sided penalty) |
 | `claim7_omega_needed_antitone` | Theorem 4.3 / code reduction: the "needed ω" for a target claim is antitone in μ |
 | `claim7_radius_lower`, `claim7_radius_zero_of_feasible` | Theorem 4.3 (i,⇐) and (ii) in abstract form: the radius is a lower bound on every rationalisation's penalty, and is 0 when the face-value point is feasible |
-| `contamCDF`, `claim8_mean_displacement`, `claim8_quantile_stuck_below`, `claim8_quantile_at_R`, `claim8_band_not_envelope` | Proposition 5.1 kernel: for a two-point contamination the mean displacement is exactly `ε·R` while the upper quantile moves by the full `R` — the band is first-order in expectation, not a quantile envelope |
 | `partition_exact` | Section 6: the demographic classes partition the population (`w + a = 1` exactly) |
-| `q_at_1`, `q_at_1_bounds` | Section 6: `q(1) = 921/3665` exactly; rounds to 25.13% |
-| `q_at_15_bounds`, `q_at_2_bounds` | Section 6: `q(1.5) ∈ (15.69%, 15.70%)`, `q(2) ∈ (6.25%, 6.26%)` |
-| `q_grid_ordered`, `q_crossing` | Section 6: grid ordering and the `q = 0` crossing below `μ = 2.34` |
-| `muStar`, `q_root_exact`, `q_root_bounds` | Section 6: the exact root of `q(μ) = 0`, rounding to 2.33 |
-| `muNeeded_inverts`, `mu_needed_17k`, `mu_needed_25k` | Section 6: exposure needed for the claim endpoints — `μ ≈ 1.04 ≥ 1` for 17k/70k (feasible), `μ ≈ 0.44 < 1` for 25k/70k (infeasible) |
-| `manpower_nonbinding` | Section 6: `M/D = 0.643` exceeds `q(1)`, so the manpower bound never binds |
+| `q_at_1`, `q_at_1_bounds` | Section 6: `q(1) = 67511651/210130090` exactly; rounds to 32.13% |
+| `q_at_15_bounds`, `q_at_2_bounds` | Section 6: `q(1.5) ∈ (24.34%, 24.35%)`, `q(2) ∈ (16.55%, 16.56%)` |
+| `q_grid_ordered`, `q_crossing` | Section 6: grid ordering and the `q = 0` crossing below `μ = 3.07` |
+| `muStar`, `q_root_exact`, `q_root_bounds` | Section 6: the exact root of `q(μ) = 0`, rounding to 3.06 |
+| `muNeeded_inverts`, `mu_needed_17k`, `mu_needed_25k` | Section 6: exposure needed for the claim endpoints — `μ ≈ 1.54 ≥ 1` for 17k/71,444 (feasible), `μ ≈ 0.82 < 1` for 25k/71,444 (infeasible) |
+| `manpower_nonbinding` | Section 6: `M/D = 0.630` exceeds `q(1)`, so the manpower bound never binds |
 | `S_exceeds_eta` | Remark 3 condition: `S(μ) > η` throughout the reported grid |
-| `bias_at_1_bounds`, `bias_at_15_bounds`, `bias_at_2_bounds` | Remark 3: exact η-slack bias at `μ = 1, 1.5, 2` (1.05, 0.74, 0.33 percentage points) |
-| `bias_loose_uniform_bound`, `bias_grid_ordered` | Remark 3: the 1.4-pp uniform bound is loose and dominates every exact per-μ bias, which decreases in μ |
+| `bias_at_1_bounds`, `bias_at_15_bounds`, `bias_at_2_bounds` | Remark 3: exact η-slack bias at `μ = 1, 1.5, 2` (1.30, 1.10, 0.83 percentage points) |
+| `bias_loose_uniform_bound`, `bias_grid_ordered` | Remark 3: the 1.7-pp uniform bound is loose and dominates every exact per-μ bias, which decreases in μ |
 
 The application arithmetic is proved over `ℚ` (exact rationals), so there
 is no floating-point in the verified statements.
 
 ## What is *not* formalised
 
-The remaining measure-theoretic content — the full posterior/quantile
-statements of Proposition 5.1 beyond its two-point kernel, and the
-topological limit step of Theorem 4.3(i,⇒) beyond its abstract infimum
-and monotonicity ingredients — is verified symbolically and numerically
-in `analysis/verify_proofs.py` and proved in
-`docs/proof_verification.pdf`, but is not kernel-checked: the
-formalisation cost of full Bayesian posteriors is out of proportion to
-the algebra actually at risk. The formal layer covers every claim on
-which the paper's headline numbers rest, including the delta-method
-gradients, Gauss–Markov optimality, and the exact application
-arithmetic.
+The set-containment and multilinear-expansion statements of Proposition
+5.1, and the topological limit step of Theorem 4.3(i,⇒) beyond its
+abstract infimum and monotonicity ingredients, are verified symbolically
+and numerically in `analysis/verify_proofs.py` and proved in
+`docs/proof_verification.pdf`, but are not kernel-checked. The formal
+layer covers every claim on which the paper's headline numbers rest,
+including the delta-method gradients, Gauss–Markov optimality, and the
+exact application arithmetic.
 
 ## Build
 

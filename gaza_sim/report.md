@@ -139,7 +139,7 @@ minimum civilian men have been documented to attempt rescue, queue at
 aid points, and pray together).  The IDF claim of q ≈ 24–36 % (17–25k
 over the ~70k recorded toll) requires either (a) the identified
 record's composition overstating the non-male share by several
-percentage points to over ten (agnostic vs calibrated exposure) — far
+percentage points to over ten (agnostic vs benchmark exposure range) — far
 beyond its sampling error — or (b) Hamas+PIJ pre-war manpower being
 several times larger than even the most generous IISS estimate (60 k).
 Neither is independently supported.

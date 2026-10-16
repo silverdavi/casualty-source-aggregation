@@ -1,0 +1,142 @@
+{
+  "anti_misuse": {
+    "coordinates_are_place_anchors": true,
+    "event_is_footage_cluster": true,
+    "killed_min_is_not_a_toll": true,
+    "verification_tier_is_archive_corroboration_not_truth": true
+  },
+  "build_id": "f76bd2fb",
+  "credit": "Archive Genocide",
+  "date_source": {
+    "post_proxy": 80767,
+    "retrospective_unknown": 1131,
+    "stated": 10690
+  },
+  "event_entities_relation": {
+    "carried_out": 1462,
+    "located": 37832,
+    "named_in": 17468,
+    "stated": 393,
+    "struck": 13924
+  },
+  "event_relations_grade": {
+    "absent_from_csv": true
+  },
+  "event_relations_kind": {
+    "possible_same_event": 10262,
+    "repeat_target": 10484,
+    "same_day": 13185,
+    "shared_entity": 22911,
+    "shared_person": 2450
+  },
+  "filters": {
+    "cumulative_empty": 91525,
+    "has_killed_min": 12850,
+    "mapped": 37832,
+    "non_cumulative_killed": 12736,
+    "stated": 10690,
+    "stated_and_mapped": 4544,
+    "stated_mapped_non_cumulative_killed": 1264
+  },
+  "killed_min_distribution_all_non_null": {
+    "max": 514000.0,
+    "min": 0.0,
+    "n_with_killed_min": 12850,
+    "not_a_death_toll": true,
+    "p50": 3.0,
+    "p90": 30.0,
+    "p99": 291.57,
+    "share_ge_10": 0.243969,
+    "unit": "caption-stated cluster size, not a death toll"
+  },
+  "killed_min_distribution_non_cumulative": {
+    "max": 514000.0,
+    "min": 0.0,
+    "n_with_killed_min": 12736,
+    "not_a_death_toll": true,
+    "p50": 3.0,
+    "p90": 30.0,
+    "p99": 286.25,
+    "share_ge_10": 0.245603,
+    "unit": "caption-stated cluster size, not a death toll"
+  },
+  "licence": "CC BY 4.0",
+  "mapped": {
+    "n_0": 54756,
+    "n_1": 37832,
+    "n_null": 0
+  },
+  "n_rows": {
+    "actors": 715,
+    "event_clips": 131387,
+    "event_entities": 71079,
+    "event_relations": 59292,
+    "events": 92588,
+    "facilities": 4182,
+    "people": 8627,
+    "places": 3620
+  },
+  "ok": true,
+  "people_flags": {
+    "in_victims_list": {
+      "n_0": 7351,
+      "n_1": 1276,
+      "n_null": 0
+    },
+    "victim_ambiguous": {
+      "n_0": 8487,
+      "n_1": 140,
+      "n_null": 0
+    }
+  },
+  "schema": {
+    "events_columns": [
+      "id",
+      "title",
+      "date",
+      "date_source",
+      "place_id",
+      "place",
+      "lat",
+      "lon",
+      "facility",
+      "category",
+      "category2",
+      "evidence_type",
+      "killed_min",
+      "killed_max",
+      "injured_min",
+      "injured_max",
+      "cumulative_min",
+      "cumulative_max",
+      "figures_disputed",
+      "methods",
+      "perpetrators",
+      "victim_groups",
+      "verification_tier",
+      "verification_anchor",
+      "report_day",
+      "dating",
+      "external",
+      "n_external",
+      "n_clips",
+      "n_distinct_footage",
+      "n_archives",
+      "n_posts",
+      "poster",
+      "mapped"
+    ],
+    "notes": [
+      "event_relations.csv has kind/why, not a grade column; kind=possible_same_event is the documented possible-link analogue",
+      "non_cumulative_killed still includes extreme killed_min outliers; caption figures can be mis-filed war totals. Do not sum them."
+    ],
+    "problems": []
+  },
+  "source": "https://archivegenocide.com/lab/data/",
+  "verification_tier": {
+    "A": 1502,
+    "B": 5279,
+    "C": 2053,
+    "D": 83754
+  }
+}

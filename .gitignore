@@ -55,3 +55,16 @@ paper/
 audit_cycles/
 tmp_scripts/
 tmp_script/
+
+# Archive Genocide event-graph raw dumps (names, captions, clip metadata).
+# Download locally with archive_graph/ingest/download.sh; never commit these.
+archive_graph/raw/
+archive_graph/**/*.csv
+archive_graph/**/*.csv.gz
+archive_graph/**/*.geojson
+archive_graph/**/*.geojson.gz
+archive_graph/**/*.graphml
+archive_graph/**/*.graphml.gz
+archive_graph/**/SHA256SUMS.txt
+archive_graph/**/SHA256SUMS.txt.asc
+archive_graph/**/README.txt
